@@ -1,0 +1,31 @@
+name: Camera snapshot probe
+on:
+  push:
+    branches:
+      - camera-analysis-snapshot
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: write
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Capture IPCamLive snapshot
+        run: |
+          set -euo pipefail
+          mkdir -p capture
+          URL='https://ipcamlive.com/player/snapshot.php?alias=670ccc3ce816f'
+          curl -fL --retry 3 --retry-delay 2 --max-time 30 \
+            -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36' \
+            -H 'Referer: https://ipcamlive.com/player/player.php?alias=670ccc3ce816f' \
+            "$URL" -o capture/snapshot.jpg
+          file capture/snapshot.jpg
+          date -u +'%Y-%m-%dT%H:%M:%SZ' > capture/captured_at_utc.txt
+          sha256sum capture/snapshot.jpg > capture/sha256.txt
+      - name: Upload snapshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: ipcamlive-snapshot
+          path: capture/
+          retention-days: 2
