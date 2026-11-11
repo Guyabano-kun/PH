@@ -1,0 +1,135 @@
+name: Boracay hourly camera and tide observations
+
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: boracay-hourly-observations
+  cancel-in-progress: false
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Capture camera and calculate local tide level
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p capture
+          CAPTURED_AT="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          HOUR_START="$(date -u -d "$(date -u +'%Y-%m-%d %H:00:00')" +'%Y-%m-%dT%H:%M:%S')"
+          HOUR_END="$(date -u -d "$HOUR_START UTC + 1 hour" +'%Y-%m-%dT%H:%M:%S')"
+          printf '%s\n' "$CAPTURED_AT" > capture/captured_at_utc.txt
+
+          curl -fL --retry 3 --retry-delay 2 --max-time 30 \
+            -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36' \
+            -H 'Referer: https://ipcamlive.com/player/player.php?alias=670ccc3ce816f' \
+            'https://ipcamlive.com/player/snapshot.php?alias=670ccc3ce816f' \
+            -o capture/snapshot.jpg
+          file capture/snapshot.jpg
+
+          python - "$CAPTURED_AT" "$HOUR_START" "$HOUR_END" <<'PY'
+          import datetime, json, sys, urllib.parse, urllib.request
+          captured_s, start_s, end_s = sys.argv[1:]
+          captured = datetime.datetime.fromisoformat(captured_s.replace("Z", "+00:00"))
+          start = datetime.datetime.fromisoformat(start_s).replace(tzinfo=datetime.timezone.utc)
+          end = datetime.datetime.fromisoformat(end_s).replace(tzinfo=datetime.timezone.utc)
+          manila = datetime.timezone(datetime.timedelta(hours=8))
+          points = {
+            "Punta Bunga camera": (11.982820, 121.909250),
+            "White Beach reference": (11.9584, 121.9249),
+          }
+          result = {
+            "captured_at_utc": captured_s,
+            "captured_at_manila": captured.astimezone(manila).isoformat(),
+            "source": "TPXO10-atlas-v2",
+            "window_utc": {"start": start_s, "end": end_s},
+            "points": {}
+          }
+          for name, (lat, lon) in points.items():
+            params = urllib.parse.urlencode({
+              "lon0": f"{lon:.6f}", "lat0": f"{lat:.6f}",
+              "start": start_s, "end": end_s,
+              "mode": "nearest,truncate", "tol": "0.05", "append": "z"
+            })
+            url = "https://eco.odb.ntu.edu.tw/api/tide?" + params
+            with urllib.request.urlopen(url, timeout=30) as response:
+              data = json.loads(response.read().decode("utf-8"))
+            times = data.get("time", [])
+            zs = data.get("z", [])
+            if len(times) < 2 or len(zs) < 2:
+              raise RuntimeError(f"Insufficient TPXO hourly values for {name}: {data}")
+            t0 = datetime.datetime.fromisoformat(times[0]).replace(tzinfo=datetime.timezone.utc)
+            t1 = datetime.datetime.fromisoformat(times[-1]).replace(tzinfo=datetime.timezone.utc)
+            z0, z1 = float(zs[0]), float(zs[-1])
+            fraction = (captured - t0).total_seconds() / (t1 - t0).total_seconds()
+            level_m = (z0 + (z1-z0)*fraction) / 100.0
+            result["points"][name] = {
+              "requested_coordinates": {"lat": lat, "lon": lon},
+              "model_grid": {
+                "lat": (data.get("latitude") or [None])[0],
+                "lon": (data.get("longitude") or [None])[0]
+              },
+              "level_m_at_capture": round(level_m, 4),
+              "hourly_values_cm": [{"time_utc": t, "z_cm": z} for t, z in zip(times, zs)]
+            }
+          with open("capture/observation.json", "w") as f:
+            json.dump(result, f, indent=2)
+          print(json.dumps(result, indent=2))
+          PY
+
+      - name: Append observation to history branch
+        uses: actions/checkout@v4
+        with:
+          ref: camera-observations
+          path: history
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Persist hourly observation record
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p history/data
+          python - <<'PY'
+          import csv, json, os
+          with open("capture/observation.json") as f:
+            d = json.load(f)
+          p = d["points"]
+          row = {
+            "captured_at_utc": d["captured_at_utc"],
+            "captured_at_manila": d["captured_at_manila"],
+            "camera_level_m": p["Punta Bunga camera"]["level_m_at_capture"],
+            "camera_grid_lat": p["Punta Bunga camera"]["model_grid"]["lat"],
+            "camera_grid_lon": p["Punta Bunga camera"]["model_grid"]["lon"],
+            "white_beach_level_m": p["White Beach reference"]["level_m_at_capture"],
+            "white_beach_grid_lat": p["White Beach reference"]["model_grid"]["lat"],
+            "white_beach_grid_lon": p["White Beach reference"]["model_grid"]["lon"]
+          }
+          path = "history/data/boracay-hourly-observations.csv"
+          exists = os.path.exists(path)
+          with open(path, "a", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=row.keys())
+            if not exists:
+              w.writeheader()
+            w.writerow(row)
+          PY
+          cd history
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/boracay-hourly-observations.csv
+          if ! git diff --cached --quiet; then
+            git commit -m "Record hourly Boracay camera and tide observation"
+            git push
+          fi
+
+      - name: Upload camera snapshot and raw tide response
+        uses: actions/upload-artifact@v4
+        with:
+          name: boracay-observation-${{ github.run_id }}
+          path: capture/
+          retention-days: 7
