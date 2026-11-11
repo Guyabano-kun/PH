@@ -11,7 +11,7 @@ jobs:
   capture:
     runs-on: ubuntu-latest
     steps:
-      - name: Capture IPCamLive snapshot
+      - name: Capture IPCamLive snapshot and matching TPXO levels
         run: |
           set -euo pipefail
           mkdir -p capture
@@ -23,9 +23,45 @@ jobs:
           file capture/snapshot.jpg
           date -u +'%Y-%m-%dT%H:%M:%SZ' > capture/captured_at_utc.txt
           sha256sum capture/snapshot.jpg > capture/sha256.txt
-      - name: Upload snapshot
+          python - <<'PY'
+          import datetime, json, urllib.parse, urllib.request
+          captured = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0)
+          start = captured.replace(minute=0, second=0)
+          end = start + datetime.timedelta(hours=1)
+          points = {
+            "Punta Bunga camera": (11.982820, 121.909250),
+            "White Beach reference": (11.9584, 121.9249),
+          }
+          result = {
+            "captured_at_utc": captured.isoformat().replace("+00:00", "Z"),
+            "captured_at_manila": captured.astimezone(datetime.timezone(datetime.timedelta(hours=8))).isoformat(),
+            "source": "TPXO10-atlas-v2",
+            "window_utc": {"start": start.isoformat(), "end": end.isoformat()},
+            "points": {}
+          }
+          for name, (lat, lon) in points.items():
+            params = urllib.parse.urlencode({
+              "lon0": f"{lon:.6f}", "lat0": f"{lat:.6f}",
+              "start": start.strftime("%Y-%m-%dT%H:%M:%S"),
+              "end": end.strftime("%Y-%m-%dT%H:%M:%S"),
+              "mode": "nearest,truncate", "tol": "0.05", "append": "z"
+            })
+            url = "https://eco.odb.ntu.edu.tw/api/tide?" + params
+            try:
+              with urllib.request.urlopen(url, timeout=30) as response:
+                data = json.loads(response.read().decode("utf-8"))
+              result["points"][name] = {
+                "lat": lat, "lon": lon, "response": data
+              }
+            except Exception as exc:
+              result["points"][name] = {"lat": lat, "lon": lon, "error": repr(exc)}
+          with open("capture/tpxo.json", "w") as f:
+            json.dump(result, f, indent=2)
+          print(json.dumps(result, indent=2))
+          PY
+      - name: Upload snapshot and tide data
         uses: actions/upload-artifact@v4
         with:
-          name: ipcamlive-snapshot
+          name: ipcamlive-snapshot-tpxo
           path: capture/
           retention-days: 2
