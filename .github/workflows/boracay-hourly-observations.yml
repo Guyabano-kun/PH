@@ -1,6 +1,9 @@
 name: Boracay hourly camera and tide observations
 
 on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/boracay-hourly-observations.yml]
   schedule:
     - cron: "7 * * * *"
   workflow_dispatch:
