@@ -133,6 +133,27 @@ main section h2{font-size:clamp(1.55rem,1.4rem + .45vw,2rem);line-height:1.25}
 .setting-btn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .setting-icon{font-size:1.12rem;line-height:1}
 @media(max-width:480px){.setting-btn{min-height:38px;padding:7px 11px;font-size:.88rem}}
+
+/* Keep language and theme controls pinned neatly to the top-right on every viewport */
+.top{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:8px}
+.top>.settings{width:auto;flex:0 0 auto;margin-left:auto;justify-content:flex-end;flex-wrap:nowrap;gap:6px}
+.top>.places{flex:1 1 auto;min-width:0;flex-wrap:nowrap;gap:4px}
+.top>.places .place{white-space:nowrap;padding:7px 9px}
+.top>.settings .setting-btn{min-height:36px;padding:7px 10px;white-space:nowrap}
+@media(max-width:420px){
+ .top{padding-left:10px;padding-right:10px;gap:5px}
+ .top>.places{gap:2px}
+ .top>.places .place{gap:5px;padding:6px 7px;font-size:.88rem}
+ .top>.places .place svg{width:16px;height:16px}
+ .top>.settings{gap:4px}
+ .top>.settings .setting-btn{gap:4px;min-height:34px;padding:6px 8px;font-size:.82rem}
+ .top>.settings .setting-icon{font-size:1rem}
+}
+@media(max-width:350px){
+ .top>.places .place{padding:5px 5px;font-size:.82rem}
+ .top>.settings .setting-btn{padding:5px 6px;font-size:.78rem}
+ .top>.settings .setting-icon{font-size:.92rem}
+}
 </style></head><body>
 <header class="top"><nav class="places" aria-label="Destinations">
 <a class="place " href="mactan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 16c3-2 5-2 8 0s5 2 10 0M5 12l7-8 7 8M12 4v16"/></svg><span>Mactan</span></a>
