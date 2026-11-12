@@ -47,6 +47,70 @@ section{margin-top:46px}main section h2{font-size:clamp(1.6rem,3vw,2.2rem);lette
 .fx-status{font-size:.76rem;color:var(--muted);margin-top:5px}
 @media(max-width:760px){.fx-rates{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:420px){.fx-rates{grid-template-columns:repeat(2,minmax(0,1fr))}.fx-value{font-size:.94rem}}
+
+/* Responsive layout: adapt content width to the device, not reading size */
+html{font-size:16px;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{font-size:1rem;line-height:1.65}
+.top,.fx-bar{padding-left:clamp(14px,3.5vw,56px);padding-right:clamp(14px,3.5vw,56px)}
+.wrap{width:100%;max-width:1240px;margin-inline:auto;padding-left:clamp(14px,3.5vw,48px);padding-right:clamp(14px,3.5vw,48px)}
+.hero{padding-left:clamp(20px,7vw,104px);padding-right:clamp(20px,7vw,104px)}
+.hero p{font-size:clamp(1.05rem,1.15rem + .15vw,1.2rem);line-height:1.6}
+.card p,.note,.season-card p,.tide-intro{font-size:1rem;line-height:1.65}
+.card h2,.weather-panel h3,.season-card h3{font-size:1.25rem;line-height:1.3}
+main section h2{font-size:clamp(1.55rem,1.4rem + .45vw,2rem);line-height:1.25}
+.eyebrow{font-size:.82rem}
+.place{font-size:1rem}
+.settings select,.fx-custom select{font-size:.95rem}
+.fx-title{font-size:.9rem}
+.fx-updated,.fx-status,.weather-small,.season-note,.tide-caveat{font-size:.875rem;line-height:1.5}
+.fx-code{font-size:.82rem}
+.fx-value{font-size:1.05rem}
+.forecast-table{font-size:.95rem}
+.forecast-table th,.forecast-table td{padding:10px 8px}
+.tide-heatmap th,.tide-heatmap td{font-size:.9rem;padding:7px 3px}
+.tide-legend span{font-size:.9rem}
+.tide-detail,.tide-toolbar,.tide-toolbar input,.tide-toolbar button{font-size:1rem}
+.season-table{font-size:.95rem}
+.season-table th,.season-table td{padding:12px}
+@media(max-width:760px){
+ .top{gap:12px}
+ .wrap{padding-top:30px;padding-bottom:56px}
+ .grid,.weather-grid,.season-grid{grid-template-columns:minmax(0,1fr)}
+ .card{padding:22px;min-height:0}
+ .hero{min-height:320px;padding-top:54px;padding-bottom:58px}
+ .hero h1{font-size:clamp(3rem,12vw,5rem)}
+ .fx-rates{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .windy-frame{height:360px}
+}
+@media(max-width:480px){
+ body{font-size:16px}
+ .top{padding-top:10px;padding-bottom:10px}
+ .places{width:100%}
+ .settings{width:100%;justify-content:flex-start}
+ .hero{min-height:300px;padding:44px 18px}
+ .hero h1{font-size:3.1rem}
+ .hero p{font-size:1.05rem}
+ .wrap{padding-left:14px;padding-right:14px}
+ .note{padding:17px}
+ .fx-bar{padding:11px 12px}
+ .fx-rates{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+ .fx-rate{padding:8px}
+ .fx-value{font-size:1rem}
+ .fx-custom{align-items:flex-start}
+ .fx-custom select{min-width:110px}
+ .tide-table-wrap,.season-table-wrap{max-width:100%}
+ .tide-heatmap{min-width:650px}
+ .tide-heatmap th,.tide-heatmap td{font-size:14px;padding:7px 2px}
+ .tide-legend{grid-template-columns:1fr}
+ .forecast-table{font-size:14px}
+ .forecast-table th,.forecast-table td{padding:8px 5px}
+ .windy-frame{height:320px}
+ .camera-frame{min-height:190px}
+}
+@media(min-width:1400px){
+ .wrap{max-width:1320px}
+ .card p,.note,.season-card p,.tide-intro{font-size:1.05rem}
+}
 </style></head><body>
 <header class="top"><nav class="places" aria-label="Destinations">
 <a class="place " href="mactan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 16c3-2 5-2 8 0s5 2 10 0M5 12l7-8 7 8M12 4v16"/></svg><span>Mactan</span></a>
