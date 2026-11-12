@@ -284,20 +284,20 @@ const hohoMarkers=[];const hohoLayer=L.layerGroup().addTo(map);const hohoPoints=
    return data;
   };
   const h16Index=hohoStops.findIndex(p=>p[0]==="H16");
-  const h17=hohoStops.find(p=>p[0]==="H17");
   const h16=hohoStops[h16Index];
-  if(h16Index<0||!h16||!h17)throw new Error("H16/H17 route anchors unavailable");
-  // Mapbox Search routable points for the hotel access roads; stop-marker coordinates remain untouched.
+  if(h16Index<0||!h16)throw new Error("H16 route anchor unavailable");
+  // Public-road route only: visit Savoy and Belmont on New Coast Drive, then return to H16.
+  // Do not route through El Camino Boulevard or the private hotel road towards H17.
   const savoy=["SAVOY","Savoy Hotel Boracay",11.98326970986476,121.92075363044027];
   const belmont=["BELMONT","Belmont Hotel Boracay",11.983595927328484,121.92278025281703];
   const forwardStops=[
    ...hohoStops.slice(0,h16Index+1),
-   savoy,belmont,h17,belmont,savoy,h16,
+   savoy,belmont,savoy,h16,
    ...hohoStops.slice(h16Index+1)
   ];
   // Return leg from Puka Beach: H19 → H18 → H16, then southbound in reverse stop order.
   const reverseStops=hohoStops.slice().reverse().filter(p=>p[0]!=="H17");
-  if(status)status.textContent="Построение маршрута с заездом по New Coast Drive мимо Savoy и Belmont…";
+  if(status)status.textContent="Построение маршрута по New Coast Drive; частный участок El Camino Boulevard исключён…";
   try{
    const build=async ordered=>{
     const data=await fetchRoute(ordered);
@@ -307,7 +307,7 @@ const hohoMarkers=[];const hohoLayer=L.layerGroup().addTo(map);const hohoPoints=
    const [forward,reverse]=await Promise.all([build(forwardStops),build(reverseStops)]);
    hohoRoutes.forward=forward;hohoRoutes.reverse=reverse;
    drawHohoDirection();
-   if(status)status.textContent="Маршрут рассчитан по дорожной сети OSRM: после H16 заезд по New Coast Drive мимо Savoy и Belmont до H17, возврат тем же путём к H16, далее H18 → H19. Обратный участок: H19 → H18 → H16 → H15A … H0. Координаты остановок не изменены. Максимальное дорожное смещение маршрутизатора: "+Math.round(Math.max(forward.maxSnap,reverse.maxSnap))+" м. Линия не является GPS-треком автобуса.";
+   if(status)status.textContent="Маршрут рассчитан по дорожной сети OSRM: от H16 по New Coast Drive мимо Savoy и Belmont и обратно к H16. Частная дорога El Camino Boulevard и подъезд к H17 исключены. Далее H18 → H19. Обратный участок: H19 → H18 → H16 → H15A … H0. Координаты остановок не изменены. Максимальное дорожное смещение маршрутизатора: "+Math.round(Math.max(forward.maxSnap,reverse.maxSnap))+" м. Линия не является GPS-треком автобуса.";
   }catch(error){
    hohoRoutes.forward=null;hohoRoutes.reverse=null;hohoLine.setLatLngs([]);
    if(status)status.textContent="Не удалось построить расчётную дорожную линию: "+error.message+". Исходные координаты маркеров сохранены.";
