@@ -284,17 +284,26 @@ function hohoProjectStopsToRoute(stops,geometry){
  });
  return projected;
 }
+const hohoH17H19Route=[
+[121.9283010,11.9805060],[121.9275340,11.9799245],[121.9268806,11.9793429],[121.9264829,11.9792636],[121.9261419,11.9794486],[121.9259715,11.9798716],[121.9258295,11.9803738],[121.9259147,11.9808496],[121.9261704,11.9814048],[121.9263408,11.9819863],[121.9263692,11.9824885],[121.9262556,11.9829908],[121.9259431,11.9833873],[121.9254033,11.9838102],[121.9248352,11.9841539],[121.9243522,11.9843918],[121.9238124,11.9844711],[121.9231022,11.9844975],[121.9223920,11.9845504],[121.9218238,11.9846032],[121.9213977,11.9846561],[121.9212273,11.9848411],[121.9211989,11.9852641],[121.9211989,11.9857928],[121.9211704,11.9861893],[121.9208580,11.9862157],[121.9204034,11.9861364],[121.9199489,11.9859249],[121.9194659,11.9856342],[121.9189546,11.9854491],[121.9184148,11.9853963],[121.9178751,11.9853170],[121.9173921,11.9850526],[121.9169376,11.9847354],[121.9164546,11.9844182],[121.9159717,11.9841539],[121.9155171,11.9839953],[121.9150626,11.9839953],[121.9146933,11.9841803],[121.9143808,11.9844975],[121.9140967,11.9849205],[121.9138126,11.9852112],[121.9134433,11.9852905],[121.9130740,11.9851584],[121.9127047,11.9849469],[121.9123070,11.9848411],[121.9119377,11.9848940],[121.9116536,11.9851055],[121.9114547,11.9853963],[121.9114547,11.9857135],[121.9116536,11.9861100],[121.9119945,11.9865593],[121.9123638,11.9870087],[121.9127331,11.9874317],[121.9130172,11.9878017],[121.9132729,11.9881189],[121.9135001,11.9884362],[121.9134717,11.9887269],[121.9132729,11.9889913],[121.9129036,11.9892027],[121.9124774,11.9894142],[121.9121365,11.9896257],[121.9121081,11.9898636],[121.9123070,11.9900750],[121.9127331,11.9901808],[121.9133013,11.9902601],[121.9138979,11.9903130],[121.9144660,11.9903658],[121.9148922,11.9905244],[121.9152046,11.9908416],[121.9154603,11.9912381],[121.9156308,11.9916346],[121.9156308,11.9920312],[121.9157160,11.9926920]
+];
 async function hohoFetchDirection(direction){
  if(hohoRouteCache[direction])return hohoRouteCache[direction];
  const located=hohoStops.filter(p=>Number.isFinite(p[2])&&Number.isFinite(p[3]));
- const waypoints=direction==="reverse"?located.slice().reverse():located;
- if(waypoints.length<2)throw new Error("Not enough located stops");
+ const split=located.findIndex(p=>p[0]==="H17");
+ if(split<1)throw new Error("H17 split point is missing");
+ const southbound=located.slice(0,split+1);
+ const waypoints=direction==="reverse"?southbound.slice().reverse():southbound;
  const url="https://router.project-osrm.org/route/v1/driving/"+waypoints.map(p=>p[3]+","+p[2]).join(";")+"?overview=full&geometries=geojson&steps=false&continue_straight=false";
  const response=await fetch(url,{cache:"no-store"});if(!response.ok)throw new Error("OSRM "+response.status);
  const data=await response.json();if(data.code!=="Ok"||!data.routes?.[0]?.geometry?.coordinates?.length)throw new Error("No route geometry: "+data.code);
- const geometry=data.routes[0].geometry;
- const stops=hohoProjectStopsToRoute(direction==="reverse"?hohoRouteStops.slice().reverse():hohoRouteStops,geometry);
- const result={geometry,stops,distance:data.routes[0].distance,duration:data.routes[0].duration};
+ const southGeometry=data.routes[0].geometry.coordinates;
+ const north=direction==="reverse"?hohoH17H19Route.slice().reverse():hohoH17H19Route;
+ const combined=direction==="reverse"?north.concat(southGeometry.slice(1)):southGeometry.concat(north.slice(1));
+ const geometry={type:"LineString",coordinates:combined};
+ const orderedStops=direction==="reverse"?hohoRouteStops.slice().reverse():hohoRouteStops;
+ const stops=hohoProjectStopsToRoute(orderedStops,geometry);
+ const result={geometry,stops,distance:data.routes[0].distance,duration:data.routes[0].duration,source:"user-traced-google-maps-H17-H19"};
  hohoRouteCache[direction]=result;return result;
 }
 function hohoPopup(code){
@@ -334,7 +343,7 @@ async function buildHohoRoadNetwork(){
  try{
   const [forward,reverse]=await Promise.all([hohoFetchDirection("forward"),hohoFetchDirection("reverse")]);
   hohoRoadReady=true;hohoRoadStatus="ready";
-  if(status)status.textContent=tr("Дорожный маршрут построен через все остановки с заданными координатами; Scheduled-остановки без координат исключены. H17 взята с подписанной метки остановки Google Maps, H18 и H19 — по точкам пользователя. Остальные координаты пока ориентировочные. Обратное направление рассчитывается отдельным запросом.","The road route is built through all located stop anchors; scheduled stops without coordinates are omitted. H17 is taken from its labelled Google Maps stop marker; H18 and H19 use user-supplied map points. Other stop anchors remain provisional. The return direction is routed independently.");
+  if(status)status.textContent=tr("Дорожный маршрут построен через все остановки с заданными координатами; Scheduled-остановки без координат исключены. H17 взята с подписанной метки остановки Google Maps, H18 и H19 — по точкам пользователя. Остальные координаты пока ориентировочные. Обратное направление рассчитывается отдельным запросом.","Участок H17 → H19 перенесён по синей дорожной линии с предоставленного скриншота Google Maps; обратный участок использует ту же трассу в обратной последовательности. Южный участок H0 → H17 пока рассчитывается OSRM и не является подтверждённым GPS-треком оператора.");
   await drawHohoDirection(hohoDirection);
  }catch(error){
   hohoRoadStatus="error";if(status)status.textContent=tr("Не удалось загрузить дорожную геометрию. Остановки не удаляются; показана только официальная схема и карточки.","Road geometry could not be loaded. Stops are retained; only the official route reference and stop directory remain available.");
