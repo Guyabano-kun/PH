@@ -271,7 +271,7 @@ month.addEventListener('change',load);reload.addEventListener('click',load);load
 "H15A":["Canyon de Boracay (Sinagpa Area). Остановка в районе Canyon de Boracay / Sinagpa; Robinsons указан на схеме как дополнительный ориентир.","Canyon de Boracay (Sinagpa Area). Stop in the Canyon de Boracay / Sinagpa area; Robinsons is shown as an additional reference."],
 "H16":["CityMall Boracay. Остановка у CityMall Boracay на северной части острова.","CityMall Boracay. Stop by CityMall Boracay in the northern part of the island."]
 };
-const hohoMarkers=[];const hohoLayer=L.layerGroup().addTo(map);const hohoPoints=hohoStops.map(p=>[p[2],p[3]]);const hohoLine=L.polyline([],{color:"#087f82",weight:5,opacity:.9}).addTo(hohoLayer);let hohoDirection="forward",hohoArrows=null,hohoRoutes={forward:null,reverse:null};function drawHohoDirection(){if(hohoArrows){hohoLayer.removeLayer(hohoArrows);hohoArrows=null}const route=hohoRoutes[hohoDirection];if(route){hohoLine.setLatLngs(route.coordinates);hohoLine.setStyle({color:hohoDirection==="forward"?"#087f82":"#c45b45"});if(L.polylineDecorator&&L.Symbol){hohoArrows=L.polylineDecorator(hohoLine,{patterns:[{offset:"6%",repeat:"9%",symbol:L.Symbol.arrowHead({pixelSize:11,polygon:false,pathOptions:{color:hohoDirection==="forward"?"#087f82":"#c45b45",weight:3}})}]}).addTo(hohoLayer)}}const f=document.getElementById("hoho-dir-forward"),r=document.getElementById("hoho-dir-reverse");if(f&&r){f.setAttribute("aria-pressed",String(hohoDirection==="forward"));r.setAttribute("aria-pressed",String(hohoDirection==="reverse"))}const status=document.getElementById("hoho-route-status");if(status)status.textContent=route?(hohoDirection==="forward"?"Прямой маршрут: H16 → Newcoast (H17) → H16 → H18 → H19":"Обратный маршрут: H19 → H18 → H16 → Port"):"Загружается дорожный маршрут…"}async function loadHohoRoutes(){
+const hohoMarkers=[];const hohoLayer=L.layerGroup().addTo(map);const hohoPoints=hohoStops.map(p=>[p[2],p[3]]);const hohoLine=L.polyline([],{color:"#087f82",weight:5,opacity:.9}).addTo(hohoLayer);let hohoDirection="forward",hohoArrows=null,hohoRoutes={forward:null,reverse:null};function drawHohoDirection(){if(hohoArrows){hohoLayer.removeLayer(hohoArrows);hohoArrows=null}const route=hohoRoutes[hohoDirection];if(route){hohoLine.setLatLngs(route.coordinates);hohoLine.setStyle({color:hohoDirection==="forward"?"#087f82":"#c45b45"});if(L.polylineDecorator&&L.Symbol){hohoArrows=L.polylineDecorator(hohoLine,{patterns:[{offset:"6%",repeat:"9%",symbol:L.Symbol.arrowHead({pixelSize:11,polygon:false,pathOptions:{color:hohoDirection==="forward"?"#087f82":"#c45b45",weight:3}})}]}).addTo(hohoLayer)}}const f=document.getElementById("hoho-dir-forward"),r=document.getElementById("hoho-dir-reverse");if(f&&r){f.setAttribute("aria-pressed",String(hohoDirection==="forward"));r.setAttribute("aria-pressed",String(hohoDirection==="reverse"))}const status=document.getElementById("hoho-route-status");if(status)status.textContent=route?(hohoDirection==="forward"?"Прямой маршрут: H16 → мимо Savoy → H17 → обратно мимо Savoy → H16 → H18 → H19":"Обратный маршрут: H19 → H18 → H16 → Port"):"Загружается дорожный маршрут…"}async function loadHohoRoutes(){
   const status=document.getElementById("hoho-route-status");
   const fetchRoute=async ordered=>{
    const coords=ordered.map(p=>p[3]+","+p[2]).join(";");
@@ -290,11 +290,11 @@ const hohoMarkers=[];const hohoLayer=L.layerGroup().addTo(map);const hohoPoints=
   if(h16Index<0||!h16||h17Index<0||!h17||h17Index<=h16Index)throw new Error("H16/H17 route anchors unavailable");
   // Forward: H16 → Savoy → Belmont → H17, then retrace New Coast Drive via Belmont and Savoy to H16.
   // Continue northbound from H16 to H18 and H19. Stop coordinates remain unchanged.
-  const savoy=["SAVOY","Savoy Hotel Boracay",11.98326970986476,121.92075363044027];
+  // Savoy is passed on New Coast Drive; do not route to its hotel entrance.
   const belmont=["BELMONT","Belmont Hotel Boracay",11.983595927328484,121.92278025281703];
   const forwardStops=[
    ...hohoStops.slice(0,h16Index+1),
-   savoy,belmont,h17,belmont,savoy,h16,
+   belmont,h17,belmont,h16,
    ...hohoStops.slice(h17Index+1)
   ];
   // Reverse: H19 → H18 → H16, then southbound in reverse stop order to H0; H17 is not served.
@@ -309,7 +309,7 @@ const hohoMarkers=[];const hohoLayer=L.layerGroup().addTo(map);const hohoPoints=
    const [forward,reverse]=await Promise.all([build(forwardStops),build(reverseStops)]);
    hohoRoutes.forward=forward;hohoRoutes.reverse=reverse;
    drawHohoDirection();
-   if(status)status.textContent="Маршрут рассчитан по дорожной сети OSRM: H16 → Savoy → Belmont → H17 → Belmont → Savoy → H16 → H18 → H19. Обратный маршрут: H19 → H18 → H16 → H15A … H0. Координаты остановок не изменены. Максимальное дорожное смещение маршрутизатора: "+Math.round(Math.max(forward.maxSnap,reverse.maxSnap))+" м. Линия является расчётной привязкой к дорожной сети, а не GPS-треком автобуса.";
+   if(status)status.textContent="Маршрут рассчитан по дорожной сети OSRM: H16 → мимо Savoy по New Coast Drive → Belmont → H17 → Belmont → обратно мимо Savoy → H16 → H18 → H19. Обратный маршрут: H19 → H18 → H16 → H15A … H0. Координаты остановок не изменены. Максимальное дорожное смещение маршрутизатора: "+Math.round(Math.max(forward.maxSnap,reverse.maxSnap))+" м. Линия является расчётной привязкой к дорожной сети, а не GPS-треком автобуса.";
   }catch(error){
    hohoRoutes.forward=null;hohoRoutes.reverse=null;hohoLine.setLatLngs([]);
    if(status)status.textContent="Не удалось построить расчётную дорожную линию: "+error.message+". Исходные координаты маркеров сохранены.";
