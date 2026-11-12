@@ -248,22 +248,57 @@ month.addEventListener('change',load);reload.addEventListener('click',load);load
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/leaflet-polylinedecorator@1.6.0/dist/leaflet.polylineDecorator.js"></script><script>
 (()=>{const el=document.getElementById('boracay-map');if(!el||!window.L)return;const map=L.map(el,{scrollWheelZoom:false}).setView([11.9674,121.9248],14);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors'}).addTo(map);const places=[
 ['Boat Station 1 · White Beach','Северная точка лодочной станции White Beach. Координаты по данным DENR.','Northern White Beach boat-station point. Coordinates from DENR.','beach',11.9646111,121.9219722],['Boat Station 2 · White Beach','Центральная точка лодочной станции White Beach. Координаты по данным DENR.','Central White Beach boat-station point. Coordinates from DENR.','beach',11.9581389,121.9260278],['Boat Station 3 · White Beach','Южная точка лодочной станции White Beach. Координаты по данным DENR.','Southern White Beach boat-station point. Coordinates from DENR.','beach',11.9520556,121.9298056],['Puka Shell Beach','Пляж на северной оконечности острова','Beach at the northern end of the island','beach',11.996611,121.915254],['Diniwid Beach','Небольшая бухта севернее Station 1','Small cove north of Station 1','beach',11.97630,121.91167],['Bulabog Beach','Восточное побережье, зона кайт- и виндсёрфинга','East coast, kiteboarding and windsurfing area','beach',11.965631,121.928888],['Ilig-Iligan Beach','Пляж на северо-востоке острова','Beach on the north-east coast','beach',11.986036,121.925014],['Willy’s Rock','Скальный ориентир у северной части White Beach','Rock landmark off the northern part of White Beach','landmark',11.96823,121.91871],['D’Mall Boracay','Открытый торговый комплекс и пешеходная торговая зона Station 2','Open-air shopping complex and pedestrian retail area in Station 2','shop',11.9622443,121.9266609],
-['Budget Mart · D’Mall','Супермаркет у главного входа в D’Mall, Station 2','Supermarket by the main entrance to D’Mall, Station 2','shop',11.9632416,121.9263247],['Budget Mart · E-Mall','Филиал Budget Mart в районе E-Mall / Station 3','Budget Mart branch in the E-Mall / Station 3 area','shop',11.9539687,121.9315273],['Savemore · CityMall','Супермаркет внутри CityMall Boracay','Supermarket inside CityMall Boracay','shop',11.9791161,121.9205997],['Savemore · Food Alley','Супермаркет в здании Savemore Building на Main Road, Station 2. Координаты по геометрии объекта OpenStreetMap.','Supermarket in Savemore Building on Main Road, Station 2. Coordinates from the OpenStreetMap feature geometry.','shop',11.96065,121.92863],['The Shoppes at Station B','Крытый торговый центр в районе Station 1 / Sinagpa','Air-conditioned shopping mall in the Station 1 / Sinagpa area','shop',11.9754,121.91807],['Robinsons Supermarket · Station B','Супермаркет Robinsons внутри Station B Mall, Station 1','Robinsons Supermarket inside Station B Mall, Station 1','shop',11.975419,121.9183508],['CityMall Boracay','Торговый центр в северной части острова, рядом с Diniwid Road','Shopping mall in northern Boracay, near Diniwid Road','shop',11.97887,121.92029],['E Mall Boracay','Небольшой торговый пассаж в районе Station 3','Small shopping arcade in the Station 3 area','shop',11.9534099,121.9312303],['D’Talipapa Market','Рынок и торговая зона в районе Manggayad / Station 2','Market and shopping area in Manggayad / Station 2','shop',11.9563658,121.9318287],['Lambros Point','Скальная точка и естественная арка между White Beach и Diniwid Beach','Rocky headland and natural arch between White Beach and Diniwid Beach','landmark',11.974544,121.912646],['Cujo’s Keyhole · Lapus-Lapus','Знаковая скальная арка в районе Boracay Newcoast, Yapak','Iconic natural rock arch in the Boracay Newcoast area, Yapak','landmark',11.982076,121.929581],['Sigbin Cave','Прибрежная пещера в Barangay Yapak. Координаты восстановлены из Plus Code XWXG+M22.','Coastal cave in Barangay Yapak. Coordinates recovered from Plus Code XWXG+M22.','landmark',11.9991375,121.9250156],['The Ruins Art Gallery','Арт-пространство в районе Din-Iwid Road. Координаты восстановлены из Plus Code XWH5+2X5.','Art space in the Din-Iwid Road area. Coordinates recovered from Plus Code XWH5+2X5.','landmark',11.9775125,121.9099844],['Lugutan Mangrove Park','Мангровый парк и деревянная прогулочная дорожка в Manoc-Manoc','Mangrove park and boardwalk in Manoc-Manoc','landmark',11.95639,121.93451],['Mount Luho View Deck','Официальная смотровая площадка Mount Luho View Deck','Mount Luho View Deck observation platform','landmark',11.976602,121.928802],['Cagban Jetty Port','Основной пассажирский порт на юге острова','Main passenger port in the south of the island','transport',11.93871,121.93939],['Tambisaan Beach / Port','Пляж и порт на юго-восточном побережье','Beach and port on the south-east coast','transport',11.94952,121.9474]];const markers=[];const tr=(ru,en)=>document.documentElement.lang==='en'?en:ru;const hohoStops=[["H0","Tambisaan Beach",11.94952,121.9474],["H1","Cagban Jetty Port",11.93871,121.93939],["H1A","Manoc-Manoc Barangay Hall",11.9449,121.9405],["H2","Boracay Rotunda",11.9509,121.939],["H3","Boracay Grace Hotel",11.953,121.935],["H3A","Saint Gabriel Medical Center",11.9542,121.9335],["H3B","Andoks Station 3 (Dackz Trading)",11.954,121.9324],["H4","Emall Station 3",11.9534099,121.9312303],["H5","Station X (Hue Hotel)",11.9563,121.9303],["H6","Azalea Hotel",11.9591,121.9288],["H6A","Ciriaco S. Tirol Hospital",11.96073,121.92771],["H7","Goto Box / Jollibee",11.9613,121.9272],["H8","Balabag Lake / D’Mall",11.9622443,121.9266609],["H9","Bulabog Beach",11.965631,121.928888],["H10","Wetland No. 3 / Balabag High School",11.966,121.9275],["H10A","Balabag Elementary School",11.9668,121.9258],["H11","Astoria Station 1",11.9673,121.9202],["H12","Kolai Mangyan Station 1",11.968,121.9193],["H13","Balabag Church / Coco Mama (Willy’s Rock)",11.96823,121.91871],["H14","Two Season Hotel",11.9704,121.9169],["H15","The Lind Hotel",11.974,121.914],["H15A","Canyon de Boracay (Sinagpa Area)",11.9755,121.9168],["H15B","Boracay Mt. Luho Road (Scheduled)",null,null,false],["H16","CityMall Boracay",11.97887,121.92029],["H17","Newcoast / Lapuz-Lapuz Keyhole (Savoy & Belmont)",11.982076,121.929581],["H17A","Newcoast Entrance (app locator; not on operator route list)",null,null,false],["H18","Alta Vista & Yapak Main Road",11.989,121.9235],["H19","Puka Beach",11.996611,121.915254]];
-const hohoRouteStops=hohoStops.filter(p=>Number.isFinite(p[2])&&Number.isFinite(p[3])&&p[4]!==false);
-const hohoMarkers=[];const hohoLayer=L.layerGroup();const hohoLine=L.polyline([],{color:"#087f82",weight:5,opacity:.9});
+['Budget Mart · D’Mall','Супермаркет у главного входа в D’Mall, Station 2','Supermarket by the main entrance to D’Mall, Station 2','shop',11.9632416,121.9263247],['Budget Mart · E-Mall','Филиал Budget Mart в районе E-Mall / Station 3','Budget Mart branch in the E-Mall / Station 3 area','shop',11.9539687,121.9315273],['Savemore · CityMall','Супермаркет внутри CityMall Boracay','Supermarket inside CityMall Boracay','shop',11.9791161,121.9205997],['Savemore · Food Alley','Супермаркет в здании Savemore Building на Main Road, Station 2. Координаты по геометрии объекта OpenStreetMap.','Supermarket in Savemore Building on Main Road, Station 2. Coordinates from the OpenStreetMap feature geometry.','shop',11.96065,121.92863],['The Shoppes at Station B','Крытый торговый центр в районе Station 1 / Sinagpa','Air-conditioned shopping mall in the Station 1 / Sinagpa area','shop',11.9754,121.91807],['Robinsons Supermarket · Station B','Супермаркет Robinsons внутри Station B Mall, Station 1','Robinsons Supermarket inside Station B Mall, Station 1','shop',11.975419,121.9183508],['CityMall Boracay','Торговый центр в северной части острова, рядом с Diniwid Road','Shopping mall in northern Boracay, near Diniwid Road','shop',11.97887,121.92029],['E Mall Boracay','Небольшой торговый пассаж в районе Station 3','Small shopping arcade in the Station 3 area','shop',11.9534099,121.9312303],['D’Talipapa Market','Рынок и торговая зона в районе Manggayad / Station 2','Market and shopping area in Manggayad / Station 2','shop',11.9563658,121.9318287],['Lambros Point','Скальная точка и естественная арка между White Beach и Diniwid Beach','Rocky headland and natural arch between White Beach and Diniwid Beach','landmark',11.974544,121.912646],['Cujo’s Keyhole · Lapus-Lapus','Знаковая скальная арка в районе Boracay Newcoast, Yapak','Iconic natural rock arch in the Boracay Newcoast area, Yapak','landmark',11.982076,121.929581],['Sigbin Cave','Прибрежная пещера в Barangay Yapak. Координаты восстановлены из Plus Code XWXG+M22.','Coastal cave in Barangay Yapak. Coordinates recovered from Plus Code XWXG+M22.','landmark',11.9991375,121.9250156],['The Ruins Art Gallery','Арт-пространство в районе Din-Iwid Road. Координаты восстановлены из Plus Code XWH5+2X5.','Art space in the Din-Iwid Road area. Coordinates recovered from Plus Code XWH5+2X5.','landmark',11.9775125,121.9099844],['Lugutan Mangrove Park','Мангровый парк и деревянная прогулочная дорожка в Manoc-Manoc','Mangrove park and boardwalk in Manoc-Manoc','landmark',11.95639,121.93451],['Mount Luho View Deck','Официальная смотровая площадка Mount Luho View Deck','Mount Luho View Deck observation platform','landmark',11.976602,121.928802],['Cagban Jetty Port','Основной пассажирский порт на юге острова','Main passenger port in the south of the island','transport',11.93871,121.93939],['Tambisaan Beach / Port','Пляж и порт на юго-восточном побережье','Beach and port on the south-east coast','transport',11.94952,121.9474]];const markers=[];const tr=(ru,en)=>document.documentElement.lang==='en'?en:ru;const hohoStops=[["H0","Tambisaan Beach",11.94952,121.9474],["H1","Cagban Jetty Port",11.93871,121.93939],["H1A","Manoc-Manoc Barangay Hall",11.9449,121.9405],["H1B","Manoc-Manoc National High School (Scheduled)",null,null,false],["H2","Boracay Rotunda",11.9509,121.939],["H3","Boracay Grace Hotel",11.953,121.935],["H3A","Saint Gabriel Medical Center",11.9542,121.9335],["H3B","Andoks Station 3 (Dackz Trading)",11.954,121.9324],["H4","Emall Station 3",11.9534099,121.9312303],["H5","Station X (Hue Hotel)",11.9563,121.9303],["H6","Azalea Hotel",11.9591,121.9288],["H6A","Ciriaco S. Tirol Hospital",11.96073,121.92771],["H7","Goto Box",11.9613,121.9272],["H8","Balabag Lake (D'Mall)",11.9622443,121.9266609],["H9","Bulabog Beach",11.965631,121.928888],["H10","Balabag High School",11.966,121.9275],["H10A","Balabag Elementary School",11.9668,121.9258],["H11","Astoria Station 1",11.9673,121.9202],["H12","Kolai Mangyan STN 1",11.968,121.9193],["H13","Balabag Church",11.96823,121.91871],["H14","Two Season Hotel",11.9704,121.9169],["H15","The Lind Hotel",11.974,121.914],["H15A","Canyon de Boracay (Singpa Area)",11.9755,121.9168],["H15B","Mount Luho Road (Scheduled)",null,null,false],["H16","CityMall Boracay",11.97887,121.92029],["H17","Newcoast / Lapuz-Lapuz Keyhole (Savoy & Belmont)",11.982076,121.929581],["H17A","Newcoast Entrance",null,null,false],["H18","Alta Vista & Yapak Main Road",11.989,121.9235],["H19","Puka Beach",11.996611,121.915254]];
+const hohoRouteStops=hohoStops.slice();
+const markers=[];const hohoLayer=L.layerGroup();const hohoLine=L.polyline([],{color:"#087f82",weight:5,opacity:.9});
 let hohoDirection="forward",hohoRoadReady=false,hohoRoadStatus="pending",hohoValidStops=[],active='all',query='';
-const hohoRoadPoints=new Map();
-async function hohoSnapToRoad(stop){
- const url="https://router.project-osrm.org/nearest/v1/driving/"+stop[3]+","+stop[2]+"?number=1";
+const hohoRoadPoints=new Map(),hohoRouteCache={};
+function hohoInterpolateMissingAnchors(stops){
+ const out=stops.map(s=>s.slice());
+ for(let i=0;i<out.length;i++){
+  if(Number.isFinite(out[i][2])&&Number.isFinite(out[i][3]))continue;
+  let p=i-1,n=i+1;while(p>=0&&(!Number.isFinite(out[p][2])||!Number.isFinite(out[p][3])))p--;while(n<out.length&&(!Number.isFinite(out[n][2])||!Number.isFinite(out[n][3])))n++;
+  if(p>=0&&n<out.length){const t=(i-p)/(n-p);out[i][2]=out[p][2]+(out[n][2]-out[p][2])*t;out[i][3]=out[p][3]+(out[n][3]-out[p][3])*t;out[i][5]="interpolated"}
+  else if(p>=0){out[i][2]=out[p][2];out[i][3]=out[p][3];out[i][5]="interpolated"}
+  else if(n<out.length){out[i][2]=out[n][2];out[i][3]=out[n][3];out[i][5]="interpolated"}
+ }
+ return out;
+}
+function hohoProjectPoint(lat,lon,a,b){
+ const scale=Math.cos((lat*Math.PI/180));const ax=a[0]*scale,ay=a[1],bx=b[0]*scale,by=b[1],px=lon*scale,py=lat;
+ const dx=bx-ax,dy=by-ay,len=dx*dx+dy*dy;const t=len?Math.max(0,Math.min(1,((px-ax)*dx+(py-ay)*dy)/len)):0;
+ const x=ax+t*dx,y=ay+t*dy;const dLat=(py-y)*111320,dLon=(px-x)*111320;
+ return {t,distance:Math.hypot(dLat,dLon),lon:x/scale,lat:y};
+}
+function hohoProjectStopsToRoute(stops,geometry){
+ const anchored=hohoInterpolateMissingAnchors(stops),coords=geometry.coordinates,projected=[];let minSegment=0;
+ anchored.forEach((stop,index)=>{
+  let best=null;
+  for(let j=minSegment;j<coords.length-1;j++){
+   const p=hohoProjectPoint(stop[2],stop[3],coords[j],coords[j+1]);
+   if(!best||p.distance<best.distance)best={...p,segment:j};
+  }
+  if(!best){const last=coords[coords.length-1];best={lat:last[1],lon:last[0],distance:0,segment:coords.length-2,t:1}}
+  minSegment=best.segment;
+  projected.push({stop,lat:best.lat,lon:best.lon,anchorDistance:Math.round(best.distance),segment:best.segment,position:best.segment+best.t,estimated:stop[5]==="interpolated"||!Number.isFinite(stop[2])||!Number.isFinite(stop[3])});
+ });
+ return projected;
+}
+async function hohoFetchDirection(direction){
+ if(hohoRouteCache[direction])return hohoRouteCache[direction];
+ const first=direction==="reverse"?hohoStops[hohoStops.length-1]:hohoStops[0];
+ const last=direction==="reverse"?hohoStops[0]:hohoStops[hohoStops.length-1];
+ const url="https://router.project-osrm.org/route/v1/driving/"+first[3]+","+first[2]+";"+last[3]+","+last[2]+"?overview=full&geometries=geojson&steps=false&continue_straight=false";
  const response=await fetch(url,{cache:"no-store"});if(!response.ok)throw new Error("OSRM "+response.status);
- const data=await response.json();const point=data.waypoints&&data.waypoints[0];
- if(data.code!=="Ok"||!point||!point.location||!Number.isFinite(point.distance))return null;
- if(point.distance>85)return null;
- return {lat:point.location[1],lon:point.location[0],snapDistance:point.distance,name:point.name||""};
+ const data=await response.json();if(data.code!=="Ok"||!data.routes?.[0]?.geometry?.coordinates?.length)throw new Error("No route geometry: "+data.code);
+ const geometry=data.routes[0].geometry;
+ const stops=hohoProjectStopsToRoute(hohoRouteStops,geometry);
+ const result={geometry,stops,distance:data.routes[0].distance,duration:data.routes[0].duration};
+ hohoRouteCache[direction]=result;return result;
 }
 function hohoPopup(code){
  const card=document.getElementById('stop-'+code.toLowerCase());
- if(!card)return '<div class="map-popup"><h3>'+code+'</h3><p>'+tr('Карточка остановки пока отсутствует.','Stop details are not available yet.')+'</p></div>';
+ if(!card)return '<div class="map-popup"><h3>'+code+'</h3><p>'+tr('Данные Locator для этой остановки не предоставлены. Остановка сохранена в реестре маршрута.','Locator details are not available for this stop. The stop remains in the route register.')+'</p></div>';
  const box=document.createElement('div');box.className='map-popup hoho-map-popup';
  const title=card.querySelector('.hoho-stop-head h3');const badge=card.querySelector('.hoho-code');
  const heading=document.createElement('div');heading.className='hoho-popup-heading';
@@ -273,48 +308,36 @@ function hohoPopup(code){
  const photo=card.querySelector('.hoho-photo');
  if(photo&&!photo.classList.contains('missing')){const image=photo.cloneNode(true);image.classList.add('hoho-popup-photo');box.append(image)}
  const address=card.querySelector('.hoho-address');if(address){const p=document.createElement('p');p.className='hoho-popup-address';p.textContent=address.textContent;box.append(p)}
- const details=card.querySelector('details');if(details){const section=document.createElement('section');section.className='hoho-popup-nearby';const label=document.createElement('strong');label.textContent=tr('Рядом','Nearby');section.append(label);const list=details.querySelector('ul');if(list){const copy=list.cloneNode(true);section.append(copy)}else{const empty=document.createElement('p');empty.textContent=tr('Список ближайших объектов не указан в скриншоте.','Nearby places were not listed in the supplied screenshot.');section.append(empty)}box.append(section)}
- const road=hohoRoadPoints.get(code);const note=document.createElement('p');note.className='hoho-popup-note';note.textContent=road?tr('Дорожная привязка OSM: '+(road.name||'без названия')+'; от ориентира '+Math.round(road.snapDistance)+' м. Это ближайшая проезжая дорога к объекту, а не подтверждённая координата знака остановки.','OSM road match: '+(road.name||'unnamed road')+'; '+Math.round(road.snapDistance)+' m from landmark. This is the nearest drivable road to the POI, not a verified stop-sign coordinate.'):tr('Координата остановки не подтверждена.','Stop coordinate is not verified.');box.append(note);
+ const details=card.querySelector('details');if(details){const section=document.createElement('section');section.className='hoho-popup-nearby';const label=document.createElement('strong');label.textContent=tr('Рядом','Nearby');section.append(label);const list=details.querySelector('ul');if(list)section.append(list.cloneNode(true));box.append(section)}
+ const road=hohoRoadPoints.get(code);const note=document.createElement('p');note.className='hoho-popup-note';note.textContent=road?tr('Маркер размещён на основной дорожной трассе HOHO рядом с ориентиром. Отклонение ориентира от трассы: '+road.anchorDistance+' м. Точная точка знака посадки не подтверждена.','Marker is placed on the primary HOHO road corridor near the landmark. Landmark offset from route: '+road.anchorDistance+' m. Exact boarding sign position is unverified.')+(road.estimated?' '+tr('Положение восстановлено по соседним остановкам.','Position interpolated from adjacent stops.'):''):tr('Положение остановки ориентировочное.','Stop position is approximate.');box.append(note);
  return box;
 }
-function addHohoMarker(stop,road){
+function addHohoMarker(item){
+ const stop=item.stop,road={lat:item.lat,lon:item.lon,anchorDistance:item.anchorDistance,estimated:item.estimated};
  hohoRoadPoints.set(stop[0],road);
  const icon=L.divIcon({className:'hoho-marker',html:'<span class="hoho-pin"><b>'+stop[0]+'</b><i>🚌</i></span>',iconSize:[48,46],iconAnchor:[24,42],popupAnchor:[0,-38]});
  const marker=L.marker([road.lat,road.lon],{icon}).bindPopup(hohoPopup(stop[0]),{maxWidth:340,minWidth:250});
  marker.addTo(hohoLayer);hohoMarkers.push(marker);
 }
+const hohoMarkers=[];
+async function drawHohoDirection(direction){
+ if(active!=='all'&&active!=='hoho')return;
+ const route=hohoRouteCache[direction]||await hohoFetchDirection(direction);
+ hohoLayer.clearLayers();hohoMarkers.length=0;hohoRoadPoints.clear();
+ route.stops.forEach(addHohoMarker);
+ hohoLine.setLatLngs(route.geometry.coordinates.map(c=>[c[1],c[0]]));
+ if(route.geometry.coordinates.length>1){if(!map.hasLayer(hohoLine))hohoLine.addTo(map);hohoLine.bringToFront()}
+}
 async function buildHohoRoadNetwork(){
  const status=document.getElementById('hoho-road-status');
  try{
-  const results=await Promise.all(hohoRouteStops.map(async stop=>({stop,road:await hohoSnapToRoad(stop).catch(()=>null)})));
-  results.forEach(({stop,road})=>{if(road)addHohoMarker(stop,road)});
-  const valid=results.filter(x=>x.road);hohoValidStops=valid;hohoRoadReady=true;
-  if(valid.length<2)throw new Error("Too few road-matched stops");
-  const forward=valid.map(x=>x.stop[0]).join(" → ");
-  const reverse=valid.slice().reverse().map(x=>x.stop[0]).join(" → ");
-  const note=tr(
-   "Маркеры ставятся на ближайшую проезжую дорогу от ориентира остановки. Точки дальше 85 м от проезжей дороги не показываются. Это дорожная привязка к POI, а не подтверждённые GPS-координаты знака остановки.",
-   "Markers are snapped to the nearest drivable road from each stop landmark. Points more than 85 m from a drivable road are hidden. This is road alignment from the POI, not verified GPS coordinates of the stop sign."
-  );
-  if(status)status.textContent=note+" "+tr("Привязано к дорогам: ","Road-matched: ")+valid.length+"/"+hohoRouteStops.length+".";
-  hohoRoadStatus="ready";
-  await drawHohoDirection(hohoDirection,valid);
+  const [forward,reverse]=await Promise.all([hohoFetchDirection("forward"),hohoFetchDirection("reverse")]);
+  hohoRoadReady=true;hohoRoadStatus="ready";
+  if(status)status.textContent=tr("Все "+forward.stops.length+" остановок привязаны к одной основной дорожной трассе. Обратное направление построено отдельным запросом. Неизвестные позиции сохранены ориентировочно; координаты знаков посадки не подтверждены.","All "+forward.stops.length+" stops are projected onto one primary road corridor. The return direction is routed independently. Unknown positions are retained as estimates; boarding sign coordinates are unverified.");
+  await drawHohoDirection(hohoDirection);
  }catch(error){
-  hohoRoadStatus="error";if(status)status.textContent=tr("Не удалось получить дорожную привязку. Маркеры и линия маршрута не отображаются, чтобы не показывать точки в зданиях или на пляже.","Road matching failed. Stops and route are hidden rather than showing points inside buildings or on beaches.");
+  hohoRoadStatus="error";if(status)status.textContent=tr("Не удалось загрузить дорожную геометрию. Остановки не удаляются; показана только официальная схема и карточки.","Road geometry could not be loaded. Stops are retained; only the official route reference and stop directory remain available.");
  }
-}
-async function drawHohoDirection(direction,validStops){
- if(active!=='all'&&active!=='hoho')return;
- const ordered=direction==="reverse"?validStops.slice().reverse():validStops.slice();
- const requests=[];
- for(let i=0;i<ordered.length-1;i++){
-  const a=hohoRoadPoints.get(ordered[i].stop[0]),b=hohoRoadPoints.get(ordered[i+1].stop[0]);if(!a||!b)continue;
-  const url="https://router.project-osrm.org/route/v1/driving/"+a.lon+","+a.lat+";"+b.lon+","+b.lat+"?overview=full&geometries=geojson&steps=false&continue_straight=false";
-  requests.push(fetch(url).then(r=>r.ok?r.json():null).catch(()=>null));
- }
- const results=await Promise.all(requests),joined=[];
- results.forEach(data=>{if(data&&data.code==="Ok"&&data.routes&&data.routes[0])data.routes[0].geometry.coordinates.forEach(c=>{const p=[c[1],c[0]],last=joined[joined.length-1];if(!last||last[0]!==p[0]||last[1]!==p[1])joined.push(p)})});
- hohoLine.setLatLngs(joined);if(joined.length>1){if(!map.hasLayer(hohoLine))hohoLine.addTo(map);hohoLine.bringToFront()}
 }
 hohoDirection="forward";
 function popup(p){return '<div class="map-popup"><h3>'+p[0]+'</h3><p>'+tr(p[1],p[2])+'</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination='+p[4]+','+p[5]+'">'+tr('Построить маршрут','Get directions')+'</a></div>'}places.forEach(p=>{const icons={beach:'🏖️',landmark:'📍',transport:'🚢',food:'🍽️',hotel:'🏨',shop:'🛍️',service:'🛠️'};const icon=L.divIcon({className:'map-emoji-marker',html:'<span>'+ (icons[p[3]]||'📌') +'</span>',iconSize:[34,38],iconAnchor:[17,34],popupAnchor:[0,-30]});const m=L.marker([p[4],p[5]],{icon}).bindPopup(popup(p));m._place=p;markers.push(m)});const group=L.featureGroup();function render(){group.clearLayers();markers.forEach(m=>{const p=m._place;if((active==='all'||p[3]===active)&&(!query||(p[0]+' '+p[1]+' '+p[2]).toLowerCase().includes(query)))group.addLayer(m)});if(group.getLayers().length&&query)map.fitBounds(group.getBounds().pad(.18));}markers.forEach(m=>m.addTo(group));group.addTo(map);hohoLayer.addTo(map);document.getElementById('map-categories').addEventListener('click',e=>{const b=e.target.closest('[data-category]');if(!b)return;if(b.dataset.category==='hoho'){document.getElementById('hoho-stop-directory')?.scrollIntoView({behavior:'smooth',block:'start'});return}active=b.dataset.category;document.querySelectorAll('.map-filter').forEach(x=>x.classList.toggle('active',x===b));render();if(active==='all'||active==='hoho'){hohoLayer.addTo(map);if(hohoRoadReady&&hohoRoadStatus==='ready')hohoLine.addTo(map)}else{map.removeLayer(hohoLayer);map.removeLayer(hohoLine)}});document.getElementById('map-search').addEventListener('input',e=>{query=e.target.value.trim().toLowerCase();render()});document.getElementById('map-reset').addEventListener('click',()=>{active='all';query='';document.getElementById('map-search').value='';document.querySelectorAll('.map-filter').forEach(x=>x.classList.toggle('active',x.dataset.category==='all'));render();hohoLayer.addTo(map);if(hohoRoadReady&&hohoRoadStatus==='ready')hohoLine.addTo(map);map.setView([11.9674,121.9248],14)});document.getElementById('map-fullscreen').addEventListener('click',()=>{const shell=document.getElementById('map-shell');if(!document.fullscreenElement)shell.requestFullscreen?.();else document.exitFullscreen?.();setTimeout(()=>map.invalidateSize(),250)});document.addEventListener('click',e=>{if(e.target.closest('#lang-btn'))setTimeout(()=>{markers.forEach(m=>m.setPopupContent(popup(m._place)))},0)});document.getElementById('hoho-forward').addEventListener('click',()=>{hohoDirection='forward';document.getElementById('hoho-forward').classList.add('active');document.getElementById('hoho-reverse').classList.remove('active');if(hohoRoadReady)drawHohoDirection('forward',hohoValidStops)});document.getElementById('hoho-reverse').addEventListener('click',()=>{hohoDirection='reverse';document.getElementById('hoho-reverse').classList.add('active');document.getElementById('hoho-forward').classList.remove('active');if(hohoRoadReady)drawHohoDirection('reverse',hohoValidStops)});setTimeout(()=>map.invalidateSize(),300);buildHohoRoadNetwork()})();
