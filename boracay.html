@@ -292,7 +292,7 @@ async function hohoFetchDirection(direction){
  const response=await fetch(url,{cache:"no-store"});if(!response.ok)throw new Error("OSRM "+response.status);
  const data=await response.json();if(data.code!=="Ok"||!data.routes?.[0]?.geometry?.coordinates?.length)throw new Error("No route geometry: "+data.code);
  const geometry=data.routes[0].geometry;
- const stops=hohoProjectStopsToRoute(hohoRouteStops,geometry);
+ const stops=hohoProjectStopsToRoute(direction==="reverse"?hohoRouteStops.slice().reverse():hohoRouteStops,geometry);
  const result={geometry,stops,distance:data.routes[0].distance,duration:data.routes[0].duration};
  hohoRouteCache[direction]=result;return result;
 }
