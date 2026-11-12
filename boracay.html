@@ -291,7 +291,7 @@ async function hohoFetchDirection(direction){
  if(hohoRouteCache[direction])return hohoRouteCache[direction];
  const coordinates=direction==="reverse"?hohoCombinedRoute.slice().reverse():hohoCombinedRoute.slice();
  const orderedStops=direction==="reverse"?hohoRouteStops.slice().reverse():hohoRouteStops.slice();
- const stops=orderedStops.filter(p=>Number.isFinite(p[2])&&Number.isFinite(p[3])).map(stop=>({stop,lat:stop[2],lon:stop[3],anchorDistance:null,estimated:!["google-hoho-stop","user-map-point"].includes(stop[5])}));
+ const stops=orderedStops.filter(p=>Number.isFinite(p[2])&&Number.isFinite(p[3])&&["google-hoho-stop","user-map-point"].includes(p[5])).map(stop=>({stop,lat:stop[2],lon:stop[3],anchorDistance:null,estimated:false}));
  const result={geometry:{type:"LineString",coordinates},stops,distance:0,duration:0,source:"user-supplied-google-maps-screenshots"};
  hohoRouteCache[direction]=result;return result;
 }
@@ -336,7 +336,7 @@ async function buildHohoRoadNetwork(){
  try{
   await Promise.all([hohoFetchDirection("forward"),hohoFetchDirection("reverse")]);
   hohoRoadReady=true;hohoRoadStatus="ready";
-  if(status)status.textContent=tr("На карту перенесены две предоставленные трассы Google Maps: Jelo → H17 (6,2 км) и H17 → Puka Beach (3,7 км). Начальная точка Jelo привязана ориентировочно по адресу Station 1; H17, H18 и H19 имеют отдельные заданные координаты. Обратное направление показано разворотом линии и не подтверждено отдельным треком оператора.","Two supplied Google Maps route segments are traced: Jelo → H17 (6.2 km) and H17 → Puka Beach (3.7 km). Jelo's start point is approximate from its Station 1 address; H17, H18 and H19 use separately supplied coordinates. The reverse view reverses the line and is not an independently verified operator track.");
+  if(status)status.textContent=tr("Показаны две трассы по предоставленным скриншотам Google Maps: Jelo → H17 и H17 → Puka Beach. На карте оставлены только три точки с явно заданным происхождением: H17 (метка HOHO), H18 и H19 (точки пользователя). Остальные остановки не нанесены, поскольку их координаты пока не подтверждены.","Two route segments from the supplied Google Maps screenshots are shown: Jelo → H17 and H17 → Puka Beach. Only three points with explicit provenance are plotted: H17 (labelled HOHO stop), H18 and H19 (user-supplied points). Other stops are omitted because their coordinates are not yet verified.");
   await drawHohoDirection(hohoDirection);
  }catch(error){
   hohoRoadStatus="error";if(status)status.textContent=tr("Не удалось отобразить трассы Google Maps: "+error.message,"Could not display the Google Maps traces: "+error.message);
