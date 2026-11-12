@@ -280,31 +280,25 @@ month.addEventListener('change',load);reload.addEventListener('click',load);load
 }
 async function loadHohoRoutes(){
  const status=document.getElementById("hoho-route-status");
+ const originalCoordinates=hohoStops.map(p=>[p[0],p[2],p[3]]);
  if(status)status.textContent="Привязка выбранных остановок к основной дороге острова…";
- const requestRoute=async ordered=>{
+ const fetchRoute=async ordered=>{
   const coords=ordered.map(p=>p[3]+","+p[2]).join(";");
   const url="https://router.project-osrm.org/route/v1/driving/"+coords+"?overview=full&geometries=geojson&steps=false&continue_straight=false";
   const response=await fetch(url);
   if(!response.ok)throw new Error("Routing HTTP "+response.status);
   const data=await response.json();
   if(data.code!=="Ok"||!data.routes?.[0])throw new Error("Road route unavailable");
-  return data.routes[0];
+  return data;
  };
  try{
-  const start=hohoStops.find(p=>p[0]==="H1"),finish=hohoStops.find(p=>p[0]==="H19");
-  const corridor=await requestRoute([start,finish]);
-  const alignment=projectHohoStopsToMainRoad(corridor.geometry);
-  const build=async(reverse)=>{
+  const startStop=hohoStops.find(p=>p[0]==="H1"),finishStop=hohoStops.find(p=>p[0]==="H19");
+  const corridor=await fetchRoute([startStop,finishStop]);
+  const alignment=projectHohoStopsToMainRoad(corridor.routes[0].geometry);
+  const build=async reverse=>{
    const ordered=reverse?hohoStops.slice().reverse():hohoStops;
-   const route=await requestRoute(ordered);
-   const data=await (async()=>{
-    const coords=ordered.map(p=>p[3]+","+p[2]).join(";");
-    const url="https://router.project-osrm.org/route/v1/driving/"+coords+"?overview=full&geometries=geojson&steps=false&continue_straight=false";
-    const response=await fetch(url);
-    if(!response.ok)throw new Error("Routing HTTP "+response.status);
-    return await response.json();
-   })();
-   if(data.code!=="Ok"||!data.routes?.[0]||!data.waypoints||data.waypoints.length!==ordered.length)throw new Error("Road route unavailable");
+   const data=await fetchRoute(ordered);
+   if(!data.waypoints||data.waypoints.length!==ordered.length)throw new Error("Road route waypoints unavailable");
    const maxSnap=Math.max(...data.waypoints.map(w=>w.distance||0));
    if(maxSnap>150)throw new Error("Stop-to-road snap exceeds 150 m ("+Math.round(maxSnap)+" m)");
    return{coordinates:data.routes[0].geometry.coordinates.map(c=>[c[1],c[0]]),waypoints:data.waypoints.map(w=>[w.location[1],w.location[0]]),distance:data.routes[0].distance,maxSnap};
@@ -325,6 +319,7 @@ async function loadHohoRoutes(){
   drawHohoDirection();
   if(status)status.textContent="Остановки H2–H8 и H11–H16 ("+alignment.count+" маркеров) спроецированы на основную дорожную трассу острова. Максимальное смещение от исходных ориентиров: "+alignment.maxDistance+" м. Это картографическая привязка к дороге, а не подтверждение фактических знаков HOHO.";
  }catch(error){
+  originalCoordinates.forEach(([code,lat,lon])=>{const p=hohoStops.find(s=>s[0]===code);if(p){p[2]=lat;p[3]=lon}});
   hohoRoutes.forward=null;hohoRoutes.reverse=null;hohoLine.setLatLngs([]);
   if(status)status.textContent="Не удалось безопасно привязать остановки к основной дороге: "+error.message+". Исходные координаты сохранены.";
  }
