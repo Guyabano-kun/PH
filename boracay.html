@@ -274,13 +274,14 @@ function hohoPopup(code){
  if(photo&&!photo.classList.contains('missing')){const image=photo.cloneNode(true);image.classList.add('hoho-popup-photo');box.append(image)}
  const address=card.querySelector('.hoho-address');if(address){const p=document.createElement('p');p.className='hoho-popup-address';p.textContent=address.textContent;box.append(p)}
  const details=card.querySelector('details');if(details){const section=document.createElement('section');section.className='hoho-popup-nearby';const label=document.createElement('strong');label.textContent=tr('Рядом','Nearby');section.append(label);const list=details.querySelector('ul');if(list){const copy=list.cloneNode(true);section.append(copy)}else{const empty=document.createElement('p');empty.textContent=tr('Список ближайших объектов не указан в скриншоте.','Nearby places were not listed in the supplied screenshot.');section.append(empty)}box.append(section)}
- const note=document.createElement('p');note.className='hoho-popup-note';note.textContent=tr('Координата маркера предварительная; точка посадки у дороги требует отдельной проверки.','Marker coordinate is provisional; the actual roadside boarding point still requires verification.');box.append(note);
+ const road=hohoRoadPoints.get(code);const note=document.createElement('p');note.className='hoho-popup-note';note.textContent=road?tr('Дорожная привязка OSM: '+(road.name||'без названия')+'; от ориентира '+Math.round(road.snapDistance)+' м. Это ближайшая проезжая дорога к объекту, а не подтверждённая координата знака остановки.','OSM road match: '+(road.name||'unnamed road')+'; '+Math.round(road.snapDistance)+' m from landmark. This is the nearest drivable road to the POI, not a verified stop-sign coordinate.'):tr('Координата остановки не подтверждена.','Stop coordinate is not verified.');box.append(note);
  return box;
 }
 function addHohoMarker(stop,road){
+ hohoRoadPoints.set(stop[0],road);
  const icon=L.divIcon({className:'hoho-marker',html:'<span class="hoho-pin"><b>'+stop[0]+'</b><i>🚌</i></span>',iconSize:[48,46],iconAnchor:[24,42],popupAnchor:[0,-38]});
  const marker=L.marker([road.lat,road.lon],{icon}).bindPopup(hohoPopup(stop[0]),{maxWidth:340,minWidth:250});
- marker.addTo(hohoLayer);hohoMarkers.push(marker);hohoRoadPoints.set(stop[0],road);
+ marker.addTo(hohoLayer);hohoMarkers.push(marker);
 }
 async function buildHohoRoadNetwork(){
  const status=document.getElementById('hoho-road-status');
@@ -303,6 +304,7 @@ async function buildHohoRoadNetwork(){
  }
 }
 async function drawHohoDirection(direction,validStops){
+ if(active!=='all'&&active!=='hoho')return;
  const ordered=direction==="reverse"?validStops.slice().reverse():validStops.slice();
  const requests=[];
  for(let i=0;i<ordered.length-1;i++){
