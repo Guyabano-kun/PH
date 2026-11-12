@@ -287,8 +287,10 @@ function hohoProjectStopsToRoute(stops,geometry){
 async function hohoFetchDirection(direction){
  if(hohoRouteCache[direction])return hohoRouteCache[direction];
  const first=direction==="reverse"?hohoStops[hohoStops.length-1]:hohoStops[0];
+ const via=hohoStops[1];
  const last=direction==="reverse"?hohoStops[0]:hohoStops[hohoStops.length-1];
- const url="https://router.project-osrm.org/route/v1/driving/"+first[3]+","+first[2]+";"+last[3]+","+last[2]+"?overview=full&geometries=geojson&steps=false&continue_straight=false";
+ const waypoints=direction==="reverse"?[first,via,last]:[first,via,last];
+ const url="https://router.project-osrm.org/route/v1/driving/"+waypoints.map(p=>p[3]+","+p[2]).join(";")+"?overview=full&geometries=geojson&steps=false&continue_straight=false";
  const response=await fetch(url,{cache:"no-store"});if(!response.ok)throw new Error("OSRM "+response.status);
  const data=await response.json();if(data.code!=="Ok"||!data.routes?.[0]?.geometry?.coordinates?.length)throw new Error("No route geometry: "+data.code);
  const geometry=data.routes[0].geometry;
