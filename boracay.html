@@ -321,7 +321,7 @@ const hohoMarkers=[];const hohoLayer=L.layerGroup().addTo(map);const hohoPoints=
    const [forward,reverse]=await Promise.all([build(forwardStops),build(reverseStops)]);
    hohoRoutes.forward=forward;hohoRoutes.reverse=reverse;
    drawHohoDirection();
-   if(status)status.textContent="Маршрут рассчитан по дорожной сети OSRM: H16 → мимо Savoy по New Coast Drive → Belmont → H17 → Belmont → обратно мимо Savoy → H16 → H18 → H19. Обратный маршрут: H19 → H18 → H16 → H15A … H0. Координаты остановок не изменены. Максимальное дорожное смещение маршрутизатора: "+Math.round(Math.max(forward.maxSnap,reverse.maxSnap))+" м. Линия является расчётной привязкой к дорожной сети, а не GPS-треком автобуса.";
+   if(status)status.textContent="";
   }catch(error){
    hohoRoutes.forward=null;hohoRoutes.reverse=null;hohoLine.setLatLngs([]);
    if(status)status.textContent="Не удалось построить расчётную дорожную линию: "+error.message+". Исходные координаты маркеров сохранены.";
