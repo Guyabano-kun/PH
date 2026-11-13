@@ -1,54 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-<title id="title">Boracay and the Monsoons</title><desc id="desc">A schematic map of Boracay showing northeast Amihan winds exposing Bulabog Beach on the east and sheltering White Beach on the west, and southwest Habagat winds exposing White Beach and generally sheltering Bulabog.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 760" role="img" aria-labelledby="title desc">
+<title id="title">Boracay: Amihan and Habagat coastline exposure</title>
+<desc id="desc">Two side-by-side schematic maps of Boracay. During Amihan, northeast wind exposes the east coast around Bulabog and the west coast around White Beach is generally sheltered. During Habagat, southwest wind exposes the west coast and the east coast is generally sheltered.</desc>
 <defs>
- <linearGradient id="sea" x2="0" y2="1"><stop stop-color="#b8e5e8"/><stop offset="1" stop-color="#4da9b5"/></linearGradient>
- <linearGradient id="island" x2="1" y2="1"><stop stop-color="#6eaa65"/><stop offset="1" stop-color="#2e765c"/></linearGradient>
- <marker id="arrNE" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#087fba"/></marker>
- <marker id="arrSW" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#d47737"/></marker>
- <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#163d48" flood-opacity=".15"/></filter>
+ <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e6f4f5"/><stop offset="1" stop-color="#c7e5e8"/></linearGradient>
+ <linearGradient id="land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8fbd83"/><stop offset="1" stop-color="#4c896c"/></linearGradient>
+ <marker id="windBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#147fb1"/></marker>
+ <marker id="windOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#c46b36"/></marker>
+ <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#244e57" flood-opacity=".12"/></filter>
+ <g id="island">
+  <path d="M-76 -178 C-112 -165 -126 -128 -110 -88 C-96 -52 -82 -16 -63 22 C-43 63 -25 113 5 154 C27 184 60 193 80 171 C99 149 87 113 72 76 C55 34 40 -9 26 -52 C12 -98 -7 -147 -37 -170 C-50 -180 -64 -183 -76 -178Z" fill="url(#land)" stroke="#f9f2d9" stroke-width="10" filter="url(#softShadow)"/>
+  <path d="M-112 -111 C-125 -65 -92 -6 -64 47 C-45 82 -31 120 -5 154" fill="none" stroke="#fff9e7" stroke-width="8" stroke-linecap="round"/>
+  <path d="M24 -130 C54 -77 73 -13 96 46 C110 84 118 119 96 150" fill="none" stroke="#f8efd2" stroke-width="8" stroke-linecap="round"/>
+  <path d="M-120 -112 C-133 -67 -100 -6 -72 47" fill="none" stroke="#ffffff" stroke-width="3" opacity=".9"/>
+  <path d="M31 -128 C61 -75 80 -12 103 47" fill="none" stroke="#ffffff" stroke-width="3" opacity=".9"/>
+ </g>
 </defs>
-<rect width="1600" height="900" rx="28" fill="#f4f8f5"/>
-<rect x="24" y="24" width="1552" height="852" rx="24" fill="url(#sea)"/>
-<path d="M24 150Q300 100 560 150T1100 140T1576 130V24H24Z" fill="#e9f4ee" opacity=".7"/>
-<text x="70" y="95" font-family="Arial,sans-serif" font-size="58" font-weight="700" fill="#123b50">BORACAY &amp; THE MONSOONS</text>
-<text x="72" y="140" font-family="Arial,sans-serif" font-size="25" fill="#315e6b">How seasonal wind direction changes exposure on opposite coasts</text>
-<!-- Island schematic -->
-<path d="M735 190 C665 215 625 300 630 390 C634 480 670 560 700 650 C727 730 785 785 845 760 C900 735 928 660 950 575 C976 480 1000 390 972 305 C947 230 866 170 790 180Z" fill="url(#island)" stroke="#f8f3d6" stroke-width="18" filter="url(#shadow)"/>
-<path d="M622 330 C600 410 630 520 682 605" fill="none" stroke="#fff4d5" stroke-width="18" stroke-linecap="round"/>
-<path d="M980 320 C1015 420 990 540 944 625" fill="none" stroke="#f5e7bf" stroke-width="18" stroke-linecap="round"/>
-<path d="M636 365 C625 445 653 525 690 585" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
-<path d="M973 350 C995 440 970 535 940 600" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
-<text x="805" y="445" text-anchor="middle" font-family="Arial,sans-serif" font-size="39" font-weight="700" fill="#fff">BORACAY</text>
-<text x="805" y="488" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" fill="#eff8dc">ISLAND</text>
-<text x="500" y="385" text-anchor="middle" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#124c63">WHITE BEACH</text>
-<text x="500" y="422" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#124c63">WEST COAST</text>
-<text x="1110" y="385" text-anchor="middle" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#124c63">BULABOG BEACH</text>
-<text x="1110" y="422" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#124c63">EAST COAST</text>
-<!-- wind arrows -->
-<path d="M1340 250 C1220 260 1135 300 1010 360" stroke="#087fba" stroke-width="16" fill="none" marker-end="url(#arrNE)" stroke-linecap="round"/>
-<path d="M1280 180 C1165 200 1090 250 1000 305" stroke="#087fba" stroke-width="10" fill="none" marker-end="url(#arrNE)" stroke-linecap="round" opacity=".75"/>
-<text x="1320" y="115" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#075f91">NE WIND</text>
-<text x="1320" y="153" font-family="Arial,sans-serif" font-size="24" fill="#075f91">AMIHAN</text>
-<path d="M255 620 C380 590 470 540 610 500" stroke="#d47737" stroke-width="16" fill="none" marker-end="url(#arrSW)" stroke-linecap="round"/>
-<path d="M255 700 C390 670 490 610 640 555" stroke="#d47737" stroke-width="10" fill="none" marker-end="url(#arrSW)" stroke-linecap="round" opacity=".75"/>
-<text x="100" y="565" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#9b4d1d">SW WIND</text>
-<text x="100" y="603" font-family="Arial,sans-serif" font-size="24" fill="#9b4d1d">HABAGAT</text>
-<!-- panels -->
-<rect x="70" y="190" width="430" height="270" rx="22" fill="#fff" opacity=".94" filter="url(#shadow)"/>
-<rect x="70" y="190" width="430" height="58" rx="22" fill="#c16a35"/>
-<text x="98" y="229" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">HABAGAT · SOUTHWEST MONSOON</text>
-<text x="100" y="290" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#193e4d">White Beach / west coast</text>
-<text x="100" y="330" font-family="Arial,sans-serif" font-size="22" fill="#315968">Direct wind and wave exposure</text>
-<text x="100" y="365" font-family="Arial,sans-serif" font-size="22" fill="#315968">Stronger surf; water may be less clear</text>
-<text x="100" y="415" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#39715e">Bulabog is generally more sheltered</text>
-<rect x="1100" y="500" width="430" height="270" rx="22" fill="#fff" opacity=".94" filter="url(#shadow)"/>
-<rect x="1100" y="500" width="430" height="58" rx="22" fill="#087fba"/>
-<text x="1128" y="539" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">AMIHAN · NORTHEAST MONSOON</text>
-<text x="1130" y="600" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#193e4d">Bulabog / east coast</text>
-<text x="1130" y="640" font-family="Arial,sans-serif" font-size="22" fill="#315968">Direct northeast wind and wave exposure</text>
-<text x="1130" y="675" font-family="Arial,sans-serif" font-size="22" fill="#315968">Typical conditions for kite / windsurfing</text>
-<text x="1130" y="725" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#39715e">White Beach is generally more sheltered</text>
-<!-- caveat -->
-<rect x="520" y="790" width="560" height="54" rx="14" fill="#123b50"/>
-<text x="800" y="824" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" fill="#fff">Schematic exposure guide · local conditions vary by beach and day</text>
+<rect width="1440" height="760" fill="#f5f8f5"/>
+<text x="72" y="70" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#173c49">BORACAY · SEASONAL COAST EXPOSURE</text>
+<text x="72" y="105" font-family="Arial, sans-serif" font-size="18" fill="#5d777b">Schematic orientation · north is up · not a navigation chart</text>
+<!-- AMIHAN panel -->
+<rect x="54" y="140" width="648" height="550" rx="22" fill="url(#water)" stroke="#d0e2df" stroke-width="2"/>
+<rect x="54" y="140" width="648" height="82" rx="22" fill="#e4f3fa"/>
+<path d="M54 200H702" stroke="#c4dce5" stroke-width="2"/>
+<text x="86" y="181" font-family="Arial, sans-serif" font-size="27" font-weight="800" fill="#12618d">AMIHAN</text>
+<text x="86" y="207" font-family="Arial, sans-serif" font-size="15" font-weight="600" fill="#426e83">NORTHEAST MONSOON · NE → SW</text>
+<g transform="translate(380 450) scale(.82)">
+ <use href="#island"/>
+ <text x="-4" y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#fff">BORACAY</text>
+</g>
+<text x="145" y="390" font-family="Arial, sans-serif" font-size="18" font-weight="800" fill="#22586b">WEST</text>
+<text x="145" y="414" font-family="Arial, sans-serif" font-size="16" fill="#22586b">White Beach</text>
+<path d="M178 435L267 435" stroke="#27865f" stroke-width="5" stroke-linecap="round"/>
+<text x="527" y="390" font-family="Arial, sans-serif" font-size="18" font-weight="800" fill="#22586b">EAST</text>
+<text x="527" y="414" font-family="Arial, sans-serif" font-size="16" fill="#22586b">Bulabog</text>
+<path d="M520 435L604 435" stroke="#d15e48" stroke-width="5" stroke-linecap="round"/>
+<path d="M595 280L505 340" stroke="#147fb1" stroke-width="9" stroke-linecap="round" marker-end="url(#windBlue)"/>
+<path d="M650 300L558 360" stroke="#147fb1" stroke-width="6" stroke-linecap="round" marker-end="url(#windBlue)" opacity=".72"/>
+<text x="544" y="265" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#12618d">NE WIND</text>
+<rect x="86" y="565" width="270" height="82" rx="13" fill="#e2f3e9" stroke="#b8dfc9"/>
+<circle cx="111" cy="591" r="7" fill="#27865f"/>
+<text x="130" y="597" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#216346">GENERALLY SHELTERED</text>
+<text x="108" y="625" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#214d3d">White Beach · West</text>
+<rect x="374" y="565" width="292" height="82" rx="13" fill="#fbe9e3" stroke="#efc8bb"/>
+<circle cx="399" cy="591" r="7" fill="#cf624d"/>
+<text x="418" y="597" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#9c4738">WIND-EXPOSED</text>
+<text x="396" y="625" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#744034">Bulabog Beach · East</text>
+<!-- HABAGAT panel -->
+<rect x="738" y="140" width="648" height="550" rx="22" fill="url(#water)" stroke="#d0e2df" stroke-width="2"/>
+<rect x="738" y="140" width="648" height="82" rx="22" fill="#fbede3"/>
+<path d="M738 200H1386" stroke="#ead5c5" stroke-width="2"/>
+<text x="770" y="181" font-family="Arial, sans-serif" font-size="27" font-weight="800" fill="#a65329">HABAGAT</text>
+<text x="770" y="207" font-family="Arial, sans-serif" font-size="15" font-weight="600" fill="#8b6b57">SOUTHWEST MONSOON · SW → NE</text>
+<g transform="translate(1065 450) scale(.82)">
+ <use href="#island"/>
+ <text x="-4" y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#fff">BORACAY</text>
+</g>
+<text x="829" y="390" font-family="Arial, sans-serif" font-size="18" font-weight="800" fill="#22586b">WEST</text>
+<text x="829" y="414" font-family="Arial, sans-serif" font-size="16" fill="#22586b">White Beach</text>
+<path d="M862 435L951 435" stroke="#d15e48" stroke-width="5" stroke-linecap="round"/>
+<text x="1211" y="390" font-family="Arial, sans-serif" font-size="18" font-weight="800" fill="#22586b">EAST</text>
+<text x="1211" y="414" font-family="Arial, sans-serif" font-size="16" fill="#22586b">Bulabog</text>
+<path d="M1204 435L1288 435" stroke="#27865f" stroke-width="5" stroke-linecap="round"/>
+<path d="M825 520L920 460" stroke="#c46b36" stroke-width="9" stroke-linecap="round" marker-end="url(#windOrange)"/>
+<path d="M778 500L875 440" stroke="#c46b36" stroke-width="6" stroke-linecap="round" marker-end="url(#windOrange)" opacity=".72"/>
+<text x="782" y="477" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#a65329">SW WIND</text>
+<rect x="770" y="565" width="270" height="82" rx="13" fill="#fbe9e3" stroke="#efc8bb"/>
+<circle cx="795" cy="591" r="7" fill="#cf624d"/>
+<text x="814" y="597" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#9c4738">WIND-EXPOSED</text>
+<text x="792" y="625" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#744034">White Beach · West</text>
+<rect x="1058" y="565" width="292" height="82" rx="13" fill="#e2f3e9" stroke="#b8dfc9"/>
+<circle cx="1083" cy="591" r="7" fill="#27865f"/>
+<text x="1102" y="597" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#216346">GENERALLY SHELTERED</text>
+<text x="1080" y="625" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#214d3d">Bulabog Beach · East</text>
 </svg>
