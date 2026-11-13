@@ -346,6 +346,11 @@ main{width:100%;max-width:1760px;margin-inline:auto;padding-left:clamp(22px,3.2v
 @media(max-width:900px){.tide-layout{grid-template-columns:1fr}.tide-side-column{grid-template-columns:1fr 1fr}.tide-side-column .tide-explainer{grid-column:1/-1}}
 @media(max-width:600px){.tide-side-column{grid-template-columns:1fr}.tide-side-column .tide-explainer{grid-column:auto}.tide-main-column .tide-heatmap{min-width:560px}}
 
+
+/* Keep the coastal beach directory in three columns at every viewport width */
+#beach-effects .beach-list-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px}
+#beach-effects .beach-row{min-width:0;min-height:88px;padding:9px 10px}
+#beach-effects .beach-row b,#beach-effects .beach-row small{overflow-wrap:anywhere}
 </style><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script></head><body>
 <header class="top weather-site-header">
 <div class="places"><a class="place" href="boracay.html"><span aria-hidden="true">←</span><span data-ru="Путеводитель" data-en="Island guide">Путеводитель</span></a><a class="place active" href="weather.html" aria-current="page"><span aria-hidden="true">☀</span><span data-ru="Погода и море" data-en="Weather & Sea">Погода и море</span></a></div>
