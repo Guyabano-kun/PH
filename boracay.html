@@ -200,6 +200,16 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
 .utility-mobile-table tbody tr:last-child td{border-bottom:0}
 .utility-mobile-table td:last-child{font-weight:800;color:var(--accent)}
 
+
+/* Mobile floating, draggable back-to-top control */
+#back-to-top{display:none}
+@media(max-width:760px){
+ #back-to-top{display:flex;position:fixed;z-index:1500;right:16px;bottom:calc(22px + env(safe-area-inset-bottom));width:48px;height:48px;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.3);border-radius:50%;background:var(--hero);color:#fff;box-shadow:0 4px 16px rgba(0,0,0,.24);font:700 27px/1 system-ui,sans-serif;cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(8px);transition:opacity .2s,transform .2s,visibility .2s}
+ #back-to-top.is-visible{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0)}
+ #back-to-top.is-dragging{cursor:grabbing;transition:none;box-shadow:0 6px 20px rgba(0,0,0,.32)}
+ #back-to-top:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+ body.map-screen-open #back-to-top{display:none!important}
+}
 </style></head><body><header class="top">
 <div class="settings"><button class="setting-btn lang-btn" id="lang-btn" type="button" aria-label="Language"><span class="setting-icon" id="lang-flag">🇷🇺</span></button><button class="setting-btn theme-btn" id="theme-btn" type="button" aria-label="Theme: Auto"><span class="setting-icon" id="theme-icon">◐</span></button></div></header>
 <div class="fx-ticker" aria-label="PHP exchange rates"><div id="fx-ticker-items" class="fx-ticker-items"><span>🇺🇸 USD —</span><span>🇪🇺 EUR —</span><span>🇨🇳 CNY —</span><span>🇯🇵 JPY —</span><span>🇰🇷 KRW —</span><span>🇦🇺 AUD —</span></div><a class="fx-select-link" href="currency.html" data-ru="Выбрать валюту" data-en="Choose currency">Выбрать валюту</a></div>
@@ -442,4 +452,60 @@ const hohoMarkers=[];const hohoLayer=L.layerGroup().addTo(map);const hohoPoints=
  document.addEventListener('click',e=>{if(e.target.closest('#lang-btn'))setTimeout(()=>{document.querySelectorAll('.utility-item').forEach(c=>{const p=c.querySelector('.utility-detail');if(p&&c.getAttribute('aria-expanded')==='true')p.hidden=false})},0)});
 })();
 </script>
+
+<button id="back-to-top" type="button" aria-label="Наверх" title="Переместить вверх">↑</button>
+
+<script>
+(()=>{
+ const button=document.getElementById('back-to-top');
+ if(!button)return;
+ const mobile=window.matchMedia('(max-width:760px)');
+ const storageKey='ph-back-to-top-position-v1';
+ let startX=0,startY=0,originX=0,originY=0,dragging=false,moved=false,suppressClick=false;
+ const clamp=(v,min,max)=>Math.min(Math.max(v,min),max);
+ const save=()=>{try{localStorage.setItem(storageKey,JSON.stringify({x:parseFloat(button.style.left),y:parseFloat(button.style.top)}))}catch(e){}};
+ const place=(x,y,persist=false)=>{
+  const maxX=Math.max(0,window.innerWidth-button.offsetWidth);
+  const maxY=Math.max(0,window.innerHeight-button.offsetHeight);
+  const nx=clamp(x,0,maxX),ny=clamp(y,0,maxY);
+  button.style.left=nx+'px';button.style.top=ny+'px';button.style.right='auto';button.style.bottom='auto';
+  if(persist)save();
+ };
+ try{
+  const saved=JSON.parse(localStorage.getItem(storageKey)||'null');
+  if(saved&&Number.isFinite(saved.x)&&Number.isFinite(saved.y))requestAnimationFrame(()=>place(saved.x,saved.y));
+ }catch(e){}
+ const update=()=>button.classList.toggle('is-visible',mobile.matches&&window.scrollY>320&&!document.body.classList.contains('map-screen-open'));
+ window.addEventListener('scroll',update,{passive:true});
+ window.addEventListener('resize',()=>{if(button.style.left)place(parseFloat(button.style.left),parseFloat(button.style.top),true);update()});
+ mobile.addEventListener?.('change',update);
+ button.addEventListener('pointerdown',e=>{
+  if(!mobile.matches)return;
+  const rect=button.getBoundingClientRect();
+  startX=e.clientX;startY=e.clientY;originX=rect.left;originY=rect.top;
+  dragging=true;moved=false;button.classList.add('is-dragging');
+  button.setPointerCapture?.(e.pointerId);
+  e.preventDefault();
+ });
+ button.addEventListener('pointermove',e=>{
+  if(!dragging)return;
+  const dx=e.clientX-startX,dy=e.clientY-startY;
+  if(Math.abs(dx)>4||Math.abs(dy)>4)moved=true;
+  if(moved)place(originX+dx,originY+dy);
+ });
+ const endDrag=e=>{
+  if(!dragging)return;
+  dragging=false;button.classList.remove('is-dragging');
+  if(moved){save();suppressClick=true;}
+ };
+ button.addEventListener('pointerup',endDrag);
+ button.addEventListener('pointercancel',endDrag);
+ button.addEventListener('click',e=>{
+  if(suppressClick){e.preventDefault();e.stopPropagation();suppressClick=false;return;}
+  window.scrollTo({top:0,behavior:'smooth'});
+ });
+ update();
+})();
+</script>
+
 </body></html>
