@@ -134,6 +134,38 @@ footer a:hover{text-decoration:underline}
 .map-emoji-marker{background:transparent;border:0}
 .map-emoji-marker span{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50% 50% 50% 8px;transform:rotate(-45deg);background:#fff;border:2px solid #087f82;box-shadow:0 2px 7px #0005;font-size:19px;line-height:1}
 .map-emoji-marker.selected span{background:#d8f5ff;border-color:#087acb;box-shadow:0 0 0 3px #7de7ff,0 2px 8px #0005}
+
+/* Wide-screen layout: expand the dashboard and seasonal content to the viewport */
+main{width:100%;max-width:1760px;margin-inline:auto;padding-left:clamp(22px,3.2vw,58px);padding-right:clamp(22px,3.2vw,58px)}
+.weather-dashboard{width:100%;max-width:none!important;padding-left:0!important;padding-right:0!important}
+.dashboard-grid{grid-template-columns:minmax(0,1.12fr) minmax(500px,.88fr);gap:20px}
+.weather-info-column{min-width:0}
+.season-heading,.season-heading .season-lead,.season-local-heading p,.season-matrix-heading p{max-width:100%}
+.season-rule-grid,.season-grid,.season-reference-grid{gap:18px}
+.leaflet-map{height:clamp(700px,calc(100vh - 165px),1180px)}
+@media(min-width:1500px){
+ .info-card{padding:19px 22px}
+ .weather-facts p{font-size:.94rem;line-height:1.48}
+ .beach-row{padding:13px 7px}
+ .month-grid{gap:8px}
+ .month-grid button{padding:9px 5px;font-size:.8rem}
+ .season-rule,.season-card{padding:25px}
+ .season-table th,.season-table td{padding:15px 17px}
+}
+@media(max-width:1100px){
+ main{padding-left:24px;padding-right:24px}
+ .dashboard-grid{grid-template-columns:minmax(0,1.05fr) minmax(390px,.95fr);gap:14px}
+}
+@media(max-width:900px){
+ main{padding-left:18px;padding-right:18px}
+ .dashboard-grid{grid-template-columns:1fr}
+ .leaflet-map{height:72vh;min-height:570px;max-height:900px}
+}
+@media(max-width:580px){
+ main{padding-left:14px;padding-right:14px}
+ .leaflet-map{height:68vh;min-height:500px}
+}
+
 </style><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script></head><body>
 <header class="top weather-site-header">
 <div class="places"><a class="place" href="boracay.html"><span aria-hidden="true">←</span><span data-ru="Путеводитель" data-en="Island guide">Путеводитель</span></a><a class="place active" href="weather.html" aria-current="page"><span aria-hidden="true">☀</span><span data-ru="Погода и море" data-en="Weather & Sea">Погода и море</span></a></div>
