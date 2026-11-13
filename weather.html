@@ -198,6 +198,42 @@ main{width:100%;max-width:1760px;margin-inline:auto;padding-left:clamp(22px,3.2v
 .beach-choice-card>p{margin:10px 0 0;padding:10px 12px;border-radius:10px;background:#fff4d5;color:#70530a;font-size:.8rem;line-height:1.45}
 @media(max-width:580px){.beach-list-grid{grid-template-columns:1fr}.beach-row{min-height:0}.beach-choice-card ol{font-size:.84rem}}
 
+
+/* Compact editorial dashboard: balance the map with the information below it */
+.dashboard-grid{grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);gap:16px;align-items:stretch}
+.map-column{display:flex;flex-direction:column;min-width:0}
+.leaflet-map{height:clamp(470px,58vh,620px)!important;min-height:470px!important;max-height:620px!important}
+.map-lower-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:10px;align-content:start}
+.map-lower-grid .info-card{margin:0;padding:13px 15px}
+.map-lower-grid .info-card h3{margin-bottom:9px}
+.map-lower-grid #season-overview .month-grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+.map-lower-grid .takeaway-card ul{display:grid;grid-template-columns:1fr 1fr;gap:4px 18px}
+.beach-choice-card>p{margin:0;padding:0;background:transparent;color:#29465d;font-size:.84rem;line-height:1.45}
+.beach-choice-card>p b{color:#07518c}
+.weather-info-column{min-width:0}
+#beach-effects .beach-list-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+#beach-effects .beach-row{min-height:94px;padding:9px 10px;gap:6px}
+#beach-effects .beach-row b{font-size:.82rem}
+#beach-effects .beach-row small{font-size:.72rem;line-height:1.3}
+#beach-effects .beach-list-intro{margin-bottom:8px;font-size:.78rem}
+#beach-effects .beach-list-note{font-size:.7rem;line-height:1.35;margin-top:8px}
+@media(max-width:900px){
+ .dashboard-grid{grid-template-columns:1fr;align-items:start}
+ .leaflet-map{height:clamp(420px,58vh,600px)!important;min-height:420px!important}
+ .map-lower-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .map-lower-grid .beach-choice-card{grid-column:1/-1}
+ .weather-info-column{display:grid;grid-template-columns:1fr 1fr;align-items:start}
+ .weather-info-column #beach-effects{grid-column:1/-1}
+}
+@media(max-width:580px){
+ .leaflet-map{height:58vh!important;min-height:380px!important}
+ .map-lower-grid{grid-template-columns:1fr}
+ .map-lower-grid .beach-choice-card{grid-column:auto}
+ .map-lower-grid .takeaway-card ul{grid-template-columns:1fr}
+ .weather-info-column{display:flex}
+ #beach-effects .beach-list-grid{grid-template-columns:1fr}
+}
+
 </style><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script></head><body>
 <header class="top weather-site-header">
 <div class="places"><a class="place" href="boracay.html"><span aria-hidden="true">←</span><span data-ru="Путеводитель" data-en="Island guide">Путеводитель</span></a><a class="place active" href="weather.html" aria-current="page"><span aria-hidden="true">☀</span><span data-ru="Погода и море" data-en="Weather & Sea">Погода и море</span></a></div>
@@ -212,6 +248,11 @@ main{width:100%;max-width:1760px;margin-inline:auto;padding-left:clamp(22px,3.2v
 <div class="map-legend"><span><i class="dot exposed"></i><span data-ru="Открыто ветру" data-en="Wind-exposed">Открыто ветру</span></span><span><i class="dot sheltered"></i><span data-ru="Обычно защищено" data-en="Generally sheltered">Обычно защищено</span></span><span><i class="dot variable"></i><span data-ru="Зависит от локальных условий" data-en="Locally variable">Зависит от локальных условий</span></span></div>
 <div id="selected-beach-card" class="selected-beach-card" aria-live="polite"><strong>Bulabog Beach · East coast</strong><p>Amihan: exposed to northeast winds and waves. Typical conditions for kite- and windsurfing; not necessarily calm for swimming.</p></div>
 </div>
+<div class="map-lower-grid"><div class="info-card" id="season-overview"><h3 data-ru="Сезонный обзор" data-en="Seasonal Overview">Сезонный обзор</h3><div class="month-grid" id="month-grid"></div><div class="season-summary" id="season-summary">Amihan · November–May · Generally more stable, calmer sea conditions.</div></div>
+<div class="info-card takeaway-card"><h3 data-ru="Главное" data-en="Key Takeaways">Главное</h3><ul><li data-ru="Боракай доступен для посещения круглый год." data-en="Boracay can be visited year-round.">Боракай доступен для посещения круглый год.</li><li data-ru="Более стабильная пляжная погода обычно с ноября по май (Amihan)." data-en="More stable beach weather is typical from November to May (Amihan).">Более стабильная пляжная погода обычно с ноября по май (Amihan).</li><li data-ru="С июня по октябрь (Habagat) обычно больше ветра и дождей." data-en="June to October (Habagat) is generally windier and wetter.">С июня по октябрь (Habagat) обычно больше ветра и дождей.</li><li data-ru="Проверяйте ежедневный прогноз и состояние моря перед водными активностями." data-en="Check daily forecasts and sea conditions before water activities.">Проверяйте ежедневный прогноз и состояние моря перед водными активностями.</li></ul><div class="info-card beach-choice-card">
+<h3 data-ru="Быстрый выбор" data-en="Quick beach guide">Быстрый выбор</h3>
+<p data-ru="<b>Amihan (ноябрь–май):</b> начните с White Beach и западных бухт. <b>Habagat (июнь–октябрь):</b> проверьте Bulabog и восточный берег. Выбирайте день по прогнозу ветра и волн, а не только по месяцу." data-en="<b>Amihan (November–May):</b> start with White Beach and the west-coast coves. <b>Habagat (June–October):</b> check Bulabog and the east shore. Choose the day using wind and wave forecasts, not the month alone."><b>Amihan (ноябрь–май):</b> начните с White Beach и западных бухт. <b>Habagat (июнь–октябрь):</b> проверьте Bulabog и восточный берег. Выбирайте день по прогнозу ветра и волн, а не только по месяцу.</p>
+</div></div>
 <aside class="weather-info-column">
 <div class="info-card monsoon-info" id="monsoon-details"><div class="info-title"><span id="monsoon-icon">☀</span><div><h3 id="monsoon-title">Amihan – Northeast Monsoon</h3><span id="monsoon-period">November – May</span></div></div><div class="weather-facts"><p><b data-ru="Типичная погода" data-en="Typical weather">Типичная погода</b><span id="weather-summary">Mostly sunny, lower humidity, more stable conditions.</span></p><p><b data-ru="Ветер" data-en="Wind">Ветер</b><span id="wind-summary">Northeast, typically 10–30 km/h; stronger at Bulabog.</span></p><p><b data-ru="Море" data-en="Sea">Море</b><span id="sea-summary">Generally calmer, especially on White Beach.</span></p><p><b data-ru="Подходит для" data-en="Best for">Подходит для</b><span id="best-summary">Beach activities, swimming, relaxation and island hopping.</span></p></div></div>
 <div class="info-card" id="beach-effects">
@@ -234,18 +275,7 @@ main{width:100%;max-width:1760px;margin-inline:auto;padding-left:clamp(22px,3.2v
 </div>
 <p class="beach-list-note" data-ru="Также на официальной туристической карте обозначены Cagban, Lugutan и Manoc-Manoc. Это портовые или локальные прибрежные участки, поэтому они не включены в список пляжей для обычного купания. Координаты маркеров приведены к картографическим объектам; для Lapus-Lapus и Hagdan маркер не ставится без достаточно точной привязки." data-en="The official tourism map also identifies Cagban, Lugutan and Manoc-Manoc. These are port or local shoreline areas, so they are not presented as ordinary swimming beaches. Markers use mapped beach features; Lapus-Lapus and Hagdan are listed without a pin because a sufficiently precise point could not be confirmed.">Также официальная туристическая карта обозначает Cagban, Lugutan и Manoc-Manoc. Это портовые или локальные прибрежные участки, а не универсальные рекомендации для купания. Маркеры привязаны к картографическим объектам пляжей; для Lapus-Lapus и Hagdan точка не ставится без достаточно точной привязки. <a href="https://www.tpb.gov.ph/wp-content/uploads/2023/10/Boracay-Map.pdf" target="_blank" rel="noopener">Официальная карта Boracay · Tourism Promotions Board</a> · <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener">OpenStreetMap</a>.</p>
 </div>
-<div class="info-card beach-choice-card">
-<h3 data-ru="Как выбрать пляж и время" data-en="How to choose a beach and time">Как выбрать пляж и время</h3>
-<ol>
-<li data-ru="Сначала выберите месяц в календаре ниже: он задаёт только сезонный фон, а не гарантирует погоду." data-en="Choose a month in the calendar below first: it sets the seasonal background, not a weather guarantee.">Сначала выберите месяц в календаре ниже: он задаёт только сезонный фон, а не гарантирует погоду.</li>
-<li data-ru="При Amihan (северо-восточный ветер) сначала проверяйте западное побережье: White Beach, Diniwid, Punta Bunga и Balinghai. При Habagat (юго-западный ветер) проверяйте восточную сторону, включая Bulabog. Северные бухты и южные участки оценивайте отдельно." data-en="During Amihan (northeast wind), check the west coast first: White Beach, Diniwid, Punta Bunga and Balinghai. During Habagat (southwest wind), check the east side, including Bulabog. Assess northern coves and southern beaches separately.">При Amihan (северо-восточный ветер) сначала проверяйте западное побережье: White Beach, Diniwid, Punta Bunga и Balinghai. При Habagat (юго-западный ветер) проверяйте восточную сторону, включая Bulabog. Северные бухты и южные участки оценивайте отдельно.</li>
-<li data-ru="На выбранную дату сравните почасовой ветер, порывы, осадки и волну за 24–72 часа. Время выхода выбирайте по самому спокойному прогнозному окну, а не по правилу «утром всегда лучше»." data-en="For the chosen date, compare hourly wind, gusts, rainfall and waves over the next 24–72 hours. Choose the calmest forecast window rather than assuming mornings are always better.">На выбранную дату сравните почасовой ветер, порывы, осадки и волну за 24–72 часа. Время выхода выбирайте по самому спокойному прогнозному окну, а не по правилу «утром всегда лучше».</li>
-<li data-ru="Сверьте прилив с таблицей ниже. При сильном прибое, красном флаге, предупреждении или указании спасателей не купайтесь даже на условно подветренном пляже." data-en="Check the tide table below. Do not swim during strong surf, a red flag, an official warning or when lifeguards advise against it, even at a nominally sheltered beach.">Сверьте прилив с таблицей ниже. При сильном прибое, красном флаге, предупреждении или указании спасателей не купайтесь даже на условно подветренном пляже.</li>
-</ol>
-<p data-ru="Сезонная экспозиция помогает выбрать сторону острова, но не является прогнозом волн или оценкой безопасности купания." data-en="Seasonal exposure helps choose which side of the island to check; it is not a wave forecast or a swimming-safety assessment.">Сезонная экспозиция помогает выбрать сторону острова, но не является прогнозом волн или оценкой безопасности купания.</p>
 </div>
-<div class="info-card" id="season-overview"><h3 data-ru="Сезонный обзор" data-en="Seasonal Overview">Сезонный обзор</h3><div class="month-grid" id="month-grid"></div><div class="season-summary" id="season-summary">Amihan · November–May · Generally more stable, calmer sea conditions.</div></div>
-<div class="info-card takeaway-card"><h3 data-ru="Главное" data-en="Key Takeaways">Главное</h3><ul><li data-ru="Боракай доступен для посещения круглый год." data-en="Boracay can be visited year-round.">Боракай доступен для посещения круглый год.</li><li data-ru="Более стабильная пляжная погода обычно с ноября по май (Amihan)." data-en="More stable beach weather is typical from November to May (Amihan).">Более стабильная пляжная погода обычно с ноября по май (Amihan).</li><li data-ru="С июня по октябрь (Habagat) обычно больше ветра и дождей." data-en="June to October (Habagat) is generally windier and wetter.">С июня по октябрь (Habagat) обычно больше ветра и дождей.</li><li data-ru="Проверяйте ежедневный прогноз и состояние моря перед водными активностями." data-en="Check daily forecasts and sea conditions before water activities.">Проверяйте ежедневный прогноз и состояние моря перед водными активностями.</li></ul></div>
 </aside></div>
 
 </section>
