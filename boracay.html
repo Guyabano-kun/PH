@@ -193,6 +193,13 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
 .utility-grid-single{grid-template-columns:minmax(0,1fr);max-width:760px}
 .utility-expand-label{display:inline-block;margin-top:4px;color:var(--accent);font-weight:750;text-decoration:underline;text-underline-offset:3px}
 .utility-detail p{margin:9px 0;color:var(--muted);font-size:.94rem;line-height:1.6}
+.utility-mobile-table-wrap{max-width:100%;overflow-x:auto;margin:12px 0;border:1px solid var(--line);border-radius:9px}
+.utility-mobile-table{width:100%;min-width:680px;border-collapse:collapse;font-size:.88rem;line-height:1.4}
+.utility-mobile-table th,.utility-mobile-table td{padding:9px 10px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);white-space:nowrap}
+.utility-mobile-table thead th{background:var(--bg);font-weight:800}
+.utility-mobile-table tbody tr:last-child td{border-bottom:0}
+.utility-mobile-table td:last-child{font-weight:800;color:var(--accent)}
+
 </style></head><body><header class="top">
 <div class="settings"><button class="setting-btn lang-btn" id="lang-btn" type="button" aria-label="Language"><span class="setting-icon" id="lang-flag">🇷🇺</span></button><button class="setting-btn theme-btn" id="theme-btn" type="button" aria-label="Theme: Auto"><span class="setting-icon" id="theme-icon">◐</span></button></div></header>
 <div class="fx-ticker" aria-label="PHP exchange rates"><div id="fx-ticker-items" class="fx-ticker-items"><span>🇺🇸 USD —</span><span>🇪🇺 EUR —</span><span>🇨🇳 CNY —</span><span>🇯🇵 JPY —</span><span>🇰🇷 KRW —</span><span>🇦🇺 AUD —</span></div><a class="fx-select-link" href="currency.html" data-ru="Выбрать валюту" data-en="Choose currency">Выбрать валюту</a></div>
@@ -229,7 +236,7 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
 </article>
 <article class="utility-item" data-utility-card="1" tabindex="0" role="button" aria-expanded="false" aria-controls="utility-water-detail">
 <h3 data-ru="2. Вода" data-en="2. Water">2. Вода</h3>
-<strong>₱220–250 / м³ · ₱638–1,625 / мес.</strong>
+<strong>₱638–1,625 / мес.</strong>
 <span class="utility-expand-label" data-ru="Узнать детально ↓" data-en="See details ↓">Узнать детально ↓</span>
 <div class="utility-detail" id="utility-water-detail" hidden>
 <div class="utility-detail-title" data-ru="Откуда взят объём потребления" data-en="Water consumption basis">Откуда взят объём потребления</div>
@@ -268,19 +275,26 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
 <strong data-ru="Пакеты от ₱59 · prepaid" data-en="Prepaid promos from ₱59">Пакеты от ₱59 · prepaid</strong>
 <span class="utility-expand-label" data-ru="Узнать детально ↓" data-en="See details ↓">Узнать детально ↓</span>
 <div class="utility-detail" id="utility-mobile-detail" hidden>
-<div class="utility-detail-title" data-ru="Globe Prepaid — GoEXTRA" data-en="Globe Prepaid — GoEXTRA">Globe Prepaid — GoEXTRA</div>
-<ul class="utility-provider-list">
-<li data-ru="GoEXTRA59 — 5 GB на все сайты, безлимитные звонки и SMS на все сети, 3 дня — ₱59." data-en="GoEXTRA59 — 5 GB all-access data, unlimited calls and texts to all networks, 3 days — ₱59."><strong>GoEXTRA59:</strong> 5 GB на все сайты, безлимитные звонки и SMS на все сети, 3 дня — ₱59.</li>
-<li data-ru="GoEXTRA99 — 11 GB всего (7 GB на все сайты + 4 GB 5G), безлимитные звонки и SMS на все сети, 7 дней — ₱99." data-en="GoEXTRA99 — 11 GB total (7 GB all-access + 4 GB 5G), unlimited calls and texts to all networks, 7 days — ₱99."><strong>GoEXTRA99:</strong> 11 GB всего (7 GB на все сайты + 4 GB 5G), безлимитные звонки и SMS на все сети, 7 дней — ₱99.</li>
-<li data-ru="GoEXTRA149 — 21 GB всего (13 GB на все сайты + 8 GB 5G), безлимитные звонки и SMS на все сети, 15 дней — ₱149." data-en="GoEXTRA149 — 21 GB total (13 GB all-access + 8 GB 5G), unlimited calls and texts to all networks, 15 days — ₱149."><strong>GoEXTRA149:</strong> 21 GB всего (13 GB на все сайты + 8 GB 5G), безлимитные звонки и SMS на все сети, 15 дней — ₱149.</li>
-</ul>
-<div class="utility-detail-title" data-ru="Smart Prepaid — Magic Data+" data-en="Smart Prepaid — Magic Data+">Smart Prepaid — Magic Data+</div>
-<ul class="utility-provider-list">
-<li data-ru="₱199 — 4 GB без срока действия (3 GB + 1 GB 5G), 50 минут звонков на мобильные и городские номера + 50 SMS." data-en="₱199 — 4 GB no-expiry data (3 GB + 1 GB 5G), 50 minutes to mobile and landline numbers + 50 texts."><strong>₱199:</strong> 4 GB без срока действия (3 GB + 1 GB 5G), 50 минут звонков на мобильные и городские номера + 50 SMS.</li>
-<li data-ru="₱299 — 10 GB без срока действия (8 GB + 2 GB 5G), 100 минут звонков + 100 SMS." data-en="₱299 — 10 GB no-expiry data (8 GB + 2 GB 5G), 100 call minutes + 100 texts."><strong>₱299:</strong> 10 GB без срока действия (8 GB + 2 GB 5G), 100 минут звонков + 100 SMS.</li>
-<li data-ru="₱499 — 30 GB без срока действия (26 GB + 4 GB 5G), 200 минут звонков + 200 SMS." data-en="₱499 — 30 GB no-expiry data (26 GB + 4 GB 5G), 200 call minutes + 200 texts."><strong>₱499:</strong> 30 GB без срока действия (26 GB + 4 GB 5G), 200 минут звонков + 200 SMS.</li>
-<li data-ru="₱699 — 50 GB без срока действия (44 GB + 6 GB 5G), 300 минут звонков + 300 SMS." data-en="₱699 — 50 GB no-expiry data (44 GB + 6 GB 5G), 300 минут звонков + 300 SMS."><strong>₱699:</strong> 50 GB без срока действия (44 GB + 6 GB 5G), 300 минут звонков + 300 SMS.</li>
-</ul>
+<div class="utility-mobile-table-wrap">
+<table class="utility-mobile-table">
+<thead><tr>
+<th data-ru="Оператор" data-en="Operator">Оператор</th>
+<th data-ru="Пакет" data-en="Plan">Пакет</th>
+<th data-ru="Интернет" data-en="Data">Интернет</th>
+<th data-ru="Звонки" data-en="Calls">Звонки</th>
+<th>SMS</th>
+<th data-ru="Срок" data-en="Validity">Срок</th>
+<th data-ru="Цена" data-en="Price">Цена</th>
+</tr></thead>
+<tbody>
+<tr><td><strong>Globe</strong></td><td>GoEXTRA59</td><td>5 GB</td><td data-ru="Безлимитно" data-en="Unlimited">Безлимитно</td><td data-ru="Безлимитно" data-en="Unlimited">Безлимитно</td><td data-ru="3 дня" data-en="3 days">3 дня</td><td>₱59</td></tr>
+<tr><td><strong>Globe</strong></td><td>GoEXTRA99</td><td>7 GB + 4 GB 5G</td><td data-ru="Безлимитно" data-en="Unlimited">Безлимитно</td><td data-ru="Безлимитно" data-en="Unlimited">Безлимитно</td><td data-ru="7 дней" data-en="7 days">7 дней</td><td>₱99</td></tr>
+<tr><td><strong>Globe</strong></td><td>GoEXTRA149</td><td>13 GB + 8 GB 5G</td><td data-ru="Безлимитно" data-en="Unlimited">Безлимитно</td><td data-ru="Безлимитно" data-en="Unlimited">Безлимитно</td><td data-ru="15 дней" data-en="15 days">15 дней</td><td>₱149</td></tr>
+<tr><td><strong>Smart</strong></td><td>Magic Data+ 199</td><td>3 GB + 1 GB 5G</td><td>50 мин.</td><td>50</td><td data-ru="Без срока" data-en="No expiry">Без срока</td><td>₱199</td></tr>
+<tr><td><strong>Smart</strong></td><td>Magic Data+ 299</td><td>8 GB + 2 GB 5G</td><td>100 мин.</td><td>100</td><td data-ru="Без срока" data-en="No expiry">Без срока</td><td>₱299</td></tr>
+<tr><td><strong>Smart</strong></td><td>Magic Data+ 499</td><td>26 GB + 4 GB 5G</td><td>200 мин.</td><td>200</td><td data-ru="Без срока" data-en="No expiry">Без срока</td><td>₱499</td></tr>
+<tr><td><strong>Smart</strong></td><td>Magic Data+ 699</td><td>44 GB + 6 GB 5G</td><td>300 мин.</td><td>300</td><td data-ru="Без срока" data-en="No expiry">Без срока</td><td>₱699</td></tr>
+</tbody></table></div>
 <p class="utility-caveat" data-ru="5G-трафик доступен только при наличии 5G-совместимых SIM и телефона, а также покрытия 5G в конкретной точке Боракая. Покрытие и фактическая скорость могут отличаться по району и внутри здания. У Smart пакет данных не истекает, но SIM должна оставаться активной (минимум ₱1 баланса); включённые минуты и SMS прекращают действие после полного расходования данных. У Globe звонки и SMS в GoEXTRA безлимитны в течение срока пакета; звонки на стационарные номера могут иметь отдельные ограничения." data-en="5G data requires a 5G-capable SIM and phone, plus 5G coverage at the specific Boracay location. Coverage and actual speed vary by area and indoors. Smart data does not expire, but the SIM must remain active (at least ₱1 load); included minutes and texts expire once the data is fully used. Globe GoEXTRA calls and texts are unlimited during the promo validity; calls to landlines may have separate restrictions.">5G-трафик доступен только при наличии 5G-совместимых SIM и телефона, а также покрытия 5G в конкретной точке Боракая. Покрытие и фактическая скорость могут отличаться по району и внутри здания. У Smart пакет данных не истекает, но SIM должна оставаться активной (минимум ₱1 баланса); включённые минуты и SMS прекращают действие после полного расходования данных. У Globe звонки и SMS в GoEXTRA безлимитны в течение срока пакета; звонки на стационарные номера могут иметь отдельные ограничения.</p>
 <p><a href="https://www.globe.com.ph/prepaid/goextra" target="_blank" rel="noopener">Globe · GoEXTRA promos</a> · <a href="https://store.smart.com.ph/promos-and-add-ons/smart-prepaid/all-in" target="_blank" rel="noopener">Smart · prepaid promos</a></p>
 </div>
