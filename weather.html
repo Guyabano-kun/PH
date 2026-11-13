@@ -166,6 +166,18 @@ main{width:100%;max-width:1760px;margin-inline:auto;padding-left:clamp(22px,3.2v
  .leaflet-map{height:68vh;min-height:500px}
 }
 
+
+/* Three-column seasonal content where there are enough cards */
+@media(min-width:1101px){
+ .season-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(min-width:761px) and (max-width:1100px){
+ .season-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+ .season-grid{grid-template-columns:minmax(0,1fr)}
+}
+
 </style><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script></head><body>
 <header class="top weather-site-header">
 <div class="places"><a class="place" href="boracay.html"><span aria-hidden="true">←</span><span data-ru="Путеводитель" data-en="Island guide">Путеводитель</span></a><a class="place active" href="weather.html" aria-current="page"><span aria-hidden="true">☀</span><span data-ru="Погода и море" data-en="Weather & Sea">Погода и море</span></a></div>
