@@ -239,6 +239,39 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
  .hoho-stop-grid{grid-template-columns:1fr}
 }
 
+
+/* Utility cards: compact three-column layout on desktop */
+.utility-grid-single{
+ width:100%;
+ max-width:none;
+ grid-template-columns:repeat(3,minmax(0,1fr));
+ align-items:start;
+ gap:14px;
+}
+.utility-grid-single>.utility-item{
+ min-width:0;
+ padding:18px;
+}
+.utility-grid-single .utility-detail{
+ min-width:0;
+}
+.utility-grid-single .utility-line{
+ gap:8px;
+}
+.utility-grid-single .utility-line span{
+ min-width:0;
+}
+.utility-grid-single .utility-line b{
+ flex:none;
+}
+@media(max-width:1000px){
+ .utility-grid-single{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:620px){
+ .utility-grid-single{grid-template-columns:minmax(0,1fr);gap:10px}
+ .utility-grid-single>.utility-item{padding:16px}
+}
+
 </style></head><body><header class="top">
 <div class="places"><a class="place" href="weather.html"><span aria-hidden="true">☀</span><span data-ru="Погода и море" data-en="Weather & Sea">Погода и море</span></a></div>
 <div class="settings"><button class="setting-btn lang-btn" id="lang-btn" type="button" aria-label="Language"><span class="setting-icon" id="lang-flag">🇷🇺</span></button><button class="setting-btn theme-btn" id="theme-btn" type="button" aria-label="Theme: Auto"><span class="setting-icon" id="theme-icon">◐</span></button></div></header>
