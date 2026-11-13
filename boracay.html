@@ -210,6 +210,35 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
  #back-to-top:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
  body.map-screen-open #back-to-top{display:none!important}
 }
+
+/* Wide-screen layout: use the available viewport without changing the content architecture */
+.wrap{width:100%;max-width:1760px;margin-inline:auto;padding-left:clamp(22px,3.2vw,58px);padding-right:clamp(22px,3.2vw,58px)}
+.utility-grid-single{width:100%;max-width:none;grid-template-columns:minmax(0,1fr)}
+.utility-explanation,.utility-subsection{max-width:none}
+.utility-provider-list{columns:2;column-gap:42px}
+.utility-provider-list li{break-inside:avoid}
+#boracay-map{height:clamp(620px,68vh,900px)}
+.hoho-stop-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(min-width:1500px){
+ .grid,.weather-grid,.season-grid{gap:20px}
+ .card{padding:30px;min-height:190px}
+ .utility-grid{gap:20px}
+ .utility-item{padding:24px}
+ .hoho-stop-grid{gap:18px}
+}
+@media(max-width:1100px){
+ .hoho-stop-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:760px){
+ .wrap{padding-left:18px;padding-right:18px}
+ .utility-provider-list{columns:1}
+ .hoho-stop-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:520px){
+ .wrap{padding-left:14px;padding-right:14px}
+ .hoho-stop-grid{grid-template-columns:1fr}
+}
+
 </style></head><body><header class="top">
 <div class="places"><a class="place" href="weather.html"><span aria-hidden="true">☀</span><span data-ru="Погода и море" data-en="Weather & Sea">Погода и море</span></a></div>
 <div class="settings"><button class="setting-btn lang-btn" id="lang-btn" type="button" aria-label="Language"><span class="setting-icon" id="lang-flag">🇷🇺</span></button><button class="setting-btn theme-btn" id="theme-btn" type="button" aria-label="Theme: Auto"><span class="setting-icon" id="theme-icon">◐</span></button></div></header>
