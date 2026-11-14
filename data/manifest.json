@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.32",
+  "dataset_version": "0.2.33",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-15",
   "beach_count": 13,
@@ -103,6 +103,7 @@
     "Coordinate protocol reaffirmed: coordinates are typed as beach-feature, monitoring-station, locality, tourist-guide, Plus Code cell, business POI or operator stop-area references. Distances between unlike point types are evidence of spatial separation, not permission to substitute one point type for another. No map reference is labelled a surveyed beach centroid without survey evidence.",
     "Version 0.2.31: excursion itinerary evidence expanded with current operator and marketplace listings (SRC-078 to SRC-080). Balinghai is recorded as a possible Amihan-season itinerary stop and Ilig-Iligan as a possible Habagat-season stop. These are visit-access records only; no departure point, legal landing right or public access is inferred. White Beach Station 1 and Bulabog seasonal locations remain operator-specific meeting/activity points, not universal official terminals.",
     "Version 0.2.31: itinerary stop season labels are operator/listing-specific. Where month ranges differ between operators, preserve the cited listing's range and do not normalize it into a universal island-wide operating season.",
-    "Version 0.2.32: added DENR-EMB CY 2021 station-specific fecal-coliform geomeans and compliance percentages for 10 active monitoring stations, with 12 sampling events and Class SB/SC guideline values preserved. Results are historical and are not generalized to entire beaches or presented as current bathing-water status."
+    "Version 0.2.32: added DENR-EMB CY 2021 station-specific fecal-coliform geomeans and compliance percentages for 10 active monitoring stations, with 12 sampling events and Class SB/SC guideline values preserved. Results are historical and are not generalized to entire beaches or presented as current bathing-water status.",
+    "Version 0.2.33: added station-specific fecal-coliform geomeans from the DENR-EMB 2023 report's comparative CY 2018–2023 chart: CY 2020 for 10 active stations and CY 2018–2019 only where the chart's station name exactly matches a passport station. No compliance percentages or sampling-event counts were inferred for comparative years where the chart does not publish them."
   ]
 }
