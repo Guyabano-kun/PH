@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.30",
+  "dataset_version": "0.2.31",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-15",
   "beach_count": 13,
@@ -100,6 +100,8 @@
     "Version 0.2.30: Lapus-Lapus Beach now has a low-confidence Newcoast-side tourist-guide reference point (11.981111, 121.927955), supported by the TPB beach name/grid and the separate historical DENR station locality. A WorldPlaces point at 11.94923, 121.93178 is approximately 3.57 km away near White Beach Station 3 / Angol and is retained as a disputed name-location association, not used as the beach marker.",
     "Version 0.2.30: Banyugan and Punta Bunga access records now include Shangri-La's official resort-facility context. Resort facilities and historical guide claims do not establish a current public approach route or unrestricted public access.",
     "Version 0.2.30: Hagdan Beach remains provisional. Trip.com mentions it as a nearby attraction, but no separate mapped beach feature or surveyed boundary has been established.",
-    "Coordinate protocol reaffirmed: coordinates are typed as beach-feature, monitoring-station, locality, tourist-guide, Plus Code cell, business POI or operator stop-area references. Distances between unlike point types are evidence of spatial separation, not permission to substitute one point type for another. No map reference is labelled a surveyed beach centroid without survey evidence."
+    "Coordinate protocol reaffirmed: coordinates are typed as beach-feature, monitoring-station, locality, tourist-guide, Plus Code cell, business POI or operator stop-area references. Distances between unlike point types are evidence of spatial separation, not permission to substitute one point type for another. No map reference is labelled a surveyed beach centroid without survey evidence.",
+    "Version 0.2.31: excursion itinerary evidence expanded with current operator and marketplace listings (SRC-078 to SRC-080). Balinghai is recorded as a possible Amihan-season itinerary stop and Ilig-Iligan as a possible Habagat-season stop. These are visit-access records only; no departure point, legal landing right or public access is inferred. White Beach Station 1 and Bulabog seasonal locations remain operator-specific meeting/activity points, not universal official terminals.",
+    "Version 0.2.31: itinerary stop season labels are operator/listing-specific. Where month ranges differ between operators, preserve the cited listing's range and do not normalize it into a universal island-wide operating season."
   ]
 }
