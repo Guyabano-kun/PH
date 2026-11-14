@@ -244,6 +244,99 @@
       ],
       "limitations": "The report contains two distinct station inventories: Table 4.53 covers CY 2006–2019, while Table 4.54 covers CY 2020 onwards. Table 4.53 lists Lapuz-Lapuz Beach and an older Bulabog Beach station at 11°56′08″N, 121°55′39″E. Table 4.54 lists Ralph's Place as a regular ambient station with the station name Bulabog Beach at 11°58′09.0″N, 121°55′38.4″E. These records must not be conflated. The report supports station identity and historical metadata, not beach boundaries or current water quality.",
       "reliability": "high_for_station_identity_and_historical_station_metadata"
+    },
+    {
+      "id": "SRC-011",
+      "title": "Balinghai Beach – OpenStreetMap feature via Mapcarta",
+      "publisher": "OpenStreetMap contributors / Mapcarta",
+      "url": "https://mapcarta.com/W495014969",
+      "type": "osm_derived_place_feature",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Balinghai Beach",
+        "OSM way 495014969",
+        "natural=beach",
+        "Feature reference coordinate"
+      ],
+      "limitations": "Mapcarta displays an OSM feature reference coordinate and feature type; it is not a cadastral survey or confirmation of beach centroid. The page currently reports access restrictions, which require independent confirmation.",
+      "reliability": "high_for_osm_feature_identity_and_reference_coordinate"
+    },
+    {
+      "id": "SRC-012",
+      "title": "Banyugan Beach – OpenStreetMap feature via Mapcarta",
+      "publisher": "OpenStreetMap contributors / Mapcarta",
+      "url": "https://mapcarta.com/W24208692",
+      "type": "osm_derived_place_feature",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Banyugan Beach",
+        "OSM way 24208692",
+        "natural=beach",
+        "Feature reference coordinate"
+      ],
+      "limitations": "Mapcarta displays an OSM feature reference coordinate and feature type; it is not a cadastral survey or confirmation of beach centroid or public access.",
+      "reliability": "high_for_osm_feature_identity_and_reference_coordinate"
+    },
+    {
+      "id": "SRC-013",
+      "title": "Punta Bunga Beach – OpenStreetMap feature via Mapcarta",
+      "publisher": "OpenStreetMap contributors / Mapcarta",
+      "url": "https://mapcarta.com/W24208689",
+      "type": "osm_derived_place_feature",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Punta Bunga Beach",
+        "OSM way 24208689",
+        "natural=beach",
+        "Feature reference coordinate"
+      ],
+      "limitations": "Mapcarta displays an OSM feature reference coordinate and feature type; a secondary travel guide gives a point approximately 103 m away. Neither point is a surveyed centroid or access point.",
+      "reliability": "high_for_osm_feature_identity_and_reference_coordinate"
+    },
+    {
+      "id": "SRC-014",
+      "title": "Boracay Travel Guide 2023 – Beaches of Boracay",
+      "publisher": "Lakad Pilipinas",
+      "url": "https://www.lakadpilipinas.com/2016/10/boracay-travel-guide-itinerary-budget.html",
+      "type": "secondary_travel_guide",
+      "published_at": "2023-06-19",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Balinghai Beach",
+        "Banyugan Beach",
+        "Bulabog Beach",
+        "Diniwid Beach",
+        "Ilig-Iligan Beach",
+        "Lapuz Lapuz Beach",
+        "Puka Beach",
+        "Punta Bunga Beach",
+        "Tambisaan Beach",
+        "White Beach",
+        "Cujo's Keyhole",
+        "GPS reference points",
+        "Reported access types"
+      ],
+      "limitations": "Travel-guide data published in 2023. GPS points may represent a guide map pin rather than a beach centroid. Access labels and fees are not authoritative current access rules and may have changed.",
+      "reliability": "medium_for_place_descriptions_and_historical_access_claims"
+    },
+    {
+      "id": "SRC-015",
+      "title": "Punta Bunga Beach – BeachAtlas guide and visitor reviews",
+      "publisher": "BeachAtlas",
+      "url": "https://www.beachatlas.com/punta-bunga",
+      "type": "secondary_beach_guide_and_visitor_reviews",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Punta Bunga Beach",
+        "Visitor-reported access difficulty",
+        "Semi-private character"
+      ],
+      "limitations": "Visitor-review synthesis, not an official statement of public rights of way, resort access rules, or legal beach access.",
+      "reliability": "low_to_moderate_for_access_experience_only"
     }
   ]
 }
