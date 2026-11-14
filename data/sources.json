@@ -337,6 +337,108 @@
       ],
       "limitations": "Visitor-review synthesis, not an official statement of public rights of way, resort access rules, or legal beach access.",
       "reliability": "low_to_moderate_for_access_experience_only"
+    },
+    {
+      "id": "SRC-016",
+      "title": "Tulubhan Beach – OpenStreetMap feature via Mapcarta",
+      "publisher": "OpenStreetMap contributors / Mapcarta",
+      "url": "https://mapcarta.com/W216955095",
+      "type": "osm_derived_place_feature",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Tulubhan Beach",
+        "OSM way 216955095",
+        "natural=beach",
+        "Feature reference coordinate"
+      ],
+      "limitations": "Mapcarta displays an OpenStreetMap feature reference coordinate; it is not a cadastral survey or confirmation of beach centroid, shoreline boundary, or public access.",
+      "reliability": "high_for_osm_feature_identity_and_reference_coordinate"
+    },
+    {
+      "id": "SRC-017",
+      "title": "Ilig Iligan Beach – OpenStreetMap feature via Mapcarta",
+      "publisher": "OpenStreetMap contributors / Mapcarta",
+      "url": "https://mapcarta.com/W24043698",
+      "type": "osm_derived_place_feature",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Ilig Iligan Beach",
+        "OSM way 24043698",
+        "natural=beach",
+        "Feature reference coordinate"
+      ],
+      "limitations": "Mapcarta displays an OpenStreetMap feature reference coordinate; it is not a cadastral survey or confirmation of beach centroid, shoreline boundary, or public access.",
+      "reliability": "high_for_osm_feature_identity_and_reference_coordinate"
+    },
+    {
+      "id": "SRC-018",
+      "title": "Puka Beach – OpenStreetMap feature via Mapcarta",
+      "publisher": "OpenStreetMap contributors / Mapcarta",
+      "url": "https://mapcarta.com/W4279206",
+      "type": "osm_derived_place_feature",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Puka Beach",
+        "OSM way 4279206",
+        "natural=beach",
+        "Feature reference coordinate"
+      ],
+      "limitations": "Mapcarta displays an OpenStreetMap feature reference coordinate; it is not a cadastral survey or confirmation of beach centroid, shoreline boundary, or public access.",
+      "reliability": "high_for_osm_feature_identity_and_reference_coordinate"
+    },
+    {
+      "id": "SRC-019",
+      "title": "Diniwid Beach – OpenStreetMap feature via Mapcarta",
+      "publisher": "OpenStreetMap contributors / Mapcarta",
+      "url": "https://mapcarta.com/W24043654",
+      "type": "osm_derived_place_feature",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Diniwid Beach",
+        "OSM way 24043654",
+        "natural=beach",
+        "Feature reference coordinate"
+      ],
+      "limitations": "Mapcarta displays an OpenStreetMap feature reference coordinate; it is not a cadastral survey or confirmation of beach centroid, shoreline boundary, or public access.",
+      "reliability": "high_for_osm_feature_identity_and_reference_coordinate"
+    },
+    {
+      "id": "SRC-020",
+      "title": "Tambisaan Beach – OpenStreetMap feature via Mapcarta",
+      "publisher": "OpenStreetMap contributors / Mapcarta",
+      "url": "https://mapcarta.com/W24043634",
+      "type": "osm_derived_place_feature",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Tambisaan Beach",
+        "OSM way 24043634",
+        "natural=beach",
+        "Feature reference coordinate"
+      ],
+      "limitations": "Mapcarta displays an OpenStreetMap feature reference coordinate; it is not a cadastral survey or confirmation of beach centroid, shoreline boundary, or public access.",
+      "reliability": "high_for_osm_feature_identity_and_reference_coordinate"
+    },
+    {
+      "id": "SRC-021",
+      "title": "White Beach – OpenStreetMap feature via Mapcarta",
+      "publisher": "OpenStreetMap contributors / Mapcarta",
+      "url": "https://mapcarta.com/26230058",
+      "type": "osm_derived_place_feature",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "White Beach",
+        "OSM way 4279249",
+        "natural=beach",
+        "Feature reference coordinate"
+      ],
+      "limitations": "Mapcarta displays an OpenStreetMap feature reference coordinate; it is not a cadastral survey or confirmation of beach centroid, shoreline boundary, or public access.",
+      "reliability": "high_for_osm_feature_identity_and_reference_coordinate"
     }
   ]
 }
