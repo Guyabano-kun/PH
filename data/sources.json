@@ -1389,6 +1389,24 @@
       ],
       "limitations": "Published in 2020. It documents routes described at publication but does not verify current path condition, public right-of-way, gates, fees, accessibility, facilities, or present-day safety. Treat route details as historical access information pending current local confirmation.",
       "reliability": "department_of_tourism_destination_article_for_historical_access_description"
+    },
+    {
+      "id": "SRC-084",
+      "title": "Balinghai Beach – visitor access and resort facilities",
+      "publisher": "Expedia",
+      "url": "https://www.expedia.com/Balinghai-Beach-Boracay-Island.d6115066.Vacation-Attraction",
+      "type": "travel_platform_attraction_listing",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Resort-managed beach description",
+        "Limited day access for non-resort guests",
+        "Advance reservation recommendation",
+        "Stair access from the resort",
+        "Beach restaurant, towel rental and watersport equipment"
+      ],
+      "limitations": "Third-party travel-platform listing, not a direct resort policy or current booking confirmation. It reports limited non-resort day access and recommends reservation, but does not establish a public right-of-way, current admission price, guaranteed availability, or current operating hours. Verify terms with Balinghai Beach Resort before publication as a time-sensitive claim.",
+      "reliability": "moderate_for_published_visitor_access_and_facility_description"
     }
   ]
 }
