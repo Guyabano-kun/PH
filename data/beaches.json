@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.8",
+  "dataset_version": "0.2.9",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -382,7 +382,8 @@
               "sampling_events": 12
             },
             "source_ids": [
-              "SRC-002"
+              "SRC-002",
+              "SRC-024"
             ],
             "interpretation": "DENR-EMB included this point in the six-station Front/White Beach group selected as representative for nutrient analysis. Fecal-coliform and oil-and-grease results remain station-specific historical measurements, not a current whole-beach status.",
             "oil_and_grease": {
@@ -403,7 +404,35 @@
                 "SRC-002"
               ],
               "interpretation": "Quarterly historical monitoring in 2022. Not a current water-quality result."
-            }
+            },
+            "annual_results": [
+              {
+                "year": 2023,
+                "reporting_period": "CY 2023",
+                "fecal_coliform_geometric_mean_mpn_100ml": 11,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 92,
+                  "non_compliant_percent": 8
+                },
+                "dissolved_oxygen_average_mg_l": 6.4,
+                "dissolved_oxygen_guideline_mg_l": 6,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 83,
+                  "non_compliant_percent": 17
+                },
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "total_suspended_solids_average_mg_l": 13.1,
+                "total_suspended_solids_guideline_mg_l": 50,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                }
+              }
+            ]
           },
           {
             "station_name": "Boat Station 2",
@@ -426,7 +455,8 @@
               "sampling_events": 12
             },
             "source_ids": [
-              "SRC-002"
+              "SRC-002",
+              "SRC-024"
             ],
             "interpretation": "DENR-EMB included this point in the six-station Front/White Beach group selected as representative for nutrient analysis. Fecal-coliform and oil-and-grease results remain station-specific historical measurements, not a current whole-beach status.",
             "oil_and_grease": {
@@ -447,7 +477,35 @@
                 "SRC-002"
               ],
               "interpretation": "Quarterly historical monitoring in 2022. Not a current water-quality result."
-            }
+            },
+            "annual_results": [
+              {
+                "year": 2023,
+                "reporting_period": "CY 2023",
+                "fecal_coliform_geometric_mean_mpn_100ml": 9,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "dissolved_oxygen_average_mg_l": 6.6,
+                "dissolved_oxygen_guideline_mg_l": 6,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 92,
+                  "non_compliant_percent": 8
+                },
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "total_suspended_solids_average_mg_l": 10.6,
+                "total_suspended_solids_guideline_mg_l": 50,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                }
+              }
+            ]
           },
           {
             "station_name": "Boat Station 3",
@@ -470,7 +528,8 @@
               "sampling_events": 12
             },
             "source_ids": [
-              "SRC-002"
+              "SRC-002",
+              "SRC-024"
             ],
             "interpretation": "DENR-EMB included this point in the six-station Front/White Beach group selected as representative for nutrient analysis. Fecal-coliform and oil-and-grease results remain station-specific historical measurements, not a current whole-beach status.",
             "oil_and_grease": {
@@ -491,7 +550,35 @@
                 "SRC-002"
               ],
               "interpretation": "Quarterly historical monitoring in 2022. Not a current water-quality result."
-            }
+            },
+            "annual_results": [
+              {
+                "year": 2023,
+                "reporting_period": "CY 2023",
+                "fecal_coliform_geometric_mean_mpn_100ml": 13,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 75,
+                  "non_compliant_percent": 25
+                },
+                "dissolved_oxygen_average_mg_l": 6.4,
+                "dissolved_oxygen_guideline_mg_l": 6,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 75,
+                  "non_compliant_percent": 25
+                },
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "total_suspended_solids_average_mg_l": 10.3,
+                "total_suspended_solids_guideline_mg_l": 50,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                }
+              }
+            ]
           }
         ],
         "benthic_macrofauna_study": {
@@ -921,9 +1008,33 @@
             },
             "source_ids": [
               "SRC-002",
-              "SRC-010"
+              "SRC-010",
+              "SRC-024"
             ],
-            "interpretation": "The 2020-onwards station table identifies Ralph's Place as the regular ambient station with station name 'Bulabog Beach'. The same report separately lists an older 2006–2019 Bulabog Beach station at different coordinates; that older point is not merged into this record. This is a station-specific historical record, not a whole-beach or current bathing-water status."
+            "interpretation": "The 2020-onwards station table identifies Ralph's Place as the regular ambient station with station name 'Bulabog Beach'. The same report separately lists an older 2006–2019 Bulabog Beach station at different coordinates; that older point is not merged into this record. This is a station-specific historical record, not a whole-beach or current bathing-water status.",
+            "annual_results": [
+              {
+                "year": 2023,
+                "reporting_period": "CY 2023",
+                "fecal_coliform_geometric_mean_mpn_100ml": 32,
+                "fecal_coliform_guideline_mpn_100ml": 200,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 75,
+                  "non_compliant_percent": 25
+                },
+                "dissolved_oxygen_average_mg_l": 6.1,
+                "dissolved_oxygen_guideline_mg_l": 5,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 67,
+                  "non_compliant_percent": 33
+                },
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "notes": "TSS excluded because the 2023 report gives conflicting Ralph's Place values (32.3 and 33.4 mg/L) in separate figures."
+              }
+            ]
           }
         ]
       },
@@ -1298,7 +1409,8 @@
               "sampling_events": 12
             },
             "source_ids": [
-              "SRC-002"
+              "SRC-002",
+              "SRC-024"
             ],
             "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach.",
             "oil_and_grease": {
@@ -1319,7 +1431,35 @@
                 "SRC-002"
               ],
               "interpretation": "Quarterly historical monitoring in 2022. Not a current water-quality result."
-            }
+            },
+            "annual_results": [
+              {
+                "year": 2023,
+                "reporting_period": "CY 2023",
+                "fecal_coliform_geometric_mean_mpn_100ml": 8,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 92,
+                  "non_compliant_percent": 8
+                },
+                "dissolved_oxygen_average_mg_l": 6.7,
+                "dissolved_oxygen_guideline_mg_l": 6,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 92,
+                  "non_compliant_percent": 8
+                },
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "total_suspended_solids_average_mg_l": 16.9,
+                "total_suspended_solids_guideline_mg_l": 50,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                }
+              }
+            ]
           }
         ]
       },
@@ -1691,7 +1831,8 @@
               "sampling_events": 12
             },
             "source_ids": [
-              "SRC-002"
+              "SRC-002",
+              "SRC-024"
             ],
             "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach.",
             "oil_and_grease": {
@@ -1712,7 +1853,35 @@
                 "SRC-002"
               ],
               "interpretation": "Quarterly historical monitoring in 2022. Not a current water-quality result."
-            }
+            },
+            "annual_results": [
+              {
+                "year": 2023,
+                "reporting_period": "CY 2023",
+                "fecal_coliform_geometric_mean_mpn_100ml": 46,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 50,
+                  "non_compliant_percent": 50
+                },
+                "dissolved_oxygen_average_mg_l": 6.6,
+                "dissolved_oxygen_guideline_mg_l": 6,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 83,
+                  "non_compliant_percent": 17
+                },
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "total_suspended_solids_average_mg_l": 16.5,
+                "total_suspended_solids_guideline_mg_l": 50,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                }
+              }
+            ]
           }
         ]
       },
@@ -3060,7 +3229,8 @@
               "sampling_events": 12
             },
             "source_ids": [
-              "SRC-002"
+              "SRC-002",
+              "SRC-024"
             ],
             "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach.",
             "oil_and_grease": {
@@ -3081,7 +3251,35 @@
                 "SRC-002"
               ],
               "interpretation": "Quarterly historical monitoring in 2022. Not a current water-quality result."
-            }
+            },
+            "annual_results": [
+              {
+                "year": 2023,
+                "reporting_period": "CY 2023",
+                "fecal_coliform_geometric_mean_mpn_100ml": 8,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 75,
+                  "non_compliant_percent": 25
+                },
+                "dissolved_oxygen_average_mg_l": 6.3,
+                "dissolved_oxygen_guideline_mg_l": 6,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 67,
+                  "non_compliant_percent": 33
+                },
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "total_suspended_solids_average_mg_l": 12,
+                "total_suspended_solids_guideline_mg_l": 50,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                }
+              }
+            ]
           }
         ]
       },
@@ -3801,7 +3999,8 @@
               "sampling_events": 12
             },
             "source_ids": [
-              "SRC-002"
+              "SRC-002",
+              "SRC-024"
             ],
             "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach.",
             "oil_and_grease": {
@@ -3822,7 +4021,35 @@
                 "SRC-002"
               ],
               "interpretation": "Quarterly historical monitoring in 2022. Not a current water-quality result."
-            }
+            },
+            "annual_results": [
+              {
+                "year": 2023,
+                "reporting_period": "CY 2023",
+                "fecal_coliform_geometric_mean_mpn_100ml": 36,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 67,
+                  "non_compliant_percent": 33
+                },
+                "dissolved_oxygen_average_mg_l": 6.5,
+                "dissolved_oxygen_guideline_mg_l": 6,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 50,
+                  "non_compliant_percent": 50
+                },
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "total_suspended_solids_average_mg_l": 12.6,
+                "total_suspended_solids_guideline_mg_l": 50,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                }
+              }
+            ]
           }
         ]
       },
@@ -4192,7 +4419,8 @@
               "sampling_events": 12
             },
             "source_ids": [
-              "SRC-002"
+              "SRC-002",
+              "SRC-024"
             ],
             "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach.",
             "oil_and_grease": {
@@ -4213,7 +4441,35 @@
                 "SRC-002"
               ],
               "interpretation": "Quarterly historical monitoring in 2022. Not a current water-quality result."
-            }
+            },
+            "annual_results": [
+              {
+                "year": 2023,
+                "reporting_period": "CY 2023",
+                "fecal_coliform_geometric_mean_mpn_100ml": 39,
+                "fecal_coliform_guideline_mpn_100ml": 200,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 83,
+                  "non_compliant_percent": 17
+                },
+                "dissolved_oxygen_average_mg_l": 6.8,
+                "dissolved_oxygen_guideline_mg_l": 5,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 92,
+                  "non_compliant_percent": 8
+                },
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "total_suspended_solids_average_mg_l": 13.6,
+                "total_suspended_solids_guideline_mg_l": 80,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                }
+              }
+            ]
           }
         ]
       },
@@ -4576,7 +4832,8 @@
               "sampling_events": 12
             },
             "source_ids": [
-              "SRC-002"
+              "SRC-002",
+              "SRC-024"
             ],
             "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach.",
             "oil_and_grease": {
@@ -4597,7 +4854,35 @@
                 "SRC-002"
               ],
               "interpretation": "Quarterly historical monitoring in 2022. Not a current water-quality result."
-            }
+            },
+            "annual_results": [
+              {
+                "year": 2023,
+                "reporting_period": "CY 2023",
+                "fecal_coliform_geometric_mean_mpn_100ml": 15,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 92,
+                  "non_compliant_percent": 8
+                },
+                "dissolved_oxygen_average_mg_l": 6.6,
+                "dissolved_oxygen_guideline_mg_l": 6,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 83,
+                  "non_compliant_percent": 17
+                },
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "total_suspended_solids_average_mg_l": 18.4,
+                "total_suspended_solids_guideline_mg_l": 50,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                }
+              }
+            ]
           }
         ]
       },
