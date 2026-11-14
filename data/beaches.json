@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.34",
+  "dataset_version": "0.2.35",
   "last_updated": "2026-11-15",
   "beaches": [
     {
@@ -3530,32 +3530,40 @@
       },
       "access": {
         "land_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Rough Guides describes a tricycle drop-off near a public access path, followed by a walk through narrow residential lanes. Passage through resort checkpoints is not guaranteed; this is a visitor-guide route description, not a verified right-of-way.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-085"
+          ],
+          "note": "Current path condition, precise access point, gates and permission were not independently confirmed."
         },
         "public_access_status": {
-          "value": "public_beach_reported_but_access_route_uncertain",
+          "value": "Public-beach access is reported by Rough Guides, but practical access is not guaranteed. The guide says resort guests predominate and non-guests cannot use resort loungers or services. Shangri-La also lists Punta Bunga as a resort beach facility; neither source establishes a current unrestricted public route.",
           "status": "provisional",
           "source_ids": [
             "SRC-014",
             "SRC-015",
-            "SRC-059"
+            "SRC-059",
+            "SRC-085"
           ],
-          "note": "Sources conflict: Lakad Pilipinas reports public beach access, BeachAtlas describes semi-private/difficult access, and Shangri-La lists Punta Bunga as a resort beach facility. The legal easement does not establish a practical public approach route. Current public entry permission remains unconfirmed."
+          "note": "Do not infer unrestricted public access from the legal easement or from the beach being described as public. Verify the current route and any checkpoint instructions locally."
         },
         "access_restrictions": {
-          "value": "resort_or_narrow_path_access_reported",
+          "value": "Narrow residential lanes and resort checkpoints are reported along the approach; checkpoint passage is not guaranteed. Resort loungers and services are not available to non-resort guests according to the visitor guide.",
           "status": "provisional",
           "source_ids": [
-            "SRC-015"
+            "SRC-015",
+            "SRC-085"
           ],
-          "note": "Based on secondary visitor reviews, not an official access notice."
+          "note": "Secondary visitor information; not an official access notice."
         },
         "facilities": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "No independent public beach facilities are confirmed. Resort loungers and services are described as guest-only.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-085"
+          ],
+          "note": "Current public toilets, vendors, shade, rentals and other services were not verified."
         },
         "lifeguard_coverage": {
           "value": null,
@@ -3690,7 +3698,7 @@
           "Current water quality",
           "Activity-specific hazards"
         ],
-        "last_reviewed": "2026-11-14"
+        "last_reviewed": "2026-11-15"
       },
       "internal": {
         "admin_ready": true,
@@ -3698,7 +3706,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 3
+          "revision": 4
         }
       }
     },
@@ -4720,9 +4728,12 @@
       },
       "access": {
         "land_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Rough Guides describes access by tricycle from central Boracay, with a rough final road section and a possible short walk. It also mentions access as an island-hopping stop.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-085"
+          ],
+          "note": "This is a visitor-guide description; the current public approach point, road condition, estate access arrangements and boat landing permission are not confirmed."
         },
         "public_access_status": {
           "value": null,
@@ -4730,14 +4741,20 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "access_restrictions": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "The final road section is reported as rough and may require walking. A separate 2026 visitor guide says there is no universally confirmed public admission/approach arrangement; private-estate access may vary.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-085"
+          ],
+          "note": "No verified gate, public right-of-way, admission fee or landing permission is recorded."
         },
         "facilities": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Limited infrastructure is reported; a few local stalls may operate in peak season. Public toilets, lifeguards, shade, equipment rental and year-round food service are not confirmed.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-085"
+          ],
+          "note": "Seasonal visitor-guide description; do not treat absence of listing as proof that a facility does not exist."
         },
         "lifeguard_coverage": {
           "value": null,
@@ -5093,7 +5110,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 5
+          "revision": 6
         }
       }
     },
@@ -5339,24 +5356,38 @@
       },
       "access": {
         "land_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Rough Guides describes a tricycle ride to the Fairways & Bluewater entrance; resort guests may use a shuttle to the beach. Non-guests are directed to ask at the main entrance about day-pass availability.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-085"
+          ],
+          "note": "The guide does not establish a public pedestrian right-of-way or guarantee non-guest entry."
         },
         "public_access_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Resort-controlled access; the guide says the beach is not open to the public in the usual sense. Day passes are sometimes reported, but availability and terms are not guaranteed and must be confirmed at the resort entrance.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-085",
+            "SRC-014",
+            "SRC-010"
+          ],
+          "note": "No current official day-pass policy, price or unrestricted public route has been verified."
         },
         "access_restrictions": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Access is described through Fairways & Bluewater Resort. Day-pass access for non-guests may be available at times but should not be assumed; ask the resort directly before travelling.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-085"
+          ],
+          "note": "Visitor-guide report, not a current resort policy."
         },
         "facilities": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Resort guest facilities are reported to include loungers, kayaks, paddleboards, snorkelling equipment, food and drinks. Availability for day visitors is not established.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-085"
+          ],
+          "note": "Do not present these as generally available public facilities."
         },
         "lifeguard_coverage": {
           "value": null,
@@ -5522,7 +5553,7 @@
           "Exact beach boundary and access route",
           "Resolve the separate Station 3 / Angol-area WorldPlaces point-name conflict"
         ],
-        "last_reviewed": "2026-11-14"
+        "last_reviewed": "2026-11-15"
       },
       "internal": {
         "admin_ready": true,
@@ -5530,7 +5561,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 4
+          "revision": 5
         }
       }
     },
@@ -5754,9 +5785,12 @@
       },
       "access": {
         "land_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Rough Guides describes a tricycle ride of approximately 10–15 minutes from D'Mall or White Beach, with bicycle or motorbike travel also mentioned.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-085"
+          ],
+          "note": "Guide-level route description; exact access point, public right-of-way and current road conditions were not independently confirmed."
         },
         "public_access_status": {
           "value": null,
@@ -5764,9 +5798,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "access_restrictions": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Described as a working shoreline used by local fishers, with nets and boats along the beach. The guide characterises it as less suitable for swimming than for walking and observing local activity.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-085"
+          ],
+          "note": "This is a qualitative visitor-guide description, not a mapped navigation exclusion, bathing prohibition or real-time safety assessment."
         },
         "facilities": {
           "value": null,
@@ -6103,7 +6140,7 @@
           "Current water quality",
           "Activity-specific hazards"
         ],
-        "last_reviewed": "2026-11-14"
+        "last_reviewed": "2026-11-15"
       },
       "internal": {
         "admin_ready": true,
@@ -6111,7 +6148,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 3
+          "revision": 4
         }
       }
     },
