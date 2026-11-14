@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "dataset_version": "0.2.29",
-  "last_updated": "2026-11-14",
+  "last_updated": "2026-11-15",
   "beaches": [
     {
       "id": "white",
@@ -74,7 +74,8 @@
           "source_ids": [
             "SRC-021",
             "SRC-002",
-            "SRC-014"
+            "SRC-014",
+            "SRC-058"
           ],
           "osm_feature": {
             "source_id": "SRC-021",
@@ -102,13 +103,21 @@
             ],
             "coordinates_match_across_reports": true
           },
-          "assessment": "legacy_marker_is_boat_station_2; OSM_beach_feature_and_guide_points_are_separate",
-          "note": "The legacy point exactly matches Boat Station 2; the OSM feature point is approximately 300 m away. Neither is established as a surveyed White Beach centroid.",
+          "assessment": "legacy_marker_is_denr_boat_station_2; osm_feature_and_beachatlas_points_are_separate",
+          "note": "The legacy point exactly matches DENR Boat Station 2. The OSM feature point and BeachAtlas point are separate references elsewhere along the long beach. None is established as a surveyed White Beach centroid; use the three DENR boat-station markers for station-specific map context.",
           "secondary_guide_point": {
             "source_id": "SRC-014",
             "latitude": 11.965549,
             "longitude": 121.921256,
             "separation_from_legacy_marker_m": 973.8
+          },
+          "beachatlas_point": {
+            "source_id": "SRC-058",
+            "latitude": 11.952444,
+            "longitude": 121.929614,
+            "coordinate_type": "secondary_beach_reference_point",
+            "not_beach_centroid": true,
+            "note": "A separate BeachAtlas reference point; not the DENR Boat Station 2 monitoring point."
           }
         }
       },
@@ -1092,13 +1101,13 @@
           "note": "Coarse coast classification; not a surveyed shoreline azimuth."
         },
         "coordinates": {
-          "latitude": 11.965631,
-          "longitude": 121.928888,
-          "coordinate_status": "legacy_marker_matches_secondary_guide_point",
-          "coordinate_source": "Existing weather.html map dataset",
-          "coordinate_precision": "Not independently validated as beach centroid",
+          "latitude": 11.9692679,
+          "longitude": 121.9273114,
+          "coordinate_status": "beachatlas_reference_point_cross_checked_with_denr_station",
+          "coordinate_source": "BeachAtlas map reference; cross-checked against DENR-EMB Ralph's Place station coordinates in the 2022 and 2023 reports.",
+          "coordinate_precision": "Secondary map reference; approximately 33.9 m from the DENR-EMB station point and not a surveyed beach centroid.",
           "verified": false,
-          "source_id": "SRC-000"
+          "source_id": "SRC-052"
         },
         "beach_boundary": {
           "value": null,
@@ -1124,15 +1133,17 @@
           "source_ids": [
             "SRC-014",
             "SRC-010",
-            "SRC-002"
+            "SRC-002",
+            "SRC-052"
           ],
-          "assessment": "legacy_marker_exactly_matches_secondary_guide_point; DENR station is separate",
-          "note": "The active DENR station coordinate matches the 2022 Annual Water Quality Assessment Report and the 2023 RSoBER Table 4.50. The 2021 RSoBER Table 4.54 reference is separately retained and lies 38.9 m away. The 2022 and 2023 coordinates match; the 2021 point is not averaged into them. All are monitoring-station points, not surveyed beach centroids.",
+          "assessment": "beachatlas_point_clusters_with_2022_2023_denr_station; legacy_marker_matches_guide_but_is_approximately_439m_away",
+          "note": "The BeachAtlas point is approximately 33.9 m from the 2022/2023 DENR-EMB Ralph's Place station and is selected as the map reference. The previous legacy marker matches the secondary guide point but lies approximately 439 m away. Both remain reference points, not surveyed beach centroids; the DENR station is not a beach centroid.",
           "secondary_guide_point": {
             "source_id": "SRC-014",
             "latitude": 11.965631,
             "longitude": 121.928888,
-            "separation_from_legacy_marker_m": 0
+            "separation_from_legacy_marker_m": 0,
+            "separation_from_selected_reference_m": 439.3
           },
           "denr_monitoring_station": {
             "source_id": "SRC-002",
@@ -1148,7 +1159,8 @@
               2022,
               2023
             ],
-            "coordinates_match_across_reports": true
+            "coordinates_match_across_reports": true,
+            "separation_from_selected_reference_m": 33.9
           },
           "denr_2021_station_reference": {
             "source_id": "SRC-010",
@@ -1161,6 +1173,20 @@
             "separation_from_legacy_beach_marker_m": 428,
             "not_beach_centroid": true,
             "note": "Historical DENR station reference from the 2021 RSoBER. The 2022 Annual Assessment Report gives a separate point 38.9 m away; both coordinates are preserved and must not be averaged."
+          },
+          "legacy_marker": {
+            "source_id": "SRC-000",
+            "latitude": 11.965631,
+            "longitude": 121.928888,
+            "coordinate_type": "legacy_weather_map_marker",
+            "separation_from_selected_reference_m": 439.3,
+            "not_beach_centroid": true
+          },
+          "beachatlas_point": {
+            "source_id": "SRC-052",
+            "latitude": 11.9692679,
+            "longitude": 121.9273114,
+            "separation_from_denr_station_m": 33.9
           }
         }
       },
@@ -1974,7 +2000,8 @@
           "source_ids": [
             "SRC-018",
             "SRC-002",
-            "SRC-014"
+            "SRC-014",
+            "SRC-054"
           ],
           "osm_feature": {
             "source_id": "SRC-018",
@@ -2002,13 +2029,21 @@
             ],
             "coordinates_match_across_reports": true
           },
-          "assessment": "legacy_marker_matches_guide_but_osm_feature_and_denr_station_are_displaced",
-          "note": "The OSM beach-feature coordinate and the DENR-EMB station coordinate are materially north/east of the legacy marker. Preserve all three as separate references; do not move the marker until the intended map point is defined.",
+          "assessment": "multiple_distinct_reference_points_across_beach; no single surveyed centroid established",
+          "note": "The legacy guide marker is approximately 101 m from the DENR station. The OSM feature point, DENR station, secondary guide point and BeachAtlas point are distinct references spread across the beach area; none is promoted as a surveyed centroid. The BeachAtlas point is approximately 397 m from the legacy marker and 434 m from the DENR station.",
           "secondary_guide_point": {
             "source_id": "SRC-014",
             "latitude": 11.996611,
             "longitude": 121.915254,
             "separation_from_legacy_marker_m": 0
+          },
+          "beachatlas_point": {
+            "source_id": "SRC-054",
+            "latitude": 11.9946643,
+            "longitude": 121.9121981,
+            "separation_from_legacy_marker_m": 396.7,
+            "separation_from_denr_station_m": 433.7,
+            "not_beach_centroid": true
           }
         }
       },
@@ -3230,9 +3265,10 @@
           "status": "provisional",
           "source_ids": [
             "SRC-014",
-            "SRC-015"
+            "SRC-015",
+            "SRC-059"
           ],
-          "note": "Lakad Pilipinas (2023) lists public access and no entrance fee; BeachAtlas visitor reviews describe semi-private character and difficult access via resort areas or a narrow path. Current legal access and route are not established."
+          "note": "Sources conflict: Lakad Pilipinas reports public beach access, BeachAtlas describes semi-private/difficult access, and Shangri-La lists Punta Bunga as a resort beach facility. The legal easement does not establish a practical public approach route. Current public entry permission remains unconfirmed."
         },
         "access_restrictions": {
           "value": "resort_or_narrow_path_access_reported",
@@ -3987,9 +4023,10 @@
           "value": "private_beach_reported",
           "status": "provisional",
           "source_ids": [
-            "SRC-014"
+            "SRC-014",
+            "SRC-059"
           ],
-          "note": "Lakad Pilipinas (2023) lists Banyugan as a private beach at Shangri-La, with free entry stated in that guide. Current access terms have not been independently confirmed."
+          "note": "Lakad Pilipinas describes Banyugan as a private beach associated with Shangri-La. The resort's official facilities page confirms a secluded beach facility and published facility hours, but does not establish general public walk-in access or a public approach route. Current access terms should be confirmed with the resort."
         },
         "access_restrictions": {
           "value": null,
@@ -4185,13 +4222,13 @@
           "note": "Coarse coast classification; not a surveyed shoreline azimuth."
         },
         "coordinates": {
-          "latitude": 11.986036,
-          "longitude": 121.925014,
-          "coordinate_status": "osm_feature_point_disagrees_with_legacy_marker",
-          "coordinate_source": "Existing weather.html map dataset (legacy marker); cross-references are documented separately in geography.coordinate_verification.",
-          "coordinate_precision": "Legacy map point; not independently confirmed as a surveyed beach centroid. See coordinate_verification for OSM and DENR station comparisons.",
+          "latitude": 11.9931549,
+          "longitude": 121.9253557,
+          "coordinate_status": "beachatlas_reference_point_cross_checked_with_denr_and_osm",
+          "coordinate_source": "BeachAtlas map reference; cross-checked against DENR-EMB Ilig-Iligan Shell Museum station and nearby OSM natural=beach feature.",
+          "coordinate_precision": "Secondary map reference; approximately 30.3 m from the DENR-EMB station and 132 m from the OSM beach-feature point; not a surveyed beach centroid.",
           "verified": false,
-          "source_id": "SRC-000"
+          "source_id": "SRC-053"
         },
         "beach_boundary": {
           "value": null,
@@ -4217,7 +4254,8 @@
           "source_ids": [
             "SRC-017",
             "SRC-002",
-            "SRC-014"
+            "SRC-014",
+            "SRC-053"
           ],
           "osm_feature": {
             "source_id": "SRC-017",
@@ -4225,7 +4263,8 @@
             "osm_feature_id": "way 24043698",
             "latitude": 11.99434,
             "longitude": 121.9252,
-            "separation_from_legacy_marker_m": 923.6
+            "separation_from_legacy_marker_m": 923.6,
+            "separation_from_selected_reference_m": 132
           },
           "denr_monitoring_station": {
             "source_id": "SRC-002",
@@ -4243,15 +4282,32 @@
               2022,
               2023
             ],
-            "coordinates_match_across_reports": true
+            "coordinates_match_across_reports": true,
+            "separation_from_selected_reference_m": 30.3
           },
-          "assessment": "legacy_marker_matches_guide_but_osm_feature_and_denr_station_are_displaced",
-          "note": "The OSM beach-feature coordinate and the DENR-EMB station coordinate are materially north/east of the legacy marker. Preserve all three as separate references; do not move the marker until the intended map point is defined.",
+          "assessment": "beachatlas_point_clusters_with_denr_station_and_nearby_osm_feature; legacy_marker_and_guide_point_are_approximately_763m_away",
+          "note": "The selected BeachAtlas point is approximately 30.3 m from the DENR-EMB station and 132 m from the OSM natural=beach feature. The old marker and secondary guide point agree with each other but lie approximately 763 m south of the selected point. The old point is retained as a separate reference; no station or map point is treated as a surveyed centroid.",
           "secondary_guide_point": {
             "source_id": "SRC-014",
             "latitude": 11.986036,
             "longitude": 121.925014,
-            "separation_from_legacy_marker_m": 0
+            "separation_from_legacy_marker_m": 0,
+            "separation_from_selected_reference_m": 763.3
+          },
+          "legacy_marker": {
+            "source_id": "SRC-000",
+            "latitude": 11.986036,
+            "longitude": 121.925014,
+            "coordinate_type": "legacy_weather_map_marker_and_secondary_guide_point",
+            "separation_from_selected_reference_m": 763.3,
+            "not_beach_centroid": true
+          },
+          "beachatlas_point": {
+            "source_id": "SRC-053",
+            "latitude": 11.9931549,
+            "longitude": 121.9253557,
+            "separation_from_denr_station_m": 30.3,
+            "separation_from_osm_feature_m": 132
           }
         }
       },
@@ -4708,9 +4764,16 @@
           ]
         },
         "alternative_names": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": [
+            "Lapuz-Lapuz Beach",
+            "Lapus-Lapus Beach"
+          ],
+          "status": "supported",
+          "source_ids": [
+            "SRC-001",
+            "SRC-014"
+          ],
+          "note": "Spelling varies between official tourist map and secondary travel guide."
         },
         "administrative_area": {
           "value": "Barangay / municipality attribution not yet individually verified",
@@ -4734,13 +4797,13 @@
           "note": "Coarse coast classification; not a surveyed shoreline azimuth."
         },
         "coordinates": {
-          "latitude": null,
-          "longitude": null,
-          "coordinate_status": "no_beach_marker_reference_points_only",
-          "coordinate_source": "Existing weather.html map dataset",
-          "coordinate_precision": "Not independently validated as beach centroid",
+          "latitude": 11.981111,
+          "longitude": 121.927955,
+          "coordinate_status": "secondary_guide_reference_point_tpB_beach_name_confirmed_station_nearby",
+          "coordinate_source": "Lakad Pilipinas GPS reference for Lapuz Lapuz Beach at Fairways & Bluewater Newcoast; TPB tourist map independently lists Lapus-Lapus Beach in grid D3.",
+          "coordinate_precision": "Approximate tourist-guide reference point. TPB confirms the named beach/grid only; the historical DENR station is approximately 386 m away. Not a surveyed centroid or verified public access point.",
           "verified": false,
-          "source_id": "SRC-000"
+          "source_id": "SRC-014"
         },
         "beach_boundary": {
           "value": null,
@@ -4766,22 +4829,29 @@
           "source_ids": [
             "SRC-014",
             "SRC-010",
-            "SRC-023"
+            "SRC-023",
+            "SRC-001",
+            "SRC-075"
           ],
-          "assessment": "neighborhood_reference_only_historical_station_and_guide_points_also_separate",
-          "note": "Mapcarta identifies Lapuz-Lapuz (also known as Lapus-Lapus) as a neighborhood. This point is distinct from the historical DENR station and travel-guide reference points; it is not a beach centroid.",
+          "assessment": "tpb_confirms_lapus_lapus_beach_name_and_grid;_lakad_reference_is_newcoast_side;_historical_denr_station_is_in_same_area;_worldplaces_point_is_3_57km_away_and_likely_misassociated",
+          "note": "The TPB map confirms Lapus-Lapus Beach in grid D3 but does not provide exact coordinates. Lakad Pilipinas gives 11.981111, 121.927955 at Fairways & Bluewater Newcoast; the historical DENR station is approximately 386 m away and the OSM neighbourhood reference is in the same Newcoast area. A WorldPlaces point at 11.94923, 121.93178 is approximately 3.57 km away near Station 3/Angol and is not used as the beach location. The selected point is a reference only, not a surveyed centroid.",
           "secondary_guide_point": {
             "source_id": "SRC-014",
             "latitude": 11.981111,
             "longitude": 121.927955,
-            "separation_from_legacy_marker_m": null
+            "separation_from_legacy_marker_m": null,
+            "coordinate_type": "tourist_guide_beach_reference_point",
+            "separation_from_denr_historical_station_m": 385.6,
+            "not_beach_centroid": true
           },
           "denr_monitoring_station": {
             "source_id": "SRC-010",
             "station_name": "Lapuz-Lapuz Beach historical station",
             "latitude": 11.9838889,
             "longitude": 121.9258333,
-            "separation_from_legacy_marker_m": null
+            "separation_from_legacy_marker_m": null,
+            "separation_from_selected_reference_m": 385.6,
+            "not_beach_centroid": true
           },
           "locality_reference": {
             "source_id": "SRC-023",
@@ -4790,6 +4860,15 @@
             "latitude": 11.97837,
             "longitude": 121.92704,
             "coordinate_type": "locality_reference",
+            "not_beach_centroid": true,
+            "separation_from_selected_reference_m": 315
+          },
+          "disputed_user_generated_point": {
+            "source_id": "SRC-075",
+            "latitude": 11.94923,
+            "longitude": 121.93178,
+            "separation_from_selected_reference_m": 3569.3,
+            "assessment": "likely_misassociated_with_station_3_angol_area",
             "not_beach_centroid": true
           }
         }
@@ -5093,7 +5172,9 @@
           "Public access and restrictions",
           "Current water quality",
           "Activity-specific hazards",
-          "No active monitoring station or recent water-quality result confirmed for Lapus-Lapus"
+          "No active monitoring station or recent water-quality result confirmed for Lapus-Lapus",
+          "Exact beach boundary and access route",
+          "Resolve the separate Station 3 / Angol-area WorldPlaces point-name conflict"
         ],
         "last_reviewed": "2026-11-14"
       },
@@ -6226,10 +6307,11 @@
           "status": "unknown"
         },
         "description": {
-          "value": "Southern end of White Beach area; official map label and water-monitoring site.",
+          "value": "Named coastal point and DENR-EMB monitoring-station locality listed separately on the TPB tourist map. Keep its point/station references distinct from White Beach Boat Stations 1–3; no separate beach polygon or surveyed centroid is established.",
           "status": "supported",
           "source_ids": [
-            "SRC-001"
+            "SRC-001",
+            "SRC-002"
           ]
         }
       },
@@ -6740,9 +6822,10 @@
           "value": "Hagdan Beach",
           "status": "provisional",
           "source_ids": [
-            "SRC-008"
+            "SRC-008",
+            "SRC-065"
           ],
-          "note": "A secondary travel guide uses the name Hagdan Beach; the TPB map labels Sitio Hagdan but does not list a separate Hagdan Beach in its Beach / Dive Site index."
+          "note": "A secondary travel guide uses the name Hagdan Beach and Trip.com lists Hagdan Beach as a nearby attraction. The TPB map labels Sitio Hagdan but does not list a separate Hagdan Beach in its Beach / Dive Site index. No separate beach feature or boundary has been established; identity remains provisional."
         },
         "alternative_names": {
           "value": null,
