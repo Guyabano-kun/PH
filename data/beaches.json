@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.18",
+  "dataset_version": "0.2.19",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -693,16 +693,34 @@
             "findings": [
               "The article reports total coliform at Site 3 in both sampling seasons.",
               "The isotope mixing model includes Site 3 together with Bulabog Sites 6 and 7 in an estimated 80–94% canal/sewer-water contribution range; the range is not Site 3-specific.",
-              "The paper identifies a canal near Site 3 as a direct pollution-source sampling location."
+              "The paper identifies a canal near Site 3 as a direct pollution-source sampling location.",
+              "Separate sediment-core trace-element observations: chromium spike at Site 1 near Station 0 and lead spike at Site 4 near Station 3. These are not observations from Site 3 near Station 2."
             ],
             "interpretation": "Historical evidence of canal influence and total-coliform detection near White Beach Station 2 in 2012. This is not a current water-quality result and is not directly comparable with fecal-coliform monitoring.",
             "limitations": [
               "Sampling predates the 2018 Boracay rehabilitation.",
               "The paper's sampling-site GPS coordinates are not provided in the extracted text; no coordinates are assigned.",
               "The measured indicator is total coliform, not fecal coliform.",
-              "The 80–94% isotope-mixing estimate applies to Sites 3, 6 and 7 collectively, not to White Beach alone."
+              "The 80–94% isotope-mixing estimate applies to Sites 3, 6 and 7 collectively, not to White Beach alone.",
+              "Trace-element observations are qualitative spikes; numeric concentrations are not transcribed and the source is not conclusively identified."
             ],
-            "rehabilitation_context": "The article notes that illegal wastewater pipes were uncovered and permanently sealed during the 2018 rehabilitation. The 2011–2012 discharge configuration must not be assumed to persist."
+            "rehabilitation_context": "The article notes that illegal wastewater pipes were uncovered and permanently sealed during the 2018 rehabilitation. The 2011–2012 discharge configuration must not be assumed to persist.",
+            "trace_element_observations": [
+              {
+                "site_id": "Site 1",
+                "locality": "Long Beach near Station 0",
+                "element": "chromium",
+                "finding": "A chromium spike was observed in the sediment core. The authors state that this may indicate an anthropogenic or plume-derived source rather than an intrinsic soil component.",
+                "numeric_concentration_transcribed": false
+              },
+              {
+                "site_id": "Site 4",
+                "locality": "Long Beach near Station 3",
+                "element": "lead",
+                "finding": "A lead spike was observed in the sediment core. The authors state that this may indicate an anthropogenic or plume-derived source rather than an intrinsic soil component.",
+                "numeric_concentration_transcribed": false
+              }
+            ]
           }
         ]
       },
@@ -1349,7 +1367,8 @@
             "findings": [
               "Sites 6 and 7 showed high total-coliform counts in both dry and wet seasons; some measured counts exceeded the cited Class SB total-coliform limit of 1,000 MPN/100 mL.",
               "The isotope mixing model includes Bulabog Sites 6 and 7 together with White Beach Site 3 in an estimated 80–94% canal/sewer-water contribution range; the range is not Bulabog-specific.",
-              "The article documents historical sewer/canal influence in the Bulabog nearshore area."
+              "The article documents historical sewer/canal influence in the Bulabog nearshore area.",
+              "Sediment-core trace-element observations: chromium spike at Site 5 and zinc spike at Site 6; the authors suggest possible anthropogenic or plume-derived sources, without definitive source attribution."
             ],
             "interpretation": "Historical evidence of wastewater influence and total-coliform detection at Bulabog Sites 5–7 in 2012. This is not a current water-quality result and is not directly comparable with the 2022–2023 fecal-coliform monitoring at Ralph's Place.",
             "limitations": [
@@ -1357,9 +1376,26 @@
               "The paper's sampling-site GPS coordinates are not provided in the extracted text; no coordinates are assigned.",
               "The measured indicator is total coliform, not fecal coliform.",
               "The 80–94% isotope-mixing estimate applies to Sites 3, 6 and 7 collectively, not to Bulabog alone.",
-              "The historical discharge arrangement must not be assumed to persist."
+              "The historical discharge arrangement must not be assumed to persist.",
+              "Trace-element observations are qualitative spikes; numeric concentrations are not transcribed and the source is not conclusively identified."
             ],
-            "rehabilitation_context": "The article notes that illegal wastewater pipes were uncovered and permanently sealed during the 2018 rehabilitation. The study's 2011–2012 pipe locations are historical references, not evidence of current illegal discharges."
+            "rehabilitation_context": "The article notes that illegal wastewater pipes were uncovered and permanently sealed during the 2018 rehabilitation. The study's 2011–2012 pipe locations are historical references, not evidence of current illegal discharges.",
+            "trace_element_observations": [
+              {
+                "site_id": "Site 5",
+                "locality": "Bulabog Beach, eastern shore",
+                "element": "chromium",
+                "finding": "A chromium spike was observed in the sediment core. The authors state that this may indicate an anthropogenic or plume-derived source rather than an intrinsic soil component.",
+                "numeric_concentration_transcribed": false
+              },
+              {
+                "site_id": "Site 6",
+                "locality": "Bulabog Beach, eastern shore",
+                "element": "zinc",
+                "finding": "A zinc spike was observed in the sediment core. The authors state that this may indicate an anthropogenic or plume-derived source rather than an intrinsic soil component.",
+                "numeric_concentration_transcribed": false
+              }
+            ]
           }
         ]
       },
