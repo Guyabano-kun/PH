@@ -1417,12 +1417,16 @@
       "published_at": "2025-05-26",
       "checked_at": "2026-11-15",
       "coverage": [
+        "White Beach",
+        "Puka Shell Beach",
+        "Diniwid Beach",
+        "Bulabog Beach",
         "Ilig-Iligan Beach",
-        "Lapuz-Lapuz Beach",
-        "Punta Bunga Beach",
-        "Tulubhan Beach",
+        "Tambisaan Beach",
         "Balinghai Beach",
-        "Tambisaan Beach"
+        "Lapus-Lapus Beach",
+        "Punta Bunga Beach",
+        "Tulubhan Beach"
       ],
       "limitations": "Secondary travel guide updated 26 May 2025. Access routes, road condition, facilities, day-pass availability, transport times/fares and visitor conditions are not official LGU/resort notices and may change. Descriptions do not establish a surveyed beach boundary, legal public right-of-way, guaranteed entry, current fees, lifeguard coverage or real-time sea safety. Treat resort-access claims and public-path descriptions as visitor-guide reports, not legal determinations.",
       "reliability": "secondary_source"
