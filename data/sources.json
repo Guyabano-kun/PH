@@ -471,6 +471,22 @@
       ],
       "limitations": "This is a neighborhood/locality reference point, not a beach feature, beach centroid, shoreline boundary, or public access point.",
       "reliability": "high_for_locality_feature_identity_and_reference_coordinate"
+    },
+    {
+      "id": "SRC-024",
+      "title": "2023 Regional State of the Brown Environment Report – Western Visayas",
+      "publisher": "Department of Environment and Natural Resources, Environmental Management Bureau Region VI",
+      "url": "https://r6.emb.gov.ph/wp-content/uploads/2024/07/2023-EMBr6-RSoBER-1.pdf",
+      "type": "official_regional_environment_report",
+      "published_at": "2024-07",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Boracay Island coastal and marine water-quality monitoring stations",
+        "CY 2023 annual monitoring results",
+        "2019–2023 comparative monitoring data"
+      ],
+      "limitations": "Station-specific annual results, not whole-beach measurements or current real-time bathing-water advice. The fecal-coliform compliance chart caption states Jan–Nov 2023 while report narrative refers to 12 sampling events; sampling-event count is therefore not copied. The report contains conflicting 2023 TSS values for Ralph's Place (32.3 and 33.4 mg/L); that TSS value is excluded.",
+      "reliability": "official_government_annual_report"
     }
   ]
 }
