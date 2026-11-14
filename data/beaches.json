@@ -266,7 +266,8 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "monitoring_stations": []
       },
       "evidence": [
         {
@@ -571,7 +572,8 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "monitoring_stations": []
       },
       "evidence": [
         {
@@ -876,7 +878,34 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "monitoring_stations": [
+          {
+            "station_name": "Puka Beach",
+            "station_type": "DENR-EMB ambient water-quality sampling station",
+            "barangay": "Yapak",
+            "water_body_class": "SB",
+            "coordinates": {
+              "latitude": 11.996,
+              "longitude": 121.9159444,
+              "coordinate_type": "monitoring_station",
+              "not_beach_centroid": true,
+              "source_id": "SRC-002"
+            },
+            "monitoring_period": "January–December 2022",
+            "fecal_coliform_geometric_mean_mpn_100ml": 11,
+            "water_quality_guideline_mpn_100ml": 100,
+            "compliance": {
+              "compliant_percent": 92,
+              "non_compliant_percent": 8,
+              "sampling_events": 12
+            },
+            "source_ids": [
+              "SRC-002"
+            ],
+            "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach."
+          }
+        ]
       },
       "evidence": [
         {
@@ -890,13 +919,13 @@
           "status": "supported"
         },
         {
-          "source_id": "SRC-002",
-          "claim": "Historical water-quality monitoring station associated with this beach/area",
+          "source_id": "SRC-004",
+          "claim": "Listed in an operator's island-hopping itinerary as a destination/stop, not as a departure point",
           "status": "supported"
         },
         {
-          "source_id": "SRC-004",
-          "claim": "Listed in an operator's island-hopping itinerary as a destination/stop, not as a departure point",
+          "source_id": "SRC-002",
+          "claim": "DENR-EMB 2022 report gives the Puka Beach sampling-station coordinates and annual fecal-coliform geomean (11 MPN/100 ml; Class SB guideline 100; 92% compliant across 12 sampling events). This is historical station data, not a current beach-wide result.",
           "status": "supported"
         }
       ],
@@ -919,7 +948,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 1
+          "revision": 2
         }
       }
     },
@@ -1178,7 +1207,34 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "monitoring_stations": [
+          {
+            "station_name": "Diniwid Beach",
+            "station_type": "DENR-EMB ambient water-quality sampling station",
+            "barangay": "Balabag",
+            "water_body_class": "SB",
+            "coordinates": {
+              "latitude": 11.9761944,
+              "longitude": 121.9117778,
+              "coordinate_type": "monitoring_station",
+              "not_beach_centroid": true,
+              "source_id": "SRC-002"
+            },
+            "monitoring_period": "January–December 2022",
+            "fecal_coliform_geometric_mean_mpn_100ml": 18,
+            "water_quality_guideline_mpn_100ml": 100,
+            "compliance": {
+              "compliant_percent": 83,
+              "non_compliant_percent": 17,
+              "sampling_events": 12
+            },
+            "source_ids": [
+              "SRC-002"
+            ],
+            "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach."
+          }
+        ]
       },
       "evidence": [
         {
@@ -1193,7 +1249,7 @@
         },
         {
           "source_id": "SRC-002",
-          "claim": "Historical water-quality monitoring station associated with this beach/area",
+          "claim": "DENR-EMB 2022 report gives the Diniwid Beach sampling-station coordinates and annual fecal-coliform geomean (18 MPN/100 ml; Class SB guideline 100; 83% compliant across 12 sampling events). This is historical station data, not a current beach-wide result.",
           "status": "supported"
         }
       ],
@@ -1216,7 +1272,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 1
+          "revision": 2
         }
       }
     },
@@ -1472,7 +1528,8 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "monitoring_stations": []
       },
       "evidence": [
         {
@@ -1761,7 +1818,8 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "monitoring_stations": []
       },
       "evidence": [
         {
@@ -2050,7 +2108,8 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "monitoring_stations": []
       },
       "evidence": [
         {
@@ -2342,7 +2401,34 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "monitoring_stations": [
+          {
+            "station_name": "Ilig-Iligan Shell Museum",
+            "station_type": "DENR-EMB ambient water-quality sampling station",
+            "barangay": "Yapak",
+            "water_body_class": "SB",
+            "coordinates": {
+              "latitude": 11.9928889,
+              "longitude": 121.9254167,
+              "coordinate_type": "monitoring_station",
+              "not_beach_centroid": true,
+              "source_id": "SRC-002"
+            },
+            "monitoring_period": "January–December 2022",
+            "fecal_coliform_geometric_mean_mpn_100ml": 13,
+            "water_quality_guideline_mpn_100ml": 100,
+            "compliance": {
+              "compliant_percent": 92,
+              "non_compliant_percent": 8,
+              "sampling_events": 12
+            },
+            "source_ids": [
+              "SRC-002"
+            ],
+            "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach."
+          }
+        ]
       },
       "evidence": [
         {
@@ -2357,7 +2443,7 @@
         },
         {
           "source_id": "SRC-002",
-          "claim": "Historical water-quality monitoring station associated with this beach/area",
+          "claim": "DENR-EMB 2022 report gives the Ilig-Iligan Shell Museum sampling-station coordinates and annual fecal-coliform geomean (13 MPN/100 ml; Class SB guideline 100; 92% compliant across 12 sampling events). This is historical station data, not a current beach-wide result.",
           "status": "supported"
         }
       ],
@@ -2380,7 +2466,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 1
+          "revision": 2
         }
       }
     },
@@ -2636,7 +2722,8 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "monitoring_stations": []
       },
       "evidence": [
         {
@@ -2928,7 +3015,34 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "monitoring_stations": [
+          {
+            "station_name": "Tulubhan Pier",
+            "station_type": "DENR-EMB ambient water-quality sampling station",
+            "barangay": "Manoc-Manoc",
+            "water_body_class": "SB",
+            "coordinates": {
+              "latitude": 11.955,
+              "longitude": 121.9380556,
+              "coordinate_type": "monitoring_station",
+              "not_beach_centroid": true,
+              "source_id": "SRC-002"
+            },
+            "monitoring_period": "January–December 2022",
+            "fecal_coliform_geometric_mean_mpn_100ml": 141,
+            "water_quality_guideline_mpn_100ml": 100,
+            "compliance": {
+              "compliant_percent": 42,
+              "non_compliant_percent": 58,
+              "sampling_events": 12
+            },
+            "source_ids": [
+              "SRC-002"
+            ],
+            "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach."
+          }
+        ]
       },
       "evidence": [
         {
@@ -2943,7 +3057,7 @@
         },
         {
           "source_id": "SRC-002",
-          "claim": "Historical water-quality monitoring station associated with this beach/area",
+          "claim": "DENR-EMB 2022 report gives the Tulubhan Pier sampling-station coordinates and annual fecal-coliform geomean (141 MPN/100 ml; Class SB guideline 100; 42% compliant across 12 sampling events). This is historical station data, not a current beach-wide result.",
           "status": "supported"
         }
       ],
@@ -2966,7 +3080,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 1
+          "revision": 2
         }
       }
     },
@@ -3233,7 +3347,34 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "monitoring_stations": [
+          {
+            "station_name": "Tambisaan Pier",
+            "station_type": "DENR-EMB ambient water-quality sampling station",
+            "barangay": "Manoc-Manoc",
+            "water_body_class": "SC",
+            "coordinates": {
+              "latitude": 11.9492778,
+              "longitude": 121.9474167,
+              "coordinate_type": "monitoring_station",
+              "not_beach_centroid": true,
+              "source_id": "SRC-002"
+            },
+            "monitoring_period": "January–December 2022",
+            "fecal_coliform_geometric_mean_mpn_100ml": 135,
+            "water_quality_guideline_mpn_100ml": 200,
+            "compliance": {
+              "compliant_percent": 50,
+              "non_compliant_percent": 50,
+              "sampling_events": 12
+            },
+            "source_ids": [
+              "SRC-002"
+            ],
+            "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach."
+          }
+        ]
       },
       "evidence": [
         {
@@ -3247,13 +3388,13 @@
           "status": "supported"
         },
         {
-          "source_id": "SRC-002",
-          "claim": "Historical monitoring at Tambisaan Pier; pier is distinct from beach recreational area",
+          "source_id": "SRC-004",
+          "claim": "Listed in an operator's island-hopping itinerary as a destination/stop, not as a departure point",
           "status": "supported"
         },
         {
-          "source_id": "SRC-004",
-          "claim": "Listed in an operator's island-hopping itinerary as a destination/stop, not as a departure point",
+          "source_id": "SRC-002",
+          "claim": "DENR-EMB 2022 report gives the Tambisaan Pier sampling-station coordinates and annual fecal-coliform geomean (135 MPN/100 ml; Class SC guideline 200; 50% compliant across 12 sampling events). This is historical station data, not a current beach-wide result.",
           "status": "supported"
         }
       ],
@@ -3276,7 +3417,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 1
+          "revision": 2
         }
       }
     },
@@ -3535,7 +3676,34 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "monitoring_stations": [
+          {
+            "station_name": "Angol Point",
+            "station_type": "DENR-EMB ambient water-quality sampling station",
+            "barangay": "Manoc-Manoc",
+            "water_body_class": "SB",
+            "coordinates": {
+              "latitude": 11.9485278,
+              "longitude": 121.9312222,
+              "coordinate_type": "monitoring_station",
+              "not_beach_centroid": true,
+              "source_id": "SRC-002"
+            },
+            "monitoring_period": "January–December 2022",
+            "fecal_coliform_geometric_mean_mpn_100ml": 13,
+            "water_quality_guideline_mpn_100ml": 100,
+            "compliance": {
+              "compliant_percent": 92,
+              "non_compliant_percent": 8,
+              "sampling_events": 12
+            },
+            "source_ids": [
+              "SRC-002"
+            ],
+            "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach."
+          }
+        ]
       },
       "evidence": [
         {
@@ -3550,7 +3718,7 @@
         },
         {
           "source_id": "SRC-002",
-          "claim": "Historical water-quality monitoring station associated with this beach/area",
+          "claim": "DENR-EMB 2022 report gives the Angol Point sampling-station coordinates and annual fecal-coliform geomean (13 MPN/100 ml; Class SB guideline 100; 92% compliant across 12 sampling events). This is historical station data, not a current beach-wide result.",
           "status": "supported"
         }
       ],
@@ -3573,7 +3741,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 1
+          "revision": 2
         }
       }
     },
@@ -3584,10 +3752,11 @@
       "identity": {
         "place_name": {
           "value": "Hagdan Beach",
-          "status": "supported",
+          "status": "provisional",
           "source_ids": [
-            "SRC-001"
-          ]
+            "SRC-008"
+          ],
+          "note": "A secondary travel guide uses the name Hagdan Beach; the TPB map labels Sitio Hagdan but does not list a separate Hagdan Beach in its Beach / Dive Site index."
         },
         "alternative_names": {
           "value": null,
@@ -3599,19 +3768,18 @@
           "status": "unknown"
         },
         "description": {
-          "value": "Separate named beach identity and exact limits still require verification; no coordinate in current weather-map dataset.",
+          "value": "A separately named beach described in secondary travel-guide material near Sitio Hagdan; exact beach limits and access conditions remain unverified.",
           "status": "provisional",
-          "source_ids": []
+          "source_ids": [
+            "SRC-008"
+          ]
         }
       },
       "geography": {
         "coast_orientation": {
-          "value": "Northwest coast",
-          "status": "supported",
-          "source_ids": [
-            "SRC-001"
-          ],
-          "note": "Coarse coast classification; not a surveyed shoreline azimuth."
+          "value": null,
+          "status": "unknown",
+          "note": "The TPB map labels Sitio Hagdan but does not establish the coastline orientation or boundaries of a separate Hagdan Beach."
         },
         "coordinates": {
           "latitude": null,
@@ -3827,7 +3995,8 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "monitoring_stations": []
       },
       "evidence": [
         {
@@ -3836,21 +4005,23 @@
           "status": "legacy_unverified"
         },
         {
-          "source_id": "SRC-001",
-          "claim": "Place name and approximate map location",
-          "status": "supported"
+          "source_id": "SRC-008",
+          "claim": "Secondary travel guide explicitly uses the name Hagdan Beach and describes its access; it does not provide authoritative boundaries or surveyed coordinates.",
+          "status": "provisional"
         }
       ],
       "data_quality": {
         "record_status": "draft",
-        "overall_confidence": "low_to_moderate",
+        "overall_confidence": "low",
         "known_gaps": [
           "Beach boundary",
           "Bathymetry and reef profile",
           "Local currents and wave exposure",
           "Public access and restrictions",
           "Current water quality",
-          "Activity-specific hazards"
+          "Activity-specific hazards",
+          "Independent confirmation of separate beach identity and boundaries",
+          "Verified coordinates and public access route"
         ],
         "last_reviewed": "2026-11-14"
       },
@@ -3860,7 +4031,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 1
+          "revision": 2
         }
       }
     }
