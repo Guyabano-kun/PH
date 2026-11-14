@@ -248,7 +248,7 @@
       },
       "ecology": {
         "water_quality_history": {
-          "value": "DENR-EMB monitored Boat Stations 1, 2 and 3 as representative sampling points along the Front/White Beach stretch in 2022; results are station-specific and historical.",
+          "value": "DENR-EMB monitored Boat Stations 1, 2 and 3 along the Front/White Beach stretch in 2022. The six-station group was designated as representative for nutrient analysis; fecal-coliform and oil-and-grease values below remain specific to each station.",
           "status": "supported",
           "source_ids": [
             "SRC-002"
@@ -294,7 +294,26 @@
             "source_ids": [
               "SRC-002"
             ],
-            "interpretation": "DENR-EMB identified this station among six stations selected as representative of the Front/White Beach stretch. This remains a station-specific historical result, not a current whole-beach bathing-water status."
+            "interpretation": "DENR-EMB included this point in the six-station Front/White Beach group selected as representative for nutrient analysis. Fecal-coliform and oil-and-grease results remain station-specific historical measurements, not a current whole-beach status.",
+            "oil_and_grease": {
+              "annual_average_mg_l": 2.3,
+              "water_quality_guideline_mg_l": 2,
+              "compliance": {
+                "compliant_percent": 50,
+                "non_compliant_percent": 50,
+                "sampling_events": 4
+              },
+              "sampling_dates": [
+                "2022-04",
+                "2022-06",
+                "2022-09",
+                "2022-11"
+              ],
+              "source_ids": [
+                "SRC-002"
+              ],
+              "interpretation": "Quarterly historical monitoring in 2022. Not a current water-quality result."
+            }
           },
           {
             "station_name": "Boat Station 2",
@@ -319,7 +338,26 @@
             "source_ids": [
               "SRC-002"
             ],
-            "interpretation": "DENR-EMB identified this station among six stations selected as representative of the Front/White Beach stretch. This remains a station-specific historical result, not a current whole-beach bathing-water status."
+            "interpretation": "DENR-EMB included this point in the six-station Front/White Beach group selected as representative for nutrient analysis. Fecal-coliform and oil-and-grease results remain station-specific historical measurements, not a current whole-beach status.",
+            "oil_and_grease": {
+              "annual_average_mg_l": 1.5,
+              "water_quality_guideline_mg_l": 2,
+              "compliance": {
+                "compliant_percent": 75,
+                "non_compliant_percent": 25,
+                "sampling_events": 4
+              },
+              "sampling_dates": [
+                "2022-04",
+                "2022-06",
+                "2022-09",
+                "2022-11"
+              ],
+              "source_ids": [
+                "SRC-002"
+              ],
+              "interpretation": "Quarterly historical monitoring in 2022. Not a current water-quality result."
+            }
           },
           {
             "station_name": "Boat Station 3",
@@ -344,7 +382,26 @@
             "source_ids": [
               "SRC-002"
             ],
-            "interpretation": "DENR-EMB identified this station among six stations selected as representative of the Front/White Beach stretch. This remains a station-specific historical result, not a current whole-beach bathing-water status."
+            "interpretation": "DENR-EMB included this point in the six-station Front/White Beach group selected as representative for nutrient analysis. Fecal-coliform and oil-and-grease results remain station-specific historical measurements, not a current whole-beach status.",
+            "oil_and_grease": {
+              "annual_average_mg_l": 2.5,
+              "water_quality_guideline_mg_l": 2,
+              "compliance": {
+                "compliant_percent": 50,
+                "non_compliant_percent": 50,
+                "sampling_events": 4
+              },
+              "sampling_dates": [
+                "2022-04",
+                "2022-06",
+                "2022-09",
+                "2022-11"
+              ],
+              "source_ids": [
+                "SRC-002"
+              ],
+              "interpretation": "Quarterly historical monitoring in 2022. Not a current water-quality result."
+            }
           }
         ]
       },
@@ -389,7 +446,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 2
+          "revision": 3
         }
       }
     },
@@ -987,7 +1044,26 @@
             "source_ids": [
               "SRC-002"
             ],
-            "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach."
+            "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach.",
+            "oil_and_grease": {
+              "annual_average_mg_l": 2,
+              "water_quality_guideline_mg_l": 2,
+              "compliance": {
+                "compliant_percent": 75,
+                "non_compliant_percent": 25,
+                "sampling_events": 4
+              },
+              "sampling_dates": [
+                "2022-04",
+                "2022-06",
+                "2022-09",
+                "2022-11"
+              ],
+              "source_ids": [
+                "SRC-002"
+              ],
+              "interpretation": "Quarterly historical monitoring in 2022. Not a current water-quality result."
+            }
           }
         ]
       },
@@ -1316,7 +1392,26 @@
             "source_ids": [
               "SRC-002"
             ],
-            "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach."
+            "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach.",
+            "oil_and_grease": {
+              "annual_average_mg_l": 1.8,
+              "water_quality_guideline_mg_l": 2,
+              "compliance": {
+                "compliant_percent": 50,
+                "non_compliant_percent": 50,
+                "sampling_events": 4
+              },
+              "sampling_dates": [
+                "2022-04",
+                "2022-06",
+                "2022-09",
+                "2022-11"
+              ],
+              "source_ids": [
+                "SRC-002"
+              ],
+              "interpretation": "Quarterly historical monitoring in 2022. Not a current water-quality result."
+            }
           }
         ]
       },
@@ -2510,7 +2605,26 @@
             "source_ids": [
               "SRC-002"
             ],
-            "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach."
+            "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach.",
+            "oil_and_grease": {
+              "annual_average_mg_l": 1.8,
+              "water_quality_guideline_mg_l": 2,
+              "compliance": {
+                "compliant_percent": 75,
+                "non_compliant_percent": 25,
+                "sampling_events": 4
+              },
+              "sampling_dates": [
+                "2022-04",
+                "2022-06",
+                "2022-09",
+                "2022-11"
+              ],
+              "source_ids": [
+                "SRC-002"
+              ],
+              "interpretation": "Quarterly historical monitoring in 2022. Not a current water-quality result."
+            }
           }
         ]
       },
@@ -3124,7 +3238,26 @@
             "source_ids": [
               "SRC-002"
             ],
-            "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach."
+            "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach.",
+            "oil_and_grease": {
+              "annual_average_mg_l": 3,
+              "water_quality_guideline_mg_l": 2,
+              "compliance": {
+                "compliant_percent": 50,
+                "non_compliant_percent": 50,
+                "sampling_events": 4
+              },
+              "sampling_dates": [
+                "2022-04",
+                "2022-06",
+                "2022-09",
+                "2022-11"
+              ],
+              "source_ids": [
+                "SRC-002"
+              ],
+              "interpretation": "Quarterly historical monitoring in 2022. Not a current water-quality result."
+            }
           }
         ]
       },
@@ -3456,7 +3589,26 @@
             "source_ids": [
               "SRC-002"
             ],
-            "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach."
+            "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach.",
+            "oil_and_grease": {
+              "annual_average_mg_l": 2.8,
+              "water_quality_guideline_mg_l": 3,
+              "compliance": {
+                "compliant_percent": 75,
+                "non_compliant_percent": 25,
+                "sampling_events": 4
+              },
+              "sampling_dates": [
+                "2022-04",
+                "2022-06",
+                "2022-09",
+                "2022-11"
+              ],
+              "source_ids": [
+                "SRC-002"
+              ],
+              "interpretation": "Quarterly historical monitoring in 2022. Not a current water-quality result."
+            }
           }
         ]
       },
@@ -3785,7 +3937,26 @@
             "source_ids": [
               "SRC-002"
             ],
-            "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach."
+            "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach.",
+            "oil_and_grease": {
+              "annual_average_mg_l": 3,
+              "water_quality_guideline_mg_l": 2,
+              "compliance": {
+                "compliant_percent": 75,
+                "non_compliant_percent": 25,
+                "sampling_events": 4
+              },
+              "sampling_dates": [
+                "2022-04",
+                "2022-06",
+                "2022-09",
+                "2022-11"
+              ],
+              "source_ids": [
+                "SRC-002"
+              ],
+              "interpretation": "Quarterly historical monitoring in 2022. Not a current water-quality result."
+            }
           }
         ]
       },
