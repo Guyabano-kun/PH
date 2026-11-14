@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.15",
+  "dataset_version": "0.2.16",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-14",
   "beach_count": 13,
@@ -64,6 +64,8 @@
     "Corrected a provenance defect in White Beach and Bulabog hydrodynamics: Amihan/Habagat exposure fields previously marked supported without sources are now provisional and cite the coarse coast-side map plus PAGASA's national monsoon-direction reference (SRC-001, SRC-038). These are directional inferences only; local wind, waves, currents and rip-current behaviour remain unknown.",
     "Registered NAMRIA primary hydrographic data pathways (SRC-039 to SRC-041): bathymetry chart/data ASCII XYZ, georeferenced nautical charts, and station/time-specific tidal-current and wave data can be requested. No numerical hydrographic values have been ingested.",
     "NAMRIA Notices to Mariners 2026-04 records a submarine pipeline correction for charts 1544 and 4358. Chart 1544 and chart 4358 use separate coordinate pairs in the notice; these representations must not be merged. A navigation-chart correction is not treated as a beach-specific hazard or exclusion zone.",
-    "The NAMRIA ENC availability list dated 13 February 2025 includes PH5CATIC (Port of Caticlan) and PH2CVZ40 (Central Visayas), both affected by the 2026 pipeline correction. Availability confirms potential chart coverage only, not extraction of bathymetric data."
+    "The NAMRIA ENC availability list dated 13 February 2025 includes PH5CATIC (Port of Caticlan) and PH2CVZ40 (Central Visayas), both affected by the 2026 pipeline correction. Availability confirms potential chart coverage only, not extraction of bathymetric data.",
+    "Added approximate published shoreline lengths: White Beach ~4.0 km (DENR-EMB 2022 report and 2024 peer-reviewed paper) and Bulabog ~2.5 km (2024 peer-reviewed paper), SRC-002 and SRC-042. These approximate lengths do not establish surveyed boundaries or centroids.",
+    "Bulabog reef and seagrass presence are now recorded as supported historical presence based on the 2024 peer-reviewed paper and the 2020 local marine survey (SRC-042, SRC-003). Reef boundaries, reef crest, current condition, bathymetry and current seagrass extent remain unknown."
   ]
 }
