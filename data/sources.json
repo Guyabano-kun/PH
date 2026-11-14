@@ -914,6 +914,22 @@
       ],
       "limitations": "The decision concerns land classification and alienability. Its discussion that Proclamation No. 1801 did not identify specific limits for land classification must not be misrepresented as a ruling that the marine-reserve designation is invalid. It does not provide beach-level marine-reserve boundaries.",
       "reliability": "official_judicial_decision"
+    },
+    {
+      "id": "SRC-051",
+      "title": "National Oil Spill Contingency Plan – Annex 10: Marine Protected Areas",
+      "publisher": "Philippine Coast Guard",
+      "url": "https://www.coastguard.gov.ph/images/2019_Files/NOSCOP_Icon/Approved_NOSCOP_OCT_2019.pdf",
+      "type": "official_national_contingency_plan_annex",
+      "published_at": "2019-10",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "National list of marine protected areas included in the NOSCOP annex",
+        "Boracay Island TZMR entry for Malay, Aklan",
+        "Registry attributes: National; year 1978; reference coordinate 121.9166667 E, 11.96666667 N"
+      ],
+      "limitations": "The annex provides a point reference, not a boundary polygon, area, zoning or beach-level limits. The heading 'Marine Protected Areas (NIPAS Law)' must not be used to infer that the 1978 Boracay Island Tourist Zone and Marine Reserve was originally established under the later NIPAS statute. The underlying designation is recorded separately under Presidential Proclamation No. 1801 (SRC-049).",
+      "reliability": "official_government_contingency_plan_annex"
     }
   ]
 }
