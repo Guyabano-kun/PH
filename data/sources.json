@@ -796,7 +796,7 @@
         "Lugutan Outfall",
         "On-site DO, temperature and pH compliance; laboratory TSS, color and fecal-coliform samples pending"
       ],
-      "limitations": "Reports outfall samples, not ambient recreational-water stations or beach bathing points. No numerical values or coordinates are published; laboratory results for TSS, color and fecal coliform were pending at publication.",
+      "limitations": "Reports outfall samples, not ambient recreational-water stations or beach bathing points. No numerical values or coordinates are published. It reports DO, temperature and pH compliant at all sites, but Panay News (SRC-046) reports elevated temperature readings at some locations; temperature status is therefore conflicting. Laboratory results for TSS, color and fecal coliform were pending at publication.",
       "reliability": "secondary_report_attributing_EMB_region_VI"
     },
     {
@@ -829,6 +829,25 @@
       ],
       "limitations": "Aggregated WQMA-level performance, not individual Boracay station results or beach-specific water quality. Does not provide station names, numerical values or sampling dates for Boracay.",
       "reliability": "official_national_government_report"
+    },
+    {
+      "id": "SRC-046",
+      "title": "Boracay waters pass key quality tests – EMB; coastal conditions healthy but lab tests pending for other indicators",
+      "publisher": "Panay News, reporting EMB Region VI",
+      "url": "https://www.panaynews.net/boracay-waters-pass-key-quality-tests-emb-coastal-conditions-healthy-but-lab-tests-pending-for-other-indicators/",
+      "type": "secondary_news_report_of_current_Denr_outfall_monitoring",
+      "published_at": "2026-03-07",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "EMB-6 and BIWQMACA outfall sampling on 2–3 March 2026",
+        "Bulabog Outfall 1",
+        "Malabunot Outfall 2",
+        "Bulabog Drainage Outfall",
+        "Lugutan Outfall",
+        "DO and pH reported compliant; elevated temperature readings reported at some locations; laboratory TSS, color and fecal-coliform results pending"
+      ],
+      "limitations": "Secondary report conflicts with Daily Tribune on temperature compliance: Panay News reports elevated temperature at some locations, but gives no values or station names. No numerical DO/pH results or coordinates are provided. Outfall samples are not ambient beach bathing-water samples.",
+      "reliability": "secondary_report_attributing_EMB_region_VI"
     }
   ]
 }
