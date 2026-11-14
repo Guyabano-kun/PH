@@ -38,18 +38,22 @@
       "beach_id": "puka",
       "status": "operator_itinerary_stop",
       "source_ids": [
-        "SRC-004"
+        "SRC-004",
+        "SRC-080"
       ],
-      "limitations": "Itinerary-dependent; no departure status implied."
+      "limitations": "Possible itinerary destination in operator/marketplace listings; weather and route dependent. This does not establish a departure point or confirmed public landing permission.",
+      "season": "Both seasonal routes; exact inclusion is weather- and itinerary-dependent"
     },
     {
       "id": "STOP-002",
       "beach_id": "tambisaan",
       "status": "operator_itinerary_stop",
       "source_ids": [
-        "SRC-004"
+        "SRC-004",
+        "SRC-080"
       ],
-      "limitations": "Itinerary-dependent; no departure status implied."
+      "limitations": "Listed as a possible destination/lunch location; this does not establish routine island-hopping departure from the beach or confirmed public landing permission. Tambisaan Pier's transport function remains separate.",
+      "season": "Both seasonal routes; commonly listed as lunch / visit location"
     },
     {
       "id": "STOP-003",
