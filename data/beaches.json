@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.11",
+  "dataset_version": "0.2.12",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -1056,6 +1056,112 @@
                 "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
                 "notes": "TSS excluded because the 2023 report gives conflicting Ralph's Place values (32.3 and 33.4 mg/L) in separate figures."
               }
+            ]
+          }
+        ],
+        "marine_ecological_surveys": [
+          {
+            "survey_id": "MESA-2020-BOLABOG",
+            "survey_year": 2020,
+            "locality": "Sitio Bolabog, Barangay Balabag",
+            "survey_type": "Marine ecological survey associated with discharge-pipe stations and adjacent seagrass sampling locations",
+            "scope": "Coral and reef-associated fish survey at two discharge-pipe stations (A1 Bolabog and A2 Malabunot); seagrass survey at three locations in Sitio Bolabog.",
+            "station_linkage": "Locality-level evidence for Sitio Bolabog only. Results are not a beach-wide or current reef-condition assessment.",
+            "coral_stations": [
+              {
+                "station_id": "A1",
+                "station_location": "Sitio Bolabog, Barangay Balabag",
+                "coordinates": {
+                  "latitude": 11.9677167,
+                  "longitude": 121.9350333,
+                  "coordinate_type": "marine_ecological_survey_station",
+                  "not_beach_centroid": true,
+                  "source_coordinate_text": "11°58.063′N, 121°56.102′E",
+                  "distance_from_legacy_beach_marker_m": 708,
+                  "source_id": "SRC-003"
+                },
+                "survey_depth_m": 12,
+                "dominant_substrate": "sand",
+                "dominant_substrate_cover_percent": 36.93,
+                "live_hard_coral_cover_percent": 21.92,
+                "taxonomic_amalgamation_units": 25,
+                "coral_category": "C",
+                "source_ids": [
+                  "SRC-003"
+                ],
+                "note": "One 2020 coral/reef-associated fish station at a discharge pipe. The reported 21.92% live hard-coral cover is station-specific and must not be generalized to the whole Bulabog reef or beach."
+              }
+            ],
+            "seagrass_stations": [
+              {
+                "station_id": "T1",
+                "station_location": "Sitio Bolabog, Barangay Balabag",
+                "coordinates": {
+                  "latitude": null,
+                  "longitude": null,
+                  "coordinate_type": "marine_ecological_survey_station",
+                  "not_beach_centroid": true,
+                  "source_coordinate_text": "11°51.867′N, 121°55.800′E",
+                  "coordinate_validation_status": "source_coordinate_anomaly_not_used_for_mapping",
+                  "source_id": "SRC-003"
+                },
+                "seagrass_cover_percent": 62.27,
+                "source_ids": [
+                  "SRC-003"
+                ],
+                "note": "The report labels this point Sitio Bolabog, but the printed latitude is approximately 11.3 km from the existing Bulabog legacy marker and inconsistent with T2/T3. The original coordinate text is preserved; no correction or map point is assigned."
+              },
+              {
+                "station_id": "T2",
+                "station_location": "Sitio Bolabog, Barangay Balabag",
+                "coordinates": {
+                  "latitude": 11.9641333,
+                  "longitude": 121.9303167,
+                  "coordinate_type": "marine_ecological_survey_station",
+                  "not_beach_centroid": true,
+                  "source_coordinate_text": "11°57.848′N, 121°55.819′E",
+                  "distance_from_legacy_beach_marker_m": 228,
+                  "source_id": "SRC-003"
+                },
+                "seagrass_cover_percent": 69.55,
+                "source_ids": [
+                  "SRC-003"
+                ]
+              },
+              {
+                "station_id": "T3",
+                "station_location": "Sitio Bolabog, Barangay Balabag",
+                "coordinates": {
+                  "latitude": 11.9639667,
+                  "longitude": 121.9304667,
+                  "coordinate_type": "marine_ecological_survey_station",
+                  "not_beach_centroid": true,
+                  "source_coordinate_text": "11°57.838′N, 121°55.828′E",
+                  "distance_from_legacy_beach_marker_m": 252,
+                  "source_id": "SRC-003"
+                },
+                "seagrass_cover_percent": 59.09,
+                "source_ids": [
+                  "SRC-003"
+                ]
+              }
+            ],
+            "seagrass_summary": {
+              "mean_cover_percent": 63.64,
+              "previous_year_mean_cover_percent": 75,
+              "reported_condition": "good",
+              "sampling_year": 2020,
+              "species_composition_status": "not_normalized_due_to_internal_source_discrepancy",
+              "note": "The narrative reports eight species, while the station table contains ten taxon rows and its printed station totals do not reconcile consistently with the visible checkmarks. Species composition is therefore not normalized."
+            },
+            "source_ids": [
+              "SRC-003"
+            ],
+            "limitations": [
+              "The 2020 survey was commissioned for an EPRMP and sampled discharge-pipe and nearby marine stations, not the entire Bulabog Beach.",
+              "The T1 source coordinate is preserved verbatim but excluded from mapping because it is geographically inconsistent with the reported locality.",
+              "The report's seagrass species narrative and table are internally inconsistent; no definitive species list is published in this normalized record.",
+              "Historical observations from 2020 do not establish current coral or seagrass condition."
             ]
           }
         ]
