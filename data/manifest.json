@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.28",
+  "dataset_version": "0.2.29",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-14",
   "beach_count": 13,
@@ -91,6 +91,8 @@
     "Corrected the site-wide protected-area research conclusion after locating the primary legal instrument: Presidential Proclamation No. 1801 (SRC-049) expressly declares Boracay Islands, Aklan as a tourist zone and marine reserve under the Philippine Tourism Authority. All 13 passports now record this supported island-level designation. The proclamation does not provide beach-specific marine boundaries, coordinates, zoning or no-take limits; no such geometry is inferred.",
     "Added the Supreme Court decision in G.R. Nos. 167707 and 173775 (SRC-050) to clarify the legal distinction between Proclamation No. 1801's tourism/ecological administration purpose and land classification under Proclamation No. 1064. The Court's discussion of the lack of specific limits for land classification is not interpreted as invalidating the marine-reserve designation.",
     "Updated the Coral Triangle Atlas record SRC-048: its missing legal-instrument field is now cross-referenced to the primary Proclamation No. 1801 source SRC-049. The Atlas point remains unsuitable for delineating protected-area or beach boundaries.",
-    "Added the Philippine Coast Guard 2019 National Oil Spill Contingency Plan Annex 10 (SRC-051), which lists Boracay Island TZMR as a national marine protected area with year 1978 and a single reference coordinate. This independently corroborates the Proclamation No. 1801 island-level marine-reserve designation but provides no boundary polygon, area, zoning or beach-level limits. The annex heading referring to NIPAS is not used to claim that the 1978 designation was originally established under the later NIPAS statute."
+    "Added the Philippine Coast Guard 2019 National Oil Spill Contingency Plan Annex 10 (SRC-051), which lists Boracay Island TZMR as a national marine protected area with year 1978 and a single reference coordinate. This independently corroborates the Proclamation No. 1801 island-level marine-reserve designation but provides no boundary polygon, area, zoning or beach-level limits. The annex heading referring to NIPAS is not used to claim that the 1978 designation was originally established under the later NIPAS statute.",
+    "Recorded the explicit boundary-delineation dependency in Proclamation No. 1801: the Philippine Tourism Authority was directed to delineate well-defined geographic areas within the declared zones. The Supreme Court decision SRC-050 identifies PTA Circular No. 3-82 dated 3 September 1982 as the implementing instrument, but the full circular and any associated maps were not recovered in this research pass. Beach-level marine-reserve boundaries remain unverified; no polygons or coordinates are inferred.",
+    "Access research did not establish current public approach routes or entry permissions for individual beaches. The general public-use easement and Boracay 25+5 m beach easement remain legal context only; historical 2018 temporary closure rules are not presented as current access restrictions."
   ]
 }
