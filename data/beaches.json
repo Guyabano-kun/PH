@@ -248,9 +248,12 @@
       },
       "ecology": {
         "water_quality_history": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "DENR-EMB monitored Boat Stations 1, 2 and 3 as representative sampling points along the Front/White Beach stretch in 2022; results are station-specific and historical.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "note": "Do not infer current water quality or generalize individual station results to every part of White Beach."
         },
         "reef_condition": {
           "value": null,
@@ -267,7 +270,83 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "monitoring_stations": []
+        "monitoring_stations": [
+          {
+            "station_name": "Boat Station 1",
+            "station_type": "DENR-EMB ambient water-quality sampling station",
+            "barangay": "Balabag",
+            "water_body_class": "SB",
+            "coordinates": {
+              "latitude": 11.9646111,
+              "longitude": 121.9219722,
+              "coordinate_type": "monitoring_station",
+              "not_beach_centroid": true,
+              "source_id": "SRC-002"
+            },
+            "monitoring_period": "January–December 2022",
+            "fecal_coliform_geometric_mean_mpn_100ml": 15,
+            "water_quality_guideline_mpn_100ml": 100,
+            "compliance": {
+              "compliant_percent": 100,
+              "non_compliant_percent": 0,
+              "sampling_events": 12
+            },
+            "source_ids": [
+              "SRC-002"
+            ],
+            "interpretation": "DENR-EMB identified this station among six stations selected as representative of the Front/White Beach stretch. This remains a station-specific historical result, not a current whole-beach bathing-water status."
+          },
+          {
+            "station_name": "Boat Station 2",
+            "station_type": "DENR-EMB ambient water-quality sampling station",
+            "barangay": "Balabag",
+            "water_body_class": "SB",
+            "coordinates": {
+              "latitude": 11.9581389,
+              "longitude": 121.9260278,
+              "coordinate_type": "monitoring_station",
+              "not_beach_centroid": true,
+              "source_id": "SRC-002"
+            },
+            "monitoring_period": "January–December 2022",
+            "fecal_coliform_geometric_mean_mpn_100ml": 25,
+            "water_quality_guideline_mpn_100ml": 100,
+            "compliance": {
+              "compliant_percent": 92,
+              "non_compliant_percent": 8,
+              "sampling_events": 12
+            },
+            "source_ids": [
+              "SRC-002"
+            ],
+            "interpretation": "DENR-EMB identified this station among six stations selected as representative of the Front/White Beach stretch. This remains a station-specific historical result, not a current whole-beach bathing-water status."
+          },
+          {
+            "station_name": "Boat Station 3",
+            "station_type": "DENR-EMB ambient water-quality sampling station",
+            "barangay": "Balabag",
+            "water_body_class": "SB",
+            "coordinates": {
+              "latitude": 11.9520556,
+              "longitude": 121.9298056,
+              "coordinate_type": "monitoring_station",
+              "not_beach_centroid": true,
+              "source_id": "SRC-002"
+            },
+            "monitoring_period": "January–December 2022",
+            "fecal_coliform_geometric_mean_mpn_100ml": 12,
+            "water_quality_guideline_mpn_100ml": 100,
+            "compliance": {
+              "compliant_percent": 100,
+              "non_compliant_percent": 0,
+              "sampling_events": 12
+            },
+            "source_ids": [
+              "SRC-002"
+            ],
+            "interpretation": "DENR-EMB identified this station among six stations selected as representative of the Front/White Beach stretch. This remains a station-specific historical result, not a current whole-beach bathing-water status."
+          }
+        ]
       },
       "evidence": [
         {
@@ -283,6 +362,11 @@
         {
           "source_id": "SRC-004",
           "claim": "Operator lists beachfront outside Astoria, Station 1 as seasonal meeting point October–May",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-002",
+          "claim": "DENR-EMB 2022 report identifies Boat Stations 1–3 among six monitoring stations representative of the Front/White Beach stretch and publishes their coordinates and fecal-coliform results.",
           "status": "supported"
         }
       ],
@@ -305,7 +389,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 1
+          "revision": 2
         }
       }
     },
