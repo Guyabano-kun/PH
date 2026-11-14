@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.12",
+  "dataset_version": "0.2.13",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-14",
   "beach_count": 13,
@@ -57,6 +57,9 @@
     "SRC-027 reports March 2026 in-situ screening at four Boracay outfalls: DO, temperature and pH were compliant, while laboratory results for TSS, color and fecal coliform were pending at publication. Outfall measurements are not beach bathing-water results and are not used to infer any beach's current safety.",
     "Added the Boracay-specific 25+5 m easement and the national public-use shoreline easement legal framework (SRC-028 to SRC-031). These are distinct legal concepts. The public-use easement does not establish a practical public approach route or current access conditions at any individual beach; all beach-specific access statuses remain unchanged.",
     "Added the 2020 BMDAI/BIWC marine ecological survey for Sitio Bolabog to the Bulabog passport as station-specific evidence (SRC-003). Coral cover at A1 and seagrass cover at T1–T3 are not extrapolated to the entire beach. T1's printed coordinate is preserved as an anomaly and excluded from mapping; the Sitio Malabunot A2 station is not assigned to any target beach.",
-    "The 2020 EPRMP marine survey reports eight seagrass species in its narrative, while the station table lists ten taxon rows and inconsistent station totals. Species composition is not normalized pending source reconciliation."
+    "The 2020 EPRMP marine survey reports eight seagrass species in its narrative, while the station table lists ten taxon rows and inconsistent station totals. Species composition is not normalized pending source reconciliation.",
+    "Added island-wide marine resource mapping sources SRC-032 to SRC-035. The 2020 assessment records approximately 763 ha coral reefs, 95.37 ha seagrass and 1.90 ha mangroves; the 2026 report of 2024–2025 DENR PENRO validation records 763.30 ha coral habitat on Boracay. These are different reporting vintages and island-level habitat extents, not beach-level live coral cover or reef-condition scores.",
+    "The 2020 DENR/secondary mapping sources report nine seagrass species and barangay-level cover estimates (Balabag 81.84%, Manocmanoc 53.85%, Yapak 53.68%). The underlying mapping report was described as subject to regional review; no values are assigned to individual beaches.",
+    "The DENR 2020 Annual Report confirms that marine resource and MPA mapping/delineation results were presented to stakeholders, but the reviewed source does not provide legal designation instruments or boundary coordinates. PAIS Aklan query did not surface a Boracay-specific protected-area record; because PAIS data are encoded and subject to ongoing validation, the legal MPA/protected-area status remains unverified, not negative."
   ]
 }
