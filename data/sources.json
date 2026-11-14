@@ -688,6 +688,22 @@
       ],
       "limitations": "The dashboard states that data may not fully reflect actual or real-time conditions while updates and validation are ongoing. It cannot alone support a definitive negative finding for a specific location.",
       "reliability": "official_government_registry_disclaimer"
+    },
+    {
+      "id": "SRC-038",
+      "title": "DOST-PAGASA Climate Advisories – Monsoon Overview",
+      "publisher": "Philippine Atmospheric, Geophysical and Astronomical Services Administration",
+      "url": "https://www.pagasa.dost.gov.ph/climate/climate-advisories",
+      "type": "official_meteorological_climatology_reference",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Northeast Monsoon (Amihan) wind direction",
+        "Southwest Monsoon (Habagat) wind direction",
+        "General seasonal monsoon definitions for the Philippines"
+      ],
+      "limitations": "Defines the broad national monsoon wind directions, not local Boracay wind speed, wave height, nearshore currents or beach-specific sea state. Used only with coarse coast orientation to describe a provisional directional exposure inference.",
+      "reliability": "official_national_meteorological_service"
     }
   ]
 }
