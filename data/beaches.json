@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.24",
+  "dataset_version": "0.2.25",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -1735,7 +1735,7 @@
               "Temperature",
               "pH"
             ],
-            "on_site_result": "All three on-site physical parameters were reported compliant at all four sampled outfalls.",
+            "on_site_result": "DO and pH were consistently reported as compliant. Temperature compliance is disputed between two secondary reports and remains unconfirmed.",
             "laboratory_parameters_pending": [
               "Total suspended solids",
               "Color",
@@ -1743,14 +1743,21 @@
             ],
             "laboratory_status": "Samples were forwarded to the laboratory; no numerical laboratory results were included in the cited publication at the time of reporting.",
             "source_ids": [
-              "SRC-043"
+              "SRC-043",
+              "SRC-046"
             ],
             "limitations": [
               "Outfall monitoring is not equivalent to ambient recreational-water monitoring at the beach.",
               "No numerical results or sampling coordinates are published in the cited report.",
               "Laboratory results for TSS, color and fecal coliform were pending at publication.",
-              "This record does not establish bathing-water safety at Bulabog Beach."
-            ]
+              "This record does not establish bathing-water safety at Bulabog Beach.",
+              "Temperature compliance is disputed: Daily Tribune reports compliance at all four sites, while Panay News reports elevated readings at some sites. No numerical readings or affected site names are available."
+            ],
+            "parameter_status": {
+              "dissolved_oxygen": "Reported compliant at all four sampled outfalls by both Daily Tribune and Panay News; no numerical values published.",
+              "pH": "Reported compliant at all four sampled outfalls by both Daily Tribune and Panay News; no numerical values published.",
+              "temperature": "Conflicting secondary reports: Daily Tribune says compliant at all four sites; Panay News reports elevated readings at some locations. Exact values and affected outfall names are not provided. Status unconfirmed."
+            }
           }
         ]
       },
