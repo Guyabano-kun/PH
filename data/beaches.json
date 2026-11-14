@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.26",
+  "dataset_version": "0.2.27",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -419,12 +419,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "protected_area_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
+          "status": "supported",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation.",
           "source_ids": [
-            "SRC-047",
-            "SRC-048"
+            "SRC-049",
+            "SRC-050"
           ]
         },
         "monitoring_stations": [
@@ -962,6 +962,21 @@
               "SRC-047"
             ],
             "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          },
+          {
+            "designation_name": "Boracay Islands Tourist Zone and Marine Reserve",
+            "designation_type": "tourist_zone_and_marine_reserve",
+            "legal_instrument": "Presidential Proclamation No. 1801",
+            "designation_date": "1978-11-10",
+            "administering_authority_at_designation": "Philippine Tourism Authority",
+            "status": "designated",
+            "geographic_scope": "Boracay Islands, Aklan; island-level designation",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-049",
+              "SRC-050"
+            ]
           }
         ]
       },
@@ -1401,12 +1416,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "protected_area_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
+          "status": "supported",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation.",
           "source_ids": [
-            "SRC-047",
-            "SRC-048"
+            "SRC-049",
+            "SRC-050"
           ]
         },
         "monitoring_stations": [
@@ -1804,6 +1819,21 @@
               "SRC-047"
             ],
             "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          },
+          {
+            "designation_name": "Boracay Islands Tourist Zone and Marine Reserve",
+            "designation_type": "tourist_zone_and_marine_reserve",
+            "legal_instrument": "Presidential Proclamation No. 1801",
+            "designation_date": "1978-11-10",
+            "administering_authority_at_designation": "Philippine Tourism Authority",
+            "status": "designated",
+            "geographic_scope": "Boracay Islands, Aklan; island-level designation",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-049",
+              "SRC-050"
+            ]
           }
         ]
       },
@@ -2179,12 +2209,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "protected_area_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
+          "status": "supported",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation.",
           "source_ids": [
-            "SRC-047",
-            "SRC-048"
+            "SRC-049",
+            "SRC-050"
           ]
         },
         "monitoring_stations": [
@@ -2346,6 +2376,21 @@
               "SRC-047"
             ],
             "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          },
+          {
+            "designation_name": "Boracay Islands Tourist Zone and Marine Reserve",
+            "designation_type": "tourist_zone_and_marine_reserve",
+            "legal_instrument": "Presidential Proclamation No. 1801",
+            "designation_date": "1978-11-10",
+            "administering_authority_at_designation": "Philippine Tourism Authority",
+            "status": "designated",
+            "geographic_scope": "Boracay Islands, Aklan; island-level designation",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-049",
+              "SRC-050"
+            ]
           }
         ]
       },
@@ -2713,12 +2758,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "protected_area_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
+          "status": "supported",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation.",
           "source_ids": [
-            "SRC-047",
-            "SRC-048"
+            "SRC-049",
+            "SRC-050"
           ]
         },
         "monitoring_stations": [
@@ -2882,6 +2927,21 @@
               "SRC-047"
             ],
             "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          },
+          {
+            "designation_name": "Boracay Islands Tourist Zone and Marine Reserve",
+            "designation_type": "tourist_zone_and_marine_reserve",
+            "legal_instrument": "Presidential Proclamation No. 1801",
+            "designation_date": "1978-11-10",
+            "administering_authority_at_designation": "Philippine Tourism Authority",
+            "status": "designated",
+            "geographic_scope": "Boracay Islands, Aklan; island-level designation",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-049",
+              "SRC-050"
+            ]
           }
         ]
       },
@@ -3228,12 +3288,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "protected_area_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
+          "status": "supported",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation.",
           "source_ids": [
-            "SRC-047",
-            "SRC-048"
+            "SRC-049",
+            "SRC-050"
           ]
         },
         "monitoring_stations": [],
@@ -3254,6 +3314,21 @@
               "SRC-047"
             ],
             "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          },
+          {
+            "designation_name": "Boracay Islands Tourist Zone and Marine Reserve",
+            "designation_type": "tourist_zone_and_marine_reserve",
+            "legal_instrument": "Presidential Proclamation No. 1801",
+            "designation_date": "1978-11-10",
+            "administering_authority_at_designation": "Philippine Tourism Authority",
+            "status": "designated",
+            "geographic_scope": "Boracay Islands, Aklan; island-level designation",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-049",
+              "SRC-050"
+            ]
           }
         ]
       },
@@ -3591,12 +3666,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "protected_area_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
+          "status": "supported",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation.",
           "source_ids": [
-            "SRC-047",
-            "SRC-048"
+            "SRC-049",
+            "SRC-050"
           ]
         },
         "monitoring_stations": [],
@@ -3614,6 +3689,21 @@
               "SRC-047"
             ],
             "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          },
+          {
+            "designation_name": "Boracay Islands Tourist Zone and Marine Reserve",
+            "designation_type": "tourist_zone_and_marine_reserve",
+            "legal_instrument": "Presidential Proclamation No. 1801",
+            "designation_date": "1978-11-10",
+            "administering_authority_at_designation": "Philippine Tourism Authority",
+            "status": "designated",
+            "geographic_scope": "Boracay Islands, Aklan; island-level designation",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-049",
+              "SRC-050"
+            ]
           }
         ]
       },
@@ -3946,12 +4036,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "protected_area_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
+          "status": "supported",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation.",
           "source_ids": [
-            "SRC-047",
-            "SRC-048"
+            "SRC-049",
+            "SRC-050"
           ]
         },
         "monitoring_stations": [],
@@ -3972,6 +4062,21 @@
               "SRC-047"
             ],
             "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          },
+          {
+            "designation_name": "Boracay Islands Tourist Zone and Marine Reserve",
+            "designation_type": "tourist_zone_and_marine_reserve",
+            "legal_instrument": "Presidential Proclamation No. 1801",
+            "designation_date": "1978-11-10",
+            "administering_authority_at_designation": "Philippine Tourism Authority",
+            "status": "designated",
+            "geographic_scope": "Boracay Islands, Aklan; island-level designation",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-049",
+              "SRC-050"
+            ]
           }
         ]
       },
@@ -4324,12 +4429,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "protected_area_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
+          "status": "supported",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation.",
           "source_ids": [
-            "SRC-047",
-            "SRC-048"
+            "SRC-049",
+            "SRC-050"
           ]
         },
         "monitoring_stations": [
@@ -4493,6 +4598,21 @@
               "SRC-047"
             ],
             "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          },
+          {
+            "designation_name": "Boracay Islands Tourist Zone and Marine Reserve",
+            "designation_type": "tourist_zone_and_marine_reserve",
+            "legal_instrument": "Presidential Proclamation No. 1801",
+            "designation_date": "1978-11-10",
+            "administering_authority_at_designation": "Philippine Tourism Authority",
+            "status": "designated",
+            "geographic_scope": "Boracay Islands, Aklan; island-level designation",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-049",
+              "SRC-050"
+            ]
           }
         ]
       },
@@ -4845,12 +4965,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "protected_area_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
+          "status": "supported",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation.",
           "source_ids": [
-            "SRC-047",
-            "SRC-048"
+            "SRC-049",
+            "SRC-050"
           ]
         },
         "monitoring_stations": [
@@ -4891,6 +5011,21 @@
               "SRC-047"
             ],
             "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          },
+          {
+            "designation_name": "Boracay Islands Tourist Zone and Marine Reserve",
+            "designation_type": "tourist_zone_and_marine_reserve",
+            "legal_instrument": "Presidential Proclamation No. 1801",
+            "designation_date": "1978-11-10",
+            "administering_authority_at_designation": "Philippine Tourism Authority",
+            "status": "designated",
+            "geographic_scope": "Boracay Islands, Aklan; island-level designation",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-049",
+              "SRC-050"
+            ]
           }
         ]
       },
@@ -5240,12 +5375,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "protected_area_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
+          "status": "supported",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation.",
           "source_ids": [
-            "SRC-047",
-            "SRC-048"
+            "SRC-049",
+            "SRC-050"
           ]
         },
         "monitoring_stations": [
@@ -5409,6 +5544,21 @@
               "SRC-047"
             ],
             "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          },
+          {
+            "designation_name": "Boracay Islands Tourist Zone and Marine Reserve",
+            "designation_type": "tourist_zone_and_marine_reserve",
+            "legal_instrument": "Presidential Proclamation No. 1801",
+            "designation_date": "1978-11-10",
+            "administering_authority_at_designation": "Philippine Tourism Authority",
+            "status": "designated",
+            "geographic_scope": "Boracay Islands, Aklan; island-level designation",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-049",
+              "SRC-050"
+            ]
           }
         ]
       },
@@ -5774,12 +5924,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "protected_area_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
+          "status": "supported",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation.",
           "source_ids": [
-            "SRC-047",
-            "SRC-048"
+            "SRC-049",
+            "SRC-050"
           ]
         },
         "monitoring_stations": [
@@ -5943,6 +6093,21 @@
               "SRC-047"
             ],
             "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          },
+          {
+            "designation_name": "Boracay Islands Tourist Zone and Marine Reserve",
+            "designation_type": "tourist_zone_and_marine_reserve",
+            "legal_instrument": "Presidential Proclamation No. 1801",
+            "designation_date": "1978-11-10",
+            "administering_authority_at_designation": "Philippine Tourism Authority",
+            "status": "designated",
+            "geographic_scope": "Boracay Islands, Aklan; island-level designation",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-049",
+              "SRC-050"
+            ]
           }
         ]
       },
@@ -6301,12 +6466,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "protected_area_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
+          "status": "supported",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation.",
           "source_ids": [
-            "SRC-047",
-            "SRC-048"
+            "SRC-049",
+            "SRC-050"
           ]
         },
         "monitoring_stations": [
@@ -6467,6 +6632,21 @@
               "SRC-047"
             ],
             "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          },
+          {
+            "designation_name": "Boracay Islands Tourist Zone and Marine Reserve",
+            "designation_type": "tourist_zone_and_marine_reserve",
+            "legal_instrument": "Presidential Proclamation No. 1801",
+            "designation_date": "1978-11-10",
+            "administering_authority_at_designation": "Philippine Tourism Authority",
+            "status": "designated",
+            "geographic_scope": "Boracay Islands, Aklan; island-level designation",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-049",
+              "SRC-050"
+            ]
           }
         ]
       },
@@ -6789,12 +6969,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "protected_area_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
+          "status": "supported",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation.",
           "source_ids": [
-            "SRC-047",
-            "SRC-048"
+            "SRC-049",
+            "SRC-050"
           ]
         },
         "monitoring_stations": [],
@@ -6812,6 +6992,21 @@
               "SRC-047"
             ],
             "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          },
+          {
+            "designation_name": "Boracay Islands Tourist Zone and Marine Reserve",
+            "designation_type": "tourist_zone_and_marine_reserve",
+            "legal_instrument": "Presidential Proclamation No. 1801",
+            "designation_date": "1978-11-10",
+            "administering_authority_at_designation": "Philippine Tourism Authority",
+            "status": "designated",
+            "geographic_scope": "Boracay Islands, Aklan; island-level designation",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-049",
+              "SRC-050"
+            ]
           }
         ]
       },
