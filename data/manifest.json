@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_version": "0.1.0",
+  "dataset_status": "initial_research_draft",
+  "last_updated": "2026-11-14",
+  "beach_count": 13,
+  "files": {
+    "beaches": "beaches.json",
+    "sources": "sources.json",
+    "excursions": "excursions.json"
+  },
+  "compatibility": {
+    "stable_ids": true,
+    "unknown_values": "null_with_status_unknown",
+    "coordinate_policy": "Never infer or fabricate coordinates. Existing weather-map markers are retained as legacy unverified values until independently checked.",
+    "source_provenance_required": true,
+    "revision_history": "Git commit history; per-record revision fields reserved.",
+    "admin_future_compatibility": {
+      "enabled": false,
+      "planned_for": "Own-domain publication phase",
+      "requirements": [
+        "Authenticated administrator",
+        "Source refresh jobs",
+        "Change detection and review queue",
+        "Validation before publish",
+        "Audit log",
+        "Rollback to prior dataset revision"
+      ]
+    }
+  },
+  "notes": [
+    "This is an initial evidence-backed data structure, not a completed suitability model.",
+    "No activity scores are assigned in this dataset.",
+    "Historical water-quality results are not current safety advice.",
+    "Operator meeting points are not treated as official universal departure terminals."
+  ]
+}
