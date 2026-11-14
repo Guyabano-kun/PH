@@ -17,7 +17,7 @@
 <section class="hero"><div class="eyebrow">BORACAY · PHILIPPINES · DATA CATALOGUE</div><h1>Паспорта пляжей</h1><p>Единая база географических характеристик, морских условий, доступа, экскурсий и экологических данных. Каждое утверждение связано с источником; неизвестные параметры не заменяются предположениями.</p></section>
 <main>
 <div class="notice"><b>Статус базы: начальный исследовательский выпуск.</b> Координаты, перенесённые из существующей карты погоды, пока не прошли независимую географическую проверку. Исторические анализы качества воды не являются текущей оценкой безопасности. Статус точки встречи экскурсии не означает, что это официальный универсальный причал.</div>
-<div class="toolbar"><input id="search" type="search" placeholder="Найти пляж…"><select id="coast"><option value="">Все побережья</option></select><select id="state"><option value="">Все статусы</option><option value="supported">Есть подтверждённые данные</option><option value="unknown">Есть пробелы</option></select></div>
+<div class="toolbar"><input id="search" type="search" placeholder="Найти пляж…"><select id="coast"><option value="">Все побережья</option></select><select id="state"><option value="">Все статусы</option><option value="identity-supported">Название подтверждено</option><option value="identity-provisional">Идентичность требует уточнения</option><option value="monitoring">Есть исторический мониторинг DENR-EMB</option><option value="access-unknown">Статус доступа не установлен</option></select></div>
 <div class="summary" id="summary">Загрузка базы…</div>
 <div class="grid" id="beaches" aria-live="polite"></div>
 </main>
@@ -48,8 +48,15 @@ function render(){
  const q=$("search").value.trim().toLowerCase(),coast=$("coast").value,state=$("state").value;
  const filtered=beachRows.filter(b=>{
   const hay=(b.name+" "+b.name_ru+" "+b.geography.coast_orientation.value).toLowerCase();
-  const statuses=Object.values(b).filter(v=>v&&typeof v==="object").flatMap(v=>Object.values(v)).filter(v=>v&&typeof v==="object").map(v=>v.status);
-  return (!q||hay.includes(q))&&(!coast||b.geography.coast_orientation.value===coast)&&(!state||(state==="supported"?statuses.includes("supported"):statuses.includes("unknown")));
+  const identityStatus=b.identity?.place_name?.status;
+  const hasMonitoring=(b.ecology?.monitoring_stations||[]).length>0;
+  const accessStatus=b.access?.public_access_status?.status;
+  const stateMatch=!state||
+   (state==="identity-supported"&&identityStatus==="supported")||
+   (state==="identity-provisional"&&identityStatus!=="supported")||
+   (state==="monitoring"&&hasMonitoring)||
+   (state==="access-unknown"&&accessStatus==="unknown");
+  return (!q||hay.includes(q))&&(!coast||b.geography.coast_orientation.value===coast)&&stateMatch;
  });
  $("summary").textContent=filtered.length+" из "+beachRows.length+" пляжей · нажмите «Полный паспорт» для метаданных и источников";
  $("beaches").innerHTML=filtered.length?filtered.map(b=>{
