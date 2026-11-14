@@ -1357,6 +1357,38 @@
       ],
       "limitations": "The available source is a thesis abstract, not the full thesis or peer-reviewed journal article. Findings are model-based and limited to a 14-day analysis around fair-weather and Typhoon Haiyan conditions. They do not establish long-term shoreline trends, present-day wave climate, current conditions, or swimming safety. Do not extrapolate the model results to other Boracay beaches.",
       "reliability": "university_research_abstract_for_modelled_process_context_only"
+    },
+    {
+      "id": "SRC-082",
+      "title": "Puka Shell Beach – Philippines Travel destination guide",
+      "publisher": "Philippines Travel",
+      "url": "https://philippines.travel/beaches/puka-shell-beach-boracay/index",
+      "type": "national_tourism_destination_guide",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Puka Shell Beach description and approximate published length",
+        "Published beach access and entrance-fee information",
+        "Basic facilities and visitor safety notes"
+      ],
+      "limitations": "The portal describes free access and limited facilities, but does not provide an LGU fee order, a surveyed public right-of-way, current gate/road status, lifeguard roster, or real-time swimming conditions. Its safety notes are general visitor guidance, not a live hazard assessment.",
+      "reliability": "national_tourism_portal_for_published_destination_information"
+    },
+    {
+      "id": "SRC-083",
+      "title": "Discover Diniwid & Boracay’s Quiet Getaways",
+      "publisher": "Travel Philippines / Department of Tourism",
+      "url": "https://app.philippines.travel/articles/discover-diniwid-and-boracay-s-quiet-getaways",
+      "type": "department_of_tourism_destination_article",
+      "published_at": "2020-10-09",
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Diniwid Beach location north of White Beach Station 1",
+        "Cliff-edge footpath access description",
+        "Alternative back-road access by tricycle"
+      ],
+      "limitations": "Published in 2020. It documents routes described at publication but does not verify current path condition, public right-of-way, gates, fees, accessibility, facilities, or present-day safety. Treat route details as historical access information pending current local confirmation.",
+      "reliability": "department_of_tourism_destination_article_for_historical_access_description"
     }
   ]
 }
