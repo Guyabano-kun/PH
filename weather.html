@@ -422,6 +422,13 @@ main{width:100%;max-width:1760px;margin-inline:auto;padding-left:clamp(22px,3.2v
 .weather-dashboard .beach-group .beach-row small{font-size:.72rem;line-height:1.35}
 @media(max-width:580px){.weather-dashboard .beach-group .beach-list-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
+
+/* Keep the selected beach explanation directly under the map on every screen */
+.weather-dashboard .selected-beach-card{margin:10px 0 0;scroll-margin-top:16px;background:var(--weather-card);color:var(--weather-card-ink);border:1px solid var(--weather-card-line);border-radius:13px;padding:13px 15px;font-size:.86rem;line-height:1.5}
+.weather-dashboard .selected-beach-card strong{display:block;color:var(--weather-card-ink);font-size:.98rem}
+.weather-dashboard .selected-beach-card p{margin:5px 0 0;color:var(--weather-card-muted)}
+@media(max-width:900px){.weather-dashboard .selected-beach-card{margin-top:9px}}
+
 </style><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script></head><body>
 <header class="top weather-site-header">
 <div class="places"><a class="place" href="boracay.html"><span aria-hidden="true">←</span><span data-ru="Путеводитель" data-en="Island guide">Путеводитель</span></a><a class="place active" href="weather.html" aria-current="page"><span aria-hidden="true">☀</span><span data-ru="Погода и море" data-en="Weather & Sea">Погода и море</span></a></div>
@@ -435,15 +442,15 @@ main{width:100%;max-width:1760px;margin-inline:auto;padding-left:clamp(22px,3.2v
 <div class="map-frame"><div class="map-overlay-top"><span class="north-indicator">N ↑</span><span id="map-season-label">AMIHAN · NORTHEAST MONSOON</span></div><div id="boracay-weather-map" class="leaflet-map" role="application" aria-label="Interactive north-up map of Boracay"></div><div class="map-overlay-bottom"><span class="map-scale-label" data-ru="Остров Боракай · север сверху" data-en="Boracay Island · North up">Остров Боракай · север сверху</span><button id="wind-toggle" type="button" aria-pressed="true">Ⅱ <span data-ru="Анимация ветра" data-en="Wind animation">Анимация ветра</span></button></div></div>
 <div class="map-legend"><span><i class="dot exposed"></i><span data-ru="Открыто ветру" data-en="Wind-exposed">Открыто ветру</span></span><span><i class="dot sheltered"></i><span data-ru="Обычно защищено" data-en="Generally sheltered">Обычно защищено</span></span><span><i class="dot variable"></i><span data-ru="Зависит от локальных условий" data-en="Locally variable">Зависит от локальных условий</span></span></div>
 </div>
+<div class="info-card selected-beach-card" id="selected-beach-card" aria-live="polite"><strong>Bulabog Beach · East coast</strong><p>Amihan: exposed to northeast winds and waves. Typical conditions for kite- and windsurfing; not necessarily calm for swimming.</p></div>
 </div>
 <aside class="weather-info-column">
 
 <div class="info-card takeaway-card"><h3 data-ru="Ориентир по сезону" data-en="Season guide">Ориентир по сезону</h3><p data-ru="Amihan (ноябрь–май): обычно суше. Habagat (июнь–октябрь): обычно ветренее и влажнее. Переходные месяцы могут вести себя по-разному." data-en="Amihan (November–May): generally drier. Habagat (June–October): generally windier and wetter. Transition months can vary.">Amihan (ноябрь–май): обычно суше. Habagat (июнь–октябрь): обычно ветренее и влажнее. Переходные месяцы могут вести себя по-разному.</p></div>
 
 <div class="info-card monsoon-info" id="monsoon-details"><div class="info-title"><span id="monsoon-icon">☀</span><div><h3 id="monsoon-title">Amihan – Northeast Monsoon</h3><span id="monsoon-period">November – May</span></div></div><div class="weather-facts"><p><b data-ru="Типичная погода" data-en="Typical weather">Типичная погода</b><span id="weather-summary">Mostly sunny, lower humidity, more stable conditions.</span></p><p><b data-ru="Ветер" data-en="Wind">Ветер</b><span id="wind-summary">Northeast, typically 10–30 km/h; stronger at Bulabog.</span></p><p><b data-ru="Море" data-en="Sea">Море</b><span id="sea-summary">Generally calmer, especially on White Beach.</span></p><p><b data-ru="Подходит для" data-en="Best for">Подходит для</b><span id="best-summary">Beach activities, swimming, relaxation and island hopping.</span></p></div></div>
-<div class="info-card selected-beach-card" id="selected-beach-card" aria-live="polite"><strong>Bulabog Beach · East coast</strong><p>Amihan: exposed to northeast winds and waves. Typical conditions for kite- and windsurfing; not necessarily calm for swimming.</p></div>
 <div class="info-card beach-directory" id="beach-effects">
-<div class="beach-directory-heading"><div><h3 data-ru="Пляжи и участки побережья" data-en="Beaches and coastal areas">Пляжи и участки побережья</h3><p class="beach-list-intro" data-ru="Нажмите на карточку, чтобы выделить пляж на карте и увидеть его сезонные особенности справа." data-en="Select a card to highlight the beach on the map and view its seasonal details above.">Нажмите на карточку, чтобы выделить пляж на карте и увидеть его сезонные особенности справа.</p></div></div>
+<div class="beach-directory-heading"><div><h3 data-ru="Пляжи и участки побережья" data-en="Beaches and coastal areas">Пляжи и участки побережья</h3><p class="beach-list-intro" data-ru="Выберите пляж на карте или в списке. Его описание и сезонная экспозиция появятся под картой." data-en="Select a beach on the map or in the list. Its description and seasonal exposure will appear below the map.">Нажмите на карточку, чтобы выделить пляж на карте и увидеть его сезонные особенности справа.</p></div></div>
 <div class="beach-groups">
 <div class="beach-group"><h4 data-ru="Западное побережье · обычно спокойнее при Amihan" data-en="West coast · generally calmer during Amihan">Западное побережье · обычно спокойнее при Amihan</h4><div class="beach-list-grid">
 <button class="beach-row" data-beach-select="white"><span class="beach-copy"><b>White Beach · Stations 1–3</b><small id="white-impact"></small></span><em id="white-status"></em></button>
