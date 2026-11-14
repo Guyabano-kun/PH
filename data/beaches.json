@@ -47,7 +47,8 @@
           "coordinate_status": "legacy_site_marker_unverified",
           "coordinate_source": "Existing weather.html map dataset",
           "coordinate_precision": "Not independently validated as beach centroid",
-          "verified": false
+          "verified": false,
+          "source_id": "SRC-000"
         },
         "beach_boundary": {
           "value": null,
@@ -269,6 +270,11 @@
       },
       "evidence": [
         {
+          "source_id": "SRC-000",
+          "claim": "Legacy map marker and coarse coast classification carried over from the existing weather page; not an independently verified beach centroid",
+          "status": "legacy_unverified"
+        },
+        {
           "source_id": "SRC-001",
           "claim": "Place name and approximate map location",
           "status": "supported"
@@ -346,7 +352,8 @@
           "coordinate_status": "legacy_site_marker_unverified",
           "coordinate_source": "Existing weather.html map dataset",
           "coordinate_precision": "Not independently validated as beach centroid",
-          "verified": false
+          "verified": false,
+          "source_id": "SRC-000"
         },
         "beach_boundary": {
           "value": null,
@@ -568,6 +575,11 @@
       },
       "evidence": [
         {
+          "source_id": "SRC-000",
+          "claim": "Legacy map marker and coarse coast classification carried over from the existing weather page; not an independently verified beach centroid",
+          "status": "legacy_unverified"
+        },
+        {
           "source_id": "SRC-001",
           "claim": "Place name and approximate map location",
           "status": "supported"
@@ -645,7 +657,8 @@
           "coordinate_status": "legacy_site_marker_unverified",
           "coordinate_source": "Existing weather.html map dataset",
           "coordinate_precision": "Not independently validated as beach centroid",
-          "verified": false
+          "verified": false,
+          "source_id": "SRC-000"
         },
         "beach_boundary": {
           "value": null,
@@ -866,6 +879,11 @@
         }
       },
       "evidence": [
+        {
+          "source_id": "SRC-000",
+          "claim": "Legacy map marker and coarse coast classification carried over from the existing weather page; not an independently verified beach centroid",
+          "status": "legacy_unverified"
+        },
         {
           "source_id": "SRC-001",
           "claim": "Place name and approximate map location",
@@ -949,7 +967,8 @@
           "coordinate_status": "legacy_site_marker_unverified",
           "coordinate_source": "Existing weather.html map dataset",
           "coordinate_precision": "Not independently validated as beach centroid",
-          "verified": false
+          "verified": false,
+          "source_id": "SRC-000"
         },
         "beach_boundary": {
           "value": null,
@@ -1162,6 +1181,11 @@
         }
       },
       "evidence": [
+        {
+          "source_id": "SRC-000",
+          "claim": "Legacy map marker and coarse coast classification carried over from the existing weather page; not an independently verified beach centroid",
+          "status": "legacy_unverified"
+        },
         {
           "source_id": "SRC-001",
           "claim": "Place name and approximate map location",
@@ -1240,7 +1264,8 @@
           "coordinate_status": "legacy_site_marker_unverified",
           "coordinate_source": "Existing weather.html map dataset",
           "coordinate_precision": "Not independently validated as beach centroid",
-          "verified": false
+          "verified": false,
+          "source_id": "SRC-000"
         },
         "beach_boundary": {
           "value": null,
@@ -1450,6 +1475,11 @@
         }
       },
       "evidence": [
+        {
+          "source_id": "SRC-000",
+          "claim": "Legacy map marker and coarse coast classification carried over from the existing weather page; not an independently verified beach centroid",
+          "status": "legacy_unverified"
+        },
         {
           "source_id": "SRC-001",
           "claim": "Place name and approximate map location",
@@ -1523,7 +1553,8 @@
           "coordinate_status": "legacy_site_marker_unverified",
           "coordinate_source": "Existing weather.html map dataset",
           "coordinate_precision": "Not independently validated as beach centroid",
-          "verified": false
+          "verified": false,
+          "source_id": "SRC-000"
         },
         "beach_boundary": {
           "value": null,
@@ -1733,6 +1764,11 @@
         }
       },
       "evidence": [
+        {
+          "source_id": "SRC-000",
+          "claim": "Legacy map marker and coarse coast classification carried over from the existing weather page; not an independently verified beach centroid",
+          "status": "legacy_unverified"
+        },
         {
           "source_id": "SRC-001",
           "claim": "Place name and approximate map location",
@@ -1806,7 +1842,8 @@
           "coordinate_status": "legacy_site_marker_unverified",
           "coordinate_source": "Existing weather.html map dataset",
           "coordinate_precision": "Not independently validated as beach centroid",
-          "verified": false
+          "verified": false,
+          "source_id": "SRC-000"
         },
         "beach_boundary": {
           "value": null,
@@ -2017,6 +2054,11 @@
       },
       "evidence": [
         {
+          "source_id": "SRC-000",
+          "claim": "Legacy map marker and coarse coast classification carried over from the existing weather page; not an independently verified beach centroid",
+          "status": "legacy_unverified"
+        },
+        {
           "source_id": "SRC-001",
           "claim": "Place name and approximate map location",
           "status": "supported"
@@ -2089,7 +2131,8 @@
           "coordinate_status": "legacy_site_marker_unverified",
           "coordinate_source": "Existing weather.html map dataset",
           "coordinate_precision": "Not independently validated as beach centroid",
-          "verified": false
+          "verified": false,
+          "source_id": "SRC-000"
         },
         "beach_boundary": {
           "value": null,
@@ -2302,6 +2345,11 @@
         }
       },
       "evidence": [
+        {
+          "source_id": "SRC-000",
+          "claim": "Legacy map marker and coarse coast classification carried over from the existing weather page; not an independently verified beach centroid",
+          "status": "legacy_unverified"
+        },
         {
           "source_id": "SRC-001",
           "claim": "Place name and approximate map location",
@@ -2380,7 +2428,8 @@
           "coordinate_status": "not_available",
           "coordinate_source": "Existing weather.html map dataset",
           "coordinate_precision": "Not independently validated as beach centroid",
-          "verified": false
+          "verified": false,
+          "source_id": "SRC-000"
         },
         "beach_boundary": {
           "value": null,
@@ -2591,6 +2640,11 @@
       },
       "evidence": [
         {
+          "source_id": "SRC-000",
+          "claim": "Legacy map marker and coarse coast classification carried over from the existing weather page; not an independently verified beach centroid",
+          "status": "legacy_unverified"
+        },
+        {
           "source_id": "SRC-001",
           "claim": "Place name and approximate map location",
           "status": "supported"
@@ -2663,7 +2717,8 @@
           "coordinate_status": "legacy_site_marker_unverified",
           "coordinate_source": "Existing weather.html map dataset",
           "coordinate_precision": "Not independently validated as beach centroid",
-          "verified": false
+          "verified": false,
+          "source_id": "SRC-000"
         },
         "beach_boundary": {
           "value": null,
@@ -2877,6 +2932,11 @@
       },
       "evidence": [
         {
+          "source_id": "SRC-000",
+          "claim": "Legacy map marker and coarse coast classification carried over from the existing weather page; not an independently verified beach centroid",
+          "status": "legacy_unverified"
+        },
+        {
           "source_id": "SRC-001",
           "claim": "Place name and approximate map location",
           "status": "supported"
@@ -2954,7 +3014,8 @@
           "coordinate_status": "legacy_site_marker_unverified",
           "coordinate_source": "Existing weather.html map dataset",
           "coordinate_precision": "Not independently validated as beach centroid",
-          "verified": false
+          "verified": false,
+          "source_id": "SRC-000"
         },
         "beach_boundary": {
           "value": null,
@@ -3176,6 +3237,11 @@
       },
       "evidence": [
         {
+          "source_id": "SRC-000",
+          "claim": "Legacy map marker and coarse coast classification carried over from the existing weather page; not an independently verified beach centroid",
+          "status": "legacy_unverified"
+        },
+        {
           "source_id": "SRC-001",
           "claim": "Place name and approximate map location",
           "status": "supported"
@@ -3258,7 +3324,8 @@
           "coordinate_status": "legacy_site_marker_unverified",
           "coordinate_source": "Existing weather.html map dataset",
           "coordinate_precision": "Not independently validated as beach centroid",
-          "verified": false
+          "verified": false,
+          "source_id": "SRC-000"
         },
         "beach_boundary": {
           "value": null,
@@ -3472,6 +3539,11 @@
       },
       "evidence": [
         {
+          "source_id": "SRC-000",
+          "claim": "Legacy map marker and coarse coast classification carried over from the existing weather page; not an independently verified beach centroid",
+          "status": "legacy_unverified"
+        },
+        {
           "source_id": "SRC-001",
           "claim": "Place name and approximate map location",
           "status": "supported"
@@ -3547,7 +3619,8 @@
           "coordinate_status": "not_available",
           "coordinate_source": "Existing weather.html map dataset",
           "coordinate_precision": "Not independently validated as beach centroid",
-          "verified": false
+          "verified": false,
+          "source_id": "SRC-000"
         },
         "beach_boundary": {
           "value": null,
@@ -3757,6 +3830,11 @@
         }
       },
       "evidence": [
+        {
+          "source_id": "SRC-000",
+          "claim": "Legacy map marker and coarse coast classification carried over from the existing weather page; not an independently verified beach centroid",
+          "status": "legacy_unverified"
+        },
         {
           "source_id": "SRC-001",
           "claim": "Place name and approximate map location",
