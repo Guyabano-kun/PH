@@ -232,7 +232,7 @@
       "url": "https://r6.emb.gov.ph/wp-content/uploads/2023/02/RSOBER-2021-WESTERN-VISAYAS.pdf",
       "type": "government_environmental_monitoring_report",
       "published_at": "2023-02",
-      "checked_at": "2026-11-14",
+      "checked_at": "2026-11-15",
       "coverage": [
         "Ralph's Place regular ambient monitoring station",
         "Bulabog Beach station-name alias",
@@ -240,10 +240,12 @@
         "Lapuz-Lapuz Beach historical ambient monitoring station coordinates",
         "CY 2006–2019 historical station table: Lapuz-Lapuz Beach",
         "CY 2006–2019 historical Bulabog Beach station at a different coordinate",
-        "CY 2020-onwards station table: Ralph's Place with station name Bulabog Beach"
+        "CY 2020-onwards station table: Ralph's Place with station name Bulabog Beach",
+        "CY 2021 annual fecal-coliform geometric means and compliance percentages for Boracay coastline monitoring stations",
+        "CY 2021 fecal-coliform compliance based on 12 sampling events"
       ],
-      "limitations": "The report contains two distinct station inventories: Table 4.53 covers CY 2006–2019, while Table 4.54 covers CY 2020 onwards. Table 4.53 lists Lapuz-Lapuz Beach and an older Bulabog Beach station at 11°56′08″N, 121°55′39″E. Table 4.54 lists Ralph's Place as a regular ambient station with the station name Bulabog Beach at 11°58′09.0″N, 121°55′38.4″E. These records must not be conflated. The report supports station identity and historical metadata, not beach boundaries or current water quality.",
-      "reliability": "high_for_station_identity_and_historical_station_metadata"
+      "limitations": "The report contains two distinct station inventories: Table 4.53 covers CY 2006–2019, while Table 4.54 covers CY 2020 onwards. Table 4.53 lists Lapuz-Lapuz Beach and an older Bulabog Beach station at 11°56′08″N, 121°55′39″E. Table 4.54 lists Ralph's Place as a regular ambient station with the station name Bulabog Beach at 11°58′09.0″N, 121°55′38.4″E. These records must not be conflated. The report also provides CY 2021 station-specific fecal-coliform geomeans and compliance percentages based on 12 sampling events. These are historical measurements, not beach boundaries or current water quality.",
+      "reliability": "official_government_annual_environmental_monitoring_report"
     },
     {
       "id": "SRC-011",
