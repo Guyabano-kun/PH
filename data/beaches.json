@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.6",
+  "dataset_version": "0.2.7",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -73,7 +73,8 @@
         "coordinate_verification": {
           "source_ids": [
             "SRC-021",
-            "SRC-002"
+            "SRC-002",
+            "SRC-014"
           ],
           "osm_feature": {
             "source_id": "SRC-021",
@@ -85,13 +86,19 @@
           },
           "denr_monitoring_station": {
             "source_id": "SRC-002",
-            "station_name": "Boat Station 2 DENR-EMB station",
+            "station_name": "Boat Station 2",
             "latitude": 11.9581389,
             "longitude": 121.9260278,
             "separation_from_legacy_marker_m": 0
           },
-          "assessment": "legacy_marker_is_boat_station_2_not_osm_beach_feature_point",
-          "note": "The legacy point exactly matches Boat Station 2; the OSM feature point is approximately 300 m away. Neither is established as a surveyed White Beach centroid."
+          "assessment": "legacy_marker_is_boat_station_2; OSM_beach_feature_and_guide_points_are_separate",
+          "note": "The legacy point exactly matches Boat Station 2; the OSM feature point is approximately 300 m away. Neither is established as a surveyed White Beach centroid.",
+          "secondary_guide_point": {
+            "source_id": "SRC-014",
+            "latitude": 11.965549,
+            "longitude": 121.921256,
+            "separation_from_legacy_marker_m": 973.8
+          }
         }
       },
       "shore": {
@@ -553,6 +560,11 @@
           "source_id": "SRC-002",
           "claim": "DENR-EMB 2022 monitoring station Boat Station 2 DENR-EMB station is recorded separately for coordinate cross-check; station point is not a beach centroid.",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-014",
+          "claim": "Lakad Pilipinas 2023 lists a GPS reference point for White Beach: 11.965549, 121.921256. This is a secondary guide point, not a surveyed centroid.",
+          "status": "supported"
         }
       ],
       "data_quality": {
@@ -574,7 +586,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 5
+          "revision": 6
         }
       }
     },
@@ -619,7 +631,7 @@
         "coordinates": {
           "latitude": 11.965631,
           "longitude": 121.928888,
-          "coordinate_status": "legacy_site_marker_unverified",
+          "coordinate_status": "legacy_marker_matches_secondary_guide_point",
           "coordinate_source": "Existing weather.html map dataset",
           "coordinate_precision": "Not independently validated as beach centroid",
           "verified": false,
@@ -644,6 +656,27 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coordinate_verification": {
+          "source_ids": [
+            "SRC-014",
+            "SRC-010"
+          ],
+          "assessment": "legacy_marker_exactly_matches_secondary_guide_point; DENR station is separate",
+          "note": "The listed references are guide and/or monitoring-station points; none is promoted to a surveyed beach centroid.",
+          "secondary_guide_point": {
+            "source_id": "SRC-014",
+            "latitude": 11.965631,
+            "longitude": 121.928888,
+            "separation_from_legacy_marker_m": 0
+          },
+          "denr_monitoring_station": {
+            "source_id": "SRC-002",
+            "station_name": "Ralph's Place / Bulabog Beach",
+            "latitude": 11.9694167,
+            "longitude": 121.9275833,
+            "separation_from_legacy_marker_m": 444.2
+          }
         }
       },
       "shore": {
@@ -919,6 +952,11 @@
           "source_id": "SRC-002",
           "claim": "DENR-EMB 2022 annual report gives Ralph's Place station coordinates, Class SC classification, fecal-coliform geomean of 116 MPN/100 ml (42% compliant), and oil-and-grease average of 2.0 mg/L (100% compliant).",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-014",
+          "claim": "Lakad Pilipinas 2023 lists a GPS reference point for Bulabog Beach: 11.965631, 121.928888. This is a secondary guide point, not a surveyed centroid.",
+          "status": "supported"
         }
       ],
       "data_quality": {
@@ -940,7 +978,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 2
+          "revision": 3
         }
       }
     },
@@ -1014,7 +1052,8 @@
         "coordinate_verification": {
           "source_ids": [
             "SRC-018",
-            "SRC-002"
+            "SRC-002",
+            "SRC-014"
           ],
           "osm_feature": {
             "source_id": "SRC-018",
@@ -1026,13 +1065,19 @@
           },
           "denr_monitoring_station": {
             "source_id": "SRC-002",
-            "station_name": "Puka Beach DENR-EMB station",
+            "station_name": "Puka Beach",
             "latitude": 11.9959999,
             "longitude": 121.9159444,
             "separation_from_legacy_marker_m": 101.3
           },
-          "assessment": "osm_feature_point_disagrees_with_legacy_marker",
-          "note": "The OSM beach-feature coordinate and the DENR-EMB station coordinate are materially north/east of the legacy marker. Preserve all three as separate references; do not move the marker until the intended map point is defined."
+          "assessment": "legacy_marker_matches_guide_but_osm_feature_and_denr_station_are_displaced",
+          "note": "The OSM beach-feature coordinate and the DENR-EMB station coordinate are materially north/east of the legacy marker. Preserve all three as separate references; do not move the marker until the intended map point is defined.",
+          "secondary_guide_point": {
+            "source_id": "SRC-014",
+            "latitude": 11.996611,
+            "longitude": 121.915254,
+            "separation_from_legacy_marker_m": 0
+          }
         }
       },
       "shore": {
@@ -1308,6 +1353,11 @@
           "source_id": "SRC-002",
           "claim": "DENR-EMB 2022 monitoring station Puka Beach DENR-EMB station is recorded separately for coordinate cross-check; station point is not a beach centroid.",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-014",
+          "claim": "Lakad Pilipinas 2023 lists a GPS reference point for Puka Shell Beach: 11.996611, 121.915254. This is a secondary guide point, not a surveyed centroid.",
+          "status": "supported"
         }
       ],
       "data_quality": {
@@ -1329,7 +1379,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 3
+          "revision": 4
         }
       }
     },
@@ -1403,7 +1453,8 @@
         "coordinate_verification": {
           "source_ids": [
             "SRC-019",
-            "SRC-002"
+            "SRC-002",
+            "SRC-014"
           ],
           "osm_feature": {
             "source_id": "SRC-019",
@@ -1415,13 +1466,19 @@
           },
           "denr_monitoring_station": {
             "source_id": "SRC-002",
-            "station_name": "Diniwid Beach DENR-EMB station",
+            "station_name": "Diniwid Beach",
             "latitude": 11.9761944,
             "longitude": 121.9117778,
             "separation_from_legacy_marker_m": 16.6
           },
-          "assessment": "osm_feature_point_matches_legacy_marker",
-          "note": "The OSM feature point and DENR-EMB sampling station are both close to the legacy marker; this corroborates a local reference point but not a surveyed centroid."
+          "assessment": "osm_feature_denr_station_and_guide_points_cluster_within_30m",
+          "note": "The OSM feature point and DENR-EMB sampling station are both close to the legacy marker; this corroborates a local reference point but not a surveyed centroid.",
+          "secondary_guide_point": {
+            "source_id": "SRC-014",
+            "latitude": 11.976062,
+            "longitude": 121.911789,
+            "separation_from_legacy_marker_m": 29.5
+          }
         }
       },
       "shore": {
@@ -1684,6 +1741,11 @@
           "source_id": "SRC-002",
           "claim": "DENR-EMB 2022 monitoring station Diniwid Beach DENR-EMB station is recorded separately for coordinate cross-check; station point is not a beach centroid.",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-014",
+          "claim": "Lakad Pilipinas 2023 lists a GPS reference point for Diniwid Beach: 11.976062, 121.911789. This is a secondary guide point, not a surveyed centroid.",
+          "status": "supported"
         }
       ],
       "data_quality": {
@@ -1705,7 +1767,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 3
+          "revision": 4
         }
       }
     },
@@ -1789,10 +1851,13 @@
             "source_id": "SRC-014",
             "latitude": 11.985096,
             "longitude": 121.907557,
-            "separation_from_osm_feature_m": 103.1
+            "separation_from_legacy_marker_m": 103.1
           },
           "assessment": "source_point_disagreement",
-          "note": "The secondary travel guide point is approximately 103 m from the OSM feature coordinate. Preserve the existing marker as an OSM feature reference; do not treat either point as a surveyed beach centroid."
+          "note": "The secondary travel guide point is approximately 103 m from the OSM feature coordinate. Preserve the existing marker as an OSM feature reference; do not treat either point as a surveyed beach centroid.",
+          "source_ids": [
+            "SRC-014"
+          ]
         }
       },
       "shore": {
@@ -2030,7 +2095,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 2
+          "revision": 3
         }
       }
     },
@@ -2114,10 +2179,13 @@
             "source_id": "SRC-014",
             "latitude": 11.981134,
             "longitude": 121.908515,
-            "separation_from_osm_feature_m": 12.1
+            "separation_from_legacy_marker_m": 12.1
           },
           "assessment": "close_cross_source_match",
-          "note": "The secondary travel-guide point is within approximately 12 m of the OSM feature coordinate. This corroborates the feature location but does not establish a surveyed beach centroid."
+          "note": "The secondary travel-guide point is within approximately 12 m of the OSM feature coordinate. This corroborates the feature location but does not establish a surveyed beach centroid.",
+          "source_ids": [
+            "SRC-014"
+          ]
         }
       },
       "shore": {
@@ -2356,7 +2424,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 2
+          "revision": 3
         }
       }
     },
@@ -2440,10 +2508,13 @@
             "source_id": "SRC-014",
             "latitude": 11.98732,
             "longitude": 121.906075,
-            "separation_from_osm_feature_m": 8.7
+            "separation_from_legacy_marker_m": 8.7
           },
           "assessment": "close_cross_source_match",
-          "note": "The secondary travel-guide point is within approximately 12 m of the OSM feature coordinate. This corroborates the feature location but does not establish a surveyed beach centroid."
+          "note": "The secondary travel-guide point is within approximately 12 m of the OSM feature coordinate. This corroborates the feature location but does not establish a surveyed beach centroid.",
+          "source_ids": [
+            "SRC-014"
+          ]
         }
       },
       "shore": {
@@ -2677,7 +2748,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 2
+          "revision": 3
         }
       }
     },
@@ -2751,7 +2822,8 @@
         "coordinate_verification": {
           "source_ids": [
             "SRC-017",
-            "SRC-002"
+            "SRC-002",
+            "SRC-014"
           ],
           "osm_feature": {
             "source_id": "SRC-017",
@@ -2763,13 +2835,19 @@
           },
           "denr_monitoring_station": {
             "source_id": "SRC-002",
-            "station_name": "Ilig-Iligan Shell Museum DENR-EMB station",
+            "station_name": "Ilig-Iligan Shell Museum",
             "latitude": 11.9928889,
             "longitude": 121.9254167,
             "separation_from_legacy_marker_m": 763.3
           },
-          "assessment": "osm_feature_point_disagrees_with_legacy_marker",
-          "note": "The OSM beach-feature coordinate and the DENR-EMB station coordinate are materially north/east of the legacy marker. Preserve all three as separate references; do not move the marker until the intended map point is defined."
+          "assessment": "legacy_marker_matches_guide_but_osm_feature_and_denr_station_are_displaced",
+          "note": "The OSM beach-feature coordinate and the DENR-EMB station coordinate are materially north/east of the legacy marker. Preserve all three as separate references; do not move the marker until the intended map point is defined.",
+          "secondary_guide_point": {
+            "source_id": "SRC-014",
+            "latitude": 11.986036,
+            "longitude": 121.925014,
+            "separation_from_legacy_marker_m": 0
+          }
         }
       },
       "shore": {
@@ -3032,6 +3110,11 @@
           "source_id": "SRC-002",
           "claim": "DENR-EMB 2022 monitoring station Ilig-Iligan Shell Museum DENR-EMB station is recorded separately for coordinate cross-check; station point is not a beach centroid.",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-014",
+          "claim": "Lakad Pilipinas 2023 lists a GPS reference point for Ilig-Iligan Beach: 11.986036, 121.925014. This is a secondary guide point, not a surveyed centroid.",
+          "status": "supported"
         }
       ],
       "data_quality": {
@@ -3053,7 +3136,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 3
+          "revision": 4
         }
       }
     },
@@ -3098,7 +3181,7 @@
         "coordinates": {
           "latitude": null,
           "longitude": null,
-          "coordinate_status": "not_available",
+          "coordinate_status": "no_beach_marker_reference_points_only",
           "coordinate_source": "Existing weather.html map dataset",
           "coordinate_precision": "Not independently validated as beach centroid",
           "verified": false,
@@ -3123,6 +3206,27 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coordinate_verification": {
+          "source_ids": [
+            "SRC-014",
+            "SRC-010"
+          ],
+          "assessment": "no_beach_marker; historical_DENR_station_and_secondary_guide_points_are_separate",
+          "note": "The listed references are guide and/or monitoring-station points; none is promoted to a surveyed beach centroid.",
+          "secondary_guide_point": {
+            "source_id": "SRC-014",
+            "latitude": 11.981111,
+            "longitude": 121.927955,
+            "separation_from_legacy_marker_m": null
+          },
+          "denr_monitoring_station": {
+            "source_id": "SRC-010",
+            "station_name": "Lapuz-Lapuz Beach historical station",
+            "latitude": 11.9838889,
+            "longitude": 121.9258333,
+            "separation_from_legacy_marker_m": null
+          }
         }
       },
       "shore": {
@@ -3350,6 +3454,11 @@
           "source_id": "SRC-010",
           "claim": "DENR-EMB 2021 regional report lists a Lapuz-Lapuz Beach ambient monitoring station in Barangay Yapak, Class SB, with coordinates 11°59′02″N, 121°55′33″E; this is a station point, not a beach centroid.",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-014",
+          "claim": "Lakad Pilipinas 2023 lists a GPS reference point for Lapus-Lapus Beach: 11.981111, 121.927955. This is a secondary guide point, not a surveyed centroid.",
+          "status": "supported"
         }
       ],
       "data_quality": {
@@ -3372,7 +3481,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 2
+          "revision": 3
         }
       }
     },
@@ -3822,7 +3931,8 @@
         "coordinate_verification": {
           "source_ids": [
             "SRC-020",
-            "SRC-002"
+            "SRC-002",
+            "SRC-014"
           ],
           "osm_feature": {
             "source_id": "SRC-020",
@@ -3834,13 +3944,19 @@
           },
           "denr_monitoring_station": {
             "source_id": "SRC-002",
-            "station_name": "Tambisaan Pier DENR-EMB station",
+            "station_name": "Tambisaan Pier",
             "latitude": 11.9492778,
             "longitude": 121.9474167,
             "separation_from_legacy_marker_m": 27
           },
-          "assessment": "osm_feature_point_matches_legacy_marker",
-          "note": "The legacy marker exactly matches the OSM natural=beach feature coordinate; the DENR-EMB station is nearby. This is not a surveyed beach-centroid validation."
+          "assessment": "osm_feature_exact_marker_denr_station_nearby_guide_reference_available",
+          "note": "The legacy marker exactly matches the OSM natural=beach feature coordinate; the DENR-EMB station is nearby. This is not a surveyed beach-centroid validation.",
+          "secondary_guide_point": {
+            "source_id": "SRC-014",
+            "latitude": 11.950009,
+            "longitude": 121.947037,
+            "separation_from_legacy_marker_m": 67.2
+          }
         }
       },
       "shore": {
@@ -4116,6 +4232,11 @@
           "source_id": "SRC-002",
           "claim": "DENR-EMB 2022 monitoring station Tambisaan Pier DENR-EMB station is recorded separately for coordinate cross-check; station point is not a beach centroid.",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-014",
+          "claim": "Lakad Pilipinas 2023 lists a GPS reference point for Tambisaan Beach: 11.950009, 121.947037. This is a secondary guide point, not a surveyed centroid.",
+          "status": "supported"
         }
       ],
       "data_quality": {
@@ -4137,7 +4258,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 3
+          "revision": 4
         }
       }
     },
@@ -4182,7 +4303,7 @@
         "coordinates": {
           "latitude": 11.94835,
           "longitude": 121.93035,
-          "coordinate_status": "legacy_site_marker_unverified",
+          "coordinate_status": "legacy_marker_near_denr_station_but_disagrees_with_secondary_guide",
           "coordinate_source": "Existing weather.html map dataset",
           "coordinate_precision": "Not independently validated as beach centroid",
           "verified": false,
@@ -4207,6 +4328,27 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coordinate_verification": {
+          "source_ids": [
+            "SRC-014",
+            "SRC-002"
+          ],
+          "assessment": "legacy_marker_near_DENR_station_but_disagrees_with_secondary_guide_point",
+          "note": "The listed references are guide and/or monitoring-station points; none is promoted to a surveyed beach centroid.",
+          "secondary_guide_point": {
+            "source_id": "SRC-014",
+            "latitude": 11.943425,
+            "longitude": 121.932612,
+            "separation_from_legacy_marker_m": 600.4
+          },
+          "denr_monitoring_station": {
+            "source_id": "SRC-002",
+            "station_name": "Angol Point",
+            "latitude": 11.9485278,
+            "longitude": 121.9312222,
+            "separation_from_legacy_marker_m": 96.9
+          }
         }
       },
       "shore": {
@@ -4459,6 +4601,11 @@
           "source_id": "SRC-002",
           "claim": "DENR-EMB 2022 report gives the Angol Point sampling-station coordinates and annual fecal-coliform geomean (13 MPN/100 ml; Class SB guideline 100; 92% compliant across 12 sampling events). This is historical station data, not a current beach-wide result.",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-014",
+          "claim": "Lakad Pilipinas 2023 lists a GPS reference point for Angol Point: 11.943425, 121.932612. This is a secondary guide point, not a surveyed centroid.",
+          "status": "supported"
         }
       ],
       "data_quality": {
@@ -4480,7 +4627,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 2
+          "revision": 3
         }
       }
     },
