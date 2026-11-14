@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.38",
+  "dataset_version": "0.2.39",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-15",
   "beach_count": 13,
@@ -108,6 +108,7 @@
     "Version 0.2.35: added the 26 May 2025 Rough Guides Boracay beach guide as SRC-085. Punta Bunga now records the reported narrow public approach and unresolved resort-checkpoint access; Lapus-Lapus records Fairways & Bluewater resort-controlled access and non-guaranteed day-pass availability; Ilig-Iligan records a rough final road section and limited seasonal facilities; Tulubhan records guide-described tricycle access and working-shoreline context. These are secondary visitor-guide claims, not official access permissions or current safety notices. No coordinates, beach boundaries, public rights-of-way, lifeguard status or live sea conditions were inferred.",
     "Version 0.2.36: expanded SRC-085 coverage to all beaches described in the Rough Guides article. Added cautious, provisional visitor-guide access/facility context for White Beach, Bulabog, Diniwid and Tambisaan. These descriptions are not official route approvals, a complete facilities inventory or real-time access/safety status. Public-access status for Bulabog and Diniwid remains unknown; no legal access right was inferred.",
     "Version 0.2.37: added Lugutan Beach because the TPB official tourist map explicitly lists it in the Beach / Dive Site index (grid F7), correcting the earlier 13-record inventory that omitted Lugutan and retained unverified Hagdan Beach. Lugutan has no beach coordinate: the DENR Lugutan (Mixing Zone) coordinate is recorded separately as a Class SC monitoring point, not a beach centroid. Historical 2022–2023 EMB reports document mixing-zone fecal-coliform non-compliance and drainage/runoff context; these data are not a current bathing advisory or beach-wide result. Hagdan remains only an unverified name candidate; official sources establish Sitio Hagdan as a locality, not a distinct beach. Banyugan access wording is aligned with Shangri-La's official guest-facility description; public access remains unconfirmed.",
-    "Version 0.2.38: removed a duplicate source record for the DENR-EMB 2023 Regional State of the Brown Environment Report because it was already registered as SRC-024. Lugutan mixing-zone monitoring references now point to the existing SRC-024. Renumbered the newly added Aklan Provincial Government locality source and Shangri-La official resort page consecutively as SRC-086 and SRC-087; all beach-source references were updated."
+    "Version 0.2.38: removed a duplicate source record for the DENR-EMB 2023 Regional State of the Brown Environment Report because it was already registered as SRC-024. Lugutan mixing-zone monitoring references now point to the existing SRC-024. Renumbered the newly added Aklan Provincial Government locality source and Shangri-La official resort page consecutively as SRC-086 and SRC-087; all beach-source references were updated.",
+    "Version 0.2.39: expanded existing source SRC-024 coverage metadata to explicitly include the Lugutan (Mixing Zone) station, its published coordinate/class, historical CY 2022–2023 fecal-coliform comparison and documented drainage/runoff context. No monitoring value was promoted to a beach-wide or current bathing-water result."
   ]
 }
