@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-14",
+  "sources": [
+    {
+      "id": "SRC-001",
+      "title": "Boracay Map – Tourism Promotions Board Philippines",
+      "publisher": "Tourism Promotions Board Philippines",
+      "url": "https://www.tpb.gov.ph/wp-content/uploads/2023/10/Boracay-Map.pdf",
+      "type": "official_tourism_map",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Angol Point",
+        "Balinghai Beach",
+        "Banyugan Beach",
+        "Bulabog Beach",
+        "Diniwid Beach",
+        "Ilig-Iligan Beach",
+        "Lapus-Lapus Beach",
+        "Puka Shell Beach",
+        "Punta Bunga Beach",
+        "Tambisaan Beach",
+        "Tulubhan Beach",
+        "White Beach"
+      ],
+      "limitations": "Map labels and grid references establish named places, not surveyed beach boundaries or precise beach-centroid coordinates.",
+      "reliability": "high_for_place_names"
+    },
+    {
+      "id": "SRC-002",
+      "title": "Recreational Waters Monitoring Program: Annual Water Quality Assessment Report, Boracay Island, January–December 2022",
+      "publisher": "DENR Environmental Management Bureau Region VI",
+      "url": "https://r6.emb.gov.ph/wp-content/uploads/2023/12/Boracay-Island-Annual-Assessment-Report-2022.pdf",
+      "type": "government_monitoring_report",
+      "published_at": "2023-12",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Puka Beach",
+        "Diniwid Beach",
+        "Ilig-Iligan Shell Museum",
+        "Tulubhan Pier",
+        "Angol Point",
+        "Boat Station 1",
+        "Boat Station 2",
+        "Boat Station 3",
+        "Tambisaan Pier"
+      ],
+      "limitations": "Historical monitoring data from 2022. Sampling stations are not necessarily co-located with the whole beach; results must not be presented as current water quality.",
+      "reliability": "high_historical_primary"
+    },
+    {
+      "id": "SRC-003",
+      "title": "Environmental Performance Report and Management Plan – Boracay Island Water Supply System Project",
+      "publisher": "DENR Environmental Management Bureau Region VI",
+      "url": "https://r6.emb.gov.ph/wp-content/uploads/2022/06/2EPRMP-Boracay-Water-Supzply-System_21Apr2022.pdf",
+      "type": "government_environmental_report",
+      "published_at": "2022-04",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Puka Beach",
+        "Ilig-Iligan Shell Museum",
+        "Diniwid Beach",
+        "Tulubhan Pier",
+        "Tambisaan Pier",
+        "Cagban Jetty Port"
+      ],
+      "limitations": "Report describes monitoring station locations and historical water quality; not a real-time beach safety bulletin.",
+      "reliability": "high_historical_primary"
+    },
+    {
+      "id": "SRC-004",
+      "title": "Boracay Island Hopping Tour – seasonal meeting point information",
+      "publisher": "I Love Pilipinas Tours Inc.",
+      "url": "https://ilovepilipinastoursinc.com/en-US/product/24ILP02",
+      "type": "tour_operator_listing",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "White Beach Station 1",
+        "Bulabog Beach",
+        "Puka Shell Beach",
+        "Tambisaan Beach"
+      ],
+      "limitations": "Operator-specific listing. Meeting point is not proof of an officially designated island-wide departure terminal. Stops are itinerary-dependent and can change.",
+      "reliability": "medium_operator_primary"
+    },
+    {
+      "id": "SRC-005",
+      "title": "Boracay Private Island Hopping with Lunch",
+      "publisher": "I Love Pilipinas Tours Inc.",
+      "url": "https://ilovepilipinastoursinc.rezio.shop/en-US/product/24ILP11",
+      "type": "tour_operator_listing",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "White Beach Station 1",
+        "Bulabog Beach"
+      ],
+      "limitations": "Confirms operator's seasonal meeting locations only; exact boat boarding arrangements remain subject to operator instructions and sea conditions.",
+      "reliability": "medium_operator_primary"
+    },
+    {
+      "id": "SRC-006",
+      "title": "Boracay Island Hopping with Buffet Lunch & ATV Adventure",
+      "publisher": "ATV Days",
+      "url": "https://atvdays.com/boracay-island-hopping-with-buffet-lunch-atv-adventure/",
+      "type": "tour_operator_listing",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "White Beach Station 1",
+        "Bulabog Beach"
+      ],
+      "limitations": "Secondary operator/booking information. Must be rechecked before any time-sensitive public statement.",
+      "reliability": "medium_secondary_operator"
+    },
+    {
+      "id": "SRC-007",
+      "title": "Boracay Island",
+      "publisher": "Philippine Department of Tourism / DENR-EMB project report map",
+      "url": "https://r6.emb.gov.ph/wp-content/uploads/2022/06/2EPRMP-Boracay-Water-Supzply-System_21Apr2022.pdf",
+      "type": "government_monitoring_map",
+      "published_at": "2022-04",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Boracay coastal water monitoring stations"
+      ],
+      "limitations": "Monitoring-station map is not a beach-boundary or bathymetric survey.",
+      "reliability": "high_for_station_locations"
+    }
+  ]
+}
