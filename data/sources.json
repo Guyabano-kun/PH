@@ -1433,24 +1433,6 @@
     },
     {
       "id": "SRC-086",
-      "title": "2023 Regional State of the Brown Environment Report – Western Visayas",
-      "publisher": "DENR Environmental Management Bureau Region VI",
-      "url": "https://r6.emb.gov.ph/wp-content/uploads/2024/07/2023-EMBr6-RSoBER-1.pdf",
-      "type": "government_environmental_monitoring_report",
-      "published_at": "2024-07",
-      "checked_at": "2026-11-15",
-      "coverage": [
-        "Lugutan (Mixing Zone), Brgy. Manocmanoc",
-        "Lugutan mixing-zone monitoring coordinate",
-        "2022 and 2023 historical fecal-coliform results and compliance",
-        "Lugutan Drainage Outfall, Kingfisher outfall and Wetland 6 context",
-        "Boracay coastline and wetlands monitoring"
-      ],
-      "limitations": "Official regional environmental report. Lugutan (Mixing Zone) is a Class SC coastal monitoring station, not a surveyed beach centroid or an identified recreational bathing station. The report contains both narrative and chart/table representations; only values that agree across the report should be transcribed. Historical monitoring does not establish present-day water quality or beach-wide swimming safety.",
-      "reliability": "high_official_historical_monitoring"
-    },
-    {
-      "id": "SRC-087",
       "title": "Authorized Accommodation Establishments in Boracay Island – list as of 4 July 2024",
       "publisher": "Aklan Provincial Government",
       "url": "https://aklan.gov.ph/authorized-accommodation-establishments-in-boracay-island/",
@@ -1464,7 +1446,7 @@
       "reliability": "official_locality_context_only"
     },
     {
-      "id": "SRC-088",
+      "id": "SRC-087",
       "title": "Resort Facilities – Shangri-La Boracay",
       "publisher": "Shangri-La Boracay",
       "url": "https://www.shangri-la.com/boracay/boracayresort/sports-recreation/resort-facilities/",
