@@ -104,7 +104,8 @@
         "Angol Point sampling station coordinates",
         "Annual fecal-coliform geomean and compliance statistics for 2022",
         "2022 fecal-coliform geomean and compliance statistics",
-        "2022 quarterly oil-and-grease averages and compliance statistics for monitored stations"
+        "2022 quarterly oil-and-grease averages and compliance statistics for monitored stations",
+        "Ralph's Place station water-quality results; linked to Bulabog Beach by SRC-010"
       ],
       "limitations": "Historical monitoring data from January–December 2022. Sampling stations are not necessarily co-located with the whole beach; station coordinates must not be treated as beach centroids. Fecal-coliform results cover 12 sampling events; oil-and-grease monitoring was quarterly (April, June, September and November). Results must not be presented as current water quality or current bathing safety.",
       "reliability": "high_historical_primary"
@@ -223,6 +224,22 @@
       ],
       "limitations": "Field sampling was conducted in October 2022 at three White Beach stations only. It does not provide surveyed beach boundaries, beach width/slope, bathymetry, or a current island-wide ecological status. Station coordinates are research sampling points, not beach centroids.",
       "reliability": "high_for_reported_sampled_station_sediment_and_benthic_data"
+    },
+    {
+      "id": "SRC-010",
+      "title": "Regional State of the Brown Environment Report 2021 – Western Visayas",
+      "publisher": "DENR Environmental Management Bureau Region VI",
+      "url": "https://r6.emb.gov.ph/wp-content/uploads/2023/02/RSOBER-2021-WESTERN-VISAYAS.pdf",
+      "type": "government_environmental_monitoring_report",
+      "published_at": "2023-02",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Ralph's Place regular ambient monitoring station",
+        "Bulabog Beach station-name alias",
+        "Boracay coastline monitoring station coordinates"
+      ],
+      "limitations": "The report supports the historical station alias and station location, not the boundary of Bulabog Beach or a current water-quality assessment. For 2022 water-quality values, use SRC-002.",
+      "reliability": "high_for_station_identity_and_historical_station_metadata"
     }
   ]
 }
