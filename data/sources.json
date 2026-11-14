@@ -893,9 +893,10 @@
       "coverage": [
         "Boracay Islands, Aklan expressly listed among the tourist zones and marine reserves",
         "Island-level marine-reserve and tourist-zone designation under administration and control of the Philippine Tourism Authority",
-        "Ecological-balance and tourism-administration purpose"
+        "Ecological-balance and tourism-administration purpose",
+        "Direction to the Philippine Tourism Authority to delineate well-defined geographic areas within the declared zones"
       ],
-      "limitations": "The proclamation names Boracay Islands but does not supply a beach-by-beach boundary polygon, coordinate schedule, marine zoning or no-take boundaries. It must not be used to draw a precise protected-area perimeter around individual beaches.",
+      "limitations": "The proclamation names Boracay Islands but does not itself supply a beach-by-beach boundary polygon, coordinate schedule, marine zoning or no-take boundaries. It directs the Philippine Tourism Authority to delineate well-defined geographic areas within the declared zones. PTA Circular No. 3-82 (3 September 1982) is identified as the implementing instrument in the Supreme Court decision (SRC-050), but its full text and any boundary maps have not been independently recovered. Do not draw a precise protected-area perimeter around individual beaches from this proclamation alone.",
       "reliability": "primary_legal_instrument_text_reproduced_by_LawPhil"
     },
     {
@@ -910,9 +911,10 @@
       "coverage": [
         "Supreme Court account of Proclamation No. 1801 and the Boracay tourist-zone/marine-reserve designation",
         "Distinction between the ecological/tourism purpose of Proclamation No. 1801 and land classification under Proclamation No. 1064",
-        "Judicial interpretation of the limits of Proclamation No. 1801 for land alienability/classification"
+        "Judicial interpretation of the limits of Proclamation No. 1801 for land alienability/classification",
+        "Reference to PTA Circular No. 3-82 dated 3 September 1982 as the implementing rules for Proclamation No. 1801"
       ],
-      "limitations": "The decision concerns land classification and alienability. Its discussion that Proclamation No. 1801 did not identify specific limits for land classification must not be misrepresented as a ruling that the marine-reserve designation is invalid. It does not provide beach-level marine-reserve boundaries.",
+      "limitations": "The decision concerns land classification and alienability. It references PTA Circular No. 3-82 and quotes selected rules, but does not reproduce the full circular or any marine-reserve zoning map. Its discussion that Proclamation No. 1801 did not identify specific limits for land classification must not be misrepresented as a ruling that the marine-reserve designation is invalid. It does not provide beach-level marine-reserve boundaries.",
       "reliability": "official_judicial_decision"
     },
     {
