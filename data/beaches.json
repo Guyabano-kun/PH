@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.32",
+  "dataset_version": "0.2.33",
   "last_updated": "2026-11-15",
   "beaches": [
     {
@@ -594,6 +594,16 @@
                   "SRC-010"
                 ],
                 "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
+              },
+              {
+                "year": 2020,
+                "reporting_period": "CY 2020",
+                "fecal_coliform_geometric_mean_mpn_100ml": 14,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
               }
             ]
           },
@@ -752,6 +762,36 @@
                   "SRC-010"
                 ],
                 "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
+              },
+              {
+                "year": 2020,
+                "reporting_period": "CY 2020",
+                "fecal_coliform_geometric_mean_mpn_100ml": 17,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
+              },
+              {
+                "year": 2019,
+                "reporting_period": "CY 2019",
+                "fecal_coliform_geometric_mean_mpn_100ml": 7,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
+              },
+              {
+                "year": 2018,
+                "reporting_period": "CY 2018",
+                "fecal_coliform_geometric_mean_mpn_100ml": 5,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
               }
             ]
           },
@@ -910,6 +950,36 @@
                   "SRC-010"
                 ],
                 "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
+              },
+              {
+                "year": 2020,
+                "reporting_period": "CY 2020",
+                "fecal_coliform_geometric_mean_mpn_100ml": 12,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
+              },
+              {
+                "year": 2019,
+                "reporting_period": "CY 2019",
+                "fecal_coliform_geometric_mean_mpn_100ml": 7,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
+              },
+              {
+                "year": 2018,
+                "reporting_period": "CY 2018",
+                "fecal_coliform_geometric_mean_mpn_100ml": 8,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
               }
             ]
           }
@@ -1655,6 +1725,36 @@
                   "SRC-010"
                 ],
                 "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
+              },
+              {
+                "year": 2020,
+                "reporting_period": "CY 2020",
+                "fecal_coliform_geometric_mean_mpn_100ml": 96,
+                "fecal_coliform_guideline_mpn_100ml": 200,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
+              },
+              {
+                "year": 2019,
+                "reporting_period": "CY 2019",
+                "fecal_coliform_geometric_mean_mpn_100ml": 68,
+                "fecal_coliform_guideline_mpn_100ml": 200,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
+              },
+              {
+                "year": 2018,
+                "reporting_period": "CY 2018",
+                "fecal_coliform_geometric_mean_mpn_100ml": 26,
+                "fecal_coliform_guideline_mpn_100ml": 200,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
               }
             ]
           }
@@ -2482,6 +2582,36 @@
                   "SRC-010"
                 ],
                 "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
+              },
+              {
+                "year": 2020,
+                "reporting_period": "CY 2020",
+                "fecal_coliform_geometric_mean_mpn_100ml": 24,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
+              },
+              {
+                "year": 2019,
+                "reporting_period": "CY 2019",
+                "fecal_coliform_geometric_mean_mpn_100ml": 4,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
+              },
+              {
+                "year": 2018,
+                "reporting_period": "CY 2018",
+                "fecal_coliform_geometric_mean_mpn_100ml": 4,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
               }
             ]
           }
@@ -3049,6 +3179,16 @@
                   "SRC-010"
                 ],
                 "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
+              },
+              {
+                "year": 2020,
+                "reporting_period": "CY 2020",
+                "fecal_coliform_geometric_mean_mpn_100ml": 74,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
               }
             ]
           }
@@ -4791,6 +4931,36 @@
                   "SRC-010"
                 ],
                 "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
+              },
+              {
+                "year": 2020,
+                "reporting_period": "CY 2020",
+                "fecal_coliform_geometric_mean_mpn_100ml": 9,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
+              },
+              {
+                "year": 2019,
+                "reporting_period": "CY 2019",
+                "fecal_coliform_geometric_mean_mpn_100ml": 4,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
+              },
+              {
+                "year": 2018,
+                "reporting_period": "CY 2018",
+                "fecal_coliform_geometric_mean_mpn_100ml": 3,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
               }
             ]
           }
@@ -5784,6 +5954,36 @@
                   "SRC-010"
                 ],
                 "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
+              },
+              {
+                "year": 2020,
+                "reporting_period": "CY 2020",
+                "fecal_coliform_geometric_mean_mpn_100ml": 208,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
+              },
+              {
+                "year": 2019,
+                "reporting_period": "CY 2019",
+                "fecal_coliform_geometric_mean_mpn_100ml": 263,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
+              },
+              {
+                "year": 2018,
+                "reporting_period": "CY 2018",
+                "fecal_coliform_geometric_mean_mpn_100ml": 39,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
               }
             ]
           }
@@ -6353,6 +6553,36 @@
                   "SRC-010"
                 ],
                 "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
+              },
+              {
+                "year": 2020,
+                "reporting_period": "CY 2020",
+                "fecal_coliform_geometric_mean_mpn_100ml": 208,
+                "fecal_coliform_guideline_mpn_100ml": 200,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
+              },
+              {
+                "year": 2019,
+                "reporting_period": "CY 2019",
+                "fecal_coliform_geometric_mean_mpn_100ml": 12,
+                "fecal_coliform_guideline_mpn_100ml": 200,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
+              },
+              {
+                "year": 2018,
+                "reporting_period": "CY 2018",
+                "fecal_coliform_geometric_mean_mpn_100ml": 20,
+                "fecal_coliform_guideline_mpn_100ml": 200,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
               }
             ]
           }
@@ -6915,6 +7145,16 @@
                   "SRC-010"
                 ],
                 "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
+              },
+              {
+                "year": 2020,
+                "reporting_period": "CY 2020",
+                "fecal_coliform_geometric_mean_mpn_100ml": 25,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "Transcribed from the DENR-EMB 2023 report's comparative CY 2018–2023 geomean chart. This chart does not provide event-level compliance percentages or sampling-event counts for this year; neither is inferred."
               }
             ]
           }
