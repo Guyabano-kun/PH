@@ -1430,6 +1430,54 @@
       ],
       "limitations": "Secondary travel guide updated 26 May 2025. Access routes, road condition, facilities, day-pass availability, transport times/fares and visitor conditions are not official LGU/resort notices and may change. Descriptions do not establish a surveyed beach boundary, legal public right-of-way, guaranteed entry, current fees, lifeguard coverage or real-time sea safety. Treat resort-access claims and public-path descriptions as visitor-guide reports, not legal determinations.",
       "reliability": "secondary_source"
+    },
+    {
+      "id": "SRC-086",
+      "title": "2023 Regional State of the Brown Environment Report – Western Visayas",
+      "publisher": "DENR Environmental Management Bureau Region VI",
+      "url": "https://r6.emb.gov.ph/wp-content/uploads/2024/07/2023-EMBr6-RSoBER-1.pdf",
+      "type": "government_environmental_monitoring_report",
+      "published_at": "2024-07",
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Lugutan (Mixing Zone), Brgy. Manocmanoc",
+        "Lugutan mixing-zone monitoring coordinate",
+        "2022 and 2023 historical fecal-coliform results and compliance",
+        "Lugutan Drainage Outfall, Kingfisher outfall and Wetland 6 context",
+        "Boracay coastline and wetlands monitoring"
+      ],
+      "limitations": "Official regional environmental report. Lugutan (Mixing Zone) is a Class SC coastal monitoring station, not a surveyed beach centroid or an identified recreational bathing station. The report contains both narrative and chart/table representations; only values that agree across the report should be transcribed. Historical monitoring does not establish present-day water quality or beach-wide swimming safety.",
+      "reliability": "high_official_historical_monitoring"
+    },
+    {
+      "id": "SRC-087",
+      "title": "Authorized Accommodation Establishments in Boracay Island – list as of 4 July 2024",
+      "publisher": "Aklan Provincial Government",
+      "url": "https://aklan.gov.ph/authorized-accommodation-establishments-in-boracay-island/",
+      "type": "provincial_government_accommodation_directory",
+      "published_at": "2024-07-04",
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Sitio Hagdan locality references in authorized accommodation listings"
+      ],
+      "limitations": "Official provincial accommodation directory, not a cadastral or beach-name register. Sitio Hagdan addresses establish use of the locality name only; they do not establish a separate Hagdan Beach, its boundaries, or access rights.",
+      "reliability": "official_locality_context_only"
+    },
+    {
+      "id": "SRC-088",
+      "title": "Resort Facilities – Shangri-La Boracay",
+      "publisher": "Shangri-La Boracay",
+      "url": "https://www.shangri-la.com/boracay/boracayresort/sports-recreation/resort-facilities/",
+      "type": "official_resort_facilities_page",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Punta Bunga Beach",
+        "Banyugan Beach",
+        "Published resort facility hours"
+      ],
+      "limitations": "Official resort page describes Punta Bunga and Banyugan as secluded beaches for guests and lists beach facility hours of 6am–6pm. It does not state public day-visitor admission terms, public right-of-way, booking requirements, or current beach access restrictions. Published hours are resort facility hours, not public beach opening hours.",
+      "reliability": "high_for_resort_facility_description_not_public_access"
     }
   ]
 }
