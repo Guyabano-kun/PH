@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.16",
+  "dataset_version": "0.2.17",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -642,7 +642,49 @@
             }
           ],
           "limitations": "Single October 2022 field study at three White Beach stations; ecological baseline only, not a current condition assessment or a beach-wide biodiversity inventory."
-        }
+        },
+        "historical_studies": [
+          {
+            "study_id": "PJS-2012-WHITE-SITE3",
+            "study_year": 2012,
+            "reconnaissance_year": 2011,
+            "source_ids": [
+              "SRC-042"
+            ],
+            "study_type": "total_coliform_monitoring_and_stable_isotope_tracing",
+            "sampling_periods": [
+              "2012-04 dry season",
+              "2012-08 wet season"
+            ],
+            "sampling_sites": [
+              {
+                "site_id": "Site 3",
+                "locality": "Long Beach / White Beach, near Station 2",
+                "linkage": "Explicitly located near Station 2 in the article",
+                "finding": "Total coliform was detected in both dry and wet season samples. Exact figure values are not digitized in this record."
+              },
+              {
+                "site_id": "Site 3a",
+                "locality": "Canal near Site 3",
+                "linkage": "Canal selected as a direct pollution-source sampling site",
+                "finding": "Wet-season canal water δ18O was reported as −6.9‰; Site 3 seawater was −6.5‰."
+              }
+            ],
+            "findings": [
+              "The article reports total coliform at Site 3 in both sampling seasons.",
+              "The isotope mixing model includes Site 3 together with Bulabog Sites 6 and 7 in an estimated 80–94% canal/sewer-water contribution range; the range is not Site 3-specific.",
+              "The paper identifies a canal near Site 3 as a direct pollution-source sampling location."
+            ],
+            "interpretation": "Historical evidence of canal influence and total-coliform detection near White Beach Station 2 in 2012. This is not a current water-quality result and is not directly comparable with fecal-coliform monitoring.",
+            "limitations": [
+              "Sampling predates the 2018 Boracay rehabilitation.",
+              "The paper's sampling-site GPS coordinates are not provided in the extracted text; no coordinates are assigned.",
+              "The measured indicator is total coliform, not fecal coliform.",
+              "The 80–94% isotope-mixing estimate applies to Sites 3, 6 and 7 collectively, not to White Beach alone."
+            ],
+            "rehabilitation_context": "The article notes that illegal wastewater pipes were uncovered and permanently sealed during the 2018 rehabilitation. The 2011–2012 discharge configuration must not be assumed to persist."
+          }
+        ]
       },
       "evidence": [
         {
@@ -1222,6 +1264,67 @@
               "The report's seagrass species narrative and table are internally inconsistent; no definitive species list is published in this normalized record.",
               "Historical observations from 2020 do not establish current coral or seagrass condition."
             ]
+          }
+        ],
+        "historical_studies": [
+          {
+            "study_id": "PJS-2012-BULABOG-SITES5-7",
+            "study_year": 2012,
+            "reconnaissance_year": 2011,
+            "source_ids": [
+              "SRC-042"
+            ],
+            "study_type": "total_coliform_monitoring_and_stable_isotope_tracing",
+            "sampling_periods": [
+              "2012-04 dry season",
+              "2012-08 wet season"
+            ],
+            "sampling_sites": [
+              {
+                "site_id": "Site 5",
+                "locality": "Bulabog Beach, eastern shore",
+                "linkage": "Article states Sites 5–7 are along Bulabog Beach",
+                "finding": "Seawater sample collected; the paper reports coliform detection at Sites 5–7 in both seasons."
+              },
+              {
+                "site_id": "Site 6",
+                "locality": "Bulabog Beach, eastern shore",
+                "linkage": "Article states Sites 5–7 are along Bulabog Beach",
+                "finding": "High total-coliform counts in both dry and wet seasons; δ18O values reported as −5.0‰ (dry) and −6.0‰ (wet)."
+              },
+              {
+                "site_id": "Site 7",
+                "locality": "Bulabog Beach, eastern shore",
+                "linkage": "Article states Sites 5–7 are along Bulabog Beach",
+                "finding": "High total-coliform counts in both seasons; elevated count during dry season; wet-season δ18O reported as −5.5‰."
+              },
+              {
+                "site_id": "Site 6a",
+                "locality": "Between Sites 6 and 7",
+                "linkage": "Discharge-pipe sampling point between two Bulabog sites",
+                "finding": "A sewer discharge pipe was identified during reconnaissance; the article describes it as disguised as a fallen coconut tree."
+              },
+              {
+                "site_id": "Site 8",
+                "locality": "Boracay sewage treatment plant / effluent reference",
+                "linkage": "Treatment-plant reference associated with discharge between Sites 6 and 7",
+                "finding": "The article describes treated sewage effluent discharged into the sea in the Bulabog area."
+              }
+            ],
+            "findings": [
+              "Sites 6 and 7 showed high total-coliform counts in both dry and wet seasons; some measured counts exceeded the cited Class SB total-coliform limit of 1,000 MPN/100 mL.",
+              "The isotope mixing model includes Bulabog Sites 6 and 7 together with White Beach Site 3 in an estimated 80–94% canal/sewer-water contribution range; the range is not Bulabog-specific.",
+              "The article documents historical sewer/canal influence in the Bulabog nearshore area."
+            ],
+            "interpretation": "Historical evidence of wastewater influence and total-coliform detection at Bulabog Sites 5–7 in 2012. This is not a current water-quality result and is not directly comparable with the 2022–2023 fecal-coliform monitoring at Ralph's Place.",
+            "limitations": [
+              "Sampling predates the 2018 Boracay rehabilitation.",
+              "The paper's sampling-site GPS coordinates are not provided in the extracted text; no coordinates are assigned.",
+              "The measured indicator is total coliform, not fecal coliform.",
+              "The 80–94% isotope-mixing estimate applies to Sites 3, 6 and 7 collectively, not to Bulabog alone.",
+              "The historical discharge arrangement must not be assumed to persist."
+            ],
+            "rehabilitation_context": "The article notes that illegal wastewater pipes were uncovered and permanently sealed during the 2018 rehabilitation. The study's 2011–2012 pipe locations are historical references, not evidence of current illegal discharges."
           }
         ]
       },
