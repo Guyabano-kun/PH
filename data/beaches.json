@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.30",
+  "dataset_version": "0.2.32",
   "last_updated": "2026-11-15",
   "beaches": [
     {
@@ -472,7 +472,8 @@
             },
             "source_ids": [
               "SRC-002",
-              "SRC-024"
+              "SRC-024",
+              "SRC-010"
             ],
             "interpretation": "DENR-EMB included this point in the six-station Front/White Beach group selected as representative for nutrient analysis. Fecal-coliform and oil-and-grease results remain station-specific historical measurements, not a current whole-beach status.",
             "oil_and_grease": {
@@ -578,6 +579,21 @@
                   "SRC-002"
                 ],
                 "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
+              },
+              {
+                "year": 2021,
+                "reporting_period": "CY 2021",
+                "fecal_coliform_geometric_mean_mpn_100ml": 32.8,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0,
+                  "sampling_events": 12
+                },
+                "source_ids": [
+                  "SRC-010"
+                ],
+                "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
               }
             ]
           },
@@ -614,7 +630,8 @@
             },
             "source_ids": [
               "SRC-002",
-              "SRC-024"
+              "SRC-024",
+              "SRC-010"
             ],
             "interpretation": "DENR-EMB included this point in the six-station Front/White Beach group selected as representative for nutrient analysis. Fecal-coliform and oil-and-grease results remain station-specific historical measurements, not a current whole-beach status.",
             "oil_and_grease": {
@@ -720,6 +737,21 @@
                   "SRC-002"
                 ],
                 "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
+              },
+              {
+                "year": 2021,
+                "reporting_period": "CY 2021",
+                "fecal_coliform_geometric_mean_mpn_100ml": 21,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0,
+                  "sampling_events": 12
+                },
+                "source_ids": [
+                  "SRC-010"
+                ],
+                "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
               }
             ]
           },
@@ -756,7 +788,8 @@
             },
             "source_ids": [
               "SRC-002",
-              "SRC-024"
+              "SRC-024",
+              "SRC-010"
             ],
             "interpretation": "DENR-EMB included this point in the six-station Front/White Beach group selected as representative for nutrient analysis. Fecal-coliform and oil-and-grease results remain station-specific historical measurements, not a current whole-beach status.",
             "oil_and_grease": {
@@ -862,6 +895,21 @@
                   "SRC-002"
                 ],
                 "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
+              },
+              {
+                "year": 2021,
+                "reporting_period": "CY 2021",
+                "fecal_coliform_geometric_mean_mpn_100ml": 20.7,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0,
+                  "sampling_events": 12
+                },
+                "source_ids": [
+                  "SRC-010"
+                ],
+                "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
               }
             ]
           }
@@ -1592,6 +1640,21 @@
                   "SRC-002"
                 ],
                 "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
+              },
+              {
+                "year": 2021,
+                "reporting_period": "CY 2021",
+                "fecal_coliform_geometric_mean_mpn_100ml": 79.1,
+                "fecal_coliform_guideline_mpn_100ml": 200,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 67,
+                  "non_compliant_percent": 33,
+                  "sampling_events": 12
+                },
+                "source_ids": [
+                  "SRC-010"
+                ],
+                "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
               }
             ]
           }
@@ -2296,7 +2359,8 @@
             },
             "source_ids": [
               "SRC-002",
-              "SRC-024"
+              "SRC-024",
+              "SRC-010"
             ],
             "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach.",
             "oil_and_grease": {
@@ -2403,6 +2467,21 @@
                 ],
                 "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset.",
                 "notes": "The report records only 75% TSS compliance (9 of 12 events) at Puka Beach and attributes elevated suspended solids at northern stations partly to strong waves and currents. This is the report's station-level interpretation, not a measured wave record."
+              },
+              {
+                "year": 2021,
+                "reporting_period": "CY 2021",
+                "fecal_coliform_geometric_mean_mpn_100ml": 7.6,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 92,
+                  "non_compliant_percent": 8,
+                  "sampling_events": 12
+                },
+                "source_ids": [
+                  "SRC-010"
+                ],
+                "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
               }
             ]
           }
@@ -2848,7 +2927,8 @@
             },
             "source_ids": [
               "SRC-002",
-              "SRC-024"
+              "SRC-024",
+              "SRC-010"
             ],
             "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach.",
             "oil_and_grease": {
@@ -2954,6 +3034,21 @@
                   "SRC-002"
                 ],
                 "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
+              },
+              {
+                "year": 2021,
+                "reporting_period": "CY 2021",
+                "fecal_coliform_geometric_mean_mpn_100ml": 50,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 75,
+                  "non_compliant_percent": 25,
+                  "sampling_events": 12
+                },
+                "source_ids": [
+                  "SRC-010"
+                ],
+                "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
               }
             ]
           }
@@ -4574,7 +4669,8 @@
             },
             "source_ids": [
               "SRC-002",
-              "SRC-024"
+              "SRC-024",
+              "SRC-010"
             ],
             "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach.",
             "oil_and_grease": {
@@ -4680,6 +4776,21 @@
                   "SRC-002"
                 ],
                 "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
+              },
+              {
+                "year": 2021,
+                "reporting_period": "CY 2021",
+                "fecal_coliform_geometric_mean_mpn_100ml": 11.7,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0,
+                  "sampling_events": 12
+                },
+                "source_ids": [
+                  "SRC-010"
+                ],
+                "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
               }
             ]
           }
@@ -5551,7 +5662,8 @@
             },
             "source_ids": [
               "SRC-002",
-              "SRC-024"
+              "SRC-024",
+              "SRC-010"
             ],
             "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach.",
             "oil_and_grease": {
@@ -5657,6 +5769,21 @@
                   "SRC-002"
                 ],
                 "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
+              },
+              {
+                "year": 2021,
+                "reporting_period": "CY 2021",
+                "fecal_coliform_geometric_mean_mpn_100ml": 151,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 58,
+                  "non_compliant_percent": 42,
+                  "sampling_events": 12
+                },
+                "source_ids": [
+                  "SRC-010"
+                ],
+                "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
               }
             ]
           }
@@ -6104,7 +6231,8 @@
             },
             "source_ids": [
               "SRC-002",
-              "SRC-024"
+              "SRC-024",
+              "SRC-010"
             ],
             "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach.",
             "oil_and_grease": {
@@ -6210,6 +6338,21 @@
                   "SRC-002"
                 ],
                 "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
+              },
+              {
+                "year": 2021,
+                "reporting_period": "CY 2021",
+                "fecal_coliform_geometric_mean_mpn_100ml": 67.1,
+                "fecal_coliform_guideline_mpn_100ml": 200,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 75,
+                  "non_compliant_percent": 25,
+                  "sampling_events": 12
+                },
+                "source_ids": [
+                  "SRC-010"
+                ],
+                "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
               }
             ]
           }
@@ -6650,7 +6793,8 @@
             },
             "source_ids": [
               "SRC-002",
-              "SRC-024"
+              "SRC-024",
+              "SRC-010"
             ],
             "interpretation": "Historical station result only. The sampling point is not a beach centroid and the result must not be treated as current bathing-water status or generalized to the entire beach.",
             "oil_and_grease": {
@@ -6756,6 +6900,21 @@
                   "SRC-002"
                 ],
                 "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
+              },
+              {
+                "year": 2021,
+                "reporting_period": "CY 2021",
+                "fecal_coliform_geometric_mean_mpn_100ml": 18.2,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 83,
+                  "non_compliant_percent": 17,
+                  "sampling_events": 12
+                },
+                "source_ids": [
+                  "SRC-010"
+                ],
+                "sampling_note": "The DENR-EMB 2021 report presents annual station geomeans and compliance percentages based on 12 sampling events. Values are specific to this monitoring station and historical reporting year."
               }
             ]
           }
