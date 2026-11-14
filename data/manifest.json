@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.29",
+  "dataset_version": "0.2.30",
   "dataset_status": "research_enriched_draft",
-  "last_updated": "2026-11-14",
+  "last_updated": "2026-11-15",
   "beach_count": 13,
   "files": {
     "beaches": "beaches.json",
@@ -93,6 +93,13 @@
     "Updated the Coral Triangle Atlas record SRC-048: its missing legal-instrument field is now cross-referenced to the primary Proclamation No. 1801 source SRC-049. The Atlas point remains unsuitable for delineating protected-area or beach boundaries.",
     "Added the Philippine Coast Guard 2019 National Oil Spill Contingency Plan Annex 10 (SRC-051), which lists Boracay Island TZMR as a national marine protected area with year 1978 and a single reference coordinate. This independently corroborates the Proclamation No. 1801 island-level marine-reserve designation but provides no boundary polygon, area, zoning or beach-level limits. The annex heading referring to NIPAS is not used to claim that the 1978 designation was originally established under the later NIPAS statute.",
     "Recorded the explicit boundary-delineation dependency in Proclamation No. 1801: the Philippine Tourism Authority was directed to delineate well-defined geographic areas within the declared zones. The Supreme Court decision SRC-050 identifies PTA Circular No. 3-82 dated 3 September 1982 as the implementing instrument, but the full circular and any associated maps were not recovered in this research pass. Beach-level marine-reserve boundaries remain unverified; no polygons or coordinates are inferred.",
-    "Access research did not establish current public approach routes or entry permissions for individual beaches. The general public-use easement and Boracay 25+5 m beach easement remain legal context only; historical 2018 temporary closure rules are not presented as current access restrictions."
+    "Access research did not establish current public approach routes or entry permissions for individual beaches. The general public-use easement and Boracay 25+5 m beach easement remain legal context only; historical 2018 temporary closure rules are not presented as current access restrictions.",
+    "Version 0.2.30: coordinate audit adds BeachAtlas reference points as independent comparisons, not as automatic centroid replacements. Bulabog's selected map reference now uses the BeachAtlas point (11.9692679, 121.9273114), approximately 33.9 m from the 2022/2023 DENR-EMB Ralph's Place station; the old guide/legacy marker remains separately documented approximately 439 m away.",
+    "Version 0.2.30: Ilig-Iligan's selected map reference now uses the BeachAtlas point (11.9931549, 121.9253557), approximately 30.3 m from the DENR-EMB station and 132 m from the OSM beach feature. The old guide/legacy marker is approximately 763 m away and is retained as a separate reference, not silently overwritten.",
+    "Version 0.2.30: Puka, White Beach, Diniwid, Punta Bunga and Balinghai BeachAtlas map points are recorded separately. Puka's multiple points span several hundred metres and are not collapsed into a false centroid. White Beach's legacy point remains explicitly identified as DENR Boat Station 2; BeachAtlas and OSM points are separate references.",
+    "Version 0.2.30: Lapus-Lapus Beach now has a low-confidence Newcoast-side tourist-guide reference point (11.981111, 121.927955), supported by the TPB beach name/grid and the separate historical DENR station locality. A WorldPlaces point at 11.94923, 121.93178 is approximately 3.57 km away near White Beach Station 3 / Angol and is retained as a disputed name-location association, not used as the beach marker.",
+    "Version 0.2.30: Banyugan and Punta Bunga access records now include Shangri-La's official resort-facility context. Resort facilities and historical guide claims do not establish a current public approach route or unrestricted public access.",
+    "Version 0.2.30: Hagdan Beach remains provisional. Trip.com mentions it as a nearby attraction, but no separate mapped beach feature or surveyed boundary has been established.",
+    "Coordinate protocol reaffirmed: coordinates are typed as beach-feature, monitoring-station, locality, tourist-guide, Plus Code cell, business POI or operator stop-area references. Distances between unlike point types are evidence of spatial separation, not permission to substitute one point type for another. No map reference is labelled a surveyed beach centroid without survey evidence."
   ]
 }
