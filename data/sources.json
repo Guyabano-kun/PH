@@ -754,6 +754,30 @@
       ],
       "limitations": "Confirms chart availability only; does not provide chart depth values or a downloadable chart extract in the retrieved listing.",
       "reliability": "official_national_mapping_agency_catalogue"
+    },
+    {
+      "id": "SRC-042",
+      "title": "Elemental and Isotopic Techniques to Trace the Nutrient Sources in the Neritic Zone and Provenance of White Beach Sand of Boracay Island, the Philippines",
+      "publisher": "Philippine Journal of Science; Philippine Nuclear Research Institute, Department of Science and Technology",
+      "url": "https://philjournalsci.dost.gov.ph/images/pdf/pjs_pdf/vol153_S1_Nuclear_ST/elemental_and_isotopic_techniques_to_trace_the_nurient_sources_in_neritic_zone_and_white_beach_sand_of_Boracay_.pdf",
+      "type": "peer_reviewed_scientific_article",
+      "published_at": "2024",
+      "checked_at": "2026-11-14",
+      "authors": [
+        "Charles Darwin T. Racadio",
+        "Raymond J. Sucgang",
+        "Norman D.S. Mendoza",
+        "Joseph Michael D. Racho"
+      ],
+      "citation": "Philippine Journal of Science 153(S1):161–179",
+      "coverage": [
+        "Approximate length and setting of White Beach",
+        "Approximate length of Bulabog Beach",
+        "Offshore reef and seagrass presence at Bulabog",
+        "Neritic-zone sampling sites and historical water-quality context"
+      ],
+      "limitations": "The article describes White Beach as approximately 4 km and Bulabog as approximately 2.5 km. It describes an offshore reef and seagrass beds at Bulabog, but does not provide beach-boundary or reef-polygon coordinates. Field sampling described in the methods was conducted in 2011–2012; the article's publication year must not be mistaken for the sampling year.",
+      "reliability": "peer_reviewed_scientific_article"
     }
   ]
 }
