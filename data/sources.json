@@ -704,6 +704,56 @@
       ],
       "limitations": "Defines the broad national monsoon wind directions, not local Boracay wind speed, wave height, nearshore currents or beach-specific sea state. Used only with coarse coast orientation to describe a provisional directional exposure inference.",
       "reliability": "official_national_meteorological_service"
+    },
+    {
+      "id": "SRC-039",
+      "title": "NAMRIA – Provision of Free Printed or Digital Data / Hydrographic and Bathymetric Products",
+      "publisher": "National Mapping and Resource Information Authority",
+      "url": "https://namria.gov.ph/kiosk/namria02.htm",
+      "type": "official_geospatial_product_catalogue",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Bathymetry charts and ASCII XYZ bathymetry data",
+        "Hydrographic smooth sheets for inshore ports and harbors",
+        "Nautical charts and georeferenced charts",
+        "Raw/processed tidal current and wave data per month per station",
+        "Tidal datum and tidal-extreme products"
+      ],
+      "limitations": "Catalogue confirms product availability/request channels, not the existence of a specific Boracay dataset or its values. No bathymetry, current or wave measurements are transcribed from this page.",
+      "reliability": "official_national_mapping_agency_catalogue"
+    },
+    {
+      "id": "SRC-040",
+      "title": "Philippine Notices to Mariners – Monthly Edition 2026-04",
+      "publisher": "National Mapping and Resource Information Authority",
+      "url": "https://www.namria.gov.ph/jdownloads/Notice%20to%20Mariners/04_April_2026_Edition.pdf",
+      "type": "official_notice_to_mariners",
+      "published_at": "2026-04-30",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Chart 1544 – Panay Island NW Coast, Potol Point to Boracay Island",
+        "Chart 4358 – Boracay-area chart correction",
+        "Submarine pipeline chart correction; affected ENCs PH5CATIC and PH2CVZ40"
+      ],
+      "limitations": "The notice gives separate coordinate pairs for charts 1544 and 4358; they must be retained as chart-specific representations, not silently merged. The pipeline correction is a navigation-chart feature, not a beach boundary or automatically defined recreational exclusion zone.",
+      "reliability": "official_national_hydrographic_notice"
+    },
+    {
+      "id": "SRC-041",
+      "title": "List of Available Electronic Navigational Charts as of 13 February 2025",
+      "publisher": "National Mapping and Resource Information Authority",
+      "url": "https://namria.gov.ph/jdownloads/Maps/List_of_Available_ENC_as_of_February_13_2025.pdf",
+      "type": "official_chart_availability_catalogue",
+      "published_at": "2025-02-13",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "ENC PH5CATIC – Port of Caticlan",
+        "ENC PH2CVZ40 – Central Visayas",
+        "NAMRIA electronic navigational chart availability"
+      ],
+      "limitations": "Confirms chart availability only; does not provide chart depth values or a downloadable chart extract in the retrieved listing.",
+      "reliability": "official_national_mapping_agency_catalogue"
     }
   ]
 }
