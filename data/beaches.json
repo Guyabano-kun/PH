@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.17",
+  "dataset_version": "0.2.18",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -271,6 +271,26 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "contextual_observations": [
+          {
+            "season": "Summer (March–May, as defined in the article)",
+            "observation": "White Beach / Long Beach is described as the calm, leeward side during summer.",
+            "scope": "Qualitative description of Sites 1–4 along the western Long Beach; no wave-height measurements."
+          },
+          {
+            "season": "Habagat (approximately June–October)",
+            "observation": "Waves on White Beach may be somewhat stronger during this season.",
+            "scope": "Qualitative seasonal description; no wave height, period or exceedance frequency."
+          }
+        ],
+        "surface_current_context": {
+          "value": "The western side of Boracay is described as having a relatively weak surface current.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-042"
+          ],
+          "note": "Island-side contextual description, not a measured current at a specific White Beach station; no current speed, direction series or seasonal statistics are supplied."
         }
       },
       "activities": {
@@ -967,6 +987,21 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "contextual_observations": [
+          {
+            "season": "Summer (March–May, as defined in the article)",
+            "observation": "Bulabog / the eastern side is described as the windward side during summer.",
+            "scope": "Qualitative description of Sites 5–7 along Bulabog; no wind-speed or wave-height measurements."
+          }
+        ],
+        "surface_current_context": {
+          "value": "An eastward current is described along the eastern length of Boracay.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-042"
+          ],
+          "note": "Island-scale contextual description, not a measured current at a specific Bulabog station; no current speed or time series is supplied."
         }
       },
       "activities": {
