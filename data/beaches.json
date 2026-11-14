@@ -2350,24 +2350,36 @@
       },
       "access": {
         "land_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "The national tourism portal lists access by tricycle, motorbike, or walking, approximately 4 km north of White Beach Station 1. The exact public approach route and its current condition are not specified.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-082"
+          ],
+          "note": "Published destination guidance; not a surveyed access route or confirmation of current road/gate conditions."
         },
         "public_access_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "The national tourism portal states that beach access is free and that no entrance fee is required.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-082"
+          ],
+          "note": "Published tourism information, not an LGU fee schedule or real-time confirmation. Recheck posted local notices on arrival."
         },
         "access_restrictions": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "The portal warns visitors about strong currents, rocky areas, and a steeper nearshore drop-off than White Beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-082"
+          ],
+          "note": "General destination safety advice; not a measured current, tide-specific hazard map, or same-day swimming advisory."
         },
         "facilities": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "The portal describes basic and limited facilities: beachfront vendors, no beach chairs or umbrellas, and limited restroom access.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-082"
+          ],
+          "note": "Availability and operating status of individual vendors and facilities are not guaranteed."
         },
         "lifeguard_coverage": {
           "value": null,
@@ -2957,9 +2969,12 @@
       },
       "access": {
         "land_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "The Department of Tourism's Travel Philippines article describes a small footpath along the cliff edge beyond White Beach Station 1, or a short tricycle ride via the back access road.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-083"
+          ],
+          "note": "Historical route description published in October 2020; current path condition and access control are not verified."
         },
         "public_access_status": {
           "value": null,
@@ -2967,9 +2982,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "access_restrictions": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "The documented land approaches include a cliff-edge footpath and a back access road. Current path condition, any gates, and public right-of-way are not established by the source.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-083"
+          ],
+          "note": "Do not infer current public access rights or safety from the 2020 route description."
         },
         "facilities": {
           "value": null,
