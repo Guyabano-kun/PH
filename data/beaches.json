@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.5",
+  "dataset_version": "0.2.6",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -44,9 +44,9 @@
         "coordinates": {
           "latitude": 11.9581389,
           "longitude": 121.9260278,
-          "coordinate_status": "legacy_site_marker_unverified",
-          "coordinate_source": "Existing weather.html map dataset",
-          "coordinate_precision": "Not independently validated as beach centroid",
+          "coordinate_status": "legacy_marker_is_boat_station_2_not_osm_beach_feature_point",
+          "coordinate_source": "Existing weather.html map dataset (legacy marker); cross-references are documented separately in geography.coordinate_verification.",
+          "coordinate_precision": "Legacy map point; not independently confirmed as a surveyed beach centroid. See coordinate_verification for OSM and DENR station comparisons.",
           "verified": false,
           "source_id": "SRC-000"
         },
@@ -69,6 +69,29 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coordinate_verification": {
+          "source_ids": [
+            "SRC-021",
+            "SRC-002"
+          ],
+          "osm_feature": {
+            "source_id": "SRC-021",
+            "feature_type": "natural=beach",
+            "osm_feature_id": "way 4279249",
+            "latitude": 11.95823,
+            "longitude": 121.92325,
+            "separation_from_legacy_marker_m": 302.3
+          },
+          "denr_monitoring_station": {
+            "source_id": "SRC-002",
+            "station_name": "Boat Station 2 DENR-EMB station",
+            "latitude": 11.9581389,
+            "longitude": 121.9260278,
+            "separation_from_legacy_marker_m": 0
+          },
+          "assessment": "legacy_marker_is_boat_station_2_not_osm_beach_feature_point",
+          "note": "The legacy point exactly matches Boat Station 2; the OSM feature point is approximately 300 m away. Neither is established as a surveyed White Beach centroid."
         }
       },
       "shore": {
@@ -520,6 +543,16 @@
           "source_id": "SRC-009",
           "claim": "Peer-reviewed 2024 study sampled White Beach Stations 1–3 in October 2022 and reported station-specific sediment grain-size distributions, sediment color/odor observations, salinity, redox, organic matter and benthic macrofauna.",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-021",
+          "claim": "OpenStreetMap natural=beach feature way 4279249 surfaced via Mapcarta reports feature reference coordinate 11.95823, 121.92325; this is compared with the legacy marker but is not a surveyed centroid.",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-002",
+          "claim": "DENR-EMB 2022 monitoring station Boat Station 2 DENR-EMB station is recorded separately for coordinate cross-check; station point is not a beach centroid.",
+          "status": "supported"
         }
       ],
       "data_quality": {
@@ -541,7 +574,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 4
+          "revision": 5
         }
       }
     },
@@ -952,9 +985,9 @@
         "coordinates": {
           "latitude": 11.996611,
           "longitude": 121.915254,
-          "coordinate_status": "legacy_site_marker_unverified",
-          "coordinate_source": "Existing weather.html map dataset",
-          "coordinate_precision": "Not independently validated as beach centroid",
+          "coordinate_status": "osm_feature_point_disagrees_with_legacy_marker",
+          "coordinate_source": "Existing weather.html map dataset (legacy marker); cross-references are documented separately in geography.coordinate_verification.",
+          "coordinate_precision": "Legacy map point; not independently confirmed as a surveyed beach centroid. See coordinate_verification for OSM and DENR station comparisons.",
           "verified": false,
           "source_id": "SRC-000"
         },
@@ -977,6 +1010,29 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coordinate_verification": {
+          "source_ids": [
+            "SRC-018",
+            "SRC-002"
+          ],
+          "osm_feature": {
+            "source_id": "SRC-018",
+            "feature_type": "natural=beach",
+            "osm_feature_id": "way 4279206",
+            "latitude": 11.99706,
+            "longitude": 121.91926,
+            "separation_from_legacy_marker_m": 438.6
+          },
+          "denr_monitoring_station": {
+            "source_id": "SRC-002",
+            "station_name": "Puka Beach DENR-EMB station",
+            "latitude": 11.9959999,
+            "longitude": 121.9159444,
+            "separation_from_legacy_marker_m": 101.3
+          },
+          "assessment": "osm_feature_point_disagrees_with_legacy_marker",
+          "note": "The OSM beach-feature coordinate and the DENR-EMB station coordinate are materially north/east of the legacy marker. Preserve all three as separate references; do not move the marker until the intended map point is defined."
         }
       },
       "shore": {
@@ -1242,6 +1298,16 @@
           "source_id": "SRC-002",
           "claim": "DENR-EMB 2022 report gives the Puka Beach sampling-station coordinates and annual fecal-coliform geomean (11 MPN/100 ml; Class SB guideline 100; 92% compliant across 12 sampling events). This is historical station data, not a current beach-wide result.",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-018",
+          "claim": "OpenStreetMap natural=beach feature way 4279206 surfaced via Mapcarta reports feature reference coordinate 11.99706, 121.91926; this is compared with the legacy marker but is not a surveyed centroid.",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-002",
+          "claim": "DENR-EMB 2022 monitoring station Puka Beach DENR-EMB station is recorded separately for coordinate cross-check; station point is not a beach centroid.",
+          "status": "supported"
         }
       ],
       "data_quality": {
@@ -1263,7 +1329,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 2
+          "revision": 3
         }
       }
     },
@@ -1308,9 +1374,9 @@
         "coordinates": {
           "latitude": 11.9763,
           "longitude": 121.91167,
-          "coordinate_status": "legacy_site_marker_unverified",
-          "coordinate_source": "Existing weather.html map dataset",
-          "coordinate_precision": "Not independently validated as beach centroid",
+          "coordinate_status": "osm_feature_point_matches_legacy_marker",
+          "coordinate_source": "Existing weather.html map dataset (legacy marker); cross-references are documented separately in geography.coordinate_verification.",
+          "coordinate_precision": "Legacy map point; not independently confirmed as a surveyed beach centroid. See coordinate_verification for OSM and DENR station comparisons.",
           "verified": false,
           "source_id": "SRC-000"
         },
@@ -1333,6 +1399,29 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coordinate_verification": {
+          "source_ids": [
+            "SRC-019",
+            "SRC-002"
+          ],
+          "osm_feature": {
+            "source_id": "SRC-019",
+            "feature_type": "natural=beach",
+            "osm_feature_id": "way 24043654",
+            "latitude": 11.97624,
+            "longitude": 121.91176,
+            "separation_from_legacy_marker_m": 11.8
+          },
+          "denr_monitoring_station": {
+            "source_id": "SRC-002",
+            "station_name": "Diniwid Beach DENR-EMB station",
+            "latitude": 11.9761944,
+            "longitude": 121.9117778,
+            "separation_from_legacy_marker_m": 16.6
+          },
+          "assessment": "osm_feature_point_matches_legacy_marker",
+          "note": "The OSM feature point and DENR-EMB sampling station are both close to the legacy marker; this corroborates a local reference point but not a surveyed centroid."
         }
       },
       "shore": {
@@ -1585,6 +1674,16 @@
           "source_id": "SRC-002",
           "claim": "DENR-EMB 2022 report gives the Diniwid Beach sampling-station coordinates and annual fecal-coliform geomean (18 MPN/100 ml; Class SB guideline 100; 83% compliant across 12 sampling events). This is historical station data, not a current beach-wide result.",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-019",
+          "claim": "OpenStreetMap natural=beach feature way 24043654 surfaced via Mapcarta reports feature reference coordinate 11.97624, 121.91176; this is compared with the legacy marker but is not a surveyed centroid.",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-002",
+          "claim": "DENR-EMB 2022 monitoring station Diniwid Beach DENR-EMB station is recorded separately for coordinate cross-check; station point is not a beach centroid.",
+          "status": "supported"
         }
       ],
       "data_quality": {
@@ -1606,7 +1705,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 2
+          "revision": 3
         }
       }
     },
@@ -2623,9 +2722,9 @@
         "coordinates": {
           "latitude": 11.986036,
           "longitude": 121.925014,
-          "coordinate_status": "legacy_site_marker_unverified",
-          "coordinate_source": "Existing weather.html map dataset",
-          "coordinate_precision": "Not independently validated as beach centroid",
+          "coordinate_status": "osm_feature_point_disagrees_with_legacy_marker",
+          "coordinate_source": "Existing weather.html map dataset (legacy marker); cross-references are documented separately in geography.coordinate_verification.",
+          "coordinate_precision": "Legacy map point; not independently confirmed as a surveyed beach centroid. See coordinate_verification for OSM and DENR station comparisons.",
           "verified": false,
           "source_id": "SRC-000"
         },
@@ -2648,6 +2747,29 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coordinate_verification": {
+          "source_ids": [
+            "SRC-017",
+            "SRC-002"
+          ],
+          "osm_feature": {
+            "source_id": "SRC-017",
+            "feature_type": "natural=beach",
+            "osm_feature_id": "way 24043698",
+            "latitude": 11.99434,
+            "longitude": 121.9252,
+            "separation_from_legacy_marker_m": 923.6
+          },
+          "denr_monitoring_station": {
+            "source_id": "SRC-002",
+            "station_name": "Ilig-Iligan Shell Museum DENR-EMB station",
+            "latitude": 11.9928889,
+            "longitude": 121.9254167,
+            "separation_from_legacy_marker_m": 763.3
+          },
+          "assessment": "osm_feature_point_disagrees_with_legacy_marker",
+          "note": "The OSM beach-feature coordinate and the DENR-EMB station coordinate are materially north/east of the legacy marker. Preserve all three as separate references; do not move the marker until the intended map point is defined."
         }
       },
       "shore": {
@@ -2900,6 +3022,16 @@
           "source_id": "SRC-002",
           "claim": "DENR-EMB 2022 report gives the Ilig-Iligan Shell Museum sampling-station coordinates and annual fecal-coliform geomean (13 MPN/100 ml; Class SB guideline 100; 92% compliant across 12 sampling events). This is historical station data, not a current beach-wide result.",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-017",
+          "claim": "OpenStreetMap natural=beach feature way 24043698 surfaced via Mapcarta reports feature reference coordinate 11.99434, 121.9252; this is compared with the legacy marker but is not a surveyed centroid.",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-002",
+          "claim": "DENR-EMB 2022 monitoring station Ilig-Iligan Shell Museum DENR-EMB station is recorded separately for coordinate cross-check; station point is not a beach centroid.",
+          "status": "supported"
         }
       ],
       "data_quality": {
@@ -2921,7 +3053,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 2
+          "revision": 3
         }
       }
     },
@@ -3285,9 +3417,9 @@
         "coordinates": {
           "latitude": 11.95457,
           "longitude": 121.93784,
-          "coordinate_status": "legacy_site_marker_unverified",
-          "coordinate_source": "Existing weather.html map dataset",
-          "coordinate_precision": "Not independently validated as beach centroid",
+          "coordinate_status": "osm_feature_point_matches_legacy_marker",
+          "coordinate_source": "Existing weather.html map dataset (legacy marker); cross-references are documented separately in geography.coordinate_verification.",
+          "coordinate_precision": "Legacy map point; not independently confirmed as a surveyed beach centroid. See coordinate_verification for OSM and DENR station comparisons.",
           "verified": false,
           "source_id": "SRC-000"
         },
@@ -3310,6 +3442,29 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coordinate_verification": {
+          "source_ids": [
+            "SRC-016",
+            "SRC-002"
+          ],
+          "osm_feature": {
+            "source_id": "SRC-016",
+            "feature_type": "natural=beach",
+            "osm_feature_id": "way 216955095",
+            "latitude": 11.95457,
+            "longitude": 121.93784,
+            "separation_from_legacy_marker_m": 0
+          },
+          "denr_monitoring_station": {
+            "source_id": "SRC-002",
+            "station_name": "Tulubhan Pier DENR-EMB station",
+            "latitude": 11.955,
+            "longitude": 121.9380556,
+            "separation_from_legacy_marker_m": 53.3
+          },
+          "assessment": "osm_feature_point_matches_legacy_marker",
+          "note": "The legacy marker exactly matches the OSM natural=beach feature coordinate; the DENR-EMB station is nearby. This is not a surveyed beach-centroid validation."
         }
       },
       "shore": {
@@ -3562,6 +3717,16 @@
           "source_id": "SRC-002",
           "claim": "DENR-EMB 2022 report gives the Tulubhan Pier sampling-station coordinates and annual fecal-coliform geomean (141 MPN/100 ml; Class SB guideline 100; 42% compliant across 12 sampling events). This is historical station data, not a current beach-wide result.",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-016",
+          "claim": "OpenStreetMap natural=beach feature way 216955095 surfaced via Mapcarta reports feature reference coordinate 11.95457, 121.93784; this is compared with the legacy marker but is not a surveyed centroid.",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-002",
+          "claim": "DENR-EMB 2022 monitoring station Tulubhan Pier DENR-EMB station is recorded separately for coordinate cross-check; station point is not a beach centroid.",
+          "status": "supported"
         }
       ],
       "data_quality": {
@@ -3583,7 +3748,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 2
+          "revision": 3
         }
       }
     },
@@ -3628,9 +3793,9 @@
         "coordinates": {
           "latitude": 11.94952,
           "longitude": 121.9474,
-          "coordinate_status": "legacy_site_marker_unverified",
-          "coordinate_source": "Existing weather.html map dataset",
-          "coordinate_precision": "Not independently validated as beach centroid",
+          "coordinate_status": "osm_feature_point_matches_legacy_marker",
+          "coordinate_source": "Existing weather.html map dataset (legacy marker); cross-references are documented separately in geography.coordinate_verification.",
+          "coordinate_precision": "Legacy map point; not independently confirmed as a surveyed beach centroid. See coordinate_verification for OSM and DENR station comparisons.",
           "verified": false,
           "source_id": "SRC-000"
         },
@@ -3653,6 +3818,29 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coordinate_verification": {
+          "source_ids": [
+            "SRC-020",
+            "SRC-002"
+          ],
+          "osm_feature": {
+            "source_id": "SRC-020",
+            "feature_type": "natural=beach",
+            "osm_feature_id": "way 24043634",
+            "latitude": 11.94952,
+            "longitude": 121.9474,
+            "separation_from_legacy_marker_m": 0
+          },
+          "denr_monitoring_station": {
+            "source_id": "SRC-002",
+            "station_name": "Tambisaan Pier DENR-EMB station",
+            "latitude": 11.9492778,
+            "longitude": 121.9474167,
+            "separation_from_legacy_marker_m": 27
+          },
+          "assessment": "osm_feature_point_matches_legacy_marker",
+          "note": "The legacy marker exactly matches the OSM natural=beach feature coordinate; the DENR-EMB station is nearby. This is not a surveyed beach-centroid validation."
         }
       },
       "shore": {
@@ -3918,6 +4106,16 @@
           "source_id": "SRC-002",
           "claim": "DENR-EMB 2022 report gives the Tambisaan Pier sampling-station coordinates and annual fecal-coliform geomean (135 MPN/100 ml; Class SC guideline 200; 50% compliant across 12 sampling events). This is historical station data, not a current beach-wide result.",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-020",
+          "claim": "OpenStreetMap natural=beach feature way 24043634 surfaced via Mapcarta reports feature reference coordinate 11.94952, 121.9474; this is compared with the legacy marker but is not a surveyed centroid.",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-002",
+          "claim": "DENR-EMB 2022 monitoring station Tambisaan Pier DENR-EMB station is recorded separately for coordinate cross-check; station point is not a beach centroid.",
+          "status": "supported"
         }
       ],
       "data_quality": {
@@ -3939,7 +4137,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 2
+          "revision": 3
         }
       }
     },
