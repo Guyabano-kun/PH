@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "last_updated": "2026-11-14",
+  "last_updated": "2026-11-15",
   "sources": [
     {
       "id": "SRC-000",
@@ -1407,6 +1407,25 @@
       ],
       "limitations": "Third-party travel-platform listing, not a direct resort policy or current booking confirmation. It reports limited non-resort day access and recommends reservation, but does not establish a public right-of-way, current admission price, guaranteed availability, or current operating hours. Verify terms with Balinghai Beach Resort before publication as a time-sensitive claim.",
       "reliability": "moderate_for_published_visitor_access_and_facility_description"
+    },
+    {
+      "id": "SRC-085",
+      "title": "Best beaches to visit in Boracay: our top picks",
+      "publisher": "Dre Roelandt / Rough Guides",
+      "url": "https://www.roughguides.com/philippines/best-beaches-boracay/",
+      "type": "secondary_travel_guide",
+      "published_at": "2025-05-26",
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Ilig-Iligan Beach",
+        "Lapuz-Lapuz Beach",
+        "Punta Bunga Beach",
+        "Tulubhan Beach",
+        "Balinghai Beach",
+        "Tambisaan Beach"
+      ],
+      "limitations": "Secondary travel guide updated 26 May 2025. Access routes, road condition, facilities, day-pass availability, transport times/fares and visitor conditions are not official LGU/resort notices and may change. Descriptions do not establish a surveyed beach boundary, legal public right-of-way, guaranteed entry, current fees, lifeguard coverage or real-time sea safety. Treat resort-access claims and public-path descriptions as visitor-guide reports, not legal determinations.",
+      "reliability": "secondary_source"
     }
   ]
 }
