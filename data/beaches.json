@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.36",
+  "dataset_version": "0.2.37",
   "last_updated": "2026-11-15",
   "beaches": [
     {
@@ -4332,18 +4332,21 @@
       },
       "access": {
         "land_access": {
-          "value": null,
+          "value": "The beach is presented as a Shangri-La resort facility. No independently verified public land approach or non-guest route is documented.",
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "source_ids": [
+            "SRC-088"
+          ],
+          "note": "Resort location does not establish a public right-of-way or visitor permission."
         },
         "public_access_status": {
-          "value": "private_beach_reported",
+          "value": "Shangri-La identifies Banyugan as one of its secluded resort beaches for guests. The official page does not state whether non-guests can enter, whether day passes are offered, or whether a public approach exists; public access therefore remains unconfirmed.",
           "status": "provisional",
           "source_ids": [
-            "SRC-014",
-            "SRC-059"
+            "SRC-088",
+            "SRC-001"
           ],
-          "note": "Lakad Pilipinas describes Banyugan as a private beach associated with Shangri-La. The resort's official facilities page confirms a secluded beach facility and published facility hours, but does not establish general public walk-in access or a public approach route. Current access terms should be confirmed with the resort."
+          "note": "Do not infer a legal private beach or unrestricted public access from resort operation. No current day-visitor policy or public route was found."
         },
         "access_restrictions": {
           "value": null,
@@ -4351,9 +4354,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "facilities": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Shangri-La lists Banyugan Beach among resort facilities and publishes facility hours of 6am–6pm. This describes the resort facility, not guaranteed non-guest access.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-088"
+          ],
+          "note": "No public day-pass availability or non-guest services are stated."
         },
         "lifeguard_coverage": {
           "value": null,
@@ -4488,15 +4494,15 @@
           "Current water quality",
           "Activity-specific hazards"
         ],
-        "last_reviewed": "2026-11-14"
+        "last_reviewed": "2026-11-15"
       },
       "internal": {
         "admin_ready": true,
         "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
         "change_tracking": {
           "created_at": "2026-11-14",
-          "updated_at": "2026-11-14",
-          "revision": 3
+          "updated_at": "2026-11-15",
+          "revision": 4
         }
       }
     },
@@ -7354,10 +7360,12 @@
           "value": "Hagdan Beach",
           "status": "provisional",
           "source_ids": [
+            "SRC-001",
             "SRC-008",
-            "SRC-065"
+            "SRC-065",
+            "SRC-087"
           ],
-          "note": "A secondary travel guide uses the name Hagdan Beach and Trip.com lists Hagdan Beach as a nearby attraction. The TPB map labels Sitio Hagdan but does not list a separate Hagdan Beach in its Beach / Dive Site index. No separate beach feature or boundary has been established; identity remains provisional."
+          "note": "The TPB map labels Sitio Hagdan but does not list Hagdan Beach in its Beach / Dive Site index. The Aklan Provincial Government accommodation directory also uses Sitio Hagdan as a locality address. A secondary travel guide and Trip.com use the name Hagdan Beach, but no separate beach feature, boundary or official beach-name listing has been established. Retain only as an unverified name candidate, not a confirmed beach."
         },
         "alternative_names": {
           "value": null,
@@ -7365,14 +7373,19 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "administrative_area": {
-          "value": "Barangay / municipality attribution not yet individually verified",
-          "status": "unknown"
+          "value": "Sitio Hagdan is shown within Brgy. Yapak on the TPB map; the accommodation directory uses Sitio Hagdan addresses. This confirms locality naming, not a beach boundary.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001",
+            "SRC-087"
+          ]
         },
         "description": {
-          "value": "A separately named beach described in secondary travel-guide material near Sitio Hagdan; exact beach limits and access conditions remain unverified.",
+          "value": "Unverified beach-name candidate associated with Sitio Hagdan; official tourism map and provincial accommodation directory support the locality name but do not establish a separate beach feature.",
           "status": "provisional",
           "source_ids": [
-            "SRC-008"
+            "SRC-001",
+            "SRC-087"
           ]
         }
       },
@@ -7679,6 +7692,11 @@
           "source_id": "SRC-022",
           "claim": "Mapcarta/OSM identifies Hagdan as a neighborhood (place=neighbourhood), not as a separate beach feature; its coordinate is retained only as a locality reference.",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-087",
+          "claim": "Aklan Provincial Government accommodation directory uses Sitio Hagdan addresses; this supports the locality name only, not a separate Hagdan Beach.",
+          "status": "supported_locality_only"
         }
       ],
       "data_quality": {
@@ -7694,15 +7712,411 @@
           "Independent confirmation of separate beach identity and boundaries",
           "Verified coordinates and public access route"
         ],
-        "last_reviewed": "2026-11-14"
+        "last_reviewed": "2026-11-15"
       },
       "internal": {
         "admin_ready": true,
         "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
         "change_tracking": {
           "created_at": "2026-11-14",
-          "updated_at": "2026-11-14",
-          "revision": 3
+          "updated_at": "2026-11-15",
+          "revision": 4
+        }
+      }
+    },
+    {
+      "id": "lugutan",
+      "name": "Lugutan Beach",
+      "name_ru": "Пляж Лугутан",
+      "identity": {
+        "place_name": {
+          "value": "Lugutan Beach",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "note": "The TPB tourist map explicitly lists Lugutan Beach in the Beach / Dive Site index, grid F7. This confirms the mapped name only; no surveyed beach boundary or exact centroid is provided."
+        },
+        "alternative_names": {
+          "value": [
+            "Lugutan"
+          ],
+          "status": "provisional",
+          "source_ids": [
+            "SRC-001",
+            "SRC-086"
+          ],
+          "note": "Lugutan is also used for nearby wetland and coastal mixing-zone features; do not treat these as interchangeable with the beach."
+        },
+        "administrative_area": {
+          "value": "Brgy. Manoc-Manoc is supported for the nearby Lugutan Mixing Zone in the DENR report; the TPB map's beach label is in grid F7. The exact beach parcel/locality boundary has not been independently overlaid.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-001",
+            "SRC-086"
+          ]
+        },
+        "description": {
+          "value": "Named beach on the TPB tourism map (grid F7). Keep distinct from Lugutan Mangrove Park / Lugutan Wetland Park and from the DENR Lugutan Mixing Zone monitoring site.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001",
+            "SRC-002",
+            "SRC-086"
+          ]
+        }
+      },
+      "geography": {
+        "coast_orientation": {
+          "value": null,
+          "status": "unknown",
+          "note": "The tourist map gives a grid reference but no beach-specific coast orientation or boundary."
+        },
+        "coordinates": {
+          "latitude": null,
+          "longitude": null,
+          "coordinate_status": "not_available",
+          "coordinate_source": "No beach-specific coordinate identified in the reviewed sources.",
+          "coordinate_precision": "The DENR Lugutan Mixing Zone coordinate is a separate environmental monitoring point and is not used as a beach coordinate.",
+          "verified": false,
+          "source_id": "SRC-000"
+        },
+        "beach_boundary": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified polygon or surveyed start/end limits in this dataset."
+        },
+        "shoreline_geometry": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "natural_shelter": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coastline_orientation_degrees": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coordinate_verification": {
+          "source_ids": [
+            "SRC-001",
+            "SRC-086"
+          ],
+          "assessment": "named_beach_on_TPB_map_but_no_beach_coordinate; nearby_DENR_mixing_zone_point_is_not_a_beach_centroid",
+          "note": "TPB identifies Lugutan Beach at grid F7 without decimal coordinates. DENR-EMB gives a coordinate for Lugutan (Mixing Zone), a Class SC monitoring station in Brgy. Manoc-Manoc; this point is stored only as a separate monitoring station below, never as the beach marker."
+        }
+      },
+      "shore": {
+        "sand_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "beach_width": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "shore_slope": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tidal_exposure": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seasonal_erosion": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "underwater": {
+        "reef_presence": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_crest": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seabed_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "nearshore_depth": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "bathymetry_source": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "hydrodynamics": {
+        "amihan_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "habagat_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "wave_climate": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "rip_currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "visibility": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tide_effects": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "activities": {
+        "swimming": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+        },
+        "beach_relaxation": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "snorkeling": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "kitesurfing_windsurfing": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "boat_excursions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "access": {
+        "land_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified beach-specific approach route found."
+        },
+        "public_access_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "TPB map listing does not establish current public access or a usable public right-of-way."
+        },
+        "access_restrictions": {
+          "value": "The nearby Lugutan Mixing Zone is monitored as a Class SC coastal water body and is associated in DENR reports with drainage outfalls and runoff. This is environmental context for the mixing zone, not a beach-specific access restriction or current bathing advisory.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-002",
+            "SRC-086"
+          ],
+          "note": "Do not infer that the monitoring station is located on the beach or that historical results describe current conditions across the beach."
+        },
+        "facilities": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified beach-specific facilities inventory found."
+        },
+        "lifeguard_coverage": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified beach-specific lifeguard information found."
+        },
+        "emergency_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified beach-specific emergency access information found."
+        },
+        "legal_framework": {
+          "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-028",
+            "SRC-029",
+            "SRC-030",
+            "SRC-031"
+          ],
+          "note": "Island-wide legal context only; it does not establish a public route or access conditions at Lugutan Beach."
+        }
+      },
+      "excursions": {
+        "regular_departure": {
+          "value": "not_verified",
+          "status": "unknown",
+          "note": "A beach visit or presence of boats does not establish a regular legal tourist boarding point."
+        },
+        "seasonal_meeting_points": [],
+        "itinerary_stops": [],
+        "landing_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified, generally applicable public landing permission or designated landing point captured."
+        }
+      },
+      "ecology": {
+        "water_quality_history": {
+          "value": "Historical DENR-EMB monitoring exists for the nearby Lugutan (Mixing Zone), a Class SC station. It is not a beach-specific recreational bathing station and must not be presented as a water-quality result for the entire beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-002",
+            "SRC-086"
+          ],
+          "note": "The 2022 and 2023 reports document non-compliance for the Lugutan Mixing Zone. The 2023 report also describes contaminated runoff from the Lugutan Drainage Outfall and the outfall near Kingfisher's Farm. This is historical, station-specific evidence; it is not a current bathing advisory or a beach-wide assessment."
+        },
+        "reef_condition": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "pollution_sources": {
+          "value": "DENR-EMB identifies contaminated runoff from the Lugutan Drainage Outfall and the outfall near Kingfisher's Farm as factors affecting the Lugutan Mixing Zone; Wetland 6 is also discussed in the report. These are mixing-zone/bay observations, not proof that the full beach shoreline is contaminated.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-002",
+            "SRC-086"
+          ],
+          "note": "Historical 2022–2023 monitoring context only. No current discharge status or beach-wide water condition is inferred."
+        },
+        "protected_area_status": {
+          "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
+          "status": "supported",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas; the Supreme Court identifies PTA Circular No. 3-82 (3 September 1982) as its implementing instrument, but the full circular and any boundary maps have not been recovered. Exact beach-level marine-reserve limits therefore remain unverified.",
+          "source_ids": [
+            "SRC-049",
+            "SRC-050",
+            "SRC-051"
+          ]
+        },
+        "monitoring_stations": [
+          {
+            "station_name": "Lugutan (Mixing Zone)",
+            "station_type": "DENR-EMB coastal water-quality monitoring station, Class SC; not a beach centroid or a designated beach bathing station",
+            "barangay": "Manoc-Manoc",
+            "water_body_class": "SC",
+            "coordinates": {
+              "latitude": 11.9555,
+              "longitude": 121.9348333,
+              "coordinate_type": "monitoring_station",
+              "not_beach_centroid": true,
+              "source_id": "SRC-086",
+              "source_coordinate_text": "11°57′19.8″N ; 121°56′05.4″E"
+            },
+            "monitoring_period": "CY 2022–2023",
+            "source_ids": [
+              "SRC-002",
+              "SRC-086"
+            ],
+            "interpretation": "The coordinate belongs to the Lugutan Mixing Zone station, not Lugutan Beach. DENR reports non-compliant historical fecal-coliform results in the mixing zone and identifies drainage/runoff factors. Do not infer present-day bathing safety or apply the station result to the whole beach."
+          }
+        ],
+        "conservation_designations": [
+          {
+            "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+            "designation_type": "water_quality_management_and_conservation_area",
+            "legal_instrument": "DENR Administrative Order No. 2019-15",
+            "designation_date": "2019-11-05",
+            "status": "designated",
+            "geographic_scope": "Boracay Island; the order identifies the three island barangays of Yapak, Balabag and Manoc-manoc.",
+            "beach_level_relation": "The order designates Boracay Island as a whole. No separate beach-specific boundary segment is named for this record; exact local intersection has not been independently overlaid.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-047"
+            ],
+            "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          },
+          {
+            "designation_name": "Boracay Islands Tourist Zone and Marine Reserve",
+            "designation_type": "tourist_zone_and_marine_reserve",
+            "legal_instrument": "Presidential Proclamation No. 1801",
+            "designation_date": "1978-11-10",
+            "administering_authority_at_designation": "Philippine Tourism Authority",
+            "status": "designated",
+            "geographic_scope": "Boracay Islands, Aklan; island-level designation",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas within the zones; the implementing circular and any maps remain unavailable in the reviewed sources.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-049",
+              "SRC-050",
+              "SRC-051"
+            ],
+            "implementing_instrument_follow_up": "PTA Circular No. 3-82, dated 3 September 1982; full text and any boundary maps not independently recovered."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "source_id": "SRC-001",
+          "claim": "TPB tourist map lists Lugutan Beach in the Beach / Dive Site index, grid F7; the map does not provide exact coordinates or surveyed boundaries.",
+          "status": "supported_name_and_map_grid"
+        },
+        {
+          "source_id": "SRC-086",
+          "claim": "DENR-EMB reports a separate Lugutan (Mixing Zone) Class SC monitoring station in Brgy. Manoc-Manoc; its coordinate is retained as a monitoring point, not a beach coordinate.",
+          "status": "supported_monitoring_context"
+        },
+        {
+          "source_id": "SRC-002",
+          "claim": "DENR-EMB 2022 report documents historical mixing-zone/outfall context in Lugutan Bay; this does not establish current beach-wide water quality.",
+          "status": "supported_historical_context"
+        }
+      ],
+      "data_quality": {
+        "record_status": "draft",
+        "overall_confidence": "low_to_moderate",
+        "known_gaps": [
+          "Beach boundary and shoreline geometry",
+          "Beach-specific coordinates; do not substitute Lugutan Mixing Zone point",
+          "Exact public access route and current entry conditions",
+          "Beach-specific water-quality sampling and current bathing status",
+          "Bathymetry, reef profile, currents and activity-specific hazards",
+          "Current facilities and lifeguard coverage",
+          "Distinguish Lugutan Beach from Lugutan Mangrove Park, Lugutan Wetland Park and Lugutan Mixing Zone"
+        ],
+        "last_reviewed": "2026-11-15"
+      },
+      "internal": {
+        "admin_ready": true,
+        "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
+        "change_tracking": {
+          "created_at": "2026-11-15",
+          "updated_at": "2026-11-15",
+          "revision": 1
         }
       }
     }
