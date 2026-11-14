@@ -6354,9 +6354,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "access_restrictions": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "DENR-EMB reports that Tambisaan Beach is used as an alternative island entry and exit point when weather, wind and sea conditions affect the usual Cagban route. The beach record therefore distinguishes the recreational shoreline from the adjacent pier and port operations.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "note": "This is a published operational context from the 2022 assessment report, not a current ferry schedule, designated swimming-zone map, or real-time navigation notice."
         },
         "facilities": {
           "value": null,
