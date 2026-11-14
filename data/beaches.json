@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.23",
+  "dataset_version": "0.2.24",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -1704,6 +1704,52 @@
                 "finding": "A zinc spike was observed in the sediment core. The authors state that this may indicate an anthropogenic or plume-derived source rather than an intrinsic soil component.",
                 "numeric_concentration_transcribed": false
               }
+            ]
+          }
+        ],
+        "outfall_monitoring": [
+          {
+            "study_id": "EMB-OUTFALL-2026-03",
+            "monitoring_period": "2026-03-02 to 2026-03-03",
+            "agency": "EMB Region VI in coordination with BIWQMACA",
+            "sampled_outfalls": [
+              {
+                "name": "Bulabog Outfall 1",
+                "linkage": "Bulabog area; separate outfall point, not an ambient beach station"
+              },
+              {
+                "name": "Bulabog Drainage Outfall",
+                "linkage": "Bulabog area; separate outfall point, not an ambient beach station"
+              },
+              {
+                "name": "Malabunot Outfall 2",
+                "linkage": "Separate Manoc-Manoc outfall; not assigned to a target beach"
+              },
+              {
+                "name": "Lugutan Outfall",
+                "linkage": "Separate Manoc-Manoc outfall; not assigned to a target beach"
+              }
+            ],
+            "on_site_parameters": [
+              "Dissolved oxygen",
+              "Temperature",
+              "pH"
+            ],
+            "on_site_result": "All three on-site physical parameters were reported compliant at all four sampled outfalls.",
+            "laboratory_parameters_pending": [
+              "Total suspended solids",
+              "Color",
+              "Fecal coliform"
+            ],
+            "laboratory_status": "Samples were forwarded to the laboratory; no numerical laboratory results were included in the cited publication at the time of reporting.",
+            "source_ids": [
+              "SRC-043"
+            ],
+            "limitations": [
+              "Outfall monitoring is not equivalent to ambient recreational-water monitoring at the beach.",
+              "No numerical results or sampling coordinates are published in the cited report.",
+              "Laboratory results for TSS, color and fecal coliform were pending at publication.",
+              "This record does not establish bathing-water safety at Bulabog Beach."
             ]
           }
         ]
