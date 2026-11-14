@@ -597,6 +597,97 @@
       ],
       "limitations": "Explains restrictions within the 25+5 easement area; does not establish current access routes or access permission at each beach.",
       "reliability": "official_government_statement"
+    },
+    {
+      "id": "SRC-032",
+      "title": "DENR 2020 Annual Report – Boracay Rehabilitation Program",
+      "publisher": "Department of Environment and Natural Resources",
+      "url": "https://denr.gov.ph/wp-content/uploads/2023/05/Boracay_Rehabilitation_Program.pdf",
+      "type": "official_government_annual_report",
+      "published_at": "2023-05",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "2020 Boracay coastal and marine resource assessment",
+        "Coral assessment, fish visual census and seagrass survey",
+        "Mapping and delineation of coastal and marine resources and marine protected areas"
+      ],
+      "limitations": "Confirms that mapping and delineation results were presented to stakeholders on 30 September 2020. The cited section does not provide the MPA boundary coordinates or a legal instrument establishing each mapped area.",
+      "reliability": "official_government_annual_report"
+    },
+    {
+      "id": "SRC-033",
+      "title": "New seagrass species found in Boracay",
+      "publisher": "Manila Bulletin, reporting DENR Region VI mapping findings",
+      "url": "https://mb.com.ph/2020/08/13/new-seagrass-species-found-in-boracay/",
+      "type": "secondary_news_report_of_Denr_mapping",
+      "published_at": "2020-08-13",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Boracay island-wide seagrass mapping",
+        "Nine recorded seagrass species",
+        "Barangay-level seagrass cover estimates"
+      ],
+      "limitations": "Reports 95.37 ha seagrass bed, nine species, and barangay-level cover figures from a mapping report described as subject to regional review. These are historical island/barangay aggregates, not beach-specific values or current condition.",
+      "reliability": "secondary_report_attributing_Denr"
+    },
+    {
+      "id": "SRC-034",
+      "title": "Coral Triangle Initiative Annual Report 2020",
+      "publisher": "Coral Triangle Initiative",
+      "url": "https://www.coraltriangleinitiative.org/sites/default/files/resources/Final_CTI%20Annual%20Report%202020_21Dec2021.pdf",
+      "type": "regional_initiative_annual_report",
+      "published_at": "2021-12-21",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Boracay coastal and marine resource assessment",
+        "Coral reef, seagrass and mangrove mapped extent"
+      ],
+      "limitations": "Records approximately 763 ha coral reefs, 95.37 ha seagrass and 1.90 ha mangroves from the 2020 mapping assessment. These are island-wide mapped extents, not live coral cover or beach-level condition.",
+      "reliability": "regional_initiative_project_report"
+    },
+    {
+      "id": "SRC-035",
+      "title": "Aklan's underwater treasures reveal rich marine biodiversity",
+      "publisher": "Daily Guardian, reporting DENR PENRO Aklan and DENR Region VI",
+      "url": "https://old.dailyguardian.com.ph/aklans-underwater-treasures-reveal-rich-marine-biodiversity/",
+      "type": "secondary_news_report_of_Denr_habitat_validation",
+      "published_at": "2026-11-04",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "DENR PENRO habitat validation and mapping in 2024–2025",
+        "Boracay coral habitat extent",
+        "Aklan coastal habitat mapping"
+      ],
+      "limitations": "Reports 763.30 ha of coral habitat for Boracay within a province-wide 1,884.54 ha inventory. Area extent is not live coral cover, reef health, or a beach-specific assessment. The article does not provide mapped polygon coordinates.",
+      "reliability": "secondary_report_attributing_Denr_PENRO"
+    },
+    {
+      "id": "SRC-036",
+      "title": "Protected Area Information System – Aklan Province",
+      "publisher": "DENR Biodiversity Management Bureau",
+      "url": "https://pais.bmb.gov.ph/home/province/33",
+      "type": "official_dynamic_protected_area_registry",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Encoded protected-area records for Aklan Province"
+      ],
+      "limitations": "The retrieved province page did not surface a Boracay-specific protected-area record. PAIS is based on encoded records and its dashboard warns that updates and validation may be incomplete; absence from the retrieved page is not proof that no protected-area designation exists.",
+      "reliability": "official_dynamic_registry_with_data_disclaimer"
+    },
+    {
+      "id": "SRC-037",
+      "title": "Protected Area Information System – Data Disclaimer",
+      "publisher": "DENR Biodiversity Management Bureau",
+      "url": "https://pais.bmb.gov.ph/index.php",
+      "type": "official_registry_data_disclaimer",
+      "published_at": "2026-09-11",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "PAIS dashboard data currency and validation limitations"
+      ],
+      "limitations": "The dashboard states that data may not fully reflect actual or real-time conditions while updates and validation are ongoing. It cannot alone support a definitive negative finding for a specific location.",
+      "reliability": "official_government_registry_disclaimer"
     }
   ]
 }
