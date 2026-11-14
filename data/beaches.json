@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.2",
+  "dataset_version": "0.2.3",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -3057,9 +3057,12 @@
       },
       "ecology": {
         "water_quality_history": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "A historical DENR-EMB ambient monitoring station is listed for Lapuz-Lapuz Beach in the 2021 regional report; no matching 2022 annual result is linked in this dataset.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-010"
+          ],
+          "note": "Station listing only. No current or 2022 water-quality result is asserted."
         },
         "reef_condition": {
           "value": null,
@@ -3076,7 +3079,27 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "monitoring_stations": []
+        "monitoring_stations": [
+          {
+            "station_name": "Lapuz-Lapuz Beach (historical DENR-EMB station listing)",
+            "station_type": "DENR-EMB coastline ambient monitoring station",
+            "barangay": "Yapak",
+            "water_body_class": "SB",
+            "coordinates": {
+              "latitude": 11.9838889,
+              "longitude": 121.9258333,
+              "coordinate_type": "monitoring_station",
+              "not_beach_centroid": true,
+              "source_id": "SRC-010"
+            },
+            "monitoring_period": "Listed in 2021 report as part of CY 2020–present station inventory",
+            "monitoring_status": "listed_in_2021_report_only",
+            "source_ids": [
+              "SRC-010"
+            ],
+            "interpretation": "The 2021 DENR-EMB report lists this station and its coordinates. No matching 2022 annual water-quality result is linked here. This station point is not a beach centroid."
+          }
+        ]
       },
       "evidence": [
         {
@@ -3087,6 +3110,11 @@
         {
           "source_id": "SRC-001",
           "claim": "Place name and approximate map location",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-010",
+          "claim": "DENR-EMB 2021 regional report lists a Lapuz-Lapuz Beach ambient monitoring station in Barangay Yapak, Class SB, with coordinates 11°59′02″N, 121°55′33″E; this is a station point, not a beach centroid.",
           "status": "supported"
         }
       ],
@@ -3109,7 +3137,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 1
+          "revision": 2
         }
       }
     },
