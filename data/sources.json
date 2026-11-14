@@ -3,6 +3,32 @@
   "last_updated": "2026-11-14",
   "sources": [
     {
+      "id": "SRC-000",
+      "title": "Existing Boracay weather page – legacy beach marker dataset",
+      "publisher": "PH project repository",
+      "url": "https://guyabano-kun.github.io/PH/weather.html",
+      "type": "internal_legacy_dataset",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "White Beach",
+        "Bulabog Beach",
+        "Puka Shell Beach",
+        "Diniwid Beach",
+        "Punta Bunga Beach",
+        "Balinghai Beach",
+        "Banyugan Beach",
+        "Ilig-Iligan Beach",
+        "Lapus-Lapus Beach",
+        "Tulubhan Beach",
+        "Tambisaan Beach",
+        "Angol Point",
+        "Hagdan Beach"
+      ],
+      "limitations": "Coordinates and broad coast classifications were carried over from the existing weather page. These are legacy map markers, not independently surveyed beach centroids or verified boundary points.",
+      "reliability": "internal_reference_only"
+    },
+    {
       "id": "SRC-001",
       "title": "Boracay Map – Tourism Promotions Board Philippines",
       "publisher": "Tourism Promotions Board Philippines",
