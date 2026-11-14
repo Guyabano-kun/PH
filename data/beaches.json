@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.10",
+  "dataset_version": "0.2.11",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -309,6 +309,17 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "legal_framework": {
+          "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-028",
+            "SRC-029",
+            "SRC-030",
+            "SRC-031"
+          ],
+          "note": "Island-wide legal context. Do not infer a beach-specific route, gate, path, public-access entitlement beyond the legally defined easement, or current entry conditions from this record."
         }
       },
       "excursions": {
@@ -914,6 +925,17 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "legal_framework": {
+          "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-028",
+            "SRC-029",
+            "SRC-030",
+            "SRC-031"
+          ],
+          "note": "Island-wide legal context. Do not infer a beach-specific route, gate, path, public-access entitlement beyond the legally defined easement, or current entry conditions from this record."
         }
       },
       "excursions": {
@@ -1339,6 +1361,17 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "legal_framework": {
+          "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-028",
+            "SRC-029",
+            "SRC-030",
+            "SRC-031"
+          ],
+          "note": "Island-wide legal context. Do not infer a beach-specific route, gate, path, public-access entitlement beyond the legally defined easement, or current entry conditions from this record."
         }
       },
       "excursions": {
@@ -1769,6 +1802,17 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "legal_framework": {
+          "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-028",
+            "SRC-029",
+            "SRC-030",
+            "SRC-031"
+          ],
+          "note": "Island-wide legal context. Do not infer a beach-specific route, gate, path, public-access entitlement beyond the legally defined easement, or current entry conditions from this record."
         }
       },
       "excursions": {
@@ -2184,6 +2228,17 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "legal_framework": {
+          "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-028",
+            "SRC-029",
+            "SRC-030",
+            "SRC-031"
+          ],
+          "note": "Island-wide legal context. Do not infer a beach-specific route, gate, path, public-access entitlement beyond the legally defined easement, or current entry conditions from this record."
         }
       },
       "excursions": {
@@ -2513,6 +2568,17 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "legal_framework": {
+          "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-028",
+            "SRC-029",
+            "SRC-030",
+            "SRC-031"
+          ],
+          "note": "Island-wide legal context. Do not infer a beach-specific route, gate, path, public-access entitlement beyond the legally defined easement, or current entry conditions from this record."
         }
       },
       "excursions": {
@@ -2837,6 +2903,17 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "legal_framework": {
+          "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-028",
+            "SRC-029",
+            "SRC-030",
+            "SRC-031"
+          ],
+          "note": "Island-wide legal context. Do not infer a beach-specific route, gate, path, public-access entitlement beyond the legally defined easement, or current entry conditions from this record."
         }
       },
       "excursions": {
@@ -3167,6 +3244,17 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "legal_framework": {
+          "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-028",
+            "SRC-029",
+            "SRC-030",
+            "SRC-031"
+          ],
+          "note": "Island-wide legal context. Do not infer a beach-specific route, gate, path, public-access entitlement beyond the legally defined easement, or current entry conditions from this record."
         }
       },
       "excursions": {
@@ -3585,6 +3673,17 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "legal_framework": {
+          "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-028",
+            "SRC-029",
+            "SRC-030",
+            "SRC-031"
+          ],
+          "note": "Island-wide legal context. Do not infer a beach-specific route, gate, path, public-access entitlement beyond the legally defined easement, or current entry conditions from this record."
         }
       },
       "excursions": {
@@ -3937,6 +4036,17 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "legal_framework": {
+          "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-028",
+            "SRC-029",
+            "SRC-030",
+            "SRC-031"
+          ],
+          "note": "Island-wide legal context. Do not infer a beach-specific route, gate, path, public-access entitlement beyond the legally defined easement, or current entry conditions from this record."
         }
       },
       "excursions": {
@@ -4349,6 +4459,17 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "legal_framework": {
+          "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-028",
+            "SRC-029",
+            "SRC-030",
+            "SRC-031"
+          ],
+          "note": "Island-wide legal context. Do not infer a beach-specific route, gate, path, public-access entitlement beyond the legally defined easement, or current entry conditions from this record."
         }
       },
       "excursions": {
@@ -4770,6 +4891,17 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "legal_framework": {
+          "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-028",
+            "SRC-029",
+            "SRC-030",
+            "SRC-031"
+          ],
+          "note": "Island-wide legal context. Do not infer a beach-specific route, gate, path, public-access entitlement beyond the legally defined easement, or current entry conditions from this record."
         }
       },
       "excursions": {
@@ -5161,6 +5293,17 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "legal_framework": {
+          "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-028",
+            "SRC-029",
+            "SRC-030",
+            "SRC-031"
+          ],
+          "note": "Island-wide legal context. Do not infer a beach-specific route, gate, path, public-access entitlement beyond the legally defined easement, or current entry conditions from this record."
         }
       },
       "excursions": {
