@@ -1,0 +1,3790 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_version": "0.1.0",
+  "last_updated": "2026-11-14",
+  "beaches": [
+    {
+      "id": "white",
+      "name": "White Beach",
+      "name_ru": "Белый пляж",
+      "identity": {
+        "place_name": {
+          "value": "White Beach",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        },
+        "alternative_names": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "administrative_area": {
+          "value": "Barangay / municipality attribution not yet individually verified",
+          "status": "unknown"
+        },
+        "description": {
+          "value": "Central White Beach map point, labelled Station 2 in the current weather page.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        }
+      },
+      "geography": {
+        "coast_orientation": {
+          "value": "West coast",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "note": "Coarse coast classification; not a surveyed shoreline azimuth."
+        },
+        "coordinates": {
+          "latitude": 11.9581389,
+          "longitude": 121.9260278,
+          "coordinate_status": "legacy_site_marker_unverified",
+          "coordinate_source": "Existing weather.html map dataset",
+          "coordinate_precision": "Not independently validated as beach centroid",
+          "verified": false
+        },
+        "beach_boundary": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified polygon or surveyed start/end limits in this dataset."
+        },
+        "shoreline_geometry": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "natural_shelter": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coastline_orientation_degrees": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "shore": {
+        "sand_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "beach_width": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "shore_slope": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tidal_exposure": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seasonal_erosion": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "underwater": {
+        "reef_presence": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_crest": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seabed_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "nearshore_depth": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "bathymetry_source": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "hydrodynamics": {
+        "amihan_exposure": {
+          "value": "generally_sheltered",
+          "status": "supported",
+          "source_ids": []
+        },
+        "habagat_exposure": {
+          "value": "exposed",
+          "status": "supported",
+          "source_ids": []
+        },
+        "wave_climate": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "rip_currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "visibility": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tide_effects": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "activities": {
+        "swimming": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+        },
+        "beach_relaxation": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "snorkeling": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "kitesurfing_windsurfing": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "boat_excursions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "access": {
+        "land_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "public_access_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "access_restrictions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "facilities": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "lifeguard_coverage": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "emergency_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "excursions": {
+        "regular_departure": {
+          "value": "not_verified",
+          "status": "unknown",
+          "note": "A beach visit or presence of boats does not establish a regular legal tourist boarding point."
+        },
+        "seasonal_meeting_points": [
+          {
+            "location": "Astoria Boracay beachfront, Station 1",
+            "season": "October–May",
+            "operator_source_ids": [
+              "SRC-004",
+              "SRC-005"
+            ],
+            "status": "operator_meeting_point_confirmed",
+            "boarding_arrangement": "Operator-listed meeting point; exact boat boarding location to be confirmed with operator."
+          }
+        ],
+        "itinerary_stops": [],
+        "landing_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified, generally applicable public landing permission or designated landing point captured."
+        }
+      },
+      "ecology": {
+        "water_quality_history": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_condition": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "pollution_sources": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "protected_area_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "evidence": [
+        {
+          "source_id": "SRC-001",
+          "claim": "Place name and approximate map location",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-004",
+          "claim": "Operator lists beachfront outside Astoria, Station 1 as seasonal meeting point October–May",
+          "status": "supported"
+        }
+      ],
+      "data_quality": {
+        "record_status": "draft",
+        "overall_confidence": "low_to_moderate",
+        "known_gaps": [
+          "Beach boundary",
+          "Bathymetry and reef profile",
+          "Local currents and wave exposure",
+          "Public access and restrictions",
+          "Current water quality",
+          "Activity-specific hazards"
+        ],
+        "last_reviewed": "2026-11-14"
+      },
+      "internal": {
+        "admin_ready": true,
+        "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
+        "change_tracking": {
+          "created_at": "2026-11-14",
+          "updated_at": "2026-11-14",
+          "revision": 1
+        }
+      }
+    },
+    {
+      "id": "bulabog",
+      "name": "Bulabog Beach",
+      "name_ru": "Пляж Булабог",
+      "identity": {
+        "place_name": {
+          "value": "Bulabog Beach",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        },
+        "alternative_names": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "administrative_area": {
+          "value": "Barangay / municipality attribution not yet individually verified",
+          "status": "unknown"
+        },
+        "description": {
+          "value": "East-coast beach and watersports area.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        }
+      },
+      "geography": {
+        "coast_orientation": {
+          "value": "East coast",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "note": "Coarse coast classification; not a surveyed shoreline azimuth."
+        },
+        "coordinates": {
+          "latitude": 11.965631,
+          "longitude": 121.928888,
+          "coordinate_status": "legacy_site_marker_unverified",
+          "coordinate_source": "Existing weather.html map dataset",
+          "coordinate_precision": "Not independently validated as beach centroid",
+          "verified": false
+        },
+        "beach_boundary": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified polygon or surveyed start/end limits in this dataset."
+        },
+        "shoreline_geometry": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "natural_shelter": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coastline_orientation_degrees": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "shore": {
+        "sand_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "beach_width": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "shore_slope": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tidal_exposure": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seasonal_erosion": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "underwater": {
+        "reef_presence": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_crest": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seabed_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "nearshore_depth": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "bathymetry_source": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "hydrodynamics": {
+        "amihan_exposure": {
+          "value": "exposed",
+          "status": "supported",
+          "source_ids": []
+        },
+        "habagat_exposure": {
+          "value": "generally_sheltered",
+          "status": "supported",
+          "source_ids": []
+        },
+        "wave_climate": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "rip_currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "visibility": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tide_effects": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "activities": {
+        "swimming": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+        },
+        "beach_relaxation": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "snorkeling": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "kitesurfing_windsurfing": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "boat_excursions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "access": {
+        "land_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "public_access_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "access_restrictions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "facilities": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "lifeguard_coverage": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "emergency_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "excursions": {
+        "regular_departure": {
+          "value": "not_verified",
+          "status": "unknown",
+          "note": "A beach visit or presence of boats does not establish a regular legal tourist boarding point."
+        },
+        "seasonal_meeting_points": [
+          {
+            "location": "Beachfront in front of Lucky Tito Resort, near Moksha Cafe",
+            "season": "June–September",
+            "operator_source_ids": [
+              "SRC-004",
+              "SRC-005"
+            ],
+            "status": "operator_meeting_point_confirmed",
+            "boarding_arrangement": "Operator-listed meeting point; exact boat boarding location to be confirmed with operator."
+          }
+        ],
+        "itinerary_stops": [],
+        "landing_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified, generally applicable public landing permission or designated landing point captured."
+        }
+      },
+      "ecology": {
+        "water_quality_history": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_condition": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "pollution_sources": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "protected_area_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "evidence": [
+        {
+          "source_id": "SRC-001",
+          "claim": "Place name and approximate map location",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-004",
+          "claim": "Operator lists beachfront in front of Lucky Tito Resort as seasonal meeting point June–September",
+          "status": "supported"
+        }
+      ],
+      "data_quality": {
+        "record_status": "draft",
+        "overall_confidence": "low_to_moderate",
+        "known_gaps": [
+          "Beach boundary",
+          "Bathymetry and reef profile",
+          "Local currents and wave exposure",
+          "Public access and restrictions",
+          "Current water quality",
+          "Activity-specific hazards"
+        ],
+        "last_reviewed": "2026-11-14"
+      },
+      "internal": {
+        "admin_ready": true,
+        "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
+        "change_tracking": {
+          "created_at": "2026-11-14",
+          "updated_at": "2026-11-14",
+          "revision": 1
+        }
+      }
+    },
+    {
+      "id": "puka",
+      "name": "Puka Shell Beach",
+      "name_ru": "Пляж Пука",
+      "identity": {
+        "place_name": {
+          "value": "Puka Shell Beach",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        },
+        "alternative_names": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "administrative_area": {
+          "value": "Barangay / municipality attribution not yet individually verified",
+          "status": "unknown"
+        },
+        "description": {
+          "value": "Northern beach; named on the official tourism map.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        }
+      },
+      "geography": {
+        "coast_orientation": {
+          "value": "North coast",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "note": "Coarse coast classification; not a surveyed shoreline azimuth."
+        },
+        "coordinates": {
+          "latitude": 11.996611,
+          "longitude": 121.915254,
+          "coordinate_status": "legacy_site_marker_unverified",
+          "coordinate_source": "Existing weather.html map dataset",
+          "coordinate_precision": "Not independently validated as beach centroid",
+          "verified": false
+        },
+        "beach_boundary": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified polygon or surveyed start/end limits in this dataset."
+        },
+        "shoreline_geometry": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "natural_shelter": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coastline_orientation_degrees": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "shore": {
+        "sand_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "beach_width": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "shore_slope": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tidal_exposure": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seasonal_erosion": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "underwater": {
+        "reef_presence": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_crest": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seabed_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "nearshore_depth": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "bathymetry_source": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "hydrodynamics": {
+        "amihan_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "habagat_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "wave_climate": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "rip_currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "visibility": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tide_effects": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "activities": {
+        "swimming": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+        },
+        "beach_relaxation": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "snorkeling": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "kitesurfing_windsurfing": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "boat_excursions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "access": {
+        "land_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "public_access_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "access_restrictions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "facilities": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "lifeguard_coverage": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "emergency_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "excursions": {
+        "regular_departure": {
+          "value": "not_verified",
+          "status": "unknown",
+          "note": "A beach visit or presence of boats does not establish a regular legal tourist boarding point."
+        },
+        "seasonal_meeting_points": [],
+        "itinerary_stops": [
+          {
+            "status": "operator_itinerary_stop",
+            "source_ids": [
+              "SRC-004"
+            ],
+            "note": "Listed as a destination in an island-hopping itinerary; not evidence of regular departure from this beach."
+          }
+        ],
+        "landing_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified, generally applicable public landing permission or designated landing point captured."
+        }
+      },
+      "ecology": {
+        "water_quality_history": {
+          "value": "Historical DENR-EMB monitoring record exists for a named beach/nearby pier station",
+          "status": "supported",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "note": "Use station-specific results and sampling dates; do not infer present-day conditions or generalize pier samples to the entire beach."
+        },
+        "reef_condition": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "pollution_sources": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "protected_area_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "evidence": [
+        {
+          "source_id": "SRC-001",
+          "claim": "Place name and approximate map location",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-002",
+          "claim": "Historical water-quality monitoring station associated with this beach/area",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-004",
+          "claim": "Listed in an operator's island-hopping itinerary as a destination/stop, not as a departure point",
+          "status": "supported"
+        }
+      ],
+      "data_quality": {
+        "record_status": "draft",
+        "overall_confidence": "low_to_moderate",
+        "known_gaps": [
+          "Beach boundary",
+          "Bathymetry and reef profile",
+          "Local currents and wave exposure",
+          "Public access and restrictions",
+          "Current water quality",
+          "Activity-specific hazards"
+        ],
+        "last_reviewed": "2026-11-14"
+      },
+      "internal": {
+        "admin_ready": true,
+        "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
+        "change_tracking": {
+          "created_at": "2026-11-14",
+          "updated_at": "2026-11-14",
+          "revision": 1
+        }
+      }
+    },
+    {
+      "id": "diniwid",
+      "name": "Diniwid Beach",
+      "name_ru": "Пляж Динивид",
+      "identity": {
+        "place_name": {
+          "value": "Diniwid Beach",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        },
+        "alternative_names": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "administrative_area": {
+          "value": "Barangay / municipality attribution not yet individually verified",
+          "status": "unknown"
+        },
+        "description": {
+          "value": "Small cove north of White Beach; official map label.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        }
+      },
+      "geography": {
+        "coast_orientation": {
+          "value": "Northwest coast",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "note": "Coarse coast classification; not a surveyed shoreline azimuth."
+        },
+        "coordinates": {
+          "latitude": 11.9763,
+          "longitude": 121.91167,
+          "coordinate_status": "legacy_site_marker_unverified",
+          "coordinate_source": "Existing weather.html map dataset",
+          "coordinate_precision": "Not independently validated as beach centroid",
+          "verified": false
+        },
+        "beach_boundary": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified polygon or surveyed start/end limits in this dataset."
+        },
+        "shoreline_geometry": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "natural_shelter": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coastline_orientation_degrees": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "shore": {
+        "sand_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "beach_width": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "shore_slope": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tidal_exposure": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seasonal_erosion": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "underwater": {
+        "reef_presence": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_crest": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seabed_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "nearshore_depth": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "bathymetry_source": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "hydrodynamics": {
+        "amihan_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "habagat_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "wave_climate": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "rip_currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "visibility": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tide_effects": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "activities": {
+        "swimming": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+        },
+        "beach_relaxation": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "snorkeling": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "kitesurfing_windsurfing": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "boat_excursions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "access": {
+        "land_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "public_access_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "access_restrictions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "facilities": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "lifeguard_coverage": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "emergency_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "excursions": {
+        "regular_departure": {
+          "value": "not_verified",
+          "status": "unknown",
+          "note": "A beach visit or presence of boats does not establish a regular legal tourist boarding point."
+        },
+        "seasonal_meeting_points": [],
+        "itinerary_stops": [],
+        "landing_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified, generally applicable public landing permission or designated landing point captured."
+        }
+      },
+      "ecology": {
+        "water_quality_history": {
+          "value": "Historical DENR-EMB monitoring record exists for a named beach/nearby pier station",
+          "status": "supported",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "note": "Use station-specific results and sampling dates; do not infer present-day conditions or generalize pier samples to the entire beach."
+        },
+        "reef_condition": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "pollution_sources": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "protected_area_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "evidence": [
+        {
+          "source_id": "SRC-001",
+          "claim": "Place name and approximate map location",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-002",
+          "claim": "Historical water-quality monitoring station associated with this beach/area",
+          "status": "supported"
+        }
+      ],
+      "data_quality": {
+        "record_status": "draft",
+        "overall_confidence": "low_to_moderate",
+        "known_gaps": [
+          "Beach boundary",
+          "Bathymetry and reef profile",
+          "Local currents and wave exposure",
+          "Public access and restrictions",
+          "Current water quality",
+          "Activity-specific hazards"
+        ],
+        "last_reviewed": "2026-11-14"
+      },
+      "internal": {
+        "admin_ready": true,
+        "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
+        "change_tracking": {
+          "created_at": "2026-11-14",
+          "updated_at": "2026-11-14",
+          "revision": 1
+        }
+      }
+    },
+    {
+      "id": "punta",
+      "name": "Punta Bunga Beach",
+      "name_ru": "Пляж Пунта-Бунга",
+      "identity": {
+        "place_name": {
+          "value": "Punta Bunga Beach",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        },
+        "alternative_names": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "administrative_area": {
+          "value": "Barangay / municipality attribution not yet individually verified",
+          "status": "unknown"
+        },
+        "description": {
+          "value": "Northwest shore; official map label.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        }
+      },
+      "geography": {
+        "coast_orientation": {
+          "value": "Northwest coast",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "note": "Coarse coast classification; not a surveyed shoreline azimuth."
+        },
+        "coordinates": {
+          "latitude": 11.98417,
+          "longitude": 121.90751,
+          "coordinate_status": "legacy_site_marker_unverified",
+          "coordinate_source": "Existing weather.html map dataset",
+          "coordinate_precision": "Not independently validated as beach centroid",
+          "verified": false
+        },
+        "beach_boundary": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified polygon or surveyed start/end limits in this dataset."
+        },
+        "shoreline_geometry": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "natural_shelter": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coastline_orientation_degrees": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "shore": {
+        "sand_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "beach_width": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "shore_slope": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tidal_exposure": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seasonal_erosion": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "underwater": {
+        "reef_presence": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_crest": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seabed_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "nearshore_depth": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "bathymetry_source": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "hydrodynamics": {
+        "amihan_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "habagat_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "wave_climate": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "rip_currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "visibility": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tide_effects": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "activities": {
+        "swimming": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+        },
+        "beach_relaxation": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "snorkeling": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "kitesurfing_windsurfing": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "boat_excursions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "access": {
+        "land_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "public_access_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "access_restrictions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "facilities": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "lifeguard_coverage": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "emergency_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "excursions": {
+        "regular_departure": {
+          "value": "not_verified",
+          "status": "unknown",
+          "note": "A beach visit or presence of boats does not establish a regular legal tourist boarding point."
+        },
+        "seasonal_meeting_points": [],
+        "itinerary_stops": [],
+        "landing_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified, generally applicable public landing permission or designated landing point captured."
+        }
+      },
+      "ecology": {
+        "water_quality_history": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_condition": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "pollution_sources": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "protected_area_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "evidence": [
+        {
+          "source_id": "SRC-001",
+          "claim": "Place name and approximate map location",
+          "status": "supported"
+        }
+      ],
+      "data_quality": {
+        "record_status": "draft",
+        "overall_confidence": "low_to_moderate",
+        "known_gaps": [
+          "Beach boundary",
+          "Bathymetry and reef profile",
+          "Local currents and wave exposure",
+          "Public access and restrictions",
+          "Current water quality",
+          "Activity-specific hazards"
+        ],
+        "last_reviewed": "2026-11-14"
+      },
+      "internal": {
+        "admin_ready": true,
+        "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
+        "change_tracking": {
+          "created_at": "2026-11-14",
+          "updated_at": "2026-11-14",
+          "revision": 1
+        }
+      }
+    },
+    {
+      "id": "balinghai",
+      "name": "Balinghai Beach",
+      "name_ru": "Пляж Балингхай",
+      "identity": {
+        "place_name": {
+          "value": "Balinghai Beach",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        },
+        "alternative_names": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "administrative_area": {
+          "value": "Barangay / municipality attribution not yet individually verified",
+          "status": "unknown"
+        },
+        "description": {
+          "value": "Northwest cove; official map label.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        }
+      },
+      "geography": {
+        "coast_orientation": {
+          "value": "Northwest coast",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "note": "Coarse coast classification; not a surveyed shoreline azimuth."
+        },
+        "coordinates": {
+          "latitude": 11.98124,
+          "longitude": 121.90849,
+          "coordinate_status": "legacy_site_marker_unverified",
+          "coordinate_source": "Existing weather.html map dataset",
+          "coordinate_precision": "Not independently validated as beach centroid",
+          "verified": false
+        },
+        "beach_boundary": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified polygon or surveyed start/end limits in this dataset."
+        },
+        "shoreline_geometry": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "natural_shelter": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coastline_orientation_degrees": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "shore": {
+        "sand_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "beach_width": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "shore_slope": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tidal_exposure": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seasonal_erosion": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "underwater": {
+        "reef_presence": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_crest": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seabed_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "nearshore_depth": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "bathymetry_source": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "hydrodynamics": {
+        "amihan_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "habagat_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "wave_climate": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "rip_currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "visibility": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tide_effects": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "activities": {
+        "swimming": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+        },
+        "beach_relaxation": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "snorkeling": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "kitesurfing_windsurfing": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "boat_excursions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "access": {
+        "land_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "public_access_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "access_restrictions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "facilities": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "lifeguard_coverage": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "emergency_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "excursions": {
+        "regular_departure": {
+          "value": "not_verified",
+          "status": "unknown",
+          "note": "A beach visit or presence of boats does not establish a regular legal tourist boarding point."
+        },
+        "seasonal_meeting_points": [],
+        "itinerary_stops": [],
+        "landing_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified, generally applicable public landing permission or designated landing point captured."
+        }
+      },
+      "ecology": {
+        "water_quality_history": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_condition": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "pollution_sources": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "protected_area_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "evidence": [
+        {
+          "source_id": "SRC-001",
+          "claim": "Place name and approximate map location",
+          "status": "supported"
+        }
+      ],
+      "data_quality": {
+        "record_status": "draft",
+        "overall_confidence": "low_to_moderate",
+        "known_gaps": [
+          "Beach boundary",
+          "Bathymetry and reef profile",
+          "Local currents and wave exposure",
+          "Public access and restrictions",
+          "Current water quality",
+          "Activity-specific hazards"
+        ],
+        "last_reviewed": "2026-11-14"
+      },
+      "internal": {
+        "admin_ready": true,
+        "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
+        "change_tracking": {
+          "created_at": "2026-11-14",
+          "updated_at": "2026-11-14",
+          "revision": 1
+        }
+      }
+    },
+    {
+      "id": "banyugan",
+      "name": "Banyugan Beach",
+      "name_ru": "Пляж Баньюган",
+      "identity": {
+        "place_name": {
+          "value": "Banyugan Beach",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        },
+        "alternative_names": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "administrative_area": {
+          "value": "Barangay / municipality attribution not yet individually verified",
+          "status": "unknown"
+        },
+        "description": {
+          "value": "Northwest shore; official map label.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        }
+      },
+      "geography": {
+        "coast_orientation": {
+          "value": "Northwest coast",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "note": "Coarse coast classification; not a surveyed shoreline azimuth."
+        },
+        "coordinates": {
+          "latitude": 11.98725,
+          "longitude": 121.90611,
+          "coordinate_status": "legacy_site_marker_unverified",
+          "coordinate_source": "Existing weather.html map dataset",
+          "coordinate_precision": "Not independently validated as beach centroid",
+          "verified": false
+        },
+        "beach_boundary": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified polygon or surveyed start/end limits in this dataset."
+        },
+        "shoreline_geometry": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "natural_shelter": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coastline_orientation_degrees": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "shore": {
+        "sand_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "beach_width": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "shore_slope": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tidal_exposure": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seasonal_erosion": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "underwater": {
+        "reef_presence": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_crest": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seabed_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "nearshore_depth": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "bathymetry_source": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "hydrodynamics": {
+        "amihan_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "habagat_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "wave_climate": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "rip_currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "visibility": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tide_effects": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "activities": {
+        "swimming": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+        },
+        "beach_relaxation": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "snorkeling": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "kitesurfing_windsurfing": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "boat_excursions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "access": {
+        "land_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "public_access_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "access_restrictions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "facilities": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "lifeguard_coverage": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "emergency_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "excursions": {
+        "regular_departure": {
+          "value": "not_verified",
+          "status": "unknown",
+          "note": "A beach visit or presence of boats does not establish a regular legal tourist boarding point."
+        },
+        "seasonal_meeting_points": [],
+        "itinerary_stops": [],
+        "landing_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified, generally applicable public landing permission or designated landing point captured."
+        }
+      },
+      "ecology": {
+        "water_quality_history": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_condition": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "pollution_sources": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "protected_area_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "evidence": [
+        {
+          "source_id": "SRC-001",
+          "claim": "Place name and approximate map location",
+          "status": "supported"
+        }
+      ],
+      "data_quality": {
+        "record_status": "draft",
+        "overall_confidence": "low_to_moderate",
+        "known_gaps": [
+          "Beach boundary",
+          "Bathymetry and reef profile",
+          "Local currents and wave exposure",
+          "Public access and restrictions",
+          "Current water quality",
+          "Activity-specific hazards"
+        ],
+        "last_reviewed": "2026-11-14"
+      },
+      "internal": {
+        "admin_ready": true,
+        "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
+        "change_tracking": {
+          "created_at": "2026-11-14",
+          "updated_at": "2026-11-14",
+          "revision": 1
+        }
+      }
+    },
+    {
+      "id": "ilig",
+      "name": "Ilig-Iligan Beach",
+      "name_ru": "Пляж Илиг-Илигaн",
+      "identity": {
+        "place_name": {
+          "value": "Ilig-Iligan Beach",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        },
+        "alternative_names": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "administrative_area": {
+          "value": "Barangay / municipality attribution not yet individually verified",
+          "status": "unknown"
+        },
+        "description": {
+          "value": "Northeast beach; official map label.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        }
+      },
+      "geography": {
+        "coast_orientation": {
+          "value": "Northeast coast",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "note": "Coarse coast classification; not a surveyed shoreline azimuth."
+        },
+        "coordinates": {
+          "latitude": 11.986036,
+          "longitude": 121.925014,
+          "coordinate_status": "legacy_site_marker_unverified",
+          "coordinate_source": "Existing weather.html map dataset",
+          "coordinate_precision": "Not independently validated as beach centroid",
+          "verified": false
+        },
+        "beach_boundary": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified polygon or surveyed start/end limits in this dataset."
+        },
+        "shoreline_geometry": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "natural_shelter": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coastline_orientation_degrees": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "shore": {
+        "sand_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "beach_width": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "shore_slope": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tidal_exposure": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seasonal_erosion": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "underwater": {
+        "reef_presence": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_crest": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seabed_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "nearshore_depth": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "bathymetry_source": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "hydrodynamics": {
+        "amihan_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "habagat_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "wave_climate": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "rip_currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "visibility": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tide_effects": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "activities": {
+        "swimming": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+        },
+        "beach_relaxation": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "snorkeling": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "kitesurfing_windsurfing": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "boat_excursions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "access": {
+        "land_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "public_access_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "access_restrictions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "facilities": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "lifeguard_coverage": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "emergency_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "excursions": {
+        "regular_departure": {
+          "value": "not_verified",
+          "status": "unknown",
+          "note": "A beach visit or presence of boats does not establish a regular legal tourist boarding point."
+        },
+        "seasonal_meeting_points": [],
+        "itinerary_stops": [],
+        "landing_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified, generally applicable public landing permission or designated landing point captured."
+        }
+      },
+      "ecology": {
+        "water_quality_history": {
+          "value": "Historical DENR-EMB monitoring record exists for a named beach/nearby pier station",
+          "status": "supported",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "note": "Use station-specific results and sampling dates; do not infer present-day conditions or generalize pier samples to the entire beach."
+        },
+        "reef_condition": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "pollution_sources": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "protected_area_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "evidence": [
+        {
+          "source_id": "SRC-001",
+          "claim": "Place name and approximate map location",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-002",
+          "claim": "Historical water-quality monitoring station associated with this beach/area",
+          "status": "supported"
+        }
+      ],
+      "data_quality": {
+        "record_status": "draft",
+        "overall_confidence": "low_to_moderate",
+        "known_gaps": [
+          "Beach boundary",
+          "Bathymetry and reef profile",
+          "Local currents and wave exposure",
+          "Public access and restrictions",
+          "Current water quality",
+          "Activity-specific hazards"
+        ],
+        "last_reviewed": "2026-11-14"
+      },
+      "internal": {
+        "admin_ready": true,
+        "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
+        "change_tracking": {
+          "created_at": "2026-11-14",
+          "updated_at": "2026-11-14",
+          "revision": 1
+        }
+      }
+    },
+    {
+      "id": "lapus",
+      "name": "Lapus-Lapus Beach",
+      "name_ru": "Пляж Лапус-Лапус",
+      "identity": {
+        "place_name": {
+          "value": "Lapus-Lapus Beach",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        },
+        "alternative_names": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "administrative_area": {
+          "value": "Barangay / municipality attribution not yet individually verified",
+          "status": "unknown"
+        },
+        "description": {
+          "value": "Named beach on official tourism map; no coordinate in the current weather-map dataset.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        }
+      },
+      "geography": {
+        "coast_orientation": {
+          "value": "Northern east coast",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "note": "Coarse coast classification; not a surveyed shoreline azimuth."
+        },
+        "coordinates": {
+          "latitude": null,
+          "longitude": null,
+          "coordinate_status": "not_available",
+          "coordinate_source": "Existing weather.html map dataset",
+          "coordinate_precision": "Not independently validated as beach centroid",
+          "verified": false
+        },
+        "beach_boundary": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified polygon or surveyed start/end limits in this dataset."
+        },
+        "shoreline_geometry": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "natural_shelter": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coastline_orientation_degrees": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "shore": {
+        "sand_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "beach_width": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "shore_slope": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tidal_exposure": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seasonal_erosion": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "underwater": {
+        "reef_presence": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_crest": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seabed_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "nearshore_depth": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "bathymetry_source": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "hydrodynamics": {
+        "amihan_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "habagat_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "wave_climate": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "rip_currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "visibility": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tide_effects": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "activities": {
+        "swimming": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+        },
+        "beach_relaxation": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "snorkeling": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "kitesurfing_windsurfing": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "boat_excursions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "access": {
+        "land_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "public_access_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "access_restrictions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "facilities": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "lifeguard_coverage": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "emergency_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "excursions": {
+        "regular_departure": {
+          "value": "not_verified",
+          "status": "unknown",
+          "note": "A beach visit or presence of boats does not establish a regular legal tourist boarding point."
+        },
+        "seasonal_meeting_points": [],
+        "itinerary_stops": [],
+        "landing_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified, generally applicable public landing permission or designated landing point captured."
+        }
+      },
+      "ecology": {
+        "water_quality_history": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_condition": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "pollution_sources": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "protected_area_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "evidence": [
+        {
+          "source_id": "SRC-001",
+          "claim": "Place name and approximate map location",
+          "status": "supported"
+        }
+      ],
+      "data_quality": {
+        "record_status": "draft",
+        "overall_confidence": "low_to_moderate",
+        "known_gaps": [
+          "Beach boundary",
+          "Bathymetry and reef profile",
+          "Local currents and wave exposure",
+          "Public access and restrictions",
+          "Current water quality",
+          "Activity-specific hazards"
+        ],
+        "last_reviewed": "2026-11-14"
+      },
+      "internal": {
+        "admin_ready": true,
+        "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
+        "change_tracking": {
+          "created_at": "2026-11-14",
+          "updated_at": "2026-11-14",
+          "revision": 1
+        }
+      }
+    },
+    {
+      "id": "tulubhan",
+      "name": "Tulubhan Beach",
+      "name_ru": "Пляж Тулубхан",
+      "identity": {
+        "place_name": {
+          "value": "Tulubhan Beach",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        },
+        "alternative_names": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "administrative_area": {
+          "value": "Barangay / municipality attribution not yet individually verified",
+          "status": "unknown"
+        },
+        "description": {
+          "value": "Southeast shore; official map label. DENR report includes a separate Tulubhan Pier sampling station.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        }
+      },
+      "geography": {
+        "coast_orientation": {
+          "value": "Southeast coast",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "note": "Coarse coast classification; not a surveyed shoreline azimuth."
+        },
+        "coordinates": {
+          "latitude": 11.95457,
+          "longitude": 121.93784,
+          "coordinate_status": "legacy_site_marker_unverified",
+          "coordinate_source": "Existing weather.html map dataset",
+          "coordinate_precision": "Not independently validated as beach centroid",
+          "verified": false
+        },
+        "beach_boundary": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified polygon or surveyed start/end limits in this dataset."
+        },
+        "shoreline_geometry": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "natural_shelter": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coastline_orientation_degrees": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "shore": {
+        "sand_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "beach_width": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "shore_slope": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tidal_exposure": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seasonal_erosion": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "underwater": {
+        "reef_presence": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_crest": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seabed_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "nearshore_depth": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "bathymetry_source": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "hydrodynamics": {
+        "amihan_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "habagat_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "wave_climate": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "rip_currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "visibility": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tide_effects": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "activities": {
+        "swimming": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+        },
+        "beach_relaxation": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "snorkeling": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "kitesurfing_windsurfing": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "boat_excursions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "access": {
+        "land_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "public_access_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "access_restrictions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "facilities": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "lifeguard_coverage": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "emergency_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "excursions": {
+        "regular_departure": {
+          "value": "not_verified",
+          "status": "unknown",
+          "note": "A beach visit or presence of boats does not establish a regular legal tourist boarding point."
+        },
+        "seasonal_meeting_points": [],
+        "itinerary_stops": [],
+        "landing_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified, generally applicable public landing permission or designated landing point captured."
+        }
+      },
+      "ecology": {
+        "water_quality_history": {
+          "value": "Historical DENR-EMB monitoring record exists for a named beach/nearby pier station",
+          "status": "supported",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "note": "Use station-specific results and sampling dates; do not infer present-day conditions or generalize pier samples to the entire beach."
+        },
+        "reef_condition": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "pollution_sources": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "protected_area_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "evidence": [
+        {
+          "source_id": "SRC-001",
+          "claim": "Place name and approximate map location",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-002",
+          "claim": "Historical water-quality monitoring station associated with this beach/area",
+          "status": "supported"
+        }
+      ],
+      "data_quality": {
+        "record_status": "draft",
+        "overall_confidence": "low_to_moderate",
+        "known_gaps": [
+          "Beach boundary",
+          "Bathymetry and reef profile",
+          "Local currents and wave exposure",
+          "Public access and restrictions",
+          "Current water quality",
+          "Activity-specific hazards"
+        ],
+        "last_reviewed": "2026-11-14"
+      },
+      "internal": {
+        "admin_ready": true,
+        "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
+        "change_tracking": {
+          "created_at": "2026-11-14",
+          "updated_at": "2026-11-14",
+          "revision": 1
+        }
+      }
+    },
+    {
+      "id": "tambisaan",
+      "name": "Tambisaan Beach",
+      "name_ru": "Пляж Тамбисаан",
+      "identity": {
+        "place_name": {
+          "value": "Tambisaan Beach",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        },
+        "alternative_names": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "administrative_area": {
+          "value": "Barangay / municipality attribution not yet individually verified",
+          "status": "unknown"
+        },
+        "description": {
+          "value": "Southeast beach; distinguish beach recreation area from Tambisaan Pier/port facilities.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        }
+      },
+      "geography": {
+        "coast_orientation": {
+          "value": "Southeast coast",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "note": "Coarse coast classification; not a surveyed shoreline azimuth."
+        },
+        "coordinates": {
+          "latitude": 11.94952,
+          "longitude": 121.9474,
+          "coordinate_status": "legacy_site_marker_unverified",
+          "coordinate_source": "Existing weather.html map dataset",
+          "coordinate_precision": "Not independently validated as beach centroid",
+          "verified": false
+        },
+        "beach_boundary": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified polygon or surveyed start/end limits in this dataset."
+        },
+        "shoreline_geometry": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "natural_shelter": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coastline_orientation_degrees": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "shore": {
+        "sand_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "beach_width": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "shore_slope": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tidal_exposure": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seasonal_erosion": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "underwater": {
+        "reef_presence": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_crest": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seabed_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "nearshore_depth": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "bathymetry_source": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "hydrodynamics": {
+        "amihan_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "habagat_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "wave_climate": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "rip_currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "visibility": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tide_effects": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "activities": {
+        "swimming": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+        },
+        "beach_relaxation": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "snorkeling": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "kitesurfing_windsurfing": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "boat_excursions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "access": {
+        "land_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "public_access_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "access_restrictions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "facilities": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "lifeguard_coverage": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "emergency_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "excursions": {
+        "regular_departure": {
+          "value": "not_verified",
+          "status": "unknown",
+          "note": "A beach visit or presence of boats does not establish a regular legal tourist boarding point."
+        },
+        "seasonal_meeting_points": [],
+        "itinerary_stops": [
+          {
+            "status": "operator_itinerary_stop",
+            "source_ids": [
+              "SRC-004"
+            ],
+            "note": "Listed as a destination in an island-hopping itinerary; not evidence of regular departure from this beach."
+          }
+        ],
+        "landing_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified, generally applicable public landing permission or designated landing point captured."
+        }
+      },
+      "ecology": {
+        "water_quality_history": {
+          "value": "Historical DENR-EMB monitoring record exists for a named beach/nearby pier station",
+          "status": "supported",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "note": "Use station-specific results and sampling dates; do not infer present-day conditions or generalize pier samples to the entire beach."
+        },
+        "reef_condition": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "pollution_sources": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "protected_area_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "evidence": [
+        {
+          "source_id": "SRC-001",
+          "claim": "Place name and approximate map location",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-002",
+          "claim": "Historical monitoring at Tambisaan Pier; pier is distinct from beach recreational area",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-004",
+          "claim": "Listed in an operator's island-hopping itinerary as a destination/stop, not as a departure point",
+          "status": "supported"
+        }
+      ],
+      "data_quality": {
+        "record_status": "draft",
+        "overall_confidence": "low_to_moderate",
+        "known_gaps": [
+          "Beach boundary",
+          "Bathymetry and reef profile",
+          "Local currents and wave exposure",
+          "Public access and restrictions",
+          "Current water quality",
+          "Activity-specific hazards"
+        ],
+        "last_reviewed": "2026-11-14"
+      },
+      "internal": {
+        "admin_ready": true,
+        "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
+        "change_tracking": {
+          "created_at": "2026-11-14",
+          "updated_at": "2026-11-14",
+          "revision": 1
+        }
+      }
+    },
+    {
+      "id": "angol",
+      "name": "Angol Point",
+      "name_ru": "Мыс Ангол",
+      "identity": {
+        "place_name": {
+          "value": "Angol Point",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        },
+        "alternative_names": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "administrative_area": {
+          "value": "Barangay / municipality attribution not yet individually verified",
+          "status": "unknown"
+        },
+        "description": {
+          "value": "Southern end of White Beach area; official map label and water-monitoring site.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        }
+      },
+      "geography": {
+        "coast_orientation": {
+          "value": "Southwest coast",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "note": "Coarse coast classification; not a surveyed shoreline azimuth."
+        },
+        "coordinates": {
+          "latitude": 11.94835,
+          "longitude": 121.93035,
+          "coordinate_status": "legacy_site_marker_unverified",
+          "coordinate_source": "Existing weather.html map dataset",
+          "coordinate_precision": "Not independently validated as beach centroid",
+          "verified": false
+        },
+        "beach_boundary": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified polygon or surveyed start/end limits in this dataset."
+        },
+        "shoreline_geometry": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "natural_shelter": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coastline_orientation_degrees": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "shore": {
+        "sand_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "beach_width": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "shore_slope": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tidal_exposure": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seasonal_erosion": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "underwater": {
+        "reef_presence": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_crest": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seabed_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "nearshore_depth": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "bathymetry_source": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "hydrodynamics": {
+        "amihan_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "habagat_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "wave_climate": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "rip_currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "visibility": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tide_effects": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "activities": {
+        "swimming": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+        },
+        "beach_relaxation": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "snorkeling": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "kitesurfing_windsurfing": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "boat_excursions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "access": {
+        "land_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "public_access_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "access_restrictions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "facilities": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "lifeguard_coverage": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "emergency_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "excursions": {
+        "regular_departure": {
+          "value": "not_verified",
+          "status": "unknown",
+          "note": "A beach visit or presence of boats does not establish a regular legal tourist boarding point."
+        },
+        "seasonal_meeting_points": [],
+        "itinerary_stops": [],
+        "landing_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified, generally applicable public landing permission or designated landing point captured."
+        }
+      },
+      "ecology": {
+        "water_quality_history": {
+          "value": "Historical DENR-EMB monitoring record exists for a named beach/nearby pier station",
+          "status": "supported",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "note": "Use station-specific results and sampling dates; do not infer present-day conditions or generalize pier samples to the entire beach."
+        },
+        "reef_condition": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "pollution_sources": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "protected_area_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "evidence": [
+        {
+          "source_id": "SRC-001",
+          "claim": "Place name and approximate map location",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-002",
+          "claim": "Historical water-quality monitoring station associated with this beach/area",
+          "status": "supported"
+        }
+      ],
+      "data_quality": {
+        "record_status": "draft",
+        "overall_confidence": "low_to_moderate",
+        "known_gaps": [
+          "Beach boundary",
+          "Bathymetry and reef profile",
+          "Local currents and wave exposure",
+          "Public access and restrictions",
+          "Current water quality",
+          "Activity-specific hazards"
+        ],
+        "last_reviewed": "2026-11-14"
+      },
+      "internal": {
+        "admin_ready": true,
+        "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
+        "change_tracking": {
+          "created_at": "2026-11-14",
+          "updated_at": "2026-11-14",
+          "revision": 1
+        }
+      }
+    },
+    {
+      "id": "hagdan",
+      "name": "Hagdan Beach",
+      "name_ru": "Пляж Хагдан",
+      "identity": {
+        "place_name": {
+          "value": "Hagdan Beach",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ]
+        },
+        "alternative_names": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "administrative_area": {
+          "value": "Barangay / municipality attribution not yet individually verified",
+          "status": "unknown"
+        },
+        "description": {
+          "value": "Separate named beach identity and exact limits still require verification; no coordinate in current weather-map dataset.",
+          "status": "provisional",
+          "source_ids": []
+        }
+      },
+      "geography": {
+        "coast_orientation": {
+          "value": "Northwest coast",
+          "status": "supported",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "note": "Coarse coast classification; not a surveyed shoreline azimuth."
+        },
+        "coordinates": {
+          "latitude": null,
+          "longitude": null,
+          "coordinate_status": "not_available",
+          "coordinate_source": "Existing weather.html map dataset",
+          "coordinate_precision": "Not independently validated as beach centroid",
+          "verified": false
+        },
+        "beach_boundary": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified polygon or surveyed start/end limits in this dataset."
+        },
+        "shoreline_geometry": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "natural_shelter": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coastline_orientation_degrees": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "shore": {
+        "sand_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "beach_width": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "shore_slope": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tidal_exposure": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seasonal_erosion": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "underwater": {
+        "reef_presence": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_crest": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seabed_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "nearshore_depth": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "bathymetry_source": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "hydrodynamics": {
+        "amihan_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "habagat_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": []
+        },
+        "wave_climate": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "rip_currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "visibility": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "tide_effects": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "activities": {
+        "swimming": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+        },
+        "beach_relaxation": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "snorkeling": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "kitesurfing_windsurfing": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "boat_excursions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "access": {
+        "land_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "public_access_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "access_restrictions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "facilities": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "lifeguard_coverage": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "emergency_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "excursions": {
+        "regular_departure": {
+          "value": "not_verified",
+          "status": "unknown",
+          "note": "A beach visit or presence of boats does not establish a regular legal tourist boarding point."
+        },
+        "seasonal_meeting_points": [],
+        "itinerary_stops": [],
+        "landing_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified, generally applicable public landing permission or designated landing point captured."
+        }
+      },
+      "ecology": {
+        "water_quality_history": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "reef_condition": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "pollution_sources": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "protected_area_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified source captured in this initial data pass."
+        }
+      },
+      "evidence": [
+        {
+          "source_id": "SRC-001",
+          "claim": "Place name and approximate map location",
+          "status": "supported"
+        }
+      ],
+      "data_quality": {
+        "record_status": "draft",
+        "overall_confidence": "low_to_moderate",
+        "known_gaps": [
+          "Beach boundary",
+          "Bathymetry and reef profile",
+          "Local currents and wave exposure",
+          "Public access and restrictions",
+          "Current water quality",
+          "Activity-specific hazards"
+        ],
+        "last_reviewed": "2026-11-14"
+      },
+      "internal": {
+        "admin_ready": true,
+        "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
+        "change_tracking": {
+          "created_at": "2026-11-14",
+          "updated_at": "2026-11-14",
+          "revision": 1
+        }
+      }
+    }
+  ]
+}
