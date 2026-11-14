@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.13",
+  "dataset_version": "0.2.14",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-14",
   "beach_count": 13,
@@ -60,6 +60,7 @@
     "The 2020 EPRMP marine survey reports eight seagrass species in its narrative, while the station table lists ten taxon rows and inconsistent station totals. Species composition is not normalized pending source reconciliation.",
     "Added island-wide marine resource mapping sources SRC-032 to SRC-035. The 2020 assessment records approximately 763 ha coral reefs, 95.37 ha seagrass and 1.90 ha mangroves; the 2026 report of 2024–2025 DENR PENRO validation records 763.30 ha coral habitat on Boracay. These are different reporting vintages and island-level habitat extents, not beach-level live coral cover or reef-condition scores.",
     "The 2020 DENR/secondary mapping sources report nine seagrass species and barangay-level cover estimates (Balabag 81.84%, Manocmanoc 53.85%, Yapak 53.68%). The underlying mapping report was described as subject to regional review; no values are assigned to individual beaches.",
-    "The DENR 2020 Annual Report confirms that marine resource and MPA mapping/delineation results were presented to stakeholders, but the reviewed source does not provide legal designation instruments or boundary coordinates. PAIS Aklan query did not surface a Boracay-specific protected-area record; because PAIS data are encoded and subject to ongoing validation, the legal MPA/protected-area status remains unverified, not negative."
+    "The DENR 2020 Annual Report confirms that marine resource and MPA mapping/delineation results were presented to stakeholders, but the reviewed source does not provide legal designation instruments or boundary coordinates. PAIS Aklan query did not surface a Boracay-specific protected-area record; because PAIS data are encoded and subject to ongoing validation, the legal MPA/protected-area status remains unverified, not negative.",
+    "Corrected a provenance defect in White Beach and Bulabog hydrodynamics: Amihan/Habagat exposure fields previously marked supported without sources are now provisional and cite the coarse coast-side map plus PAGASA's national monsoon-direction reference (SRC-001, SRC-038). These are directional inferences only; local wind, waves, currents and rip-current behaviour remain unknown."
   ]
 }
