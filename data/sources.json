@@ -487,6 +487,55 @@
       ],
       "limitations": "Station-specific annual results, not whole-beach measurements or current real-time bathing-water advice. The fecal-coliform compliance chart caption states Jan–Nov 2023 while report narrative refers to 12 sampling events; sampling-event count is therefore not copied. The report contains conflicting 2023 TSS values for Ralph's Place (32.3 and 33.4 mg/L); that TSS value is excluded.",
       "reliability": "official_government_annual_report"
+    },
+    {
+      "id": "SRC-025",
+      "title": "2024 Regional State of the Brown Environment Report – Western Visayas",
+      "publisher": "Department of Environment and Natural Resources, Environmental Management Bureau Region VI",
+      "url": "https://r6.emb.gov.ph/wp-content/uploads/2025/08/2024-RSoBER-compressed.pdf",
+      "type": "official_regional_environment_report",
+      "published_at": "2025-08",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Boracay coastline and inland wetland water-quality programme",
+        "January–July 2024 data presented to BIWQMACA",
+        "2024 water-quality management actions"
+      ],
+      "limitations": "The report is indexed and confirms that January–July 2024 Boracay water-quality data were presented, but the PDF could not be retrieved for full table validation during this research pass. No station-level numeric values are transcribed from this source.",
+      "reliability": "official_government_annual_report"
+    },
+    {
+      "id": "SRC-026",
+      "title": "DENR-EMB says Boracay waters within safe standards",
+      "publisher": "Manila Bulletin, reporting statements by DENR-EMB Region VI",
+      "url": "https://mb.com.ph/2024/7/22/denr-says-boracay-waters-within-safe-standards",
+      "type": "secondary_news_report_of_official_statement",
+      "published_at": "2024-07-22",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Island-wide Boracay coastline monitoring",
+        "January–June 2024 monitoring summary"
+      ],
+      "limitations": "Reports an EMB statement that all 24 monitoring stations passed water-safety tests during January–June 2024. No station-specific numeric values or full station list are supplied; this is historical island-level context, not a current beach-specific bathing-water result.",
+      "reliability": "secondary_report_attributing_EMB_statement"
+    },
+    {
+      "id": "SRC-027",
+      "title": "Boracay outfalls pass initial water quality tests",
+      "publisher": "Daily Tribune, reporting EMB Region VI monitoring activity",
+      "url": "https://tribune.net.ph/2026/03/04/boracay-outfalls-pass-initial-water-quality-tests",
+      "type": "secondary_news_report_of_EMB_monitoring",
+      "published_at": "2026-03-05",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Bulabog Outfall 1",
+        "Malabunot Outfall 2",
+        "Bulabog Drainage Outfall",
+        "Lugutan Outfall",
+        "March 2026 in-situ water-quality screening"
+      ],
+      "limitations": "Reports compliant in-situ dissolved oxygen, temperature and pH at four outfalls. TSS, color and fecal-coliform samples had been sent for laboratory analysis and results were pending at publication. Outfalls are not beach bathing-water monitoring stations; no beach-specific safety conclusion is supported.",
+      "reliability": "secondary_report_attributing_EMB_monitoring"
     }
   ]
 }
