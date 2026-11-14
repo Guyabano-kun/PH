@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.35",
+  "dataset_version": "0.2.36",
   "last_updated": "2026-11-15",
   "beaches": [
     {
@@ -351,14 +351,21 @@
       },
       "access": {
         "land_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Rough Guides describes access by tricycle from Caticlan Jetty Port to the chosen White Beach station; on the island, movement between stations is by foot or tricycle.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-085"
+          ],
+          "note": "Guide-level transport description; current fares, drop-off rules and local road conditions are not fixed."
         },
         "public_access_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Described as Boracay's main public tourism beach, with a continuous shoreline walk between Stations 1, 2 and 3.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-001",
+            "SRC-085"
+          ],
+          "note": "Tourism-map and travel-guide descriptions; no beach-specific legal survey or current local notice was added."
         },
         "access_restrictions": {
           "value": null,
@@ -366,9 +373,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "facilities": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Tourism facilities vary by station: resorts and higher-end accommodation at Station 1, restaurants, bars and D'Mall around Station 2, and quieter budget accommodation around Station 3.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-085"
+          ],
+          "note": "General visitor-guide description, not a complete or real-time business inventory."
         },
         "lifeguard_coverage": {
           "value": null,
@@ -1186,7 +1196,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 7
+          "revision": 8
         }
       }
     },
@@ -1495,9 +1505,12 @@
       },
       "access": {
         "land_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Rough Guides describes a walk of about 10 minutes from Station 2 through D'Mall to the eastern shore; the beach also runs alongside the main road with paths down to the sand.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-085"
+          ],
+          "note": "Guide-level route description; individual paths and current access conditions were not inspected."
         },
         "public_access_status": {
           "value": null,
@@ -1510,9 +1523,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "facilities": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "The beach has kiteboarding and windsurfing schools, equipment rental and storage, plus casual food outlets.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-085"
+          ],
+          "note": "Visitor-guide inventory; operator availability and opening status are not guaranteed."
         },
         "lifeguard_coverage": {
           "value": null,
@@ -2108,7 +2124,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 4
+          "revision": 5
         }
       }
     },
@@ -2969,12 +2985,13 @@
       },
       "access": {
         "land_access": {
-          "value": "The Department of Tourism's Travel Philippines article describes a small footpath along the cliff edge beyond White Beach Station 1, or a short tricycle ride via the back access road.",
-          "status": "supported",
+          "value": "Rough Guides describes a 10–15 minute clifftop footpath connecting Diniwid with White Beach, or a short tricycle ride of approximately 5–10 minutes.",
+          "status": "provisional",
           "source_ids": [
-            "SRC-083"
+            "SRC-083",
+            "SRC-085"
           ],
-          "note": "Historical route description published in October 2020; current path condition and access control are not verified."
+          "note": "The 2020 DOT article and 2025 travel guide describe routes; exact current path condition, gates and right-of-way were not independently verified."
         },
         "public_access_status": {
           "value": null,
@@ -2990,9 +3007,12 @@
           "note": "Do not infer current public access rights or safety from the 2020 route description."
         },
         "facilities": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "A small number of casual restaurants and bars are described along the beach; hillside villas and boutique accommodation are present nearby.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-085"
+          ],
+          "note": "Secondary travel-guide description, not a complete or current business inventory."
         },
         "lifeguard_coverage": {
           "value": null,
@@ -3309,7 +3329,7 @@
           "Current water quality",
           "Activity-specific hazards"
         ],
-        "last_reviewed": "2026-11-14"
+        "last_reviewed": "2026-11-15"
       },
       "internal": {
         "admin_ready": true,
@@ -3317,7 +3337,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 4
+          "revision": 5
         }
       }
     },
@@ -6381,9 +6401,12 @@
       },
       "access": {
         "land_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Rough Guides describes a tricycle journey of about 15–20 minutes from central areas such as D'Mall, approaching south toward Cagban Jetty Port and turning toward the beach before the port entrance.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-085"
+          ],
+          "note": "Guide-level route description; current road signs, traffic controls and port-side access were not independently checked."
         },
         "public_access_status": {
           "value": null,
@@ -6399,9 +6422,13 @@
           "note": "This is a published operational context from the 2022 assessment report, not a current ferry schedule, designated swimming-zone map, or real-time navigation notice."
         },
         "facilities": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Rough Guides reports snorkelling-equipment rentals from beach vendors; availability is not guaranteed. The beach also has adjacent port/boat activity, as separately documented by DENR-EMB.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-002",
+            "SRC-085"
+          ],
+          "note": "Vendor availability is seasonal and unverified in real time; do not assume a designated swimming lane clear of boat operations."
         },
         "lifeguard_coverage": {
           "value": null,
@@ -6760,7 +6787,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 5
+          "revision": 6
         }
       }
     },
