@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.19",
+  "dataset_version": "0.2.20",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-14",
   "beach_count": 13,
@@ -71,6 +71,9 @@
     "The 2012 study describes historical wastewater discharge points in the Bulabog area and a canal near White Beach Site 3. The article also states that illegal pipes were uncovered and permanently sealed during the 2018 rehabilitation; no claim is made that the historical discharge arrangement persists today.",
     "Added qualitative seasonal and surface-current context from SRC-042 to White Beach and Bulabog. White Beach is described as leeward/calm during summer with somewhat stronger waves during Habagat; Bulabog is described as windward during summer. The paper also describes weak surface current on the west side and eastward current along the east side. These are historical island/side-level descriptions, not measured local wave or current series.",
     "SRC-042 Site 10 is described only as a northern Yapak site facing Carabao Island with rougher waves. No exact beach name or GPS coordinate is provided, so Site 10 is not assigned to Puka Beach, Ilig-Iligan Beach or another target beach.",
-    "Added qualitative sediment-core trace-element anomalies from the 2012 study (SRC-042): chromium at White Beach Site 1 near Station 0, lead at White Beach Site 4 near Station 3, chromium at Bulabog Site 5 and zinc at Bulabog Site 6. No numeric concentrations or definitive pollution-source attribution are assigned; all observations predate the 2018 rehabilitation."
+    "Added qualitative sediment-core trace-element anomalies from the 2012 study (SRC-042): chromium at White Beach Site 1 near Station 0, lead at White Beach Site 4 near Station 3, chromium at Bulabog Site 5 and zinc at Bulabog Site 6. No numeric concentrations or definitive pollution-source attribution are assigned; all observations predate the 2018 rehabilitation.",
+    "Added CY 2022 station-level annual averages and event-compliance data for dissolved oxygen, total suspended solids, water temperature, phosphate as phosphorus and nitrate to 10 target stations (SRC-002). Each result preserves the 12 monthly primary-parameter sampling events. Oil & Grease remains in its separate four-quarter dataset.",
+    "CY 2022 pH annual averages were transcribed for the same 10 stations, but pH guideline/compliance was not normalized because the report's narrative and figure captions disagree on Class SB/SC pH ranges.",
+    "At Puka Beach, DENR reported 75% TSS compliance across 12 sampling events and attributed elevated suspended solids at northern stations partly to strong waves and currents. This is a station-specific historical interpretation, not a measured wave-climate dataset."
   ]
 }
