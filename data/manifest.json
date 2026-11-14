@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.1.0",
-  "dataset_status": "initial_research_draft",
+  "dataset_version": "0.2.0",
+  "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-14",
   "beach_count": 13,
   "files": {
@@ -32,6 +32,9 @@
     "This is an initial evidence-backed data structure, not a completed suitability model.",
     "No activity scores are assigned in this dataset.",
     "Historical water-quality results are not current safety advice.",
-    "Operator meeting points are not treated as official universal departure terminals."
+    "Operator meeting points are not treated as official universal departure terminals.",
+    "DENR-EMB 2022 monitoring-station coordinates and fecal-coliform summaries are recorded separately from beach-centroid coordinates; they must not be used as beach centroids or current bathing-water advice.",
+    "Hagdan Beach remains a provisional identity: TPB map labels Sitio Hagdan but does not list Hagdan Beach in its Beach / Dive Site index; a secondary guide uses the beach name.",
+    "TPB tourist map also lists Lugutan Beach, which is outside the fixed 13-beach scope and is not silently added to the dataset."
   ]
 }
