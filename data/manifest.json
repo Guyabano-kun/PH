@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.10",
+  "dataset_version": "0.2.11",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-14",
   "beach_count": 13,
@@ -54,6 +54,7 @@
     "The 2023 report identifies Diniwid Beach and Tulubhan as Class SB stations with multiple individual fecal-coliform sampling events above the 100 MPN/100 ml guideline, despite annual geomeans below 100; annual mean compliance must not be interpreted as every sampling event being compliant.",
     "Added SRC-025, the official 2024 Regional State of the Brown Environment Report. It confirms a January–July 2024 Boracay water-quality data section, but its PDF could not be retrieved for full station-table validation; no numeric station values were ingested.",
     "SRC-026 reports an EMB statement that all 24 Boracay monitoring stations passed water-safety tests in January–June 2024. This is historical island-level context only; it contains no station-specific numeric values and does not establish current beach-specific bathing-water safety.",
-    "SRC-027 reports March 2026 in-situ screening at four Boracay outfalls: DO, temperature and pH were compliant, while laboratory results for TSS, color and fecal coliform were pending at publication. Outfall measurements are not beach bathing-water results and are not used to infer any beach's current safety."
+    "SRC-027 reports March 2026 in-situ screening at four Boracay outfalls: DO, temperature and pH were compliant, while laboratory results for TSS, color and fecal coliform were pending at publication. Outfall measurements are not beach bathing-water results and are not used to infer any beach's current safety.",
+    "Added the Boracay-specific 25+5 m easement and the national public-use shoreline easement legal framework (SRC-028 to SRC-031). These are distinct legal concepts. The public-use easement does not establish a practical public approach route or current access conditions at any individual beach; all beach-specific access statuses remain unchanged."
   ]
 }
