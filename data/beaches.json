@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.21",
+  "dataset_version": "0.2.22",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -91,7 +91,16 @@
             "longitude": 121.9260278,
             "separation_from_legacy_marker_m": 0,
             "source_coordinate_text": "11°57′29.3″N, 121°55′33.7″E",
-            "coordinate_source_year": 2022
+            "coordinate_source_year": 2022,
+            "source_ids": [
+              "SRC-002",
+              "SRC-024"
+            ],
+            "coordinate_source_years": [
+              2022,
+              2023
+            ],
+            "coordinates_match_across_reports": true
           },
           "assessment": "legacy_marker_is_boat_station_2; OSM_beach_feature_and_guide_points_are_separate",
           "note": "The legacy point exactly matches Boat Station 2; the OSM feature point is approximately 300 m away. Neither is established as a surveyed White Beach centroid.",
@@ -427,7 +436,16 @@
               "not_beach_centroid": true,
               "source_id": "SRC-002",
               "source_coordinate_text": "11°57′52.6″N, 121°55′19.1″E",
-              "coordinate_source_year": 2022
+              "coordinate_source_year": 2022,
+              "source_ids": [
+                "SRC-002",
+                "SRC-024"
+              ],
+              "coordinate_source_years": [
+                2022,
+                2023
+              ],
+              "coordinate_verification_status": "identical_in_DENR_2022_and_2023_station_tables"
             },
             "monitoring_period": "January–December 2022",
             "fecal_coliform_geometric_mean_mpn_100ml": 15,
@@ -547,7 +565,16 @@
               "not_beach_centroid": true,
               "source_id": "SRC-002",
               "source_coordinate_text": "11°57′29.3″N, 121°55′33.7″E",
-              "coordinate_source_year": 2022
+              "coordinate_source_year": 2022,
+              "source_ids": [
+                "SRC-002",
+                "SRC-024"
+              ],
+              "coordinate_source_years": [
+                2022,
+                2023
+              ],
+              "coordinate_verification_status": "identical_in_DENR_2022_and_2023_station_tables"
             },
             "monitoring_period": "January–December 2022",
             "fecal_coliform_geometric_mean_mpn_100ml": 25,
@@ -667,7 +694,16 @@
               "not_beach_centroid": true,
               "source_id": "SRC-002",
               "source_coordinate_text": "11°57′07.4″N, 121°55′47.3″E",
-              "coordinate_source_year": 2022
+              "coordinate_source_year": 2022,
+              "source_ids": [
+                "SRC-002",
+                "SRC-024"
+              ],
+              "coordinate_source_years": [
+                2022,
+                2023
+              ],
+              "coordinate_verification_status": "identical_in_DENR_2022_and_2023_station_tables"
             },
             "monitoring_period": "January–December 2022",
             "fecal_coliform_geometric_mean_mpn_100ml": 12,
@@ -1011,7 +1047,7 @@
             "SRC-002"
           ],
           "assessment": "legacy_marker_exactly_matches_secondary_guide_point; DENR station is separate",
-          "note": "The 2022 DENR-EMB annual report station coordinate is the active station point in this dataset. The 2021 RSoBER Table 4.54 reference is separately retained and lies 38.9 m away. The guide point and both DENR station references are monitoring/guide points, not surveyed beach centroids.",
+          "note": "The active DENR station coordinate matches the 2022 Annual Water Quality Assessment Report and the 2023 RSoBER Table 4.50. The 2021 RSoBER Table 4.54 reference is separately retained and lies 38.9 m away. The 2022 and 2023 coordinates match; the 2021 point is not averaged into them. All are monitoring-station points, not surveyed beach centroids.",
           "secondary_guide_point": {
             "source_id": "SRC-014",
             "latitude": 11.965631,
@@ -1023,7 +1059,16 @@
             "station_name": "Ralph's Place / Bulabog Beach",
             "latitude": 11.9694167,
             "longitude": 121.9275833,
-            "separation_from_legacy_marker_m": 444.2
+            "separation_from_legacy_marker_m": 444.2,
+            "source_ids": [
+              "SRC-002",
+              "SRC-024"
+            ],
+            "coordinate_source_years": [
+              2022,
+              2023
+            ],
+            "coordinates_match_across_reports": true
           },
           "denr_2021_station_reference": {
             "source_id": "SRC-010",
@@ -1311,7 +1356,16 @@
               "not_beach_centroid": true,
               "source_id": "SRC-002",
               "source_coordinate_text": "11°58′09.9″N, 121°55′39.3″E",
-              "coordinate_source_year": 2022
+              "coordinate_source_year": 2022,
+              "source_ids": [
+                "SRC-002",
+                "SRC-024"
+              ],
+              "coordinate_source_years": [
+                2022,
+                2023
+              ],
+              "coordinate_verification_status": "identical_in_DENR_2022_and_2023_station_tables"
             },
             "monitoring_period": "January–December 2022",
             "fecal_coliform_geometric_mean_mpn_100ml": 116,
@@ -1750,7 +1804,16 @@
             "longitude": 121.9159444,
             "separation_from_legacy_marker_m": 101.3,
             "source_coordinate_text": "11°59′45.6″N, 121°54′57.4″E",
-            "coordinate_source_year": 2022
+            "coordinate_source_year": 2022,
+            "source_ids": [
+              "SRC-002",
+              "SRC-024"
+            ],
+            "coordinate_source_years": [
+              2022,
+              2023
+            ],
+            "coordinates_match_across_reports": true
           },
           "assessment": "legacy_marker_matches_guide_but_osm_feature_and_denr_station_are_displaced",
           "note": "The OSM beach-feature coordinate and the DENR-EMB station coordinate are materially north/east of the legacy marker. Preserve all three as separate references; do not move the marker until the intended map point is defined.",
@@ -1982,7 +2045,16 @@
               "not_beach_centroid": true,
               "source_id": "SRC-002",
               "source_coordinate_text": "11°59′45.6″N, 121°54′57.4″E",
-              "coordinate_source_year": 2022
+              "coordinate_source_year": 2022,
+              "source_ids": [
+                "SRC-002",
+                "SRC-024"
+              ],
+              "coordinate_source_years": [
+                2022,
+                2023
+              ],
+              "coordinate_verification_status": "identical_in_DENR_2022_and_2023_station_tables"
             },
             "monitoring_period": "January–December 2022",
             "fecal_coliform_geometric_mean_mpn_100ml": 11,
@@ -2241,7 +2313,16 @@
             "longitude": 121.9117778,
             "separation_from_legacy_marker_m": 16.6,
             "source_coordinate_text": "11°58′34.3″N, 121°54′42.4″E",
-            "coordinate_source_year": 2022
+            "coordinate_source_year": 2022,
+            "source_ids": [
+              "SRC-002",
+              "SRC-024"
+            ],
+            "coordinate_source_years": [
+              2022,
+              2023
+            ],
+            "coordinates_match_across_reports": true
           },
           "assessment": "osm_feature_denr_station_and_guide_points_cluster_within_30m",
           "note": "The OSM feature point and DENR-EMB sampling station are both close to the legacy marker; this corroborates a local reference point but not a surveyed centroid.",
@@ -2465,7 +2546,16 @@
               "not_beach_centroid": true,
               "source_id": "SRC-002",
               "source_coordinate_text": "11°58′34.3″N, 121°54′42.4″E",
-              "coordinate_source_year": 2022
+              "coordinate_source_year": 2022,
+              "source_ids": [
+                "SRC-002",
+                "SRC-024"
+              ],
+              "coordinate_source_years": [
+                2022,
+                2023
+              ],
+              "coordinate_verification_status": "identical_in_DENR_2022_and_2023_station_tables"
             },
             "monitoring_period": "January–December 2022",
             "fecal_coliform_geometric_mean_mpn_100ml": 18,
@@ -3732,7 +3822,16 @@
             "longitude": 121.9254167,
             "separation_from_legacy_marker_m": 763.3,
             "source_coordinate_text": "11°59′34.4″N, 121°55′31.5″E",
-            "coordinate_source_year": 2022
+            "coordinate_source_year": 2022,
+            "source_ids": [
+              "SRC-002",
+              "SRC-024"
+            ],
+            "coordinate_source_years": [
+              2022,
+              2023
+            ],
+            "coordinates_match_across_reports": true
           },
           "assessment": "legacy_marker_matches_guide_but_osm_feature_and_denr_station_are_displaced",
           "note": "The OSM beach-feature coordinate and the DENR-EMB station coordinate are materially north/east of the legacy marker. Preserve all three as separate references; do not move the marker until the intended map point is defined.",
@@ -3956,7 +4055,16 @@
               "not_beach_centroid": true,
               "source_id": "SRC-002",
               "source_coordinate_text": "11°59′34.4″N, 121°55′31.5″E",
-              "coordinate_source_year": 2022
+              "coordinate_source_year": 2022,
+              "source_ids": [
+                "SRC-002",
+                "SRC-024"
+              ],
+              "coordinate_source_years": [
+                2022,
+                2023
+              ],
+              "coordinate_verification_status": "identical_in_DENR_2022_and_2023_station_tables"
             },
             "monitoring_period": "January–December 2022",
             "fecal_coliform_geometric_mean_mpn_100ml": 13,
@@ -4577,7 +4685,16 @@
             "station_name": "Tulubhan Pier DENR-EMB station",
             "latitude": 11.955,
             "longitude": 121.9380556,
-            "separation_from_legacy_marker_m": 53.3
+            "separation_from_legacy_marker_m": 53.3,
+            "source_ids": [
+              "SRC-002",
+              "SRC-024"
+            ],
+            "coordinate_source_years": [
+              2022,
+              2023
+            ],
+            "coordinates_match_across_reports": true
           },
           "assessment": "osm_feature_point_matches_legacy_marker",
           "note": "The legacy marker exactly matches the OSM natural=beach feature coordinate; the DENR-EMB station is nearby. This is not a surveyed beach-centroid validation."
@@ -4795,7 +4912,16 @@
               "not_beach_centroid": true,
               "source_id": "SRC-002",
               "source_coordinate_text": "11°57′18.0″N, 121°56′17.0″E",
-              "coordinate_source_year": 2022
+              "coordinate_source_year": 2022,
+              "source_ids": [
+                "SRC-002",
+                "SRC-024"
+              ],
+              "coordinate_source_years": [
+                2022,
+                2023
+              ],
+              "coordinate_verification_status": "identical_in_DENR_2022_and_2023_station_tables"
             },
             "monitoring_period": "January–December 2022",
             "fecal_coliform_geometric_mean_mpn_100ml": 141,
@@ -5043,7 +5169,16 @@
             "longitude": 121.9474167,
             "separation_from_legacy_marker_m": 27,
             "source_coordinate_text": "11°56′57.4″N, 121°56′50.7″E",
-            "coordinate_source_year": 2022
+            "coordinate_source_year": 2022,
+            "source_ids": [
+              "SRC-002",
+              "SRC-024"
+            ],
+            "coordinate_source_years": [
+              2022,
+              2023
+            ],
+            "coordinates_match_across_reports": true
           },
           "assessment": "osm_feature_exact_marker_denr_station_nearby_guide_reference_available",
           "note": "The legacy marker exactly matches the OSM natural=beach feature coordinate; the DENR-EMB station is nearby. This is not a surveyed beach-centroid validation.",
@@ -5275,7 +5410,16 @@
               "not_beach_centroid": true,
               "source_id": "SRC-002",
               "source_coordinate_text": "11°56′57.4″N, 121°56′50.7″E",
-              "coordinate_source_year": 2022
+              "coordinate_source_year": 2022,
+              "source_ids": [
+                "SRC-002",
+                "SRC-024"
+              ],
+              "coordinate_source_years": [
+                2022,
+                2023
+              ],
+              "coordinate_verification_status": "identical_in_DENR_2022_and_2023_station_tables"
             },
             "monitoring_period": "January–December 2022",
             "fecal_coliform_geometric_mean_mpn_100ml": 135,
@@ -5532,7 +5676,16 @@
             "longitude": 121.9312222,
             "separation_from_legacy_marker_m": 96.9,
             "source_coordinate_text": "11°56′54.7″N, 121°55′52.4″E",
-            "coordinate_source_year": 2022
+            "coordinate_source_year": 2022,
+            "source_ids": [
+              "SRC-002",
+              "SRC-024"
+            ],
+            "coordinate_source_years": [
+              2022,
+              2023
+            ],
+            "coordinates_match_across_reports": true
           }
         }
       },
@@ -5748,7 +5901,16 @@
               "not_beach_centroid": true,
               "source_id": "SRC-002",
               "source_coordinate_text": "11°56′54.7″N, 121°55′52.4″E",
-              "coordinate_source_year": 2022
+              "coordinate_source_year": 2022,
+              "source_ids": [
+                "SRC-002",
+                "SRC-024"
+              ],
+              "coordinate_source_years": [
+                2022,
+                2023
+              ],
+              "coordinate_verification_status": "identical_in_DENR_2022_and_2023_station_tables"
             },
             "monitoring_period": "January–December 2022",
             "fecal_coliform_geometric_mean_mpn_100ml": 13,
