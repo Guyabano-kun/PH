@@ -236,7 +236,8 @@
       "coverage": [
         "Ralph's Place regular ambient monitoring station",
         "Bulabog Beach station-name alias",
-        "Boracay coastline monitoring station coordinates"
+        "Boracay coastline monitoring station coordinates",
+        "Lapuz-Lapuz Beach historical ambient monitoring station coordinates"
       ],
       "limitations": "The report supports the historical station alias and station location, not the boundary of Bulabog Beach or a current water-quality assessment. For 2022 water-quality values, use SRC-002.",
       "reliability": "high_for_station_identity_and_historical_station_metadata"
