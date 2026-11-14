@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.4",
+  "dataset_version": "0.2.5",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -1651,11 +1651,11 @@
         "coordinates": {
           "latitude": 11.98417,
           "longitude": 121.90751,
-          "coordinate_status": "legacy_site_marker_unverified",
-          "coordinate_source": "Existing weather.html map dataset",
-          "coordinate_precision": "Not independently validated as beach centroid",
+          "coordinate_status": "osm_feature_match_with_secondary_point_disagreement",
+          "coordinate_source": "OpenStreetMap natural=beach feature via Mapcarta; cross-checked against Lakad Pilipinas travel-guide point",
+          "coordinate_precision": "Feature/reference point only; not a surveyed beach centroid or verified public access point.",
           "verified": false,
-          "source_id": "SRC-000"
+          "source_id": "SRC-013"
         },
         "beach_boundary": {
           "value": null,
@@ -1676,6 +1676,24 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coordinate_verification": {
+          "osm_feature": {
+            "source_id": "SRC-013",
+            "feature_type": "natural=beach",
+            "osm_feature_id": "way 24208689",
+            "latitude": 11.98417,
+            "longitude": 121.90751,
+            "match_to_legacy_marker": "exact"
+          },
+          "secondary_guide_point": {
+            "source_id": "SRC-014",
+            "latitude": 11.985096,
+            "longitude": 121.907557,
+            "separation_from_osm_feature_m": 103.1
+          },
+          "assessment": "source_point_disagreement",
+          "note": "The secondary travel guide point is approximately 103 m from the OSM feature coordinate. Preserve the existing marker as an OSM feature reference; do not treat either point as a surveyed beach centroid."
         }
       },
       "shore": {
@@ -1803,14 +1821,21 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "public_access_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "public_beach_reported_but_access_route_uncertain",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-014",
+            "SRC-015"
+          ],
+          "note": "Lakad Pilipinas (2023) lists public access and no entrance fee; BeachAtlas visitor reviews describe semi-private character and difficult access via resort areas or a narrow path. Current legal access and route are not established."
         },
         "access_restrictions": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "resort_or_narrow_path_access_reported",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-015"
+          ],
+          "note": "Based on secondary visitor reviews, not an official access notice."
         },
         "facilities": {
           "value": null,
@@ -1875,6 +1900,16 @@
           "source_id": "SRC-001",
           "claim": "Place name and approximate map location",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-013",
+          "claim": "OpenStreetMap natural=beach feature way 24208689 surfaced via Mapcarta reports the exact legacy marker coordinate 11.98417, 121.90751.",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-014",
+          "claim": "Lakad Pilipinas 2023 publishes a separate GPS reference point 11.985096, 121.907557; separation from the OSM feature point is approximately 103.1 m.",
+          "status": "supported"
         }
       ],
       "data_quality": {
@@ -1896,7 +1931,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 1
+          "revision": 2
         }
       }
     },
@@ -1941,11 +1976,11 @@
         "coordinates": {
           "latitude": 11.98124,
           "longitude": 121.90849,
-          "coordinate_status": "legacy_site_marker_unverified",
-          "coordinate_source": "Existing weather.html map dataset",
-          "coordinate_precision": "Not independently validated as beach centroid",
+          "coordinate_status": "osm_feature_match_secondary_guide_close",
+          "coordinate_source": "OpenStreetMap natural=beach feature via Mapcarta; cross-checked against Lakad Pilipinas travel-guide point",
+          "coordinate_precision": "Feature/reference point only; not a surveyed beach centroid or verified public access point.",
           "verified": false,
-          "source_id": "SRC-000"
+          "source_id": "SRC-011"
         },
         "beach_boundary": {
           "value": null,
@@ -1966,6 +2001,24 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coordinate_verification": {
+          "osm_feature": {
+            "source_id": "SRC-011",
+            "feature_type": "natural=beach",
+            "osm_feature_id": "way 495014969",
+            "latitude": 11.98124,
+            "longitude": 121.90849,
+            "match_to_legacy_marker": "exact"
+          },
+          "secondary_guide_point": {
+            "source_id": "SRC-014",
+            "latitude": 11.981134,
+            "longitude": 121.908515,
+            "separation_from_osm_feature_m": 12.1
+          },
+          "assessment": "close_cross_source_match",
+          "note": "The secondary travel-guide point is within approximately 12 m of the OSM feature coordinate. This corroborates the feature location but does not establish a surveyed beach centroid."
         }
       },
       "shore": {
@@ -2093,14 +2146,22 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "public_access_status": {
-          "value": null,
+          "value": "conflicting_reports_public_vs_restricted",
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "source_ids": [
+            "SRC-011",
+            "SRC-014"
+          ],
+          "note": "Lakad Pilipinas (2023) describes Balinghai as a public beach with free entry; the current Mapcarta/OSM-derived page says access is restricted and permission is required. No authoritative current access rule has been established."
         },
         "access_restrictions": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "access_permission_may_be_required",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-011",
+            "SRC-014"
+          ],
+          "note": "Sources conflict; verify directly with the relevant landholder or local authority before publishing a definitive access statement."
         },
         "facilities": {
           "value": null,
@@ -2165,6 +2226,16 @@
           "source_id": "SRC-001",
           "claim": "Place name and approximate map location",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-011",
+          "claim": "OpenStreetMap natural=beach feature way 495014969 surfaced via Mapcarta reports the exact legacy marker coordinate 11.98124, 121.90849.",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-014",
+          "claim": "Lakad Pilipinas 2023 publishes a separate GPS reference point 11.981134, 121.908515; separation from the OSM feature point is approximately 12.1 m.",
+          "status": "supported"
         }
       ],
       "data_quality": {
@@ -2186,7 +2257,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 1
+          "revision": 2
         }
       }
     },
@@ -2231,11 +2302,11 @@
         "coordinates": {
           "latitude": 11.98725,
           "longitude": 121.90611,
-          "coordinate_status": "legacy_site_marker_unverified",
-          "coordinate_source": "Existing weather.html map dataset",
-          "coordinate_precision": "Not independently validated as beach centroid",
+          "coordinate_status": "osm_feature_match_secondary_guide_close",
+          "coordinate_source": "OpenStreetMap natural=beach feature via Mapcarta; cross-checked against Lakad Pilipinas travel-guide point",
+          "coordinate_precision": "Feature/reference point only; not a surveyed beach centroid or verified public access point.",
           "verified": false,
-          "source_id": "SRC-000"
+          "source_id": "SRC-012"
         },
         "beach_boundary": {
           "value": null,
@@ -2256,6 +2327,24 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "coordinate_verification": {
+          "osm_feature": {
+            "source_id": "SRC-012",
+            "feature_type": "natural=beach",
+            "osm_feature_id": "way 24208692",
+            "latitude": 11.98725,
+            "longitude": 121.90611,
+            "match_to_legacy_marker": "exact"
+          },
+          "secondary_guide_point": {
+            "source_id": "SRC-014",
+            "latitude": 11.98732,
+            "longitude": 121.906075,
+            "separation_from_osm_feature_m": 8.7
+          },
+          "assessment": "close_cross_source_match",
+          "note": "The secondary travel-guide point is within approximately 12 m of the OSM feature coordinate. This corroborates the feature location but does not establish a surveyed beach centroid."
         }
       },
       "shore": {
@@ -2383,9 +2472,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "public_access_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "private_beach_reported",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-014"
+          ],
+          "note": "Lakad Pilipinas (2023) lists Banyugan as a private beach at Shangri-La, with free entry stated in that guide. Current access terms have not been independently confirmed."
         },
         "access_restrictions": {
           "value": null,
@@ -2455,6 +2547,16 @@
           "source_id": "SRC-001",
           "claim": "Place name and approximate map location",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-012",
+          "claim": "OpenStreetMap natural=beach feature way 24208692 surfaced via Mapcarta reports the exact legacy marker coordinate 11.98725, 121.90611.",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-014",
+          "claim": "Lakad Pilipinas 2023 publishes a separate GPS reference point 11.98732, 121.906075; separation from the OSM feature point is approximately 8.7 m.",
+          "status": "supported"
         }
       ],
       "data_quality": {
@@ -2476,7 +2578,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-14",
-          "revision": 1
+          "revision": 2
         }
       }
     },
