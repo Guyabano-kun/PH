@@ -536,6 +536,67 @@
       ],
       "limitations": "Reports compliant in-situ dissolved oxygen, temperature and pH at four outfalls. TSS, color and fecal-coliform samples had been sent for laboratory analysis and results were pending at publication. Outfalls are not beach bathing-water monitoring stations; no beach-specific safety conclusion is supported.",
       "reliability": "secondary_report_attributing_EMB_monitoring"
+    },
+    {
+      "id": "SRC-028",
+      "title": "Executive Order No. 53 – Creating a Boracay Inter-Agency Task Force",
+      "publisher": "Office of the President of the Philippines; Supreme Court E-Library",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/5/82760",
+      "type": "official_executive_order",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Boracay Island rehabilitation",
+        "Enforcement of the 25+5 meter beach easement"
+      ],
+      "limitations": "Directs DENR to enforce and monitor the 25+5 meter easement established under existing laws, rules and regulations. Does not identify or verify public approach routes to individual beaches.",
+      "reliability": "official_government_legal_instrument"
+    },
+    {
+      "id": "SRC-029",
+      "title": "Presidential Decree No. 1067 – Water Code of the Philippines, Article 51",
+      "publisher": "Supreme Court E-Library",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/26/54002",
+      "type": "official_national_legal_instrument",
+      "published_at": "1976-12-31",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Public-use easement along shores of seas and lakes",
+        "Recreation, navigation, floatage, fishing and salvage"
+      ],
+      "limitations": "Article 51 establishes a public-use easement whose width depends on the relevant area classification. It does not by itself establish the current physical approach route or access status for a particular named beach.",
+      "reliability": "official_national_law"
+    },
+    {
+      "id": "SRC-030",
+      "title": "DENR Administrative Order No. 2021-07 – Guidelines on the Establishment of Legal Easements Along the Seas, Rivers, Lakes, Esteros, and Creeks",
+      "publisher": "Department of Environment and Natural Resources",
+      "url": "https://apidb.denr.gov.ph/infores/uploads/DAO-2021-07.pdf",
+      "type": "official_denr_administrative_order",
+      "published_at": "2021-04-28",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Legal easement establishment and measurement",
+        "Mean high-water line reference",
+        "Coastal and protected-area easement rules"
+      ],
+      "limitations": "General national rules; land classification and any protected-area designation must be verified for the specific shoreline segment before assigning a width or access status.",
+      "reliability": "official_government_administrative_order"
+    },
+    {
+      "id": "SRC-031",
+      "title": "DENR Clarifies Prohibitions in Boracay",
+      "publisher": "Department of Environment and Natural Resources",
+      "url": "https://calabarzon.denr.gov.ph/news-events/denr-clarifies-prohibitions-in-boracay/",
+      "type": "official_government_guidance",
+      "published_at": "2018",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Boracay 25+5 meter easement",
+        "Restrictions on structures and activities within the easement"
+      ],
+      "limitations": "Explains restrictions within the 25+5 easement area; does not establish current access routes or access permission at each beach.",
+      "reliability": "official_government_statement"
     }
   ]
 }
