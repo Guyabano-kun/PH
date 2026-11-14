@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.16",
+  "dataset_version": "0.2.17",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-14",
   "beach_count": 13,
@@ -66,6 +66,8 @@
     "NAMRIA Notices to Mariners 2026-04 records a submarine pipeline correction for charts 1544 and 4358. Chart 1544 and chart 4358 use separate coordinate pairs in the notice; these representations must not be merged. A navigation-chart correction is not treated as a beach-specific hazard or exclusion zone.",
     "The NAMRIA ENC availability list dated 13 February 2025 includes PH5CATIC (Port of Caticlan) and PH2CVZ40 (Central Visayas), both affected by the 2026 pipeline correction. Availability confirms potential chart coverage only, not extraction of bathymetric data.",
     "Added approximate published shoreline lengths: White Beach ~4.0 km (DENR-EMB 2022 report and 2024 peer-reviewed paper) and Bulabog ~2.5 km (2024 peer-reviewed paper), SRC-002 and SRC-042. These approximate lengths do not establish surveyed boundaries or centroids.",
-    "Bulabog reef and seagrass presence are now recorded as supported historical presence based on the 2024 peer-reviewed paper and the 2020 local marine survey (SRC-042, SRC-003). Reef boundaries, reef crest, current condition, bathymetry and current seagrass extent remain unknown."
+    "Bulabog reef and seagrass presence are now recorded as supported historical presence based on the 2024 peer-reviewed paper and the 2020 local marine survey (SRC-042, SRC-003). Reef boundaries, reef crest, current condition, bathymetry and current seagrass extent remain unknown.",
+    "Added historical 2011–2012 total-coliform and stable-isotope study context to White Beach Site 3 near Station 2 and Bulabog Sites 5–7 (SRC-042). The study is pre-2018 rehabilitation, measures total coliform rather than fecal coliform, and does not provide verified GPS coordinates for the sites. Its 80–94% isotope-mixing estimate applies collectively to Sites 3, 6 and 7, not to either beach individually.",
+    "The 2012 study describes historical wastewater discharge points in the Bulabog area and a canal near White Beach Site 3. The article also states that illegal pipes were uncovered and permanently sealed during the 2018 rehabilitation; no claim is made that the historical discharge arrangement persists today."
   ]
 }
