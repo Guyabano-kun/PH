@@ -483,9 +483,10 @@
       "coverage": [
         "Boracay Island coastal and marine water-quality monitoring stations",
         "CY 2023 annual monitoring results",
-        "2019–2023 comparative monitoring data"
+        "2019–2023 comparative monitoring data",
+        "2023 regular monitoring station inventory, water-body classes and DMS coordinates (Table 4.50)"
       ],
-      "limitations": "Station-specific annual results, not whole-beach measurements or current real-time bathing-water advice. The fecal-coliform compliance chart caption states Jan–Nov 2023 while report narrative refers to 12 sampling events; sampling-event count is therefore not copied. The report contains conflicting 2023 TSS values for Ralph's Place (32.3 and 33.4 mg/L); that TSS value is excluded.",
+      "limitations": "Station-specific annual results, not whole-beach measurements or current real-time bathing-water advice. The fecal-coliform compliance chart caption states Jan–Nov 2023 while report narrative refers to 12 sampling events; sampling-event count is therefore not copied. The report contains conflicting 2023 TSS values for Ralph's Place (32.3 and 33.4 mg/L); that TSS value is excluded. Station inventory confirms names, classes and coordinates; it does not independently prove every sampling event used the same field position beyond the published station record.",
       "reliability": "official_government_annual_report"
     },
     {
