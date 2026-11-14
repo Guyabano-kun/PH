@@ -1282,6 +1282,60 @@
       ],
       "limitations": "The uploaded report supplies Plus Code XWH5+2X5. It is decoded to a short-code cell reference near Diniwid; Trip.com separately lists The Ruins Art Gallery as a nearby attraction. Exact gallery entrance and the relationship to West Cove Ruins remain unverified.",
       "reliability": "user_supplied_unverified_plus_code"
+    },
+    {
+      "id": "SRC-078",
+      "title": "Boracay Island Hopping – seasonal route and possible stops",
+      "publisher": "Summerset Travel Agency",
+      "url": "https://www.summersettravelagency.com/boracay-activities/boracay-island-hopping/",
+      "type": "tour_operator_listing",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Boracay island-hopping seasonal activity areas",
+        "Puka Beach itinerary stop",
+        "Balinghai Beach itinerary stop",
+        "Ilig-Iligan Beach itinerary stop",
+        "Coral Garden and Crocodile Island snorkeling alternatives"
+      ],
+      "limitations": "Operator listing. Meeting/activity area and possible stops vary by season, weather and operator clearance. The page does not establish legal public landing rights or a universal departure terminal; it does not establish that every listed stop is visited on every trip.",
+      "reliability": "medium_operator_primary"
+    },
+    {
+      "id": "SRC-079",
+      "title": "Southwest Tours & Activities Media Kit – Boracay Island Hopping Tour",
+      "publisher": "Southwest Tours",
+      "url": "https://www.southwesttours.com.ph/partners/mediakit/SouthwestActivities.pdf",
+      "type": "tour_operator_media_kit",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Boracay island-hopping meet-up locations",
+        "Puka Beach or Balinghai Beach itinerary option",
+        "Ilig-Iligan Beach itinerary option",
+        "Seasonal Bulabog meet-up at Moksha Cafe"
+      ],
+      "limitations": "Operator media-kit itinerary. Itinerary locations are alternatives and may change with weather. It does not prove routine public departure or landing rights at each beach.",
+      "reliability": "medium_operator_primary"
+    },
+    {
+      "id": "SRC-080",
+      "title": "Boracay Island Hopping with Lunch – seasonal itinerary",
+      "publisher": "Traveloka / I Love Pilipinas Tours Inc.",
+      "url": "https://www.traveloka.com/en-ph/activities/philippines/product/boracay-island-hopping-with-lunch-philippines-8789536700966",
+      "type": "tour_marketplace_listing",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Astoria Station 1 seasonal meeting point",
+        "Bulabog Beach near Moksha Cafe seasonal meeting point",
+        "Puka Beach itinerary stop",
+        "Balinghai Beach Amihan itinerary stop",
+        "Ilig-Iligan Beach Habagat itinerary stop",
+        "Tambisaan Beach lunch stop"
+      ],
+      "limitations": "Marketplace listing for a named operator's tour. Itinerary is weather-dependent and does not establish legal public landing rights or universal access. Seasonal itinerary reflects the listing checked on 2026-11-15; recheck before public time-sensitive claims.",
+      "reliability": "medium_secondary_operator_listing"
     }
   ]
 }
