@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.8",
+  "dataset_version": "0.2.9",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-14",
   "beach_count": 13,
@@ -48,6 +48,9 @@
     "Coordinate audit now cross-checks Diniwid, Tulubhan, Tambisaan, Ilig-Iligan, Puka and White Beach against Mapcarta-displayed OSM natural=beach features and DENR-EMB station coordinates. Matches and discrepancies are explicitly retained; no beach-centroid coordinates are promoted.",
     "Secondary guide GPS points from Lakad Pilipinas 2023 have been added as separate reference coordinates for 11 named beaches. They are not substituted for legacy markers or DENR monitoring-station coordinates; all three point types remain distinct.",
     "For Puka and Ilig-Iligan, legacy markers match the travel-guide point but are displaced from OSM beach-feature and DENR station points. For White Beach, the legacy marker is exactly Boat Station 2. These are unresolved map-point identity differences, not reasons to overwrite coordinates.",
-    "Hagdan and Lapuz-Lapuz now carry OSM locality reference points only. These are neighborhood coordinates, not beach feature or centroid coordinates; Hagdan Beach remains a provisional separate beach identity."
+    "Hagdan and Lapuz-Lapuz now carry OSM locality reference points only. These are neighborhood coordinates, not beach feature or centroid coordinates; Hagdan Beach remains a provisional separate beach identity.",
+    "Added station-specific CY 2023 Boracay coastline monitoring results from the official DENR-EMB Region VI 2023 Regional State of the Brown Environment Report (SRC-024): fecal-coliform geomeans and compliance, dissolved-oxygen averages and compliance, and total-suspended-solids averages where unambiguous. Historical station values are not beach-wide or current real-time bathing-water assessments.",
+    "For the 2023 fecal-coliform compliance chart, the caption specifies Jan–Nov 2023 while report narrative refers to 12 sampling events; event counts are omitted pending clarification. Ralph's Place TSS is excluded because the report contains conflicting 2023 values (32.3 and 33.4 mg/L).",
+    "The 2023 report identifies Diniwid Beach and Tulubhan as Class SB stations with multiple individual fecal-coliform sampling events above the 100 MPN/100 ml guideline, despite annual geomeans below 100; annual mean compliance must not be interpreted as every sampling event being compliant."
   ]
 }
