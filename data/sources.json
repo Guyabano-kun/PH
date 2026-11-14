@@ -879,8 +879,41 @@
         "Registry-reported establishment date 10 November 1978",
         "Registry-reported reference point 11.966667 N, 121.916667 E"
       ],
-      "limitations": "The registry record has no legal/formal instrument, reports 0.00 ha area and 0.00 ha marine area, and does not provide a boundary polygon or management plan. It is a candidate historical MPA record requiring confirmation against the original legal instrument and authoritative Philippine protected-area records. Its reference coordinate is not a beach centroid or protected-area boundary point.",
-      "reliability": "regional_secondary_mpa_registry_unverified_legal_basis"
+      "limitations": "The registry record has no legal/formal instrument, no area value and no boundary polygon. Presidential Proclamation No. 1801 (SRC-049) independently confirms the Boracay Islands tourist-zone and marine-reserve designation; the Atlas entry itself remains a point-based regional registry record, not a beach-level boundary source. Its reference coordinate is not a beach centroid or protected-area boundary point.",
+      "reliability": "regional_mpa_registry_record_cross_referenced_to_primary_legal_instrument"
+    },
+    {
+      "id": "SRC-049",
+      "title": "Presidential Proclamation No. 1801 – Declaring Certain Islands, Coves and Peninsulas in the Philippines as Tourist Zones and Marine Reserve",
+      "publisher": "Office of the President of the Philippines; text reproduced by the LawPhil Project",
+      "url": "https://www.lawphil.net/executive/proc/proc1978/proc_1801_1978.html",
+      "type": "presidential_proclamation_legal_instrument",
+      "published_at": "1978-11-10",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Boracay Islands, Aklan expressly listed among the tourist zones and marine reserves",
+        "Island-level marine-reserve and tourist-zone designation under administration and control of the Philippine Tourism Authority",
+        "Ecological-balance and tourism-administration purpose"
+      ],
+      "limitations": "The proclamation names Boracay Islands but does not supply a beach-by-beach boundary polygon, coordinate schedule, marine zoning or no-take boundaries. It must not be used to draw a precise protected-area perimeter around individual beaches.",
+      "reliability": "primary_legal_instrument_text_reproduced_by_LawPhil"
+    },
+    {
+      "id": "SRC-050",
+      "title": "The Secretary of DENR et al. v. Mayor Jose S. Yap et al. – G.R. Nos. 167707 and 173775",
+      "publisher": "Supreme Court of the Philippines; Supreme Court E-Library",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/1/47118",
+      "type": "official_supreme_court_decision",
+      "published_at": "2008-10-08",
+      "checked_at": "2026-11-14",
+      "citation": "G.R. Nos. 167707 and 173775, 8 October 2008",
+      "coverage": [
+        "Supreme Court account of Proclamation No. 1801 and the Boracay tourist-zone/marine-reserve designation",
+        "Distinction between the ecological/tourism purpose of Proclamation No. 1801 and land classification under Proclamation No. 1064",
+        "Judicial interpretation of the limits of Proclamation No. 1801 for land alienability/classification"
+      ],
+      "limitations": "The decision concerns land classification and alienability. Its discussion that Proclamation No. 1801 did not identify specific limits for land classification must not be misrepresented as a ruling that the marine-reserve designation is invalid. It does not provide beach-level marine-reserve boundaries.",
+      "reliability": "official_judicial_decision"
     }
   ]
 }
