@@ -932,6 +932,356 @@
       ],
       "limitations": "The annex provides a point reference, not a boundary polygon, area, zoning or beach-level limits. The heading 'Marine Protected Areas (NIPAS Law)' must not be used to infer that the 1978 Boracay Island Tourist Zone and Marine Reserve was originally established under the later NIPAS statute. The underlying designation is recorded separately under Presidential Proclamation No. 1801 (SRC-049).",
       "reliability": "official_government_contingency_plan_annex"
+    },
+    {
+      "id": "SRC-052",
+      "title": "Bulabog Beach – BeachAtlas map reference",
+      "publisher": "BeachAtlas",
+      "url": "https://www.beachatlas.com/bulabog",
+      "type": "secondary_tourism_map",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Bulabog Beach – BeachAtlas map reference"
+      ],
+      "limitations": "Bulabog Beach reference point 11.9692679, 121.9273114; approximately 34 m from the 2022/2023 DENR-EMB Ralph's Place station reference.",
+      "reliability": "low_to_moderate_secondary"
+    },
+    {
+      "id": "SRC-053",
+      "title": "Ilig-Iligan Beach – BeachAtlas map reference",
+      "publisher": "BeachAtlas",
+      "url": "https://www.beachatlas.com/ilig-iligan",
+      "type": "secondary_tourism_map",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Ilig-Iligan Beach – BeachAtlas map reference"
+      ],
+      "limitations": "Ilig-Iligan Beach reference point 11.9931549, 121.9253557; approximately 30 m from the 2022/2023 DENR-EMB Ilig-Iligan Shell Museum station and approximately 132 m from the OSM natural=beach feature point. Not a surveyed centroid.",
+      "reliability": "moderate_secondary_cross_checked"
+    },
+    {
+      "id": "SRC-054",
+      "title": "Puka Shell Beach – BeachAtlas map reference",
+      "publisher": "BeachAtlas",
+      "url": "https://www.beachatlas.com/puka-shell",
+      "type": "secondary_tourism_map",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Puka Shell Beach – BeachAtlas map reference"
+      ],
+      "limitations": "Puka Shell Beach reference point 11.9946643, 121.9121981. It is approximately 397 m from the legacy guide marker and approximately 434 m from the DENR 2022 sampling station. Kept as a separate reference point; not used to overwrite the legacy marker.",
+      "reliability": "low_to_moderate_secondary_discrepant"
+    },
+    {
+      "id": "SRC-055",
+      "title": "Diniwid Beach – BeachAtlas map reference",
+      "publisher": "BeachAtlas",
+      "url": "https://www.beachatlas.com/diniwid",
+      "type": "secondary_tourism_map",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Diniwid Beach – BeachAtlas map reference"
+      ],
+      "limitations": "Diniwid Beach reference point 11.9762953, 121.9116677; approximately 12 m from the OSM beach-feature point and 17 m from the DENR 2022 station.",
+      "reliability": "moderate_secondary_cross_checked"
+    },
+    {
+      "id": "SRC-056",
+      "title": "Punta Bunga Beach – BeachAtlas map reference",
+      "publisher": "BeachAtlas",
+      "url": "https://www.beachatlas.com/punta-bunga",
+      "type": "secondary_tourism_map",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Punta Bunga Beach – BeachAtlas map reference"
+      ],
+      "limitations": "Punta Bunga Beach reference point 11.9839748, 121.9075748; close to the OSM natural=beach feature point. Not a surveyed centroid or access point.",
+      "reliability": "moderate_secondary_cross_checked"
+    },
+    {
+      "id": "SRC-057",
+      "title": "Balinghai Beach – BeachAtlas map reference",
+      "publisher": "BeachAtlas",
+      "url": "https://www.beachatlas.com/balinghai",
+      "type": "secondary_tourism_map",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Balinghai Beach – BeachAtlas map reference"
+      ],
+      "limitations": "Balinghai Beach reference point 11.9811832, 121.9085779; close to the OSM natural=beach feature point. Not a surveyed centroid or access point.",
+      "reliability": "moderate_secondary_cross_checked"
+    },
+    {
+      "id": "SRC-058",
+      "title": "White Beach – BeachAtlas map reference",
+      "publisher": "BeachAtlas",
+      "url": "https://www.beachatlas.com/white-9",
+      "type": "secondary_tourism_map",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "White Beach – BeachAtlas map reference"
+      ],
+      "limitations": "BeachAtlas lists 11.952444, 121.929614. This is retained as a separate beach reference point and is not substituted for the DENR Boat Station 2 marker or interpreted as a surveyed centroid.",
+      "reliability": "low_secondary_reference"
+    },
+    {
+      "id": "SRC-059",
+      "title": "Resort Facilities – Punta Bunga and Banyugan Beaches",
+      "publisher": "Shangri-La Boracay",
+      "url": "https://www.shangri-la.com/boracay/boracayresort/sports-recreation/resort-facilities/",
+      "type": "official_resort_facilities_page",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Resort Facilities – Punta Bunga and Banyugan Beaches"
+      ],
+      "limitations": "The resort describes Punta Bunga and Banyugan as two secluded beaches and lists beach facility hours of 6:00 AM–6:00 PM. Supports resort association and facility context, not a public right-of-way or general public access.",
+      "reliability": "high_for_resort_facility_context"
+    },
+    {
+      "id": "SRC-060",
+      "title": "2012 Annual Report – Roots for Boracay / Lugutan Boardwalk",
+      "publisher": "LT Group / Tanduay",
+      "url": "https://ltg.com.ph/wp-content/uploads/bsk-pdf-manager/2019/09/2012-AR-LTG.need-to-make-file-smaller.pdf",
+      "type": "corporate_annual_report",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "2012 Annual Report – Roots for Boracay / Lugutan Boardwalk"
+      ],
+      "limitations": "Records construction of a boardwalk in an existing mangrove site at Sitio Lugutan, Barangay Manoc-Manoc, through the Roots for Boracay project. Supports the boardwalk's existence and locality, not its exact map point or current opening status.",
+      "reliability": "moderate_primary_corporate_record"
+    },
+    {
+      "id": "SRC-061",
+      "title": "37 Boracay Tourist Spots – Lugutan Mangrove Park",
+      "publisher": "The Poor Traveler",
+      "url": "https://www.thepoortraveler.net/boracay-tourist-spots/",
+      "type": "secondary_travel_guide",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "37 Boracay Tourist Spots – Lugutan Mangrove Park"
+      ],
+      "limitations": "Describes Lugutan Mangrove Park in Barangay Manoc-Manoc, the mangrove boardwalk, the park's establishment context and visitor registration. Current access conditions should be rechecked locally.",
+      "reliability": "moderate_secondary"
+    },
+    {
+      "id": "SRC-062",
+      "title": "Diniwid Beach Guide – Lambros Point GPS reference",
+      "publisher": "Lakad Pilipinas",
+      "url": "https://www.lakadpilipinas.com/2022/12/diniwid-beach-boracay-travel-guide.html",
+      "type": "secondary_travel_guide_with_gps",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Diniwid Beach Guide – Lambros Point GPS reference"
+      ],
+      "limitations": "Identifies Lambros Point as the cave-like hollow dividing White Beach and Diniwid Beach; publishes GPS 11.974544, 121.912646 and describes the local Mother Mary Cave name. Also warns the nearby Cross of Christ has no established trail.",
+      "reliability": "moderate_secondary_gps"
+    },
+    {
+      "id": "SRC-063",
+      "title": "Sigbin Cave – attraction listing and Plus Code",
+      "publisher": "Trip.com",
+      "url": "https://in.trip.com/travel-guide/attraction/malay/sigbin-cave-150732884",
+      "type": "secondary_attraction_listing",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Sigbin Cave – attraction listing and Plus Code"
+      ],
+      "limitations": "Lists Sigbin Cave at XWXG+M22, Yapak, Malay, Aklan. The short Plus Code is resolved to a local cell reference; the cave entrance and exact access route are not independently field-verified.",
+      "reliability": "low_to_moderate_secondary_poi"
+    },
+    {
+      "id": "SRC-064",
+      "title": "Fairway Cujo's Keyhole – attraction listing and Plus Code",
+      "publisher": "Boracay Library",
+      "url": "https://www.boracaylibrary.com/attractions_detail.asp?seq=23",
+      "type": "secondary_attraction_listing",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Fairway Cujo's Keyhole – attraction listing and Plus Code"
+      ],
+      "limitations": "Identifies Cujo's Keyhole on the Newcoast coastline and gives Plus Code XWJH+QPQ. The code locates a reference cell; it is not a surveyed centre or guaranteed public access point.",
+      "reliability": "moderate_secondary_poi"
+    },
+    {
+      "id": "SRC-065",
+      "title": "Tropicana Ocean Villas – nearby attractions listing",
+      "publisher": "Trip.com",
+      "url": "https://sg.trip.com/hotels/boracay-hotel-detail-5052755/tropicana-ocean-villas-and-apartment/",
+      "type": "secondary_hotel_nearby_attraction_listing",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Tropicana Ocean Villas – nearby attractions listing"
+      ],
+      "limitations": "Lists The Ruins Art Gallery and West Cove Ruins as separate nearby attractions, approximately 50–60 m from Tropicana Ocean Villas. Does not supply exact entrance coordinates or prove the two names refer to the same structure.",
+      "reliability": "low_secondary_proximity"
+    },
+    {
+      "id": "SRC-066",
+      "title": "Boracay Tourist Map – Lambros Point and West Cove Ruins references",
+      "publisher": "TourShopOnHopOff",
+      "url": "https://tourshoponhopoff.com/boracay-tourist-map/",
+      "type": "secondary_tourist_poi_map",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Boracay Tourist Map – Lambros Point and West Cove Ruins references"
+      ],
+      "limitations": "Publishes reference points for Lambros Point (11.97454, 121.91265) and West Cove Ruins (11.97727, 121.90976). These are map POI points, not surveyed feature boundaries or entrance coordinates.",
+      "reliability": "low_to_moderate_secondary_map"
+    },
+    {
+      "id": "SRC-067",
+      "title": "Official HOHO Route Map – Drop-off and Pick-up Locations",
+      "publisher": "Boracay Hop On Hop Off / Southwest Tours",
+      "url": "https://www.hohoboracay.com/map.php",
+      "type": "official_transport_operator_route_list",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Official HOHO Route Map – Drop-off and Pick-up Locations"
+      ],
+      "limitations": "Lists stop codes H0–H19 and alpha stops H1A, H1B, H3A, H3B, H6A, H10A, H15A and H15B. Explicitly marks H1B and H15B as Scheduled. The text list does not publish exact roadside stop-sign coordinates.",
+      "reliability": "high_for_stop_names_and_status"
+    },
+    {
+      "id": "SRC-068",
+      "title": "Balabag Elementary School – Map point",
+      "publisher": "TeacherPH (school data attributed to DepEd)",
+      "url": "https://www.teacherph.com/schools/aklan/malay/balabag-elementary-school-114846/",
+      "type": "secondary_school_location_record",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Balabag Elementary School – Map point"
+      ],
+      "limitations": "Publishes a map point for Balabag Elementary School at approximately 11.9647865, 121.9257363. It is a school POI reference, not proof of the exact HOHO roadside sign position.",
+      "reliability": "moderate_secondary_school_poi"
+    },
+    {
+      "id": "SRC-069",
+      "title": "Azalea Hotels & Residences Boracay – map coordinates",
+      "publisher": "Boracay Directory",
+      "url": "https://boracaydirectory.com/directory/hotels-and-resorts/azalea-hotels-residences-boracay",
+      "type": "secondary_business_location_record",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Azalea Hotels & Residences Boracay – map coordinates"
+      ],
+      "limitations": "Publishes Azalea Hotels & Residences at 11.9594921, 121.9282398 on Station 2 Main Road. Used as a cross-check for the H6 stop area, not as the exact bus sign coordinate.",
+      "reliability": "moderate_secondary_poi"
+    },
+    {
+      "id": "SRC-070",
+      "title": "Jollibee Boracay – map coordinates",
+      "publisher": "Boracay Directory",
+      "url": "https://boracaydirectory.com/directory/restaurants/jollibee-boracay",
+      "type": "secondary_business_location_record",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Jollibee Boracay – map coordinates"
+      ],
+      "limitations": "Publishes Jollibee Boracay at 11.9620103, 121.9267694 in Station 2. Used as a cross-check for the H7 stop area, not as the exact bus sign coordinate.",
+      "reliability": "moderate_secondary_poi"
+    },
+    {
+      "id": "SRC-071",
+      "title": "The Lind Boracay – map coordinates",
+      "publisher": "Boracay Directory",
+      "url": "https://boracaydirectory.com/directory/hotels-and-resorts/the-lind-boracay",
+      "type": "secondary_business_location_record",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "The Lind Boracay – map coordinates"
+      ],
+      "limitations": "Publishes The Lind Boracay hotel at 11.972028, 121.91638. The HOHO H15 marker is an operator stop-area reference and is not substituted with the hotel building point.",
+      "reliability": "moderate_secondary_poi"
+    },
+    {
+      "id": "SRC-072",
+      "title": "Two Seasons Boracay Resort – map reference",
+      "publisher": "Mapcarta",
+      "url": "https://mapcarta.com/33025640",
+      "type": "osm_derived_business_map_reference",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Two Seasons Boracay Resort – map reference"
+      ],
+      "limitations": "Mapcarta lists Two Seasons Boracay Resort around 11.972, 121.917. The H14 marker is an operator stop-area reference, not a surveyed roadside sign.",
+      "reliability": "moderate_osm_derived_poi"
+    },
+    {
+      "id": "SRC-073",
+      "title": "Bora Vista Villa – Mount Luho Road address reference",
+      "publisher": "Google Hotels",
+      "url": "https://www.google.com.ph/travel/hotels/entity/CgsIgu71rcX-t4rMARAB",
+      "type": "secondary_address_reference",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Bora Vista Villa – Mount Luho Road address reference"
+      ],
+      "limitations": "The listing gives the address Plus Code XW9G+M6W and describes the location as Mount Luho Road, Malay, Aklan. Its decoded cell is used only as an approximate H15B scheduled-stop road-area locator, not an exact bus-stop coordinate.",
+      "reliability": "low_secondary_address_reference"
+    },
+    {
+      "id": "SRC-074",
+      "title": "Lugutan Mangrove Park – Mapbox POI reference",
+      "publisher": "Mapbox Search Box",
+      "url": null,
+      "type": "cartographic_poi_reference",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Lugutan Mangrove Park – Mapbox POI reference"
+      ],
+      "limitations": "Named Mapbox POI returned at 11.95604779, 121.9346766. It is approximately 42 m from the legacy marker and about 62 m from the separate DENR Lugutan mixing-zone station. The POI point is not a surveyed park boundary or boardwalk entrance.",
+      "reliability": "moderate_cartographic_poi"
+    },
+    {
+      "id": "SRC-075",
+      "title": "Lapus-Lapus Beach – WorldPlaces disputed point",
+      "publisher": "WorldPlaces",
+      "url": "https://philippines.worldplaces.me/review/182388279-lapus-lapus-beach.html",
+      "type": "secondary_user_generated_place_listing",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Lapus-Lapus Beach – WorldPlaces disputed point"
+      ],
+      "limitations": "Lists 11.94923, 121.93178, near White Beach Station 3 / Angol. This point is approximately 3.57 km from the Newcoast-side Lapus-Lapus reference used in the project and is retained as a disputed name-location association, not a valid substitute for the TPB-mapped Newcoast beach.",
+      "reliability": "low_conflicting_user_generated_poi"
+    },
+    {
+      "id": "SRC-076",
+      "title": "The Ruins Art Gallery – Plus Code from supplied research",
+      "publisher": "User-supplied project research report",
+      "url": null,
+      "type": "user_supplied_research_note",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "The Ruins Art Gallery – Plus Code from supplied research"
+      ],
+      "limitations": "The uploaded report supplies Plus Code XWH5+2X5. It is decoded to a short-code cell reference near Diniwid; Trip.com separately lists The Ruins Art Gallery as a nearby attraction. Exact gallery entrance and the relationship to West Cove Ruins remain unverified.",
+      "reliability": "user_supplied_unverified_plus_code"
     }
   ]
 }
