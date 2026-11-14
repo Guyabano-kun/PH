@@ -848,6 +848,39 @@
       ],
       "limitations": "Secondary report conflicts with Daily Tribune on temperature compliance: Panay News reports elevated temperature at some locations, but gives no values or station names. No numerical DO/pH results or coordinates are provided. Outfall samples are not ambient beach bathing-water samples.",
       "reliability": "secondary_report_attributing_EMB_region_VI"
+    },
+    {
+      "id": "SRC-047",
+      "title": "DENR Administrative Order No. 2019-15 – Designation of the Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+      "publisher": "Department of Environment and Natural Resources, Philippines",
+      "url": "https://apidb.denr.gov.ph/infores/uploads/rmdd/dao-2019-15.pdf",
+      "type": "official_denr_administrative_order",
+      "published_at": "2019-11-05",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Legal designation of Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+        "Conservation designation covering the three island barangays Yapak, Balabag and Manoc-manoc",
+        "Boundary-control-point descriptions for Ilig-Iligan, Lapuz-Lapuz, Bulabog, Tulubhan, Tambisaan, White/Long Beach, Diniwid, Punta Bunga and Banyugan",
+        "WQMACA boundary points and perimeter description"
+      ],
+      "limitations": "WQMACA is a water-quality management and conservation-area designation under the Clean Water Act framework. It is not by itself proof of a separate NIPAS protected area or site-specific marine protected area. Boundary control points describe the WQMACA perimeter, not beach boundaries or beach-centroid coordinates. The order states that the boundary line lies approximately 50–200 m from shore in relevant segments.",
+      "reliability": "official_government_administrative_order"
+    },
+    {
+      "id": "SRC-048",
+      "title": "Boracay Island Tourist Zone Marine Reserve – Coral Triangle Atlas MPA Registry",
+      "publisher": "Coral Triangle Initiative / Coral Triangle Atlas",
+      "url": "https://ctatlas.coraltriangleinitiative.org/MPA?id=4059000",
+      "type": "regional_marine_protected_area_registry_record",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Registry entry for Boracay Island Tourist Zone Marine Reserve",
+        "Registry-reported establishment date 10 November 1978",
+        "Registry-reported reference point 11.966667 N, 121.916667 E"
+      ],
+      "limitations": "The registry record has no legal/formal instrument, reports 0.00 ha area and 0.00 ha marine area, and does not provide a boundary polygon or management plan. It is a candidate historical MPA record requiring confirmation against the original legal instrument and authoritative Philippine protected-area records. Its reference coordinate is not a beach centroid or protected-area boundary point.",
+      "reliability": "regional_secondary_mpa_registry_unverified_legal_basis"
     }
   ]
 }
