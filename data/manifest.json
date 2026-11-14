@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.22",
+  "dataset_version": "0.2.23",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-14",
   "beach_count": 13,
@@ -78,6 +78,8 @@
     "Coordinate audit against the 2022 DENR-EMB Annual Water Quality Assessment Report confirms that the 10 active station coordinates in the beach passports match the report's DMS table after conversion. Exact source DMS strings are now retained alongside decimal coordinates.",
     "Ralph's Place has two distinct DENR station references: 2021 RSoBER Table 4.54 at 11°58′09.0″N, 121°55′38.4″E and 2022 Annual Assessment Report at 11°58′09.9″N, 121°55′39.3″E. The points are 38.9 m apart. The 2022 point remains the active station coordinate; the 2021 point is retained as a historical reference. Neither is a beach centroid.",
     "Cross-check against 2023 RSoBER Table 4.50 confirms that all 10 target monitoring stations retain the same names, water-body classes and DMS coordinates as the 2022 DENR-EMB Annual Water Quality Assessment Report. Station coordinate records now cite both SRC-002 and SRC-024 with coordinate_source_years [2022, 2023].",
-    "Ralph's Place remains a documented exception across report vintages: 2021 RSoBER Table 4.54 coordinate differs by 38.9 m from the identical 2022 and 2023 station coordinates. The 2021 point remains a separate historical station reference."
+    "Ralph's Place remains a documented exception across report vintages: 2021 RSoBER Table 4.54 coordinate differs by 38.9 m from the identical 2022 and 2023 station coordinates. The 2021 point remains a separate historical station reference.",
+    "Added CY 2023 phosphate-as-phosphorus and nitrate annual averages plus event-compliance data for the same 10 target stations (SRC-024). Phosphate WQGV is 0.2 mg P/L; nitrate WQGV is 10 mg/L. All 10 target stations were reported 100% compliant in all 12 sampling events for both parameters.",
+    "CY 2023 primary-parameter sampling count is retained as 12 from the report narrative. The fecal-coliform compliance figure caption says Jan–Nov 2023; this internal date-span discrepancy remains explicitly documented."
   ]
 }
