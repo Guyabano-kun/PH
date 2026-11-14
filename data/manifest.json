@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.5",
+  "dataset_version": "0.2.6",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-14",
   "beach_count": 13,
@@ -44,6 +44,7 @@
     "Lapuz-Lapuz has a historical DENR-EMB station coordinate from the 2021 report; this is not a beach-centroid coordinate and no matching 2022 annual result is asserted.",
     "DENR-EMB 2021 report contains separate 2006–2019 and 2020-onwards station inventories. Lapuz-Lapuz is found only in the older table; the current Bulabog station is the 2020-onwards Ralph's Place record. Distinct historical points are not merged.",
     "Balinghai, Banyugan and Punta Bunga legacy markers exactly match their Mapcarta-displayed OSM natural=beach feature coordinates. Secondary guide points are within ~12 m and ~9 m for Balinghai and Banyugan, but ~103 m away for Punta Bunga; all remain feature-reference points, not surveyed centroids.",
-    "Access claims for Balinghai and Punta Bunga are conflicting or provisional; the dataset does not assert definitive current public access."
+    "Access claims for Balinghai and Punta Bunga are conflicting or provisional; the dataset does not assert definitive current public access.",
+    "Coordinate audit now cross-checks Diniwid, Tulubhan, Tambisaan, Ilig-Iligan, Puka and White Beach against Mapcarta-displayed OSM natural=beach features and DENR-EMB station coordinates. Matches and discrepancies are explicitly retained; no beach-centroid coordinates are promoted."
   ]
 }
