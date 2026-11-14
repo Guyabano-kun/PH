@@ -1339,6 +1339,24 @@
       ],
       "limitations": "Marketplace listing for a named operator's tour. Itinerary is weather-dependent and does not establish legal public landing rights or universal access. Seasonal itinerary reflects the listing checked on 2026-11-15; recheck before public time-sensitive claims.",
       "reliability": "medium_secondary_operator_listing"
+    },
+    {
+      "id": "SRC-081",
+      "title": "Wave and Storm-Induced Changes in the Sediment Transport of Beaches in Boracay Island, Philippines – thesis abstract",
+      "publisher": "Sofia Joy G. Quillope; Institute of Environmental Science and Meteorology, University of the Philippines Diliman",
+      "url": "https://iesm.science.upd.edu.ph/wp-content/uploads/2024/11/2024-11-15-Abstract_Quillope.pdf",
+      "type": "university_thesis_abstract",
+      "published_at": "2024-11-15",
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Modelled wave and sediment transport processes at White Beach and Bulabog Beach",
+        "Southwest and northeast monsoon exposure",
+        "Typhoon Haiyan storm-surge and sediment-transport response",
+        "Relative fetch and reef-crest effects at Bulabog",
+        "14-day model analysis limitation"
+      ],
+      "limitations": "The available source is a thesis abstract, not the full thesis or peer-reviewed journal article. Findings are model-based and limited to a 14-day analysis around fair-weather and Typhoon Haiyan conditions. They do not establish long-term shoreline trends, present-day wave climate, current conditions, or swimming safety. Do not extrapolate the model results to other Boracay beaches.",
+      "reliability": "university_research_abstract_for_modelled_process_context_only"
     }
   ]
 }
