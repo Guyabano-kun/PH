@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.13",
+  "dataset_version": "0.2.14",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -218,13 +218,23 @@
       "hydrodynamics": {
         "amihan_exposure": {
           "value": "generally_sheltered",
-          "status": "supported",
-          "source_ids": []
+          "status": "provisional",
+          "source_ids": [
+            "SRC-001",
+            "SRC-038"
+          ],
+          "note": "Directional exposure is inferred from the coarse east/west coast orientation and PAGASA's general monsoon wind directions. It is not a measured local wind/wave climatology; reefs, headlands and local bathymetry may alter actual nearshore conditions. Do not use this inference alone for activity suitability or safety ratings.",
+          "method": "inferred_from_coarse_coast_orientation_and_general_monsoon_wind_direction"
         },
         "habagat_exposure": {
           "value": "exposed",
-          "status": "supported",
-          "source_ids": []
+          "status": "provisional",
+          "source_ids": [
+            "SRC-001",
+            "SRC-038"
+          ],
+          "note": "Directional exposure is inferred from the coarse east/west coast orientation and PAGASA's general monsoon wind directions. It is not a measured local wind/wave climatology; reefs, headlands and local bathymetry may alter actual nearshore conditions. Do not use this inference alone for activity suitability or safety ratings.",
+          "method": "inferred_from_coarse_coast_orientation_and_general_monsoon_wind_direction"
         },
         "wave_climate": {
           "value": null,
@@ -663,6 +673,11 @@
           "source_id": "SRC-014",
           "claim": "Lakad Pilipinas 2023 lists a GPS reference point for White Beach: 11.965549, 121.921256. This is a secondary guide point, not a surveyed centroid.",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-038",
+          "claim": "PAGASA identifies Amihan as northeast monsoon winds and Habagat as southwest monsoon winds; combined with the coarse coast-side classification, this supports only a provisional directional exposure inference, not measured local wave conditions.",
+          "status": "provisional"
         }
       ],
       "data_quality": {
@@ -834,13 +849,23 @@
       "hydrodynamics": {
         "amihan_exposure": {
           "value": "exposed",
-          "status": "supported",
-          "source_ids": []
+          "status": "provisional",
+          "source_ids": [
+            "SRC-001",
+            "SRC-038"
+          ],
+          "note": "Directional exposure is inferred from the coarse east/west coast orientation and PAGASA's general monsoon wind directions. It is not a measured local wind/wave climatology; reefs, headlands and local bathymetry may alter actual nearshore conditions. Do not use this inference alone for activity suitability or safety ratings.",
+          "method": "inferred_from_coarse_coast_orientation_and_general_monsoon_wind_direction"
         },
         "habagat_exposure": {
           "value": "generally_sheltered",
-          "status": "supported",
-          "source_ids": []
+          "status": "provisional",
+          "source_ids": [
+            "SRC-001",
+            "SRC-038"
+          ],
+          "note": "Directional exposure is inferred from the coarse east/west coast orientation and PAGASA's general monsoon wind directions. It is not a measured local wind/wave climatology; reefs, headlands and local bathymetry may alter actual nearshore conditions. Do not use this inference alone for activity suitability or safety ratings.",
+          "method": "inferred_from_coarse_coast_orientation_and_general_monsoon_wind_direction"
         },
         "wave_climate": {
           "value": null,
@@ -1196,6 +1221,11 @@
           "source_id": "SRC-014",
           "claim": "Lakad Pilipinas 2023 lists a GPS reference point for Bulabog Beach: 11.965631, 121.928888. This is a secondary guide point, not a surveyed centroid.",
           "status": "supported"
+        },
+        {
+          "source_id": "SRC-038",
+          "claim": "PAGASA identifies Amihan as northeast monsoon winds and Habagat as southwest monsoon winds; combined with the coarse coast-side classification, this supports only a provisional directional exposure inference, not measured local wave conditions.",
+          "status": "provisional"
         }
       ],
       "data_quality": {
