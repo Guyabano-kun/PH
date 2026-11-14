@@ -3911,32 +3911,36 @@
       },
       "access": {
         "land_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Expedia describes access by motorized tricycle to Balinghai Beach Resort followed by a descent down numerous steps to the cove. The exact condition and accessibility of the stairway are not independently verified.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-084"
+          ],
+          "note": "Third-party attraction listing; not a surveyed route or accessibility assessment."
         },
         "public_access_status": {
-          "value": "conflicting_reports_public_vs_restricted",
-          "status": "unknown",
+          "value": "The beach is managed as part of Balinghai Beach Resort. Expedia reports that a limited number of non-resort visitors may obtain day access with a ticket and recommends reserving in advance. This is not evidence of unrestricted public walk-in access or a public right-of-way.",
+          "status": "supported",
           "source_ids": [
-            "SRC-011",
-            "SRC-014"
+            "SRC-084"
           ],
-          "note": "Lakad Pilipinas (2023) describes Balinghai as a public beach with free entry; the current Mapcarta/OSM-derived page says access is restricted and permission is required. No authoritative current access rule has been established."
+          "note": "Third-party listing; current day-visitor terms, capacity and admission must be confirmed directly with the resort."
         },
         "access_restrictions": {
-          "value": "access_permission_may_be_required",
-          "status": "provisional",
+          "value": "Non-resort day access is reported as limited and ticketed; advance reservation is recommended. Access involves numerous steps down to the cove.",
+          "status": "supported",
           "source_ids": [
-            "SRC-011",
-            "SRC-014"
+            "SRC-084"
           ],
-          "note": "Sources conflict; verify directly with the relevant landholder or local authority before publishing a definitive access statement."
+          "note": "Current price, daily capacity and reservation procedure are not verified from a direct resort source."
         },
         "facilities": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Expedia lists beach towel rental, a beach bar/restaurant, and rental or use options for kayak, stand-up paddleboard and snorkelling equipment.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-084"
+          ],
+          "note": "Third-party facility listing; availability and charges may change."
         },
         "lifeguard_coverage": {
           "value": null,
