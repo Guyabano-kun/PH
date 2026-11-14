@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.21",
+  "dataset_version": "0.2.22",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-14",
   "beach_count": 13,
@@ -76,6 +76,8 @@
     "CY 2022 pH annual averages were transcribed for the same 10 stations, but pH guideline/compliance was not normalized because the report's narrative and figure captions disagree on Class SB/SC pH ranges.",
     "At Puka Beach, DENR reported 75% TSS compliance across 12 sampling events and attributed elevated suspended solids at northern stations partly to strong waves and currents. This is a station-specific historical interpretation, not a measured wave-climate dataset.",
     "Coordinate audit against the 2022 DENR-EMB Annual Water Quality Assessment Report confirms that the 10 active station coordinates in the beach passports match the report's DMS table after conversion. Exact source DMS strings are now retained alongside decimal coordinates.",
-    "Ralph's Place has two distinct DENR station references: 2021 RSoBER Table 4.54 at 11°58′09.0″N, 121°55′38.4″E and 2022 Annual Assessment Report at 11°58′09.9″N, 121°55′39.3″E. The points are 38.9 m apart. The 2022 point remains the active station coordinate; the 2021 point is retained as a historical reference. Neither is a beach centroid."
+    "Ralph's Place has two distinct DENR station references: 2021 RSoBER Table 4.54 at 11°58′09.0″N, 121°55′38.4″E and 2022 Annual Assessment Report at 11°58′09.9″N, 121°55′39.3″E. The points are 38.9 m apart. The 2022 point remains the active station coordinate; the 2021 point is retained as a historical reference. Neither is a beach centroid.",
+    "Cross-check against 2023 RSoBER Table 4.50 confirms that all 10 target monitoring stations retain the same names, water-body classes and DMS coordinates as the 2022 DENR-EMB Annual Water Quality Assessment Report. Station coordinate records now cite both SRC-002 and SRC-024 with coordinate_source_years [2022, 2023].",
+    "Ralph's Place remains a documented exception across report vintages: 2021 RSoBER Table 4.54 coordinate differs by 38.9 m from the identical 2022 and 2023 station coordinates. The 2021 point remains a separate historical station reference."
   ]
 }
