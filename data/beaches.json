@@ -395,10 +395,11 @@
             "season": "October–May",
             "operator_source_ids": [
               "SRC-004",
-              "SRC-005"
+              "SRC-005",
+              "SRC-080"
             ],
             "status": "operator_meeting_point_confirmed",
-            "boarding_arrangement": "Operator-listed meeting point; exact boat boarding location to be confirmed with operator."
+            "boarding_arrangement": "Operator-listed meeting / activity point for the stated season. It is not evidence of an officially designated terminal or a guaranteed exact boat boarding position; reconfirm with the operator for each booking."
           }
         ],
         "itinerary_stops": [],
@@ -1050,15 +1051,15 @@
           "Current water quality",
           "Activity-specific hazards"
         ],
-        "last_reviewed": "2026-11-14"
+        "last_reviewed": "2026-11-15"
       },
       "internal": {
         "admin_ready": true,
         "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
         "change_tracking": {
           "created_at": "2026-11-14",
-          "updated_at": "2026-11-14",
-          "revision": 6
+          "updated_at": "2026-11-15",
+          "revision": 7
         }
       }
     },
@@ -1411,10 +1412,11 @@
             "season": "June–September",
             "operator_source_ids": [
               "SRC-004",
-              "SRC-005"
+              "SRC-005",
+              "SRC-080"
             ],
             "status": "operator_meeting_point_confirmed",
-            "boarding_arrangement": "Operator-listed meeting point; exact boat boarding location to be confirmed with operator."
+            "boarding_arrangement": "Operator-listed meeting / activity point for the stated season. It is not evidence of an officially designated terminal or a guaranteed exact boat boarding position; reconfirm with the operator for each booking."
           }
         ],
         "itinerary_stops": [],
@@ -1917,15 +1919,15 @@
           "Current water quality",
           "Activity-specific hazards"
         ],
-        "last_reviewed": "2026-11-14"
+        "last_reviewed": "2026-11-15"
       },
       "internal": {
         "admin_ready": true,
         "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
         "change_tracking": {
           "created_at": "2026-11-14",
-          "updated_at": "2026-11-14",
-          "revision": 3
+          "updated_at": "2026-11-15",
+          "revision": 4
         }
       }
     },
@@ -2219,9 +2221,10 @@
           {
             "status": "operator_itinerary_stop",
             "source_ids": [
-              "SRC-004"
+              "SRC-004",
+              "SRC-080"
             ],
-            "note": "Listed as a destination in an island-hopping itinerary; not evidence of regular departure from this beach."
+            "note": "Listed as a possible island-hopping destination; itinerary-dependent and weather-dependent. This does not establish a departure point or confirmed public landing permission."
           }
         ],
         "landing_access": {
@@ -2486,15 +2489,15 @@
           "Current water quality",
           "Activity-specific hazards"
         ],
-        "last_reviewed": "2026-11-14"
+        "last_reviewed": "2026-11-15"
       },
       "internal": {
         "admin_ready": true,
         "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
         "change_tracking": {
           "created_at": "2026-11-14",
-          "updated_at": "2026-11-14",
-          "revision": 4
+          "updated_at": "2026-11-15",
+          "revision": 5
         }
       }
     },
@@ -3693,7 +3696,18 @@
           "note": "A beach visit or presence of boats does not establish a regular legal tourist boarding point."
         },
         "seasonal_meeting_points": [],
-        "itinerary_stops": [],
+        "itinerary_stops": [
+          {
+            "status": "operator_itinerary_stop",
+            "season": "Amihan (October–May on the Traveloka listing)",
+            "source_ids": [
+              "SRC-078",
+              "SRC-079",
+              "SRC-080"
+            ],
+            "note": "Operator and marketplace itineraries list Balinghai as a possible Amihan-season stop. This does not establish a departure point, public access or confirmed landing permission; weather and final route apply."
+          }
+        ],
         "landing_access": {
           "value": null,
           "status": "unknown",
@@ -3794,15 +3808,15 @@
           "Current water quality",
           "Activity-specific hazards"
         ],
-        "last_reviewed": "2026-11-14"
+        "last_reviewed": "2026-11-15"
       },
       "internal": {
         "admin_ready": true,
         "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
         "change_tracking": {
           "created_at": "2026-11-14",
-          "updated_at": "2026-11-14",
-          "revision": 3
+          "updated_at": "2026-11-15",
+          "revision": 4
         }
       }
     },
@@ -4479,7 +4493,18 @@
           "note": "A beach visit or presence of boats does not establish a regular legal tourist boarding point."
         },
         "seasonal_meeting_points": [],
-        "itinerary_stops": [],
+        "itinerary_stops": [
+          {
+            "status": "operator_itinerary_stop",
+            "season": "Habagat (June–September on the Traveloka listing)",
+            "source_ids": [
+              "SRC-078",
+              "SRC-079",
+              "SRC-080"
+            ],
+            "note": "Operator and marketplace itineraries list Ilig-Iligan as a possible Habagat-season stop. This does not establish a departure point, public access or confirmed landing permission; weather and final route apply."
+          }
+        ],
         "landing_access": {
           "value": null,
           "status": "unknown",
@@ -4739,15 +4764,15 @@
           "Current water quality",
           "Activity-specific hazards"
         ],
-        "last_reviewed": "2026-11-14"
+        "last_reviewed": "2026-11-15"
       },
       "internal": {
         "admin_ready": true,
         "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
         "change_tracking": {
           "created_at": "2026-11-14",
-          "updated_at": "2026-11-14",
-          "revision": 4
+          "updated_at": "2026-11-15",
+          "revision": 5
         }
       }
     },
@@ -6004,9 +6029,10 @@
           {
             "status": "operator_itinerary_stop",
             "source_ids": [
-              "SRC-004"
+              "SRC-004",
+              "SRC-080"
             ],
-            "note": "Listed as a destination in an island-hopping itinerary; not evidence of regular departure from this beach."
+            "note": "Listed as a possible island-hopping destination / lunch location; itinerary-dependent and weather-dependent. This does not establish a departure point or confirmed public landing permission."
           }
         ],
         "landing_access": {
@@ -6273,15 +6299,15 @@
           "Current water quality",
           "Activity-specific hazards"
         ],
-        "last_reviewed": "2026-11-14"
+        "last_reviewed": "2026-11-15"
       },
       "internal": {
         "admin_ready": true,
         "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
         "change_tracking": {
           "created_at": "2026-11-14",
-          "updated_at": "2026-11-14",
-          "revision": 4
+          "updated_at": "2026-11-15",
+          "revision": 5
         }
       }
     },
