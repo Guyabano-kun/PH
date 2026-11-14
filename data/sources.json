@@ -487,7 +487,11 @@
         "CY 2023 annual monitoring results",
         "2019–2023 comparative monitoring data",
         "2023 regular monitoring station inventory, water-body classes and DMS coordinates (Table 4.50)",
-        "Comparative CY 2018–2023 station-specific fecal-coliform geometric means for Boracay Coastline Class SB and Class SC"
+        "Comparative CY 2018–2023 station-specific fecal-coliform geometric means for Boracay Coastline Class SB and Class SC",
+        "Lugutan (Mixing Zone), Brgy. Manoc-Manoc",
+        "Lugutan mixing-zone station coordinate and Class SC classification",
+        "CY 2022 and CY 2023 Lugutan mixing-zone fecal-coliform comparison",
+        "Lugutan Drainage Outfall, Kingfisher outfall and Wetland 6 runoff context"
       ],
       "limitations": "Station-specific annual results, not whole-beach measurements or current real-time bathing-water advice. The report's comparative CY 2018–2023 fecal-coliform chart provides annual geometric means; it does not provide event-level compliance percentages or sampling-event counts for every comparative year. Separate CY 2023 compliance figures are captioned Jan–Nov 2023 while report narrative refers to 12 sampling events; this discrepancy remains documented. The report contains conflicting 2023 TSS values for Ralph's Place (32.3 and 33.4 mg/L); that TSS value is excluded. Station inventory confirms names, classes and coordinates; it does not independently prove every sampling event used the same field position beyond the published station record.",
       "reliability": "official_government_annual_report"
