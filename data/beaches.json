@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.25",
+  "dataset_version": "0.2.26",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -421,7 +421,11 @@
         "protected_area_status": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "source_ids": [
+            "SRC-047",
+            "SRC-048"
+          ]
         },
         "monitoring_stations": [
           {
@@ -940,6 +944,25 @@
               }
             ]
           }
+        ],
+        "conservation_designations": [
+          {
+            "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+            "designation_type": "water_quality_management_and_conservation_area",
+            "legal_instrument": "DENR Administrative Order No. 2019-15",
+            "designation_date": "2019-11-05",
+            "status": "designated",
+            "geographic_scope": "Boracay Island; the order identifies the three island barangays of Yapak, Balabag and Manoc-manoc.",
+            "beach_level_relation": "The order explicitly names this locality/shoreline segment in its boundary description. This is not a surveyed beach boundary.",
+            "boundary_reference": {
+              "control_points": "PT60–PT64",
+              "description": "White/Long Beach, Barangays Manoc-manoc and Balabag"
+            },
+            "source_ids": [
+              "SRC-047"
+            ],
+            "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          }
         ]
       },
       "evidence": [
@@ -1380,7 +1403,11 @@
         "protected_area_status": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "source_ids": [
+            "SRC-047",
+            "SRC-048"
+          ]
         },
         "monitoring_stations": [
           {
@@ -1759,6 +1786,25 @@
               "temperature": "Conflicting secondary reports: Daily Tribune says compliant at all four sites; Panay News reports elevated readings at some locations. Exact values and affected outfall names are not provided. Status unconfirmed."
             }
           }
+        ],
+        "conservation_designations": [
+          {
+            "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+            "designation_type": "water_quality_management_and_conservation_area",
+            "legal_instrument": "DENR Administrative Order No. 2019-15",
+            "designation_date": "2019-11-05",
+            "status": "designated",
+            "geographic_scope": "Boracay Island; the order identifies the three island barangays of Yapak, Balabag and Manoc-manoc.",
+            "beach_level_relation": "The order explicitly names this locality/shoreline segment in its boundary description. This is not a surveyed beach boundary.",
+            "boundary_reference": {
+              "control_points": "PT12–PT14",
+              "description": "Bulabog Beach, Barangay Balabag"
+            },
+            "source_ids": [
+              "SRC-047"
+            ],
+            "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          }
         ]
       },
       "evidence": [
@@ -2135,7 +2181,11 @@
         "protected_area_status": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "source_ids": [
+            "SRC-047",
+            "SRC-048"
+          ]
         },
         "monitoring_stations": [
           {
@@ -2280,6 +2330,22 @@
                 "notes": "The report records only 75% TSS compliance (9 of 12 events) at Puka Beach and attributes elevated suspended solids at northern stations partly to strong waves and currents. This is the report's station-level interpretation, not a measured wave record."
               }
             ]
+          }
+        ],
+        "conservation_designations": [
+          {
+            "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+            "designation_type": "water_quality_management_and_conservation_area",
+            "legal_instrument": "DENR Administrative Order No. 2019-15",
+            "designation_date": "2019-11-05",
+            "status": "designated",
+            "geographic_scope": "Boracay Island; the order identifies the three island barangays of Yapak, Balabag and Manoc-manoc.",
+            "beach_level_relation": "The order designates Boracay Island as a whole. No separate beach-specific boundary segment is named for this record; exact local intersection has not been independently overlaid.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-047"
+            ],
+            "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
           }
         ]
       },
@@ -2649,7 +2715,11 @@
         "protected_area_status": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "source_ids": [
+            "SRC-047",
+            "SRC-048"
+          ]
         },
         "monitoring_stations": [
           {
@@ -2793,6 +2863,25 @@
                 "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
               }
             ]
+          }
+        ],
+        "conservation_designations": [
+          {
+            "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+            "designation_type": "water_quality_management_and_conservation_area",
+            "legal_instrument": "DENR Administrative Order No. 2019-15",
+            "designation_date": "2019-11-05",
+            "status": "designated",
+            "geographic_scope": "Boracay Island; the order identifies the three island barangays of Yapak, Balabag and Manoc-manoc.",
+            "beach_level_relation": "The order explicitly names this locality/shoreline segment in its boundary description. This is not a surveyed beach boundary.",
+            "boundary_reference": {
+              "control_points": "PT65",
+              "description": "Sitio Diniwid, Barangay Balabag"
+            },
+            "source_ids": [
+              "SRC-047"
+            ],
+            "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
           }
         ]
       },
@@ -3141,9 +3230,32 @@
         "protected_area_status": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "source_ids": [
+            "SRC-047",
+            "SRC-048"
+          ]
         },
-        "monitoring_stations": []
+        "monitoring_stations": [],
+        "conservation_designations": [
+          {
+            "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+            "designation_type": "water_quality_management_and_conservation_area",
+            "legal_instrument": "DENR Administrative Order No. 2019-15",
+            "designation_date": "2019-11-05",
+            "status": "designated",
+            "geographic_scope": "Boracay Island; the order identifies the three island barangays of Yapak, Balabag and Manoc-manoc.",
+            "beach_level_relation": "The order explicitly names this locality/shoreline segment in its boundary description. This is not a surveyed beach boundary.",
+            "boundary_reference": {
+              "control_points": "PT66–PT67",
+              "description": "Sitio Punta Bunga, Barangay Yapak"
+            },
+            "source_ids": [
+              "SRC-047"
+            ],
+            "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          }
+        ]
       },
       "evidence": [
         {
@@ -3481,9 +3593,29 @@
         "protected_area_status": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "source_ids": [
+            "SRC-047",
+            "SRC-048"
+          ]
         },
-        "monitoring_stations": []
+        "monitoring_stations": [],
+        "conservation_designations": [
+          {
+            "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+            "designation_type": "water_quality_management_and_conservation_area",
+            "legal_instrument": "DENR Administrative Order No. 2019-15",
+            "designation_date": "2019-11-05",
+            "status": "designated",
+            "geographic_scope": "Boracay Island; the order identifies the three island barangays of Yapak, Balabag and Manoc-manoc.",
+            "beach_level_relation": "The order designates Boracay Island as a whole. No separate beach-specific boundary segment is named for this record; exact local intersection has not been independently overlaid.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-047"
+            ],
+            "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          }
+        ]
       },
       "evidence": [
         {
@@ -3816,9 +3948,32 @@
         "protected_area_status": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "source_ids": [
+            "SRC-047",
+            "SRC-048"
+          ]
         },
-        "monitoring_stations": []
+        "monitoring_stations": [],
+        "conservation_designations": [
+          {
+            "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+            "designation_type": "water_quality_management_and_conservation_area",
+            "legal_instrument": "DENR Administrative Order No. 2019-15",
+            "designation_date": "2019-11-05",
+            "status": "designated",
+            "geographic_scope": "Boracay Island; the order identifies the three island barangays of Yapak, Balabag and Manoc-manoc.",
+            "beach_level_relation": "The order explicitly names this locality/shoreline segment in its boundary description. This is not a surveyed beach boundary.",
+            "boundary_reference": {
+              "control_points": "PT67–PT68",
+              "description": "In front of Banyugan Beach, Barangay Yapak"
+            },
+            "source_ids": [
+              "SRC-047"
+            ],
+            "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          }
+        ]
       },
       "evidence": [
         {
@@ -4171,7 +4326,11 @@
         "protected_area_status": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "source_ids": [
+            "SRC-047",
+            "SRC-048"
+          ]
         },
         "monitoring_stations": [
           {
@@ -4315,6 +4474,25 @@
                 "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
               }
             ]
+          }
+        ],
+        "conservation_designations": [
+          {
+            "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+            "designation_type": "water_quality_management_and_conservation_area",
+            "legal_instrument": "DENR Administrative Order No. 2019-15",
+            "designation_date": "2019-11-05",
+            "status": "designated",
+            "geographic_scope": "Boracay Island; the order identifies the three island barangays of Yapak, Balabag and Manoc-manoc.",
+            "beach_level_relation": "The order explicitly names this locality/shoreline segment in its boundary description. This is not a surveyed beach boundary.",
+            "boundary_reference": {
+              "control_points": "PT1–PT4",
+              "description": "Sitio Ilig-Iligan, Barangay Yapak"
+            },
+            "source_ids": [
+              "SRC-047"
+            ],
+            "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
           }
         ]
       },
@@ -4669,7 +4847,11 @@
         "protected_area_status": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "source_ids": [
+            "SRC-047",
+            "SRC-048"
+          ]
         },
         "monitoring_stations": [
           {
@@ -4690,6 +4872,25 @@
               "SRC-010"
             ],
             "interpretation": "This coordinate is from the 2006–2019 station inventory reproduced in the 2021 report. Lapuz-Lapuz is not listed in the report's separate CY 2020-onwards station table. No matching 2021 or 2022 annual water-quality result is linked here. This station point is not a beach centroid."
+          }
+        ],
+        "conservation_designations": [
+          {
+            "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+            "designation_type": "water_quality_management_and_conservation_area",
+            "legal_instrument": "DENR Administrative Order No. 2019-15",
+            "designation_date": "2019-11-05",
+            "status": "designated",
+            "geographic_scope": "Boracay Island; the order identifies the three island barangays of Yapak, Balabag and Manoc-manoc.",
+            "beach_level_relation": "The order explicitly names this locality/shoreline segment in its boundary description. This is not a surveyed beach boundary.",
+            "boundary_reference": {
+              "control_points": "PT8",
+              "description": "Lapuz-Lapuz Point, Barangay Balabag"
+            },
+            "source_ids": [
+              "SRC-047"
+            ],
+            "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
           }
         ]
       },
@@ -5041,7 +5242,11 @@
         "protected_area_status": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "source_ids": [
+            "SRC-047",
+            "SRC-048"
+          ]
         },
         "monitoring_stations": [
           {
@@ -5185,6 +5390,25 @@
                 "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
               }
             ]
+          }
+        ],
+        "conservation_designations": [
+          {
+            "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+            "designation_type": "water_quality_management_and_conservation_area",
+            "legal_instrument": "DENR Administrative Order No. 2019-15",
+            "designation_date": "2019-11-05",
+            "status": "designated",
+            "geographic_scope": "Boracay Island; the order identifies the three island barangays of Yapak, Balabag and Manoc-manoc.",
+            "beach_level_relation": "The order explicitly names this locality/shoreline segment in its boundary description. This is not a surveyed beach boundary.",
+            "boundary_reference": {
+              "control_points": "PT34–PT43",
+              "description": "Sitio Tulubhan, Barangay Manoc-manoc"
+            },
+            "source_ids": [
+              "SRC-047"
+            ],
+            "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
           }
         ]
       },
@@ -5552,7 +5776,11 @@
         "protected_area_status": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "source_ids": [
+            "SRC-047",
+            "SRC-048"
+          ]
         },
         "monitoring_stations": [
           {
@@ -5696,6 +5924,25 @@
                 "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
               }
             ]
+          }
+        ],
+        "conservation_designations": [
+          {
+            "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+            "designation_type": "water_quality_management_and_conservation_area",
+            "legal_instrument": "DENR Administrative Order No. 2019-15",
+            "designation_date": "2019-11-05",
+            "status": "designated",
+            "geographic_scope": "Boracay Island; the order identifies the three island barangays of Yapak, Balabag and Manoc-manoc.",
+            "beach_level_relation": "The order explicitly names this locality/shoreline segment in its boundary description. This is not a surveyed beach boundary.",
+            "boundary_reference": {
+              "control_points": "PT44–PT51",
+              "description": "Sitio Tambisaan, Barangay Manoc-manoc"
+            },
+            "source_ids": [
+              "SRC-047"
+            ],
+            "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
           }
         ]
       },
@@ -6056,7 +6303,11 @@
         "protected_area_status": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "source_ids": [
+            "SRC-047",
+            "SRC-048"
+          ]
         },
         "monitoring_stations": [
           {
@@ -6200,6 +6451,22 @@
                 "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
               }
             ]
+          }
+        ],
+        "conservation_designations": [
+          {
+            "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+            "designation_type": "water_quality_management_and_conservation_area",
+            "legal_instrument": "DENR Administrative Order No. 2019-15",
+            "designation_date": "2019-11-05",
+            "status": "designated",
+            "geographic_scope": "Boracay Island; the order identifies the three island barangays of Yapak, Balabag and Manoc-manoc.",
+            "beach_level_relation": "The order designates Boracay Island as a whole. No separate beach-specific boundary segment is named for this record; exact local intersection has not been independently overlaid.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-047"
+            ],
+            "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
           }
         ]
       },
@@ -6524,9 +6791,29 @@
         "protected_area_status": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "A Boracay-wide WQMACA designation is confirmed under DENR Administrative Order No. 2019-15, but this is not equivalent to proof of a separate NIPAS protected area or site-specific marine protected area. Coral Triangle Atlas lists a 1978 Boracay Island Tourist Zone Marine Reserve record, but provides no legal instrument, area or boundary polygon. Separate MPA/NIPAS status and site-level boundaries remain unverified.",
+          "source_ids": [
+            "SRC-047",
+            "SRC-048"
+          ]
         },
-        "monitoring_stations": []
+        "monitoring_stations": [],
+        "conservation_designations": [
+          {
+            "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+            "designation_type": "water_quality_management_and_conservation_area",
+            "legal_instrument": "DENR Administrative Order No. 2019-15",
+            "designation_date": "2019-11-05",
+            "status": "designated",
+            "geographic_scope": "Boracay Island; the order identifies the three island barangays of Yapak, Balabag and Manoc-manoc.",
+            "beach_level_relation": "The order designates Boracay Island as a whole. No separate beach-specific boundary segment is named for this record; exact local intersection has not been independently overlaid.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-047"
+            ],
+            "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          }
+        ]
       },
       "evidence": [
         {
