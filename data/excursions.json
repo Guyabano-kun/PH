@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-14",
+  "definitions": {
+    "departure": "A verified operator or officially designated point where guests meet and board for a boat trip. A meeting point is not automatically a legally designated boarding terminal.",
+    "itinerary_stop": "A beach/island visited during a trip; does not imply departures originate there.",
+    "transport_port": "A port used for inter-island passenger transport; not automatically an island-hopping departure point."
+  },
+  "departure_points": [
+    {
+      "id": "DEP-001",
+      "beach_id": "white",
+      "location": "Astoria Boracay beachfront, Station 1",
+      "season": "October–May",
+      "status": "operator_meeting_point_confirmed",
+      "source_ids": [
+        "SRC-004",
+        "SRC-005"
+      ],
+      "limitations": "Operator-specific meeting point; exact boarding location and operation must be reconfirmed for each booking."
+    },
+    {
+      "id": "DEP-002",
+      "beach_id": "bulabog",
+      "location": "Beachfront in front of Lucky Tito Resort, near Moksha Cafe",
+      "season": "June–September",
+      "status": "operator_meeting_point_confirmed",
+      "source_ids": [
+        "SRC-004",
+        "SRC-005"
+      ],
+      "limitations": "Operator-specific seasonal meeting point; exact boarding location and operation must be reconfirmed for each booking."
+    }
+  ],
+  "itinerary_stops": [
+    {
+      "id": "STOP-001",
+      "beach_id": "puka",
+      "status": "operator_itinerary_stop",
+      "source_ids": [
+        "SRC-004"
+      ],
+      "limitations": "Itinerary-dependent; no departure status implied."
+    },
+    {
+      "id": "STOP-002",
+      "beach_id": "tambisaan",
+      "status": "operator_itinerary_stop",
+      "source_ids": [
+        "SRC-004"
+      ],
+      "limitations": "Itinerary-dependent; no departure status implied."
+    }
+  ],
+  "transport_ports": [
+    {
+      "id": "PORT-001",
+      "name": "Cagban Jetty Port",
+      "type": "inter-island_transport_port",
+      "source_ids": [
+        "SRC-003"
+      ],
+      "limitations": "Not classified as a routine island-hopping beach departure point."
+    },
+    {
+      "id": "PORT-002",
+      "name": "Tambisaan Pier",
+      "type": "port_or_pier_facility",
+      "source_ids": [
+        "SRC-002",
+        "SRC-003"
+      ],
+      "limitations": "Pier/port function must be kept separate from recreational beach access and excursion departure status."
+    }
+  ]
+}
