@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.19",
+  "dataset_version": "0.2.20",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -483,6 +483,51 @@
                   "compliant_percent": 100,
                   "non_compliant_percent": 0
                 }
+              },
+              {
+                "year": 2022,
+                "reporting_period": "CY 2022",
+                "primary_parameter_sampling_events": 12,
+                "dissolved_oxygen_average_mg_l": 6.4,
+                "dissolved_oxygen_guideline_mg_l": 6,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 83,
+                  "non_compliant_percent": 17
+                },
+                "total_suspended_solids_average_mg_l": 11.3,
+                "total_suspended_solids_guideline_mg_l": 50,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 92,
+                  "non_compliant_percent": 8
+                },
+                "water_temperature_average_c": 27.4,
+                "water_temperature_guideline_range_c": [
+                  26,
+                  30
+                ],
+                "water_temperature_compliance": {
+                  "compliant_percent": 67,
+                  "non_compliant_percent": 33
+                },
+                "ph_average": 7.5,
+                "ph_guideline_status": "not_normalized_due_to_internal_report_conflict",
+                "ph_note": "The report's narrative and figure captions disagree on Class SB/SC pH guideline ranges. Annual average is transcribed; compliance percentage and guideline are not normalized.",
+                "phosphate_as_phosphorus_average_mg_p_l": 0.004,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 0.075,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "source_ids": [
+                  "SRC-002"
+                ],
+                "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
               }
             ]
           },
@@ -556,6 +601,51 @@
                   "compliant_percent": 100,
                   "non_compliant_percent": 0
                 }
+              },
+              {
+                "year": 2022,
+                "reporting_period": "CY 2022",
+                "primary_parameter_sampling_events": 12,
+                "dissolved_oxygen_average_mg_l": 6.7,
+                "dissolved_oxygen_guideline_mg_l": 6,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 83,
+                  "non_compliant_percent": 17
+                },
+                "total_suspended_solids_average_mg_l": 9,
+                "total_suspended_solids_guideline_mg_l": 50,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "water_temperature_average_c": 27.4,
+                "water_temperature_guideline_range_c": [
+                  26,
+                  30
+                ],
+                "water_temperature_compliance": {
+                  "compliant_percent": 75,
+                  "non_compliant_percent": 25
+                },
+                "ph_average": 7.4,
+                "ph_guideline_status": "not_normalized_due_to_internal_report_conflict",
+                "ph_note": "The report's narrative and figure captions disagree on Class SB/SC pH guideline ranges. Annual average is transcribed; compliance percentage and guideline are not normalized.",
+                "phosphate_as_phosphorus_average_mg_p_l": 0.001,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 0.12,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "source_ids": [
+                  "SRC-002"
+                ],
+                "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
               }
             ]
           },
@@ -629,6 +719,51 @@
                   "compliant_percent": 100,
                   "non_compliant_percent": 0
                 }
+              },
+              {
+                "year": 2022,
+                "reporting_period": "CY 2022",
+                "primary_parameter_sampling_events": 12,
+                "dissolved_oxygen_average_mg_l": 6.5,
+                "dissolved_oxygen_guideline_mg_l": 6,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 83,
+                  "non_compliant_percent": 17
+                },
+                "total_suspended_solids_average_mg_l": 12,
+                "total_suspended_solids_guideline_mg_l": 50,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "water_temperature_average_c": 27.3,
+                "water_temperature_guideline_range_c": [
+                  26,
+                  30
+                ],
+                "water_temperature_compliance": {
+                  "compliant_percent": 75,
+                  "non_compliant_percent": 25
+                },
+                "ph_average": 7.5,
+                "ph_guideline_status": "not_normalized_due_to_internal_report_conflict",
+                "ph_note": "The report's narrative and figure captions disagree on Class SB/SC pH guideline ranges. Annual average is transcribed; compliance percentage and guideline are not normalized.",
+                "phosphate_as_phosphorus_average_mg_p_l": 0.001,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 0.216,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "source_ids": [
+                  "SRC-002"
+                ],
+                "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
               }
             ]
           }
@@ -1209,6 +1344,51 @@
                 ],
                 "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
                 "notes": "TSS excluded because the 2023 report gives conflicting Ralph's Place values (32.3 and 33.4 mg/L) in separate figures."
+              },
+              {
+                "year": 2022,
+                "reporting_period": "CY 2022",
+                "primary_parameter_sampling_events": 12,
+                "dissolved_oxygen_average_mg_l": 5.5,
+                "dissolved_oxygen_guideline_mg_l": 5,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 58,
+                  "non_compliant_percent": 42
+                },
+                "total_suspended_solids_average_mg_l": 38,
+                "total_suspended_solids_guideline_mg_l": 80,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 92,
+                  "non_compliant_percent": 8
+                },
+                "water_temperature_average_c": 28.2,
+                "water_temperature_guideline_range_c": [
+                  25,
+                  31
+                ],
+                "water_temperature_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "ph_average": 7.3,
+                "ph_guideline_status": "not_normalized_due_to_internal_report_conflict",
+                "ph_note": "The report's narrative and figure captions disagree on Class SB/SC pH guideline ranges. Annual average is transcribed; compliance percentage and guideline are not normalized.",
+                "phosphate_as_phosphorus_average_mg_p_l": 0.008,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 0.146,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "source_ids": [
+                  "SRC-002"
+                ],
+                "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
               }
             ]
           }
@@ -1835,6 +2015,52 @@
                   "compliant_percent": 100,
                   "non_compliant_percent": 0
                 }
+              },
+              {
+                "year": 2022,
+                "reporting_period": "CY 2022",
+                "primary_parameter_sampling_events": 12,
+                "dissolved_oxygen_average_mg_l": 6.7,
+                "dissolved_oxygen_guideline_mg_l": 6,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "total_suspended_solids_average_mg_l": 24.7,
+                "total_suspended_solids_guideline_mg_l": 50,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 75,
+                  "non_compliant_percent": 25
+                },
+                "water_temperature_average_c": 27.8,
+                "water_temperature_guideline_range_c": [
+                  26,
+                  30
+                ],
+                "water_temperature_compliance": {
+                  "compliant_percent": 75,
+                  "non_compliant_percent": 25
+                },
+                "ph_average": 7.4,
+                "ph_guideline_status": "not_normalized_due_to_internal_report_conflict",
+                "ph_note": "The report's narrative and figure captions disagree on Class SB/SC pH guideline ranges. Annual average is transcribed; compliance percentage and guideline are not normalized.",
+                "phosphate_as_phosphorus_average_mg_p_l": 0.02,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 0.129,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "source_ids": [
+                  "SRC-002"
+                ],
+                "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset.",
+                "notes": "The report records only 75% TSS compliance (9 of 12 events) at Puka Beach and attributes elevated suspended solids at northern stations partly to strong waves and currents. This is the report's station-level interpretation, not a measured wave record."
               }
             ]
           }
@@ -2268,6 +2494,51 @@
                   "compliant_percent": 100,
                   "non_compliant_percent": 0
                 }
+              },
+              {
+                "year": 2022,
+                "reporting_period": "CY 2022",
+                "primary_parameter_sampling_events": 12,
+                "dissolved_oxygen_average_mg_l": 6.6,
+                "dissolved_oxygen_guideline_mg_l": 6,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 83,
+                  "non_compliant_percent": 17
+                },
+                "total_suspended_solids_average_mg_l": 15.3,
+                "total_suspended_solids_guideline_mg_l": 50,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 92,
+                  "non_compliant_percent": 8
+                },
+                "water_temperature_average_c": 28,
+                "water_temperature_guideline_range_c": [
+                  26,
+                  30
+                ],
+                "water_temperature_compliance": {
+                  "compliant_percent": 75,
+                  "non_compliant_percent": 25
+                },
+                "ph_average": 7.3,
+                "ph_guideline_status": "not_normalized_due_to_internal_report_conflict",
+                "ph_note": "The report's narrative and figure captions disagree on Class SB/SC pH guideline ranges. Annual average is transcribed; compliance percentage and guideline are not normalized.",
+                "phosphate_as_phosphorus_average_mg_p_l": 0.001,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 0.687,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "source_ids": [
+                  "SRC-002"
+                ],
+                "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
               }
             ]
           }
@@ -3710,6 +3981,51 @@
                   "compliant_percent": 100,
                   "non_compliant_percent": 0
                 }
+              },
+              {
+                "year": 2022,
+                "reporting_period": "CY 2022",
+                "primary_parameter_sampling_events": 12,
+                "dissolved_oxygen_average_mg_l": 6.5,
+                "dissolved_oxygen_guideline_mg_l": 6,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 83,
+                  "non_compliant_percent": 17
+                },
+                "total_suspended_solids_average_mg_l": 11.9,
+                "total_suspended_solids_guideline_mg_l": 50,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 92,
+                  "non_compliant_percent": 8
+                },
+                "water_temperature_average_c": 28.1,
+                "water_temperature_guideline_range_c": [
+                  26,
+                  30
+                ],
+                "water_temperature_compliance": {
+                  "compliant_percent": 83,
+                  "non_compliant_percent": 17
+                },
+                "ph_average": 7.5,
+                "ph_guideline_status": "not_normalized_due_to_internal_report_conflict",
+                "ph_note": "The report's narrative and figure captions disagree on Class SB/SC pH guideline ranges. Annual average is transcribed; compliance percentage and guideline are not normalized.",
+                "phosphate_as_phosphorus_average_mg_p_l": 0.01,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 0.1,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "source_ids": [
+                  "SRC-002"
+                ],
+                "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
               }
             ]
           }
@@ -4502,6 +4818,51 @@
                   "compliant_percent": 100,
                   "non_compliant_percent": 0
                 }
+              },
+              {
+                "year": 2022,
+                "reporting_period": "CY 2022",
+                "primary_parameter_sampling_events": 12,
+                "dissolved_oxygen_average_mg_l": 6,
+                "dissolved_oxygen_guideline_mg_l": 6,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 58,
+                  "non_compliant_percent": 42
+                },
+                "total_suspended_solids_average_mg_l": 13.2,
+                "total_suspended_solids_guideline_mg_l": 50,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "water_temperature_average_c": 27.9,
+                "water_temperature_guideline_range_c": [
+                  26,
+                  30
+                ],
+                "water_temperature_compliance": {
+                  "compliant_percent": 83,
+                  "non_compliant_percent": 17
+                },
+                "ph_average": 7.4,
+                "ph_guideline_status": "not_normalized_due_to_internal_report_conflict",
+                "ph_note": "The report's narrative and figure captions disagree on Class SB/SC pH guideline ranges. Annual average is transcribed; compliance percentage and guideline are not normalized.",
+                "phosphate_as_phosphorus_average_mg_p_l": 0.004,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 1.208,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "source_ids": [
+                  "SRC-002"
+                ],
+                "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
               }
             ]
           }
@@ -4933,6 +5294,51 @@
                   "compliant_percent": 100,
                   "non_compliant_percent": 0
                 }
+              },
+              {
+                "year": 2022,
+                "reporting_period": "CY 2022",
+                "primary_parameter_sampling_events": 12,
+                "dissolved_oxygen_average_mg_l": 6.1,
+                "dissolved_oxygen_guideline_mg_l": 5,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 92,
+                  "non_compliant_percent": 8
+                },
+                "total_suspended_solids_average_mg_l": 7.1,
+                "total_suspended_solids_guideline_mg_l": 80,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "water_temperature_average_c": 27.4,
+                "water_temperature_guideline_range_c": [
+                  25,
+                  31
+                ],
+                "water_temperature_compliance": {
+                  "compliant_percent": 92,
+                  "non_compliant_percent": 8
+                },
+                "ph_average": 7.7,
+                "ph_guideline_status": "not_normalized_due_to_internal_report_conflict",
+                "ph_note": "The report's narrative and figure captions disagree on Class SB/SC pH guideline ranges. Annual average is transcribed; compliance percentage and guideline are not normalized.",
+                "phosphate_as_phosphorus_average_mg_p_l": 0.001,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 1.133,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "source_ids": [
+                  "SRC-002"
+                ],
+                "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
               }
             ]
           }
@@ -5357,6 +5763,51 @@
                   "compliant_percent": 100,
                   "non_compliant_percent": 0
                 }
+              },
+              {
+                "year": 2022,
+                "reporting_period": "CY 2022",
+                "primary_parameter_sampling_events": 12,
+                "dissolved_oxygen_average_mg_l": 6.2,
+                "dissolved_oxygen_guideline_mg_l": 6,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 67,
+                  "non_compliant_percent": 33
+                },
+                "total_suspended_solids_average_mg_l": 9.4,
+                "total_suspended_solids_guideline_mg_l": 50,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "water_temperature_average_c": 27.2,
+                "water_temperature_guideline_range_c": [
+                  26,
+                  30
+                ],
+                "water_temperature_compliance": {
+                  "compliant_percent": 75,
+                  "non_compliant_percent": 25
+                },
+                "ph_average": 7.6,
+                "ph_guideline_status": "not_normalized_due_to_internal_report_conflict",
+                "ph_note": "The report's narrative and figure captions disagree on Class SB/SC pH guideline ranges. Annual average is transcribed; compliance percentage and guideline are not normalized.",
+                "phosphate_as_phosphorus_average_mg_p_l": 0.003,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 0.364,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "source_ids": [
+                  "SRC-002"
+                ],
+                "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's existing Oil & Grease dataset."
               }
             ]
           }
