@@ -502,7 +502,7 @@
         "January–July 2024 data presented to BIWQMACA",
         "2024 water-quality management actions"
       ],
-      "limitations": "The report is indexed and confirms that January–July 2024 Boracay water-quality data were presented, but the PDF could not be retrieved for full table validation during this research pass. No station-level numeric values are transcribed from this source.",
+      "limitations": "The official PDF is indexed and confirms January–July 2024 Boracay water-quality data were presented to BIWQMACA, but the PDF could not be retrieved for full table validation during this research pass. The EMB Region 6 WQMA page currently links the Boracay Annual Assessment Report 2022. No station-level numeric values for 2024 are transcribed from this source.",
       "reliability": "official_government_annual_report"
     },
     {
@@ -779,6 +779,56 @@
       ],
       "limitations": "The article describes White Beach as approximately 4 km and Bulabog as approximately 2.5 km. It describes an offshore reef and seagrass beds at Bulabog, but does not provide beach-boundary or reef-polygon coordinates. Field sampling described in the methods was conducted in 2011–2012; the article's publication year must not be mistaken for the sampling year.",
       "reliability": "peer_reviewed_scientific_article"
+    },
+    {
+      "id": "SRC-043",
+      "title": "Boracay outfalls pass initial water quality tests",
+      "publisher": "Daily Tribune, reporting EMB Region VI",
+      "url": "https://tribune.net.ph/2026/03/04/boracay-outfalls-pass-initial-water-quality-tests",
+      "type": "secondary_news_report_of_current_Denr_outfall_monitoring",
+      "published_at": "2026-03-05",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "EMB-6 and BIWQMACA two-day outfall sampling on 2–3 March 2026",
+        "Bulabog Outfall 1",
+        "Malabunot Outfall 2",
+        "Bulabog Drainage Outfall",
+        "Lugutan Outfall",
+        "On-site DO, temperature and pH compliance; laboratory TSS, color and fecal-coliform samples pending"
+      ],
+      "limitations": "Reports outfall samples, not ambient recreational-water stations or beach bathing points. No numerical values or coordinates are published; laboratory results for TSS, color and fecal coliform were pending at publication.",
+      "reliability": "secondary_report_attributing_EMB_region_VI"
+    },
+    {
+      "id": "SRC-044",
+      "title": "DENR-EMB says Boracay waters within safety standards",
+      "publisher": "Manila Bulletin, reporting DENR-EMB Western Visayas",
+      "url": "https://mb.com.ph/2024/7/22/denr-says-boracay-waters-within-standards",
+      "type": "secondary_news_report_of_WQMA_monitoring",
+      "published_at": "2024-07-22",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "January–June 2024 monitoring",
+        "All 24 Boracay monitoring stations reported as passing the water-safety test"
+      ],
+      "limitations": "No station-level values, individual parameter breakdown or sampling-site table is published in the article. Treat as a reported WQMA-level/monitoring-program summary, not a substitute for the 2024 RSoBER station tables.",
+      "reliability": "secondary_report_attributing_Denr_EMB"
+    },
+    {
+      "id": "SRC-045",
+      "title": "Philippine Development Report 2024 – Annexes",
+      "publisher": "Department of Economy, Planning, and Development",
+      "url": "https://depdev.gov.ph/wp-content/uploads/2025/01/PDR-2024-Annexes.pdf",
+      "type": "official_national_development_report",
+      "published_at": "2025-01",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "2024 Water Quality Management Area performance",
+        "Boracay Island among three WQMAs reported to meet fecal-coliform guideline values",
+        "All 40 WQMAs reported compliant with pH and nitrate guideline values"
+      ],
+      "limitations": "Aggregated WQMA-level performance, not individual Boracay station results or beach-specific water quality. Does not provide station names, numerical values or sampling dates for Boracay.",
+      "reliability": "official_national_government_report"
     }
   ]
 }
