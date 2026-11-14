@@ -302,6 +302,15 @@
             "season": "Habagat (approximately June–October)",
             "observation": "Waves on White Beach may be somewhat stronger during this season.",
             "scope": "Qualitative seasonal description; no wave height, period or exceedance frequency."
+          },
+          {
+            "season": "Modelled southwest-monsoon and Typhoon Haiyan conditions; 14-day study window",
+            "observation": "The UP Diliman IESM thesis abstract reports that White Beach faces southwest winds directly. Under southwest-monsoon conditions, modelled wind and wave setup was higher at White Beach than at Bulabog. During the Haiyan case, the model produced an abrupt White Beach water-level increase with a reported maximum of 1.2 m, alongside erosion and accretion patterns. Under southwest-monsoon conditions, offshore erosion was accompanied by predominantly onshore sediment transport and deposition at the beach.",
+            "scope": "Model-based thesis abstract, not a measured long-term shoreline record. The 14-day analysis cannot establish long-term erosion trends or current conditions. Not a current hazard or swimming-safety assessment.",
+            "source_ids": [
+              "SRC-081"
+            ],
+            "evidence_status": "research_abstract_modelled_context"
           }
         ],
         "surface_current_context": {
@@ -1437,6 +1446,15 @@
             "season": "Summer (March–May, as defined in the article)",
             "observation": "Bulabog / the eastern side is described as the windward side during summer.",
             "scope": "Qualitative description of Sites 5–7 along Bulabog; no wind-speed or wave-height measurements."
+          },
+          {
+            "season": "Modelled northeast-monsoon and Typhoon Haiyan conditions; 14-day study window",
+            "observation": "The UP Diliman IESM thesis abstract reports that Bulabog faces northeast winds directly. Its longer fetch and narrower reef crest amplified the modelled effect of northeast wind waves. Under southwest-monsoon conditions, wind and wave setup was lower at Bulabog than at White Beach; the relative pattern reversed under northeast-monsoon conditions. During the Haiyan case, Bulabog experienced less storm-surge response than White Beach and was relatively stable within the modelled study period.",
+            "scope": "Model-based thesis abstract, not a measured long-term shoreline record. The 14-day analysis cannot establish long-term erosion trends or current conditions. Not a current hazard or swimming-safety assessment.",
+            "source_ids": [
+              "SRC-081"
+            ],
+            "evidence_status": "research_abstract_modelled_context"
           }
         ],
         "surface_current_context": {
