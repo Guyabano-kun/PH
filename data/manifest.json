@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.35",
+  "dataset_version": "0.2.36",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-15",
   "beach_count": 13,
@@ -105,6 +105,7 @@
     "Version 0.2.31: itinerary stop season labels are operator/listing-specific. Where month ranges differ between operators, preserve the cited listing's range and do not normalize it into a universal island-wide operating season.",
     "Version 0.2.32: added DENR-EMB CY 2021 station-specific fecal-coliform geomeans and compliance percentages for 10 active monitoring stations, with 12 sampling events and Class SB/SC guideline values preserved. Results are historical and are not generalized to entire beaches or presented as current bathing-water status.",
     "Version 0.2.33: added station-specific fecal-coliform geomeans from the DENR-EMB 2023 report's comparative CY 2018–2023 chart: CY 2020 for 10 active stations and CY 2018–2019 only where the chart's station name exactly matches a passport station. No compliance percentages or sampling-event counts were inferred for comparative years where the chart does not publish them.",
-    "Version 0.2.35: added the 26 May 2025 Rough Guides Boracay beach guide as SRC-085. Punta Bunga now records the reported narrow public approach and unresolved resort-checkpoint access; Lapus-Lapus records Fairways & Bluewater resort-controlled access and non-guaranteed day-pass availability; Ilig-Iligan records a rough final road section and limited seasonal facilities; Tulubhan records guide-described tricycle access and working-shoreline context. These are secondary visitor-guide claims, not official access permissions or current safety notices. No coordinates, beach boundaries, public rights-of-way, lifeguard status or live sea conditions were inferred."
+    "Version 0.2.35: added the 26 May 2025 Rough Guides Boracay beach guide as SRC-085. Punta Bunga now records the reported narrow public approach and unresolved resort-checkpoint access; Lapus-Lapus records Fairways & Bluewater resort-controlled access and non-guaranteed day-pass availability; Ilig-Iligan records a rough final road section and limited seasonal facilities; Tulubhan records guide-described tricycle access and working-shoreline context. These are secondary visitor-guide claims, not official access permissions or current safety notices. No coordinates, beach boundaries, public rights-of-way, lifeguard status or live sea conditions were inferred.",
+    "Version 0.2.36: expanded SRC-085 coverage to all beaches described in the Rough Guides article. Added cautious, provisional visitor-guide access/facility context for White Beach, Bulabog, Diniwid and Tambisaan. These descriptions are not official route approvals, a complete facilities inventory or real-time access/safety status. Public-access status for Bulabog and Diniwid remains unknown; no legal access right was inferred."
   ]
 }
