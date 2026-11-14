@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.26",
+  "dataset_version": "0.2.27",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-14",
   "beach_count": 13,
@@ -87,6 +87,9 @@
     "Added Panay News cross-check SRC-046 for the 2–3 March 2026 outfall monitoring. It conflicts with Daily Tribune on temperature: Daily Tribune reports DO, temperature and pH compliant at all four sites; Panay News reports elevated temperature at some sites while DO and pH complied. Temperature status is therefore unconfirmed; no numerical values or affected outfall names are published. DO and pH remain reported compliant, not numerically validated.",
     "Added DENR Administrative Order No. 2019-15 (SRC-047), which designates Boracay Island as a Water Quality Management and Conservation Area (WQMACA) and describes boundary-control-point segments explicitly referencing Ilig-Iligan, Lapuz-Lapuz, Bulabog, Tulubhan, Tambisaan, White/Long Beach, Diniwid, Punta Bunga and Banyugan. These control points define the WQMACA perimeter, not beach boundaries or beach centroids. WQMACA is not treated as proof of a separate NIPAS protected area or site-specific MPA.",
     "Added the Coral Triangle Atlas registry record for Boracay Island Tourist Zone Marine Reserve (SRC-048) as an unverified candidate MPA record only. The registry supplies no legal/formal instrument, no area and no boundary polygon; it is not used to assert MPA status for any target beach or to assign its reference coordinate to a beach.",
-    "All 13 beach passports now distinguish the confirmed island-wide WQMACA designation from the still-unverified site-specific NIPAS/MPA status. Nine passports carry locality references explicitly named in the DENR order; the remaining four retain island-wide context without a fabricated local boundary intersection."
+    "All 13 beach passports now distinguish the confirmed island-wide WQMACA designation from the still-unverified site-specific NIPAS/MPA status. Nine passports carry locality references explicitly named in the DENR order; the remaining four retain island-wide context without a fabricated local boundary intersection.",
+    "Corrected the site-wide protected-area research conclusion after locating the primary legal instrument: Presidential Proclamation No. 1801 (SRC-049) expressly declares Boracay Islands, Aklan as a tourist zone and marine reserve under the Philippine Tourism Authority. All 13 passports now record this supported island-level designation. The proclamation does not provide beach-specific marine boundaries, coordinates, zoning or no-take limits; no such geometry is inferred.",
+    "Added the Supreme Court decision in G.R. Nos. 167707 and 173775 (SRC-050) to clarify the legal distinction between Proclamation No. 1801's tourism/ecological administration purpose and land classification under Proclamation No. 1064. The Court's discussion of the lack of specific limits for land classification is not interpreted as invalidating the marine-reserve designation.",
+    "Updated the Coral Triangle Atlas record SRC-048: its missing legal-instrument field is now cross-referenced to the primary Proclamation No. 1801 source SRC-049. The Atlas point remains unsuitable for delineating protected-area or beach boundaries."
   ]
 }
