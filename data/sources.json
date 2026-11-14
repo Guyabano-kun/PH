@@ -237,9 +237,12 @@
         "Ralph's Place regular ambient monitoring station",
         "Bulabog Beach station-name alias",
         "Boracay coastline monitoring station coordinates",
-        "Lapuz-Lapuz Beach historical ambient monitoring station coordinates"
+        "Lapuz-Lapuz Beach historical ambient monitoring station coordinates",
+        "CY 2006–2019 historical station table: Lapuz-Lapuz Beach",
+        "CY 2006–2019 historical Bulabog Beach station at a different coordinate",
+        "CY 2020-onwards station table: Ralph's Place with station name Bulabog Beach"
       ],
-      "limitations": "The report supports the historical station alias and station location, not the boundary of Bulabog Beach or a current water-quality assessment. For 2022 water-quality values, use SRC-002.",
+      "limitations": "The report contains two distinct station inventories: Table 4.53 covers CY 2006–2019, while Table 4.54 covers CY 2020 onwards. Table 4.53 lists Lapuz-Lapuz Beach and an older Bulabog Beach station at 11°56′08″N, 121°55′39″E. Table 4.54 lists Ralph's Place as a regular ambient station with the station name Bulabog Beach at 11°58′09.0″N, 121°55′38.4″E. These records must not be conflated. The report supports station identity and historical metadata, not beach boundaries or current water quality.",
       "reliability": "high_for_station_identity_and_historical_station_metadata"
     }
   ]
