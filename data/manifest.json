@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.7",
+  "dataset_version": "0.2.8",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-14",
   "beach_count": 13,
@@ -47,6 +47,7 @@
     "Access claims for Balinghai and Punta Bunga are conflicting or provisional; the dataset does not assert definitive current public access.",
     "Coordinate audit now cross-checks Diniwid, Tulubhan, Tambisaan, Ilig-Iligan, Puka and White Beach against Mapcarta-displayed OSM natural=beach features and DENR-EMB station coordinates. Matches and discrepancies are explicitly retained; no beach-centroid coordinates are promoted.",
     "Secondary guide GPS points from Lakad Pilipinas 2023 have been added as separate reference coordinates for 11 named beaches. They are not substituted for legacy markers or DENR monitoring-station coordinates; all three point types remain distinct.",
-    "For Puka and Ilig-Iligan, legacy markers match the travel-guide point but are displaced from OSM beach-feature and DENR station points. For White Beach, the legacy marker is exactly Boat Station 2. These are unresolved map-point identity differences, not reasons to overwrite coordinates."
+    "For Puka and Ilig-Iligan, legacy markers match the travel-guide point but are displaced from OSM beach-feature and DENR station points. For White Beach, the legacy marker is exactly Boat Station 2. These are unresolved map-point identity differences, not reasons to overwrite coordinates.",
+    "Hagdan and Lapuz-Lapuz now carry OSM locality reference points only. These are neighborhood coordinates, not beach feature or centroid coordinates; Hagdan Beach remains a provisional separate beach identity."
   ]
 }
