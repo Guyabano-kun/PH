@@ -481,14 +481,15 @@
       "url": "https://r6.emb.gov.ph/wp-content/uploads/2024/07/2023-EMBr6-RSoBER-1.pdf",
       "type": "official_regional_environment_report",
       "published_at": "2024-07",
-      "checked_at": "2026-11-14",
+      "checked_at": "2026-11-15",
       "coverage": [
         "Boracay Island coastal and marine water-quality monitoring stations",
         "CY 2023 annual monitoring results",
         "2019–2023 comparative monitoring data",
-        "2023 regular monitoring station inventory, water-body classes and DMS coordinates (Table 4.50)"
+        "2023 regular monitoring station inventory, water-body classes and DMS coordinates (Table 4.50)",
+        "Comparative CY 2018–2023 station-specific fecal-coliform geometric means for Boracay Coastline Class SB and Class SC"
       ],
-      "limitations": "Station-specific annual results, not whole-beach measurements or current real-time bathing-water advice. The fecal-coliform compliance chart caption states Jan–Nov 2023 while report narrative refers to 12 sampling events; sampling-event count is therefore not copied. The report contains conflicting 2023 TSS values for Ralph's Place (32.3 and 33.4 mg/L); that TSS value is excluded. Station inventory confirms names, classes and coordinates; it does not independently prove every sampling event used the same field position beyond the published station record.",
+      "limitations": "Station-specific annual results, not whole-beach measurements or current real-time bathing-water advice. The report's comparative CY 2018–2023 fecal-coliform chart provides annual geometric means; it does not provide event-level compliance percentages or sampling-event counts for every comparative year. Separate CY 2023 compliance figures are captioned Jan–Nov 2023 while report narrative refers to 12 sampling events; this discrepancy remains documented. The report contains conflicting 2023 TSS values for Ralph's Place (32.3 and 33.4 mg/L); that TSS value is excluded. Station inventory confirms names, classes and coordinates; it does not independently prove every sampling event used the same field position beyond the published station record.",
       "reliability": "official_government_annual_report"
     },
     {
