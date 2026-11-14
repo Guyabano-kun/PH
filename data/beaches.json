@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.22",
+  "dataset_version": "0.2.23",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -498,10 +498,23 @@
                 "source_ids": [
                   "SRC-024"
                 ],
-                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "sampling_note": "The 2023 report narrative states 12 sampling events for primary parameters. The fecal-coliform compliance figure caption specifies Jan–Nov 2023; the 12-event count is retained from the report narrative and the date-span discrepancy remains flagged.",
                 "total_suspended_solids_average_mg_l": 13.1,
                 "total_suspended_solids_guideline_mg_l": 50,
                 "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "primary_parameter_sampling_events": 12,
+                "phosphate_as_phosphorus_average_mg_p_l": 0.004,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 0.02,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
                   "compliant_percent": 100,
                   "non_compliant_percent": 0
                 }
@@ -627,10 +640,23 @@
                 "source_ids": [
                   "SRC-024"
                 ],
-                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "sampling_note": "The 2023 report narrative states 12 sampling events for primary parameters. The fecal-coliform compliance figure caption specifies Jan–Nov 2023; the 12-event count is retained from the report narrative and the date-span discrepancy remains flagged.",
                 "total_suspended_solids_average_mg_l": 10.6,
                 "total_suspended_solids_guideline_mg_l": 50,
                 "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "primary_parameter_sampling_events": 12,
+                "phosphate_as_phosphorus_average_mg_p_l": 0.002,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 0.032,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
                   "compliant_percent": 100,
                   "non_compliant_percent": 0
                 }
@@ -756,10 +782,23 @@
                 "source_ids": [
                   "SRC-024"
                 ],
-                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "sampling_note": "The 2023 report narrative states 12 sampling events for primary parameters. The fecal-coliform compliance figure caption specifies Jan–Nov 2023; the 12-event count is retained from the report narrative and the date-span discrepancy remains flagged.",
                 "total_suspended_solids_average_mg_l": 10.3,
                 "total_suspended_solids_guideline_mg_l": 50,
                 "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "primary_parameter_sampling_events": 12,
+                "phosphate_as_phosphorus_average_mg_p_l": 0.002,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 0.076,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
                   "compliant_percent": 100,
                   "non_compliant_percent": 0
                 }
@@ -1419,8 +1458,21 @@
                 "source_ids": [
                   "SRC-024"
                 ],
-                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
-                "notes": "TSS excluded because the 2023 report gives conflicting Ralph's Place values (32.3 and 33.4 mg/L) in separate figures."
+                "sampling_note": "The 2023 report narrative states 12 sampling events for primary parameters. The fecal-coliform compliance figure caption specifies Jan–Nov 2023; the 12-event count is retained from the report narrative and the date-span discrepancy remains flagged.",
+                "notes": "TSS excluded because the 2023 report gives conflicting Ralph's Place values (32.3 and 33.4 mg/L) in separate figures.",
+                "primary_parameter_sampling_events": 12,
+                "phosphate_as_phosphorus_average_mg_p_l": 0.007,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 0.063,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                }
               },
               {
                 "year": 2022,
@@ -2107,10 +2159,23 @@
                 "source_ids": [
                   "SRC-024"
                 ],
-                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "sampling_note": "The 2023 report narrative states 12 sampling events for primary parameters. The fecal-coliform compliance figure caption specifies Jan–Nov 2023; the 12-event count is retained from the report narrative and the date-span discrepancy remains flagged.",
                 "total_suspended_solids_average_mg_l": 16.9,
                 "total_suspended_solids_guideline_mg_l": 50,
                 "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "primary_parameter_sampling_events": 12,
+                "phosphate_as_phosphorus_average_mg_p_l": 0.003,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 0.058,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
                   "compliant_percent": 100,
                   "non_compliant_percent": 0
                 }
@@ -2608,10 +2673,23 @@
                 "source_ids": [
                   "SRC-024"
                 ],
-                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "sampling_note": "The 2023 report narrative states 12 sampling events for primary parameters. The fecal-coliform compliance figure caption specifies Jan–Nov 2023; the 12-event count is retained from the report narrative and the date-span discrepancy remains flagged.",
                 "total_suspended_solids_average_mg_l": 16.5,
                 "total_suspended_solids_guideline_mg_l": 50,
                 "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "primary_parameter_sampling_events": 12,
+                "phosphate_as_phosphorus_average_mg_p_l": 0.012,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 0.041,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
                   "compliant_percent": 100,
                   "non_compliant_percent": 0
                 }
@@ -4117,10 +4195,23 @@
                 "source_ids": [
                   "SRC-024"
                 ],
-                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "sampling_note": "The 2023 report narrative states 12 sampling events for primary parameters. The fecal-coliform compliance figure caption specifies Jan–Nov 2023; the 12-event count is retained from the report narrative and the date-span discrepancy remains flagged.",
                 "total_suspended_solids_average_mg_l": 12,
                 "total_suspended_solids_guideline_mg_l": 50,
                 "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "primary_parameter_sampling_events": 12,
+                "phosphate_as_phosphorus_average_mg_p_l": 0.001,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 0.021,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
                   "compliant_percent": 100,
                   "non_compliant_percent": 0
                 }
@@ -4974,10 +5065,23 @@
                 "source_ids": [
                   "SRC-024"
                 ],
-                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "sampling_note": "The 2023 report narrative states 12 sampling events for primary parameters. The fecal-coliform compliance figure caption specifies Jan–Nov 2023; the 12-event count is retained from the report narrative and the date-span discrepancy remains flagged.",
                 "total_suspended_solids_average_mg_l": 12.6,
                 "total_suspended_solids_guideline_mg_l": 50,
                 "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "primary_parameter_sampling_events": 12,
+                "phosphate_as_phosphorus_average_mg_p_l": 0.012,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 0.471,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
                   "compliant_percent": 100,
                   "non_compliant_percent": 0
                 }
@@ -5472,10 +5576,23 @@
                 "source_ids": [
                   "SRC-024"
                 ],
-                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "sampling_note": "The 2023 report narrative states 12 sampling events for primary parameters. The fecal-coliform compliance figure caption specifies Jan–Nov 2023; the 12-event count is retained from the report narrative and the date-span discrepancy remains flagged.",
                 "total_suspended_solids_average_mg_l": 13.6,
                 "total_suspended_solids_guideline_mg_l": 80,
                 "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "primary_parameter_sampling_events": 12,
+                "phosphate_as_phosphorus_average_mg_p_l": 0.001,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 0.199,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
                   "compliant_percent": 100,
                   "non_compliant_percent": 0
                 }
@@ -5963,10 +6080,23 @@
                 "source_ids": [
                   "SRC-024"
                 ],
-                "sampling_note": "The report's fecal-coliform compliance figure caption specifies Jan–Nov 2023, while narrative text refers to 12 sampling events. No sampling-event count is assigned.",
+                "sampling_note": "The 2023 report narrative states 12 sampling events for primary parameters. The fecal-coliform compliance figure caption specifies Jan–Nov 2023; the 12-event count is retained from the report narrative and the date-span discrepancy remains flagged.",
                 "total_suspended_solids_average_mg_l": 18.4,
                 "total_suspended_solids_guideline_mg_l": 50,
                 "total_suspended_solids_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "primary_parameter_sampling_events": 12,
+                "phosphate_as_phosphorus_average_mg_p_l": 0.002,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "nitrate_average_mg_l": 0.115,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
                   "compliant_percent": 100,
                   "non_compliant_percent": 0
                 }
