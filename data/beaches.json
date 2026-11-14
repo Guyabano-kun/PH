@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.15",
+  "dataset_version": "0.2.16",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -186,7 +186,18 @@
             },
             "observation": "No gray sediment was observed in Station 3 during the reported study."
           }
-        ]
+        ],
+        "beach_length": {
+          "value": 4000,
+          "unit": "m",
+          "qualifier": "approximate",
+          "status": "supported",
+          "source_ids": [
+            "SRC-002",
+            "SRC-042"
+          ],
+          "note": "Published approximate length of White Beach. This is not a surveyed shoreline measurement and does not establish exact beach start/end coordinates or a polygon."
+        }
       },
       "underwater": {
         "reef_presence": {
@@ -817,13 +828,27 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "beach_length": {
+          "value": 2500,
+          "unit": "m",
+          "qualifier": "approximate",
+          "status": "supported",
+          "source_ids": [
+            "SRC-042"
+          ],
+          "note": "Published approximate length of Bulabog Beach. This is not a surveyed shoreline measurement and does not establish exact beach start/end coordinates or a polygon."
         }
       },
       "underwater": {
         "reef_presence": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "An offshore reef is reported as protecting Bulabog Beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-042",
+            "SRC-003"
+          ],
+          "note": "The peer-reviewed article describes an offshore reef at Bulabog; the 2020 BMDAI/BIWC study adds one local coral station (A1). Neither source provides a verified reef boundary, crest line, nearshore depth profile or current reef-condition assessment."
         },
         "reef_crest": {
           "value": null,
@@ -844,6 +869,15 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "seagrass_presence": {
+          "value": "Seagrass beds are reported in the Bulabog nearshore study area; three Sitio Bolabog sampling locations were surveyed in 2020.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-042",
+            "SRC-003"
+          ],
+          "note": "Historical presence only. No current seagrass-bed polygon or beach-wide coverage is established; the T1 source coordinate remains anomalous and unmapped."
         }
       },
       "hydrodynamics": {
