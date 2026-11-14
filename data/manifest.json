@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.9",
+  "dataset_version": "0.2.10",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-14",
   "beach_count": 13,
@@ -51,6 +51,9 @@
     "Hagdan and Lapuz-Lapuz now carry OSM locality reference points only. These are neighborhood coordinates, not beach feature or centroid coordinates; Hagdan Beach remains a provisional separate beach identity.",
     "Added station-specific CY 2023 Boracay coastline monitoring results from the official DENR-EMB Region VI 2023 Regional State of the Brown Environment Report (SRC-024): fecal-coliform geomeans and compliance, dissolved-oxygen averages and compliance, and total-suspended-solids averages where unambiguous. Historical station values are not beach-wide or current real-time bathing-water assessments.",
     "For the 2023 fecal-coliform compliance chart, the caption specifies Jan–Nov 2023 while report narrative refers to 12 sampling events; event counts are omitted pending clarification. Ralph's Place TSS is excluded because the report contains conflicting 2023 values (32.3 and 33.4 mg/L).",
-    "The 2023 report identifies Diniwid Beach and Tulubhan as Class SB stations with multiple individual fecal-coliform sampling events above the 100 MPN/100 ml guideline, despite annual geomeans below 100; annual mean compliance must not be interpreted as every sampling event being compliant."
+    "The 2023 report identifies Diniwid Beach and Tulubhan as Class SB stations with multiple individual fecal-coliform sampling events above the 100 MPN/100 ml guideline, despite annual geomeans below 100; annual mean compliance must not be interpreted as every sampling event being compliant.",
+    "Added SRC-025, the official 2024 Regional State of the Brown Environment Report. It confirms a January–July 2024 Boracay water-quality data section, but its PDF could not be retrieved for full station-table validation; no numeric station values were ingested.",
+    "SRC-026 reports an EMB statement that all 24 Boracay monitoring stations passed water-safety tests in January–June 2024. This is historical island-level context only; it contains no station-specific numeric values and does not establish current beach-specific bathing-water safety.",
+    "SRC-027 reports March 2026 in-situ screening at four Boracay outfalls: DO, temperature and pH were compliant, while laboratory results for TSS, color and fecal coliform were pending at publication. Outfall measurements are not beach bathing-water results and are not used to infer any beach's current safety."
   ]
 }
