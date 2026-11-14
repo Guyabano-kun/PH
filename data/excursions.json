@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "last_updated": "2026-11-14",
+  "last_updated": "2026-11-15",
   "definitions": {
     "departure": "A verified operator or officially designated point where guests meet and board for a boat trip. A meeting point is not automatically a legally designated boarding terminal.",
     "itinerary_stop": "A beach/island visited during a trip; does not imply departures originate there.",
@@ -50,6 +50,30 @@
         "SRC-004"
       ],
       "limitations": "Itinerary-dependent; no departure status implied."
+    },
+    {
+      "id": "STOP-003",
+      "beach_id": "balinghai",
+      "season": "Amihan (October–May in SRC-080; season-specific alternatives in operator listings)",
+      "status": "operator_itinerary_stop",
+      "source_ids": [
+        "SRC-078",
+        "SRC-079",
+        "SRC-080"
+      ],
+      "limitations": "Listed as a possible/alternative stop, not guaranteed on every departure. Itinerary stop does not imply departure point, public access or confirmed landing permission."
+    },
+    {
+      "id": "STOP-004",
+      "beach_id": "ilig",
+      "season": "Habagat (June–September in SRC-080; operator-specific date ranges may differ)",
+      "status": "operator_itinerary_stop",
+      "source_ids": [
+        "SRC-078",
+        "SRC-079",
+        "SRC-080"
+      ],
+      "limitations": "Listed as a possible/alternative stop, not guaranteed on every departure. Itinerary stop does not imply departure point, public access or confirmed landing permission."
     }
   ],
   "transport_ports": [
