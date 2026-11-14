@@ -102,9 +102,11 @@
         "Tulubhan Pier sampling station coordinates",
         "Tambisaan Pier sampling station coordinates",
         "Angol Point sampling station coordinates",
-        "Annual fecal-coliform geomean and compliance statistics for 2022"
+        "Annual fecal-coliform geomean and compliance statistics for 2022",
+        "2022 fecal-coliform geomean and compliance statistics",
+        "2022 quarterly oil-and-grease averages and compliance statistics for monitored stations"
       ],
-      "limitations": "Historical monitoring data from 2022. Sampling stations are not necessarily co-located with the whole beach; results must not be presented as current water quality.",
+      "limitations": "Historical monitoring data from January–December 2022. Sampling stations are not necessarily co-located with the whole beach; station coordinates must not be treated as beach centroids. Fecal-coliform results cover 12 sampling events; oil-and-grease monitoring was quarterly (April, June, September and November). Results must not be presented as current water quality or current bathing safety.",
       "reliability": "high_historical_primary"
     },
     {
