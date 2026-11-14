@@ -36,6 +36,7 @@
     "DENR-EMB 2022 monitoring-station coordinates and fecal-coliform summaries are recorded separately from beach-centroid coordinates; they must not be used as beach centroids or current bathing-water advice.",
     "Hagdan Beach remains a provisional identity: TPB map labels Sitio Hagdan but does not list Hagdan Beach in its Beach / Dive Site index; a secondary guide uses the beach name.",
     "TPB tourist map also lists Lugutan Beach, which is outside the fixed 13-beach scope and is not silently added to the dataset.",
-    "White Beach historical monitoring is represented by Boat Stations 1–3 as spatially distinct DENR-EMB sampling points, not by a single whole-beach measurement."
+    "White Beach historical monitoring is represented by Boat Stations 1–3 as spatially distinct DENR-EMB sampling points, not by a single whole-beach measurement.",
+    "The 2022 DENR-EMB report also provides quarterly oil-and-grease results (April, June, September and November) for the nine recorded sampling stations. These remain historical, station-specific data."
   ]
 }
