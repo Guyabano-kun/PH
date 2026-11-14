@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.37",
+  "dataset_version": "0.2.38",
   "last_updated": "2026-11-15",
   "beaches": [
     {
@@ -4335,7 +4335,7 @@
           "value": "The beach is presented as a Shangri-La resort facility. No independently verified public land approach or non-guest route is documented.",
           "status": "unknown",
           "source_ids": [
-            "SRC-088"
+            "SRC-087"
           ],
           "note": "Resort location does not establish a public right-of-way or visitor permission."
         },
@@ -4343,7 +4343,7 @@
           "value": "Shangri-La identifies Banyugan as one of its secluded resort beaches for guests. The official page does not state whether non-guests can enter, whether day passes are offered, or whether a public approach exists; public access therefore remains unconfirmed.",
           "status": "provisional",
           "source_ids": [
-            "SRC-088",
+            "SRC-087",
             "SRC-001"
           ],
           "note": "Do not infer a legal private beach or unrestricted public access from resort operation. No current day-visitor policy or public route was found."
@@ -4357,7 +4357,7 @@
           "value": "Shangri-La lists Banyugan Beach among resort facilities and publishes facility hours of 6am–6pm. This describes the resort facility, not guaranteed non-guest access.",
           "status": "supported",
           "source_ids": [
-            "SRC-088"
+            "SRC-087"
           ],
           "note": "No public day-pass availability or non-guest services are stated."
         },
@@ -7363,7 +7363,7 @@
             "SRC-001",
             "SRC-008",
             "SRC-065",
-            "SRC-087"
+            "SRC-086"
           ],
           "note": "The TPB map labels Sitio Hagdan but does not list Hagdan Beach in its Beach / Dive Site index. The Aklan Provincial Government accommodation directory also uses Sitio Hagdan as a locality address. A secondary travel guide and Trip.com use the name Hagdan Beach, but no separate beach feature, boundary or official beach-name listing has been established. Retain only as an unverified name candidate, not a confirmed beach."
         },
@@ -7377,7 +7377,7 @@
           "status": "supported",
           "source_ids": [
             "SRC-001",
-            "SRC-087"
+            "SRC-086"
           ]
         },
         "description": {
@@ -7385,7 +7385,7 @@
           "status": "provisional",
           "source_ids": [
             "SRC-001",
-            "SRC-087"
+            "SRC-086"
           ]
         }
       },
@@ -7694,7 +7694,7 @@
           "status": "supported"
         },
         {
-          "source_id": "SRC-087",
+          "source_id": "SRC-086",
           "claim": "Aklan Provincial Government accommodation directory uses Sitio Hagdan addresses; this supports the locality name only, not a separate Hagdan Beach.",
           "status": "supported_locality_only"
         }
@@ -7744,7 +7744,7 @@
           "status": "provisional",
           "source_ids": [
             "SRC-001",
-            "SRC-086"
+            "SRC-024"
           ],
           "note": "Lugutan is also used for nearby wetland and coastal mixing-zone features; do not treat these as interchangeable with the beach."
         },
@@ -7753,7 +7753,7 @@
           "status": "provisional",
           "source_ids": [
             "SRC-001",
-            "SRC-086"
+            "SRC-024"
           ]
         },
         "description": {
@@ -7762,7 +7762,7 @@
           "source_ids": [
             "SRC-001",
             "SRC-002",
-            "SRC-086"
+            "SRC-024"
           ]
         }
       },
@@ -7804,7 +7804,7 @@
         "coordinate_verification": {
           "source_ids": [
             "SRC-001",
-            "SRC-086"
+            "SRC-024"
           ],
           "assessment": "named_beach_on_TPB_map_but_no_beach_coordinate; nearby_DENR_mixing_zone_point_is_not_a_beach_centroid",
           "note": "TPB identifies Lugutan Beach at grid F7 without decimal coordinates. DENR-EMB gives a coordinate for Lugutan (Mixing Zone), a Class SC monitoring station in Brgy. Manoc-Manoc; this point is stored only as a separate monitoring station below, never as the beach marker."
@@ -7944,7 +7944,7 @@
           "status": "provisional",
           "source_ids": [
             "SRC-002",
-            "SRC-086"
+            "SRC-024"
           ],
           "note": "Do not infer that the monitoring station is located on the beach or that historical results describe current conditions across the beach."
         },
@@ -7995,7 +7995,7 @@
           "status": "supported",
           "source_ids": [
             "SRC-002",
-            "SRC-086"
+            "SRC-024"
           ],
           "note": "The 2022 and 2023 reports document non-compliance for the Lugutan Mixing Zone. The 2023 report also describes contaminated runoff from the Lugutan Drainage Outfall and the outfall near Kingfisher's Farm. This is historical, station-specific evidence; it is not a current bathing advisory or a beach-wide assessment."
         },
@@ -8009,7 +8009,7 @@
           "status": "supported",
           "source_ids": [
             "SRC-002",
-            "SRC-086"
+            "SRC-024"
           ],
           "note": "Historical 2022–2023 monitoring context only. No current discharge status or beach-wide water condition is inferred."
         },
@@ -8034,13 +8034,13 @@
               "longitude": 121.9348333,
               "coordinate_type": "monitoring_station",
               "not_beach_centroid": true,
-              "source_id": "SRC-086",
+              "source_id": "SRC-024",
               "source_coordinate_text": "11°57′19.8″N ; 121°56′05.4″E"
             },
             "monitoring_period": "CY 2022–2023",
             "source_ids": [
               "SRC-002",
-              "SRC-086"
+              "SRC-024"
             ],
             "interpretation": "The coordinate belongs to the Lugutan Mixing Zone station, not Lugutan Beach. DENR reports non-compliant historical fecal-coliform results in the mixing zone and identifies drainage/runoff factors. Do not infer present-day bathing safety or apply the station result to the whole beach."
           }
@@ -8086,7 +8086,7 @@
           "status": "supported_name_and_map_grid"
         },
         {
-          "source_id": "SRC-086",
+          "source_id": "SRC-024",
           "claim": "DENR-EMB reports a separate Lugutan (Mixing Zone) Class SC monitoring station in Brgy. Manoc-Manoc; its coordinate is retained as a monitoring point, not a beach coordinate.",
           "status": "supported_monitoring_context"
         },
