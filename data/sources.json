@@ -202,6 +202,27 @@
       ],
       "limitations": "Secondary travel-guide source. It supports use of the place name and provides a descriptive access account, but is not an authoritative boundary, access-rights, or coordinate survey.",
       "reliability": "low_to_moderate_for_place_identity_only"
+    },
+    {
+      "id": "SRC-009",
+      "title": "Assessment of Benthic Macrofauna and Sediment Characteristics of Boracay Island, Philippines",
+      "publisher": "Sustainable Aquatic Research; University of the Philippines Visayas authors",
+      "url": "https://doi.org/10.5281/zenodo.11046358",
+      "type": "peer_reviewed_research",
+      "published_at": "2024-04-30",
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "White Beach Station 1",
+        "White Beach Station 2",
+        "White Beach Station 3",
+        "Sediment grain size",
+        "Sediment color and odor",
+        "Sediment salinity and redox potential",
+        "Total organic matter",
+        "Benthic macrofauna"
+      ],
+      "limitations": "Field sampling was conducted in October 2022 at three White Beach stations only. It does not provide surveyed beach boundaries, beach width/slope, bathymetry, or a current island-wide ecological status. Station coordinates are research sampling points, not beach centroids.",
+      "reliability": "high_for_reported_sampled_station_sediment_and_benthic_data"
     }
   ]
 }
