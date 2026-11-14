@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.28",
+  "dataset_version": "0.2.29",
   "last_updated": "2026-11-14",
   "beaches": [
     {
@@ -421,7 +421,7 @@
         "protected_area_status": {
           "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
           "status": "supported",
-          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute.",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas; the Supreme Court identifies PTA Circular No. 3-82 (3 September 1982) as its implementing instrument, but the full circular and any boundary maps have not been recovered. Exact beach-level marine-reserve limits therefore remain unverified.",
           "source_ids": [
             "SRC-049",
             "SRC-050",
@@ -972,13 +972,14 @@
             "administering_authority_at_designation": "Philippine Tourism Authority",
             "status": "designated",
             "geographic_scope": "Boracay Islands, Aklan; island-level designation",
-            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas within the zones; the implementing circular and any maps remain unavailable in the reviewed sources.",
             "boundary_reference": null,
             "source_ids": [
               "SRC-049",
               "SRC-050",
               "SRC-051"
-            ]
+            ],
+            "implementing_instrument_follow_up": "PTA Circular No. 3-82, dated 3 September 1982; full text and any boundary maps not independently recovered."
           }
         ]
       },
@@ -1420,7 +1421,7 @@
         "protected_area_status": {
           "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
           "status": "supported",
-          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute.",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas; the Supreme Court identifies PTA Circular No. 3-82 (3 September 1982) as its implementing instrument, but the full circular and any boundary maps have not been recovered. Exact beach-level marine-reserve limits therefore remain unverified.",
           "source_ids": [
             "SRC-049",
             "SRC-050",
@@ -1831,13 +1832,14 @@
             "administering_authority_at_designation": "Philippine Tourism Authority",
             "status": "designated",
             "geographic_scope": "Boracay Islands, Aklan; island-level designation",
-            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas within the zones; the implementing circular and any maps remain unavailable in the reviewed sources.",
             "boundary_reference": null,
             "source_ids": [
               "SRC-049",
               "SRC-050",
               "SRC-051"
-            ]
+            ],
+            "implementing_instrument_follow_up": "PTA Circular No. 3-82, dated 3 September 1982; full text and any boundary maps not independently recovered."
           }
         ]
       },
@@ -2215,7 +2217,7 @@
         "protected_area_status": {
           "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
           "status": "supported",
-          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute.",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas; the Supreme Court identifies PTA Circular No. 3-82 (3 September 1982) as its implementing instrument, but the full circular and any boundary maps have not been recovered. Exact beach-level marine-reserve limits therefore remain unverified.",
           "source_ids": [
             "SRC-049",
             "SRC-050",
@@ -2390,13 +2392,14 @@
             "administering_authority_at_designation": "Philippine Tourism Authority",
             "status": "designated",
             "geographic_scope": "Boracay Islands, Aklan; island-level designation",
-            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas within the zones; the implementing circular and any maps remain unavailable in the reviewed sources.",
             "boundary_reference": null,
             "source_ids": [
               "SRC-049",
               "SRC-050",
               "SRC-051"
-            ]
+            ],
+            "implementing_instrument_follow_up": "PTA Circular No. 3-82, dated 3 September 1982; full text and any boundary maps not independently recovered."
           }
         ]
       },
@@ -2766,7 +2769,7 @@
         "protected_area_status": {
           "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
           "status": "supported",
-          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute.",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas; the Supreme Court identifies PTA Circular No. 3-82 (3 September 1982) as its implementing instrument, but the full circular and any boundary maps have not been recovered. Exact beach-level marine-reserve limits therefore remain unverified.",
           "source_ids": [
             "SRC-049",
             "SRC-050",
@@ -2943,13 +2946,14 @@
             "administering_authority_at_designation": "Philippine Tourism Authority",
             "status": "designated",
             "geographic_scope": "Boracay Islands, Aklan; island-level designation",
-            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas within the zones; the implementing circular and any maps remain unavailable in the reviewed sources.",
             "boundary_reference": null,
             "source_ids": [
               "SRC-049",
               "SRC-050",
               "SRC-051"
-            ]
+            ],
+            "implementing_instrument_follow_up": "PTA Circular No. 3-82, dated 3 September 1982; full text and any boundary maps not independently recovered."
           }
         ]
       },
@@ -3298,7 +3302,7 @@
         "protected_area_status": {
           "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
           "status": "supported",
-          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute.",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas; the Supreme Court identifies PTA Circular No. 3-82 (3 September 1982) as its implementing instrument, but the full circular and any boundary maps have not been recovered. Exact beach-level marine-reserve limits therefore remain unverified.",
           "source_ids": [
             "SRC-049",
             "SRC-050",
@@ -3332,13 +3336,14 @@
             "administering_authority_at_designation": "Philippine Tourism Authority",
             "status": "designated",
             "geographic_scope": "Boracay Islands, Aklan; island-level designation",
-            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas within the zones; the implementing circular and any maps remain unavailable in the reviewed sources.",
             "boundary_reference": null,
             "source_ids": [
               "SRC-049",
               "SRC-050",
               "SRC-051"
-            ]
+            ],
+            "implementing_instrument_follow_up": "PTA Circular No. 3-82, dated 3 September 1982; full text and any boundary maps not independently recovered."
           }
         ]
       },
@@ -3678,7 +3683,7 @@
         "protected_area_status": {
           "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
           "status": "supported",
-          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute.",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas; the Supreme Court identifies PTA Circular No. 3-82 (3 September 1982) as its implementing instrument, but the full circular and any boundary maps have not been recovered. Exact beach-level marine-reserve limits therefore remain unverified.",
           "source_ids": [
             "SRC-049",
             "SRC-050",
@@ -3709,13 +3714,14 @@
             "administering_authority_at_designation": "Philippine Tourism Authority",
             "status": "designated",
             "geographic_scope": "Boracay Islands, Aklan; island-level designation",
-            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas within the zones; the implementing circular and any maps remain unavailable in the reviewed sources.",
             "boundary_reference": null,
             "source_ids": [
               "SRC-049",
               "SRC-050",
               "SRC-051"
-            ]
+            ],
+            "implementing_instrument_follow_up": "PTA Circular No. 3-82, dated 3 September 1982; full text and any boundary maps not independently recovered."
           }
         ]
       },
@@ -4050,7 +4056,7 @@
         "protected_area_status": {
           "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
           "status": "supported",
-          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute.",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas; the Supreme Court identifies PTA Circular No. 3-82 (3 September 1982) as its implementing instrument, but the full circular and any boundary maps have not been recovered. Exact beach-level marine-reserve limits therefore remain unverified.",
           "source_ids": [
             "SRC-049",
             "SRC-050",
@@ -4084,13 +4090,14 @@
             "administering_authority_at_designation": "Philippine Tourism Authority",
             "status": "designated",
             "geographic_scope": "Boracay Islands, Aklan; island-level designation",
-            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas within the zones; the implementing circular and any maps remain unavailable in the reviewed sources.",
             "boundary_reference": null,
             "source_ids": [
               "SRC-049",
               "SRC-050",
               "SRC-051"
-            ]
+            ],
+            "implementing_instrument_follow_up": "PTA Circular No. 3-82, dated 3 September 1982; full text and any boundary maps not independently recovered."
           }
         ]
       },
@@ -4445,7 +4452,7 @@
         "protected_area_status": {
           "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
           "status": "supported",
-          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute.",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas; the Supreme Court identifies PTA Circular No. 3-82 (3 September 1982) as its implementing instrument, but the full circular and any boundary maps have not been recovered. Exact beach-level marine-reserve limits therefore remain unverified.",
           "source_ids": [
             "SRC-049",
             "SRC-050",
@@ -4622,13 +4629,14 @@
             "administering_authority_at_designation": "Philippine Tourism Authority",
             "status": "designated",
             "geographic_scope": "Boracay Islands, Aklan; island-level designation",
-            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas within the zones; the implementing circular and any maps remain unavailable in the reviewed sources.",
             "boundary_reference": null,
             "source_ids": [
               "SRC-049",
               "SRC-050",
               "SRC-051"
-            ]
+            ],
+            "implementing_instrument_follow_up": "PTA Circular No. 3-82, dated 3 September 1982; full text and any boundary maps not independently recovered."
           }
         ]
       },
@@ -4983,7 +4991,7 @@
         "protected_area_status": {
           "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
           "status": "supported",
-          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute.",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas; the Supreme Court identifies PTA Circular No. 3-82 (3 September 1982) as its implementing instrument, but the full circular and any boundary maps have not been recovered. Exact beach-level marine-reserve limits therefore remain unverified.",
           "source_ids": [
             "SRC-049",
             "SRC-050",
@@ -5037,13 +5045,14 @@
             "administering_authority_at_designation": "Philippine Tourism Authority",
             "status": "designated",
             "geographic_scope": "Boracay Islands, Aklan; island-level designation",
-            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas within the zones; the implementing circular and any maps remain unavailable in the reviewed sources.",
             "boundary_reference": null,
             "source_ids": [
               "SRC-049",
               "SRC-050",
               "SRC-051"
-            ]
+            ],
+            "implementing_instrument_follow_up": "PTA Circular No. 3-82, dated 3 September 1982; full text and any boundary maps not independently recovered."
           }
         ]
       },
@@ -5395,7 +5404,7 @@
         "protected_area_status": {
           "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
           "status": "supported",
-          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute.",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas; the Supreme Court identifies PTA Circular No. 3-82 (3 September 1982) as its implementing instrument, but the full circular and any boundary maps have not been recovered. Exact beach-level marine-reserve limits therefore remain unverified.",
           "source_ids": [
             "SRC-049",
             "SRC-050",
@@ -5572,13 +5581,14 @@
             "administering_authority_at_designation": "Philippine Tourism Authority",
             "status": "designated",
             "geographic_scope": "Boracay Islands, Aklan; island-level designation",
-            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas within the zones; the implementing circular and any maps remain unavailable in the reviewed sources.",
             "boundary_reference": null,
             "source_ids": [
               "SRC-049",
               "SRC-050",
               "SRC-051"
-            ]
+            ],
+            "implementing_instrument_follow_up": "PTA Circular No. 3-82, dated 3 September 1982; full text and any boundary maps not independently recovered."
           }
         ]
       },
@@ -5946,7 +5956,7 @@
         "protected_area_status": {
           "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
           "status": "supported",
-          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute.",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas; the Supreme Court identifies PTA Circular No. 3-82 (3 September 1982) as its implementing instrument, but the full circular and any boundary maps have not been recovered. Exact beach-level marine-reserve limits therefore remain unverified.",
           "source_ids": [
             "SRC-049",
             "SRC-050",
@@ -6123,13 +6133,14 @@
             "administering_authority_at_designation": "Philippine Tourism Authority",
             "status": "designated",
             "geographic_scope": "Boracay Islands, Aklan; island-level designation",
-            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas within the zones; the implementing circular and any maps remain unavailable in the reviewed sources.",
             "boundary_reference": null,
             "source_ids": [
               "SRC-049",
               "SRC-050",
               "SRC-051"
-            ]
+            ],
+            "implementing_instrument_follow_up": "PTA Circular No. 3-82, dated 3 September 1982; full text and any boundary maps not independently recovered."
           }
         ]
       },
@@ -6490,7 +6501,7 @@
         "protected_area_status": {
           "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
           "status": "supported",
-          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute.",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas; the Supreme Court identifies PTA Circular No. 3-82 (3 September 1982) as its implementing instrument, but the full circular and any boundary maps have not been recovered. Exact beach-level marine-reserve limits therefore remain unverified.",
           "source_ids": [
             "SRC-049",
             "SRC-050",
@@ -6664,13 +6675,14 @@
             "administering_authority_at_designation": "Philippine Tourism Authority",
             "status": "designated",
             "geographic_scope": "Boracay Islands, Aklan; island-level designation",
-            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas within the zones; the implementing circular and any maps remain unavailable in the reviewed sources.",
             "boundary_reference": null,
             "source_ids": [
               "SRC-049",
               "SRC-050",
               "SRC-051"
-            ]
+            ],
+            "implementing_instrument_follow_up": "PTA Circular No. 3-82, dated 3 September 1982; full text and any boundary maps not independently recovered."
           }
         ]
       },
@@ -6995,7 +7007,7 @@
         "protected_area_status": {
           "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
           "status": "supported",
-          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute.",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas; the Supreme Court identifies PTA Circular No. 3-82 (3 September 1982) as its implementing instrument, but the full circular and any boundary maps have not been recovered. Exact beach-level marine-reserve limits therefore remain unverified.",
           "source_ids": [
             "SRC-049",
             "SRC-050",
@@ -7026,13 +7038,14 @@
             "administering_authority_at_designation": "Philippine Tourism Authority",
             "status": "designated",
             "geographic_scope": "Boracay Islands, Aklan; island-level designation",
-            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach.",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas within the zones; the implementing circular and any maps remain unavailable in the reviewed sources.",
             "boundary_reference": null,
             "source_ids": [
               "SRC-049",
               "SRC-050",
               "SRC-051"
-            ]
+            ],
+            "implementing_instrument_follow_up": "PTA Circular No. 3-82, dated 3 September 1982; full text and any boundary maps not independently recovered."
           }
         ]
       },
