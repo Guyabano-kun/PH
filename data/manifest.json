@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.0",
+  "dataset_version": "0.2.1",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-14",
   "beach_count": 13,
@@ -37,6 +37,8 @@
     "Hagdan Beach remains a provisional identity: TPB map labels Sitio Hagdan but does not list Hagdan Beach in its Beach / Dive Site index; a secondary guide uses the beach name.",
     "TPB tourist map also lists Lugutan Beach, which is outside the fixed 13-beach scope and is not silently added to the dataset.",
     "White Beach historical monitoring is represented by Boat Stations 1–3 as spatially distinct DENR-EMB sampling points, not by a single whole-beach measurement.",
-    "The 2022 DENR-EMB report also provides quarterly oil-and-grease results (April, June, September and November) for the nine recorded sampling stations. These remain historical, station-specific data."
+    "The 2022 DENR-EMB report also provides quarterly oil-and-grease results (April, June, September and November) for the nine recorded sampling stations. These remain historical, station-specific data.",
+    "White Beach now includes a peer-reviewed October 2022 sediment and benthic-macrofauna study for Stations 1–3. These are station-specific research observations, not a whole-beach or current-condition assessment.",
+    "Sediment-study coordinates are stored separately from beach-centroid coordinates and must not be used as public beach markers."
   ]
 }
