@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.25",
+  "dataset_version": "0.2.26",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-14",
   "beach_count": 13,
@@ -84,6 +84,9 @@
     "Added 2024 WQMA-level context: Manila Bulletin reports that all 24 Boracay monitoring stations passed the Jan–Jun 2024 water-safety test (SRC-044); the official DEPDev 2024 report lists Boracay among three WQMAs meeting fecal-coliform guideline values and reports pH/nitrate compliance across all 40 WQMAs (SRC-045). Neither source provides station-level numeric values, so no 2024 figures were assigned to individual beach stations.",
     "Added EMB-6/BIWQMACA outfall sampling from 2–3 March 2026 (SRC-043). Bulabog Outfall 1 and Bulabog Drainage Outfall are recorded as separate outfall points in the Bulabog area; Malabunot Outfall 2 and Lugutan Outfall remain unassigned to target beaches. On-site DO, temperature and pH were reported compliant at all four outfalls; TSS, color and fecal-coliform laboratory results were pending at publication. This is not ambient beach bathing-water evidence.",
     "The 2024 RSoBER PDF remains inaccessible for station-table extraction. The official WQMA page currently links the Boracay Annual Assessment Report 2022; 2024 station-level values remain an explicit data gap.",
-    "Added Panay News cross-check SRC-046 for the 2–3 March 2026 outfall monitoring. It conflicts with Daily Tribune on temperature: Daily Tribune reports DO, temperature and pH compliant at all four sites; Panay News reports elevated temperature at some sites while DO and pH complied. Temperature status is therefore unconfirmed; no numerical values or affected outfall names are published. DO and pH remain reported compliant, not numerically validated."
+    "Added Panay News cross-check SRC-046 for the 2–3 March 2026 outfall monitoring. It conflicts with Daily Tribune on temperature: Daily Tribune reports DO, temperature and pH compliant at all four sites; Panay News reports elevated temperature at some sites while DO and pH complied. Temperature status is therefore unconfirmed; no numerical values or affected outfall names are published. DO and pH remain reported compliant, not numerically validated.",
+    "Added DENR Administrative Order No. 2019-15 (SRC-047), which designates Boracay Island as a Water Quality Management and Conservation Area (WQMACA) and describes boundary-control-point segments explicitly referencing Ilig-Iligan, Lapuz-Lapuz, Bulabog, Tulubhan, Tambisaan, White/Long Beach, Diniwid, Punta Bunga and Banyugan. These control points define the WQMACA perimeter, not beach boundaries or beach centroids. WQMACA is not treated as proof of a separate NIPAS protected area or site-specific MPA.",
+    "Added the Coral Triangle Atlas registry record for Boracay Island Tourist Zone Marine Reserve (SRC-048) as an unverified candidate MPA record only. The registry supplies no legal/formal instrument, no area and no boundary polygon; it is not used to assert MPA status for any target beach or to assign its reference coordinate to a beach.",
+    "All 13 beach passports now distinguish the confirmed island-wide WQMACA designation from the still-unverified site-specific NIPAS/MPA status. Nine passports carry locality references explicitly named in the DENR order; the remaining four retain island-wide context without a fabricated local boundary intersection."
   ]
 }
