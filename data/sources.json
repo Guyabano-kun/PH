@@ -439,6 +439,38 @@
       ],
       "limitations": "Mapcarta displays an OpenStreetMap feature reference coordinate; it is not a cadastral survey or confirmation of beach centroid, shoreline boundary, or public access.",
       "reliability": "high_for_osm_feature_identity_and_reference_coordinate"
+    },
+    {
+      "id": "SRC-022",
+      "title": "Hagdan – OpenStreetMap neighborhood feature via Mapcarta",
+      "publisher": "OpenStreetMap contributors / Mapcarta",
+      "url": "https://mapcarta.com/N9647035888",
+      "type": "osm_derived_locality_feature",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Hagdan neighborhood",
+        "OSM node 9647035888",
+        "place=neighbourhood"
+      ],
+      "limitations": "This is a neighborhood/locality reference point, not a beach feature, beach centroid, shoreline boundary, or public access point.",
+      "reliability": "high_for_locality_feature_identity_and_reference_coordinate"
+    },
+    {
+      "id": "SRC-023",
+      "title": "Lapuz-Lapuz – OpenStreetMap neighborhood feature via Mapcarta",
+      "publisher": "OpenStreetMap contributors / Mapcarta",
+      "url": "https://mapcarta.com/N358670711",
+      "type": "osm_derived_locality_feature",
+      "published_at": null,
+      "checked_at": "2026-11-14",
+      "coverage": [
+        "Lapuz-Lapuz neighborhood",
+        "OSM node 358670711",
+        "Also known as Lapus-Lapus"
+      ],
+      "limitations": "This is a neighborhood/locality reference point, not a beach feature, beach centroid, shoreline boundary, or public access point.",
+      "reliability": "high_for_locality_feature_identity_and_reference_coordinate"
     }
   ]
 }
