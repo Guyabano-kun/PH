@@ -675,7 +675,7 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
  const beachName=b=>ru()?(b.name_ru||b.name):b.name;
  const activityName=a=>ru()?a.ru:a.en;
  const eligible=(b,a)=>((b.activities?.[a.id]?.evidence_observations)||[]).filter(o=>['supported','provisional'].includes(o.status)&&o.claim&&o.recommendation_eligible===true);
- const hasCaution=(obs)=>obs.some(o=>/strong currents|steeper nearshore|dangerous current|опасн|сильн.*течен/i.test(o.claim||''));
+ const hasCaution=(b,a)=>((b.activities?.[a.id]?.evidence_observations)||[]).some(o=>/strong currents|strong-current|steeper nearshore|dangerous current|rip current|опасн|сильн.*течен/i.test(o.claim||''));
  const seasonForObservation=o=>{
   const t=String(o.season||o.claim||'').toLowerCase();
   if(/amihan|october[–-]may|november[–-]may|october through may|november through may/.test(t))return 'amihan';
@@ -699,7 +699,7 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
    const rows=[];
    for(const b of data.beaches.filter(x=>x.selection?.eligible)){
     let obs=eligible(b,activity);
-    if(activity.id==='swimming'&&hasCaution(obs))continue;
+    if(activity.id==='swimming'&&hasCaution(b,activity))continue;
     const seasonal=obs.filter(o=>seasonForObservation(o)===season);
     const general=obs.filter(o=>!seasonForObservation(o));
     if(['swimming','kitesurfing_windsurfing','boat_excursions'].includes(activity.id)){obs=seasonal}
@@ -714,7 +714,7 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
    const rows=[];
    for(const a of activities){
     let obs=eligible(beach,a);
-    if(a.id==='swimming'&&hasCaution(obs))continue;
+    if(a.id==='swimming'&&hasCaution(beach,a))continue;
     const seasonal=obs.filter(o=>seasonForObservation(o)===season),general=obs.filter(o=>!seasonForObservation(o));
     obs=['swimming','kitesurfing_windsurfing','boat_excursions'].includes(a.id)?seasonal:[...seasonal,...general];
     if(!obs.length)continue;
