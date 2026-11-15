@@ -1681,6 +1681,50 @@
       ],
       "limitations": "The short link could not be expanded by the available browser retrieval in this pass. It is preserved as the user's intended parent-area reference only; no coordinates, geometry, or access details are inferred from it.",
       "reliability": "user_supplied_reference_not_independently_resolved"
+    },
+    {
+      "id": "SRC-102",
+      "title": "Boracay Newcoast – Google Maps broad place-label observation",
+      "publisher": "User-provided Google Maps observation",
+      "url": "https://maps.app.goo.gl/3HWVqy4MGWxq4bKX8",
+      "type": "user_observed_cartographic_label",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "User reports Google Maps labels the wider Newcoast three-cove coastal area as Ilig-Iligan Beach"
+      ],
+      "limitations": "User-observed map-label relationship. The Google Maps short link has not been independently resolved. A map label does not establish a surveyed shoreline boundary, continuous beach polygon, legal beach identity, or a coordinate for the entire labelled area.",
+      "reliability": "user_observation_not_independently_geometry_verified"
+    },
+    {
+      "id": "SRC-103",
+      "title": "Boracay Newcoast – website basemap label observation",
+      "publisher": "User-provided observation of the PH website OpenStreetMap basemap",
+      "url": "https://www.openstreetmap.org/#map=16/11.9825/121.9260",
+      "type": "user_observed_basemap_label",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Cove 1 is labelled Lapus-Lapus Beach on the website basemap",
+        "Cove 2 and Cove 3 are not separately named on the observed basemap"
+      ],
+      "limitations": "Records the user's observation of the existing basemap labels, not a surveyed boundary or independent OSM feature query. Cove 2 and Cove 3 remain unnamed on that basemap; no new names or coordinates are inferred.",
+      "reliability": "user_observation_of_rendered_basemap"
+    },
+    {
+      "id": "SRC-104",
+      "title": "Boracay Newcoast – developer aerial branding image showing Cove 1, Cove 2 and Cove 3",
+      "publisher": "User-supplied developer branding image",
+      "url": null,
+      "type": "user_supplied_annotated_aerial_image",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Developer labels three separate coastal coves: Cove 1, Cove 2 and Cove 3",
+        "Relative placement of Savoy Hotel, Belmont Hotel, Ocean Garden Villas, Oceanway Residences, Newcoast Village, Shophouse District and Boutique Hotel District"
+      ],
+      "limitations": "Marketing/branding aerial image, not georeferenced or surveyed. It supports developer naming and relative visual arrangement only. It does not provide coordinates, shoreline boundaries, beach dimensions, legal access rights, or proof that Savoy Beach is a fourth beach or formal alias of Cove 2.",
+      "reliability": "high_for_developer_cove_naming_and_visual_context_not_geospatial_geometry"
     }
   ]
 }
