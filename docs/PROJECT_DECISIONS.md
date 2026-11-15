@@ -79,3 +79,10 @@ This is approved project scope/hierarchy, not a surveyed statement of physical b
 - Follow the agreed sequence and architecture for each work package.
 - Do not silently expand scope or change approved decisions.
 - Change a durable decision only with explicit user approval or when a critical factual/technical error requires correction; record reason and date.
+
+
+## Three-mode selector implementation update (2026-11-15)
+- Implemented the three query paths on `boracay.html`: month + activity → evidence-backed beach options; month + beach → evidenced activities; activity + beach → explicitly evidenced seasonal months.
+- The selector filters the 13 approved selection-eligible beach records and five activities. It uses only `supported` / `provisional` observations with `recommendation_eligible=true`.
+- This implementation does not calculate numeric suitability scores, weights, or a complete monthly matrix. It must not label evidence ordering as a scored ranking. If a seasonal month range is not explicitly supported, the tool returns insufficient evidence rather than extrapolating.
+- The existing compact current-season summary remains alongside the full selector. This is an additive implementation, not a replacement of the approved page placement or architecture.
