@@ -6,7 +6,7 @@ Last verified against GitHub `main`: 2026-11-15
 - Repository: `Guyabano-kun/PH`
 - Branch: `main`
 - Code/data baseline before adding project-control files: `c78d7d17bda612fdb9bf7ab5973fff99014f18`
-- Dataset version: `0.2.49`
+- Dataset version: `0.2.50`
 - `data/beaches.json`: 16 records
 - `data/sources.json`: 109 sources
 - Manifest counts: `beach_count=16`, `selection_beach_count=13`, `research_only_record_count=3`
@@ -76,7 +76,7 @@ These are historical checks. Re-run relevant checks against current `main` after
 
 ## Current work package and exact next step
 
-**Accepted scope (2026-11-15): normalize the 13-beach selection set and evidence-enrich all 13 beach passports.**
+**Accepted scope (2026-11-15): evidence-enrich all 13 beach passports for the five beach-picker activities and seasonal sea context.**
 
 Current implementation:
 - Dataset version: 0.2.48; 16 records total, 13 eligible selection records, 3 research-only records.
@@ -86,11 +86,12 @@ Current implementation:
 - Added the DENR-EMB `New Coast Boracay` monitoring station to the Newcoast passport as parent-area context only. The 2022 and 2023 reports carry the same station coordinate and publish station-specific historical results; no assignment to Cove 1/2/3 is inferred. The station point is not a beach coordinate.
 - `beaches.html` now displays selection membership and the Newcoast parent/cove mapping using the current `parent_area` and `developer_cove` fields; legacy `developer_coves` rendering is retained.
 - The monitoring filter now distinguishes beach-specific DENR stations from parent-area-only monitoring; Newcoast's station does not appear as beach-specific monitoring.
+- Dataset 0.2.50 adds island-scale tidal-circulation context to all 13 selection passports, six nearby named dive-site references (without beach-boundary or snorkelling inference), Islakite's local Bulabog wind-station evidence, a provisional White Beach Amihan shelter observation, historical Puka/White Beach water-quality study context, and a historical 2020 White Beach swimming-zone record. All 65 scores remain null.
 - All 65 activity values (13 beaches × 5 activities) remain null and unscored pending evidence validation and approved methodology.
 - Source-reference audit: 109 sources, no dangling source IDs. JSON parsing and JavaScript syntax checks pass.
 - Newcoast Cove 2 field review: `ecology.water_quality_history` changed from unknown to provisional; the station is explicitly area-level. One unknown field was converted to provisional, not supported.
 - Newcoast Cove 2 and Cove 3 beach-specific coordinates and boundaries remain NOT VERIFIED. No POI, hotel, or transport-stop coordinate is substituted.
-- GitHub Pages live and visual verification for the latest changes remains NOT VERIFIED because the published page could not be retrieved in the current verification environment.
+- The current evidence additions are data-only; GitHub Pages live and visual verification remain NOT VERIFIED until the published pages are retrieved.
 
 Required sequence:
 1. Continue field-by-field evidence review for all 13 passports; enrich only claims supported by traceable sources.
