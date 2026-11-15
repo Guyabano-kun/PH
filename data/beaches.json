@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.50",
+  "dataset_version": "0.2.51",
   "last_updated": "2026-11-15",
   "beaches": [
     {
@@ -221,9 +221,12 @@
       },
       "underwater": {
         "reef_presence": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "No shore-accessible reef-snorkelling habitat is identified along central White Beach Stations 1–3; the central strip is sandy-bottomed with steady boat traffic. Angol Point is a separate locality and is not assigned to White Beach as a whole.",
+          "status": "supported",
+          "note": "Local dive-operator guidance for central Stations 1–3 only. This is not a claim about the separate Angol Point locality or offshore boat-access reefs.",
+          "source_ids": [
+            "SRC-118"
+          ]
         },
         "reef_crest": {
           "value": null,
@@ -231,9 +234,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "seabed_type": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Sandy bottom along central White Beach Stations 1–3.",
+          "status": "supported",
+          "note": "Qualitative operator description; not a sediment-grain survey or full-length seabed map.",
+          "source_ids": [
+            "SRC-118"
+          ]
         },
         "nearshore_depth": {
           "value": null,
@@ -1642,9 +1648,9 @@
             "data_quality"
           ],
           "status_counts": {
-            "supported": 7,
+            "supported": 9,
             "provisional": 6,
-            "unknown": 32,
+            "unknown": 30,
             "other": 0
           },
           "unknown_field_paths": [
@@ -1658,9 +1664,7 @@
             "shore.shore_slope",
             "shore.tidal_exposure",
             "shore.seasonal_erosion",
-            "underwater.reef_presence",
             "underwater.reef_crest",
-            "underwater.seabed_type",
             "underwater.nearshore_depth",
             "underwater.bathymetry_source",
             "hydrodynamics.wave_climate",
@@ -1691,7 +1695,7 @@
           ],
           "fields_requiring_provenance_check": [],
           "activity_assessment": "not_scored",
-          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known. Evidence update 2026-11-15: beach/locality-level reef and access claims are scoped explicitly; no reef polygon, beach boundary or legal public right-of-way is inferred."
         }
       },
       "internal": {
@@ -2410,9 +2414,14 @@
           "note": "Guide-level route description; individual paths and current access conditions were not inspected."
         },
         "public_access_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Visitor-guide sources describe access from the eastern main road and paths leading to Bulabog Beach; the local kite school operates directly on the beachfront. Formal beach-specific public-right-of-way and current entry conditions are not independently verified.",
+          "status": "provisional",
+          "note": "Practical access is reported by a visitor guide and a beachfront operator. This does not constitute a legal survey or guarantee that every access path remains open.",
+          "source_ids": [
+            "SRC-085",
+            "SRC-112",
+            "SRC-001"
+          ]
         },
         "access_restrictions": {
           "value": null,
@@ -3034,8 +3043,8 @@
           ],
           "status_counts": {
             "supported": 8,
-            "provisional": 5,
-            "unknown": 33,
+            "provisional": 6,
+            "unknown": 32,
             "other": 0
           },
           "unknown_field_paths": [
@@ -3064,7 +3073,6 @@
             "activities.snorkeling",
             "activities.kitesurfing_windsurfing",
             "activities.boat_excursions",
-            "access.public_access_status",
             "access.access_restrictions",
             "access.lifeguard_coverage",
             "access.emergency_access",
@@ -3078,11 +3086,12 @@
             "hydrodynamics.habagat_exposure",
             "hydrodynamics.surface_current_context",
             "access.land_access",
-            "access.facilities"
+            "access.facilities",
+            "access.public_access_status"
           ],
           "fields_requiring_provenance_check": [],
           "activity_assessment": "not_scored",
-          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known. Evidence update 2026-11-15: beach/locality-level reef and access claims are scoped explicitly; no reef polygon, beach boundary or legal public right-of-way is inferred."
         }
       },
       "internal": {
@@ -4295,9 +4304,14 @@
       },
       "underwater": {
         "reef_presence": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Nearshore patches of rock and coral with reef fish are reported at Diniwid; exact reef extent and beach-front geometry are not surveyed.",
+          "status": "provisional",
+          "note": "Local dive-operator guidance and mapped nearby dive-site names support reef presence in the locality, but not a reef polygon or measured coral condition.",
+          "source_ids": [
+            "SRC-118",
+            "SRC-113",
+            "SRC-001"
+          ]
         },
         "reef_crest": {
           "value": null,
@@ -4305,9 +4319,12 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "seabed_type": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Nearshore rock/coral patches reported; whole-beach substrate proportions and depth profile are unknown.",
+          "status": "provisional",
+          "note": "Qualitative operator observation only; no sediment or bathymetric survey.",
+          "source_ids": [
+            "SRC-118"
+          ]
         },
         "nearshore_depth": {
           "value": null,
@@ -4764,9 +4781,14 @@
           "note": "The 2020 DOT article and 2025 travel guide describe routes; exact current path condition, gates and right-of-way were not independently verified."
         },
         "public_access_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "DOT and visitor-guide sources describe a clifftop footpath from White Beach and tricycle access; a local dive operator also describes shore entry at Diniwid. Current path condition and formal public right-of-way are not independently verified.",
+          "status": "provisional",
+          "note": "Practical visitor access is reported, but this does not establish a surveyed public easement or guarantee that all gates/paths are currently open.",
+          "source_ids": [
+            "SRC-083",
+            "SRC-085",
+            "SRC-118"
+          ]
         },
         "access_restrictions": {
           "value": "The documented land approaches include a cliff-edge footpath and a back access road. Current path condition, any gates, and public right-of-way are not established by the source.",
@@ -5120,8 +5142,8 @@
           ],
           "status_counts": {
             "supported": 6,
-            "provisional": 2,
-            "unknown": 35,
+            "provisional": 5,
+            "unknown": 32,
             "other": 0
           },
           "unknown_field_paths": [
@@ -5136,9 +5158,7 @@
             "shore.shore_slope",
             "shore.tidal_exposure",
             "shore.seasonal_erosion",
-            "underwater.reef_presence",
             "underwater.reef_crest",
-            "underwater.seabed_type",
             "underwater.nearshore_depth",
             "underwater.bathymetry_source",
             "hydrodynamics.amihan_exposure",
@@ -5153,7 +5173,6 @@
             "activities.snorkeling",
             "activities.kitesurfing_windsurfing",
             "activities.boat_excursions",
-            "access.public_access_status",
             "access.lifeguard_coverage",
             "access.emergency_access",
             "excursions.regular_departure",
@@ -5163,11 +5182,14 @@
           ],
           "provisional_field_paths": [
             "access.land_access",
-            "access.facilities"
+            "access.facilities",
+            "underwater.reef_presence",
+            "underwater.seabed_type",
+            "access.public_access_status"
           ],
           "fields_requiring_provenance_check": [],
           "activity_assessment": "not_scored",
-          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known. Evidence update 2026-11-15: beach/locality-level reef and access claims are scoped explicitly; no reef polygon, beach boundary or legal public right-of-way is inferred."
         }
       },
       "internal": {
@@ -6105,9 +6127,13 @@
       },
       "underwater": {
         "reef_presence": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "A coral-reef / marine-park site is documented in the Balinghai locality; its exact relationship to the beach-front and reef boundary is not established.",
+          "status": "provisional",
+          "note": "DENR-BMB/UPMSI identifies Balinghai in the marine-park/reef survey context. Do not infer a continuous reef along the beach or shore-entry snorkelling suitability.",
+          "source_ids": [
+            "SRC-111",
+            "SRC-001"
+          ]
         },
         "reef_crest": {
           "value": null,
@@ -6727,8 +6753,8 @@
           ],
           "status_counts": {
             "supported": 8,
-            "provisional": 0,
-            "unknown": 35,
+            "provisional": 1,
+            "unknown": 34,
             "other": 0
           },
           "unknown_field_paths": [
@@ -6743,7 +6769,6 @@
             "shore.shore_slope",
             "shore.tidal_exposure",
             "shore.seasonal_erosion",
-            "underwater.reef_presence",
             "underwater.reef_crest",
             "underwater.seabed_type",
             "underwater.nearshore_depth",
@@ -6768,10 +6793,12 @@
             "ecology.reef_condition",
             "ecology.pollution_sources"
           ],
-          "provisional_field_paths": [],
+          "provisional_field_paths": [
+            "underwater.reef_presence"
+          ],
           "fields_requiring_provenance_check": [],
           "activity_assessment": "not_scored",
-          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known. Evidence update 2026-11-15: beach/locality-level reef and access claims are scoped explicitly; no reef polygon, beach boundary or legal public right-of-way is inferred."
         }
       },
       "internal": {
@@ -7850,9 +7877,13 @@
       },
       "underwater": {
         "reef_presence": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "A reef survey is recorded for Ilig-Iligan locality (2010); the immediate beach-front extent and shore-entry access are not established.",
+          "status": "provisional",
+          "note": "Locality-level historical reef survey; no beach-front polygon, depth profile or current reef condition is available.",
+          "source_ids": [
+            "SRC-111",
+            "SRC-001"
+          ]
         },
         "reef_crest": {
           "value": null,
@@ -8273,9 +8304,12 @@
           "note": "This is a visitor-guide description; the current public approach point, road condition, estate access arrangements and boat landing permission are not confirmed."
         },
         "public_access_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Visitor-guide sources describe tricycle access and a short final walk to Ilig-Iligan; current approach condition, gates and formal public right-of-way remain unverified.",
+          "status": "provisional",
+          "note": "Reported practical access only; not a legal access determination or current route inspection.",
+          "source_ids": [
+            "SRC-085"
+          ]
         },
         "access_restrictions": {
           "value": "The final road section is reported as rough and may require walking. A separate 2026 visitor guide says there is no universally confirmed public admission/approach arrangement; private-estate access may vary.",
@@ -8679,8 +8713,8 @@
           ],
           "status_counts": {
             "supported": 6,
-            "provisional": 3,
-            "unknown": 35,
+            "provisional": 5,
+            "unknown": 33,
             "other": 0
           },
           "unknown_field_paths": [
@@ -8695,7 +8729,6 @@
             "shore.shore_slope",
             "shore.tidal_exposure",
             "shore.seasonal_erosion",
-            "underwater.reef_presence",
             "underwater.reef_crest",
             "underwater.seabed_type",
             "underwater.nearshore_depth",
@@ -8712,7 +8745,6 @@
             "activities.snorkeling",
             "activities.kitesurfing_windsurfing",
             "activities.boat_excursions",
-            "access.public_access_status",
             "access.lifeguard_coverage",
             "access.emergency_access",
             "excursions.regular_departure",
@@ -8723,11 +8755,13 @@
           "provisional_field_paths": [
             "access.land_access",
             "access.access_restrictions",
-            "access.facilities"
+            "access.facilities",
+            "underwater.reef_presence",
+            "access.public_access_status"
           ],
           "fields_requiring_provenance_check": [],
           "activity_assessment": "not_scored",
-          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known. Evidence update 2026-11-15: beach/locality-level reef and access claims are scoped explicitly; no reef polygon, beach boundary or legal public right-of-way is inferred."
         }
       },
       "internal": {
@@ -9776,9 +9810,13 @@
       },
       "underwater": {
         "reef_presence": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "A reef survey is recorded for Tulubhan locality (2010); the immediate beach-front extent and shore-entry access are not established.",
+          "status": "provisional",
+          "note": "Locality-level historical reef survey; no beach-front polygon, depth profile or current reef condition is available.",
+          "source_ids": [
+            "SRC-111",
+            "SRC-001"
+          ]
         },
         "reef_crest": {
           "value": null,
@@ -10199,9 +10237,12 @@
           "note": "Guide-level route description; exact access point, public right-of-way and current road conditions were not independently confirmed."
         },
         "public_access_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Visitor-guide sources describe access by tricycle or a short walk to the local shoreline; formal public right-of-way and current access conditions are not independently verified.",
+          "status": "provisional",
+          "note": "Reported practical access only; the working shoreline and fishing activity remain relevant; no public access right is inferred.",
+          "source_ids": [
+            "SRC-085"
+          ]
         },
         "access_restrictions": {
           "value": "Described as a working shoreline used by local fishers, with nets and boats along the beach. The guide characterises it as less suitable for swimming than for walking and observing local activity.",
@@ -10567,8 +10608,8 @@
           ],
           "status_counts": {
             "supported": 5,
-            "provisional": 2,
-            "unknown": 36,
+            "provisional": 4,
+            "unknown": 34,
             "other": 0
           },
           "unknown_field_paths": [
@@ -10583,7 +10624,6 @@
             "shore.shore_slope",
             "shore.tidal_exposure",
             "shore.seasonal_erosion",
-            "underwater.reef_presence",
             "underwater.reef_crest",
             "underwater.seabed_type",
             "underwater.nearshore_depth",
@@ -10600,7 +10640,6 @@
             "activities.snorkeling",
             "activities.kitesurfing_windsurfing",
             "activities.boat_excursions",
-            "access.public_access_status",
             "access.facilities",
             "access.lifeguard_coverage",
             "access.emergency_access",
@@ -10611,11 +10650,13 @@
           ],
           "provisional_field_paths": [
             "access.land_access",
-            "access.access_restrictions"
+            "access.access_restrictions",
+            "underwater.reef_presence",
+            "access.public_access_status"
           ],
           "fields_requiring_provenance_check": [],
           "activity_assessment": "not_scored",
-          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known. Evidence update 2026-11-15: beach/locality-level reef and access claims are scoped explicitly; no reef polygon, beach boundary or legal public right-of-way is inferred."
         }
       },
       "internal": {
@@ -10776,9 +10817,15 @@
       },
       "underwater": {
         "reef_presence": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Nearshore coral gardens / reef are reported a short swim from the sand at Tambisaan Beach.",
+          "status": "supported",
+          "note": "Multiple visitor/operator sources identify a nearshore reef. This supports presence only; no surveyed boundary, live-coral cover, reef condition or current visibility is established.",
+          "source_ids": [
+            "SRC-118",
+            "SRC-085",
+            "SRC-001",
+            "SRC-113"
+          ]
         },
         "reef_crest": {
           "value": null,
@@ -10786,9 +10833,13 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "seabed_type": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Nearshore coral-garden/reef substrate is reported; the rest of the beach seabed and substrate proportions are not surveyed.",
+          "status": "provisional",
+          "note": "Qualitative nearshore description; not a full beach seabed map or depth profile.",
+          "source_ids": [
+            "SRC-118",
+            "SRC-085"
+          ]
         },
         "nearshore_depth": {
           "value": null,
@@ -11234,9 +11285,13 @@
           "note": "Guide-level route description; current road signs, traffic controls and port-side access were not independently checked."
         },
         "public_access_status": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "value": "Visitor-guide sources describe tricycle access to Tambisaan Beach; DENR-EMB also documents the beach as a weather-dependent alternative entry/exit location. This does not establish a formal public route or current recreational access conditions.",
+          "status": "provisional",
+          "note": "Practical visitor access and port use are documented separately; no beach-specific legal right-of-way or current entry status is confirmed.",
+          "source_ids": [
+            "SRC-085",
+            "SRC-002"
+          ]
         },
         "access_restrictions": {
           "value": "DENR-EMB reports that Tambisaan Beach is used as an alternative island entry and exit point when weather, wind and sea conditions affect the usual Cagban route. The beach record therefore distinguishes the recreational shoreline from the adjacent pier and port operations.",
@@ -11624,9 +11679,9 @@
             "data_quality"
           ],
           "status_counts": {
-            "supported": 6,
-            "provisional": 2,
-            "unknown": 35,
+            "supported": 7,
+            "provisional": 4,
+            "unknown": 32,
             "other": 0
           },
           "unknown_field_paths": [
@@ -11641,9 +11696,7 @@
             "shore.shore_slope",
             "shore.tidal_exposure",
             "shore.seasonal_erosion",
-            "underwater.reef_presence",
             "underwater.reef_crest",
-            "underwater.seabed_type",
             "underwater.nearshore_depth",
             "underwater.bathymetry_source",
             "hydrodynamics.amihan_exposure",
@@ -11658,7 +11711,6 @@
             "activities.snorkeling",
             "activities.kitesurfing_windsurfing",
             "activities.boat_excursions",
-            "access.public_access_status",
             "access.lifeguard_coverage",
             "access.emergency_access",
             "excursions.regular_departure",
@@ -11668,11 +11720,13 @@
           ],
           "provisional_field_paths": [
             "access.land_access",
-            "access.facilities"
+            "access.facilities",
+            "underwater.seabed_type",
+            "access.public_access_status"
           ],
           "fields_requiring_provenance_check": [],
           "activity_assessment": "not_scored",
-          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known. Evidence update 2026-11-15: beach/locality-level reef and access claims are scoped explicitly; no reef polygon, beach boundary or legal public right-of-way is inferred."
         }
       },
       "internal": {
