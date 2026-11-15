@@ -630,7 +630,8 @@
                 "SRC-085"
               ],
               "status": "provisional",
-              "scope": "Seasonal context only; not a real-time swimming or safety assessment."
+              "scope": "Seasonal context only; not a real-time swimming or safety assessment.",
+              "recommendation_eligible": false
             },
             {
               "claim": "Caticlan meteorological observations from 2003–2004 report prevailing NE winds during October–March and SW winds during June–September. Combined with White Beach's southwest-facing exposure and the qualitative seasonal wave evidence, this supports a broad seasonal exposure signal only; it does not establish measured monthly wave conditions or swimming safety.",
@@ -640,7 +641,8 @@
                 "SRC-042"
               ],
               "status": "provisional",
-              "scope": "Historical regional wind-direction and modelled/qualitative wave context only; no beach-specific wave-height series, rip-current observations, or current bathing-safety determination."
+              "scope": "Historical regional wind-direction and modelled/qualitative wave context only; no beach-specific wave-height series, rip-current observations, or current bathing-safety determination.",
+              "recommendation_eligible": false
             },
             {
               "status": "provisional",
@@ -654,7 +656,8 @@
                 "Modelled seasonal comparison, not a measured long-term wave series.",
                 "No same-day wave, current, rip-current, lifeguard or bathing-water status is implied.",
                 "Local red flags, lifeguard instructions and weather warnings override this seasonal context."
-              ]
+              ],
+              "recommendation_eligible": true
             }
           ],
           "assessment_status": "not_scored"
@@ -671,7 +674,8 @@
                 "SRC-085"
               ],
               "status": "supported",
-              "scope": "General destination character; facilities vary by station and date."
+              "scope": "General destination character; facilities vary by station and date.",
+              "recommendation_eligible": true
             }
           ],
           "assessment_status": "not_scored"
@@ -703,7 +707,8 @@
                 "SRC-080"
               ],
               "status": "supported",
-              "scope": "Operator-specific meeting point, not a universal departure terminal."
+              "scope": "Operator-specific meeting point, not a universal departure terminal.",
+              "recommendation_eligible": true
             }
           ],
           "assessment_status": "not_scored"
@@ -2284,7 +2289,8 @@
                 "SRC-085"
               ],
               "status": "supported",
-              "scope": "General beach character; does not rate comfort or crowding by month."
+              "scope": "General beach character; does not rate comfort or crowding by month.",
+              "recommendation_eligible": false
             }
           ],
           "assessment_status": "not_scored"
@@ -2308,7 +2314,8 @@
                 "SRC-085"
               ],
               "status": "supported",
-              "scope": "Confirms activity presence, not a monthly wind forecast or suitability score."
+              "scope": "Confirms activity presence, not a monthly wind forecast or suitability score.",
+              "recommendation_eligible": true
             },
             {
               "claim": "Bulabog is the island's established kiteboarding/windsurfing beach. Caticlan meteorological observations from 2003–2004 report prevailing NE winds during October–March; the Boracay wave/sediment model describes Bulabog as facing NE winds directly and having longer fetch and a narrower reef crest. This supports an Amihan seasonal wind-sports signal, but no measured Bulabog wind-speed distribution, gust statistics, or launch-safety dataset is available.",
@@ -2319,7 +2326,8 @@
                 "SRC-080"
               ],
               "status": "provisional",
-              "scope": "Seasonal directional evidence and operator listings; not a monthly wind-speed assessment or guarantee of safe kite/windsurfing conditions."
+              "scope": "Seasonal directional evidence and operator listings; not a monthly wind-speed assessment or guarantee of safe kite/windsurfing conditions.",
+              "recommendation_eligible": true
             },
             {
               "status": "supported",
@@ -2334,7 +2342,8 @@
                 "Specialist operator station and experience, not an official PAGASA climatological normal.",
                 "The public historical chart does not publish numeric monthly percentages.",
                 "Wind does not establish safe launch/landing, wave, current or swimming conditions."
-              ]
+              ],
+              "recommendation_eligible": true
             }
           ],
           "assessment_status": "not_scored"
@@ -2343,7 +2352,24 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass.",
-          "evidence_observations": [],
+          "evidence_observations": [
+            {
+              "status": "provisional",
+              "claim": "During Habagat (June–September), an operator lists a beachfront meeting/activity point in front of Lucky Tito Resort, near Moksha Cafe, on Bulabog Beach. This is an operator-specific meeting point, not an official public pier or a guaranteed boat boarding location; confirm the exact arrangement with the operator.",
+              "source_ids": [
+                "SRC-004",
+                "SRC-005",
+                "SRC-080"
+              ],
+              "season": "Habagat (June–September)",
+              "recommendation_eligible": true,
+              "limitations": [
+                "Operator-specific meeting/activity point only.",
+                "Not an official pier, public boarding point or guarantee of boat operations.",
+                "Reconfirm the operator's current meeting point and weather-related service status."
+              ]
+            }
+          ],
           "assessment_status": "not_scored"
         }
       },
@@ -3562,7 +3588,8 @@
                 "SRC-082"
               ],
               "status": "supported",
-              "scope": "Published visitor warning; not a live hazard notice."
+              "scope": "Published visitor warning; not a live hazard notice.",
+              "recommendation_eligible": false
             }
           ],
           "assessment_status": "not_scored"
@@ -3579,7 +3606,8 @@
                 "SRC-085"
               ],
               "status": "supported",
-              "scope": "Destination character; no crowding or comfort score assigned."
+              "scope": "Destination character; no crowding or comfort score assigned.",
+              "recommendation_eligible": true
             }
           ],
           "assessment_status": "not_scored"
@@ -4622,7 +4650,8 @@
                 "SRC-085"
               ],
               "status": "provisional",
-              "scope": "Geographic description only; not proof of calm or safe swimming."
+              "scope": "Geographic description only; not proof of calm or safe swimming.",
+              "recommendation_eligible": false
             }
           ],
           "assessment_status": "not_scored"
@@ -4639,7 +4668,8 @@
                 "SRC-085"
               ],
               "status": "supported",
-              "scope": "General destination character."
+              "scope": "General destination character.",
+              "recommendation_eligible": false
             }
           ],
           "assessment_status": "not_scored"
@@ -5609,7 +5639,8 @@
                 "SRC-087"
               ],
               "status": "supported",
-              "scope": "Resort-facility context; public access is not established."
+              "scope": "Resort-facility context; public access is not established.",
+              "recommendation_eligible": false
             }
           ],
           "assessment_status": "not_scored"
@@ -6398,7 +6429,8 @@
                 "SRC-084"
               ],
               "status": "provisional",
-              "scope": "Physical setting only; no swimming suitability score."
+              "scope": "Physical setting only; no swimming suitability score.",
+              "recommendation_eligible": false
             }
           ],
           "assessment_status": "not_scored"
@@ -6415,7 +6447,8 @@
                 "SRC-085"
               ],
               "status": "provisional",
-              "scope": "Visitor-guide and travel-platform description; current admission terms require direct confirmation."
+              "scope": "Visitor-guide and travel-platform description; current admission terms require direct confirmation.",
+              "recommendation_eligible": true
             }
           ],
           "assessment_status": "not_scored"
@@ -7192,7 +7225,8 @@
                 "SRC-087"
               ],
               "status": "supported",
-              "scope": "Guest-facility context; public access is not established."
+              "scope": "Guest-facility context; public access is not established.",
+              "recommendation_eligible": false
             }
           ],
           "assessment_status": "not_scored"
@@ -8144,7 +8178,8 @@
                 "SRC-085"
               ],
               "status": "provisional",
-              "scope": "Secondary guide description; no occupancy measurements."
+              "scope": "Secondary guide description; no occupancy measurements.",
+              "recommendation_eligible": false
             }
           ],
           "assessment_status": "not_scored"
@@ -9206,7 +9241,8 @@
                 "SRC-088"
               ],
               "status": "provisional",
-              "scope": "Developer-wide activity description only."
+              "scope": "Developer-wide activity description only.",
+              "recommendation_eligible": false
             }
           ],
           "assessment_status": "not_scored"
@@ -9222,7 +9258,8 @@
                 "SRC-088"
               ],
               "status": "supported",
-              "scope": "Developer positioning, not an independent comfort or water-quality assessment."
+              "scope": "Developer positioning, not an independent comfort or water-quality assessment.",
+              "recommendation_eligible": false
             }
           ],
           "assessment_status": "not_scored"
@@ -10067,7 +10104,8 @@
                 "SRC-085"
               ],
               "status": "provisional",
-              "scope": "Secondary visitor description; not a current facilities or bathing assessment."
+              "scope": "Secondary visitor description; not a current facilities or bathing assessment.",
+              "recommendation_eligible": false
             }
           ],
           "assessment_status": "not_scored"
@@ -11076,7 +11114,8 @@
                 "SRC-085"
               ],
               "status": "provisional",
-              "scope": "Secondary guide description; reef condition, exact extent and current visibility are not independently measured here."
+              "scope": "Secondary guide description; reef condition, exact extent and current visibility are not independently measured here.",
+              "recommendation_eligible": true
             }
           ],
           "assessment_status": "not_scored"
@@ -11101,7 +11140,8 @@
                 "SRC-002"
               ],
               "status": "provisional",
-              "scope": "Itinerary stop and port operations do not establish a regular tourist departure point or safe swimming zone."
+              "scope": "Itinerary stop and port operations do not establish a regular tourist departure point or safe swimming zone.",
+              "recommendation_eligible": true
             }
           ],
           "assessment_status": "not_scored"
@@ -14507,7 +14547,8 @@
                 "SRC-088"
               ],
               "status": "provisional",
-              "scope": "Developer-wide marketing description; no Cove 2-specific safety, depth or seasonal data."
+              "scope": "Developer-wide marketing description; no Cove 2-specific safety, depth or seasonal data.",
+              "recommendation_eligible": false
             }
           ],
           "assessment_status": "not_scored"
@@ -14523,7 +14564,8 @@
                 "SRC-088"
               ],
               "status": "supported",
-              "scope": "Developer positioning; does not establish event schedule, public admission or suitability by month."
+              "scope": "Developer positioning; does not establish event schedule, public admission or suitability by month.",
+              "recommendation_eligible": false
             }
           ],
           "assessment_status": "not_scored"
@@ -15498,7 +15540,8 @@
                 "SRC-088"
               ],
               "status": "provisional",
-              "scope": "Developer-wide marketing description; no Cove 3-specific safety, depth or seasonal data."
+              "scope": "Developer-wide marketing description; no Cove 3-specific safety, depth or seasonal data.",
+              "recommendation_eligible": false
             }
           ],
           "assessment_status": "not_scored"
@@ -15514,7 +15557,8 @@
                 "SRC-088"
               ],
               "status": "supported",
-              "scope": "Developer positioning; does not establish public access or legal exclusivity."
+              "scope": "Developer positioning; does not establish public access or legal exclusivity.",
+              "recommendation_eligible": false
             }
           ],
           "assessment_status": "not_scored"
