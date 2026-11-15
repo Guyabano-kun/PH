@@ -244,6 +244,19 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "shore_snorkel_context": {
+          "status": "supported",
+          "source_ids": [
+            "SRC-118"
+          ],
+          "access_mode": "not_recommended_for_reef_snorkelling_in_central_stations",
+          "observation": "New Wave Divers describes central White Beach Stations 1–3 as a sandy-bottomed swimming/sunbathing area with steady boat traffic, not a reef-snorkelling site.",
+          "scope": "Central White Beach only. Angol Point at the southern tip is a separate locality and is not used as evidence that the whole White Beach has shore reef.",
+          "limitations": [
+            "Operator guidance, not a mapped seabed survey.",
+            "No reef polygon, coral-cover measurement or current boat-lane coordinates are supplied."
+          ]
         }
       },
       "hydrodynamics": {
@@ -684,7 +697,21 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass.",
-          "evidence_observations": [],
+          "evidence_observations": [
+            {
+              "status": "supported",
+              "claim": "New Wave Divers states that central White Beach Stations 1–3 are sandy-bottomed and have steady boat traffic; they are not a reef-snorkelling location. Angol Point is a separate southern locality and must not be treated as a White Beach reef.",
+              "source_ids": [
+                "SRC-118",
+                "SRC-001"
+              ],
+              "recommendation_eligible": false,
+              "limitations": [
+                "Operator guidance, not a mapped seabed survey.",
+                "Does not apply to separate Angol Point or offshore boat-access reefs."
+              ]
+            }
+          ],
           "assessment_status": "not_scored"
         },
         "kitesurfing_windsurfing": {
@@ -1673,7 +1700,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 9
+          "revision": 10
         }
       },
       "record_type": "beach",
@@ -4309,7 +4336,21 @@
             "snorkelling_suitability": "not_established",
             "note": "Operator-listed sloping reef dive site. TPB map separately lists Diniwid Reef; no surveyed beach-to-reef boundary or snorkelling suitability is established."
           }
-        ]
+        ],
+        "shore_snorkel_context": {
+          "status": "provisional",
+          "source_ids": [
+            "SRC-118"
+          ],
+          "access_mode": "shore_entry_reported",
+          "observation": "New Wave Divers reports patches of rock and coral near shore at Diniwid, with reef fish; it recommends high tide and calm conditions.",
+          "scope": "Qualitative local operator guidance for nearshore patches; no surveyed reef extent or exact shore-entry point.",
+          "limitations": [
+            "No measured depth, visibility or current series.",
+            "The recommendation is conditional on high tide and calm sea state.",
+            "The source does not establish current public access rights or a designated snorkelling zone."
+          ]
+        }
       },
       "hydrodynamics": {
         "amihan_exposure": {
@@ -4678,7 +4719,23 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass.",
-          "evidence_observations": [],
+          "evidence_observations": [
+            {
+              "status": "provisional",
+              "claim": "New Wave Divers identifies Diniwid as a possible shore-snorkelling spot: patches of rock and coral with reef fish occur near shore. The operator recommends high tide and calm conditions; no surveyed reef boundary, measured depth, visibility or current series is available.",
+              "source_ids": [
+                "SRC-118",
+                "SRC-113",
+                "SRC-001"
+              ],
+              "recommendation_eligible": true,
+              "limitations": [
+                "Qualitative operator guidance, not a scientific reef survey.",
+                "High tide and calm conditions are required by the source guidance.",
+                "Do not treat as a current safety clearance or confirmed public snorkelling zone."
+              ]
+            }
+          ],
           "assessment_status": "not_scored"
         },
         "kitesurfing_windsurfing": {
@@ -5119,7 +5176,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 6
+          "revision": 7
         }
       },
       "record_type": "beach",
@@ -10760,7 +10817,22 @@
             "snorkelling_suitability": "not_established",
             "note": "Named reef/dive site near Tambisaan. The existing Rough Guides report of a reef about 25 m offshore is retained separately as provisional snorkelling context; the operator depth range is not a beach-front depth profile."
           }
-        ]
+        ],
+        "shore_snorkel_context": {
+          "status": "provisional",
+          "source_ids": [
+            "SRC-118",
+            "SRC-085"
+          ],
+          "access_mode": "shore_entry_reported",
+          "observation": "New Wave Divers reports coral gardens a short swim from the sand at Tambisaan; shore snorkelling is recommended only when the water is calm.",
+          "scope": "Qualitative local operator guidance, supported by a separate visitor-guide report of a nearshore reef; no surveyed reef polygon or current condition series.",
+          "limitations": [
+            "No measured depth, visibility or current series.",
+            "Boat traffic and changing sea state must be checked locally.",
+            "The dive-site depth range is not a beach-front depth profile."
+          ]
+        }
       },
       "hydrodynamics": {
         "amihan_exposure": {
@@ -11109,13 +11181,18 @@
           "note": "No sufficiently verified source captured in this initial data pass.",
           "evidence_observations": [
             {
-              "claim": "Rough Guides describes a reef approximately 25 m offshore and identifies snorkeling as a principal visitor activity at Tambisaan.",
+              "claim": "Rough Guides and New Wave Divers identify Tambisaan as a shore-snorkelling location with a reef/coral garden a short swim from the sand. New Wave Divers conditions this recommendation on calm water; no measured visibility, current or current reef-condition series is available.",
               "source_ids": [
-                "SRC-085"
+                "SRC-085",
+                "SRC-118"
               ],
               "status": "provisional",
               "scope": "Secondary guide description; reef condition, exact extent and current visibility are not independently measured here.",
-              "recommendation_eligible": true
+              "recommendation_eligible": true,
+              "limitations": [
+                "Secondary guide and specialist operator descriptions; no surveyed reef boundary.",
+                "Only suitable when the sea is calm; check same-day current, tide and boat traffic."
+              ]
             }
           ],
           "assessment_status": "not_scored"
@@ -11604,7 +11681,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 7
+          "revision": 8
         }
       },
       "record_type": "beach",
