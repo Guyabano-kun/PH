@@ -1725,6 +1725,25 @@
       ],
       "limitations": "Marketing/branding aerial image, not georeferenced or surveyed. It supports developer naming and relative visual arrangement only. It does not provide coordinates, shoreline boundaries, beach dimensions, legal access rights, or proof that Savoy Beach is a fourth beach or formal alias of Cove 2.",
       "reliability": "high_for_developer_cove_naming_and_visual_context_not_geospatial_geometry"
+    },
+    {
+      "id": "SRC-105",
+      "title": "Project-approved Boracay beach selection scope and Newcoast Cove hierarchy",
+      "publisher": "PH website project owner instruction",
+      "url": null,
+      "type": "user_approved_project_scope",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "The 13-beach selection pool for the Boracay beach recommender",
+        "Newcoast Beaches parent area",
+        "Cove 1 / Lapus-Lapus Beach mapping",
+        "Cove 2 / Boracay Newcoast Beach mapping",
+        "Cove 3 / Savoy Beach mapping",
+        "Exclusion of Angol Point, Hagdan Beach and Lugutan Beach from the 13-beach selection pool while retaining their research records"
+      ],
+      "limitations": "Authoritative for the website project's intended selection scope and naming hierarchy only. It is not independent evidence of physical shoreline identity, beach boundaries, coordinates, public access or safety.",
+      "reliability": "authoritative_for_project_scope_only"
     }
   ]
 }
