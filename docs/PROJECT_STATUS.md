@@ -6,7 +6,7 @@ Last verified against GitHub `main`: 2026-11-15
 - Repository: `Guyabano-kun/PH`
 - Branch: `main`
 - Code/data baseline before adding project-control files: `c78d7d17bda612fdb9bf7ab5973fff99014f18`
-- Dataset version: `0.2.48`
+- Dataset version: `0.2.49`
 - `data/beaches.json`: 16 records
 - `data/sources.json`: 109 sources
 - Manifest counts: `beach_count=16`, `selection_beach_count=13`, `research_only_record_count=3`
@@ -83,9 +83,11 @@ Current implementation:
 - Selection order is continuous from 1 to 13. Angol Point, Hagdan Beach and Lugutan Beach remain excluded from the selection pool.
 - Newcoast hierarchy is represented in the three child passports: Cove 1 / Lapus-Lapus Beach, Cove 2 / Boracay Newcoast Beach, Cove 3 / Savoy Beach. This is a project-approved naming relationship, not a surveyed shoreline boundary.
 - Hagdan source attribution corrected: SRC-065 was unrelated to Hagdan and has been removed from its identity evidence. Hagdan remains provisional and has no beach coordinate.
+- Added the DENR-EMB `New Coast Boracay` monitoring station to the Newcoast passport as parent-area context only. The 2022 and 2023 reports carry the same station coordinate and publish station-specific historical results; no assignment to Cove 1/2/3 is inferred. The station point is not a beach coordinate.
 - `beaches.html` now displays selection membership and the Newcoast parent/cove mapping using the current `parent_area` and `developer_cove` fields; legacy `developer_coves` rendering is retained.
 - All 65 activity values (13 beaches × 5 activities) remain null and unscored pending evidence validation and approved methodology.
 - Source-reference audit: 109 sources, no dangling source IDs. JSON parsing and JavaScript syntax checks pass.
+- Newcoast Cove 2 field review: `ecology.water_quality_history` changed from unknown to provisional; the station is explicitly area-level. One unknown field was converted to provisional, not supported.
 - Newcoast Cove 2 and Cove 3 beach-specific coordinates and boundaries remain NOT VERIFIED. No POI, hotel, or transport-stop coordinate is substituted.
 - GitHub Pages live and visual verification for the latest changes remains NOT VERIFIED because the published page could not be retrieved in the current verification environment.
 
