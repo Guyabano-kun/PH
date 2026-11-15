@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.51",
+  "dataset_version": "0.2.52",
   "last_updated": "2026-11-15",
   "beaches": [
     {
@@ -3656,7 +3656,21 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass.",
-          "evidence_observations": [],
+          "evidence_observations": [
+            {
+              "status": "provisional",
+              "claim": "Rough Guides reports marine life near the rocky edges of Puka Beach, but the national tourism guide warns of strong currents, rocky areas and a steeper nearshore drop-off. This is not a recommendation for casual shore snorkelling.",
+              "source_ids": [
+                "SRC-082",
+                "SRC-085"
+              ],
+              "recommendation_eligible": false,
+              "limitations": [
+                "Warning evidence takes precedence over a generic marine-life description.",
+                "No current or tide-specific snorkelling safety data is available."
+              ]
+            }
+          ],
           "assessment_status": "not_scored"
         },
         "kitesurfing_windsurfing": {
@@ -4156,7 +4170,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 6
+          "revision": 7
         }
       },
       "record_type": "beach",
@@ -4714,6 +4728,20 @@
               "status": "provisional",
               "scope": "Geographic description only; not proof of calm or safe swimming.",
               "recommendation_eligible": false
+            },
+            {
+              "status": "provisional",
+              "claim": "During Amihan (December–February), Rough Guides describes Diniwid as sheltered from the wind, with water that stays calm when it is rougher elsewhere; the guide also describes the water as usually clear and good for swimming. This is seasonal visitor-guide evidence, not a measured bathing-safety record.",
+              "source_ids": [
+                "SRC-085"
+              ],
+              "season": "Amihan (December–February)",
+              "recommendation_eligible": true,
+              "recommendation_note": "Amihan seasonal context only; check same-day waves, currents and lifeguard flags. No beach-specific safety measurements are available.",
+              "limitations": [
+                "Visitor-guide description, not measured wave/current data.",
+                "No current lifeguard coverage or bathing-zone status is established."
+              ]
             }
           ],
           "assessment_status": "not_scored"
@@ -4731,7 +4759,8 @@
               ],
               "status": "supported",
               "scope": "General destination character.",
-              "recommendation_eligible": false
+              "recommendation_eligible": true,
+              "recommendation_note": "Quiet cove; footpath from White Beach or tricycle access is reported. Current path condition and formal public right-of-way are not verified."
             }
           ],
           "assessment_status": "not_scored"
@@ -5203,7 +5232,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 7
+          "revision": 8
         }
       },
       "record_type": "beach",
@@ -5709,7 +5738,22 @@
           "value": null,
           "status": "unknown",
           "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled.",
-          "evidence_observations": [],
+          "evidence_observations": [
+            {
+              "status": "provisional",
+              "claim": "Rough Guides describes usually calm water at Punta Bunga due to a nearby reef, but the public approach may involve resort checkpoints and passage is not guaranteed. Not eligible as a general public swimming recommendation until access is confirmed.",
+              "source_ids": [
+                "SRC-085",
+                "SRC-014",
+                "SRC-015"
+              ],
+              "recommendation_eligible": false,
+              "limitations": [
+                "Practical access is not guaranteed and no formal public approach route is confirmed.",
+                "No beach-specific current, depth or lifeguard data."
+              ]
+            }
+          ],
           "assessment_status": "not_scored"
         },
         "beach_relaxation": {
@@ -6000,7 +6044,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 5
+          "revision": 6
         }
       },
       "record_type": "beach",
@@ -6546,7 +6590,24 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass.",
-          "evidence_observations": [],
+          "evidence_observations": [
+            {
+              "status": "provisional",
+              "claim": "Rough Guides reports decent snorkelling just offshore around Balinghai's rocks. The beach is resort-managed and non-resort access is ticketed; the sand is exposed only around low tide.",
+              "source_ids": [
+                "SRC-085",
+                "SRC-113",
+                "SRC-111"
+              ],
+              "recommendation_eligible": true,
+              "recommendation_note": "Ticketed resort access; check admission and low tide before travelling. No measured reef condition, visibility or current data is available.",
+              "limitations": [
+                "Visitor-guide and dive-operator context; no beach-front reef survey.",
+                "Day-access availability and current fee must be confirmed with the resort.",
+                "Tide changes beach exposure; this is not a swimming-safety clearance."
+              ]
+            }
+          ],
           "assessment_status": "not_scored"
         },
         "kitesurfing_windsurfing": {
@@ -6813,7 +6874,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 5
+          "revision": 6
         }
       },
       "record_type": "beach",
@@ -8282,7 +8343,23 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass.",
-          "evidence_observations": [],
+          "evidence_observations": [
+            {
+              "status": "provisional",
+              "claim": "Rough Guides describes coral offshore at Ilig-Iligan and recommends snorkelling; the guide identifies the dry season (November–May, overlapping the site's Amihan selection window) as the better period for calmer water and clearer conditions. Reef condition and visibility are not independently measured.",
+              "source_ids": [
+                "SRC-085",
+                "SRC-111"
+              ],
+              "season": "Dry season (November–May; overlaps Amihan)",
+              "recommendation_eligible": true,
+              "recommendation_note": "Dry-season context only; the final road section is reported rough. Check current access, tide, current and visibility before entering.",
+              "limitations": [
+                "Secondary visitor guide and historical locality-level reef survey; no current reef survey or measured visibility.",
+                "Practical route is reported, but formal public right-of-way and current road condition are not confirmed."
+              ]
+            }
+          ],
           "assessment_status": "not_scored"
         },
         "kitesurfing_windsurfing": {
@@ -8776,7 +8853,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 8
+          "revision": 9
         }
       },
       "record_type": "beach",
@@ -9340,6 +9417,20 @@
               "status": "provisional",
               "scope": "Developer-wide activity description only.",
               "recommendation_eligible": false
+            },
+            {
+              "status": "provisional",
+              "claim": "Rough Guides describes a relatively protected swimming area at Lapus-Lapus behind an offshore reef, but access is resort-controlled and non-guest day passes are not guaranteed. Not eligible as a general public swimming recommendation until entry is confirmed.",
+              "source_ids": [
+                "SRC-085",
+                "SRC-014",
+                "SRC-010"
+              ],
+              "recommendation_eligible": false,
+              "limitations": [
+                "Public access is unresolved; do not infer that resort-controlled entry is available to all visitors.",
+                "No beach-specific current, depth or lifeguard data."
+              ]
             }
           ],
           "assessment_status": "not_scored"
@@ -9673,7 +9764,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 7
+          "revision": 8
         }
       },
       "record_type": "beach",
