@@ -135,3 +135,15 @@ Do not invent suitability, access rights, safety conclusions, beach boundaries o
 - The authorization does not override GitHub authentication, branch protection, tool/platform availability, or safety constraints. A technical failure must be reported as BLOCKED; never claim an unperformed action.
 - `AGENTS.md` is the operational source of truth for this standing authorization and the required verification protocol.
 - Authorization recorded in commit `e59dad8bfb8280da3677ab2167d9823ff3f6fb49`.
+
+
+## Three-mode beach selector implementation (2026-11-15)
+- Implemented on `boracay.html` in commits `3ca5ebfd1e62d05d5eafaa1017bf837f0b00cbaf` and `045e3aa013a21a10be0c1b66bf8b1cca40b1d28e`.
+- Added the three agreed query modes: month + activity → evidence-backed beach options; month + beach → activities with eligible evidence; activity + beach → months supported by explicit seasonal observations.
+- Inputs use the 12 months, five existing activities and exactly the 13 selection-eligible beaches from `data/beaches.json`. The selector is bilingual and defaults to the current month in `Asia/Manila`.
+- Eligibility is evidence-gated: only observations with status `supported` or `provisional`, a claim, and `recommendation_eligible=true` are used. Supported observations sort before provisional; no numeric scores or synthetic rankings are calculated.
+- For swimming, kite/windsurfing and boat excursions, a seasonal observation matching the selected month-season is required. General evidence without an explicit season does not create a month list in activity + beach mode. No unsupported months are inferred.
+- Existing compact five-activity current-season summary and methodology dialog remain in place. No changes to the data schema, beach IDs, Leaflet, or weather page.
+- Dataset baseline remains `0.2.53` (16 records, 13 eligible, 3 research-only).
+- Verification performed: source and data fetched from current `main`; commit diff inspected; three query modes and controls present; 12-month and 13-beach data sources confirmed. Full browser interaction, mobile/desktop visual rendering, and live GitHub Pages deployment remain NOT VERIFIED in this pass.
+- Known limitation: this is an evidence-filtering query tool, not the full weighted 12 × 5 × 13 suitability model. Monthly claims are limited to explicitly season-tagged evidence and current Amihan/Habagat month mapping; October/season-boundary evidence requires further source review.
