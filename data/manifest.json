@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.44",
+  "dataset_version": "0.2.45",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-15",
   "beach_count": 16,
@@ -121,7 +121,8 @@
     "Version 0.2.43: Boracay Newcoast Beach and Savoy Beach are restored as separate records using stable IDs newcoast and savoy. Nearby Mapbox/OSM points remain POI/attraction references, never beach centroids. No duplicate Cove 1 / Lapus-Lapus record is created.",
     "Version 0.2.43: activity evidence observations have been added where supported by registered sources, but all activity suitability values remain unscored and null. No monthly suitability matrix is created in this phase.",
     "Version 0.2.43: each beach record includes a field-review audit identifying supported, provisional and unknown fields. Unknown fields remain explicit; no unsupported values or coordinates are inferred.",
-    "Version 0.2.44: added SRC-106, the official Boracay Island Water Supply System EPRMP. Its Caticlan 2003–2004 observations support broad Amihan/Habagat wind-direction timing only; Roxas/Romblon monthly wind normals and regional rainfall proxies are not treated as Boracay beach measurements. Broad current maps are not used as nearshore beach-current data."
+    "Version 0.2.44: added SRC-106, the official Boracay Island Water Supply System EPRMP. Its Caticlan 2003–2004 observations support broad Amihan/Habagat wind-direction timing only; Roxas/Romblon monthly wind normals and regional rainfall proxies are not treated as Boracay beach measurements. Broad current maps are not used as nearshore beach-current data.",
+    "Version 0.2.45: White Beach and Bulabog hydrodynamics now cite SRC-106's historical Caticlan wind-direction observations. Their activity evidence records a provisional broad seasonal signal for White Beach exposure and Bulabog wind sports; no monthly suitability score, measured local wind speed, wave climatology or safety rating is assigned."
   ],
   "record_count": 16,
   "selection_beach_count": 13,
