@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.45",
+  "dataset_version": "0.2.46",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-15",
   "beach_count": 16,
@@ -122,7 +122,14 @@
     "Version 0.2.43: activity evidence observations have been added where supported by registered sources, but all activity suitability values remain unscored and null. No monthly suitability matrix is created in this phase.",
     "Version 0.2.43: each beach record includes a field-review audit identifying supported, provisional and unknown fields. Unknown fields remain explicit; no unsupported values or coordinates are inferred.",
     "Version 0.2.44: added SRC-106, the official Boracay Island Water Supply System EPRMP. Its Caticlan 2003–2004 observations support broad Amihan/Habagat wind-direction timing only; Roxas/Romblon monthly wind normals and regional rainfall proxies are not treated as Boracay beach measurements. Broad current maps are not used as nearshore beach-current data.",
-    "Version 0.2.45: White Beach and Bulabog hydrodynamics now cite SRC-106's historical Caticlan wind-direction observations. Their activity evidence records a provisional broad seasonal signal for White Beach exposure and Bulabog wind sports; no monthly suitability score, measured local wind speed, wave climatology or safety rating is assigned."
+    "Version 0.2.45: White Beach and Bulabog hydrodynamics now cite SRC-106's historical Caticlan wind-direction observations. Their activity evidence records a provisional broad seasonal signal for White Beach exposure and Bulabog wind sports; no monthly suitability score, measured local wind speed, wave climatology or safety rating is assigned.",
+    "Dataset 0.2.46 adds a consistent seven-parameter hydrodynamics assessment structure to all 16 beach records: wave_exposure, current_speed, current_direction, rip_currents, bathymetry, tides and entry_exit. Existing legacy hydrodynamics fields are retained for compatibility.",
+    "Added SRC-107 to SRC-110 for NAMRIA hydrographic product access, Copernicus WAVERYS wave reanalysis, Copernicus GLORYS12V1 ocean physics reanalysis and GEBCO_2026 bathymetry. These are acquisition/reference sources, not evidence that Boracay-specific numerical datasets have been extracted.",
+    "White Beach and Bulabog Beach retain provisional qualitative/inferred seasonal wave-exposure context from existing sources. Bulabog retains a provisional island-east-side eastward surface-current direction observation from SRC-042; this is not a measured beach-level current. No new numeric wave, current, tide or bathymetry values have been assigned.",
+    "All seven hydrodynamic parameter groups now distinguish evidence type, source IDs, candidate source IDs, spatial scope, temporal scope, confidence, limitations and next action where applicable. Candidate source IDs indicate a potential acquisition source, not extracted evidence.",
+    "Copernicus WAVERYS nominal 0.2-degree (~20 km) wave grid and GLORYS12V1 nominal 1/12-degree (~8–9 km) current grid are too coarse to resolve individual Boracay beaches, reef channels, surf zones or rip currents. Use only for regional context pending local validation.",
+    "GEBCO_2026 is a heterogeneous global bathymetry compilation. Its Type Identifier Grid must be reviewed cell-by-cell; it is not a substitute for NAMRIA hydrographic data and must not be used for navigation or marine-safety decisions.",
+    "Hydrodynamic data acquisition remains incomplete: NAMRIA bathymetry/tidal data have not been received, no local current-meter/drifter observations or repeatable rip-current observations have been ingested, and no standardized entry/exit field survey has been completed. Activity scores remain unassigned."
   ],
   "record_count": 16,
   "selection_beach_count": 13,
