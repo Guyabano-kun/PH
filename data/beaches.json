@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.42",
+  "dataset_version": "0.2.43",
   "last_updated": "2026-11-15",
   "beaches": [
     {
@@ -326,27 +326,68 @@
         "swimming": {
           "value": null,
           "status": "unknown",
-          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled.",
+          "evidence_observations": [
+            {
+              "claim": "White Beach is described as relatively sheltered during Amihan and subject to somewhat stronger waves during Habagat; the supporting study is qualitative and does not provide a beach-specific measured wave climatology.",
+              "source_ids": [
+                "SRC-042",
+                "SRC-085"
+              ],
+              "status": "provisional",
+              "scope": "Seasonal context only; not a real-time swimming or safety assessment."
+            }
+          ],
+          "assessment_status": "not_scored"
         },
         "beach_relaxation": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [
+            {
+              "claim": "White Beach is the island's principal tourism beach, approximately 4 km long, with visitor facilities varying by station.",
+              "source_ids": [
+                "SRC-002",
+                "SRC-085"
+              ],
+              "status": "supported",
+              "scope": "General destination character; facilities vary by station and date."
+            }
+          ],
+          "assessment_status": "not_scored"
         },
         "snorkeling": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "kitesurfing_windsurfing": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "boat_excursions": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [
+            {
+              "claim": "Astoria Boracay Station 1 is listed by operators as a seasonal meeting/activity point for October–May.",
+              "source_ids": [
+                "SRC-004",
+                "SRC-005",
+                "SRC-080"
+              ],
+              "status": "supported",
+              "scope": "Operator-specific meeting point, not a universal departure terminal."
+            }
+          ],
+          "assessment_status": "not_scored"
         }
       },
       "access": {
@@ -1186,9 +1227,79 @@
           "Local currents and wave exposure",
           "Public access and restrictions",
           "Current water quality",
-          "Activity-specific hazards"
+          "Activity-specific hazards",
+          "Activity suitability has not yet been scored for the five selection activities",
+          "12-month activity suitability matrix has not yet been assessed",
+          "Current, date-specific sea and bathing conditions are not represented by this passport"
         ],
-        "last_reviewed": "2026-11-15"
+        "last_reviewed": "2026-11-15",
+        "field_review": {
+          "reviewed_at": "2026-11-15",
+          "reviewed_sections": [
+            "identity",
+            "geography",
+            "shore",
+            "underwater",
+            "hydrodynamics",
+            "activities",
+            "access",
+            "excursions",
+            "ecology",
+            "evidence",
+            "data_quality"
+          ],
+          "status_counts": {
+            "supported": 7,
+            "provisional": 6,
+            "unknown": 32,
+            "other": 0
+          },
+          "unknown_field_paths": [
+            "identity.alternative_names",
+            "identity.administrative_area",
+            "geography.beach_boundary",
+            "geography.shoreline_geometry",
+            "geography.natural_shelter",
+            "geography.coastline_orientation_degrees",
+            "shore.beach_width",
+            "shore.shore_slope",
+            "shore.tidal_exposure",
+            "shore.seasonal_erosion",
+            "underwater.reef_presence",
+            "underwater.reef_crest",
+            "underwater.seabed_type",
+            "underwater.nearshore_depth",
+            "underwater.bathymetry_source",
+            "hydrodynamics.wave_climate",
+            "hydrodynamics.currents",
+            "hydrodynamics.rip_currents",
+            "hydrodynamics.visibility",
+            "hydrodynamics.tide_effects",
+            "activities.swimming",
+            "activities.beach_relaxation",
+            "activities.snorkeling",
+            "activities.kitesurfing_windsurfing",
+            "activities.boat_excursions",
+            "access.access_restrictions",
+            "access.lifeguard_coverage",
+            "access.emergency_access",
+            "excursions.regular_departure",
+            "excursions.landing_access",
+            "ecology.reef_condition",
+            "ecology.pollution_sources"
+          ],
+          "provisional_field_paths": [
+            "hydrodynamics.amihan_exposure",
+            "hydrodynamics.habagat_exposure",
+            "hydrodynamics.surface_current_context",
+            "access.land_access",
+            "access.public_access_status",
+            "access.facilities"
+          ],
+          "fields_requiring_provenance_check": [],
+          "activity_assessment": "not_scored",
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+        }
       },
       "internal": {
         "admin_ready": true,
@@ -1198,6 +1309,16 @@
           "updated_at": "2026-11-15",
           "revision": 8
         }
+      },
+      "record_type": "beach",
+      "selection": {
+        "eligible": true,
+        "pool_id": "boracay-core-13",
+        "order": 1,
+        "basis": "project_owner_approved_scope",
+        "source_ids": [
+          "SRC-105"
+        ]
       }
     },
     {
@@ -1480,27 +1601,57 @@
         "swimming": {
           "value": null,
           "status": "unknown",
-          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "beach_relaxation": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [
+            {
+              "claim": "Bulabog is a developed east-coast watersports beach rather than a quiet, facility-free cove.",
+              "source_ids": [
+                "SRC-002",
+                "SRC-085"
+              ],
+              "status": "supported",
+              "scope": "General beach character; does not rate comfort or crowding by month."
+            }
+          ],
+          "assessment_status": "not_scored"
         },
         "snorkeling": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "kitesurfing_windsurfing": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [
+            {
+              "claim": "DENR-EMB and visitor-guide descriptions identify windsurfing and kiteboarding as Bulabog's principal tourism assets.",
+              "source_ids": [
+                "SRC-002",
+                "SRC-085"
+              ],
+              "status": "supported",
+              "scope": "Confirms activity presence, not a monthly wind forecast or suitability score."
+            }
+          ],
+          "assessment_status": "not_scored"
         },
         "boat_excursions": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         }
       },
       "access": {
@@ -2114,9 +2265,79 @@
           "Local currents and wave exposure",
           "Public access and restrictions",
           "Current water quality",
-          "Activity-specific hazards"
+          "Activity-specific hazards",
+          "Activity suitability has not yet been scored for the five selection activities",
+          "12-month activity suitability matrix has not yet been assessed",
+          "Current, date-specific sea and bathing conditions are not represented by this passport"
         ],
-        "last_reviewed": "2026-11-15"
+        "last_reviewed": "2026-11-15",
+        "field_review": {
+          "reviewed_at": "2026-11-15",
+          "reviewed_sections": [
+            "identity",
+            "geography",
+            "shore",
+            "underwater",
+            "hydrodynamics",
+            "activities",
+            "access",
+            "excursions",
+            "ecology",
+            "evidence",
+            "data_quality"
+          ],
+          "status_counts": {
+            "supported": 8,
+            "provisional": 5,
+            "unknown": 33,
+            "other": 0
+          },
+          "unknown_field_paths": [
+            "identity.alternative_names",
+            "identity.administrative_area",
+            "geography.beach_boundary",
+            "geography.shoreline_geometry",
+            "geography.natural_shelter",
+            "geography.coastline_orientation_degrees",
+            "shore.sand_type",
+            "shore.beach_width",
+            "shore.shore_slope",
+            "shore.tidal_exposure",
+            "shore.seasonal_erosion",
+            "underwater.reef_crest",
+            "underwater.seabed_type",
+            "underwater.nearshore_depth",
+            "underwater.bathymetry_source",
+            "hydrodynamics.wave_climate",
+            "hydrodynamics.currents",
+            "hydrodynamics.rip_currents",
+            "hydrodynamics.visibility",
+            "hydrodynamics.tide_effects",
+            "activities.swimming",
+            "activities.beach_relaxation",
+            "activities.snorkeling",
+            "activities.kitesurfing_windsurfing",
+            "activities.boat_excursions",
+            "access.public_access_status",
+            "access.access_restrictions",
+            "access.lifeguard_coverage",
+            "access.emergency_access",
+            "excursions.regular_departure",
+            "excursions.landing_access",
+            "ecology.reef_condition",
+            "ecology.pollution_sources"
+          ],
+          "provisional_field_paths": [
+            "hydrodynamics.amihan_exposure",
+            "hydrodynamics.habagat_exposure",
+            "hydrodynamics.surface_current_context",
+            "access.land_access",
+            "access.facilities"
+          ],
+          "fields_requiring_provenance_check": [],
+          "activity_assessment": "not_scored",
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+        }
       },
       "internal": {
         "admin_ready": true,
@@ -2126,6 +2347,16 @@
           "updated_at": "2026-11-15",
           "revision": 5
         }
+      },
+      "record_type": "beach",
+      "selection": {
+        "eligible": true,
+        "pool_id": "boracay-core-13",
+        "order": 2,
+        "basis": "project_owner_approved_scope",
+        "source_ids": [
+          "SRC-105"
+        ]
       }
     },
     {
@@ -2341,27 +2572,56 @@
         "swimming": {
           "value": null,
           "status": "unknown",
-          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled.",
+          "evidence_observations": [
+            {
+              "claim": "The national tourism destination guide warns of strong currents, rocky areas and a steeper nearshore drop-off than White Beach.",
+              "source_ids": [
+                "SRC-082"
+              ],
+              "status": "supported",
+              "scope": "Published visitor warning; not a live hazard notice."
+            }
+          ],
+          "assessment_status": "not_scored"
         },
         "beach_relaxation": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [
+            {
+              "claim": "Puka is a northern beach with limited basic facilities and a visitor experience distinct from the developed White Beach strip.",
+              "source_ids": [
+                "SRC-082",
+                "SRC-085"
+              ],
+              "status": "supported",
+              "scope": "Destination character; no crowding or comfort score assigned."
+            }
+          ],
+          "assessment_status": "not_scored"
         },
         "snorkeling": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "kitesurfing_windsurfing": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "boat_excursions": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         }
       },
       "access": {
@@ -2742,9 +3002,74 @@
           "Local currents and wave exposure",
           "Public access and restrictions",
           "Current water quality",
-          "Activity-specific hazards"
+          "Activity-specific hazards",
+          "Activity suitability has not yet been scored for the five selection activities",
+          "12-month activity suitability matrix has not yet been assessed",
+          "Current, date-specific sea and bathing conditions are not represented by this passport"
         ],
-        "last_reviewed": "2026-11-15"
+        "last_reviewed": "2026-11-15",
+        "field_review": {
+          "reviewed_at": "2026-11-15",
+          "reviewed_sections": [
+            "identity",
+            "geography",
+            "shore",
+            "underwater",
+            "hydrodynamics",
+            "activities",
+            "access",
+            "excursions",
+            "ecology",
+            "evidence",
+            "data_quality"
+          ],
+          "status_counts": {
+            "supported": 9,
+            "provisional": 0,
+            "unknown": 34,
+            "other": 0
+          },
+          "unknown_field_paths": [
+            "identity.alternative_names",
+            "identity.administrative_area",
+            "geography.beach_boundary",
+            "geography.shoreline_geometry",
+            "geography.natural_shelter",
+            "geography.coastline_orientation_degrees",
+            "shore.sand_type",
+            "shore.beach_width",
+            "shore.shore_slope",
+            "shore.tidal_exposure",
+            "shore.seasonal_erosion",
+            "underwater.reef_presence",
+            "underwater.reef_crest",
+            "underwater.seabed_type",
+            "underwater.nearshore_depth",
+            "underwater.bathymetry_source",
+            "hydrodynamics.amihan_exposure",
+            "hydrodynamics.habagat_exposure",
+            "hydrodynamics.wave_climate",
+            "hydrodynamics.currents",
+            "hydrodynamics.rip_currents",
+            "hydrodynamics.visibility",
+            "hydrodynamics.tide_effects",
+            "activities.swimming",
+            "activities.beach_relaxation",
+            "activities.snorkeling",
+            "activities.kitesurfing_windsurfing",
+            "activities.boat_excursions",
+            "access.lifeguard_coverage",
+            "access.emergency_access",
+            "excursions.regular_departure",
+            "excursions.landing_access",
+            "ecology.reef_condition",
+            "ecology.pollution_sources"
+          ],
+          "provisional_field_paths": [],
+          "fields_requiring_provenance_check": [],
+          "activity_assessment": "not_scored",
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+        }
       },
       "internal": {
         "admin_ready": true,
@@ -2754,6 +3079,16 @@
           "updated_at": "2026-11-15",
           "revision": 5
         }
+      },
+      "record_type": "beach",
+      "selection": {
+        "eligible": true,
+        "pool_id": "boracay-core-13",
+        "order": 3,
+        "basis": "project_owner_approved_scope",
+        "source_ids": [
+          "SRC-105"
+        ]
       }
     },
     {
@@ -2960,27 +3295,57 @@
         "swimming": {
           "value": null,
           "status": "unknown",
-          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled.",
+          "evidence_observations": [
+            {
+              "claim": "Diniwid is described as a small cove; current measured wave, current, depth and bathing-safety data are not available.",
+              "source_ids": [
+                "SRC-083",
+                "SRC-085"
+              ],
+              "status": "provisional",
+              "scope": "Geographic description only; not proof of calm or safe swimming."
+            }
+          ],
+          "assessment_status": "not_scored"
         },
         "beach_relaxation": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [
+            {
+              "claim": "Department of Tourism and visitor-guide descriptions position Diniwid as a smaller, quieter cove north of White Beach.",
+              "source_ids": [
+                "SRC-083",
+                "SRC-085"
+              ],
+              "status": "supported",
+              "scope": "General destination character."
+            }
+          ],
+          "assessment_status": "not_scored"
         },
         "snorkeling": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "kitesurfing_windsurfing": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "boat_excursions": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         }
       },
       "access": {
@@ -3327,9 +3692,78 @@
           "Local currents and wave exposure",
           "Public access and restrictions",
           "Current water quality",
-          "Activity-specific hazards"
+          "Activity-specific hazards",
+          "Activity suitability has not yet been scored for the five selection activities",
+          "12-month activity suitability matrix has not yet been assessed",
+          "Current, date-specific sea and bathing conditions are not represented by this passport"
         ],
-        "last_reviewed": "2026-11-15"
+        "last_reviewed": "2026-11-15",
+        "field_review": {
+          "reviewed_at": "2026-11-15",
+          "reviewed_sections": [
+            "identity",
+            "geography",
+            "shore",
+            "underwater",
+            "hydrodynamics",
+            "activities",
+            "access",
+            "excursions",
+            "ecology",
+            "evidence",
+            "data_quality"
+          ],
+          "status_counts": {
+            "supported": 6,
+            "provisional": 2,
+            "unknown": 35,
+            "other": 0
+          },
+          "unknown_field_paths": [
+            "identity.alternative_names",
+            "identity.administrative_area",
+            "geography.beach_boundary",
+            "geography.shoreline_geometry",
+            "geography.natural_shelter",
+            "geography.coastline_orientation_degrees",
+            "shore.sand_type",
+            "shore.beach_width",
+            "shore.shore_slope",
+            "shore.tidal_exposure",
+            "shore.seasonal_erosion",
+            "underwater.reef_presence",
+            "underwater.reef_crest",
+            "underwater.seabed_type",
+            "underwater.nearshore_depth",
+            "underwater.bathymetry_source",
+            "hydrodynamics.amihan_exposure",
+            "hydrodynamics.habagat_exposure",
+            "hydrodynamics.wave_climate",
+            "hydrodynamics.currents",
+            "hydrodynamics.rip_currents",
+            "hydrodynamics.visibility",
+            "hydrodynamics.tide_effects",
+            "activities.swimming",
+            "activities.beach_relaxation",
+            "activities.snorkeling",
+            "activities.kitesurfing_windsurfing",
+            "activities.boat_excursions",
+            "access.public_access_status",
+            "access.lifeguard_coverage",
+            "access.emergency_access",
+            "excursions.regular_departure",
+            "excursions.landing_access",
+            "ecology.reef_condition",
+            "ecology.pollution_sources"
+          ],
+          "provisional_field_paths": [
+            "access.land_access",
+            "access.facilities"
+          ],
+          "fields_requiring_provenance_check": [],
+          "activity_assessment": "not_scored",
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+        }
       },
       "internal": {
         "admin_ready": true,
@@ -3339,6 +3773,16 @@
           "updated_at": "2026-11-14",
           "revision": 5
         }
+      },
+      "record_type": "beach",
+      "selection": {
+        "eligible": true,
+        "pool_id": "boracay-core-13",
+        "order": 4,
+        "basis": "project_owner_approved_scope",
+        "source_ids": [
+          "SRC-105"
+        ]
       }
     },
     {
@@ -3525,27 +3969,46 @@
         "swimming": {
           "value": null,
           "status": "unknown",
-          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "beach_relaxation": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [
+            {
+              "claim": "Shangri-La lists Punta Bunga among its secluded resort beaches and facilities.",
+              "source_ids": [
+                "SRC-087"
+              ],
+              "status": "supported",
+              "scope": "Resort-facility context; public access is not established."
+            }
+          ],
+          "assessment_status": "not_scored"
         },
         "snorkeling": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "kitesurfing_windsurfing": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "boat_excursions": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         }
       },
       "access": {
@@ -3716,9 +4179,80 @@
           "Local currents and wave exposure",
           "Public access and restrictions",
           "Current water quality",
-          "Activity-specific hazards"
+          "Activity-specific hazards",
+          "Activity suitability has not yet been scored for the five selection activities",
+          "12-month activity suitability matrix has not yet been assessed",
+          "Current, date-specific sea and bathing conditions are not represented by this passport"
         ],
-        "last_reviewed": "2026-11-15"
+        "last_reviewed": "2026-11-15",
+        "field_review": {
+          "reviewed_at": "2026-11-15",
+          "reviewed_sections": [
+            "identity",
+            "geography",
+            "shore",
+            "underwater",
+            "hydrodynamics",
+            "activities",
+            "access",
+            "excursions",
+            "ecology",
+            "evidence",
+            "data_quality"
+          ],
+          "status_counts": {
+            "supported": 4,
+            "provisional": 4,
+            "unknown": 35,
+            "other": 0
+          },
+          "unknown_field_paths": [
+            "identity.alternative_names",
+            "identity.administrative_area",
+            "geography.beach_boundary",
+            "geography.shoreline_geometry",
+            "geography.natural_shelter",
+            "geography.coastline_orientation_degrees",
+            "shore.sand_type",
+            "shore.beach_width",
+            "shore.shore_slope",
+            "shore.tidal_exposure",
+            "shore.seasonal_erosion",
+            "underwater.reef_presence",
+            "underwater.reef_crest",
+            "underwater.seabed_type",
+            "underwater.nearshore_depth",
+            "underwater.bathymetry_source",
+            "hydrodynamics.amihan_exposure",
+            "hydrodynamics.habagat_exposure",
+            "hydrodynamics.wave_climate",
+            "hydrodynamics.currents",
+            "hydrodynamics.rip_currents",
+            "hydrodynamics.visibility",
+            "hydrodynamics.tide_effects",
+            "activities.swimming",
+            "activities.beach_relaxation",
+            "activities.snorkeling",
+            "activities.kitesurfing_windsurfing",
+            "activities.boat_excursions",
+            "access.lifeguard_coverage",
+            "access.emergency_access",
+            "excursions.regular_departure",
+            "excursions.landing_access",
+            "ecology.water_quality_history",
+            "ecology.reef_condition",
+            "ecology.pollution_sources"
+          ],
+          "provisional_field_paths": [
+            "access.land_access",
+            "access.public_access_status",
+            "access.access_restrictions",
+            "access.facilities"
+          ],
+          "fields_requiring_provenance_check": [],
+          "activity_assessment": "not_scored",
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+        }
       },
       "internal": {
         "admin_ready": true,
@@ -3728,6 +4262,16 @@
           "updated_at": "2026-11-14",
           "revision": 4
         }
+      },
+      "record_type": "beach",
+      "selection": {
+        "eligible": true,
+        "pool_id": "boracay-core-13",
+        "order": 5,
+        "basis": "project_owner_approved_scope",
+        "source_ids": [
+          "SRC-105"
+        ]
       }
     },
     {
@@ -3914,27 +4458,56 @@
         "swimming": {
           "value": null,
           "status": "unknown",
-          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled.",
+          "evidence_observations": [
+            {
+              "claim": "A resort/travel listing describes a beach cove and access down stairs, but does not provide current sea-state or bathing-safety data.",
+              "source_ids": [
+                "SRC-084"
+              ],
+              "status": "provisional",
+              "scope": "Physical setting only; no swimming suitability score."
+            }
+          ],
+          "assessment_status": "not_scored"
         },
         "beach_relaxation": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [
+            {
+              "claim": "Balinghai is described as a secluded cove managed with resort facilities; limited non-resort day access is reported by a third-party travel listing.",
+              "source_ids": [
+                "SRC-084",
+                "SRC-085"
+              ],
+              "status": "provisional",
+              "scope": "Visitor-guide and travel-platform description; current admission terms require direct confirmation."
+            }
+          ],
+          "assessment_status": "not_scored"
         },
         "snorkeling": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "kitesurfing_windsurfing": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "boat_excursions": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         }
       },
       "access": {
@@ -4109,9 +4682,75 @@
           "Local currents and wave exposure",
           "Public access and restrictions",
           "Current water quality",
-          "Activity-specific hazards"
+          "Activity-specific hazards",
+          "Activity suitability has not yet been scored for the five selection activities",
+          "12-month activity suitability matrix has not yet been assessed",
+          "Current, date-specific sea and bathing conditions are not represented by this passport"
         ],
-        "last_reviewed": "2026-11-15"
+        "last_reviewed": "2026-11-15",
+        "field_review": {
+          "reviewed_at": "2026-11-15",
+          "reviewed_sections": [
+            "identity",
+            "geography",
+            "shore",
+            "underwater",
+            "hydrodynamics",
+            "activities",
+            "access",
+            "excursions",
+            "ecology",
+            "evidence",
+            "data_quality"
+          ],
+          "status_counts": {
+            "supported": 8,
+            "provisional": 0,
+            "unknown": 35,
+            "other": 0
+          },
+          "unknown_field_paths": [
+            "identity.alternative_names",
+            "identity.administrative_area",
+            "geography.beach_boundary",
+            "geography.shoreline_geometry",
+            "geography.natural_shelter",
+            "geography.coastline_orientation_degrees",
+            "shore.sand_type",
+            "shore.beach_width",
+            "shore.shore_slope",
+            "shore.tidal_exposure",
+            "shore.seasonal_erosion",
+            "underwater.reef_presence",
+            "underwater.reef_crest",
+            "underwater.seabed_type",
+            "underwater.nearshore_depth",
+            "underwater.bathymetry_source",
+            "hydrodynamics.amihan_exposure",
+            "hydrodynamics.habagat_exposure",
+            "hydrodynamics.wave_climate",
+            "hydrodynamics.currents",
+            "hydrodynamics.rip_currents",
+            "hydrodynamics.visibility",
+            "hydrodynamics.tide_effects",
+            "activities.swimming",
+            "activities.beach_relaxation",
+            "activities.snorkeling",
+            "activities.kitesurfing_windsurfing",
+            "activities.boat_excursions",
+            "access.lifeguard_coverage",
+            "access.emergency_access",
+            "excursions.regular_departure",
+            "excursions.landing_access",
+            "ecology.water_quality_history",
+            "ecology.reef_condition",
+            "ecology.pollution_sources"
+          ],
+          "provisional_field_paths": [],
+          "fields_requiring_provenance_check": [],
+          "activity_assessment": "not_scored",
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+        }
       },
       "internal": {
         "admin_ready": true,
@@ -4121,6 +4760,16 @@
           "updated_at": "2026-11-15",
           "revision": 4
         }
+      },
+      "record_type": "beach",
+      "selection": {
+        "eligible": true,
+        "pool_id": "boracay-core-13",
+        "order": 6,
+        "basis": "project_owner_approved_scope",
+        "source_ids": [
+          "SRC-105"
+        ]
       }
     },
     {
@@ -4307,27 +4956,46 @@
         "swimming": {
           "value": null,
           "status": "unknown",
-          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "beach_relaxation": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [
+            {
+              "claim": "Shangri-La identifies Banyugan as a secluded resort beach and lists it among resort facilities.",
+              "source_ids": [
+                "SRC-087"
+              ],
+              "status": "supported",
+              "scope": "Guest-facility context; public access is not established."
+            }
+          ],
+          "assessment_status": "not_scored"
         },
         "snorkeling": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "kitesurfing_windsurfing": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "boat_excursions": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         }
       },
       "access": {
@@ -4492,9 +5160,79 @@
           "Local currents and wave exposure",
           "Public access and restrictions",
           "Current water quality",
-          "Activity-specific hazards"
+          "Activity-specific hazards",
+          "Activity suitability has not yet been scored for the five selection activities",
+          "12-month activity suitability matrix has not yet been assessed",
+          "Current, date-specific sea and bathing conditions are not represented by this passport"
         ],
-        "last_reviewed": "2026-11-15"
+        "last_reviewed": "2026-11-15",
+        "field_review": {
+          "reviewed_at": "2026-11-15",
+          "reviewed_sections": [
+            "identity",
+            "geography",
+            "shore",
+            "underwater",
+            "hydrodynamics",
+            "activities",
+            "access",
+            "excursions",
+            "ecology",
+            "evidence",
+            "data_quality"
+          ],
+          "status_counts": {
+            "supported": 5,
+            "provisional": 1,
+            "unknown": 37,
+            "other": 0
+          },
+          "unknown_field_paths": [
+            "identity.alternative_names",
+            "identity.administrative_area",
+            "geography.beach_boundary",
+            "geography.shoreline_geometry",
+            "geography.natural_shelter",
+            "geography.coastline_orientation_degrees",
+            "shore.sand_type",
+            "shore.beach_width",
+            "shore.shore_slope",
+            "shore.tidal_exposure",
+            "shore.seasonal_erosion",
+            "underwater.reef_presence",
+            "underwater.reef_crest",
+            "underwater.seabed_type",
+            "underwater.nearshore_depth",
+            "underwater.bathymetry_source",
+            "hydrodynamics.amihan_exposure",
+            "hydrodynamics.habagat_exposure",
+            "hydrodynamics.wave_climate",
+            "hydrodynamics.currents",
+            "hydrodynamics.rip_currents",
+            "hydrodynamics.visibility",
+            "hydrodynamics.tide_effects",
+            "activities.swimming",
+            "activities.beach_relaxation",
+            "activities.snorkeling",
+            "activities.kitesurfing_windsurfing",
+            "activities.boat_excursions",
+            "access.land_access",
+            "access.access_restrictions",
+            "access.lifeguard_coverage",
+            "access.emergency_access",
+            "excursions.regular_departure",
+            "excursions.landing_access",
+            "ecology.water_quality_history",
+            "ecology.reef_condition",
+            "ecology.pollution_sources"
+          ],
+          "provisional_field_paths": [
+            "access.public_access_status"
+          ],
+          "fields_requiring_provenance_check": [],
+          "activity_assessment": "not_scored",
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+        }
       },
       "internal": {
         "admin_ready": true,
@@ -4504,6 +5242,16 @@
           "updated_at": "2026-11-15",
           "revision": 4
         }
+      },
+      "record_type": "beach",
+      "selection": {
+        "eligible": true,
+        "pool_id": "boracay-core-13",
+        "order": 7,
+        "basis": "project_owner_approved_scope",
+        "source_ids": [
+          "SRC-105"
+        ]
       }
     },
     {
@@ -4541,64 +5289,111 @@
             "id": "newcoast-cove-1",
             "developer_name": "Cove 1",
             "name": "Lapus-Lapus Beach",
-            "name_status": "mapped_name_association",
+            "name_status": "user_approved_project_mapping",
             "related_beach_id": "lapus",
             "source_ids": [
+              "SRC-088",
               "SRC-103",
-              "SRC-104"
+              "SRC-105"
             ],
-            "note": "The user reports that Cove 1 aligns with the Lapus-Lapus Beach label on the website basemap. Retain the existing Lapus-Lapus record and its own reference coordinate; do not replace it with the Cove 1 visual centre."
+            "note": "Same selection object; do not create a duplicate Cove 1 beach record."
           },
           {
             "id": "newcoast-cove-2",
             "developer_name": "Cove 2",
-            "name": null,
-            "name_status": "unnamed_on_site_basemap",
-            "related_beach_id": null,
+            "name": "Boracay Newcoast Beach",
+            "name_status": "user_approved_project_mapping",
+            "related_beach_id": "newcoast",
             "source_ids": [
-              "SRC-104"
+              "SRC-088",
+              "SRC-091",
+              "SRC-093",
+              "SRC-100",
+              "SRC-105"
             ],
-            "associated_poi_references": [
-              {
-                "name": "Boracay Newcoast Cove 2 Beach",
-                "source_id": "SRC-093",
-                "latitude": 11.98335055,
-                "longitude": 121.92560262,
-                "coordinate_type": "Mapbox POI marker, not beach centroid",
-                "assignment_status": "nearby_POI_not_verified_as_cove_geometry"
-              },
-              {
-                "name": "Newcoast Beach",
+            "associated_poi_references": {
+              "source_ids": [
+                "SRC-091",
+                "SRC-093"
+              ],
+              "assessment": "OSM tourism=attraction node and Mapbox POI are nearby but are both named map reference points, not natural=beach polygons, surveyed boundaries, entrances or beach centroids.",
+              "osm_attraction_node": {
                 "source_id": "SRC-091",
+                "feature_type": "tourism=attraction node",
+                "osm_feature_id": "node 11150631205",
                 "latitude": 11.98328,
                 "longitude": 121.92583,
-                "coordinate_type": "OSM tourism=attraction node, not beach centroid",
-                "assignment_status": "nearby_attraction_not_verified_as_cove_geometry"
-              }
-            ],
-            "note": "The developer identifies Cove 2, but the site basemap does not provide a separate beach name. Nearby POI references are retained as POIs only and are not used as a cove centroid or boundary."
+                "coordinate_type": "osm_attraction_reference_point",
+                "not_beach_centroid": true
+              },
+              "mapbox_poi": {
+                "source_id": "SRC-093",
+                "feature_type": "commercial_map_poi",
+                "name": "Boracay Newcoast Cove 2 Beach",
+                "latitude": 11.98335055,
+                "longitude": 121.92560262,
+                "coordinate_type": "mapbox_poi_reference",
+                "not_beach_centroid": true
+              },
+              "note": "Both points are retained for identity cross-check only. Neither is used as the beach coordinate."
+            }
           },
           {
             "id": "newcoast-cove-3",
             "developer_name": "Cove 3",
-            "name": null,
-            "name_status": "unnamed_on_site_basemap",
-            "related_beach_id": null,
+            "name": "Savoy Beach",
+            "name_status": "user_approved_project_mapping",
+            "related_beach_id": "savoy",
             "source_ids": [
-              "SRC-104"
+              "SRC-088",
+              "SRC-092",
+              "SRC-093",
+              "SRC-099",
+              "SRC-105"
             ],
-            "note": "The developer identifies Cove 3, but the site basemap does not provide a separate beach name. No beach-specific coordinate or boundary is established."
+            "associated_poi_references": {
+              "source_ids": [
+                "SRC-092",
+                "SRC-093",
+                "SRC-099"
+              ],
+              "assessment": "A separate Savoy Beach landmark/Mapbox POI is reported, but its coordinate is not promoted to a beach reference because the physical Cove 3 shoreline and the relationship between the landmark label and sand area are not independently surveyed.",
+              "mapbox_poi": {
+                "source_id": "SRC-093",
+                "feature_type": "commercial_map_poi",
+                "name": "Savoy Beach",
+                "latitude": 11.98573567,
+                "longitude": 121.92513664,
+                "coordinate_type": "mapbox_poi_reference",
+                "not_beach_centroid": true
+              },
+              "travel_platform_landmark": {
+                "source_id": "SRC-092",
+                "feature_type": "travel_platform_landmark_name",
+                "name": "Savoy Beach",
+                "distance_from_Savoy_Hotel_km": 0.54,
+                "coordinate_type": "approximate_landmark_listing",
+                "not_beach_centroid": true
+              },
+              "user_google_maps_reference": {
+                "source_id": "SRC-099",
+                "url": "https://maps.app.goo.gl/m3x9KLM6YRPPW5Cv7",
+                "coordinate_type": "unresolved_user_supplied_place_link",
+                "not_beach_centroid": true
+              },
+              "note": "Do not substitute Savoy Hotel coordinates or the Mapbox POI for the beach's representative coordinate."
+            }
           }
         ],
         "newcoast_parent_context": {
-          "area_name": "Boracay Newcoast",
-          "map_label_observation": "Ilig-Iligan Beach",
-          "relationship_status": "broad_google_maps_label_reported_by_user",
+          "value": "Newcoast Beaches is a developer-defined area with three coves. The project-approved hierarchy maps Cove 1 to Lapus-Lapus Beach, Cove 2 to Boracay Newcoast Beach, and Cove 3 to Savoy Beach.",
+          "status": "supported",
           "source_ids": [
-            "SRC-102",
-            "SRC-104"
+            "SRC-088",
+            "SRC-089",
+            "SRC-105"
           ],
-          "note": "Boracay Newcoast is the developer-defined resort area containing three labelled coves. The wider Google Maps label reported by the user is Ilig-Iligan Beach. These are different naming layers (map label vs development/cove names); no polygon or legal identity equivalence is asserted."
+          "note": "This is a project naming hierarchy. The wider Google Maps Ilig-Iligan label remains a separate cartographic observation and does not merge the beach records or prove continuous shoreline geometry."
         },
         "related_poi_names": [
           {
@@ -4809,27 +5604,46 @@
         "swimming": {
           "value": null,
           "status": "unknown",
-          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "beach_relaxation": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [
+            {
+              "claim": "Visitor guides describe Ilig-Iligan as a quieter, less-developed beach compared with White Beach.",
+              "source_ids": [
+                "SRC-085"
+              ],
+              "status": "provisional",
+              "scope": "Secondary guide description; no occupancy measurements."
+            }
+          ],
+          "assessment_status": "not_scored"
         },
         "snorkeling": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "kitesurfing_windsurfing": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "boat_excursions": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         }
       },
       "access": {
@@ -5225,9 +6039,79 @@
           "Geospatial extent of the Google Maps Ilig-Iligan Beach label across Boracay Newcoast is not independently verified",
           "Exact shoreline boundaries and representative points for Cove 1, Cove 2 and Cove 3 remain unknown",
           "Cove 2 and Cove 3 have no separate names on the observed website basemap",
-          "Savoy Beach is retained only as a related POI/landmark name; its exact cove assignment is unverified"
+          "Savoy Beach is retained only as a related POI/landmark name; its exact cove assignment is unverified",
+          "Activity suitability has not yet been scored for the five selection activities",
+          "12-month activity suitability matrix has not yet been assessed",
+          "Current, date-specific sea and bathing conditions are not represented by this passport"
         ],
-        "last_reviewed": "2026-11-15"
+        "last_reviewed": "2026-11-15",
+        "field_review": {
+          "reviewed_at": "2026-11-15",
+          "reviewed_sections": [
+            "identity",
+            "geography",
+            "shore",
+            "underwater",
+            "hydrodynamics",
+            "activities",
+            "access",
+            "excursions",
+            "ecology",
+            "evidence",
+            "data_quality"
+          ],
+          "status_counts": {
+            "supported": 6,
+            "provisional": 3,
+            "unknown": 35,
+            "other": 0
+          },
+          "unknown_field_paths": [
+            "identity.alternative_names",
+            "identity.administrative_area",
+            "geography.beach_boundary",
+            "geography.shoreline_geometry",
+            "geography.natural_shelter",
+            "geography.coastline_orientation_degrees",
+            "shore.sand_type",
+            "shore.beach_width",
+            "shore.shore_slope",
+            "shore.tidal_exposure",
+            "shore.seasonal_erosion",
+            "underwater.reef_presence",
+            "underwater.reef_crest",
+            "underwater.seabed_type",
+            "underwater.nearshore_depth",
+            "underwater.bathymetry_source",
+            "hydrodynamics.amihan_exposure",
+            "hydrodynamics.habagat_exposure",
+            "hydrodynamics.wave_climate",
+            "hydrodynamics.currents",
+            "hydrodynamics.rip_currents",
+            "hydrodynamics.visibility",
+            "hydrodynamics.tide_effects",
+            "activities.swimming",
+            "activities.beach_relaxation",
+            "activities.snorkeling",
+            "activities.kitesurfing_windsurfing",
+            "activities.boat_excursions",
+            "access.public_access_status",
+            "access.lifeguard_coverage",
+            "access.emergency_access",
+            "excursions.regular_departure",
+            "excursions.landing_access",
+            "ecology.reef_condition",
+            "ecology.pollution_sources"
+          ],
+          "provisional_field_paths": [
+            "access.land_access",
+            "access.access_restrictions",
+            "access.facilities"
+          ],
+          "fields_requiring_provenance_check": [],
+          "activity_assessment": "not_scored",
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+        }
       },
       "internal": {
         "admin_ready": true,
@@ -5237,6 +6121,16 @@
           "updated_at": "2026-11-15",
           "revision": 7
         }
+      },
+      "record_type": "beach",
+      "selection": {
+        "eligible": true,
+        "pool_id": "boracay-core-13",
+        "order": 8,
+        "basis": "project_owner_approved_scope",
+        "source_ids": [
+          "SRC-105"
+        ]
       }
     },
     {
@@ -5289,11 +6183,24 @@
         "developer_cove": {
           "value": "Cove 1",
           "status": "provisional",
+          "project_mapping_status": "user_approved",
           "source_ids": [
+            "SRC-088",
             "SRC-103",
-            "SRC-104"
+            "SRC-105"
           ],
-          "note": "Association reported from the site's basemap label and developer's annotated aerial image. Do not alter the existing Lapus-Lapus coordinate based on the image."
+          "note": "The project owner confirms Cove 1 / Lapus-Lapus Beach as one named selection object. The existing Lapus-Lapus map reference is retained; no new Cove 1 coordinate or boundary is inferred."
+        },
+        "parent_area": {
+          "id": "newcoast-beaches",
+          "name": "Newcoast Beaches",
+          "area_type": "developer_defined_coastal_area",
+          "status": "supported",
+          "source_ids": [
+            "SRC-088",
+            "SRC-089",
+            "SRC-105"
+          ]
         }
       },
       "geography": {
@@ -5477,27 +6384,55 @@
         "swimming": {
           "value": null,
           "status": "unknown",
-          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled.",
+          "evidence_observations": [
+            {
+              "claim": "The developer describes swimming as an activity available across its beach coves; no Cove 1-specific bathing-safety or seasonal condition data are published.",
+              "source_ids": [
+                "SRC-088"
+              ],
+              "status": "provisional",
+              "scope": "Developer-wide activity description only."
+            }
+          ],
+          "assessment_status": "not_scored"
         },
         "beach_relaxation": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [
+            {
+              "claim": "The developer positions Cove 1 as a beach retreat with white sand and turquoise water.",
+              "source_ids": [
+                "SRC-088"
+              ],
+              "status": "supported",
+              "scope": "Developer positioning, not an independent comfort or water-quality assessment."
+            }
+          ],
+          "assessment_status": "not_scored"
         },
         "snorkeling": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "kitesurfing_windsurfing": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "boat_excursions": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         }
       },
       "access": {
@@ -5708,9 +6643,81 @@
           "No active monitoring station or recent water-quality result confirmed for Lapus-Lapus",
           "Exact beach boundary and access route",
           "Resolve the separate Station 3 / Angol-area WorldPlaces point-name conflict",
-          "Exact Cove 1 shoreline boundary and representative point remain unverified; the existing Lapus-Lapus coordinate remains its own secondary map reference."
+          "Exact Cove 1 shoreline boundary and representative point remain unverified; the existing Lapus-Lapus coordinate remains its own secondary map reference.",
+          "Activity suitability has not yet been scored for the five selection activities",
+          "12-month activity suitability matrix has not yet been assessed",
+          "Current, date-specific sea and bathing conditions are not represented by this passport"
         ],
-        "last_reviewed": "2026-11-15"
+        "last_reviewed": "2026-11-15",
+        "field_review": {
+          "reviewed_at": "2026-11-15",
+          "reviewed_sections": [
+            "identity",
+            "geography",
+            "shore",
+            "underwater",
+            "hydrodynamics",
+            "activities",
+            "access",
+            "excursions",
+            "ecology",
+            "evidence",
+            "data_quality"
+          ],
+          "status_counts": {
+            "supported": 5,
+            "provisional": 7,
+            "unknown": 33,
+            "other": 0
+          },
+          "unknown_field_paths": [
+            "identity.administrative_area",
+            "geography.beach_boundary",
+            "geography.shoreline_geometry",
+            "geography.natural_shelter",
+            "geography.coastline_orientation_degrees",
+            "shore.sand_type",
+            "shore.beach_width",
+            "shore.shore_slope",
+            "shore.tidal_exposure",
+            "shore.seasonal_erosion",
+            "underwater.reef_presence",
+            "underwater.reef_crest",
+            "underwater.seabed_type",
+            "underwater.nearshore_depth",
+            "underwater.bathymetry_source",
+            "hydrodynamics.amihan_exposure",
+            "hydrodynamics.habagat_exposure",
+            "hydrodynamics.wave_climate",
+            "hydrodynamics.currents",
+            "hydrodynamics.rip_currents",
+            "hydrodynamics.visibility",
+            "hydrodynamics.tide_effects",
+            "activities.swimming",
+            "activities.beach_relaxation",
+            "activities.snorkeling",
+            "activities.kitesurfing_windsurfing",
+            "activities.boat_excursions",
+            "access.lifeguard_coverage",
+            "access.emergency_access",
+            "excursions.regular_departure",
+            "excursions.landing_access",
+            "ecology.reef_condition",
+            "ecology.pollution_sources"
+          ],
+          "provisional_field_paths": [
+            "identity.parent_location",
+            "identity.developer_cove",
+            "access.land_access",
+            "access.public_access_status",
+            "access.access_restrictions",
+            "access.facilities",
+            "ecology.water_quality_history"
+          ],
+          "fields_requiring_provenance_check": [],
+          "activity_assessment": "not_scored",
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+        }
       },
       "internal": {
         "admin_ready": true,
@@ -5720,6 +6727,16 @@
           "updated_at": "2026-11-15",
           "revision": 6
         }
+      },
+      "record_type": "beach",
+      "selection": {
+        "eligible": true,
+        "pool_id": "boracay-core-13",
+        "order": 9,
+        "basis": "project_owner_approved_scope",
+        "source_ids": [
+          "SRC-105"
+        ]
       }
     },
     {
@@ -5917,27 +6934,46 @@
         "swimming": {
           "value": null,
           "status": "unknown",
-          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "beach_relaxation": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [
+            {
+              "claim": "Visitor-guide coverage describes Tulubhan as a low-key local shoreline with working-shoreline and fishing context.",
+              "source_ids": [
+                "SRC-085"
+              ],
+              "status": "provisional",
+              "scope": "Secondary visitor description; not a current facilities or bathing assessment."
+            }
+          ],
+          "assessment_status": "not_scored"
         },
         "snorkeling": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "kitesurfing_windsurfing": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "boat_excursions": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         }
       },
       "access": {
@@ -6295,9 +7331,79 @@
           "Local currents and wave exposure",
           "Public access and restrictions",
           "Current water quality",
-          "Activity-specific hazards"
+          "Activity-specific hazards",
+          "Activity suitability has not yet been scored for the five selection activities",
+          "12-month activity suitability matrix has not yet been assessed",
+          "Current, date-specific sea and bathing conditions are not represented by this passport"
         ],
-        "last_reviewed": "2026-11-15"
+        "last_reviewed": "2026-11-15",
+        "field_review": {
+          "reviewed_at": "2026-11-15",
+          "reviewed_sections": [
+            "identity",
+            "geography",
+            "shore",
+            "underwater",
+            "hydrodynamics",
+            "activities",
+            "access",
+            "excursions",
+            "ecology",
+            "evidence",
+            "data_quality"
+          ],
+          "status_counts": {
+            "supported": 5,
+            "provisional": 2,
+            "unknown": 36,
+            "other": 0
+          },
+          "unknown_field_paths": [
+            "identity.alternative_names",
+            "identity.administrative_area",
+            "geography.beach_boundary",
+            "geography.shoreline_geometry",
+            "geography.natural_shelter",
+            "geography.coastline_orientation_degrees",
+            "shore.sand_type",
+            "shore.beach_width",
+            "shore.shore_slope",
+            "shore.tidal_exposure",
+            "shore.seasonal_erosion",
+            "underwater.reef_presence",
+            "underwater.reef_crest",
+            "underwater.seabed_type",
+            "underwater.nearshore_depth",
+            "underwater.bathymetry_source",
+            "hydrodynamics.amihan_exposure",
+            "hydrodynamics.habagat_exposure",
+            "hydrodynamics.wave_climate",
+            "hydrodynamics.currents",
+            "hydrodynamics.rip_currents",
+            "hydrodynamics.visibility",
+            "hydrodynamics.tide_effects",
+            "activities.swimming",
+            "activities.beach_relaxation",
+            "activities.snorkeling",
+            "activities.kitesurfing_windsurfing",
+            "activities.boat_excursions",
+            "access.public_access_status",
+            "access.facilities",
+            "access.lifeguard_coverage",
+            "access.emergency_access",
+            "excursions.regular_departure",
+            "excursions.landing_access",
+            "ecology.reef_condition",
+            "ecology.pollution_sources"
+          ],
+          "provisional_field_paths": [
+            "access.land_access",
+            "access.access_restrictions"
+          ],
+          "fields_requiring_provenance_check": [],
+          "activity_assessment": "not_scored",
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+        }
       },
       "internal": {
         "admin_ready": true,
@@ -6307,6 +7413,16 @@
           "updated_at": "2026-11-14",
           "revision": 4
         }
+      },
+      "record_type": "beach",
+      "selection": {
+        "eligible": true,
+        "pool_id": "boracay-core-13",
+        "order": 10,
+        "basis": "project_owner_approved_scope",
+        "source_ids": [
+          "SRC-105"
+        ]
       }
     },
     {
@@ -6513,27 +7629,57 @@
         "swimming": {
           "value": null,
           "status": "unknown",
-          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled."
+          "note": "No activity suitability score assigned before local hazard, entry and water-quality evidence is assembled.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "beach_relaxation": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "snorkeling": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [
+            {
+              "claim": "Rough Guides describes a reef approximately 25 m offshore and identifies snorkeling as a principal visitor activity at Tambisaan.",
+              "source_ids": [
+                "SRC-085"
+              ],
+              "status": "provisional",
+              "scope": "Secondary guide description; reef condition, exact extent and current visibility are not independently measured here."
+            }
+          ],
+          "assessment_status": "not_scored"
         },
         "kitesurfing_windsurfing": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
         },
         "boat_excursions": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass.",
+          "evidence_observations": [
+            {
+              "claim": "Tambisaan is listed as a possible island-hopping itinerary stop, while DENR-EMB documents its use as a weather-dependent alternative entry/exit beach.",
+              "source_ids": [
+                "SRC-004",
+                "SRC-080",
+                "SRC-002"
+              ],
+              "status": "provisional",
+              "scope": "Itinerary stop and port operations do not establish a regular tourist departure point or safe swimming zone."
+            }
+          ],
+          "assessment_status": "not_scored"
         }
       },
       "access": {
@@ -6914,9 +8060,78 @@
           "Local currents and wave exposure",
           "Public access and restrictions",
           "Current water quality",
-          "Activity-specific hazards"
+          "Activity-specific hazards",
+          "Activity suitability has not yet been scored for the five selection activities",
+          "12-month activity suitability matrix has not yet been assessed",
+          "Current, date-specific sea and bathing conditions are not represented by this passport"
         ],
-        "last_reviewed": "2026-11-15"
+        "last_reviewed": "2026-11-15",
+        "field_review": {
+          "reviewed_at": "2026-11-15",
+          "reviewed_sections": [
+            "identity",
+            "geography",
+            "shore",
+            "underwater",
+            "hydrodynamics",
+            "activities",
+            "access",
+            "excursions",
+            "ecology",
+            "evidence",
+            "data_quality"
+          ],
+          "status_counts": {
+            "supported": 6,
+            "provisional": 2,
+            "unknown": 35,
+            "other": 0
+          },
+          "unknown_field_paths": [
+            "identity.alternative_names",
+            "identity.administrative_area",
+            "geography.beach_boundary",
+            "geography.shoreline_geometry",
+            "geography.natural_shelter",
+            "geography.coastline_orientation_degrees",
+            "shore.sand_type",
+            "shore.beach_width",
+            "shore.shore_slope",
+            "shore.tidal_exposure",
+            "shore.seasonal_erosion",
+            "underwater.reef_presence",
+            "underwater.reef_crest",
+            "underwater.seabed_type",
+            "underwater.nearshore_depth",
+            "underwater.bathymetry_source",
+            "hydrodynamics.amihan_exposure",
+            "hydrodynamics.habagat_exposure",
+            "hydrodynamics.wave_climate",
+            "hydrodynamics.currents",
+            "hydrodynamics.rip_currents",
+            "hydrodynamics.visibility",
+            "hydrodynamics.tide_effects",
+            "activities.swimming",
+            "activities.beach_relaxation",
+            "activities.snorkeling",
+            "activities.kitesurfing_windsurfing",
+            "activities.boat_excursions",
+            "access.public_access_status",
+            "access.lifeguard_coverage",
+            "access.emergency_access",
+            "excursions.regular_departure",
+            "excursions.landing_access",
+            "ecology.reef_condition",
+            "ecology.pollution_sources"
+          ],
+          "provisional_field_paths": [
+            "access.land_access",
+            "access.facilities"
+          ],
+          "fields_requiring_provenance_check": [],
+          "activity_assessment": "not_scored",
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+        }
       },
       "internal": {
         "admin_ready": true,
@@ -6926,6 +8141,16 @@
           "updated_at": "2026-11-15",
           "revision": 6
         }
+      },
+      "record_type": "beach",
+      "selection": {
+        "eligible": true,
+        "pool_id": "boracay-core-13",
+        "order": 11,
+        "basis": "project_owner_approved_scope",
+        "source_ids": [
+          "SRC-105"
+        ]
       }
     },
     {
@@ -7468,9 +8693,78 @@
           "Local currents and wave exposure",
           "Public access and restrictions",
           "Current water quality",
-          "Activity-specific hazards"
+          "Activity-specific hazards",
+          "Activity suitability has not yet been scored for the five selection activities",
+          "12-month activity suitability matrix has not yet been assessed",
+          "Current, date-specific sea and bathing conditions are not represented by this passport"
         ],
-        "last_reviewed": "2026-11-14"
+        "last_reviewed": "2026-11-15",
+        "field_review": {
+          "reviewed_at": "2026-11-15",
+          "reviewed_sections": [
+            "identity",
+            "geography",
+            "shore",
+            "underwater",
+            "hydrodynamics",
+            "activities",
+            "access",
+            "excursions",
+            "ecology",
+            "evidence",
+            "data_quality"
+          ],
+          "status_counts": {
+            "supported": 5,
+            "provisional": 0,
+            "unknown": 38,
+            "other": 0
+          },
+          "unknown_field_paths": [
+            "identity.alternative_names",
+            "identity.administrative_area",
+            "geography.beach_boundary",
+            "geography.shoreline_geometry",
+            "geography.natural_shelter",
+            "geography.coastline_orientation_degrees",
+            "shore.sand_type",
+            "shore.beach_width",
+            "shore.shore_slope",
+            "shore.tidal_exposure",
+            "shore.seasonal_erosion",
+            "underwater.reef_presence",
+            "underwater.reef_crest",
+            "underwater.seabed_type",
+            "underwater.nearshore_depth",
+            "underwater.bathymetry_source",
+            "hydrodynamics.amihan_exposure",
+            "hydrodynamics.habagat_exposure",
+            "hydrodynamics.wave_climate",
+            "hydrodynamics.currents",
+            "hydrodynamics.rip_currents",
+            "hydrodynamics.visibility",
+            "hydrodynamics.tide_effects",
+            "activities.swimming",
+            "activities.beach_relaxation",
+            "activities.snorkeling",
+            "activities.kitesurfing_windsurfing",
+            "activities.boat_excursions",
+            "access.land_access",
+            "access.public_access_status",
+            "access.access_restrictions",
+            "access.facilities",
+            "access.lifeguard_coverage",
+            "access.emergency_access",
+            "excursions.regular_departure",
+            "excursions.landing_access",
+            "ecology.reef_condition",
+            "ecology.pollution_sources"
+          ],
+          "provisional_field_paths": [],
+          "fields_requiring_provenance_check": [],
+          "activity_assessment": "not_scored",
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+        }
       },
       "internal": {
         "admin_ready": true,
@@ -7480,7 +8774,16 @@
           "updated_at": "2026-11-14",
           "revision": 3
         }
-      }
+      },
+      "selection": {
+        "eligible": false,
+        "pool_id": "research-only",
+        "reason": "Angol Point is a named coastal point / locality and monitoring reference, not a confirmed independent beach.",
+        "source_ids": [
+          "SRC-105"
+        ]
+      },
+      "record_type": "reference_feature"
     },
     {
       "id": "hagdan",
@@ -7841,9 +9144,81 @@
           "Current water quality",
           "Activity-specific hazards",
           "Independent confirmation of separate beach identity and boundaries",
-          "Verified coordinates and public access route"
+          "Verified coordinates and public access route",
+          "Activity suitability has not yet been scored for the five selection activities",
+          "12-month activity suitability matrix has not yet been assessed",
+          "Current, date-specific sea and bathing conditions are not represented by this passport"
         ],
-        "last_reviewed": "2026-11-15"
+        "last_reviewed": "2026-11-15",
+        "field_review": {
+          "reviewed_at": "2026-11-15",
+          "reviewed_sections": [
+            "identity",
+            "geography",
+            "shore",
+            "underwater",
+            "hydrodynamics",
+            "activities",
+            "access",
+            "excursions",
+            "ecology",
+            "evidence",
+            "data_quality"
+          ],
+          "status_counts": {
+            "supported": 3,
+            "provisional": 1,
+            "unknown": 39,
+            "other": 0
+          },
+          "unknown_field_paths": [
+            "identity.alternative_names",
+            "geography.coast_orientation",
+            "geography.beach_boundary",
+            "geography.shoreline_geometry",
+            "geography.natural_shelter",
+            "geography.coastline_orientation_degrees",
+            "shore.sand_type",
+            "shore.beach_width",
+            "shore.shore_slope",
+            "shore.tidal_exposure",
+            "shore.seasonal_erosion",
+            "underwater.reef_presence",
+            "underwater.reef_crest",
+            "underwater.seabed_type",
+            "underwater.nearshore_depth",
+            "underwater.bathymetry_source",
+            "hydrodynamics.amihan_exposure",
+            "hydrodynamics.habagat_exposure",
+            "hydrodynamics.wave_climate",
+            "hydrodynamics.currents",
+            "hydrodynamics.rip_currents",
+            "hydrodynamics.visibility",
+            "hydrodynamics.tide_effects",
+            "activities.swimming",
+            "activities.beach_relaxation",
+            "activities.snorkeling",
+            "activities.kitesurfing_windsurfing",
+            "activities.boat_excursions",
+            "access.land_access",
+            "access.public_access_status",
+            "access.access_restrictions",
+            "access.facilities",
+            "access.lifeguard_coverage",
+            "access.emergency_access",
+            "excursions.regular_departure",
+            "excursions.landing_access",
+            "ecology.water_quality_history",
+            "ecology.reef_condition",
+            "ecology.pollution_sources"
+          ],
+          "provisional_field_paths": [
+            "identity.place_name"
+          ],
+          "fields_requiring_provenance_check": [],
+          "activity_assessment": "not_scored",
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+        }
       },
       "internal": {
         "admin_ready": true,
@@ -7853,7 +9228,16 @@
           "updated_at": "2026-11-15",
           "revision": 4
         }
-      }
+      },
+      "selection": {
+        "eligible": false,
+        "pool_id": "research-only",
+        "reason": "Separate Hagdan Beach identity and shoreline are not independently established; retain as a research candidate only.",
+        "source_ids": [
+          "SRC-105"
+        ]
+      },
+      "record_type": "provisional_beach_candidate"
     },
     {
       "id": "lugutan",
@@ -8237,9 +9621,79 @@
           "Beach-specific water-quality sampling and current bathing status",
           "Bathymetry, reef profile, currents and activity-specific hazards",
           "Current facilities and lifeguard coverage",
-          "Distinguish Lugutan Beach from Lugutan Mangrove Park, Lugutan Wetland Park and Lugutan Mixing Zone"
+          "Distinguish Lugutan Beach from Lugutan Mangrove Park, Lugutan Wetland Park and Lugutan Mixing Zone",
+          "Activity suitability has not yet been scored for the five selection activities",
+          "12-month activity suitability matrix has not yet been assessed",
+          "Current, date-specific sea and bathing conditions are not represented by this passport"
         ],
-        "last_reviewed": "2026-11-15"
+        "last_reviewed": "2026-11-15",
+        "field_review": {
+          "reviewed_at": "2026-11-15",
+          "reviewed_sections": [
+            "identity",
+            "geography",
+            "shore",
+            "underwater",
+            "hydrodynamics",
+            "activities",
+            "access",
+            "excursions",
+            "ecology",
+            "evidence",
+            "data_quality"
+          ],
+          "status_counts": {
+            "supported": 5,
+            "provisional": 3,
+            "unknown": 35,
+            "other": 0
+          },
+          "unknown_field_paths": [
+            "geography.coast_orientation",
+            "geography.beach_boundary",
+            "geography.shoreline_geometry",
+            "geography.natural_shelter",
+            "geography.coastline_orientation_degrees",
+            "shore.sand_type",
+            "shore.beach_width",
+            "shore.shore_slope",
+            "shore.tidal_exposure",
+            "shore.seasonal_erosion",
+            "underwater.reef_presence",
+            "underwater.reef_crest",
+            "underwater.seabed_type",
+            "underwater.nearshore_depth",
+            "underwater.bathymetry_source",
+            "hydrodynamics.amihan_exposure",
+            "hydrodynamics.habagat_exposure",
+            "hydrodynamics.wave_climate",
+            "hydrodynamics.currents",
+            "hydrodynamics.rip_currents",
+            "hydrodynamics.visibility",
+            "hydrodynamics.tide_effects",
+            "activities.swimming",
+            "activities.beach_relaxation",
+            "activities.snorkeling",
+            "activities.kitesurfing_windsurfing",
+            "activities.boat_excursions",
+            "access.land_access",
+            "access.public_access_status",
+            "access.facilities",
+            "access.lifeguard_coverage",
+            "access.emergency_access",
+            "excursions.regular_departure",
+            "excursions.landing_access",
+            "ecology.reef_condition"
+          ],
+          "provisional_field_paths": [
+            "identity.alternative_names",
+            "identity.administrative_area",
+            "access.access_restrictions"
+          ],
+          "fields_requiring_provenance_check": [],
+          "activity_assessment": "not_scored",
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+        }
       },
       "internal": {
         "admin_ready": true,
@@ -8249,7 +9703,1185 @@
           "updated_at": "2026-11-15",
           "revision": 1
         }
+      },
+      "selection": {
+        "eligible": false,
+        "pool_id": "research-only",
+        "reason": "TPB-listed beach name retained for research, but excluded from the agreed 13-beach selection scope.",
+        "source_ids": [
+          "SRC-105"
+        ]
+      },
+      "record_type": "named_beach_research_only"
+    },
+    {
+      "id": "newcoast",
+      "name": "Boracay Newcoast Beach",
+      "name_ru": "Пляж Боракай Ньюкоуст",
+      "record_type": "beach",
+      "identity": {
+        "place_name": {
+          "value": "Boracay Newcoast Beach",
+          "status": "supported",
+          "source_ids": [
+            "SRC-091",
+            "SRC-093",
+            "SRC-100"
+          ]
+        },
+        "alternative_names": {
+          "value": [
+            "Newcoast Beach Cove 2",
+            "Boracay Newcoast Cove 2 Beach"
+          ],
+          "status": "provisional",
+          "source_ids": [
+            "SRC-091",
+            "SRC-093",
+            "SRC-100"
+          ]
+        },
+        "administrative_area": {
+          "value": "Barangay Yapak, Malay, Aklan",
+          "status": "supported",
+          "source_ids": [
+            "SRC-096"
+          ],
+          "note": "Developer location page places the Newcoast development in Barangay Yapak; cove-specific cadastral limits are not established."
+        },
+        "description": {
+          "value": "Project hierarchy: Newcoast Beaches → Cove 2 / Boracay Newcoast Beach. The developer confirms three separate coves; the project-approved mapping associates Cove 2 with this existing named beach reference. The cove boundary, beach centroid and current access remain unverified.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-088",
+            "SRC-105"
+          ],
+          "note": "Project naming association is not a surveyed physical boundary."
+        },
+        "parent_area": {
+          "id": "newcoast-beaches",
+          "name": "Newcoast Beaches",
+          "area_type": "developer_defined_coastal_area",
+          "status": "supported",
+          "source_ids": [
+            "SRC-088",
+            "SRC-089",
+            "SRC-105"
+          ]
+        },
+        "developer_cove": {
+          "value": "Cove 2",
+          "status": "supported",
+          "mapped_beach_name": "Boracay Newcoast Beach",
+          "project_mapping_status": "user_approved",
+          "physical_boundary_status": "unknown",
+          "source_ids": [
+            "SRC-088",
+            "SRC-105"
+          ],
+          "note": "The project owner explicitly approved this hierarchy. It does not establish a surveyed cove boundary or prove that the map POI is the beach centroid."
+        }
+      },
+      "geography": {
+        "coast_orientation": {
+          "value": null,
+          "status": "unknown",
+          "note": "The wider development is described as facing the Sibuyan Sea, but a cove-specific shoreline azimuth has not been verified."
+        },
+        "coordinates": {
+          "latitude": null,
+          "longitude": null,
+          "coordinate_status": "no_verified_beach_specific_coordinate",
+          "coordinate_source": "No verified beach-specific representative point, entrance or surveyed shoreline coordinate. Nearby map POIs are retained only in coordinate_verification.",
+          "coordinate_precision": "NOT VERIFIED. Do not use the adjacent hotel, transport stop, Mapbox POI or OSM attraction node as a beach centroid or entrance.",
+          "verified": false,
+          "source_id": null
+        },
+        "beach_boundary": {
+          "value": null,
+          "status": "unknown",
+          "note": "No georeferenced or surveyed boundary for this cove has been verified."
+        },
+        "shoreline_geometry": {
+          "value": null,
+          "status": "unknown",
+          "note": "No independently verified shoreline geometry or beach polygon is available."
+        },
+        "natural_shelter": {
+          "value": null,
+          "status": "unknown",
+          "note": "No cove-specific wave-transformation or shelter analysis is available."
+        },
+        "coastline_orientation_degrees": {
+          "value": null,
+          "status": "unknown",
+          "note": "No measured cove-specific shoreline azimuth is available."
+        },
+        "coordinate_verification": {
+          "source_ids": [
+            "SRC-091",
+            "SRC-093"
+          ],
+          "assessment": "OSM tourism=attraction node and Mapbox POI are nearby but are both named map reference points, not natural=beach polygons, surveyed boundaries, entrances or beach centroids.",
+          "osm_attraction_node": {
+            "source_id": "SRC-091",
+            "feature_type": "tourism=attraction node",
+            "osm_feature_id": "node 11150631205",
+            "latitude": 11.98328,
+            "longitude": 121.92583,
+            "coordinate_type": "osm_attraction_reference_point",
+            "not_beach_centroid": true
+          },
+          "mapbox_poi": {
+            "source_id": "SRC-093",
+            "feature_type": "commercial_map_poi",
+            "name": "Boracay Newcoast Cove 2 Beach",
+            "latitude": 11.98335055,
+            "longitude": 121.92560262,
+            "coordinate_type": "mapbox_poi_reference",
+            "not_beach_centroid": true
+          },
+          "note": "Both points are retained for identity cross-check only. Neither is used as the beach coordinate."
+        }
+      },
+      "shore": {
+        "sand_type": {
+          "value": "White sand",
+          "status": "supported",
+          "source_ids": [
+            "SRC-088"
+          ],
+          "note": "Developer description of the Newcoast coves; not a grain-size survey."
+        },
+        "beach_width": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "shore_slope": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "tidal_exposure": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "seasonal_erosion": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "beach_length": {
+          "value": 295,
+          "unit": "m",
+          "qualifier": "approximate_published",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-090"
+          ],
+          "note": "A developer-hosted media article reports approximately 295 m for Cove 2. This is not a surveyed shoreline measurement; do not transfer it to Cove 1, Cove 3 or the parent Newcoast beachfront."
+        }
+      },
+      "underwater": {
+        "reef_presence": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "reef_crest": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "seabed_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "nearshore_depth": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "bathymetry_source": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        }
+      },
+      "hydrodynamics": {
+        "amihan_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": [],
+          "note": "No cove-specific wind/wave exposure assessment."
+        },
+        "habagat_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": [],
+          "note": "No cove-specific wind/wave exposure assessment."
+        },
+        "wave_climate": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "rip_currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "visibility": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "tide_effects": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        }
+      },
+      "activities": {
+        "swimming": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned in this phase. Evidence observations are retained below; monthly and safety suitability must be assessed separately.",
+          "evidence_observations": [
+            {
+              "claim": "The developer describes swimming as one of the activities available across its beach coves.",
+              "source_ids": [
+                "SRC-088"
+              ],
+              "status": "provisional",
+              "scope": "Developer-wide marketing description; no Cove 2-specific safety, depth or seasonal data."
+            }
+          ],
+          "assessment_status": "not_scored"
+        },
+        "beach_relaxation": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned in this phase. Evidence observations are retained below; monthly and safety suitability must be assessed separately.",
+          "evidence_observations": [
+            {
+              "claim": "The developer names Cove 2 as a party destination.",
+              "source_ids": [
+                "SRC-088"
+              ],
+              "status": "supported",
+              "scope": "Developer positioning; does not establish event schedule, public admission or suitability by month."
+            }
+          ],
+          "assessment_status": "not_scored"
+        },
+        "snorkeling": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned in this phase. Evidence observations are retained below; monthly and safety suitability must be assessed separately.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
+        },
+        "kitesurfing_windsurfing": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned in this phase. Evidence observations are retained below; monthly and safety suitability must be assessed separately.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
+        },
+        "boat_excursions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned in this phase. Evidence observations are retained below; monthly and safety suitability must be assessed separately.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
+        }
+      },
+      "access": {
+        "land_access": {
+          "value": "The developer publishes access to the Newcoast development by e-tricycle or shuttle from Cagban Port. A cove-specific public approach route is not identified.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-096"
+          ],
+          "note": "District transport access only; not proof of access to this beach."
+        },
+        "public_access_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "Current public access to the individual Newcoast coves is unresolved. Developer/BusinessMirror guest-exclusive descriptions, a secondary visitor guide claiming district access for non-hotel visitors, and the proponent EIS public-scoping discussion do not establish current beach-entry permission or a public right-of-way. Sources: SRC-094, SRC-097, SRC-098."
+        },
+        "access_restrictions": {
+          "value": "Access claims conflict. The developer-hosted EIS records historical public-scoping comments about private-property access; BusinessMirror reports exclusive hotel-guest access to Newcoast Beach; a visitor guide says the Newcoast district is open to non-hotel visitors. None confirms current admission to this individual cove.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-094",
+            "SRC-097",
+            "SRC-098"
+          ],
+          "note": "Do not convert district access, transport access, a beach easement certificate or historical scoping comments into a current public beach-entry guarantee."
+        },
+        "facilities": {
+          "value": null,
+          "status": "unknown",
+          "note": "No independently verified, current cove-specific public facilities inventory."
+        },
+        "lifeguard_coverage": {
+          "value": null,
+          "status": "unknown",
+          "note": "No current lifeguard roster or designated swimming-zone coverage verified."
+        },
+        "emergency_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No cove-specific emergency vehicle or rescue access route verified."
+        },
+        "legal_framework": {
+          "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-028",
+            "SRC-029",
+            "SRC-030",
+            "SRC-031"
+          ],
+          "note": "Island-wide legal context. Do not infer a beach-specific route, gate, path, public-access entitlement beyond the legally defined easement, or current entry conditions from this record."
+        }
+      },
+      "excursions": {
+        "regular_departure": {
+          "value": "not_verified",
+          "status": "unknown",
+          "note": "No regular tourist boat departure point is verified for this cove."
+        },
+        "seasonal_meeting_points": [],
+        "itinerary_stops": [],
+        "landing_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No generally applicable public landing permission or designated landing point verified."
+        }
+      },
+      "ecology": {
+        "water_quality_history": {
+          "value": null,
+          "status": "unknown",
+          "note": "No beach-specific ambient monitoring station or current bathing-water result is assigned to this cove."
+        },
+        "reef_condition": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "pollution_sources": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "protected_area_status": {
+          "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
+          "status": "supported",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas; the Supreme Court identifies PTA Circular No. 3-82 (3 September 1982) as its implementing instrument, but the full circular and any boundary maps have not been recovered. Exact beach-level marine-reserve limits therefore remain unverified.",
+          "source_ids": [
+            "SRC-049",
+            "SRC-050",
+            "SRC-051"
+          ]
+        },
+        "monitoring_stations": [],
+        "conservation_designations": [
+          {
+            "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+            "designation_type": "water_quality_management_and_conservation_area",
+            "legal_instrument": "DENR Administrative Order No. 2019-15",
+            "designation_date": "2019-11-05",
+            "status": "designated",
+            "geographic_scope": "Boracay Island; exact intersection with this cove not verified.",
+            "beach_level_relation": "Island-level legal context only; no cove-specific boundary or monitoring station is inferred.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-047"
+            ]
+          },
+          {
+            "designation_name": "Boracay Islands Tourist Zone and Marine Reserve",
+            "designation_type": "tourist_zone_and_marine_reserve",
+            "legal_instrument": "Presidential Proclamation No. 1801",
+            "designation_date": "1978-11-10",
+            "status": "designated",
+            "geographic_scope": "Boracay Islands, Aklan; island-level designation.",
+            "beach_level_relation": "No cove-specific marine boundary polygon, coordinates, zoning or no-take limits are provided in the reviewed instrument.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-049",
+              "SRC-050",
+              "SRC-051"
+            ]
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "source_id": "SRC-088",
+          "claim": "Developer identifies three distinct coves and describes their intended character and general activities.",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-089",
+          "claim": "Developer describes the wider Newcoast beachfront as approximately 1 km; this parent-area length is not assigned to this cove.",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-094",
+          "claim": "Proponent EIS records historical public-scoping discussion about public access and private-property context; not a current access determination.",
+          "status": "supported_context_only"
+        },
+        {
+          "source_id": "SRC-096",
+          "claim": "Developer describes transport access to the Newcoast development; no cove-specific public entrance is established.",
+          "status": "supported_context_only"
+        },
+        {
+          "source_id": "SRC-091",
+          "claim": "Name or project mapping reference for this cove; map POI is not a beach centroid.",
+          "status": "reference_only"
+        },
+        {
+          "source_id": "SRC-093",
+          "claim": "Name or project mapping reference for this cove; map POI is not a beach centroid.",
+          "status": "reference_only"
+        },
+        {
+          "source_id": "SRC-100",
+          "claim": "Name or project mapping reference for this cove; map POI is not a beach centroid.",
+          "status": "reference_only"
+        },
+        {
+          "source_id": "SRC-105",
+          "claim": "Project owner approved the Newcoast Beaches hierarchy and Cove-to-beach naming mapping.",
+          "status": "user_approved_project_scope"
+        }
+      ],
+      "data_quality": {
+        "record_status": "draft",
+        "overall_confidence": "low",
+        "known_gaps": [
+          "Surveyed cove boundary and shoreline geometry",
+          "Beach-specific representative point or entrance coordinates",
+          "Cove-specific wave, wind, current and tide conditions",
+          "Nearshore bathymetry, reef profile and seabed type",
+          "Current public access, entry permission and cove-specific approach route",
+          "Beach-specific water-quality monitoring and current bathing status",
+          "Lifeguard coverage and emergency access",
+          "Activity suitability scores and 12-month suitability matrix",
+          "Cove-specific seasonal activity evidence",
+          "Activity suitability has not yet been scored for the five selection activities",
+          "12-month activity suitability matrix has not yet been assessed",
+          "Current, date-specific sea and bathing conditions are not represented by this passport"
+        ],
+        "last_reviewed": "2026-11-15",
+        "field_review": {
+          "reviewed_at": "2026-11-15",
+          "reviewed_sections": [
+            "identity",
+            "geography",
+            "shore",
+            "underwater",
+            "hydrodynamics",
+            "activities",
+            "access",
+            "excursions",
+            "ecology",
+            "evidence",
+            "data_quality"
+          ],
+          "status_counts": {
+            "supported": 7,
+            "provisional": 3,
+            "unknown": 35,
+            "other": 0
+          },
+          "unknown_field_paths": [
+            "geography.coast_orientation",
+            "geography.beach_boundary",
+            "geography.shoreline_geometry",
+            "geography.natural_shelter",
+            "geography.coastline_orientation_degrees",
+            "shore.beach_width",
+            "shore.shore_slope",
+            "shore.tidal_exposure",
+            "shore.seasonal_erosion",
+            "underwater.reef_presence",
+            "underwater.reef_crest",
+            "underwater.seabed_type",
+            "underwater.nearshore_depth",
+            "underwater.bathymetry_source",
+            "hydrodynamics.amihan_exposure",
+            "hydrodynamics.habagat_exposure",
+            "hydrodynamics.wave_climate",
+            "hydrodynamics.currents",
+            "hydrodynamics.rip_currents",
+            "hydrodynamics.visibility",
+            "hydrodynamics.tide_effects",
+            "activities.swimming",
+            "activities.beach_relaxation",
+            "activities.snorkeling",
+            "activities.kitesurfing_windsurfing",
+            "activities.boat_excursions",
+            "access.public_access_status",
+            "access.facilities",
+            "access.lifeguard_coverage",
+            "access.emergency_access",
+            "excursions.regular_departure",
+            "excursions.landing_access",
+            "ecology.water_quality_history",
+            "ecology.reef_condition",
+            "ecology.pollution_sources"
+          ],
+          "provisional_field_paths": [
+            "identity.alternative_names",
+            "shore.beach_length",
+            "access.access_restrictions"
+          ],
+          "fields_requiring_provenance_check": [],
+          "activity_assessment": "not_scored",
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+        }
+      },
+      "internal": {
+        "admin_ready": false,
+        "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
+        "change_tracking": {
+          "created_at": "2026-11-15",
+          "updated_at": "2026-11-15",
+          "revision": 1
+        }
+      },
+      "selection": {
+        "eligible": true,
+        "pool_id": "boracay-core-13",
+        "order": 12,
+        "basis": "project_owner_approved_scope",
+        "source_ids": [
+          "SRC-105"
+        ]
       }
+    },
+    {
+      "id": "savoy",
+      "name": "Savoy Beach",
+      "name_ru": "Пляж Савой",
+      "record_type": "beach",
+      "identity": {
+        "place_name": {
+          "value": "Savoy Beach",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-092",
+            "SRC-093",
+            "SRC-099"
+          ],
+          "note": "The named map/landmark reference is retained, but the physical beach boundary is not independently established."
+        },
+        "alternative_names": {
+          "value": [
+            "Savoy Beach"
+          ],
+          "status": "provisional",
+          "source_ids": [
+            "SRC-092",
+            "SRC-093",
+            "SRC-099"
+          ]
+        },
+        "administrative_area": {
+          "value": "Barangay Yapak, Malay, Aklan",
+          "status": "supported",
+          "source_ids": [
+            "SRC-096"
+          ],
+          "note": "Developer location page places the Newcoast development in Barangay Yapak; cove-specific cadastral limits are not established."
+        },
+        "description": {
+          "value": "Project hierarchy: Newcoast Beaches → Cove 3 / Savoy Beach. The developer confirms three separate coves; the project-approved mapping associates Cove 3 with this existing named beach reference. The cove boundary, beach centroid and current access remain unverified.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-088",
+            "SRC-105"
+          ],
+          "note": "Project naming association is not a surveyed physical boundary."
+        },
+        "parent_area": {
+          "id": "newcoast-beaches",
+          "name": "Newcoast Beaches",
+          "area_type": "developer_defined_coastal_area",
+          "status": "supported",
+          "source_ids": [
+            "SRC-088",
+            "SRC-089",
+            "SRC-105"
+          ]
+        },
+        "developer_cove": {
+          "value": "Cove 3",
+          "status": "supported",
+          "mapped_beach_name": "Savoy Beach",
+          "project_mapping_status": "user_approved",
+          "physical_boundary_status": "unknown",
+          "source_ids": [
+            "SRC-088",
+            "SRC-105"
+          ],
+          "note": "The project owner explicitly approved this hierarchy. It does not establish a surveyed cove boundary or prove that the map POI is the beach centroid."
+        }
+      },
+      "geography": {
+        "coast_orientation": {
+          "value": null,
+          "status": "unknown",
+          "note": "The wider development is described as facing the Sibuyan Sea, but a cove-specific shoreline azimuth has not been verified."
+        },
+        "coordinates": {
+          "latitude": null,
+          "longitude": null,
+          "coordinate_status": "no_verified_beach_specific_coordinate",
+          "coordinate_source": "No verified beach-specific representative point, entrance or surveyed shoreline coordinate. Nearby map POIs are retained only in coordinate_verification.",
+          "coordinate_precision": "NOT VERIFIED. Do not use the adjacent hotel, transport stop, Mapbox POI or OSM attraction node as a beach centroid or entrance.",
+          "verified": false,
+          "source_id": null
+        },
+        "beach_boundary": {
+          "value": null,
+          "status": "unknown",
+          "note": "No georeferenced or surveyed boundary for this cove has been verified."
+        },
+        "shoreline_geometry": {
+          "value": null,
+          "status": "unknown",
+          "note": "No independently verified shoreline geometry or beach polygon is available."
+        },
+        "natural_shelter": {
+          "value": null,
+          "status": "unknown",
+          "note": "No cove-specific wave-transformation or shelter analysis is available."
+        },
+        "coastline_orientation_degrees": {
+          "value": null,
+          "status": "unknown",
+          "note": "No measured cove-specific shoreline azimuth is available."
+        },
+        "coordinate_verification": {
+          "source_ids": [
+            "SRC-092",
+            "SRC-093",
+            "SRC-099"
+          ],
+          "assessment": "A separate Savoy Beach landmark/Mapbox POI is reported, but its coordinate is not promoted to a beach reference because the physical Cove 3 shoreline and the relationship between the landmark label and sand area are not independently surveyed.",
+          "mapbox_poi": {
+            "source_id": "SRC-093",
+            "feature_type": "commercial_map_poi",
+            "name": "Savoy Beach",
+            "latitude": 11.98573567,
+            "longitude": 121.92513664,
+            "coordinate_type": "mapbox_poi_reference",
+            "not_beach_centroid": true
+          },
+          "travel_platform_landmark": {
+            "source_id": "SRC-092",
+            "feature_type": "travel_platform_landmark_name",
+            "name": "Savoy Beach",
+            "distance_from_Savoy_Hotel_km": 0.54,
+            "coordinate_type": "approximate_landmark_listing",
+            "not_beach_centroid": true
+          },
+          "user_google_maps_reference": {
+            "source_id": "SRC-099",
+            "url": "https://maps.app.goo.gl/m3x9KLM6YRPPW5Cv7",
+            "coordinate_type": "unresolved_user_supplied_place_link",
+            "not_beach_centroid": true
+          },
+          "note": "Do not substitute Savoy Hotel coordinates or the Mapbox POI for the beach's representative coordinate."
+        }
+      },
+      "shore": {
+        "sand_type": {
+          "value": "White sand",
+          "status": "supported",
+          "source_ids": [
+            "SRC-088"
+          ],
+          "note": "Developer description of the Newcoast coves; not a grain-size survey."
+        },
+        "beach_width": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "shore_slope": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "tidal_exposure": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "seasonal_erosion": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        }
+      },
+      "underwater": {
+        "reef_presence": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "reef_crest": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "seabed_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "nearshore_depth": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "bathymetry_source": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        }
+      },
+      "hydrodynamics": {
+        "amihan_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": [],
+          "note": "No cove-specific wind/wave exposure assessment."
+        },
+        "habagat_exposure": {
+          "value": "variable_or_not_assessed",
+          "status": "unknown",
+          "source_ids": [],
+          "note": "No cove-specific wind/wave exposure assessment."
+        },
+        "wave_climate": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "rip_currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "visibility": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "tide_effects": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        }
+      },
+      "activities": {
+        "swimming": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned in this phase. Evidence observations are retained below; monthly and safety suitability must be assessed separately.",
+          "evidence_observations": [
+            {
+              "claim": "The developer describes swimming as one of the activities available across its beach coves.",
+              "source_ids": [
+                "SRC-088"
+              ],
+              "status": "provisional",
+              "scope": "Developer-wide marketing description; no Cove 3-specific safety, depth or seasonal data."
+            }
+          ],
+          "assessment_status": "not_scored"
+        },
+        "beach_relaxation": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned in this phase. Evidence observations are retained below; monthly and safety suitability must be assessed separately.",
+          "evidence_observations": [
+            {
+              "claim": "The developer positions Cove 3 as a secluded private-paradise cove.",
+              "source_ids": [
+                "SRC-088"
+              ],
+              "status": "supported",
+              "scope": "Developer positioning; does not establish public access or legal exclusivity."
+            }
+          ],
+          "assessment_status": "not_scored"
+        },
+        "snorkeling": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned in this phase. Evidence observations are retained below; monthly and safety suitability must be assessed separately.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
+        },
+        "kitesurfing_windsurfing": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned in this phase. Evidence observations are retained below; monthly and safety suitability must be assessed separately.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
+        },
+        "boat_excursions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned in this phase. Evidence observations are retained below; monthly and safety suitability must be assessed separately.",
+          "evidence_observations": [],
+          "assessment_status": "not_scored"
+        }
+      },
+      "access": {
+        "land_access": {
+          "value": "The developer publishes access to the Newcoast development by e-tricycle or shuttle from Cagban Port. A cove-specific public approach route is not identified.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-096"
+          ],
+          "note": "District transport access only; not proof of access to this beach."
+        },
+        "public_access_status": {
+          "value": null,
+          "status": "unknown",
+          "note": "Current public access to the individual Newcoast coves is unresolved. Developer/BusinessMirror guest-exclusive descriptions, a secondary visitor guide claiming district access for non-hotel visitors, and the proponent EIS public-scoping discussion do not establish current beach-entry permission or a public right-of-way. Sources: SRC-094, SRC-097, SRC-098."
+        },
+        "access_restrictions": {
+          "value": "Access claims conflict. The developer-hosted EIS records historical public-scoping comments about private-property access; BusinessMirror reports exclusive hotel-guest access to Newcoast Beach; a visitor guide says the Newcoast district is open to non-hotel visitors. None confirms current admission to this individual cove.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-094",
+            "SRC-097",
+            "SRC-098"
+          ],
+          "note": "Do not convert district access, transport access, a beach easement certificate or historical scoping comments into a current public beach-entry guarantee."
+        },
+        "facilities": {
+          "value": null,
+          "status": "unknown",
+          "note": "No independently verified, current cove-specific public facilities inventory."
+        },
+        "lifeguard_coverage": {
+          "value": null,
+          "status": "unknown",
+          "note": "No current lifeguard roster or designated swimming-zone coverage verified."
+        },
+        "emergency_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No cove-specific emergency vehicle or rescue access route verified."
+        },
+        "legal_framework": {
+          "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-028",
+            "SRC-029",
+            "SRC-030",
+            "SRC-031"
+          ],
+          "note": "Island-wide legal context. Do not infer a beach-specific route, gate, path, public-access entitlement beyond the legally defined easement, or current entry conditions from this record."
+        }
+      },
+      "excursions": {
+        "regular_departure": {
+          "value": "not_verified",
+          "status": "unknown",
+          "note": "No regular tourist boat departure point is verified for this cove."
+        },
+        "seasonal_meeting_points": [],
+        "itinerary_stops": [],
+        "landing_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No generally applicable public landing permission or designated landing point verified."
+        }
+      },
+      "ecology": {
+        "water_quality_history": {
+          "value": null,
+          "status": "unknown",
+          "note": "No beach-specific ambient monitoring station or current bathing-water result is assigned to this cove."
+        },
+        "reef_condition": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "pollution_sources": {
+          "value": null,
+          "status": "unknown",
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "protected_area_status": {
+          "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
+          "status": "supported",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas; the Supreme Court identifies PTA Circular No. 3-82 (3 September 1982) as its implementing instrument, but the full circular and any boundary maps have not been recovered. Exact beach-level marine-reserve limits therefore remain unverified.",
+          "source_ids": [
+            "SRC-049",
+            "SRC-050",
+            "SRC-051"
+          ]
+        },
+        "monitoring_stations": [],
+        "conservation_designations": [
+          {
+            "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+            "designation_type": "water_quality_management_and_conservation_area",
+            "legal_instrument": "DENR Administrative Order No. 2019-15",
+            "designation_date": "2019-11-05",
+            "status": "designated",
+            "geographic_scope": "Boracay Island; exact intersection with this cove not verified.",
+            "beach_level_relation": "Island-level legal context only; no cove-specific boundary or monitoring station is inferred.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-047"
+            ]
+          },
+          {
+            "designation_name": "Boracay Islands Tourist Zone and Marine Reserve",
+            "designation_type": "tourist_zone_and_marine_reserve",
+            "legal_instrument": "Presidential Proclamation No. 1801",
+            "designation_date": "1978-11-10",
+            "status": "designated",
+            "geographic_scope": "Boracay Islands, Aklan; island-level designation.",
+            "beach_level_relation": "No cove-specific marine boundary polygon, coordinates, zoning or no-take limits are provided in the reviewed instrument.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-049",
+              "SRC-050",
+              "SRC-051"
+            ]
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "source_id": "SRC-088",
+          "claim": "Developer identifies three distinct coves and describes their intended character and general activities.",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-089",
+          "claim": "Developer describes the wider Newcoast beachfront as approximately 1 km; this parent-area length is not assigned to this cove.",
+          "status": "supported"
+        },
+        {
+          "source_id": "SRC-094",
+          "claim": "Proponent EIS records historical public-scoping discussion about public access and private-property context; not a current access determination.",
+          "status": "supported_context_only"
+        },
+        {
+          "source_id": "SRC-096",
+          "claim": "Developer describes transport access to the Newcoast development; no cove-specific public entrance is established.",
+          "status": "supported_context_only"
+        },
+        {
+          "source_id": "SRC-092",
+          "claim": "Name or project mapping reference for this cove; map POI is not a beach centroid.",
+          "status": "reference_only"
+        },
+        {
+          "source_id": "SRC-093",
+          "claim": "Name or project mapping reference for this cove; map POI is not a beach centroid.",
+          "status": "reference_only"
+        },
+        {
+          "source_id": "SRC-099",
+          "claim": "Name or project mapping reference for this cove; map POI is not a beach centroid.",
+          "status": "reference_only"
+        },
+        {
+          "source_id": "SRC-105",
+          "claim": "Project owner approved the Newcoast Beaches hierarchy and Cove-to-beach naming mapping.",
+          "status": "user_approved_project_scope"
+        }
+      ],
+      "data_quality": {
+        "record_status": "draft",
+        "overall_confidence": "low",
+        "known_gaps": [
+          "Surveyed cove boundary and shoreline geometry",
+          "Beach-specific representative point or entrance coordinates",
+          "Cove-specific wave, wind, current and tide conditions",
+          "Nearshore bathymetry, reef profile and seabed type",
+          "Current public access, entry permission and cove-specific approach route",
+          "Beach-specific water-quality monitoring and current bathing status",
+          "Lifeguard coverage and emergency access",
+          "Activity suitability scores and 12-month suitability matrix",
+          "Cove-specific seasonal activity evidence",
+          "Activity suitability has not yet been scored for the five selection activities",
+          "12-month activity suitability matrix has not yet been assessed",
+          "Current, date-specific sea and bathing conditions are not represented by this passport"
+        ],
+        "last_reviewed": "2026-11-15",
+        "field_review": {
+          "reviewed_at": "2026-11-15",
+          "reviewed_sections": [
+            "identity",
+            "geography",
+            "shore",
+            "underwater",
+            "hydrodynamics",
+            "activities",
+            "access",
+            "excursions",
+            "ecology",
+            "evidence",
+            "data_quality"
+          ],
+          "status_counts": {
+            "supported": 6,
+            "provisional": 3,
+            "unknown": 35,
+            "other": 0
+          },
+          "unknown_field_paths": [
+            "geography.coast_orientation",
+            "geography.beach_boundary",
+            "geography.shoreline_geometry",
+            "geography.natural_shelter",
+            "geography.coastline_orientation_degrees",
+            "shore.beach_width",
+            "shore.shore_slope",
+            "shore.tidal_exposure",
+            "shore.seasonal_erosion",
+            "underwater.reef_presence",
+            "underwater.reef_crest",
+            "underwater.seabed_type",
+            "underwater.nearshore_depth",
+            "underwater.bathymetry_source",
+            "hydrodynamics.amihan_exposure",
+            "hydrodynamics.habagat_exposure",
+            "hydrodynamics.wave_climate",
+            "hydrodynamics.currents",
+            "hydrodynamics.rip_currents",
+            "hydrodynamics.visibility",
+            "hydrodynamics.tide_effects",
+            "activities.swimming",
+            "activities.beach_relaxation",
+            "activities.snorkeling",
+            "activities.kitesurfing_windsurfing",
+            "activities.boat_excursions",
+            "access.public_access_status",
+            "access.facilities",
+            "access.lifeguard_coverage",
+            "access.emergency_access",
+            "excursions.regular_departure",
+            "excursions.landing_access",
+            "ecology.water_quality_history",
+            "ecology.reef_condition",
+            "ecology.pollution_sources"
+          ],
+          "provisional_field_paths": [
+            "identity.place_name",
+            "identity.alternative_names",
+            "access.access_restrictions"
+          ],
+          "fields_requiring_provenance_check": [],
+          "activity_assessment": "not_scored",
+          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+        }
+      },
+      "internal": {
+        "admin_ready": false,
+        "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
+        "change_tracking": {
+          "created_at": "2026-11-15",
+          "updated_at": "2026-11-15",
+          "revision": 1
+        }
+      },
+      "selection": {
+        "eligible": true,
+        "pool_id": "boracay-core-13",
+        "order": 13,
+        "basis": "project_owner_approved_scope",
+        "source_ids": [
+          "SRC-105"
+        ]
+      }
+    }
+  ],
+  "coastal_areas": [
+    {
+      "id": "newcoast-beaches",
+      "name": "Newcoast Beaches",
+      "area_type": "developer_defined_coastal_area",
+      "description": "Boracay Newcoast's developer-defined beachfront area containing three named coves.",
+      "beach_ids": [
+        "lapus",
+        "newcoast",
+        "savoy"
+      ],
+      "hierarchy": [
+        {
+          "cove": "Cove 1",
+          "beach_id": "lapus",
+          "beach_name": "Lapus-Lapus Beach",
+          "mapping_status": "user_approved"
+        },
+        {
+          "cove": "Cove 2",
+          "beach_id": "newcoast",
+          "beach_name": "Boracay Newcoast Beach",
+          "mapping_status": "user_approved"
+        },
+        {
+          "cove": "Cove 3",
+          "beach_id": "savoy",
+          "beach_name": "Savoy Beach",
+          "mapping_status": "user_approved"
+        }
+      ],
+      "geometry": {
+        "value": null,
+        "status": "unknown",
+        "note": "No surveyed parent-area polygon or beach-specific shoreline geometry has been verified."
+      },
+      "access": {
+        "value": null,
+        "status": "unknown",
+        "note": "Development access and beach-specific public entry are separate; current cove access is unresolved."
+      },
+      "source_ids": [
+        "SRC-088",
+        "SRC-089",
+        "SRC-094",
+        "SRC-096",
+        "SRC-105"
+      ],
+      "checked_at": "2026-11-15"
     }
   ]
 }
