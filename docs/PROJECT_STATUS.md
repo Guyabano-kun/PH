@@ -6,7 +6,7 @@ Last verified against GitHub `main`: 2026-11-15
 - Repository: `Guyabano-kun/PH`
 - Branch: `main`
 - Code/data baseline before adding project-control files: `c78d7d17bda612fdb9bf7ab5973fff99014f18`
-- Dataset version: `0.2.47`
+- Dataset version: `0.2.48`
 - `data/beaches.json`: 16 records
 - `data/sources.json`: 109 sources
 - Manifest counts: `beach_count=16`, `selection_beach_count=13`, `research_only_record_count=3`
@@ -76,18 +76,28 @@ These are historical checks. Re-run relevant checks against current `main` after
 
 ## Current work package and exact next step
 
-**Continue evidence assessment for the three full beach-query modes and the 12-month × 5-activity suitability matrix.**
+**Accepted scope (2026-11-15): normalize the 13-beach selection set and evidence-enrich all 13 beach passports.**
+
+Current implementation:
+- Dataset version: 0.2.48; 16 records total, 13 eligible selection records, 3 research-only records.
+- Selection order is continuous from 1 to 13. Angol Point, Hagdan Beach and Lugutan Beach remain excluded from the selection pool.
+- Newcoast hierarchy is represented in the three child passports: Cove 1 / Lapus-Lapus Beach, Cove 2 / Boracay Newcoast Beach, Cove 3 / Savoy Beach. This is a project-approved naming relationship, not a surveyed shoreline boundary.
+- Hagdan source attribution corrected: SRC-065 was unrelated to Hagdan and has been removed from its identity evidence. Hagdan remains provisional and has no beach coordinate.
+- `beaches.html` now displays selection membership and the Newcoast parent/cove mapping using the current `parent_area` and `developer_cove` fields; legacy `developer_coves` rendering is retained.
+- All 65 activity values (13 beaches × 5 activities) remain null and unscored pending evidence validation and approved methodology.
+- Source-reference audit: 109 sources, no dangling source IDs. JSON parsing and JavaScript syntax checks pass.
+- Newcoast Cove 2 and Cove 3 beach-specific coordinates and boundaries remain NOT VERIFIED. No POI, hotel, or transport-stop coordinate is substituted.
+- GitHub Pages live and visual verification for the latest changes remains NOT VERIFIED because the published page could not be retrieved in the current verification environment.
 
 Required sequence:
-1. Preserve the current guide-page evidence summary; do not convert it into a numerical ranking.
-2. Research missing activity-relevant evidence selectively across the 13 approved beaches: seasonal wind, wave exposure, tides, currents, rainfall, bathymetry/underwater features, water quality, safety, and access.
-3. Record source, checked date, exact geographic/seasonal coverage, limitations, and confidence at field level.
-4. Keep unsupported fields unknown. Do not calculate scores yet.
-5. Develop scoring methodology, unknown-data treatment, activity-specific factors, weights, and confidence rules for review/approval.
-6. Only after methodology approval, implement the three query modes and any monthly matrix, preserving the current guide-page summary and detailed `weather.html` experience.
-7. Validate code/data, diff, mobile/desktop behavior, and GitHub Pages deployment. Visual verification remains outstanding for the current published guide change.
+1. Continue field-by-field evidence review for all 13 passports; enrich only claims supported by traceable sources.
+2. Resolve the Hagdan identity question only if independent beach-feature/boundary evidence is found; otherwise keep it research-only.
+3. Reconcile Newcoast Cove 1/2/3 names with developer material and map layers without inferring geometry or coordinates.
+4. Keep unsupported shoreline, bathymetry, currents, tide, access, lifeguard and safety fields unknown.
+5. Keep all 65 activity values unscored until the evidence and scoring methodology are validated and approved.
+6. Re-run source, schema, coordinate, UI, mobile/desktop and published-page checks after each implementation batch.
 
-Do not invent suitability, access rights, safety conclusions, or missing physical parameters.
+Do not invent suitability, access rights, safety conclusions, beach boundaries or coordinates.
 
 ## Scope protection
 - No changes to site architecture or map library.
