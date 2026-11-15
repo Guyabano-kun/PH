@@ -720,15 +720,19 @@
       "url": "https://namria.gov.ph/kiosk/namria02.htm",
       "type": "official_geospatial_product_catalogue",
       "published_at": null,
-      "checked_at": "2026-11-14",
+      "checked_at": "2026-11-15",
       "coverage": [
         "Bathymetry charts and ASCII XYZ bathymetry data",
         "Hydrographic smooth sheets for inshore ports and harbors",
         "Nautical charts and georeferenced charts",
         "Raw/processed tidal current and wave data per month per station",
-        "Tidal datum and tidal-extreme products"
+        "Tidal datum and tidal-extreme products",
+        "Bathymetry Data ASCII XYZ and digital bathymetry charts",
+        "Hydrographic Smooth Sheets for inshore ports and harbors",
+        "Digital Nautical Charts and Electronic Navigational Charts",
+        "Initial inquiry via NAMRIA One-stop Shop"
       ],
-      "limitations": "Catalogue confirms product availability/request channels, not the existence of a specific Boracay dataset or its values. No bathymetry, current or wave measurements are transcribed from this page.",
+      "limitations": "Catalogue confirms listed product types and inquiry channels only. It does not confirm that Boracay coverage exists at the required resolution, that data are current, or that any numeric values are available. A formal, spatially bounded data request and metadata review are required.",
       "reliability": "official_national_mapping_agency_catalogue"
     },
     {
@@ -1763,24 +1767,6 @@
       ],
       "limitations": "Caticlan wind-direction evidence is based on meteorological observations from 2003–2004 and does not provide a current long-term monthly wind-speed climatology for Boracay beaches. Monthly wind-speed and direction values in Table 18 are for Roxas and Romblon stations, not Caticlan; they must not be relabelled as Caticlan or beach-level measurements. Rainfall estimates use regional station proxies. Ocean-current figures show broad Philippine circulation, not Boracay nearshore currents or beach-specific tidal streams. Not suitable alone for activity scores, bathing safety or current conditions.",
       "reliability": "official_environmental_report_with_historical_local_wind_direction_and_regional_climate_proxies"
-    },
-    {
-      "id": "SRC-107",
-      "title": "NAMRIA – Provision of Free Printed or Digital Data / Hydrographic and Bathymetric Products",
-      "publisher": "National Mapping and Resource Information Authority",
-      "url": "https://namria.gov.ph/kiosk/namria02.htm",
-      "type": "official_hydrographic_data_product_catalogue",
-      "published_at": null,
-      "checked_at": "2026-11-15",
-      "coverage": [
-        "Bathymetry Data ASCII XYZ",
-        "Digital bathymetry charts",
-        "Hydrographic Smooth Sheets for inshore ports and harbors",
-        "Digital Nautical Charts and Electronic Navigational Charts",
-        "Initial inquiry via NAMRIA One-stop Shop"
-      ],
-      "limitations": "Confirms listed product types and inquiry channels only. It does not confirm that Boracay coverage exists at the required resolution, that data are current, or that any numeric values are available. A formal, spatially bounded data request and metadata review are required.",
-      "reliability": "official_national_mapping_agency_product_catalogue"
     },
     {
       "id": "SRC-108",
