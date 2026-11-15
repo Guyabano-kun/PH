@@ -6,9 +6,9 @@ Last verified against GitHub `main`: 2026-11-15
 - Repository: `Guyabano-kun/PH`
 - Branch: `main`
 - Code/data baseline before adding project-control files: `c78d7d17bda612fdb9bf7ab5973fff99014f18`
-- Dataset version: `0.2.51`
+- Dataset version: `0.2.52`
 - `data/beaches.json`: 16 records
-- `data/sources.json`: 109 sources
+- `data/sources.json`: 117 sources
 - Manifest counts: `beach_count=16`, `selection_beach_count=13`, `research_only_record_count=3`
 - The manifest, beach dataset, source dataset, `weather.html`, and `beaches.html` were freshly fetched from GitHub `main` before creating the project-control files.
 - Repository operating instructions and continuity records are now present on `main`: `AGENTS.md`, `docs/PROJECT_DECISIONS.md`, `docs/PROJECT_STATUS.md`, and `docs/CHAT_START.md`.
@@ -91,6 +91,7 @@ Current implementation:
 - Added a current specialist-operator shore-snorkelling source (SRC-118): Diniwid and Tambisaan have conditional shore-snorkelling evidence (high tide/calm water); central White Beach Stations 1–3 are explicitly not a reef-snorkelling location. Angol Point remains a separate excluded research record.
 - Dataset 0.2.51 promotes only supported/provisional field-level findings: central White Beach Stations 1–3 are sandy/no reef-snorkel habitat; Diniwid nearshore rock/coral is provisional; Tambisaan nearshore reef presence is supported; Balinghai, Ilig-Iligan and Tulubhan reef references remain locality-level provisional. Practical access descriptions for Bulabog, Diniwid, Ilig-Iligan, Tulubhan and Tambisaan are provisional only; no public right-of-way is asserted.
 - The picker now displays optional condition/access notes for leading recommendations and alternatives. Tambisaan is the primary shore-snorkelling candidate based on two operator/visitor sources; Diniwid is the secondary provisional candidate. Notes require calm water/high tide and prohibit treating seasonal context as a same-day safety clearance.
+- Dataset 0.2.52 adds Diniwid as a provisional Amihan swimming and beach-relaxation candidate; Ilig-Iligan as a provisional dry-season snorkelling candidate; Balinghai as a paid-entry, low-tide snorkelling candidate. Puka's rocky-edge snorkelling evidence is excluded because of current/drop-off warnings. Lapus-Lapus and Punta Bunga swimming evidence is retained but excluded while public access remains uncertain.
 - All 65 activity values (13 beaches × 5 activities) remain null and unscored pending evidence validation and approved methodology.
 - Source-reference audit: 109 sources, no dangling source IDs. JSON parsing and JavaScript syntax checks pass.
 - Newcoast Cove 2 field review: `ecology.water_quality_history` changed from unknown to provisional; the station is explicitly area-level. One unknown field was converted to provisional, not supported.
