@@ -300,6 +300,24 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
  .weather-grid .windy-frame{height:320px}
 }
 
+
+/* Evidence-led beach suggestions on the guide page */
+.beach-picker{margin-top:46px;padding:24px;background:var(--surface);border:1px solid var(--line);border-radius:6px 22px 6px 22px}
+.beach-picker-lead{max-width:900px;color:var(--muted);margin:0 0 12px}
+.beach-picker-season{display:inline-block;margin:0 0 16px;padding:6px 11px;border-radius:999px;background:var(--bg);color:var(--accent);font-size:.9rem;font-weight:750}
+.beach-picker-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.beach-picker-card{min-width:0;padding:17px;border:1px solid var(--line);border-radius:12px;background:var(--bg)}
+.beach-picker-card h3{margin:0 0 10px;font-size:1.08rem;line-height:1.3}
+.beach-picker-item{padding:10px 0;border-top:1px solid var(--line)}
+.beach-picker-item:first-of-type{border-top:0;padding-top:0}
+.beach-picker-item strong{display:block;margin-bottom:3px}
+.beach-picker-item p{margin:3px 0 0;color:var(--muted);font-size:.91rem;line-height:1.5}
+.beach-picker-status{display:inline-block;margin:2px 0 4px;padding:2px 7px;border-radius:999px;background:var(--surface);font-size:.76rem;font-weight:750;color:var(--accent)}
+.beach-picker-status.provisional{color:#9a6717}
+.beach-picker-empty{color:var(--muted);font-size:.93rem;margin:0}
+.beach-picker-foot{margin:14px 0 0;color:var(--muted);font-size:.9rem}
+.beach-picker-link{display:inline-flex;margin-top:12px;font-weight:800}
+@media(max-width:760px){.beach-picker{padding:18px}.beach-picker-grid{grid-template-columns:minmax(0,1fr)}}
 </style></head><body><header class="top">
 <div class="places"><a class="place" href="beaches.html"><span aria-hidden="true">🏖</span><span data-ru="Паспорта пляжей" data-en="Beach passports">Паспорта пляжей</span></a><a class="place" href="weather.html"><span aria-hidden="true">☀</span><span data-ru="Погода и море" data-en="Weather & Sea">Погода и море</span></a></div>
 <div class="settings"><button class="setting-btn lang-btn" id="lang-btn" type="button" aria-label="Language"><span class="setting-icon" id="lang-flag">🇷🇺</span></button><button class="setting-btn theme-btn" id="theme-btn" type="button" aria-label="Theme: Auto"><span class="setting-icon" id="theme-icon">◐</span></button></div></header>
@@ -311,6 +329,15 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
 <a class="card card-link" href="#island-transport" aria-label="Транспорт и прибытие"><h2 data-ru="Транспорт и прибытие" data-en="Transport and arrival">Транспорт и прибытие</h2><p data-ru="Обычно маршрут включает паром до Катиклана, трансфер до порта и лодку на остров. На Боракае действуют ограничения для транспорта; пешие маршруты и местные электрокары часто практичнее." data-en="Arrival usually involves a ferry to Caticlan, a transfer to the port and a boat to the island. Vehicle access is limited; walking and local e-trikes are often practical.">Обычно маршрут включает паром до Катиклана, трансфер до порта и лодку на остров. На Боракае действуют ограничения для транспорта; пешие маршруты и местные электрокары часто практичнее.</p></a>
 <a class="card card-link" href="#seasonal-beaches" aria-label="Приливы и сезонность"><h2 data-ru="Приливы и сезонность" data-en="Tides and seasonality">Приливы и сезонность</h2><p data-ru="Состояние пляжа и удобство купания зависят от ветра, сезона и прилива. Не ориентируйтесь только на календарь: проверяйте актуальный прогноз и местные предупреждения." data-en="Beach conditions and swimming depend on wind, season and tide. Do not rely on a calendar alone; check current forecasts and local advisories.">Состояние пляжа и удобство купания зависят от ветра, сезона и прилива. Не ориентируйтесь только на календарь: проверяйте актуальный прогноз и местные предупреждения.</p></a>
 <a class="card card-link" href="weather.html"><h2 data-ru="Погода, муссоны и море" data-en="Weather, monsoons and sea">Погода, муссоны и море</h2><p data-ru="Интерактивная карта Amihan и Habagat, сезонные условия побережий и приливы." data-en="Interactive Amihan and Habagat map, seasonal coastline conditions and tides.">Интерактивная карта Amihan и Habagat, сезонные условия побережий и приливы.</p></a></div>
+
+<section id="beach-picker" class="beach-picker" aria-labelledby="beach-picker-title">
+<h2 id="beach-picker-title" data-ru="Какой пляж выбрать для занятия?" data-en="Which beach should you choose?">Какой пляж выбрать для занятия?</h2>
+<p class="beach-picker-lead" data-ru="Краткий подбор по доступным свидетельствам для текущего сезона. Показаны только пляжи, для которых найдены относящиеся к активности наблюдения; отсутствие результата означает недостаток данных, а не отсутствие самой активности." data-en="A concise evidence-led guide for the current season. Only beaches with activity-related observations are shown; no result means insufficient evidence, not that the activity is unavailable.">Краткий подбор по доступным свидетельствам для текущего сезона. Показаны только пляжи, для которых найдены относящиеся к активности наблюдения; отсутствие результата означает недостаток данных, а не отсутствие самой активности.</p>
+<div id="beach-picker-season" class="beach-picker-season" aria-live="polite">Загрузка сезона…</div>
+<div id="beach-picker-results" class="beach-picker-grid" aria-live="polite"><p class="beach-picker-empty">Загрузка рекомендаций…</p></div>
+<p class="beach-picker-foot" data-ru="Это не рейтинг безопасности и не прогноз состояния моря на конкретный день. Для купания учитывайте местные предупреждения и фактические условия; неизвестные параметры не считаются благоприятными." data-en="This is not a safety ranking or a day-specific sea forecast. Follow local warnings and actual conditions when swimming; unknown parameters are not treated as favourable.">Это не рейтинг безопасности и не прогноз состояния моря на конкретный день. Для купания учитывайте местные предупреждения и фактические условия; неизвестные параметры не считаются благоприятными.</p>
+<a class="beach-picker-link" href="weather.html" data-ru="Подробнее: море, погода, приливы и сезонность →" data-en="More details: sea, weather, tides and seasonality →">Подробнее: море, погода, приливы и сезонность →</a>
+</section>
 
 <section id="stay-guide"><h2 data-ru="Долгосрочное проживание" data-en="Long-term accommodation">Долгосрочное проживание</h2><p class="tide-intro" data-ru="При выборе жилья сравнивайте не только арендную плату. Для длительного проживания заранее проверьте фактический доступ к пляжу и транспорту, уровень шума, отдельные счётчики воды и электричества, наличие домашнего интернета и все ежемесячные сборы здания." data-en="When comparing long-term rentals, look beyond the rent. Check actual access to the beach and transport, noise, separate water and electricity meters, home internet availability and all recurring building charges.">При выборе жилья сравнивайте не только арендную плату. Для длительного проживания заранее проверьте фактический доступ к пляжу и транспорту, уровень шума, отдельные счётчики воды и электричества, наличие домашнего интернета и все ежемесячные сборы здания.</p><p class="tide-intro" data-ru="В договоре отдельно зафиксируйте, кто оплачивает коммунальные услуги и включены ли association / condo dues в аренду. Сводный ориентир ежемесячных платежей приведён ниже." data-en="The lease should state who pays utilities and whether association / condo dues are included in the rent. A combined monthly cost guide is provided below.">В договоре отдельно зафиксируйте, кто оплачивает коммунальные услуги и включены ли association / condo dues в аренду. Сводный ориентир ежемесячных платежей приведён ниже.</p></section><section id="island-transport">
 <h2 data-ru="Как передвигаться по Боракаю" data-en="Getting around Boracay">Как передвигаться по Боракаю</h2>
@@ -424,7 +451,58 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
 
 <script>
 (async()=>{const now=document.getElementById('weather-now'),days=document.getElementById('weather-days');try{const u='https://api.open-meteo.com/v1/forecast?latitude=11.9674&longitude=121.9248&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m,wind_gusts_10m&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum,wind_speed_10m_max&forecast_days=5&models=ecmwf_ifs025&timezone=Asia%2FManila';const r=await fetch(u);if(!r.ok)throw new Error('weather api');const d=await r.json();const c=d.current;now.innerHTML='<div style="font-size:2rem;font-weight:800">'+Math.round(c.temperature_2m)+'°C</div><div>'+weatherLabel(c.weather_code)+' · feels '+Math.round(c.apparent_temperature)+'°C</div><div class="weather-small">Humidity '+c.relative_humidity_2m+'% · Rain '+c.precipitation+' mm · Wind '+Math.round(c.wind_speed_10m)+' km/h · Gusts '+Math.round(c.wind_gusts_10m)+' km/h</div><div class="weather-small"><strong>Model: ECMWF IFS</strong></div>';days.innerHTML=d.daily.time.map((date,i)=>'<tr><td>'+new Date(date+'T12:00:00+08:00').toLocaleDateString(document.documentElement.lang==='ru'?'ru-RU':'en-US',{weekday:'short',day:'numeric'})+'</td><td>'+Math.round(d.daily.temperature_2m_min[i])+'° / '+Math.round(d.daily.temperature_2m_max[i])+'°</td><td>'+Math.round(d.daily.precipitation_probability_max[i]??0)+'%<br><span class="weather-small">'+(d.daily.precipitation_sum[i]??0)+' mm</span></td><td>'+Math.round(d.daily.wind_speed_10m_max[i])+' km/h</td></tr>').join('')}catch(e){now.textContent=document.documentElement.lang==='ru'?'Не удалось загрузить прогноз. Используйте ссылки на источники ниже.':'Forecast unavailable. Use the source links below.';days.innerHTML=''}})();function weatherLabel(c){if(c===0)return 'Ясно / Clear';if(c<=3)return 'Облачно / Cloudy';if(c<=48)return 'Туман / Fog';if(c<=67)return 'Дождь / Rain';if(c<=77)return 'Снег / Snow';if(c<=82)return 'Ливни / Showers';return 'Гроза / Thunderstorm'}
-</script></main><footer data-ru="Практический гид по жизни и поездкам на Филиппинах" data-en="A practical guide to living and travelling in the Philippines">Практический гид по жизни и поездкам на Филиппинах</footer>
+</script>
+<script>
+(()=>{
+ const box=document.getElementById('beach-picker-results'),seasonBox=document.getElementById('beach-picker-season');
+ if(!box||!seasonBox)return;
+ const activities=[
+  {id:'swimming',ru:'Купание',en:'Swimming'},
+  {id:'beach_relaxation',ru:'Отдых на пляже',en:'Beach relaxation'},
+  {id:'snorkeling',ru:'Снорклинг',en:'Snorkelling'},
+  {id:'kitesurfing_windsurfing',ru:'Кайт- и виндсёрфинг',en:'Kiteboarding & windsurfing'},
+  {id:'boat_excursions',ru:'Морские экскурсии',en:'Boat excursions'}
+ ];
+ const esc=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+ const isRu=()=>document.documentElement.lang!=='en';
+ const current=()=>{const month=Number(new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Manila',month:'numeric'}).format(new Date()));return {month,season:month>=11||month<=5?'amihan':'habagat'}};
+ const monthName=month=>new Intl.DateTimeFormat(isRu()?'ru-RU':'en-US',{month:'long',timeZone:'Asia/Manila'}).format(new Date(Date.UTC(2026,month-1,15,4)));
+ const claimSeasonMatch=(claim,season)=>{const x=String(claim||'').toLowerCase();return season==='amihan'?(/amihan|october[–-]may|october through may|october–may|october-may/i.test(x)):(/habagat|june[–-]september|june through september|june–september|june-september/i.test(x))};
+ function render(data){
+  const lang=isRu()?'ru':'en',now=current(),seasonName=now.season==='amihan'?(lang==='ru'?'Amihan · северо-восточный муссон':'Amihan · north-east monsoon'):(lang==='ru'?'Habagat · юго-западный муссон':'Habagat · south-west monsoon');
+  seasonBox.textContent=(lang==='ru'?'Текущий период: ':'Current period: ')+monthName(now.month)+' · '+seasonName;
+  const beaches=(data.beaches||[]).filter(b=>b.selection?.eligible);
+  const cards=activities.map(activity=>{
+   let rows=[];
+   for(const beach of beaches){
+    const observations=beach.activities?.[activity.id]?.evidence_observations||[];
+    const valid=observations.filter(o=>['supported','provisional'].includes(o.status)&&o.claim);
+    if(!valid.length)continue;
+    if(activity.id==='swimming'&&valid.some(o=>/strong currents|steeper nearshore|опасн|сильн.*течен/i.test(o.claim)))continue;
+    const relevant=valid.filter(o=>claimSeasonMatch(o.claim,now.season));
+    if(['swimming','kitesurfing_windsurfing','boat_excursions'].includes(activity.id)&&!relevant.length)continue;
+    const chosen=(relevant.length?relevant:valid).sort((a,b)=>(a.status==='supported'?0:1)-(b.status==='supported'?0:1));
+    rows.push({beach,observation:chosen[0],seasonal:relevant.length>0});
+   }
+   rows.sort((a,b)=>(a.observation.status==='supported'?0:1)-(b.observation.status==='supported'?0:1));
+   rows=rows.slice(0,3);
+   const items=rows.length?rows.map(({beach,observation,seasonal})=>{
+    let caveat='';
+    if(activity.id==='swimming')caveat=lang==='ru'?'Сезонный сигнал не подтверждает безопасность купания.':'Seasonal exposure evidence does not establish bathing safety.';
+    else if(activity.id==='boat_excursions')caveat=lang==='ru'?'Указана сезонная точка встречи оператора, не универсальный причал отправления.':'This is a seasonal operator meeting point, not a universal departure pier.';
+    else if(!seasonal)caveat=lang==='ru'?'Активность описана, но её сезонная пригодность не оценена.':'Activity is documented, but seasonal suitability has not been assessed.';
+    return '<div class="beach-picker-item"><strong>'+esc(lang==='ru'?(beach.name_ru||beach.name):beach.name)+'</strong><span class="beach-picker-status '+(observation.status==='provisional'?'provisional':'')+'">'+(observation.status==='supported'?(lang==='ru'?'Подтверждённое описание':'Supported evidence'):(lang==='ru'?'Предварительное свидетельство':'Provisional evidence'))+'</span><p>'+esc(observation.claim)+'</p>'+(caveat?'<p>'+esc(caveat)+'</p>':'')+'</div>';
+   }).join(''):'<p class="beach-picker-empty">'+(lang==='ru'?'Недостаточно сезонных свидетельств для рекомендации.':'Insufficient seasonal evidence for a recommendation.')+'</p>';
+   return '<article class="beach-picker-card"><h3>'+esc(lang==='ru'?activity.ru:activity.en)+'</h3>'+items+'</article>';
+  }).join('');
+  box.innerHTML=cards;
+ }
+ let cached=null;
+ fetch('data/beaches.json').then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(data=>{cached=data;render(data)}).catch(()=>{box.innerHTML='<p class="beach-picker-empty">'+(isRu()?'Не удалось загрузить данные пляжей.':'Beach data could not be loaded.')+'</p>';seasonBox.textContent=isRu()?'Данные временно недоступны':'Data temporarily unavailable'});
+ document.getElementById('lang-btn')?.addEventListener('click',()=>setTimeout(()=>{if(cached)render(cached)},0));
+})();
+</script>
+</main><footer data-ru="Практический гид по жизни и поездкам на Филиппинах" data-en="A practical guide to living and travelling in the Philippines">Практический гид по жизни и поездкам на Филиппинах</footer>
 <script>
 (()=>{const el=document.getElementById('fx-ticker-items');if(!el)return;const codes=['USD','EUR','CNY','JPY','KRW','AUD'];const flags={USD:'🇺🇸',EUR:'🇪🇺',CNY:'🇨🇳',JPY:'🇯🇵',KRW:'🇰🇷',AUD:'🇦🇺',GBP:'🇬🇧',RUB:'🇷🇺',PHP:'🇵🇭',CAD:'🇨🇦',CHF:'🇨🇭',SGD:'🇸🇬',HKD:'🇭🇰',TWD:'🇹🇼',THB:'🇹🇭',MYR:'🇲🇾',IDR:'🇮🇩',VND:'🇻🇳',AED:'🇦🇪',KZT:'🇰🇿',KGS:'🇰🇬',INR:'🇮🇳',NZD:'🇳🇿',SAR:'🇸🇦',QAR:'🇶🇦',TRY:'🇹🇷',PLN:'🇵🇱',SEK:'🇸🇪',NOK:'🇳🇴',DKK:'🇩🇰',BRL:'🇧🇷',MXN:'🇲🇽',ZAR:'🇿🇦'};const fmt=(v,c)=>new Intl.NumberFormat(document.documentElement.lang==='ru'?'ru-RU':'en-US',{minimumFractionDigits:['JPY','KRW','IDR','VND'].includes(c)?4:2,maximumFractionDigits:['JPY','KRW','IDR','VND'].includes(c)?4:2}).format(v);async function load(){try{const r=await fetch('https://open.er-api.com/v6/latest/PHP',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const d=await r.json();if(d.result!=='success'||d.base_code!=='PHP')throw Error('Invalid rate data');const saved=sessionStorage.getItem('boracayFxCurrency');const order=saved&&d.rates[saved]?[saved,...codes.filter(c=>c!==saved)]:codes;el.innerHTML=order.map(c=>'<span>'+(flags[c]||'🌐')+' '+c+' '+(d.rates[c]?fmt(1/d.rates[c],c):'—')+'</span>').join('')}catch(e){el.innerHTML=codes.map(c=>'<span>'+(flags[c]||'🌐')+' '+c+' —</span>').join('')}}load()})();
 </script><script>;</script><script>
