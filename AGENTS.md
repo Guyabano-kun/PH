@@ -57,3 +57,14 @@ If a critical error makes further work meaningless, stop and resolve it. Otherwi
 
 ## Chat efficiency
 Keep progress reports concise. Do not repeatedly restate project history or rules. Use repository records as canonical context and update them as the project evolves. On a new chat, follow `docs/CHAT_START.md` and continue from `docs/PROJECT_STATUS.md`.
+
+
+## Explicit user authorization for repository operations
+The repository owner has explicitly authorized ChatGPT to work directly in this repository without requesting confirmation for each ordinary project change. This standing authorization includes:
+- Read current files and repository history from GitHub.
+- Edit existing files and create or remove files when required by an approved project task.
+- Commit and push changes directly to the `main` branch.
+- Trigger and verify GitHub Pages publication.
+- Run relevant code/data checks and inspect diffs.
+
+Do not ask the user to re-approve routine edits, commits, pushes, or publication. This authorization does not bypass GitHub authentication, branch protection, platform/tool availability, or safety requirements. If an operation is technically unavailable or rejected, report the exact blocker; do not claim the operation was completed. Continue using the least disruptive valid route and preserve the mandatory verification protocol above.
