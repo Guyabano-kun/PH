@@ -85,7 +85,7 @@
       "url": "https://r6.emb.gov.ph/wp-content/uploads/2023/12/Boracay-Island-Annual-Assessment-Report-2022.pdf",
       "type": "government_monitoring_report",
       "published_at": "2023-12",
-      "checked_at": "2026-11-14",
+      "checked_at": "2026-11-15",
       "coverage": [
         "Puka Beach",
         "Diniwid Beach",
@@ -105,9 +105,13 @@
         "Annual fecal-coliform geomean and compliance statistics for 2022",
         "2022 fecal-coliform geomean and compliance statistics",
         "2022 quarterly oil-and-grease averages and compliance statistics for monitored stations",
-        "Ralph's Place station water-quality results; linked to Bulabog Beach by SRC-010"
+        "Ralph's Place station water-quality results; linked to Bulabog Beach by SRC-010",
+        "New Coast Boracay, Brgy. Yapak, Class SB ambient monitoring station",
+        "New Coast Boracay station DMS coordinate in Table 4",
+        "CY 2022 New Coast Boracay fecal-coliform geomean and compliance",
+        "CY 2022 New Coast Boracay DO, TSS, temperature, pH, phosphate, nitrate and oil-and-grease results"
       ],
-      "limitations": "Historical monitoring data from January–December 2022. Sampling stations are not necessarily co-located with the whole beach; station coordinates must not be treated as beach centroids. Fecal-coliform results cover 12 sampling events; oil-and-grease monitoring was quarterly (April, June, September and November). Results must not be presented as current water quality or current bathing safety.",
+      "limitations": "Historical monitoring data from January–December 2022. Sampling stations are not necessarily co-located with the whole beach; station coordinates must not be treated as beach centroids. Fecal-coliform results cover 12 sampling events; oil-and-grease monitoring was quarterly (April, June, September and November). Results must not be presented as current water quality or current bathing safety. New Coast Boracay is a parent-area monitoring station; the report does not assign it to any individual Newcoast cove. Its coordinate must remain a monitoring-station point, not a beach centroid.",
       "reliability": "high_historical_primary"
     },
     {
@@ -491,9 +495,11 @@
         "Lugutan (Mixing Zone), Brgy. Manoc-Manoc",
         "Lugutan mixing-zone station coordinate and Class SC classification",
         "CY 2022 and CY 2023 Lugutan mixing-zone fecal-coliform comparison",
-        "Lugutan Drainage Outfall, Kingfisher outfall and Wetland 6 runoff context"
+        "Lugutan Drainage Outfall, Kingfisher outfall and Wetland 6 runoff context",
+        "New Coast Boracay, Brgy. Yapak, Class SB ambient monitoring station and Table 4.50 coordinate",
+        "CY 2023 New Coast Boracay fecal-coliform geomean, DO and TSS averages/compliance"
       ],
-      "limitations": "Station-specific annual results, not whole-beach measurements or current real-time bathing-water advice. The report's comparative CY 2018–2023 fecal-coliform chart provides annual geometric means; it does not provide event-level compliance percentages or sampling-event counts for every comparative year. Separate CY 2023 compliance figures are captioned Jan–Nov 2023 while report narrative refers to 12 sampling events; this discrepancy remains documented. The report contains conflicting 2023 TSS values for Ralph's Place (32.3 and 33.4 mg/L); that TSS value is excluded. Station inventory confirms names, classes and coordinates; it does not independently prove every sampling event used the same field position beyond the published station record.",
+      "limitations": "Station-specific annual results, not whole-beach measurements or current real-time bathing-water advice. The report's comparative CY 2018–2023 fecal-coliform chart provides annual geometric means; it does not provide event-level compliance percentages or sampling-event counts for every comparative year. Separate CY 2023 compliance figures are captioned Jan–Nov 2023 while report narrative refers to 12 sampling events; this discrepancy remains documented. The report contains conflicting 2023 TSS values for Ralph's Place (32.3 and 33.4 mg/L); that TSS value is excluded. Station inventory confirms names, classes and coordinates; it does not independently prove every sampling event used the same field position beyond the published station record. New Coast Boracay is a parent-area monitoring station; the report does not assign it to any individual Newcoast cove. Its coordinate must remain a monitoring-station point, not a beach centroid.",
       "reliability": "official_government_annual_report"
     },
     {
