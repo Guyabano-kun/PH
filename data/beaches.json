@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.46",
+  "dataset_version": "0.2.47",
   "last_updated": "2026-11-15",
   "beaches": [
     {
@@ -289,7 +289,37 @@
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
           "confidence": "none",
-          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone.",
+          "evidence_components": {
+            "morphological_indicator": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "Satellite morphology may indicate a possible channel or bar gap but does not prove an active rip current."
+            },
+            "observed_active_rip": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No standardized, time-stamped direct observation is ingested."
+            },
+            "incident_history": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-guard, rescue or incident archive is ingested. Missing incident records must not be interpreted as no risk."
+            },
+            "hazard_assessment": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-specific hazard assessment is completed."
+            }
+          }
         },
         "visibility": {
           "value": null,
@@ -363,7 +393,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
-          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal current is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven current is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced current is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore current is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current velocity is not measured or validated at this beach."
+            }
+          }
         },
         "current_direction": {
           "value": null,
@@ -378,7 +471,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
-          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal-current direction is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven-current direction is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced-current direction is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore-current direction is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current direction is not measured or validated at this beach."
+            }
+          }
         },
         "bathymetry": {
           "value": null,
@@ -412,7 +568,32 @@
           "confidence": "none",
           "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
           "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
-          "vertical_datum": "unknown_until_product_metadata_review"
+          "vertical_datum": "unknown_until_product_metadata_review",
+          "components": {
+            "tide_level": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m",
+              "datum": "not_established",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
+            },
+            "tidal_phase": {
+              "value": null,
+              "status": "unknown",
+              "unit": null,
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No beach-specific phase/level series is ingested."
+            }
+          }
         },
         "entry_exit": {
           "value": null,
@@ -1684,7 +1865,37 @@
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
           "confidence": "none",
-          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone.",
+          "evidence_components": {
+            "morphological_indicator": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "Satellite morphology may indicate a possible channel or bar gap but does not prove an active rip current."
+            },
+            "observed_active_rip": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No standardized, time-stamped direct observation is ingested."
+            },
+            "incident_history": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-guard, rescue or incident archive is ingested. Missing incident records must not be interpreted as no risk."
+            },
+            "hazard_assessment": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-specific hazard assessment is completed."
+            }
+          }
         },
         "visibility": {
           "value": null,
@@ -1753,7 +1964,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
-          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal current is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven current is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced current is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore current is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current velocity is not measured or validated at this beach."
+            }
+          }
         },
         "current_direction": {
           "value": "eastward_contextual",
@@ -1770,7 +2044,70 @@
           "temporal_scope": "historical qualitative description; no timestamped series",
           "confidence": "low",
           "note": "SRC-042 describes an eastward surface-current direction along the eastern side of Boracay. It provides no speed, depth, tidal phase or beach-specific measurement. This is contextual direction only, not a measured current at Bulabog.",
-          "next_action": "Check regional GLORYS fields for background circulation, then verify local direction with controlled drifters or current-meter observations at defined tidal phases."
+          "next_action": "Check regional GLORYS fields for background circulation, then verify local direction with controlled drifters or current-meter observations at defined tidal phases.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal-current direction is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven-current direction is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced-current direction is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore-current direction is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current direction is not measured or validated at this beach."
+            }
+          }
         },
         "bathymetry": {
           "value": null,
@@ -1804,7 +2141,32 @@
           "confidence": "none",
           "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
           "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
-          "vertical_datum": "unknown_until_product_metadata_review"
+          "vertical_datum": "unknown_until_product_metadata_review",
+          "components": {
+            "tide_level": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m",
+              "datum": "not_established",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
+            },
+            "tidal_phase": {
+              "value": null,
+              "status": "unknown",
+              "unit": null,
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No beach-specific phase/level series is ingested."
+            }
+          }
         },
         "entry_exit": {
           "value": null,
@@ -2795,7 +3157,37 @@
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
           "confidence": "none",
-          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone.",
+          "evidence_components": {
+            "morphological_indicator": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "Satellite morphology may indicate a possible channel or bar gap but does not prove an active rip current."
+            },
+            "observed_active_rip": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No standardized, time-stamped direct observation is ingested."
+            },
+            "incident_history": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-guard, rescue or incident archive is ingested. Missing incident records must not be interpreted as no risk."
+            },
+            "hazard_assessment": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-specific hazard assessment is completed."
+            }
+          }
         },
         "visibility": {
           "value": null,
@@ -2834,7 +3226,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
-          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal current is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven current is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced current is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore current is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current velocity is not measured or validated at this beach."
+            }
+          }
         },
         "current_direction": {
           "value": null,
@@ -2849,7 +3304,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
-          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal-current direction is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven-current direction is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced-current direction is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore-current direction is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current direction is not measured or validated at this beach."
+            }
+          }
         },
         "bathymetry": {
           "value": null,
@@ -2883,7 +3401,32 @@
           "confidence": "none",
           "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
           "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
-          "vertical_datum": "unknown_until_product_metadata_review"
+          "vertical_datum": "unknown_until_product_metadata_review",
+          "components": {
+            "tide_level": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m",
+              "datum": "not_established",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
+            },
+            "tidal_phase": {
+              "value": null,
+              "status": "unknown",
+              "unit": null,
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No beach-specific phase/level series is ingested."
+            }
+          }
         },
         "entry_exit": {
           "value": null,
@@ -3615,7 +4158,37 @@
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
           "confidence": "none",
-          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone.",
+          "evidence_components": {
+            "morphological_indicator": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "Satellite morphology may indicate a possible channel or bar gap but does not prove an active rip current."
+            },
+            "observed_active_rip": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No standardized, time-stamped direct observation is ingested."
+            },
+            "incident_history": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-guard, rescue or incident archive is ingested. Missing incident records must not be interpreted as no risk."
+            },
+            "hazard_assessment": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-specific hazard assessment is completed."
+            }
+          }
         },
         "visibility": {
           "value": null,
@@ -3654,7 +4227,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
-          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal current is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven current is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced current is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore current is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current velocity is not measured or validated at this beach."
+            }
+          }
         },
         "current_direction": {
           "value": null,
@@ -3669,7 +4305,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
-          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal-current direction is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven-current direction is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced-current direction is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore-current direction is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current direction is not measured or validated at this beach."
+            }
+          }
         },
         "bathymetry": {
           "value": null,
@@ -3703,7 +4402,32 @@
           "confidence": "none",
           "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
           "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
-          "vertical_datum": "unknown_until_product_metadata_review"
+          "vertical_datum": "unknown_until_product_metadata_review",
+          "components": {
+            "tide_level": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m",
+              "datum": "not_established",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
+            },
+            "tidal_phase": {
+              "value": null,
+              "status": "unknown",
+              "unit": null,
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No beach-specific phase/level series is ingested."
+            }
+          }
         },
         "entry_exit": {
           "value": null,
@@ -4386,7 +5110,37 @@
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
           "confidence": "none",
-          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone.",
+          "evidence_components": {
+            "morphological_indicator": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "Satellite morphology may indicate a possible channel or bar gap but does not prove an active rip current."
+            },
+            "observed_active_rip": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No standardized, time-stamped direct observation is ingested."
+            },
+            "incident_history": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-guard, rescue or incident archive is ingested. Missing incident records must not be interpreted as no risk."
+            },
+            "hazard_assessment": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-specific hazard assessment is completed."
+            }
+          }
         },
         "visibility": {
           "value": null,
@@ -4425,7 +5179,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
-          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal current is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven current is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced current is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore current is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current velocity is not measured or validated at this beach."
+            }
+          }
         },
         "current_direction": {
           "value": null,
@@ -4440,7 +5257,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
-          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal-current direction is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven-current direction is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced-current direction is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore-current direction is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current direction is not measured or validated at this beach."
+            }
+          }
         },
         "bathymetry": {
           "value": null,
@@ -4474,7 +5354,32 @@
           "confidence": "none",
           "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
           "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
-          "vertical_datum": "unknown_until_product_metadata_review"
+          "vertical_datum": "unknown_until_product_metadata_review",
+          "components": {
+            "tide_level": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m",
+              "datum": "not_established",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
+            },
+            "tidal_phase": {
+              "value": null,
+              "status": "unknown",
+              "unit": null,
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No beach-specific phase/level series is ingested."
+            }
+          }
         },
         "entry_exit": {
           "value": null,
@@ -4972,7 +5877,37 @@
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
           "confidence": "none",
-          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone.",
+          "evidence_components": {
+            "morphological_indicator": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "Satellite morphology may indicate a possible channel or bar gap but does not prove an active rip current."
+            },
+            "observed_active_rip": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No standardized, time-stamped direct observation is ingested."
+            },
+            "incident_history": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-guard, rescue or incident archive is ingested. Missing incident records must not be interpreted as no risk."
+            },
+            "hazard_assessment": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-specific hazard assessment is completed."
+            }
+          }
         },
         "visibility": {
           "value": null,
@@ -5011,7 +5946,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
-          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal current is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven current is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced current is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore current is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current velocity is not measured or validated at this beach."
+            }
+          }
         },
         "current_direction": {
           "value": null,
@@ -5026,7 +6024,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
-          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal-current direction is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven-current direction is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced-current direction is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore-current direction is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current direction is not measured or validated at this beach."
+            }
+          }
         },
         "bathymetry": {
           "value": null,
@@ -5060,7 +6121,32 @@
           "confidence": "none",
           "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
           "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
-          "vertical_datum": "unknown_until_product_metadata_review"
+          "vertical_datum": "unknown_until_product_metadata_review",
+          "components": {
+            "tide_level": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m",
+              "datum": "not_established",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
+            },
+            "tidal_phase": {
+              "value": null,
+              "status": "unknown",
+              "unit": null,
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No beach-specific phase/level series is ingested."
+            }
+          }
         },
         "entry_exit": {
           "value": null,
@@ -5567,7 +6653,37 @@
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
           "confidence": "none",
-          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone.",
+          "evidence_components": {
+            "morphological_indicator": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "Satellite morphology may indicate a possible channel or bar gap but does not prove an active rip current."
+            },
+            "observed_active_rip": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No standardized, time-stamped direct observation is ingested."
+            },
+            "incident_history": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-guard, rescue or incident archive is ingested. Missing incident records must not be interpreted as no risk."
+            },
+            "hazard_assessment": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-specific hazard assessment is completed."
+            }
+          }
         },
         "visibility": {
           "value": null,
@@ -5606,7 +6722,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
-          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal current is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven current is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced current is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore current is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current velocity is not measured or validated at this beach."
+            }
+          }
         },
         "current_direction": {
           "value": null,
@@ -5621,7 +6800,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
-          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal-current direction is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven-current direction is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced-current direction is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore-current direction is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current direction is not measured or validated at this beach."
+            }
+          }
         },
         "bathymetry": {
           "value": null,
@@ -5655,7 +6897,32 @@
           "confidence": "none",
           "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
           "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
-          "vertical_datum": "unknown_until_product_metadata_review"
+          "vertical_datum": "unknown_until_product_metadata_review",
+          "components": {
+            "tide_level": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m",
+              "datum": "not_established",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
+            },
+            "tidal_phase": {
+              "value": null,
+              "status": "unknown",
+              "unit": null,
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No beach-specific phase/level series is ingested."
+            }
+          }
         },
         "entry_exit": {
           "value": null,
@@ -6312,7 +7579,37 @@
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
           "confidence": "none",
-          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone.",
+          "evidence_components": {
+            "morphological_indicator": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "Satellite morphology may indicate a possible channel or bar gap but does not prove an active rip current."
+            },
+            "observed_active_rip": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No standardized, time-stamped direct observation is ingested."
+            },
+            "incident_history": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-guard, rescue or incident archive is ingested. Missing incident records must not be interpreted as no risk."
+            },
+            "hazard_assessment": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-specific hazard assessment is completed."
+            }
+          }
         },
         "visibility": {
           "value": null,
@@ -6351,7 +7648,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
-          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal current is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven current is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced current is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore current is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current velocity is not measured or validated at this beach."
+            }
+          }
         },
         "current_direction": {
           "value": null,
@@ -6366,7 +7726,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
-          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal-current direction is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven-current direction is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced-current direction is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore-current direction is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current direction is not measured or validated at this beach."
+            }
+          }
         },
         "bathymetry": {
           "value": null,
@@ -6400,7 +7823,32 @@
           "confidence": "none",
           "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
           "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
-          "vertical_datum": "unknown_until_product_metadata_review"
+          "vertical_datum": "unknown_until_product_metadata_review",
+          "components": {
+            "tide_level": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m",
+              "datum": "not_established",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
+            },
+            "tidal_phase": {
+              "value": null,
+              "status": "unknown",
+              "unit": null,
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No beach-specific phase/level series is ingested."
+            }
+          }
         },
         "entry_exit": {
           "value": null,
@@ -7189,7 +8637,37 @@
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
           "confidence": "none",
-          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone.",
+          "evidence_components": {
+            "morphological_indicator": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "Satellite morphology may indicate a possible channel or bar gap but does not prove an active rip current."
+            },
+            "observed_active_rip": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No standardized, time-stamped direct observation is ingested."
+            },
+            "incident_history": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-guard, rescue or incident archive is ingested. Missing incident records must not be interpreted as no risk."
+            },
+            "hazard_assessment": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-specific hazard assessment is completed."
+            }
+          }
         },
         "visibility": {
           "value": null,
@@ -7228,7 +8706,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
-          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal current is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven current is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced current is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore current is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current velocity is not measured or validated at this beach."
+            }
+          }
         },
         "current_direction": {
           "value": null,
@@ -7243,7 +8784,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
-          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal-current direction is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven-current direction is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced-current direction is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore-current direction is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current direction is not measured or validated at this beach."
+            }
+          }
         },
         "bathymetry": {
           "value": null,
@@ -7277,7 +8881,32 @@
           "confidence": "none",
           "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
           "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
-          "vertical_datum": "unknown_until_product_metadata_review"
+          "vertical_datum": "unknown_until_product_metadata_review",
+          "components": {
+            "tide_level": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m",
+              "datum": "not_established",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
+            },
+            "tidal_phase": {
+              "value": null,
+              "status": "unknown",
+              "unit": null,
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No beach-specific phase/level series is ingested."
+            }
+          }
         },
         "entry_exit": {
           "value": null,
@@ -7836,7 +9465,37 @@
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
           "confidence": "none",
-          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone.",
+          "evidence_components": {
+            "morphological_indicator": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "Satellite morphology may indicate a possible channel or bar gap but does not prove an active rip current."
+            },
+            "observed_active_rip": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No standardized, time-stamped direct observation is ingested."
+            },
+            "incident_history": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-guard, rescue or incident archive is ingested. Missing incident records must not be interpreted as no risk."
+            },
+            "hazard_assessment": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-specific hazard assessment is completed."
+            }
+          }
         },
         "visibility": {
           "value": null,
@@ -7875,7 +9534,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
-          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal current is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven current is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced current is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore current is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current velocity is not measured or validated at this beach."
+            }
+          }
         },
         "current_direction": {
           "value": null,
@@ -7890,7 +9612,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
-          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal-current direction is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven-current direction is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced-current direction is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore-current direction is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current direction is not measured or validated at this beach."
+            }
+          }
         },
         "bathymetry": {
           "value": null,
@@ -7924,7 +9709,32 @@
           "confidence": "none",
           "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
           "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
-          "vertical_datum": "unknown_until_product_metadata_review"
+          "vertical_datum": "unknown_until_product_metadata_review",
+          "components": {
+            "tide_level": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m",
+              "datum": "not_established",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
+            },
+            "tidal_phase": {
+              "value": null,
+              "status": "unknown",
+              "unit": null,
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No beach-specific phase/level series is ingested."
+            }
+          }
         },
         "entry_exit": {
           "value": null,
@@ -8628,7 +10438,37 @@
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
           "confidence": "none",
-          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone.",
+          "evidence_components": {
+            "morphological_indicator": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "Satellite morphology may indicate a possible channel or bar gap but does not prove an active rip current."
+            },
+            "observed_active_rip": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No standardized, time-stamped direct observation is ingested."
+            },
+            "incident_history": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-guard, rescue or incident archive is ingested. Missing incident records must not be interpreted as no risk."
+            },
+            "hazard_assessment": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-specific hazard assessment is completed."
+            }
+          }
         },
         "visibility": {
           "value": null,
@@ -8667,7 +10507,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
-          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal current is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven current is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced current is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore current is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current velocity is not measured or validated at this beach."
+            }
+          }
         },
         "current_direction": {
           "value": null,
@@ -8682,7 +10585,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
-          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal-current direction is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven-current direction is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced-current direction is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore-current direction is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current direction is not measured or validated at this beach."
+            }
+          }
         },
         "bathymetry": {
           "value": null,
@@ -8716,7 +10682,32 @@
           "confidence": "none",
           "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
           "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
-          "vertical_datum": "unknown_until_product_metadata_review"
+          "vertical_datum": "unknown_until_product_metadata_review",
+          "components": {
+            "tide_level": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m",
+              "datum": "not_established",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
+            },
+            "tidal_phase": {
+              "value": null,
+              "status": "unknown",
+              "unit": null,
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No beach-specific phase/level series is ingested."
+            }
+          }
         },
         "entry_exit": {
           "value": null,
@@ -9445,7 +11436,37 @@
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
           "confidence": "none",
-          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone.",
+          "evidence_components": {
+            "morphological_indicator": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "Satellite morphology may indicate a possible channel or bar gap but does not prove an active rip current."
+            },
+            "observed_active_rip": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No standardized, time-stamped direct observation is ingested."
+            },
+            "incident_history": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-guard, rescue or incident archive is ingested. Missing incident records must not be interpreted as no risk."
+            },
+            "hazard_assessment": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-specific hazard assessment is completed."
+            }
+          }
         },
         "visibility": {
           "value": null,
@@ -9484,7 +11505,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
-          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal current is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven current is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced current is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore current is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current velocity is not measured or validated at this beach."
+            }
+          }
         },
         "current_direction": {
           "value": null,
@@ -9499,7 +11583,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
-          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal-current direction is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven-current direction is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced-current direction is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore-current direction is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current direction is not measured or validated at this beach."
+            }
+          }
         },
         "bathymetry": {
           "value": null,
@@ -9533,7 +11680,32 @@
           "confidence": "none",
           "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
           "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
-          "vertical_datum": "unknown_until_product_metadata_review"
+          "vertical_datum": "unknown_until_product_metadata_review",
+          "components": {
+            "tide_level": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m",
+              "datum": "not_established",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
+            },
+            "tidal_phase": {
+              "value": null,
+              "status": "unknown",
+              "unit": null,
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No beach-specific phase/level series is ingested."
+            }
+          }
         },
         "entry_exit": {
           "value": null,
@@ -10163,7 +12335,37 @@
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
           "confidence": "none",
-          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone.",
+          "evidence_components": {
+            "morphological_indicator": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "Satellite morphology may indicate a possible channel or bar gap but does not prove an active rip current."
+            },
+            "observed_active_rip": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No standardized, time-stamped direct observation is ingested."
+            },
+            "incident_history": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-guard, rescue or incident archive is ingested. Missing incident records must not be interpreted as no risk."
+            },
+            "hazard_assessment": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-specific hazard assessment is completed."
+            }
+          }
         },
         "visibility": {
           "value": null,
@@ -10202,7 +12404,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
-          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal current is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven current is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced current is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore current is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current velocity is not measured or validated at this beach."
+            }
+          }
         },
         "current_direction": {
           "value": null,
@@ -10217,7 +12482,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
-          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal-current direction is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven-current direction is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced-current direction is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore-current direction is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current direction is not measured or validated at this beach."
+            }
+          }
         },
         "bathymetry": {
           "value": null,
@@ -10251,7 +12579,32 @@
           "confidence": "none",
           "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
           "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
-          "vertical_datum": "unknown_until_product_metadata_review"
+          "vertical_datum": "unknown_until_product_metadata_review",
+          "components": {
+            "tide_level": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m",
+              "datum": "not_established",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
+            },
+            "tidal_phase": {
+              "value": null,
+              "status": "unknown",
+              "unit": null,
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No beach-specific phase/level series is ingested."
+            }
+          }
         },
         "entry_exit": {
           "value": null,
@@ -10710,7 +13063,37 @@
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
           "confidence": "none",
-          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone.",
+          "evidence_components": {
+            "morphological_indicator": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "Satellite morphology may indicate a possible channel or bar gap but does not prove an active rip current."
+            },
+            "observed_active_rip": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No standardized, time-stamped direct observation is ingested."
+            },
+            "incident_history": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-guard, rescue or incident archive is ingested. Missing incident records must not be interpreted as no risk."
+            },
+            "hazard_assessment": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-specific hazard assessment is completed."
+            }
+          }
         },
         "visibility": {
           "value": null,
@@ -10749,7 +13132,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
-          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal current is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven current is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced current is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore current is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current velocity is not measured or validated at this beach."
+            }
+          }
         },
         "current_direction": {
           "value": null,
@@ -10764,7 +13210,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
-          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal-current direction is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven-current direction is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced-current direction is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore-current direction is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current direction is not measured or validated at this beach."
+            }
+          }
         },
         "bathymetry": {
           "value": null,
@@ -10798,7 +13307,32 @@
           "confidence": "none",
           "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
           "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
-          "vertical_datum": "unknown_until_product_metadata_review"
+          "vertical_datum": "unknown_until_product_metadata_review",
+          "components": {
+            "tide_level": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m",
+              "datum": "not_established",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
+            },
+            "tidal_phase": {
+              "value": null,
+              "status": "unknown",
+              "unit": null,
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No beach-specific phase/level series is ingested."
+            }
+          }
         },
         "entry_exit": {
           "value": null,
@@ -11341,7 +13875,37 @@
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
           "confidence": "none",
-          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone.",
+          "evidence_components": {
+            "morphological_indicator": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "Satellite morphology may indicate a possible channel or bar gap but does not prove an active rip current."
+            },
+            "observed_active_rip": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No standardized, time-stamped direct observation is ingested."
+            },
+            "incident_history": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-guard, rescue or incident archive is ingested. Missing incident records must not be interpreted as no risk."
+            },
+            "hazard_assessment": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-specific hazard assessment is completed."
+            }
+          }
         },
         "visibility": {
           "value": null,
@@ -11380,7 +13944,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
-          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal current is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven current is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced current is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore current is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current velocity is not measured or validated at this beach."
+            }
+          }
         },
         "current_direction": {
           "value": null,
@@ -11395,7 +14022,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
-          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal-current direction is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven-current direction is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced-current direction is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore-current direction is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current direction is not measured or validated at this beach."
+            }
+          }
         },
         "bathymetry": {
           "value": null,
@@ -11429,7 +14119,32 @@
           "confidence": "none",
           "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
           "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
-          "vertical_datum": "unknown_until_product_metadata_review"
+          "vertical_datum": "unknown_until_product_metadata_review",
+          "components": {
+            "tide_level": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m",
+              "datum": "not_established",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
+            },
+            "tidal_phase": {
+              "value": null,
+              "status": "unknown",
+              "unit": null,
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No beach-specific phase/level series is ingested."
+            }
+          }
         },
         "entry_exit": {
           "value": null,
@@ -11995,7 +14710,37 @@
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
           "confidence": "none",
-          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone.",
+          "evidence_components": {
+            "morphological_indicator": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "Satellite morphology may indicate a possible channel or bar gap but does not prove an active rip current."
+            },
+            "observed_active_rip": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No standardized, time-stamped direct observation is ingested."
+            },
+            "incident_history": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-guard, rescue or incident archive is ingested. Missing incident records must not be interpreted as no risk."
+            },
+            "hazard_assessment": {
+              "value": null,
+              "status": "unknown",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "note": "No beach-specific hazard assessment is completed."
+            }
+          }
         },
         "visibility": {
           "value": null,
@@ -12034,7 +14779,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
-          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal current is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven current is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced current is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore current is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current velocity is not measured or validated at this beach."
+            }
+          }
         },
         "current_direction": {
           "value": null,
@@ -12049,7 +14857,70 @@
           "temporal_scope": null,
           "confidence": "none",
           "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
-          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "components": {
+            "tidal_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Tidal-current direction is not measured or validated at this beach."
+            },
+            "wind_driven_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wind-driven-current direction is not measured or validated at this beach."
+            },
+            "wave_induced_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-108",
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Wave-induced-current direction is not measured or validated at this beach."
+            },
+            "longshore_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-109"
+              ],
+              "confidence": "none",
+              "note": "Longshore-current direction is not measured or validated at this beach."
+            },
+            "rip_current": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m/s",
+              "evidence_type": "not_assessed",
+              "source_ids": [],
+              "candidate_source_ids": [],
+              "confidence": "none",
+              "note": "Rip-current direction is not measured or validated at this beach."
+            }
+          }
         },
         "bathymetry": {
           "value": null,
@@ -12083,7 +14954,32 @@
           "confidence": "none",
           "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
           "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
-          "vertical_datum": "unknown_until_product_metadata_review"
+          "vertical_datum": "unknown_until_product_metadata_review",
+          "components": {
+            "tide_level": {
+              "value": null,
+              "status": "unknown",
+              "unit": "m",
+              "datum": "not_established",
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
+            },
+            "tidal_phase": {
+              "value": null,
+              "status": "unknown",
+              "unit": null,
+              "source_ids": [],
+              "candidate_source_ids": [
+                "SRC-039",
+                "SRC-107"
+              ],
+              "note": "No beach-specific phase/level series is ingested."
+            }
+          }
         },
         "entry_exit": {
           "value": null,
