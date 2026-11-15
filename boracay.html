@@ -559,7 +559,7 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
  function getCandidates(data,activity,season){
   let rows=[];
   for(const beach of (data.beaches||[]).filter(b=>b.selection?.eligible)){
-   const valid=(beach.activities?.[activity.id]?.evidence_observations||[]).filter(o=>['supported','provisional'].includes(o.status)&&o.claim);
+   const valid=(beach.activities?.[activity.id]?.evidence_observations||[]).filter(o=>['supported','provisional'].includes(o.status)&&o.claim&&o.recommendation_eligible!==false);
    if(!valid.length)continue;
    if(activity.id==='swimming'&&valid.some(o=>/strong currents|steeper nearshore|опасн|сильн.*течен/i.test(o.claim)))continue;
    const relevant=valid.filter(o=>claimSeasonMatch(o.claim,season));
