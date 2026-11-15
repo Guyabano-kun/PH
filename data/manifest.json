@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.49",
+  "dataset_version": "0.2.50",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-15",
   "beach_count": 16,
@@ -29,6 +29,9 @@
     }
   },
   "notes": [
+    "The 2025 Boracay fecal-coliform spatiotemporal study (SRC-115) reports an island-wide 2018–2023 improvement trend in its abstract, but no station-level numerical series. It is not assigned to individual beaches.",
+    "Research-source limitations: the 2024 RSoBER documents a confidential 2024 real-time monitoring pilot at Lugutan Bridge; no numeric results are public. March 2026 EMB outfall sampling reported on-site DO/pH compliance but laboratory TSS, color and fecal-coliform results were pending at publication. These outfall samples are not beach bathing-water measurements. All 65 activity scores remain null; no monthly suitability matrix or numerical rankings are created.",
+    "Version 0.2.50: added DENR-BMB/UPMSI island-scale tidal-circulation context to all 13 selection passports. It is explicitly not beach-specific current-speed or rip-current evidence. Added nearby named dive-site references for Balinghai, Diniwid, Punta Bunga, Ilig-Iligan, Tulubhan and Tambisaan; these are not beach polygons or proof of shore-entry snorkelling suitability. Added Islakite's local Bulabog Kwind station and operator-reported Amihan kite season; the activity remains unscored. Added a provisional White Beach Amihan relative-shelter observation for the swimming picker, not a safety clearance. Added historical 2021 comparative water-quality study context for Puka and White Beach; abstract-only, no numeric values. Added historical 2020 White Beach designated swimming-zone report; it does not establish current lifeguard coverage.",
     "Version 0.2.49: added the DENR-EMB New Coast Boracay ambient monitoring station (Brgy. Yapak, Class SB) to the Newcoast passport as parent-area context. The station DMS coordinate is independently identical in the 2022 and 2023 EMB station tables; it is stored only as a monitoring-station point, never as a beach coordinate. Added available CY 2022 and CY 2023 station-specific results. No assignment to Cove 1, Cove 2 or Cove 3 is inferred; Cove-specific monitoring and current bathing safety remain unverified.",
     "Version 0.2.48: corrected Hagdan Beach source attribution. The provisional beach-name claim now cites only the secondary travel guide SRC-008; TPB SRC-001 and the Aklan provincial directory SRC-086 are retained only for Sitio Hagdan locality context. Unrelated SRC-065 (Tropicana nearby-attractions listing for The Ruins / West Cove Ruins) was removed from Hagdan identity attribution. Hagdan remains excluded from the 13-beach selection pool; no beach boundary or coordinate is inferred.",
     "This is an initial evidence-backed data structure, not a completed suitability model.",
