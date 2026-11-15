@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.42",
+  "dataset_version": "0.2.43",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-15",
-  "beach_count": 14,
+  "beach_count": 16,
   "files": {
     "beaches": "beaches.json",
     "sources": "sources.json",
@@ -115,6 +115,14 @@
     "Version 0.2.41: public access to the Newcoast coves remains unknown. Developer/BusinessMirror guest-exclusive descriptions conflict with a secondary visitor guide claiming non-hotel visitors can access the Newcoast district. Transport access to the district is not treated as proof of public beach access.",
     "Version 0.2.42: removed provisional standalone beach records savoy and newcoast. The available evidence does not establish them as two additional physical beaches; Savoy Beach is retained as a related POI/landmark name with no verified cove assignment.",
     "Version 0.2.42: modelled Boracay Newcoast as a developer-defined area containing three coves. User reports Google Maps applies the broader Ilig-Iligan Beach label to this area, while the website basemap labels Cove 1 as Lapus-Lapus Beach and leaves Cove 2 and Cove 3 unnamed. These are cartographic/developer naming layers, not surveyed boundaries or proof of a continuous beach polygon.",
-    "Version 0.2.42: Cove 2 and Cove 3 are recorded as unnamed subareas. Nearby OSM and Mapbox point references remain POIs/attraction nodes and are not promoted to beach centroids. Existing Ilig-Iligan and Lapus-Lapus beach coordinates are unchanged."
-  ]
+    "Version 0.2.42: Cove 2 and Cove 3 are recorded as unnamed subareas. Nearby OSM and Mapbox point references remain POIs/attraction nodes and are not promoted to beach centroids. Existing Ilig-Iligan and Lapus-Lapus beach coordinates are unchanged.",
+    "Version 0.2.43: the project-approved Boracay beach selection pool contains 13 records. Angol Point, Hagdan Beach and Lugutan Beach remain in the research dataset but are explicitly excluded from this selection pool.",
+    "Version 0.2.43: Newcoast Beaches is represented as a developer-defined parent area with Cove 1 / Lapus-Lapus Beach, Cove 2 / Boracay Newcoast Beach, and Cove 3 / Savoy Beach. The mappings are project-owner approved; surveyed boundaries and beach-specific coordinates remain unverified.",
+    "Version 0.2.43: Boracay Newcoast Beach and Savoy Beach are restored as separate records using stable IDs newcoast and savoy. Nearby Mapbox/OSM points remain POI/attraction references, never beach centroids. No duplicate Cove 1 / Lapus-Lapus record is created.",
+    "Version 0.2.43: activity evidence observations have been added where supported by registered sources, but all activity suitability values remain unscored and null. No monthly suitability matrix is created in this phase.",
+    "Version 0.2.43: each beach record includes a field-review audit identifying supported, provisional and unknown fields. Unknown fields remain explicit; no unsupported values or coordinates are inferred."
+  ],
+  "record_count": 16,
+  "selection_beach_count": 13,
+  "research_only_record_count": 3
 }
