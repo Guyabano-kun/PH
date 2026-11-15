@@ -1861,7 +1861,10 @@
         "Published historical monthly wind-distribution chart for Bulabog from October through April; exact numerical monthly percentages are not printed in the chart"
       ],
       "limitations": "Specialist operator source and school-front station, not a PAGASA reference station or independent calibration certificate. The public chart is qualitative without a readable numeric monthly scale; no monthly percentages are digitized. Spot-specific wind observations do not establish wave height, current, safe launch corridors or bathing safety. Forecast and live readings change continuously.",
-      "reliability": "specialist_operator_primary_local_station"
+      "reliability": "specialist_operator_primary_local_station",
+      "related_urls": [
+        "https://islakitesurfing.com/wp-content/uploads/isla-responsive/wind-graph-93c050754f065d02b22430cc-960w.webp"
+      ]
     },
     {
       "id": "SRC-113",
