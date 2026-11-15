@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.48",
+  "dataset_version": "0.2.49",
   "last_updated": "2026-11-15",
   "beaches": [
     {
@@ -14278,9 +14278,13 @@
       },
       "ecology": {
         "water_quality_history": {
-          "value": null,
-          "status": "unknown",
-          "note": "No beach-specific ambient monitoring station or current bathing-water result is assigned to this cove."
+          "value": "A DENR-EMB ambient monitoring station named New Coast Boracay is documented in Brgy. Yapak, with historical results for CY 2022 and CY 2023. The station is associated with the Newcoast parent area; its relationship to any individual cove is not established.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-002",
+            "SRC-024"
+          ],
+          "note": "Area-level monitoring context only. Do not attribute these results specifically to Cove 2 / Boracay Newcoast Beach, do not use the station coordinate as a beach marker, and do not present historical results as current bathing-water safety."
         },
         "reef_condition": {
           "value": null,
@@ -14302,7 +14306,148 @@
             "SRC-051"
           ]
         },
-        "monitoring_stations": [],
+        "monitoring_stations": [
+          {
+            "station_name": "New Coast Boracay",
+            "station_type": "DENR-EMB regular ambient water-quality sampling station",
+            "barangay": "Yapak",
+            "water_body_class": "SB",
+            "coordinates": {
+              "latitude": 11.98375,
+              "longitude": 121.9259444,
+              "coordinate_type": "monitoring_station",
+              "not_beach_centroid": true,
+              "source_id": "SRC-002",
+              "source_coordinate_text": "11°59′1.5″N ; 121°55′33.4″E",
+              "coordinate_source_year": 2022,
+              "source_ids": [
+                "SRC-002",
+                "SRC-024"
+              ],
+              "coordinate_source_years": [
+                2022,
+                2023
+              ],
+              "coordinate_verification_status": "identical_in_DENR_2022_and_2023_station_tables"
+            },
+            "monitoring_period": "January–December 2022; CY 2023 annual report",
+            "fecal_coliform_geometric_mean_mpn_100ml": 16,
+            "water_quality_guideline_mpn_100ml": 100,
+            "compliance": {
+              "compliant_percent": 83,
+              "non_compliant_percent": 17,
+              "sampling_events": 12
+            },
+            "source_ids": [
+              "SRC-002",
+              "SRC-024"
+            ],
+            "geographic_scope": "Boracay Newcoast parent development area; no cove-specific station assignment is published.",
+            "area_scope_only": true,
+            "cove_assignment": "not_established",
+            "interpretation": "Historical ambient monitoring station named New Coast Boracay, Brgy. Yapak. The station coordinate is a sampling location, not a beach centroid. Although it lies in the Newcoast area, neither DENR report assigns it to Cove 1, Cove 2 or Cove 3. Results must not be treated as current bathing-water status or generalized to any individual cove.",
+            "oil_and_grease": {
+              "annual_average_mg_l": 1.5,
+              "water_quality_guideline_mg_l": 2,
+              "compliance": {
+                "compliant_percent": 100,
+                "non_compliant_percent": 0,
+                "sampling_events": 4
+              },
+              "sampling_dates": [
+                "2022-04",
+                "2022-06",
+                "2022-09",
+                "2022-11"
+              ],
+              "source_ids": [
+                "SRC-002"
+              ],
+              "interpretation": "Quarterly historical monitoring in 2022; not a current water-quality result."
+            },
+            "annual_results": [
+              {
+                "year": 2023,
+                "reporting_period": "CY 2023",
+                "primary_parameter_sampling_events": 12,
+                "fecal_coliform_geometric_mean_mpn_100ml": 6,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 92,
+                  "non_compliant_percent": 8
+                },
+                "dissolved_oxygen_average_mg_l": 6.7,
+                "dissolved_oxygen_guideline_mg_l": 6,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 67,
+                  "non_compliant_percent": 33
+                },
+                "total_suspended_solids_average_mg_l": 19.2,
+                "total_suspended_solids_guideline_mg_l": 50,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 92,
+                  "non_compliant_percent": 8
+                },
+                "source_ids": [
+                  "SRC-024"
+                ],
+                "sampling_note": "The report narrative states 12 sampling events for primary parameters. The fecal-coliform compliance figure caption specifies Jan–Nov 2023; retain the report's date-span discrepancy. Station values are not assigned to a particular Newcoast cove."
+              },
+              {
+                "year": 2022,
+                "reporting_period": "CY 2022",
+                "primary_parameter_sampling_events": 12,
+                "fecal_coliform_geometric_mean_mpn_100ml": 16,
+                "fecal_coliform_guideline_mpn_100ml": 100,
+                "fecal_coliform_compliance": {
+                  "compliant_percent": 83,
+                  "non_compliant_percent": 17,
+                  "sampling_events": 12
+                },
+                "dissolved_oxygen_average_mg_l": 6.4,
+                "dissolved_oxygen_guideline_mg_l": 6,
+                "dissolved_oxygen_compliance": {
+                  "compliant_percent": 67,
+                  "non_compliant_percent": 33
+                },
+                "total_suspended_solids_average_mg_l": 26.8,
+                "total_suspended_solids_guideline_mg_l": 50,
+                "total_suspended_solids_compliance": {
+                  "compliant_percent": 75,
+                  "non_compliant_percent": 25
+                },
+                "water_temperature_average_c": 28.2,
+                "water_temperature_guideline_range_c": [
+                  26,
+                  30
+                ],
+                "water_temperature_compliance": {
+                  "compliant_percent": 75,
+                  "non_compliant_percent": 25
+                },
+                "ph_average": 7.4,
+                "ph_guideline_status": "not_normalized_due_to_internal_report_conflict",
+                "ph_note": "The report narrative and figure captions disagree on Class SB pH guideline ranges. Annual average is transcribed; compliance percentage and guideline are not normalized.",
+                "phosphate_as_phosphorus_average_mg_p_l": 0.024,
+                "phosphate_guideline_mg_p_l": 0.2,
+                "phosphate_compliance": {
+                  "compliant_percent": 92,
+                  "non_compliant_percent": 8
+                },
+                "nitrate_average_mg_l": 0.145,
+                "nitrate_guideline_mg_l": 10,
+                "nitrate_compliance": {
+                  "compliant_percent": 100,
+                  "non_compliant_percent": 0
+                },
+                "source_ids": [
+                  "SRC-002"
+                ],
+                "sampling_note": "Primary parameters were sampled monthly (12 events per station). Oil & Grease was sampled separately on four quarterly events and is recorded in the station's separate Oil & Grease dataset. Station values are not assigned to a particular Newcoast cove."
+              }
+            ]
+          }
+        ],
         "conservation_designations": [
           {
             "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
@@ -14385,7 +14530,7 @@
           "Cove-specific wave, wind, current and tide conditions",
           "Nearshore bathymetry, reef profile and seabed type",
           "Current public access, entry permission and cove-specific approach route",
-          "Beach-specific water-quality monitoring and current bathing status",
+          "Cove-specific water-quality monitoring and current bathing status; the Newcoast-area station cannot be assigned to an individual cove",
           "Lifeguard coverage and emergency access",
           "Activity suitability scores and 12-month suitability matrix",
           "Cove-specific seasonal activity evidence",
@@ -14411,8 +14556,8 @@
           ],
           "status_counts": {
             "supported": 7,
-            "provisional": 3,
-            "unknown": 35,
+            "provisional": 4,
+            "unknown": 34,
             "other": 0
           },
           "unknown_field_paths": [
@@ -14448,18 +14593,18 @@
             "access.emergency_access",
             "excursions.regular_departure",
             "excursions.landing_access",
-            "ecology.water_quality_history",
             "ecology.reef_condition",
             "ecology.pollution_sources"
           ],
           "provisional_field_paths": [
             "identity.alternative_names",
             "shore.beach_length",
-            "access.access_restrictions"
+            "access.access_restrictions",
+            "ecology.water_quality_history"
           ],
           "fields_requiring_provenance_check": [],
           "activity_assessment": "not_scored",
-          "note": "Field audit records the present evidence state. Unknown and provisional values are intentionally retained; this is not a claim that all physical facts are known."
+          "note": "Field audit records the present evidence state. The New Coast Boracay DENR-EMB station is area-level context only; its assignment to Cove 1/2/3 is unverified. Unknown and provisional values remain explicit."
         }
       },
       "internal": {
@@ -14468,7 +14613,7 @@
         "change_tracking": {
           "created_at": "2026-11-15",
           "updated_at": "2026-11-15",
-          "revision": 1
+          "revision": 2
         }
       },
       "selection": {
