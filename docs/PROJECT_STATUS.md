@@ -85,6 +85,7 @@ Current implementation:
 - Hagdan source attribution corrected: SRC-065 was unrelated to Hagdan and has been removed from its identity evidence. Hagdan remains provisional and has no beach coordinate.
 - Added the DENR-EMB `New Coast Boracay` monitoring station to the Newcoast passport as parent-area context only. The 2022 and 2023 reports carry the same station coordinate and publish station-specific historical results; no assignment to Cove 1/2/3 is inferred. The station point is not a beach coordinate.
 - `beaches.html` now displays selection membership and the Newcoast parent/cove mapping using the current `parent_area` and `developer_cove` fields; legacy `developer_coves` rendering is retained.
+- The monitoring filter now distinguishes beach-specific DENR stations from parent-area-only monitoring; Newcoast's station does not appear as beach-specific monitoring.
 - All 65 activity values (13 beaches × 5 activities) remain null and unscored pending evidence validation and approved methodology.
 - Source-reference audit: 109 sources, no dangling source IDs. JSON parsing and JavaScript syntax checks pass.
 - Newcoast Cove 2 field review: `ecology.water_quality_history` changed from unknown to provisional; the station is explicitly area-level. One unknown field was converted to provisional, not supported.
