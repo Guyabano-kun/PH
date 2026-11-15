@@ -606,7 +606,7 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
  }
  function render(data){
   const lang=isRu()?'ru':'en',now=current(),monthSelect=document.getElementById('beach-month'),seasonName=now.season==='amihan'?(lang==='ru'?'Amihan · северо-восточный муссон':'Amihan · north-east monsoon'):(lang==='ru'?'Habagat · юго-западный муссон':'Habagat · south-west monsoon');
-  if(monthSelect){if(!monthSelect.options.length){for(let m=1;m<=12;m++){const option=document.createElement('option');option.value=String(m);monthSelect.append(option)}}monthSelect.querySelectorAll('option').forEach(option=>{option.textContent=monthName(Number(option.value))});monthSelect.value=String(now.month)}
+  if(monthSelect){if(!monthSelect.options.length){for(let m=1;m<=12;m++){const option=document.createElement('option');option.value=String(m);monthSelect.append(option)}}monthSelect.querySelectorAll('option').forEach(option=>{option.textContent=monthName(Number(option.value))});if(!monthSelect.value)monthSelect.value=String(now.month)}
   seasonBox.textContent=(lang==='ru'?'Рекомендации для: ':'Recommendations for: ')+monthName(now.month)+' · '+seasonName;
   box.innerHTML=activities.map(activity=>{
    const rows=getCandidates(data,activity,now.season),best=rows[0],bestName=best?beachName(best.beach,lang):(lang==='ru'?'Недостаточно данных':'Insufficient data');
