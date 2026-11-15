@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.47",
+  "dataset_version": "0.2.48",
   "last_updated": "2026-11-15",
   "beaches": [
     {
@@ -12169,12 +12169,9 @@
           "value": "Hagdan Beach",
           "status": "provisional",
           "source_ids": [
-            "SRC-001",
-            "SRC-008",
-            "SRC-065",
-            "SRC-086"
+            "SRC-008"
           ],
-          "note": "The TPB map labels Sitio Hagdan but does not list Hagdan Beach in its Beach / Dive Site index. The Aklan Provincial Government accommodation directory also uses Sitio Hagdan as a locality address. A secondary travel guide and Trip.com use the name Hagdan Beach, but no separate beach feature, boundary or official beach-name listing has been established. Retain only as an unverified name candidate, not a confirmed beach."
+          "note": "The secondary travel guide uses the name Hagdan Beach. TPB and the Aklan provincial directory establish Sitio Hagdan as a locality, but neither lists or confirms a separate beach. No independent beach feature, boundary or surveyed coordinate has been established."
         },
         "alternative_names": {
           "value": null,
@@ -12879,7 +12876,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 4
+          "revision": 5
         }
       },
       "selection": {
