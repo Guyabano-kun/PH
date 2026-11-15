@@ -1951,6 +1951,24 @@
       ],
       "limitations": "The report concerns temporary 2020 reopening/COVID-era protocols. It does not establish current swimming-zone boundaries, present lifeguard staffing, current hours or the Yapak area's identity as Puka Beach. Retained only as historical evidence; not used as current access or safety status.",
       "reliability": "national_news_agency_historical_local_government_report"
+    },
+    {
+      "id": "SRC-118",
+      "title": "Can You Snorkel From the Beach in Boracay?",
+      "publisher": "New Wave Divers Boracay; article by PADI Instructor Paulo",
+      "url": "https://www.newwavediversboracay.com/snorkel-from-beach-boracay/",
+      "type": "specialist_dive_operator_shore_snorkelling_guide",
+      "published_at": "2026-10-10",
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "White Beach Stations 1–3: sandy-bottomed swimming/sunbathing beach with steady boat traffic; not identified as a reef-snorkelling location",
+        "Tambisaan Beach: coral gardens a short swim from the sand; shore snorkelling when water is calm",
+        "Diniwid and northern coves: nearshore rock/coral patches and reef fish; high tide and calm conditions recommended",
+        "General shore-snorkelling precautions: avoid boat lanes, currents and chop; high tide improves clearance above shallow coral",
+        "Crocodile Island and Coral Garden: boat-access reef sites approximately 15–20 minutes from shore"
+      ],
+      "limitations": "Specialist dive-operator article, not a scientific reef survey or official safety notice. No surveyed coordinates, reef polygons, beach-specific depth profiles, measured visibility or current series are published. Guidance is qualitative and condition-dependent. Do not transfer Angol Point's reef to White Beach as a whole; Angol Point is a separate site.",
+      "reliability": "specialist_dive_operator_local_activity_guidance"
     }
   ]
 }
