@@ -147,3 +147,11 @@ Do not invent suitability, access rights, safety conclusions, beach boundaries o
 - Dataset baseline remains `0.2.53` (16 records, 13 eligible, 3 research-only).
 - Verification performed: source and data fetched from current `main`; commit diff inspected; three query modes and controls present; 12-month and 13-beach data sources confirmed. Full browser interaction, mobile/desktop visual rendering, and live GitHub Pages deployment remain NOT VERIFIED in this pass.
 - Known limitation: this is an evidence-filtering query tool, not the full weighted 12 × 5 × 13 suitability model. Monthly claims are limited to explicitly season-tagged evidence and current Amihan/Habagat month mapping; October/season-boundary evidence requires further source review.
+
+
+## Month-only beach recommendation selector (2026-11-15)
+- Simplified the beach selector on `boracay.html` to one month dropdown followed by the five existing activity cards. Each card recommends beaches for that activity and the selected month.
+- The month defaults to the current month in `Asia/Manila`; manual month selection is preserved when the interface language changes.
+- Removed the three-mode query UI and its separate query script. The five activity cards, methodology dialog, evidence eligibility rules and swimming cautions remain.
+- Data remains unchanged: `data/beaches.json` version `0.2.53`, 16 beaches, 13 selection-eligible, five activities.
+- Source-level structural checks and JSON parsing passed. Browser interaction, visual checks on mobile/desktop, and published Pages verification are pending.
