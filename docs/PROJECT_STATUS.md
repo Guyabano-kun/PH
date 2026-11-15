@@ -14,6 +14,13 @@ Last verified against GitHub `main`: 2026-11-15
 - Repository operating instructions and continuity records are now present on `main`: `AGENTS.md`, `docs/PROJECT_DECISIONS.md`, `docs/PROJECT_STATUS.md`, and `docs/CHAT_START.md`.
 - These context files were re-fetched from GitHub `main` after creation and their contents were verified.
 
+## Site-wide price emphasis (2026-11-15)
+- Monetary amounts and price ranges are emphasized in bold on all content pages: `boracay.html`, `beaches.html`, `currency.html`, and `weather.html`.
+- `boracay.html` already contained the price-emphasis renderer; the same renderer and CSS were added to the other three pages.
+- The renderer processes visible text nodes, including content inserted dynamically after language changes or data loading. Existing bold markup is preserved.
+- On `currency.html`, live FX conversion values and rate cards are excluded so exchange rates are not misclassified as product/service prices; ATM fees and withdrawal amounts remain emphasized.
+- No price values, rates, labels, data, links, page structure, or site architecture were changed.
+- Structural checks: one renderer per content page, no duplicate HTML IDs, `index.html` redirect unchanged. GitHub Pages visual/deployment verification remains NOT VERIFIED because the published URLs could not be retrieved and the commit has no reported CI statuses.
 ## Completed work
 ### Beach passport parameter reduction (2026-11-15)
 - Dataset advanced to `0.2.53`.
