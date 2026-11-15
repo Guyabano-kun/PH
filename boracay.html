@@ -504,12 +504,11 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
   seasonBox.textContent=(lang==='ru'?'Сейчас: ':'Now: ')+monthName(now.month)+' · '+seasonName;
   box.innerHTML=activities.map(activity=>{
    const rows=getCandidates(data,activity,now.season),best=rows[0],bestName=best?beachName(best.beach,lang):(lang==='ru'?'Недостаточно данных':'Insufficient data');
-   const status=best?(best.observation.status==='supported'?(lang==='ru'?'Подтверждено':'Supported'):(lang==='ru'?'Предварительно':'Provisional')):'';
    const monitoring=best?.beach.id==='white'?'<div class="beach-picker-monitoring">'+(lang==='ru'?'DENR/EMB: мониторинг воды':'DENR/EMB: water monitoring')+'</div>':'';
    const alternatives=rows.slice(1);
-   const altHtml=alternatives.length?alternatives.map(x=>'<div class="beach-picker-alt"><strong>'+esc(beachName(x.beach,lang))+'</strong><small>'+esc(x.observation.status==='supported'?(lang==='ru'?'Подтверждённые сведения':'Supported evidence'):(lang==='ru'?'Предварительные сведения':'Provisional evidence'))+'</small></div>').join(''):'<p class="beach-picker-empty">'+(lang==='ru'?'Подтверждённых альтернатив пока нет.':'No evidence-backed alternatives yet.')+'</p>';
+   const altHtml=alternatives.length?alternatives.map(x=>'<div class="beach-picker-alt"><strong>'+esc(beachName(x.beach,lang))+'</strong></div>').join(''):'<p class="beach-picker-empty">'+(lang==='ru'?'Альтернативы пока не подтверждены.':'No alternatives are confirmed yet.')+'</p>';
    const more=alternatives.length?'<button type="button" class="beach-picker-more" aria-expanded="false">'+(lang==='ru'?'Подробнее':'More')+' ('+alternatives.length+')</button><div class="beach-picker-alternatives" hidden>'+altHtml+'</div>':'';
-   return '<article class="beach-picker-card"><div class="beach-picker-icon" aria-hidden="true">'+activity.icon+'</div><h3>'+esc(lang==='ru'?activity.ru:activity.en)+'</h3><div class="beach-picker-best">'+esc(bestName)+'</div>'+(status?'<div class="beach-picker-evidence">'+esc(status)+'</div>':'')+monitoring+more+'</article>';
+   return '<article class="beach-picker-card"><div class="beach-picker-icon" aria-hidden="true">'+activity.icon+'</div><h3>'+esc(lang==='ru'?activity.ru:activity.en)+'</h3><div class="beach-picker-best">'+esc(bestName)+'</div>'+monitoring+more+'</article>';
   }).join('');
   box.querySelectorAll('.beach-picker-more').forEach(button=>button.addEventListener('click',()=>{
    const panel=button.nextElementSibling,open=button.getAttribute('aria-expanded')!=='true';
