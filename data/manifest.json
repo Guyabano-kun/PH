@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.51",
+  "dataset_version": "0.2.52",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-15",
   "beach_count": 16,
@@ -29,6 +29,7 @@
     }
   },
   "notes": [
+    "Version 0.2.52: expanded seasonal swimming/snorkelling evidence from Rough Guides 2025. Diniwid now has a provisional Amihan swimming candidate and a quiet-cove relaxation candidate with access caveat. Ilig-Iligan has a provisional dry-season snorkelling observation. Balinghai has a conditional paid-entry snorkelling candidate (low tide/access caveat). Puka's rocky-edge marine-life observation remains excluded from casual snorkelling because of strong-current/drop-off warnings. Lapus-Lapus and Punta Bunga calm-water swimming descriptions remain excluded from public recommendations because access is not guaranteed.",
     "Picker presentation now displays an optional recommendation_note under the leading beach and alternatives. Notes carry operating conditions, access caveats and same-day safety limits; they are not suitability scores. Tambisaan's shore-snorkelling presence is supported by two independent visitor/operator sources; Diniwid remains provisional.",
     "Version 0.2.51: practical access descriptions for Bulabog, Diniwid, Ilig-Iligan, Tulubhan and Tambisaan are upgraded from unknown to provisional based on visitor/operator reports. Formal public-right-of-way, current gates and current path conditions remain unverified.",
     "Version 0.2.51: added field-level seabed/reef evidence from the 10 October 2026 New Wave Divers shore-snorkelling guide and the DENR-BMB/UPMSI marine study. White Beach central Stations 1–3 are recorded as sandy/no shore reef-snorkelling habitat; Diniwid has provisional nearshore rock/coral patches; Tambisaan has supported nearshore reef presence; Balinghai, Ilig-Iligan and Tulubhan retain locality-level provisional reef evidence only. No reef boundaries or coral-condition scores are inferred.",
