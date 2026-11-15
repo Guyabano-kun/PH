@@ -1744,6 +1744,25 @@
       ],
       "limitations": "Authoritative for the website project's intended selection scope and naming hierarchy only. It is not independent evidence of physical shoreline identity, beach boundaries, coordinates, public access or safety.",
       "reliability": "authoritative_for_project_scope_only"
+    },
+    {
+      "id": "SRC-106",
+      "title": "Environmental Performance Report and Management Plan – Boracay Island Water Supply System Project",
+      "publisher": "Boracay Island Water Company, Inc.; Environmental Management Bureau Region VI",
+      "url": "https://r6.emb.gov.ph/wp-content/uploads/2022/06/2EPRMP-Boracay-Water-Supzply-System_21Apr2022.pdf",
+      "type": "official_environmental_performance_report",
+      "published_at": "2022-04",
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Caticlan, Malay, Aklan meteorological observations recorded by ATO/CAAP ERMOS during 2003–2004",
+        "Reported prevailing northeast winds during Amihan from October to March",
+        "Reported prevailing southwest winds during Habagat from June to September",
+        "Regional monthly wind speed and direction normals for Roxas and Romblon stations",
+        "Regional rainfall season context for the Panay study area",
+        "General Philippine ocean-current circulation maps for February, April, August and October"
+      ],
+      "limitations": "Caticlan wind-direction evidence is based on meteorological observations from 2003–2004 and does not provide a current long-term monthly wind-speed climatology for Boracay beaches. Monthly wind-speed and direction values in Table 18 are for Roxas and Romblon stations, not Caticlan; they must not be relabelled as Caticlan or beach-level measurements. Rainfall estimates use regional station proxies. Ocean-current figures show broad Philippine circulation, not Boracay nearshore currents or beach-specific tidal streams. Not suitable alone for activity scores, bathing safety or current conditions.",
+      "reliability": "official_environmental_report_with_historical_local_wind_direction_and_regional_climate_proxies"
     }
   ]
 }
