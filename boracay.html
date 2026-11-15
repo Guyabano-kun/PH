@@ -301,23 +301,11 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
 }
 
 
-/* Three-mode evidence-based beach selector */
-.beach-query{margin:18px 0 22px;padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
-.beach-query-modes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:15px}
-.beach-query-mode{padding:10px 12px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--text);font:inherit;font-weight:750;cursor:pointer}
-.beach-query-mode[aria-pressed=true]{background:var(--hero);border-color:var(--hero);color:#fff}
-.beach-query-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.beach-query-field{display:grid;gap:5px;font-size:.88rem;font-weight:700}
-.beach-query-field select{width:100%;min-width:0;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text);font:inherit}
-.beach-query-result{margin-top:15px;padding:15px;border:1px solid var(--line);border-radius:10px;background:var(--bg)}
-.beach-query-result h3{margin:0 0 10px;font-size:1.05rem}
-.beach-query-list{display:grid;gap:9px}
-.beach-query-item{padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
-.beach-query-item strong{display:block}
-.beach-query-item small{display:block;margin-top:4px;color:var(--muted);line-height:1.45}
-.beach-query-empty{margin:0;color:var(--muted)}
-.beach-query-caveat{margin:12px 0 0;color:var(--muted);font-size:.84rem;line-height:1.5}
-@media(max-width:760px){.beach-query{padding:13px}.beach-query-modes{grid-template-columns:1fr}.beach-query-mode{text-align:left}.beach-query-fields{grid-template-columns:1fr;gap:9px}}
+/* Single month selector for activity-based beach recommendations */
+.beach-month-control{margin:0 0 16px;padding:13px 15px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.beach-month-control label{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-weight:750}
+.beach-month-control select{min-width:180px;max-width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}
+@media(max-width:520px){.beach-month-control label{align-items:flex-start;flex-direction:column;gap:6px}.beach-month-control select{width:100%;min-width:0}}
 
 /* Compact activity-first beach picker */
 .beach-picker{margin-top:42px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -397,19 +385,7 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
 <section id="beach-picker" class="beach-picker" aria-labelledby="beach-picker-title">
 <div class="beach-picker-head"><h2 id="beach-picker-title" data-ru="Лучшие пляжи по активностям" data-en="Best beaches by activity">Лучшие пляжи по активностям</h2><button type="button" class="beach-picker-help" id="beach-picker-help" aria-label="Методика" title="Методика" data-ru="Методика" data-en="Methodology">?</button></div>
 <div id="beach-picker-season" class="beach-picker-season" aria-live="polite">Загрузка сезона…</div>
-<div class="beach-query" id="beach-query" aria-label="Подбор пляжа">
- <div class="beach-query-modes" role="group" aria-label="Режим подбора">
-  <button type="button" class="beach-query-mode" data-query-mode="month-activity" aria-pressed="true" data-ru="Месяц + активность" data-en="Month + activity">Месяц + активность</button>
-  <button type="button" class="beach-query-mode" data-query-mode="month-beach" aria-pressed="false" data-ru="Месяц + пляж" data-en="Month + beach">Месяц + пляж</button>
-  <button type="button" class="beach-query-mode" data-query-mode="activity-beach" aria-pressed="false" data-ru="Активность + пляж" data-en="Activity + beach">Активность + пляж</button>
- </div>
- <div class="beach-query-fields">
-  <label class="beach-query-field" id="query-month-wrap"><span data-ru="Месяц" data-en="Month">Месяц</span><select id="query-month"></select></label>
-  <label class="beach-query-field" id="query-activity-wrap"><span data-ru="Активность" data-en="Activity">Активность</span><select id="query-activity"></select></label>
-  <label class="beach-query-field" id="query-beach-wrap"><span data-ru="Пляж" data-en="Beach">Пляж</span><select id="query-beach"></select></label>
- </div>
- <div class="beach-query-result" id="beach-query-result" aria-live="polite"><p class="beach-query-empty">Загрузка базы пляжей…</p></div>
-</div>
+<div class="beach-month-control"><label for="beach-month"><span data-ru="Месяц поездки" data-en="Travel month">Месяц поездки</span><select id="beach-month" aria-label="Месяц поездки"></select></label></div>
 <div id="beach-picker-results" class="beach-picker-grid" aria-live="polite"><p class="beach-picker-empty">Загрузка рекомендаций…</p></div>
 <p class="beach-picker-foot" data-ru="Подбор отражает доступные сведения, а не гарантирует безопасность или состояние моря в конкретный день. На White Beach проводится мониторинг качества воды DENR/EMB в районах Boat Stations 1–3." data-en="Recommendations reflect available evidence, not guaranteed safety or day-specific sea conditions. DENR/EMB water-quality monitoring is conducted along White Beach near Boat Stations 1–3.">Подбор отражает доступные сведения, а не гарантирует безопасность или состояние моря в конкретный день. На White Beach проводится мониторинг качества воды DENR/EMB в районах Boat Stations 1–3.</p>
 <a class="beach-picker-link" href="weather.html" data-ru="Подробнее о море, погоде и сезонности →" data-en="More about sea, weather and seasonality →">Подробнее о море, погоде и сезонности →</a>
@@ -610,7 +586,7 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
  ];
  const esc=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
  const isRu=()=>document.documentElement.lang!=='en';
- const current=()=>{const month=Number(new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Manila',month:'numeric'}).format(new Date()));return {month,season:month>=11||month<=5?'amihan':'habagat'}};
+ const current=()=>{const selected=Number(document.getElementById('beach-month')?.value);const month=selected>=1&&selected<=12?selected:Number(new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Manila',month:'numeric'}).format(new Date()));return {month,season:month>=11||month<=5?'amihan':'habagat'}};
  const monthName=month=>new Intl.DateTimeFormat(isRu()?'ru-RU':'en-US',{month:'long',timeZone:'Asia/Manila'}).format(new Date(Date.UTC(2026,month-1,15,4)));
  const claimSeasonMatch=(claim,season)=>{const x=String(claim||'').toLowerCase();return season==='amihan'?(/amihan|october[–-]may|october through may|october–may|october-may/i.test(x)):(/habagat|june[–-]september|june through september|june–september|june-september/i.test(x))};
  const beachName=(b,lang)=>lang==='ru'?(b.name_ru||b.name):b.name;
@@ -629,8 +605,9 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
   return rows.slice(0,3);
  }
  function render(data){
-  const lang=isRu()?'ru':'en',now=current(),seasonName=now.season==='amihan'?(lang==='ru'?'Amihan · северо-восточный муссон':'Amihan · north-east monsoon'):(lang==='ru'?'Habagat · юго-западный муссон':'Habagat · south-west monsoon');
-  seasonBox.textContent=(lang==='ru'?'Сейчас: ':'Now: ')+monthName(now.month)+' · '+seasonName;
+  const lang=isRu()?'ru':'en',now=current(),monthSelect=document.getElementById('beach-month'),seasonName=now.season==='amihan'?(lang==='ru'?'Amihan · северо-восточный муссон':'Amihan · north-east monsoon'):(lang==='ru'?'Habagat · юго-западный муссон':'Habagat · south-west monsoon');
+  if(monthSelect){if(!monthSelect.options.length){for(let m=1;m<=12;m++){const option=document.createElement('option');option.value=String(m);monthSelect.append(option)}}monthSelect.querySelectorAll('option').forEach(option=>{option.textContent=monthName(Number(option.value))});monthSelect.value=String(now.month)}
+  seasonBox.textContent=(lang==='ru'?'Рекомендации для: ':'Recommendations for: ')+monthName(now.month)+' · '+seasonName;
   box.innerHTML=activities.map(activity=>{
    const rows=getCandidates(data,activity,now.season),best=rows[0],bestName=best?beachName(best.beach,lang):(lang==='ru'?'Недостаточно данных':'Insufficient data');
    const monitoring=best?.beach.id==='white'?'<div class="beach-picker-monitoring">'+(lang==='ru'?'DENR/EMB: мониторинг воды':'DENR/EMB: water monitoring')+'</div>':'';
@@ -646,6 +623,7 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
   }));
  }
  let cached=null;
+ document.getElementById('beach-month')?.addEventListener('change',()=>{if(cached)render(cached)});
  fetch('data/beaches.json').then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(data=>{cached=data;render(data)}).catch(()=>{box.innerHTML='<p class="beach-picker-empty">'+(isRu()?'Не удалось загрузить данные пляжей.':'Beach data could not be loaded.')+'</p>';seasonBox.textContent=isRu()?'Данные временно недоступны':'Data temporarily unavailable'});
  const dialog=document.getElementById('beach-picker-dialog'),closeDialog=()=>{if(dialog)dialog.hidden=true};
  document.getElementById('beach-picker-help')?.addEventListener('click',()=>{if(dialog)dialog.hidden=false});
@@ -653,97 +631,6 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
  dialog?.addEventListener('click',e=>{if(e.target===dialog)closeDialog()});
  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDialog()});
  document.getElementById('lang-btn')?.addEventListener('click',()=>setTimeout(()=>{if(cached)render(cached)},0));
-})();
-</script>
-<script>
-(()=> {
- const root=document.getElementById('beach-query'); if(!root)return;
- const $=id=>document.getElementById(id), months=[1,2,3,4,5,6,7,8,9,10,11,12];
- const activities=[
-  {id:'swimming',ru:'Купание',en:'Swimming'},
-  {id:'beach_relaxation',ru:'Пляжный отдых',en:'Beach relaxation'},
-  {id:'snorkeling',ru:'Снорклинг',en:'Snorkelling'},
-  {id:'kitesurfing_windsurfing',ru:'Кайт / виндсёрфинг',en:'Kite / windsurf'},
-  {id:'boat_excursions',ru:'Морские экскурсии',en:'Boat excursions'}
- ];
- let data=null,mode='month-activity';
- const ru=()=>document.documentElement.lang!=='en';
- const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- const monthName=m=>new Intl.DateTimeFormat(ru()?'ru-RU':'en-US',{month:'long',timeZone:'Asia/Manila'}).format(new Date(Date.UTC(2026,m-1,15,4)));
- const seasonOf=m=>m>=11||m<=5?'amihan':'habagat';
- const seasonMonths=s=>months.filter(m=>seasonOf(m)===s);
- const seasonLabel=s=>s==='amihan'?'Amihan':'Habagat';
- const beachName=b=>ru()?(b.name_ru||b.name):b.name;
- const activityName=a=>ru()?a.ru:a.en;
- const eligible=(b,a)=>((b.activities?.[a.id]?.evidence_observations)||[]).filter(o=>['supported','provisional'].includes(o.status)&&o.claim&&o.recommendation_eligible===true);
- const hasCaution=(b,a)=>((b.activities?.[a.id]?.evidence_observations)||[]).some(o=>/strong currents|strong-current|steeper nearshore|dangerous current|rip current|опасн|сильн.*течен/i.test(o.claim||''));
- const seasonForObservation=o=>{
-  const t=String(o.season||o.claim||'').toLowerCase();
-  if(/amihan|october[–-]may|november[–-]may|october through may|november through may/.test(t))return 'amihan';
-  if(/habagat|june[–-]october|june[–-]september|june through october|june through september/.test(t))return 'habagat';
-  return null;
- };
- const monthsText=ms=>ms.map(monthName).join(', ');
- const result=(title,items,note)=>$('beach-query-result').innerHTML='<h3>'+esc(title)+'</h3>'+(items.length?'<div class="beach-query-list">'+items.map(x=>'<div class="beach-query-item"><strong>'+esc(x.title)+'</strong>'+(x.note?'<small>'+esc(x.note)+'</small>':'')+'</div>').join('')+'</div>':'<p class="beach-query-empty">'+(ru()?'В базе пока недостаточно подтверждённых данных для ответа.':'There is not enough verified evidence in the database to answer this query.')+'</p>')+(note?'<p class="beach-query-caveat">'+esc(note)+'</p>':'');
- function updateFields(){
-  $('query-month-wrap').hidden=mode==='activity-beach';
-  $('query-activity-wrap').hidden=mode==='month-beach';
-  $('query-beach-wrap').hidden=mode==='month-activity';
-  root.querySelectorAll('[data-query-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.queryMode===mode)));
-  run();
- }
- function run(){
-  if(!data)return;
-  const month=Number($('query-month').value),season=seasonOf(month),activity=activities.find(a=>a.id===$('query-activity').value),beach=data.beaches.find(b=>b.id===$('query-beach').value);
-  const caveat=ru()?'Результат основан только на допущенных к рекомендации свидетельствах. Это сезонная справка, не прогноз и не гарантия безопасности.':'Results use only evidence explicitly eligible for recommendation. This is seasonal guidance, not a forecast or safety guarantee.';
-  if(mode==='month-activity'){
-   const rows=[];
-   for(const b of data.beaches.filter(x=>x.selection?.eligible)){
-    let obs=eligible(b,activity);
-    if(activity.id==='swimming'&&hasCaution(b,activity))continue;
-    const seasonal=obs.filter(o=>seasonForObservation(o)===season);
-    const general=obs.filter(o=>!seasonForObservation(o));
-    if(['swimming','kitesurfing_windsurfing','boat_excursions'].includes(activity.id)){obs=seasonal}
-    else {obs=[...seasonal,...general]}
-    if(!obs.length)continue;
-    obs.sort((a,b)=>(a.status==='supported'?0:1)-(b.status==='supported'?0:1));
-    rows.push({b,o:obs[0]});
-   }
-   rows.sort((a,b)=>(a.o.status==='supported'?0:1)-(b.o.status==='supported'?0:1));
-   result((ru()?'Подходящие варианты: ':'Evidence-backed options: ')+activityName(activity)+' · '+monthName(month),rows.slice(0,3).map(x=>({title:beachName(x.b),note:x.o.recommendation_note||x.o.claim})),caveat);
-  } else if(mode==='month-beach'){
-   const rows=[];
-   for(const a of activities){
-    let obs=eligible(beach,a);
-    if(a.id==='swimming'&&hasCaution(beach,a))continue;
-    const seasonal=obs.filter(o=>seasonForObservation(o)===season),general=obs.filter(o=>!seasonForObservation(o));
-    obs=['swimming','kitesurfing_windsurfing','boat_excursions'].includes(a.id)?seasonal:[...seasonal,...general];
-    if(!obs.length)continue;
-    obs.sort((x,y)=>(x.status==='supported'?0:1)-(y.status==='supported'?0:1));
-    rows.push({title:activityName(a),note:obs[0].recommendation_note||obs[0].claim});
-   }
-   result((ru()?'Активности для ':'Activities supported at ')+beachName(beach)+' · '+monthName(month),rows,caveat);
-  } else {
-   const obs=eligible(beach,activity);
-   const seasonSet=new Set(obs.map(seasonForObservation).filter(Boolean));
-   const selected=[...seasonSet].flatMap(s=>seasonMonths(s)).sort((a,b)=>a-b);
-   const notes=obs.filter(o=>seasonForObservation(o)).map(o=>o.recommendation_note||o.claim);
-   const rows=selected.length?[{title:monthsText(selected),note:notes[0]||''}]:[];
-   const general=obs.some(o=>!seasonForObservation(o));
-   result((ru()?'Периоды для ':'Evidence-backed periods for ')+activityName(activity)+' · '+beachName(beach),rows,selected.length?caveat+(general?(ru()?' Общие свидетельства без сезонной привязки не расширяют список месяцев.':' General evidence without a seasonal link does not extend the month list.'):''):caveat);
-  }
- }
- months.forEach(m=>{const o=document.createElement('option');o.value=m;o.textContent=monthName(m);$('query-month').append(o)});
- activities.forEach(a=>{const o=document.createElement('option');o.value=a.id;o.textContent=activityName(a);$('query-activity').append(o)});
- fetch('data/beaches.json').then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(d=>{
-  data=d;$('query-beach').innerHTML='';
-  d.beaches.filter(b=>b.selection?.eligible).forEach(b=>{const o=document.createElement('option');o.value=b.id;o.textContent=beachName(b);$('query-beach').append(o)});
-  const now=Number(new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Manila',month:'numeric'}).format(new Date()));
-  $('query-month').value=now;updateFields();
- }).catch(()=>{$('beach-query-result').innerHTML='<p class="beach-query-empty">'+(ru()?'Не удалось загрузить базу пляжей.':'Beach database could not be loaded.')+'</p>'});
- root.querySelectorAll('[data-query-mode]').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.queryMode;updateFields()}));
- ['query-month','query-activity','query-beach'].forEach(id=>$(id).addEventListener('change',run));
- document.getElementById('lang-btn')?.addEventListener('click',()=>setTimeout(()=>{if(data){const mv=Number($('query-month').value),av=$('query-activity').value,bv=$('query-beach').value;$('query-month').querySelectorAll('option').forEach(o=>o.textContent=monthName(Number(o.value)));$('query-activity').querySelectorAll('option').forEach(o=>{const a=activities.find(x=>x.id===o.value);if(a)o.textContent=activityName(a)});$('query-beach').querySelectorAll('option').forEach(o=>{const b=data.beaches.find(x=>x.id===o.value);if(b)o.textContent=beachName(b)});$('query-month').value=mv;$('query-activity').value=av;$('query-beach').value=bv;run()}},0));
 })();
 </script>
 
