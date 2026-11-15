@@ -127,3 +127,11 @@ Do not invent suitability, access rights, safety conclusions, beach boundaries o
 - No recommender implementation in `weather.html` during the current evidence-research stage.
 - No activity scores until methodology approval.
 - No invented coordinates, access rights, safety conclusions, or missing physical parameters.
+
+
+## Standing repository authorization (2026-11-15)
+- The repository owner explicitly authorizes ChatGPT to read and modify this repository directly, commit and push routine project changes to `main`, and publish through GitHub Pages without asking for repeated approval for each change.
+- This authorization covers ordinary implementation, data, documentation, validation, commit, push, and deployment actions within the approved project scope.
+- The authorization does not override GitHub authentication, branch protection, tool/platform availability, or safety constraints. A technical failure must be reported as BLOCKED; never claim an unperformed action.
+- `AGENTS.md` is the operational source of truth for this standing authorization and the required verification protocol.
+- Authorization recorded in commit `e59dad8bfb8280da3677ab2167d9823ff3f6fb49`.
