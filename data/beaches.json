@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.40",
+  "dataset_version": "0.2.41",
   "last_updated": "2026-11-15",
   "beaches": [
     {
@@ -8107,6 +8107,921 @@
           "Bathymetry, reef profile, currents and activity-specific hazards",
           "Current facilities and lifeguard coverage",
           "Distinguish Lugutan Beach from Lugutan Mangrove Park, Lugutan Wetland Park and Lugutan Mixing Zone"
+        ],
+        "last_reviewed": "2026-11-15"
+      },
+      "internal": {
+        "admin_ready": true,
+        "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
+        "change_tracking": {
+          "created_at": "2026-11-15",
+          "updated_at": "2026-11-15",
+          "revision": 1
+        }
+      }
+    },
+    {
+      "id": "savoy",
+      "name": "Savoy Beach",
+      "name_ru": "Пляж Савой",
+      "identity": {
+        "place_name": {
+          "value": "Savoy Beach",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-092",
+            "SRC-093",
+            "SRC-099"
+          ],
+          "note": "Savoy Beach is independently listed as a named POI/landmark, but its exact shoreline footprint and correspondence to one of the developer's three coves are not established."
+        },
+        "alternative_names": {
+          "value": null,
+          "status": "unknown",
+          "note": "No independently verified alternative name."
+        },
+        "administrative_area": {
+          "value": "Barangay Yapak, Malay, Aklan, Philippines",
+          "status": "supported",
+          "source_ids": [
+            "SRC-089",
+            "SRC-096"
+          ],
+          "note": "Development-level administrative location; beach parcel boundaries are not delineated."
+        },
+        "description": {
+          "value": "Named Savoy Beach POI/landmark within the Boracay Newcoast beachfront area. Trip.com lists it separately from Newcoast Cove 2 Beach. Its correspondence to Cove 1, Cove 2 or Cove 3 and its exact shoreline footprint remain unverified.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-092",
+            "SRC-093",
+            "SRC-099"
+          ]
+        },
+        "parent_location": {
+          "value": "Boracay Newcoast Beaches",
+          "status": "supported",
+          "source_ids": [
+            "SRC-088",
+            "SRC-089",
+            "SRC-101"
+          ],
+          "published_shoreline_length_m": 1000,
+          "published_length_qualifier": "approximately_parent_area_only",
+          "note": "The developer describes three separate coves (Cove 1, Cove 2 and Cove 3) within a wider white-sand beachfront area published as approximately 1 km. This length applies only to the parent beachfront context, not to either child beach record; no parent boundary or surveyed shoreline is available."
+        },
+        "google_maps_reference": {
+          "url": "https://maps.app.goo.gl/m3x9KLM6YRPPW5Cv7",
+          "status": "short_link_not_resolved",
+          "note": "User-supplied Google Maps short link retained as an intended place reference; no coordinate was extracted from it."
+        }
+      },
+      "geography": {
+        "coast_orientation": {
+          "value": "East coast",
+          "status": "supported",
+          "source_ids": [
+            "SRC-089",
+            "SRC-096"
+          ],
+          "note": "Coarse island-side classification from the developer's description of Newcoast on Boracay's eastern/northeastern side; not a surveyed shoreline azimuth."
+        },
+        "coordinates": {
+          "latitude": null,
+          "longitude": null,
+          "coordinate_status": "no_verified_beach_centroid_google_shortlink_unresolved",
+          "coordinate_source": "No beach-specific surveyed coordinate identified. OSM and Mapbox POI references are retained separately in coordinate_verification and are not used as beach coordinates.",
+          "coordinate_precision": "No verified beach centroid or boundary. All available coordinates are point references (OSM attraction or Mapbox POI), not beach geometry.",
+          "verified": false,
+          "source_id": "SRC-000"
+        },
+        "beach_boundary": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified polygon or surveyed start/end limits for this individual beach."
+        },
+        "shoreline_geometry": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified shoreline line or beach polygon captured."
+        },
+        "natural_shelter": {
+          "value": null,
+          "status": "unknown",
+          "note": "No beach-specific shelter assessment."
+        },
+        "coastline_orientation_degrees": {
+          "value": null,
+          "status": "unknown",
+          "note": "No measured shoreline azimuth."
+        },
+        "coordinate_verification": {
+          "source_ids": [
+            "SRC-092",
+            "SRC-093",
+            "SRC-099"
+          ],
+          "mapbox_poi_reference": {
+            "source_id": "SRC-093",
+            "name": "Savoy Beach",
+            "latitude": 11.98573567,
+            "longitude": 121.92513664,
+            "coordinate_type": "mapbox_poi_marker",
+            "not_beach_centroid": true,
+            "mapbox_id": "dXJuOm1ieHBvaTpkZDE0MTc0OC0xMWE5LTQzMGMtOWU4YS1hNzYyMjg2MWIyODU"
+          },
+          "tripcom_landmark_context": {
+            "source_id": "SRC-092",
+            "published_distance_from_savoy_hotel_km": 0.54,
+            "not_coordinate": true
+          },
+          "user_supplied_google_maps_link": {
+            "source_id": "SRC-099",
+            "url": "https://maps.app.goo.gl/m3x9KLM6YRPPW5Cv7",
+            "resolution_status": "not_resolved"
+          },
+          "assessment": "named_savoy_beach_poi_reference_only_no_verified_beach_centroid_or_boundary",
+          "note": "Mapbox returned a Savoy Beach POI marker at 11.98573567, 121.92513664. Trip.com separately lists Savoy Beach and Newcoast Cove 2 Beach as landmarks, approximately 0.54 km and 0.55 km from Savoy Hotel. The Mapbox coordinate is a POI marker, not a beach centroid. The user-supplied Google Maps short link was not expanded; no geometry or entrance point is inferred."
+        }
+      },
+      "shore": {
+        "sand_type": {
+          "value": "The developer describes the Newcoast coves as white-sand beaches; no independent grain-size or sediment study for this individual beach was identified.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-088",
+            "SRC-089"
+          ],
+          "note": "Developer description only; not a sediment survey."
+        },
+        "beach_width": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified beach-width measurement."
+        },
+        "shore_slope": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified shore-slope measurement."
+        },
+        "tidal_exposure": {
+          "value": null,
+          "status": "unknown",
+          "note": "No beach-specific tidal assessment."
+        },
+        "seasonal_erosion": {
+          "value": null,
+          "status": "unknown",
+          "note": "No beach-specific long-term shoreline-change study."
+        }
+      },
+      "underwater": {
+        "reef_presence": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified reef mapping for this individual beach."
+        },
+        "reef_crest": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified reef-crest location."
+        },
+        "seabed_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No beach-specific seabed survey."
+        },
+        "nearshore_depth": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified nearshore depth profile."
+        },
+        "bathymetry_source": {
+          "value": null,
+          "status": "unknown",
+          "note": "No beach-specific bathymetric data extracted."
+        }
+      },
+      "hydrodynamics": {
+        "amihan_exposure": {
+          "value": "not_assessed",
+          "status": "unknown",
+          "source_ids": [],
+          "note": "No local wave/wind measurements or verified beach-scale exposure assessment."
+        },
+        "habagat_exposure": {
+          "value": "not_assessed",
+          "status": "unknown",
+          "source_ids": [],
+          "note": "No local wave/wind measurements or verified beach-scale exposure assessment."
+        },
+        "wave_climate": {
+          "value": null,
+          "status": "unknown",
+          "note": "No measured local wave-climate series."
+        },
+        "currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No measured local current series."
+        },
+        "rip_currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified rip-current mapping."
+        },
+        "visibility": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified underwater visibility data."
+        },
+        "tide_effects": {
+          "value": null,
+          "status": "unknown",
+          "note": "No beach-specific tidal observations."
+        }
+      },
+      "activities": {
+        "swimming": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned without beach-specific hazard and current water-quality evidence."
+        },
+        "beach_relaxation": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified activity suitability assessment."
+        },
+        "snorkeling": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified reef or snorkeling assessment."
+        },
+        "kitesurfing_windsurfing": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified activity suitability assessment."
+        },
+        "boat_excursions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified public boarding or landing point."
+        }
+      },
+      "access": {
+        "land_access": {
+          "value": "Boracay Newcoast is reached from Cagban Port by e-tricycle or shuttle according to the developer. Newcoast Drive is described in the project EIS as the development's main internal road. These are district-level access descriptions and do not establish a public approach route to this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-094",
+            "SRC-096"
+          ],
+          "note": "No surveyed beach entrance, public right-of-way, or current gate/road condition has been verified."
+        },
+        "public_access_status": {
+          "value": "Not established. The developer describes three coves in privacy-oriented terms, and a 2024 BusinessMirror article says hotel guests enjoy exclusive access to Newcoast Beach. A secondary visitor guide says non-hotel visitors can visit the Newcoast district. District access does not prove unrestricted access to this individual beach; current entry rules remain unknown.",
+          "status": "unknown",
+          "source_ids": [
+            "SRC-088",
+            "SRC-097",
+            "SRC-098"
+          ],
+          "note": "Conflicting developer/visitor-guide descriptions. No current LGU access notice, public right-of-way confirmation, or beach-specific admission policy was found."
+        },
+        "access_restrictions": {
+          "value": "Current gates, entry permission, fees, and non-guest access conditions are not confirmed. Historical public-scoping comments in the project EIS asked for reopening of a road in the NIR area for fishing and swimming; the proponent response stated that the area was private property and would be referred to management. This is historical consultation context, not a current beach-entry rule.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-094",
+            "SRC-097",
+            "SRC-098"
+          ],
+          "note": "Do not interpret the historical EIS response as a current blanket restriction or as a legal determination of shoreline ownership."
+        },
+        "facilities": {
+          "value": "The developer describes Cove 1 as a beach retreat, Cove 2 as a party destination, and Cove 3 as a private-paradise setting. A verified public facilities inventory for this individual beach was not found.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-088"
+          ],
+          "note": "Descriptions are developer marketing language; current public availability of facilities is not established."
+        },
+        "lifeguard_coverage": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified beach-specific lifeguard coverage."
+        },
+        "emergency_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified beach-specific emergency access point or response arrangement."
+        },
+        "legal_framework": {
+          "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-028",
+            "SRC-029",
+            "SRC-030",
+            "SRC-031"
+          ],
+          "note": "Island-wide legal context only; it does not establish a public route or access conditions at Lugutan Beach."
+        }
+      },
+      "excursions": {
+        "regular_departure": {
+          "value": "not_verified",
+          "status": "unknown",
+          "note": "No verified regular public tourist departure point at this beach."
+        },
+        "seasonal_meeting_points": [],
+        "itinerary_stops": [],
+        "landing_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified public landing permission or designated landing point."
+        }
+      },
+      "ecology": {
+        "water_quality_history": {
+          "value": null,
+          "status": "unknown",
+          "note": "No beach-specific DENR-EMB bathing-water station or validated recreational-water result was identified. Do not transfer nearby station results from Ilig-Iligan or other Boracay monitoring sites."
+        },
+        "reef_condition": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified beach-specific reef condition data."
+        },
+        "pollution_sources": {
+          "value": null,
+          "status": "unknown",
+          "note": "No beach-specific pollution-source assessment."
+        },
+        "protected_area_status": {
+          "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
+          "status": "supported",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas; the Supreme Court identifies PTA Circular No. 3-82 (3 September 1982) as its implementing instrument, but the full circular and any boundary maps have not been recovered. Exact beach-level marine-reserve limits therefore remain unverified.",
+          "source_ids": [
+            "SRC-049",
+            "SRC-050",
+            "SRC-051"
+          ]
+        },
+        "monitoring_stations": [],
+        "conservation_designations": [
+          {
+            "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+            "designation_type": "water_quality_management_and_conservation_area",
+            "legal_instrument": "DENR Administrative Order No. 2019-15",
+            "designation_date": "2019-11-05",
+            "status": "designated",
+            "geographic_scope": "Boracay Island; the order identifies the three island barangays of Yapak, Balabag and Manoc-manoc.",
+            "beach_level_relation": "The order designates Boracay Island as a whole. No separate beach-specific boundary segment is named for this record; exact local intersection has not been independently overlaid.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-047"
+            ],
+            "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          },
+          {
+            "designation_name": "Boracay Islands Tourist Zone and Marine Reserve",
+            "designation_type": "tourist_zone_and_marine_reserve",
+            "legal_instrument": "Presidential Proclamation No. 1801",
+            "designation_date": "1978-11-10",
+            "administering_authority_at_designation": "Philippine Tourism Authority",
+            "status": "designated",
+            "geographic_scope": "Boracay Islands, Aklan; island-level designation",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas within the zones; the implementing circular and any maps remain unavailable in the reviewed sources.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-049",
+              "SRC-050",
+              "SRC-051"
+            ],
+            "implementing_instrument_follow_up": "PTA Circular No. 3-82, dated 3 September 1982; full text and any boundary maps not independently recovered."
+          }
+        ],
+        "historical_studies": [],
+        "marine_ecological_surveys": [],
+        "outfall_monitoring": []
+      },
+      "evidence": [
+        {
+          "source_id": "SRC-092",
+          "claim": "Trip.com lists Savoy Beach and Boracay Newcoast Cove 2 Beach as separate named landmarks near Savoy Hotel.",
+          "status": "supported_separate_landmark_names"
+        },
+        {
+          "source_id": "SRC-093",
+          "claim": "Mapbox returns a Savoy Beach POI marker at 11.98573567, 121.92513664; this is a POI reference, not a beach centroid.",
+          "status": "supported_poi_reference_only"
+        },
+        {
+          "source_id": "SRC-088",
+          "claim": "The developer identifies three separate coves within the Newcoast beachfront area; Savoy Beach has not been reliably assigned to one of them.",
+          "status": "supported_parent_cove_context"
+        },
+        {
+          "source_id": "SRC-099",
+          "claim": "User supplied a Google Maps short link for Savoy Beach; it remains unexpanded and is not used to infer coordinates.",
+          "status": "user_supplied_reference_unresolved"
+        },
+        {
+          "source_id": "SRC-097",
+          "claim": "BusinessMirror reports guest-exclusive access to Newcoast Beach; this is not a current legal access determination for Savoy Beach.",
+          "status": "reported_access_context"
+        }
+      ],
+      "data_quality": {
+        "record_status": "draft",
+        "overall_confidence": "low_to_moderate",
+        "known_gaps": [
+          "Beach boundary and shoreline geometry",
+          "Relationship between Savoy Beach and the developer's Cove 1 / Cove 2 / Cove 3 naming",
+          "Beach-specific centroid; Google Maps short link remains unresolved",
+          "Current public access, visitor eligibility, fees and beach approach route",
+          "Beach-specific water-quality monitoring",
+          "Beach-specific facilities, lifeguard coverage and emergency access",
+          "Bathymetry, reef profile, waves, currents and activity-specific hazards"
+        ],
+        "last_reviewed": "2026-11-15"
+      },
+      "internal": {
+        "admin_ready": true,
+        "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
+        "change_tracking": {
+          "created_at": "2026-11-15",
+          "updated_at": "2026-11-15",
+          "revision": 1
+        }
+      }
+    },
+    {
+      "id": "newcoast",
+      "name": "Boracay Newcoast Beach",
+      "name_ru": "Пляж Боркай Ньюкоуст",
+      "identity": {
+        "place_name": {
+          "value": "Boracay Newcoast Beach",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-088",
+            "SRC-091",
+            "SRC-093",
+            "SRC-100"
+          ],
+          "note": "Newcoast Beach is an OSM tourism=attraction point; a Mapbox POI named Boracay Newcoast Cove 2 Beach is nearby. The exact identity and beach boundary remain provisional."
+        },
+        "alternative_names": {
+          "value": [
+            "Boracay Newcoast Cove 2 Beach"
+          ],
+          "status": "provisional",
+          "source_ids": [
+            "SRC-088",
+            "SRC-091",
+            "SRC-093",
+            "SRC-092"
+          ],
+          "note": "Potential correspondence based on a 25.9 m separation between the OSM Newcoast Beach attraction node and the Mapbox Cove 2 POI, plus the developer's three-cove context. This does not prove an exact alias or shoreline boundary."
+        },
+        "administrative_area": {
+          "value": "Barangay Yapak, Malay, Aklan, Philippines",
+          "status": "supported",
+          "source_ids": [
+            "SRC-089",
+            "SRC-096"
+          ],
+          "note": "Development-level administrative location; beach parcel boundaries are not delineated."
+        },
+        "description": {
+          "value": "Named Newcoast Beach attraction point within the Boracay Newcoast beachfront area. It is spatially close to a separate Mapbox POI named Boracay Newcoast Cove 2 Beach; this is a likely association, not a verified beach boundary or centroid.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-088",
+            "SRC-091",
+            "SRC-093",
+            "SRC-100"
+          ]
+        },
+        "parent_location": {
+          "value": "Boracay Newcoast Beaches",
+          "status": "supported",
+          "source_ids": [
+            "SRC-088",
+            "SRC-089",
+            "SRC-101"
+          ],
+          "published_shoreline_length_m": 1000,
+          "published_length_qualifier": "approximately_parent_area_only",
+          "note": "The developer describes three separate coves (Cove 1, Cove 2 and Cove 3) within a wider white-sand beachfront area published as approximately 1 km. This length applies only to the parent beachfront context, not to either child beach record; no parent boundary or surveyed shoreline is available."
+        },
+        "google_maps_reference": {
+          "url": "https://maps.app.goo.gl/jAKByJmYWKKL42237",
+          "status": "short_link_not_resolved",
+          "note": "User-supplied Google Maps short link retained as an intended place reference; no coordinate was extracted from it."
+        },
+        "related_cove": {
+          "value": "Cove 2",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-088",
+            "SRC-091",
+            "SRC-093"
+          ],
+          "note": "Likely association based on nearby independent point references; exact identity and beach limits are not proven."
+        }
+      },
+      "geography": {
+        "coast_orientation": {
+          "value": "East coast",
+          "status": "supported",
+          "source_ids": [
+            "SRC-089",
+            "SRC-096"
+          ],
+          "note": "Coarse island-side classification from the developer's description of Newcoast on Boracay's eastern/northeastern side; not a surveyed shoreline azimuth."
+        },
+        "coordinates": {
+          "latitude": null,
+          "longitude": null,
+          "coordinate_status": "no_verified_beach_centroid_google_shortlink_unresolved",
+          "coordinate_source": "No beach-specific surveyed coordinate identified. OSM and Mapbox POI references are retained separately in coordinate_verification and are not used as beach coordinates.",
+          "coordinate_precision": "No verified beach centroid or boundary. All available coordinates are point references (OSM attraction or Mapbox POI), not beach geometry.",
+          "verified": false,
+          "source_id": "SRC-000"
+        },
+        "beach_boundary": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified polygon or surveyed start/end limits for this individual beach."
+        },
+        "shoreline_geometry": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified shoreline line or beach polygon captured."
+        },
+        "natural_shelter": {
+          "value": null,
+          "status": "unknown",
+          "note": "No beach-specific shelter assessment."
+        },
+        "coastline_orientation_degrees": {
+          "value": null,
+          "status": "unknown",
+          "note": "No measured shoreline azimuth."
+        },
+        "coordinate_verification": {
+          "source_ids": [
+            "SRC-091",
+            "SRC-092",
+            "SRC-093",
+            "SRC-100"
+          ],
+          "osm_feature": {
+            "source_id": "SRC-091",
+            "feature_type": "tourism=attraction",
+            "osm_feature_id": "node 11150631205",
+            "latitude": 11.98328,
+            "longitude": 121.92583,
+            "coordinate_type": "OSM_attraction_node",
+            "not_beach_centroid": true
+          },
+          "mapbox_poi_reference": {
+            "source_id": "SRC-093",
+            "name": "Boracay Newcoast Cove 2 Beach",
+            "latitude": 11.98335055,
+            "longitude": 121.92560262,
+            "coordinate_type": "mapbox_poi_marker",
+            "not_beach_centroid": true,
+            "mapbox_id": "dXJuOm1ieHBvaTozNjA3YzM5ZS0xMGNhLTQyZjEtODMyYi1mMWJiMGZlZjE3YWM",
+            "separation_from_osm_reference_m": 25.9
+          },
+          "tripcom_landmark_context": {
+            "source_id": "SRC-092",
+            "published_distance_from_savoy_hotel_km": 0.55,
+            "not_coordinate": true
+          },
+          "user_supplied_google_maps_link": {
+            "source_id": "SRC-100",
+            "url": "https://maps.app.goo.gl/jAKByJmYWKKL42237",
+            "resolution_status": "not_resolved"
+          },
+          "assessment": "osm_attraction_node_and_mapbox_cove2_poi_are_nearby_but_no_beach_centroid_or_boundary",
+          "note": "Mapcarta/OSM maps Newcoast Beach as tourism=attraction node 11150631205 at 11.98328, 121.92583. Mapbox's separate Cove 2 POI marker at 11.98335055, 121.92560262 is approximately 25.9 m away. This supports a spatial association but does not prove an identical feature or define the beach boundary. Neither point is used as a beach centroid. The user-supplied Google Maps short link was not expanded."
+        }
+      },
+      "shore": {
+        "sand_type": {
+          "value": "The developer describes the Newcoast coves as white-sand beaches; no independent grain-size or sediment study for this individual beach was identified.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-088",
+            "SRC-089"
+          ],
+          "note": "Developer description only; not a sediment survey."
+        },
+        "beach_width": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified beach-width measurement."
+        },
+        "shore_slope": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified shore-slope measurement."
+        },
+        "tidal_exposure": {
+          "value": null,
+          "status": "unknown",
+          "note": "No beach-specific tidal assessment."
+        },
+        "seasonal_erosion": {
+          "value": null,
+          "status": "unknown",
+          "note": "No beach-specific long-term shoreline-change study."
+        }
+      },
+      "underwater": {
+        "reef_presence": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified reef mapping for this individual beach."
+        },
+        "reef_crest": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified reef-crest location."
+        },
+        "seabed_type": {
+          "value": null,
+          "status": "unknown",
+          "note": "No beach-specific seabed survey."
+        },
+        "nearshore_depth": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified nearshore depth profile."
+        },
+        "bathymetry_source": {
+          "value": null,
+          "status": "unknown",
+          "note": "No beach-specific bathymetric data extracted."
+        }
+      },
+      "hydrodynamics": {
+        "amihan_exposure": {
+          "value": "not_assessed",
+          "status": "unknown",
+          "source_ids": [],
+          "note": "No local wave/wind measurements or verified beach-scale exposure assessment."
+        },
+        "habagat_exposure": {
+          "value": "not_assessed",
+          "status": "unknown",
+          "source_ids": [],
+          "note": "No local wave/wind measurements or verified beach-scale exposure assessment."
+        },
+        "wave_climate": {
+          "value": null,
+          "status": "unknown",
+          "note": "No measured local wave-climate series."
+        },
+        "currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No measured local current series."
+        },
+        "rip_currents": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified rip-current mapping."
+        },
+        "visibility": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified underwater visibility data."
+        },
+        "tide_effects": {
+          "value": null,
+          "status": "unknown",
+          "note": "No beach-specific tidal observations."
+        }
+      },
+      "activities": {
+        "swimming": {
+          "value": null,
+          "status": "unknown",
+          "note": "No activity suitability score assigned without beach-specific hazard and current water-quality evidence."
+        },
+        "beach_relaxation": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified activity suitability assessment."
+        },
+        "snorkeling": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified reef or snorkeling assessment."
+        },
+        "kitesurfing_windsurfing": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified activity suitability assessment."
+        },
+        "boat_excursions": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified public boarding or landing point."
+        }
+      },
+      "access": {
+        "land_access": {
+          "value": "Boracay Newcoast is reached from Cagban Port by e-tricycle or shuttle according to the developer. Newcoast Drive is described in the project EIS as the development's main internal road. These are district-level access descriptions and do not establish a public approach route to this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-094",
+            "SRC-096"
+          ],
+          "note": "No surveyed beach entrance, public right-of-way, or current gate/road condition has been verified."
+        },
+        "public_access_status": {
+          "value": "Not established. The developer describes three coves in privacy-oriented terms, and a 2024 BusinessMirror article says hotel guests enjoy exclusive access to Newcoast Beach. A secondary visitor guide says non-hotel visitors can visit the Newcoast district. District access does not prove unrestricted access to this individual beach; current entry rules remain unknown.",
+          "status": "unknown",
+          "source_ids": [
+            "SRC-088",
+            "SRC-097",
+            "SRC-098"
+          ],
+          "note": "Conflicting developer/visitor-guide descriptions. No current LGU access notice, public right-of-way confirmation, or beach-specific admission policy was found."
+        },
+        "access_restrictions": {
+          "value": "Current gates, entry permission, fees, and non-guest access conditions are not confirmed. Historical public-scoping comments in the project EIS asked for reopening of a road in the NIR area for fishing and swimming; the proponent response stated that the area was private property and would be referred to management. This is historical consultation context, not a current beach-entry rule.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-094",
+            "SRC-097",
+            "SRC-098"
+          ],
+          "note": "Do not interpret the historical EIS response as a current blanket restriction or as a legal determination of shoreline ownership."
+        },
+        "facilities": {
+          "value": "The developer describes Cove 1 as a beach retreat, Cove 2 as a party destination, and Cove 3 as a private-paradise setting. A verified public facilities inventory for this individual beach was not found.",
+          "status": "provisional",
+          "source_ids": [
+            "SRC-088"
+          ],
+          "note": "Descriptions are developer marketing language; current public availability of facilities is not established."
+        },
+        "lifeguard_coverage": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified beach-specific lifeguard coverage."
+        },
+        "emergency_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified beach-specific emergency access point or response arrangement."
+        },
+        "legal_framework": {
+          "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
+          "status": "supported",
+          "source_ids": [
+            "SRC-028",
+            "SRC-029",
+            "SRC-030",
+            "SRC-031"
+          ],
+          "note": "Island-wide legal context only; it does not establish a public route or access conditions at Lugutan Beach."
+        }
+      },
+      "excursions": {
+        "regular_departure": {
+          "value": "not_verified",
+          "status": "unknown",
+          "note": "No verified regular public tourist departure point at this beach."
+        },
+        "seasonal_meeting_points": [],
+        "itinerary_stops": [],
+        "landing_access": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified public landing permission or designated landing point."
+        }
+      },
+      "ecology": {
+        "water_quality_history": {
+          "value": null,
+          "status": "unknown",
+          "note": "No beach-specific DENR-EMB bathing-water station or validated recreational-water result was identified. Do not transfer nearby station results from Ilig-Iligan or other Boracay monitoring sites."
+        },
+        "reef_condition": {
+          "value": null,
+          "status": "unknown",
+          "note": "No verified beach-specific reef condition data."
+        },
+        "pollution_sources": {
+          "value": null,
+          "status": "unknown",
+          "note": "No beach-specific pollution-source assessment."
+        },
+        "protected_area_status": {
+          "value": "Boracay Islands were declared a Tourist Zone and Marine Reserve under Presidential Proclamation No. 1801 (10 November 1978). This is an island-level legal designation; beach-specific marine boundaries are not delineated in the proclamation.",
+          "status": "supported",
+          "note": "The designation is distinct from the later Boracay WQMACA under DENR AO 2019-15. Do not infer NIPAS status, no-take zoning, exact offshore boundaries or a separate beach-level protected-area polygon. The Supreme Court decision distinguishes the ecological/tourism purpose of Proclamation No. 1801 from land classification under Proclamation No. 1064; it does not invalidate the marine-reserve designation. The Philippine Coast Guard's 2019 NOSCOP Annex 10 also lists Boracay Island TZMR as a national MPA established in 1978 (SRC-051), but supplies only a reference point and no boundaries; the annex heading is not treated as proof of designation under the later NIPAS statute. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas; the Supreme Court identifies PTA Circular No. 3-82 (3 September 1982) as its implementing instrument, but the full circular and any boundary maps have not been recovered. Exact beach-level marine-reserve limits therefore remain unverified.",
+          "source_ids": [
+            "SRC-049",
+            "SRC-050",
+            "SRC-051"
+          ]
+        },
+        "monitoring_stations": [],
+        "conservation_designations": [
+          {
+            "designation_name": "Boracay Island Water Quality Management and Conservation Area (WQMACA)",
+            "designation_type": "water_quality_management_and_conservation_area",
+            "legal_instrument": "DENR Administrative Order No. 2019-15",
+            "designation_date": "2019-11-05",
+            "status": "designated",
+            "geographic_scope": "Boracay Island; the order identifies the three island barangays of Yapak, Balabag and Manoc-manoc.",
+            "beach_level_relation": "The order designates Boracay Island as a whole. No separate beach-specific boundary segment is named for this record; exact local intersection has not been independently overlaid.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-047"
+            ],
+            "interpretation": "This designation concerns water-quality management and conservation of terrestrial, freshwater and marine habitats. Do not label it as a separate NIPAS protected area or marine protected area without an independent legal instrument."
+          },
+          {
+            "designation_name": "Boracay Islands Tourist Zone and Marine Reserve",
+            "designation_type": "tourist_zone_and_marine_reserve",
+            "legal_instrument": "Presidential Proclamation No. 1801",
+            "designation_date": "1978-11-10",
+            "administering_authority_at_designation": "Philippine Tourism Authority",
+            "status": "designated",
+            "geographic_scope": "Boracay Islands, Aklan; island-level designation",
+            "beach_level_relation": "The proclamation names Boracay Islands as a tourist zone and marine reserve. It does not provide a beach-specific marine boundary polygon, coordinates, zoning or no-take limits. This record therefore confirms the island-level designation only; it does not define the exact marine-reserve boundary adjacent to this beach. Proclamation No. 1801 directs the Philippine Tourism Authority to delineate geographic areas within the zones; the implementing circular and any maps remain unavailable in the reviewed sources.",
+            "boundary_reference": null,
+            "source_ids": [
+              "SRC-049",
+              "SRC-050",
+              "SRC-051"
+            ],
+            "implementing_instrument_follow_up": "PTA Circular No. 3-82, dated 3 September 1982; full text and any boundary maps not independently recovered."
+          }
+        ],
+        "historical_studies": [],
+        "marine_ecological_surveys": [],
+        "outfall_monitoring": []
+      },
+      "evidence": [
+        {
+          "source_id": "SRC-091",
+          "claim": "OSM maps Newcoast Beach as tourism=attraction node 11150631205 at 11.98328, 121.92583; this is not a beach polygon or centroid.",
+          "status": "supported_attraction_point_only"
+        },
+        {
+          "source_id": "SRC-093",
+          "claim": "Mapbox returns a separate POI named Boracay Newcoast Cove 2 Beach at 11.98335055, 121.92560262, approximately 25.9 m from the OSM attraction node.",
+          "status": "supported_poi_reference_only"
+        },
+        {
+          "source_id": "SRC-088",
+          "claim": "The developer identifies three separate coves, Cove 1, Cove 2 and Cove 3, within the Newcoast beachfront area.",
+          "status": "supported_parent_cove_context"
+        },
+        {
+          "source_id": "SRC-089",
+          "claim": "The developer describes an approximately 1 km white beach and Newcoast Station at its center; this length applies to the parent beachfront area, not this individual record.",
+          "status": "supported_parent_area_description"
+        },
+        {
+          "source_id": "SRC-092",
+          "claim": "Trip.com lists Newcoast Cove 2 separately from Savoy Beach as a nearby landmark.",
+          "status": "supported_separate_landmark_names"
+        },
+        {
+          "source_id": "SRC-100",
+          "claim": "User supplied a Google Maps short link for Boracay Newcoast Beach; it remains unexpanded and is not used to infer coordinates.",
+          "status": "user_supplied_reference_unresolved"
+        },
+        {
+          "source_id": "SRC-094",
+          "claim": "The project EIS records historical public-scoping concerns about public road access to the NIR area for fishing and swimming; this is not a current access rule.",
+          "status": "supported_historical_access_context"
+        }
+      ],
+      "data_quality": {
+        "record_status": "draft",
+        "overall_confidence": "low_to_moderate",
+        "known_gaps": [
+          "Beach boundary and shoreline geometry; OSM feature is an attraction node, not a beach polygon",
+          "Exact identity relationship between Newcoast Beach and Cove 2",
+          "Beach-specific centroid; Google Maps short link remains unresolved",
+          "Current public access, visitor eligibility, fees and beach approach route",
+          "Beach-specific water-quality monitoring",
+          "Beach-specific facilities, lifeguard coverage and emergency access",
+          "Bathymetry, reef profile, waves, currents and activity-specific hazards"
         ],
         "last_reviewed": "2026-11-15"
       },
