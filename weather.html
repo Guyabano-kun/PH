@@ -562,4 +562,48 @@ function windLines(){windCtx.clearRect(0,0,windWidth,windHeight);windParticles=A
 async function load(){const selected=month.value;if(!/^\d{4}-\d{2}$/.test(selected))return;status.textContent=tr('Расчёт астрономического прогноза TPXO…','Calculating TPXO astronomical tide forecast…');body.innerHTML='<tr><td colspan="14">…</td></tr>';series={};loadedMonth='';try{const res=await fetch('https://boracay-tides.enmaradin.workers.dev/?month='+encodeURIComponent(selected));if(!res.ok)throw new Error('HTTP '+res.status);const data=await res.json();if(!Array.isArray(data.values))throw new Error(data.error||'Unexpected response');data.values.forEach(p=>{const d=new Date(p.time.endsWith('Z')?p.time:p.time+'Z');if(Number.isNaN(d.getTime()))return;const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Manila',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hourCycle:'h23'}).formatToParts(d);const get=t=>parts.find(x=>x.type===t)?.value;const key=get('year')+'-'+get('month')+'-'+get('day')+'T'+get('hour')+':00';series[key]=Number(p.level_m)});loadedMonth=selected;render();const count=Object.keys(series).length;status.textContent=count?tr('TPXO10-atlas-v2 · загружено значений: ','TPXO10-atlas-v2 · values loaded: ')+count+tr('. Время: Филиппины (UTC+8).',' · Time zone: Philippines (UTC+8).'):tr('Модель не вернула валидные значения для этой точки.','The model returned no valid values for this location.');detail.textContent=tr('Нажмите на ячейку, чтобы увидеть дату, время и расчётный уровень моря.','Tap a cell to inspect date, time and modelled sea level.')}catch(e){status.textContent=tr('Ошибка загрузки долгосрочного прогноза: ','Long-range forecast error: ')+e.message;body.innerHTML='<tr><td colspan="14">—</td></tr>'}}
 month.addEventListener('change',load);reload.addEventListener('click',load);load()})();
 </script>
+<style>
+.price-emphasis{font-weight:800}
+</style>
+<script>
+(()=>{
+ const pricePattern=/(?:₱|PHP\s*|US\$\s*|USD\s*|\$\s*)\d[\d,]*(?:\.\d{1,2})?(?:\s*[–—-]\s*(?:₱|PHP\s*|US\$\s*|USD\s*|\$\s*)?\d[\d,]*(?:\.\d{1,2})?)?/g;
+ const skipTags=new Set(['SCRIPT','STYLE','NOSCRIPT','TEXTAREA','INPUT','OPTION','STRONG','B']);
+ function emphasizeTextNode(node){
+  const parent=node.parentElement;
+  if(!parent||skipTags.has(parent.tagName)||parent.closest('strong,b,.price-emphasis'))return;
+  
+  const value=node.nodeValue;
+  pricePattern.lastIndex=0;
+  if(!pricePattern.test(value))return;
+  pricePattern.lastIndex=0;
+  const fragment=document.createDocumentFragment();
+  let last=0,match;
+  while((match=pricePattern.exec(value))){
+   if(match.index>last)fragment.append(document.createTextNode(value.slice(last,match.index)));
+   const strong=document.createElement('strong');
+   strong.className='price-emphasis';
+   strong.textContent=match[0];
+   fragment.append(strong);
+   last=match.index+match[0].length;
+  }
+  if(last<value.length)fragment.append(document.createTextNode(value.slice(last)));
+  node.replaceWith(fragment);
+ }
+ function scan(node){
+  if(node.nodeType===Node.TEXT_NODE){emphasizeTextNode(node);return;}
+  if(node.nodeType!==Node.ELEMENT_NODE&&node.nodeType!==Node.DOCUMENT_FRAGMENT_NODE)return;
+  if(node.nodeType===Node.ELEMENT_NODE&&skipTags.has(node.tagName))return;
+  const walker=document.createTreeWalker(node,NodeFilter.SHOW_TEXT);
+  const texts=[];
+  while(walker.nextNode())texts.push(walker.currentNode);
+  texts.forEach(emphasizeTextNode);
+ }
+ scan(document.body);
+ const observer=new MutationObserver(records=>{
+  records.forEach(record=>record.addedNodes.forEach(scan));
+ });
+ observer.observe(document.body,{childList:true,subtree:true});
+})();
+</script>
 </body></html>
