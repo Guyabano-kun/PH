@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.52",
+  "dataset_version": "0.2.53",
   "last_updated": "2026-11-15",
   "beaches": [
     {
@@ -55,17 +55,7 @@
           "status": "unknown",
           "note": "No verified polygon or surveyed start/end limits in this dataset."
         },
-        "shoreline_geometry": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "natural_shelter": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "coastline_orientation_degrees": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -135,78 +125,11 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "shore_slope": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "tidal_exposure": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "seasonal_erosion": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "sediment_study": [
-          {
-            "station_id": "WB-ST1",
-            "station_name": "White Beach Station 1",
-            "sampling_date": "2022-10",
-            "coordinates": {
-              "latitude": 11.9681861,
-              "longitude": 121.9186333,
-              "coordinate_type": "sediment_study_station",
-              "not_beach_centroid": true,
-              "source_id": "SRC-009"
-            },
-            "dominant_grain_size": "coarse silt",
-            "dominant_fraction_percent": 83.13,
-            "observation": "Coarse silt dominated the sampled sediment in all three sampled zones. Gray, sulfide-smelling sediment was observed below the surface in Station 1 in some sampled areas."
-          },
-          {
-            "station_id": "WB-ST2",
-            "station_name": "White Beach Station 2",
-            "sampling_date": "2022-10",
-            "coordinates": {
-              "latitude": 11.9609528,
-              "longitude": 121.9246444,
-              "coordinate_type": "sediment_study_station",
-              "not_beach_centroid": true,
-              "source_id": "SRC-009"
-            },
-            "dominant_grain_size": "coarse silt overall, with strong zone variation",
-            "dominant_fraction_percent": 45.75,
-            "zone_details": {
-              "medium_sand_high_tide_percent": 52.61,
-              "medium_sand_shallow_0_5m_percent": 43.93,
-              "coarse_silt_low_tide_percent": 81.72
-            },
-            "observation": "Gray, sulfide-smelling sediment was observed in some sampled areas at low-tide line and 0.5 m depth."
-          },
-          {
-            "station_id": "WB-ST3",
-            "station_name": "White Beach Station 3",
-            "sampling_date": "2022-10",
-            "coordinates": {
-              "latitude": 11.9533639,
-              "longitude": 121.9290306,
-              "coordinate_type": "sediment_study_station",
-              "not_beach_centroid": true,
-              "source_id": "SRC-009"
-            },
-            "dominant_grain_size": "medium sand",
-            "dominant_fraction_percent": 47.06,
-            "zone_details": {
-              "medium_sand_high_tide_percent": 57.97,
-              "medium_sand_low_tide_percent": 51.74,
-              "coarse_sand_shallow_0_5m_percent": 35.33
-            },
-            "observation": "No gray sediment was observed in Station 3 during the reported study."
-          }
-        ],
         "beach_length": {
           "value": 4000,
           "unit": "m",
@@ -228,11 +151,6 @@
             "SRC-118"
           ]
         },
-        "reef_crest": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "seabed_type": {
           "value": "Sandy bottom along central White Beach Stations 1–3.",
           "status": "supported",
@@ -240,16 +158,6 @@
           "source_ids": [
             "SRC-118"
           ]
-        },
-        "nearshore_depth": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "bathymetry_source": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "shore_snorkel_context": {
           "status": "supported",
@@ -287,11 +195,6 @@
           ],
           "note": "Directional exposure is inferred from the coarse east/west coast orientation and PAGASA's general monsoon wind directions. It is not a measured local wind/wave climatology; reefs, headlands and local bathymetry may alter actual nearshore conditions. Do not use this inference alone for activity suitability or safety ratings. Caticlan ATO/CAAP ERMOS observations from 2003–2004 in SRC-106 independently support the broad local seasonal wind-direction timing (NE October–March; SW June–September). This does not provide beach-level wind speed or present-day conditions; exposure remains provisional.",
           "method": "inferred_from_coarse_coast_orientation_and_general_monsoon_wind_direction"
-        },
-        "wave_climate": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "currents": {
           "value": null,
@@ -339,11 +242,6 @@
               "note": "No beach-specific hazard assessment is completed."
             }
           }
-        },
-        "visibility": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "tide_effects": {
           "value": null,
@@ -781,11 +679,6 @@
           "note": "General visitor-guide description, not a complete or real-time business inventory."
         },
         "lifeguard_coverage": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "emergency_access": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -1652,27 +1545,18 @@
           "status_counts": {
             "supported": 9,
             "provisional": 6,
-            "unknown": 30,
+            "unknown": 20,
             "other": 0
           },
           "unknown_field_paths": [
             "identity.alternative_names",
             "identity.administrative_area",
             "geography.beach_boundary",
-            "geography.shoreline_geometry",
             "geography.natural_shelter",
-            "geography.coastline_orientation_degrees",
             "shore.beach_width",
-            "shore.shore_slope",
             "shore.tidal_exposure",
-            "shore.seasonal_erosion",
-            "underwater.reef_crest",
-            "underwater.nearshore_depth",
-            "underwater.bathymetry_source",
-            "hydrodynamics.wave_climate",
             "hydrodynamics.currents",
             "hydrodynamics.rip_currents",
-            "hydrodynamics.visibility",
             "hydrodynamics.tide_effects",
             "activities.swimming",
             "activities.beach_relaxation",
@@ -1681,7 +1565,6 @@
             "activities.boat_excursions",
             "access.access_restrictions",
             "access.lifeguard_coverage",
-            "access.emergency_access",
             "excursions.regular_departure",
             "excursions.landing_access",
             "ecology.reef_condition",
@@ -1772,17 +1655,7 @@
           "status": "unknown",
           "note": "No verified polygon or surveyed start/end limits in this dataset."
         },
-        "shoreline_geometry": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "natural_shelter": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "coastline_orientation_degrees": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -1859,17 +1732,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "shore_slope": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "tidal_exposure": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "seasonal_erosion": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -1895,22 +1758,7 @@
           ],
           "note": "The peer-reviewed article describes an offshore reef at Bulabog; the 2020 BMDAI/BIWC study adds one local coral station (A1). Neither source provides a verified reef boundary, crest line, nearshore depth profile or current reef-condition assessment."
         },
-        "reef_crest": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "seabed_type": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "nearshore_depth": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "bathymetry_source": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -1947,11 +1795,6 @@
           ],
           "note": "Directional exposure is inferred from the coarse east/west coast orientation and PAGASA's general monsoon wind directions. It is not a measured local wind/wave climatology; reefs, headlands and local bathymetry may alter actual nearshore conditions. Do not use this inference alone for activity suitability or safety ratings. Caticlan ATO/CAAP ERMOS observations from 2003–2004 in SRC-106 independently support the broad local seasonal wind-direction timing (NE October–March; SW June–September). This does not provide beach-level wind speed or present-day conditions; exposure remains provisional.",
           "method": "inferred_from_coarse_coast_orientation_and_general_monsoon_wind_direction"
-        },
-        "wave_climate": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "currents": {
           "value": null,
@@ -1999,11 +1842,6 @@
               "note": "No beach-specific hazard assessment is completed."
             }
           }
-        },
-        "visibility": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "tide_effects": {
           "value": null,
@@ -2441,11 +2279,6 @@
           "note": "Visitor-guide inventory; operator availability and opening status are not guaranteed."
         },
         "lifeguard_coverage": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "emergency_access": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -3048,29 +2881,20 @@
           "status_counts": {
             "supported": 8,
             "provisional": 6,
-            "unknown": 32,
+            "unknown": 22,
             "other": 0
           },
           "unknown_field_paths": [
             "identity.alternative_names",
             "identity.administrative_area",
             "geography.beach_boundary",
-            "geography.shoreline_geometry",
             "geography.natural_shelter",
-            "geography.coastline_orientation_degrees",
             "shore.sand_type",
             "shore.beach_width",
-            "shore.shore_slope",
             "shore.tidal_exposure",
-            "shore.seasonal_erosion",
-            "underwater.reef_crest",
             "underwater.seabed_type",
-            "underwater.nearshore_depth",
-            "underwater.bathymetry_source",
-            "hydrodynamics.wave_climate",
             "hydrodynamics.currents",
             "hydrodynamics.rip_currents",
-            "hydrodynamics.visibility",
             "hydrodynamics.tide_effects",
             "activities.swimming",
             "activities.beach_relaxation",
@@ -3079,7 +2903,6 @@
             "activities.boat_excursions",
             "access.access_restrictions",
             "access.lifeguard_coverage",
-            "access.emergency_access",
             "excursions.regular_departure",
             "excursions.landing_access",
             "ecology.reef_condition",
@@ -3170,17 +2993,7 @@
           "status": "unknown",
           "note": "No verified polygon or surveyed start/end limits in this dataset."
         },
-        "shoreline_geometry": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "natural_shelter": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "coastline_orientation_degrees": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -3247,17 +3060,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "shore_slope": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "tidal_exposure": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "seasonal_erosion": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -3269,22 +3072,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "reef_crest": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "seabed_type": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "nearshore_depth": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "bathymetry_source": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -3300,11 +3088,6 @@
           "value": "variable_or_not_assessed",
           "status": "unknown",
           "source_ids": []
-        },
-        "wave_climate": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "currents": {
           "value": null,
@@ -3352,11 +3135,6 @@
               "note": "No beach-specific hazard assessment is completed."
             }
           }
-        },
-        "visibility": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "tide_effects": {
           "value": null,
@@ -3722,11 +3500,6 @@
           "note": "Availability and operating status of individual vendors and facilities are not guaranteed."
         },
         "lifeguard_coverage": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "emergency_access": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -4119,32 +3892,23 @@
           "status_counts": {
             "supported": 9,
             "provisional": 0,
-            "unknown": 34,
+            "unknown": 24,
             "other": 0
           },
           "unknown_field_paths": [
             "identity.alternative_names",
             "identity.administrative_area",
             "geography.beach_boundary",
-            "geography.shoreline_geometry",
             "geography.natural_shelter",
-            "geography.coastline_orientation_degrees",
             "shore.sand_type",
             "shore.beach_width",
-            "shore.shore_slope",
             "shore.tidal_exposure",
-            "shore.seasonal_erosion",
             "underwater.reef_presence",
-            "underwater.reef_crest",
             "underwater.seabed_type",
-            "underwater.nearshore_depth",
-            "underwater.bathymetry_source",
             "hydrodynamics.amihan_exposure",
             "hydrodynamics.habagat_exposure",
-            "hydrodynamics.wave_climate",
             "hydrodynamics.currents",
             "hydrodynamics.rip_currents",
-            "hydrodynamics.visibility",
             "hydrodynamics.tide_effects",
             "activities.swimming",
             "activities.beach_relaxation",
@@ -4152,7 +3916,6 @@
             "activities.kitesurfing_windsurfing",
             "activities.boat_excursions",
             "access.lifeguard_coverage",
-            "access.emergency_access",
             "excursions.regular_departure",
             "excursions.landing_access",
             "ecology.reef_condition",
@@ -4236,17 +3999,7 @@
           "status": "unknown",
           "note": "No verified polygon or surveyed start/end limits in this dataset."
         },
-        "shoreline_geometry": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "natural_shelter": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "coastline_orientation_degrees": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -4304,17 +4057,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "shore_slope": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "tidal_exposure": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "seasonal_erosion": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -4331,11 +4074,6 @@
             "SRC-001"
           ]
         },
-        "reef_crest": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "seabed_type": {
           "value": "Nearshore rock/coral patches reported; whole-beach substrate proportions and depth profile are unknown.",
           "status": "provisional",
@@ -4343,16 +4081,6 @@
           "source_ids": [
             "SRC-118"
           ]
-        },
-        "nearshore_depth": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "bathymetry_source": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "nearby_dive_sites": [
           {
@@ -4397,11 +4125,6 @@
           "value": "variable_or_not_assessed",
           "status": "unknown",
           "source_ids": []
-        },
-        "wave_climate": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "currents": {
           "value": null,
@@ -4449,11 +4172,6 @@
               "note": "No beach-specific hazard assessment is completed."
             }
           }
-        },
-        "visibility": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "tide_effects": {
           "value": null,
@@ -4845,11 +4563,6 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "emergency_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "legal_framework": {
           "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
           "status": "supported",
@@ -5177,30 +4890,21 @@
           "status_counts": {
             "supported": 6,
             "provisional": 5,
-            "unknown": 32,
+            "unknown": 22,
             "other": 0
           },
           "unknown_field_paths": [
             "identity.alternative_names",
             "identity.administrative_area",
             "geography.beach_boundary",
-            "geography.shoreline_geometry",
             "geography.natural_shelter",
-            "geography.coastline_orientation_degrees",
             "shore.sand_type",
             "shore.beach_width",
-            "shore.shore_slope",
             "shore.tidal_exposure",
-            "shore.seasonal_erosion",
-            "underwater.reef_crest",
-            "underwater.nearshore_depth",
-            "underwater.bathymetry_source",
             "hydrodynamics.amihan_exposure",
             "hydrodynamics.habagat_exposure",
-            "hydrodynamics.wave_climate",
             "hydrodynamics.currents",
             "hydrodynamics.rip_currents",
-            "hydrodynamics.visibility",
             "hydrodynamics.tide_effects",
             "activities.swimming",
             "activities.beach_relaxation",
@@ -5208,7 +4912,6 @@
             "activities.kitesurfing_windsurfing",
             "activities.boat_excursions",
             "access.lifeguard_coverage",
-            "access.emergency_access",
             "excursions.regular_departure",
             "excursions.landing_access",
             "ecology.reef_condition",
@@ -5298,17 +5001,7 @@
           "status": "unknown",
           "note": "No verified polygon or surveyed start/end limits in this dataset."
         },
-        "shoreline_geometry": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "natural_shelter": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "coastline_orientation_degrees": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -5346,17 +5039,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "shore_slope": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "tidal_exposure": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "seasonal_erosion": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -5368,22 +5051,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "reef_crest": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "seabed_type": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "nearshore_depth": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "bathymetry_source": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -5417,11 +5085,6 @@
           "value": "variable_or_not_assessed",
           "status": "unknown",
           "source_ids": []
-        },
-        "wave_climate": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "currents": {
           "value": null,
@@ -5469,11 +5132,6 @@
               "note": "No beach-specific hazard assessment is completed."
             }
           }
-        },
-        "visibility": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "tide_effects": {
           "value": null,
@@ -5837,11 +5495,6 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "emergency_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "legal_framework": {
           "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
           "status": "supported",
@@ -5987,32 +5640,23 @@
           "status_counts": {
             "supported": 4,
             "provisional": 4,
-            "unknown": 35,
+            "unknown": 25,
             "other": 0
           },
           "unknown_field_paths": [
             "identity.alternative_names",
             "identity.administrative_area",
             "geography.beach_boundary",
-            "geography.shoreline_geometry",
             "geography.natural_shelter",
-            "geography.coastline_orientation_degrees",
             "shore.sand_type",
             "shore.beach_width",
-            "shore.shore_slope",
             "shore.tidal_exposure",
-            "shore.seasonal_erosion",
             "underwater.reef_presence",
-            "underwater.reef_crest",
             "underwater.seabed_type",
-            "underwater.nearshore_depth",
-            "underwater.bathymetry_source",
             "hydrodynamics.amihan_exposure",
             "hydrodynamics.habagat_exposure",
-            "hydrodynamics.wave_climate",
             "hydrodynamics.currents",
             "hydrodynamics.rip_currents",
-            "hydrodynamics.visibility",
             "hydrodynamics.tide_effects",
             "activities.swimming",
             "activities.beach_relaxation",
@@ -6020,7 +5664,6 @@
             "activities.kitesurfing_windsurfing",
             "activities.boat_excursions",
             "access.lifeguard_coverage",
-            "access.emergency_access",
             "excursions.regular_departure",
             "excursions.landing_access",
             "ecology.water_quality_history",
@@ -6110,17 +5753,7 @@
           "status": "unknown",
           "note": "No verified polygon or surveyed start/end limits in this dataset."
         },
-        "shoreline_geometry": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "natural_shelter": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "coastline_orientation_degrees": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -6158,17 +5791,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "shore_slope": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "tidal_exposure": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "seasonal_erosion": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -6184,22 +5807,7 @@
             "SRC-001"
           ]
         },
-        "reef_crest": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "seabed_type": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "nearshore_depth": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "bathymetry_source": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -6233,11 +5841,6 @@
           "value": "variable_or_not_assessed",
           "status": "unknown",
           "source_ids": []
-        },
-        "wave_climate": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "currents": {
           "value": null,
@@ -6285,11 +5888,6 @@
               "note": "No beach-specific hazard assessment is completed."
             }
           }
-        },
-        "visibility": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "tide_effects": {
           "value": null,
@@ -6663,11 +6261,6 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "emergency_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "legal_framework": {
           "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
           "status": "supported",
@@ -6821,31 +6414,22 @@
           "status_counts": {
             "supported": 8,
             "provisional": 1,
-            "unknown": 34,
+            "unknown": 24,
             "other": 0
           },
           "unknown_field_paths": [
             "identity.alternative_names",
             "identity.administrative_area",
             "geography.beach_boundary",
-            "geography.shoreline_geometry",
             "geography.natural_shelter",
-            "geography.coastline_orientation_degrees",
             "shore.sand_type",
             "shore.beach_width",
-            "shore.shore_slope",
             "shore.tidal_exposure",
-            "shore.seasonal_erosion",
-            "underwater.reef_crest",
             "underwater.seabed_type",
-            "underwater.nearshore_depth",
-            "underwater.bathymetry_source",
             "hydrodynamics.amihan_exposure",
             "hydrodynamics.habagat_exposure",
-            "hydrodynamics.wave_climate",
             "hydrodynamics.currents",
             "hydrodynamics.rip_currents",
-            "hydrodynamics.visibility",
             "hydrodynamics.tide_effects",
             "activities.swimming",
             "activities.beach_relaxation",
@@ -6853,7 +6437,6 @@
             "activities.kitesurfing_windsurfing",
             "activities.boat_excursions",
             "access.lifeguard_coverage",
-            "access.emergency_access",
             "excursions.regular_departure",
             "excursions.landing_access",
             "ecology.water_quality_history",
@@ -6940,17 +6523,7 @@
           "status": "unknown",
           "note": "No verified polygon or surveyed start/end limits in this dataset."
         },
-        "shoreline_geometry": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "natural_shelter": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "coastline_orientation_degrees": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -6988,17 +6561,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "shore_slope": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "tidal_exposure": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "seasonal_erosion": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -7010,22 +6573,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "reef_crest": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "seabed_type": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "nearshore_depth": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "bathymetry_source": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -7041,11 +6589,6 @@
           "value": "variable_or_not_assessed",
           "status": "unknown",
           "source_ids": []
-        },
-        "wave_climate": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "currents": {
           "value": null,
@@ -7093,11 +6636,6 @@
               "note": "No beach-specific hazard assessment is completed."
             }
           }
-        },
-        "visibility": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "tide_effects": {
           "value": null,
@@ -7440,11 +6978,6 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "emergency_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "legal_framework": {
           "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
           "status": "supported",
@@ -7590,32 +7123,23 @@
           "status_counts": {
             "supported": 5,
             "provisional": 1,
-            "unknown": 37,
+            "unknown": 27,
             "other": 0
           },
           "unknown_field_paths": [
             "identity.alternative_names",
             "identity.administrative_area",
             "geography.beach_boundary",
-            "geography.shoreline_geometry",
             "geography.natural_shelter",
-            "geography.coastline_orientation_degrees",
             "shore.sand_type",
             "shore.beach_width",
-            "shore.shore_slope",
             "shore.tidal_exposure",
-            "shore.seasonal_erosion",
             "underwater.reef_presence",
-            "underwater.reef_crest",
             "underwater.seabed_type",
-            "underwater.nearshore_depth",
-            "underwater.bathymetry_source",
             "hydrodynamics.amihan_exposure",
             "hydrodynamics.habagat_exposure",
-            "hydrodynamics.wave_climate",
             "hydrodynamics.currents",
             "hydrodynamics.rip_currents",
-            "hydrodynamics.visibility",
             "hydrodynamics.tide_effects",
             "activities.swimming",
             "activities.beach_relaxation",
@@ -7625,7 +7149,6 @@
             "access.land_access",
             "access.access_restrictions",
             "access.lifeguard_coverage",
-            "access.emergency_access",
             "excursions.regular_departure",
             "excursions.landing_access",
             "ecology.water_quality_history",
@@ -7839,17 +7362,7 @@
           "status": "unknown",
           "note": "No verified polygon or surveyed start/end limits in this dataset."
         },
-        "shoreline_geometry": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "natural_shelter": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "coastline_orientation_degrees": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -7926,17 +7439,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "shore_slope": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "tidal_exposure": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "seasonal_erosion": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -7952,22 +7455,7 @@
             "SRC-001"
           ]
         },
-        "reef_crest": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "seabed_type": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "nearshore_depth": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "bathymetry_source": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -7998,11 +7486,6 @@
           "value": "variable_or_not_assessed",
           "status": "unknown",
           "source_ids": []
-        },
-        "wave_climate": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "currents": {
           "value": null,
@@ -8050,11 +7533,6 @@
               "note": "No beach-specific hazard assessment is completed."
             }
           }
-        },
-        "visibility": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "tide_effects": {
           "value": null,
@@ -8411,11 +7889,6 @@
           "note": "Seasonal visitor-guide description; do not treat absence of listing as proof that a facility does not exist."
         },
         "lifeguard_coverage": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "emergency_access": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -8797,31 +8270,22 @@
           "status_counts": {
             "supported": 6,
             "provisional": 5,
-            "unknown": 33,
+            "unknown": 23,
             "other": 0
           },
           "unknown_field_paths": [
             "identity.alternative_names",
             "identity.administrative_area",
             "geography.beach_boundary",
-            "geography.shoreline_geometry",
             "geography.natural_shelter",
-            "geography.coastline_orientation_degrees",
             "shore.sand_type",
             "shore.beach_width",
-            "shore.shore_slope",
             "shore.tidal_exposure",
-            "shore.seasonal_erosion",
-            "underwater.reef_crest",
             "underwater.seabed_type",
-            "underwater.nearshore_depth",
-            "underwater.bathymetry_source",
             "hydrodynamics.amihan_exposure",
             "hydrodynamics.habagat_exposure",
-            "hydrodynamics.wave_climate",
             "hydrodynamics.currents",
             "hydrodynamics.rip_currents",
-            "hydrodynamics.visibility",
             "hydrodynamics.tide_effects",
             "activities.swimming",
             "activities.beach_relaxation",
@@ -8829,7 +8293,6 @@
             "activities.kitesurfing_windsurfing",
             "activities.boat_excursions",
             "access.lifeguard_coverage",
-            "access.emergency_access",
             "excursions.regular_departure",
             "excursions.landing_access",
             "ecology.reef_condition",
@@ -8960,17 +8423,7 @@
           "status": "unknown",
           "note": "No verified polygon or surveyed start/end limits in this dataset."
         },
-        "shoreline_geometry": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "natural_shelter": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "coastline_orientation_degrees": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -9034,17 +8487,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "shore_slope": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "tidal_exposure": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "seasonal_erosion": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -9056,22 +8499,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "reef_crest": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "seabed_type": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "nearshore_depth": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "bathymetry_source": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -9087,11 +8515,6 @@
           "value": "variable_or_not_assessed",
           "status": "unknown",
           "source_ids": []
-        },
-        "wave_climate": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "currents": {
           "value": null,
@@ -9139,11 +8562,6 @@
               "note": "No beach-specific hazard assessment is completed."
             }
           }
-        },
-        "visibility": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "tide_effects": {
           "value": null,
@@ -9514,11 +8932,6 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "emergency_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "legal_framework": {
           "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
           "status": "supported",
@@ -9706,31 +9119,22 @@
           "status_counts": {
             "supported": 5,
             "provisional": 7,
-            "unknown": 33,
+            "unknown": 23,
             "other": 0
           },
           "unknown_field_paths": [
             "identity.administrative_area",
             "geography.beach_boundary",
-            "geography.shoreline_geometry",
             "geography.natural_shelter",
-            "geography.coastline_orientation_degrees",
             "shore.sand_type",
             "shore.beach_width",
-            "shore.shore_slope",
             "shore.tidal_exposure",
-            "shore.seasonal_erosion",
             "underwater.reef_presence",
-            "underwater.reef_crest",
             "underwater.seabed_type",
-            "underwater.nearshore_depth",
-            "underwater.bathymetry_source",
             "hydrodynamics.amihan_exposure",
             "hydrodynamics.habagat_exposure",
-            "hydrodynamics.wave_climate",
             "hydrodynamics.currents",
             "hydrodynamics.rip_currents",
-            "hydrodynamics.visibility",
             "hydrodynamics.tide_effects",
             "activities.swimming",
             "activities.beach_relaxation",
@@ -9738,7 +9142,6 @@
             "activities.kitesurfing_windsurfing",
             "activities.boat_excursions",
             "access.lifeguard_coverage",
-            "access.emergency_access",
             "excursions.regular_departure",
             "excursions.landing_access",
             "ecology.reef_condition",
@@ -9830,17 +9233,7 @@
           "status": "unknown",
           "note": "No verified polygon or surveyed start/end limits in this dataset."
         },
-        "shoreline_geometry": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "natural_shelter": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "coastline_orientation_degrees": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -9889,17 +9282,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "shore_slope": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "tidal_exposure": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "seasonal_erosion": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -9915,22 +9298,7 @@
             "SRC-001"
           ]
         },
-        "reef_crest": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "seabed_type": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "nearshore_depth": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "bathymetry_source": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -9961,11 +9329,6 @@
           "value": "variable_or_not_assessed",
           "status": "unknown",
           "source_ids": []
-        },
-        "wave_climate": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "currents": {
           "value": null,
@@ -10013,11 +9376,6 @@
               "note": "No beach-specific hazard assessment is completed."
             }
           }
-        },
-        "visibility": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "tide_effects": {
           "value": null,
@@ -10355,11 +9713,6 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "lifeguard_coverage": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "emergency_access": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -10706,31 +10059,22 @@
           "status_counts": {
             "supported": 5,
             "provisional": 4,
-            "unknown": 34,
+            "unknown": 24,
             "other": 0
           },
           "unknown_field_paths": [
             "identity.alternative_names",
             "identity.administrative_area",
             "geography.beach_boundary",
-            "geography.shoreline_geometry",
             "geography.natural_shelter",
-            "geography.coastline_orientation_degrees",
             "shore.sand_type",
             "shore.beach_width",
-            "shore.shore_slope",
             "shore.tidal_exposure",
-            "shore.seasonal_erosion",
-            "underwater.reef_crest",
             "underwater.seabed_type",
-            "underwater.nearshore_depth",
-            "underwater.bathymetry_source",
             "hydrodynamics.amihan_exposure",
             "hydrodynamics.habagat_exposure",
-            "hydrodynamics.wave_climate",
             "hydrodynamics.currents",
             "hydrodynamics.rip_currents",
-            "hydrodynamics.visibility",
             "hydrodynamics.tide_effects",
             "activities.swimming",
             "activities.beach_relaxation",
@@ -10739,7 +10083,6 @@
             "activities.boat_excursions",
             "access.facilities",
             "access.lifeguard_coverage",
-            "access.emergency_access",
             "excursions.regular_departure",
             "excursions.landing_access",
             "ecology.reef_condition",
@@ -10828,17 +10171,7 @@
           "status": "unknown",
           "note": "No verified polygon or surveyed start/end limits in this dataset."
         },
-        "shoreline_geometry": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "natural_shelter": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "coastline_orientation_degrees": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -10896,17 +10229,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "shore_slope": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "tidal_exposure": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "seasonal_erosion": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -10924,11 +10247,6 @@
             "SRC-113"
           ]
         },
-        "reef_crest": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "seabed_type": {
           "value": "Nearshore coral-garden/reef substrate is reported; the rest of the beach seabed and substrate proportions are not surveyed.",
           "status": "provisional",
@@ -10937,16 +10255,6 @@
             "SRC-118",
             "SRC-085"
           ]
-        },
-        "nearshore_depth": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "bathymetry_source": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "nearby_dive_sites": [
           {
@@ -10992,11 +10300,6 @@
           "value": "variable_or_not_assessed",
           "status": "unknown",
           "source_ids": []
-        },
-        "wave_climate": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "currents": {
           "value": null,
@@ -11044,11 +10347,6 @@
               "note": "No beach-specific hazard assessment is completed."
             }
           }
-        },
-        "visibility": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "tide_effects": {
           "value": null,
@@ -11409,11 +10707,6 @@
           "note": "Vendor availability is seasonal and unverified in real time; do not assume a designated swimming lane clear of boat operations."
         },
         "lifeguard_coverage": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "emergency_access": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -11779,30 +11072,21 @@
           "status_counts": {
             "supported": 7,
             "provisional": 4,
-            "unknown": 32,
+            "unknown": 22,
             "other": 0
           },
           "unknown_field_paths": [
             "identity.alternative_names",
             "identity.administrative_area",
             "geography.beach_boundary",
-            "geography.shoreline_geometry",
             "geography.natural_shelter",
-            "geography.coastline_orientation_degrees",
             "shore.sand_type",
             "shore.beach_width",
-            "shore.shore_slope",
             "shore.tidal_exposure",
-            "shore.seasonal_erosion",
-            "underwater.reef_crest",
-            "underwater.nearshore_depth",
-            "underwater.bathymetry_source",
             "hydrodynamics.amihan_exposure",
             "hydrodynamics.habagat_exposure",
-            "hydrodynamics.wave_climate",
             "hydrodynamics.currents",
             "hydrodynamics.rip_currents",
-            "hydrodynamics.visibility",
             "hydrodynamics.tide_effects",
             "activities.swimming",
             "activities.beach_relaxation",
@@ -11810,7 +11094,6 @@
             "activities.kitesurfing_windsurfing",
             "activities.boat_excursions",
             "access.lifeguard_coverage",
-            "access.emergency_access",
             "excursions.regular_departure",
             "excursions.landing_access",
             "ecology.reef_condition",
@@ -11900,17 +11183,7 @@
           "status": "unknown",
           "note": "No verified polygon or surveyed start/end limits in this dataset."
         },
-        "shoreline_geometry": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "natural_shelter": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "coastline_orientation_degrees": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -11959,17 +11232,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "shore_slope": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "tidal_exposure": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "seasonal_erosion": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -11981,22 +11244,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "reef_crest": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "seabed_type": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "nearshore_depth": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "bathymetry_source": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -12012,11 +11260,6 @@
           "value": "variable_or_not_assessed",
           "status": "unknown",
           "source_ids": []
-        },
-        "wave_climate": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "currents": {
           "value": null,
@@ -12064,11 +11307,6 @@
               "note": "No beach-specific hazard assessment is completed."
             }
           }
-        },
-        "visibility": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "tide_effects": {
           "value": null,
@@ -12366,11 +11604,6 @@
           "note": "No sufficiently verified source captured in this initial data pass."
         },
         "lifeguard_coverage": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "emergency_access": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -12689,32 +11922,23 @@
           "status_counts": {
             "supported": 5,
             "provisional": 0,
-            "unknown": 38,
+            "unknown": 28,
             "other": 0
           },
           "unknown_field_paths": [
             "identity.alternative_names",
             "identity.administrative_area",
             "geography.beach_boundary",
-            "geography.shoreline_geometry",
             "geography.natural_shelter",
-            "geography.coastline_orientation_degrees",
             "shore.sand_type",
             "shore.beach_width",
-            "shore.shore_slope",
             "shore.tidal_exposure",
-            "shore.seasonal_erosion",
             "underwater.reef_presence",
-            "underwater.reef_crest",
             "underwater.seabed_type",
-            "underwater.nearshore_depth",
-            "underwater.bathymetry_source",
             "hydrodynamics.amihan_exposure",
             "hydrodynamics.habagat_exposure",
-            "hydrodynamics.wave_climate",
             "hydrodynamics.currents",
             "hydrodynamics.rip_currents",
-            "hydrodynamics.visibility",
             "hydrodynamics.tide_effects",
             "activities.swimming",
             "activities.beach_relaxation",
@@ -12726,7 +11950,6 @@
             "access.access_restrictions",
             "access.facilities",
             "access.lifeguard_coverage",
-            "access.emergency_access",
             "excursions.regular_departure",
             "excursions.landing_access",
             "ecology.reef_condition",
@@ -12812,17 +12035,7 @@
           "status": "unknown",
           "note": "No verified polygon or surveyed start/end limits in this dataset."
         },
-        "shoreline_geometry": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "natural_shelter": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "coastline_orientation_degrees": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -12855,17 +12068,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "shore_slope": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "tidal_exposure": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "seasonal_erosion": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -12877,22 +12080,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "reef_crest": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "seabed_type": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "nearshore_depth": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "bathymetry_source": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -12908,11 +12096,6 @@
           "value": "variable_or_not_assessed",
           "status": "unknown",
           "source_ids": []
-        },
-        "wave_climate": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "currents": {
           "value": null,
@@ -12960,11 +12143,6 @@
               "note": "No beach-specific hazard assessment is completed."
             }
           }
-        },
-        "visibility": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "tide_effects": {
           "value": null,
@@ -13266,11 +12444,6 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "emergency_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "legal_framework": {
           "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
           "status": "supported",
@@ -13415,32 +12588,23 @@
           "status_counts": {
             "supported": 3,
             "provisional": 1,
-            "unknown": 39,
+            "unknown": 29,
             "other": 0
           },
           "unknown_field_paths": [
             "identity.alternative_names",
             "geography.coast_orientation",
             "geography.beach_boundary",
-            "geography.shoreline_geometry",
             "geography.natural_shelter",
-            "geography.coastline_orientation_degrees",
             "shore.sand_type",
             "shore.beach_width",
-            "shore.shore_slope",
             "shore.tidal_exposure",
-            "shore.seasonal_erosion",
             "underwater.reef_presence",
-            "underwater.reef_crest",
             "underwater.seabed_type",
-            "underwater.nearshore_depth",
-            "underwater.bathymetry_source",
             "hydrodynamics.amihan_exposure",
             "hydrodynamics.habagat_exposure",
-            "hydrodynamics.wave_climate",
             "hydrodynamics.currents",
             "hydrodynamics.rip_currents",
-            "hydrodynamics.visibility",
             "hydrodynamics.tide_effects",
             "activities.swimming",
             "activities.beach_relaxation",
@@ -13452,7 +12616,6 @@
             "access.access_restrictions",
             "access.facilities",
             "access.lifeguard_coverage",
-            "access.emergency_access",
             "excursions.regular_departure",
             "excursions.landing_access",
             "ecology.water_quality_history",
@@ -13548,17 +12711,7 @@
           "status": "unknown",
           "note": "No verified polygon or surveyed start/end limits in this dataset."
         },
-        "shoreline_geometry": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "natural_shelter": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "coastline_orientation_degrees": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -13583,17 +12736,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "shore_slope": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "tidal_exposure": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "seasonal_erosion": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -13605,22 +12748,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
         },
-        "reef_crest": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
         "seabed_type": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "nearshore_depth": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
-        },
-        "bathymetry_source": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
@@ -13636,11 +12764,6 @@
           "value": "variable_or_not_assessed",
           "status": "unknown",
           "source_ids": []
-        },
-        "wave_climate": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "currents": {
           "value": null,
@@ -13688,11 +12811,6 @@
               "note": "No beach-specific hazard assessment is completed."
             }
           }
-        },
-        "visibility": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
         },
         "tide_effects": {
           "value": null,
@@ -13998,11 +13116,6 @@
           "status": "unknown",
           "note": "No verified beach-specific lifeguard information found."
         },
-        "emergency_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No verified beach-specific emergency access information found."
-        },
         "legal_framework": {
           "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
           "status": "supported",
@@ -14140,7 +13253,6 @@
         "record_status": "draft",
         "overall_confidence": "low_to_moderate",
         "known_gaps": [
-          "Beach boundary and shoreline geometry",
           "Beach-specific coordinates; do not substitute Lugutan Mixing Zone point",
           "Exact public access route and current entry conditions",
           "Beach-specific water-quality sampling and current bathing status",
@@ -14170,31 +13282,22 @@
           "status_counts": {
             "supported": 5,
             "provisional": 3,
-            "unknown": 35,
+            "unknown": 25,
             "other": 0
           },
           "unknown_field_paths": [
             "geography.coast_orientation",
             "geography.beach_boundary",
-            "geography.shoreline_geometry",
             "geography.natural_shelter",
-            "geography.coastline_orientation_degrees",
             "shore.sand_type",
             "shore.beach_width",
-            "shore.shore_slope",
             "shore.tidal_exposure",
-            "shore.seasonal_erosion",
             "underwater.reef_presence",
-            "underwater.reef_crest",
             "underwater.seabed_type",
-            "underwater.nearshore_depth",
-            "underwater.bathymetry_source",
             "hydrodynamics.amihan_exposure",
             "hydrodynamics.habagat_exposure",
-            "hydrodynamics.wave_climate",
             "hydrodynamics.currents",
             "hydrodynamics.rip_currents",
-            "hydrodynamics.visibility",
             "hydrodynamics.tide_effects",
             "activities.swimming",
             "activities.beach_relaxation",
@@ -14205,7 +13308,6 @@
             "access.public_access_status",
             "access.facilities",
             "access.lifeguard_coverage",
-            "access.emergency_access",
             "excursions.regular_departure",
             "excursions.landing_access",
             "ecology.reef_condition"
@@ -14327,20 +13429,10 @@
           "status": "unknown",
           "note": "No georeferenced or surveyed boundary for this cove has been verified."
         },
-        "shoreline_geometry": {
-          "value": null,
-          "status": "unknown",
-          "note": "No independently verified shoreline geometry or beach polygon is available."
-        },
         "natural_shelter": {
           "value": null,
           "status": "unknown",
           "note": "No cove-specific wave-transformation or shelter analysis is available."
-        },
-        "coastline_orientation_degrees": {
-          "value": null,
-          "status": "unknown",
-          "note": "No measured cove-specific shoreline azimuth is available."
         },
         "coordinate_verification": {
           "source_ids": [
@@ -14383,17 +13475,7 @@
           "status": "unknown",
           "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
         },
-        "shore_slope": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
-        },
         "tidal_exposure": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
-        },
-        "seasonal_erosion": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
@@ -14415,22 +13497,7 @@
           "status": "unknown",
           "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
         },
-        "reef_crest": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
-        },
         "seabed_type": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
-        },
-        "nearshore_depth": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
-        },
-        "bathymetry_source": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
@@ -14448,11 +13515,6 @@
           "status": "unknown",
           "source_ids": [],
           "note": "No cove-specific wind/wave exposure assessment."
-        },
-        "wave_climate": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
         },
         "currents": {
           "value": null,
@@ -14500,11 +13562,6 @@
               "note": "No beach-specific hazard assessment is completed."
             }
           }
-        },
-        "visibility": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
         },
         "tide_effects": {
           "value": null,
@@ -14855,11 +13912,6 @@
           "status": "unknown",
           "note": "No current lifeguard roster or designated swimming-zone coverage verified."
         },
-        "emergency_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No cove-specific emergency vehicle or rescue access route verified."
-        },
         "legal_framework": {
           "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
           "status": "supported",
@@ -15135,13 +14187,11 @@
         "record_status": "draft",
         "overall_confidence": "low",
         "known_gaps": [
-          "Surveyed cove boundary and shoreline geometry",
           "Beach-specific representative point or entrance coordinates",
           "Cove-specific wave, wind, current and tide conditions",
           "Nearshore bathymetry, reef profile and seabed type",
           "Current public access, entry permission and cove-specific approach route",
           "Cove-specific water-quality monitoring and current bathing status; the Newcoast-area station cannot be assigned to an individual cove",
-          "Lifeguard coverage and emergency access",
           "Activity suitability scores and 12-month suitability matrix",
           "Cove-specific seasonal activity evidence",
           "Activity suitability has not yet been scored for the five selection activities",
@@ -15167,30 +14217,21 @@
           "status_counts": {
             "supported": 7,
             "provisional": 4,
-            "unknown": 34,
+            "unknown": 24,
             "other": 0
           },
           "unknown_field_paths": [
             "geography.coast_orientation",
             "geography.beach_boundary",
-            "geography.shoreline_geometry",
             "geography.natural_shelter",
-            "geography.coastline_orientation_degrees",
             "shore.beach_width",
-            "shore.shore_slope",
             "shore.tidal_exposure",
-            "shore.seasonal_erosion",
             "underwater.reef_presence",
-            "underwater.reef_crest",
             "underwater.seabed_type",
-            "underwater.nearshore_depth",
-            "underwater.bathymetry_source",
             "hydrodynamics.amihan_exposure",
             "hydrodynamics.habagat_exposure",
-            "hydrodynamics.wave_climate",
             "hydrodynamics.currents",
             "hydrodynamics.rip_currents",
-            "hydrodynamics.visibility",
             "hydrodynamics.tide_effects",
             "activities.swimming",
             "activities.beach_relaxation",
@@ -15200,7 +14241,6 @@
             "access.public_access_status",
             "access.facilities",
             "access.lifeguard_coverage",
-            "access.emergency_access",
             "excursions.regular_departure",
             "excursions.landing_access",
             "ecology.reef_condition",
@@ -15324,20 +14364,10 @@
           "status": "unknown",
           "note": "No georeferenced or surveyed boundary for this cove has been verified."
         },
-        "shoreline_geometry": {
-          "value": null,
-          "status": "unknown",
-          "note": "No independently verified shoreline geometry or beach polygon is available."
-        },
         "natural_shelter": {
           "value": null,
           "status": "unknown",
           "note": "No cove-specific wave-transformation or shelter analysis is available."
-        },
-        "coastline_orientation_degrees": {
-          "value": null,
-          "status": "unknown",
-          "note": "No measured cove-specific shoreline azimuth is available."
         },
         "coordinate_verification": {
           "source_ids": [
@@ -15386,17 +14416,7 @@
           "status": "unknown",
           "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
         },
-        "shore_slope": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
-        },
         "tidal_exposure": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
-        },
-        "seasonal_erosion": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
@@ -15408,22 +14428,7 @@
           "status": "unknown",
           "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
         },
-        "reef_crest": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
-        },
         "seabed_type": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
-        },
-        "nearshore_depth": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
-        },
-        "bathymetry_source": {
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
@@ -15441,11 +14446,6 @@
           "status": "unknown",
           "source_ids": [],
           "note": "No cove-specific wind/wave exposure assessment."
-        },
-        "wave_climate": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
         },
         "currents": {
           "value": null,
@@ -15493,11 +14493,6 @@
               "note": "No beach-specific hazard assessment is completed."
             }
           }
-        },
-        "visibility": {
-          "value": null,
-          "status": "unknown",
-          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
         },
         "tide_effects": {
           "value": null,
@@ -15848,11 +14843,6 @@
           "status": "unknown",
           "note": "No current lifeguard roster or designated swimming-zone coverage verified."
         },
-        "emergency_access": {
-          "value": null,
-          "status": "unknown",
-          "note": "No cove-specific emergency vehicle or rescue access route verified."
-        },
         "legal_framework": {
           "value": "General legal context only: Water Code Article 51 provides a public-use easement along sea shores for recreation, navigation, floatage, fishing and salvage; the applicable extent depends on the legal area/land classification and DENR easement rules. Boracay also has a specifically enforced 25+5 m beach easement. These provisions do not verify a usable public approach route, current entry permission, or the access status of this individual beach.",
           "status": "supported",
@@ -15983,13 +14973,11 @@
         "record_status": "draft",
         "overall_confidence": "low",
         "known_gaps": [
-          "Surveyed cove boundary and shoreline geometry",
           "Beach-specific representative point or entrance coordinates",
           "Cove-specific wave, wind, current and tide conditions",
           "Nearshore bathymetry, reef profile and seabed type",
           "Current public access, entry permission and cove-specific approach route",
           "Beach-specific water-quality monitoring and current bathing status",
-          "Lifeguard coverage and emergency access",
           "Activity suitability scores and 12-month suitability matrix",
           "Cove-specific seasonal activity evidence",
           "Activity suitability has not yet been scored for the five selection activities",
@@ -16015,30 +15003,21 @@
           "status_counts": {
             "supported": 6,
             "provisional": 3,
-            "unknown": 35,
+            "unknown": 25,
             "other": 0
           },
           "unknown_field_paths": [
             "geography.coast_orientation",
             "geography.beach_boundary",
-            "geography.shoreline_geometry",
             "geography.natural_shelter",
-            "geography.coastline_orientation_degrees",
             "shore.beach_width",
-            "shore.shore_slope",
             "shore.tidal_exposure",
-            "shore.seasonal_erosion",
             "underwater.reef_presence",
-            "underwater.reef_crest",
             "underwater.seabed_type",
-            "underwater.nearshore_depth",
-            "underwater.bathymetry_source",
             "hydrodynamics.amihan_exposure",
             "hydrodynamics.habagat_exposure",
-            "hydrodynamics.wave_climate",
             "hydrodynamics.currents",
             "hydrodynamics.rip_currents",
-            "hydrodynamics.visibility",
             "hydrodynamics.tide_effects",
             "activities.swimming",
             "activities.beach_relaxation",
@@ -16048,7 +15027,6 @@
             "access.public_access_status",
             "access.facilities",
             "access.lifeguard_coverage",
-            "access.emergency_access",
             "excursions.regular_departure",
             "excursions.landing_access",
             "ecology.water_quality_history",

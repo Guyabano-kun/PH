@@ -6,7 +6,7 @@ Last verified against GitHub `main`: 2026-11-15
 - Repository: `Guyabano-kun/PH`
 - Branch: `main`
 - Code/data baseline before adding project-control files: `c78d7d17bda612fdb9bf7ab5973fff99014f18`
-- Dataset version: `0.2.52`
+- Dataset version: `0.2.53`
 - `data/beaches.json`: 16 records
 - `data/sources.json`: 117 sources
 - Manifest counts: `beach_count=16`, `selection_beach_count=13`, `research_only_record_count=3`
@@ -15,6 +15,14 @@ Last verified against GitHub `main`: 2026-11-15
 - These context files were re-fetched from GitHub `main` after creation and their contents were verified.
 
 ## Completed work
+### Beach passport parameter reduction (2026-11-15)
+- Dataset advanced to `0.2.53`.
+- Removed the approved low-priority / hard-to-source parameters across all 16 beach records: `coastline_orientation_degrees`, `shoreline_geometry`, `shore_slope`, `seasonal_erosion`, `sediment_study`, `reef_crest`, `nearshore_depth`, `bathymetry_source`, `wave_climate`, `visibility`, and `emergency_access`.
+- Retained hydrodynamic safety context (`current_speed`, `current_direction`, `rip_currents`, `tide_effects`), lifeguard coverage, reef condition, pollution sources and monitoring stations.
+- Removed corresponding UI rendering and data references from `beaches.html`; top-level categories, beach IDs, picker logic and selection behavior are unchanged.
+- Recalculated field-review status counts and removed obsolete unknown-field paths / known-gap entries.
+
+## Previous completed work
 ### Evidence-led beach picker on the Boracay guide (2026-11-15)
 - Added a compact activity-first picker to `boracay.html`: five activity cards in a horizontal row, each with an icon, one leading beach name, and a `Подробнее / More` toggle for the alternatives. A `?` button opens a short methodology dialog.
 - Desktop layout uses five columns; mobile layout is a horizontally scrollable row. The card shows only the beach name, with no per-card evidence badges. The methodology explains evidence ordering.
@@ -90,7 +98,7 @@ These are historical checks. Re-run relevant checks against current `main` after
 - Candidate output is evidence-based and conditional, not a safety ranking or same-day sea-state forecast. Snorkelling notes require calm water/high tide as applicable; Balinghai requires resort admission and tide planning.
 - **Water quality:** latest publicly ingested station-specific annual dataset is CY 2023. The 2024 RSoBER documents a real-time pilot at Lugutan Bridge, but the results are confidential and not numerically published. March 2026 outfall samples are not ambient beach-water samples; laboratory TSS, color and fecal-coliform results were pending in the reports reviewed.
 - **Wind:** Bulabog now has an operator-front Kwind station and qualitative historical distribution chart. No machine-readable monthly percentages were available. White Beach's Amihan shelter evidence remains provisional.
-- **Reefs:** Tambisaan nearshore reef presence is supported; Diniwid is provisional; Balinghai, Ilig-Iligan and Tulubhan references remain locality/nearby-site evidence. Reef polygons, live-coral condition, visibility and beach-specific bathymetry remain unverified.
+- **Reefs:** Tambisaan nearshore reef presence is supported; Diniwid is provisional; Balinghai, Ilig-Iligan and Tulubhan references remain locality/nearby-site evidence. Reef polygons and live-coral condition remain unverified; detailed visibility and beach-level bathymetry are no longer tracked as passport parameters.
 - **Access:** practical routes are recorded where reported, but formal public right-of-way and current gate/entry status remain unverified for several beaches. Resort-managed access is not treated as unrestricted public access.
 - **Newcoast:** Cove 1 / Lapus-Lapus, Cove 2 / Boracay Newcoast Beach, Cove 3 / Savoy Beach mappings remain project-approved naming relationships, not surveyed boundaries. The DENR New Coast station is parent-area monitoring only, not assigned to any individual cove.
 - **Hagdan:** remains a provisional name candidate outside the 13-beach pool; no separate beach boundary or beach coordinate is established.
@@ -102,7 +110,7 @@ These are historical checks. Re-run relevant checks against current `main` after
 3. **Wind climatology:** obtain a machine-readable multi-year monthly wind series for Bulabog and west/north/east/south Boracay sectors. The operator chart is qualitative and does not support monthly numerical scoring.
 4. **Water quality:** obtain station-level 2024–2026 EMB results, sampling dates, compliance/event counts and laboratory parameters; keep outfall results separate from ambient beach stations.
 5. **Safety and access:** obtain current LGU/MDRRMO/Coast Guard swimming-zone maps, lifeguard deployment, red-flag rules, public approach routes and resort day-entry terms.
-6. **Marine ecology:** obtain georeferenced reef/seagrass polygons, recent coral-condition surveys, nearshore depth profiles and visibility/current observations for each beach.
+6. **Marine ecology:** obtain georeferenced reef/seagrass polygons and recent coral-condition surveys; retain current observations only where they can be sourced at beach-relevant scale.
 7. **Suitability methodology:** define activity-specific criteria, seasonal weighting, evidence confidence, access gates, adverse-condition exclusions and unknown-data treatment before calculating any of the 65 values or the 12 × 5 monthly matrix.
 
 ### Validation status
