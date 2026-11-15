@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.49",
+  "dataset_version": "0.2.50",
   "last_updated": "2026-11-15",
   "beaches": [
     {
@@ -350,6 +350,15 @@
               "SRC-081"
             ],
             "evidence_status": "research_abstract_modelled_context"
+          },
+          {
+            "season": "Island-scale tidal circulation · all seasons",
+            "observation": "The DENR-BMB / UP Marine Science Institute report describes Boracay circulation as tide-dominated. The northern and southern tips experience the strongest tidal currents; east and west sides generally have weaker flow when on the leeward side. Weak-flow and wake-recirculation areas may retain water.",
+            "scope": "Island-scale oceanographic context only. No beach-specific current speed, direction, rip-current occurrence, tide phase or bathing hazard is measured in this report. Do not infer that a particular beach is safe or has weak currents.",
+            "source_ids": [
+              "SRC-111"
+            ],
+            "evidence_status": "island_scale_research_context"
           }
         ],
         "surface_current_context": {
@@ -632,6 +641,20 @@
               ],
               "status": "provisional",
               "scope": "Historical regional wind-direction and modelled/qualitative wave context only; no beach-specific wave-height series, rip-current observations, or current bathing-safety determination."
+            },
+            {
+              "status": "provisional",
+              "claim": "During Amihan, White Beach is the relatively sheltered west-coast side of Boracay. The UP Diliman model comparison reports lower wind-and-wave setup at White Beach than at Bulabog under northeast-monsoon conditions. This is relative seasonal exposure evidence only, not a bathing-safety clearance or same-day sea-state assessment.",
+              "source_ids": [
+                "SRC-081",
+                "SRC-106"
+              ],
+              "season": "Amihan (approximately November–May)",
+              "limitations": [
+                "Modelled seasonal comparison, not a measured long-term wave series.",
+                "No same-day wave, current, rip-current, lifeguard or bathing-water status is implied.",
+                "Local red flags, lifeguard instructions and weather warnings override this seasonal context."
+              ]
             }
           ],
           "assessment_status": "not_scored"
@@ -737,6 +760,21 @@
             "SRC-031"
           ],
           "note": "Island-wide legal context. Do not infer a beach-specific route, gate, path, public-access entitlement beyond the legally defined easement, or current entry conditions from this record."
+        },
+        "historical_swimming_zone_evidence": {
+          "report_year": 2020,
+          "source_ids": [
+            "SRC-117"
+          ],
+          "reported_zones": [
+            "White Beach Station 1: three designated swimming areas reported",
+            "White Beach Station 2: two designated swimming areas reported",
+            "White Beach Station 3: two designated swimming areas reported"
+          ],
+          "reported_hours": "06:00–18:00 during the 2020 reopening protocol",
+          "reported_lifeguard_presence": "LGU lifeguard stations were reported at designated swimming areas during the 2020 reopening protocol.",
+          "current_status": "not_verified",
+          "note": "Historical PNA report only. These were temporary 2020 reopening/COVID-era arrangements; no current lifeguard deployment, swimming-zone boundary, operating hours or red-flag status is inferred."
         }
       },
       "excursions": {
@@ -1428,6 +1466,33 @@
                 "numeric_concentration_transcribed": false
               }
             ]
+          },
+          {
+            "study_id": "WQ-NUTRIENT-LOADING-BORACAY-2021",
+            "study_year": 2021,
+            "study_type": "coastal_water_quality_and_nutrient_loading",
+            "source_ids": [
+              "SRC-114"
+            ],
+            "sampling_sites": [
+              {
+                "site_id": "Long Beach",
+                "locality": "White Beach / Long Beach",
+                "linkage": "The article abstract explicitly names Long Beach",
+                "finding": "Reported as the second-best water-quality site among the seven studied, after Puka Beach."
+              }
+            ],
+            "findings": [
+              "The study abstract reports Long Beach as the second-best water-quality site among seven study sites, after Puka Beach.",
+              "The study attributes coastal water quality generally to nutrient inputs from untreated/partially treated wastewater and natural cleansing processes associated with autotrophs and mangrove swamps.",
+              "February–June, when tourist arrivals were highest, was identified as a critical period."
+            ],
+            "interpretation": "Historical comparative study context only. It does not provide numeric site results in the accessible abstract and is not a current bathing-water assessment.",
+            "limitations": [
+              "The repository exposes the abstract but not the full numerical tables.",
+              "Sampling dates and site-level numeric values are not available in the retrieved abstract.",
+              "The findings predate current monitoring rounds and must not be used as present-day bathing-water safety or a numeric beach score."
+            ]
           }
         ],
         "conservation_designations": [
@@ -1603,7 +1668,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 8
+          "revision": 9
         }
       },
       "record_type": "beach",
@@ -1921,6 +1986,24 @@
               "SRC-081"
             ],
             "evidence_status": "research_abstract_modelled_context"
+          },
+          {
+            "season": "Island-scale tidal circulation · all seasons",
+            "observation": "The DENR-BMB / UP Marine Science Institute report describes Boracay circulation as tide-dominated. The northern and southern tips experience the strongest tidal currents; east and west sides generally have weaker flow when on the leeward side. Weak-flow and wake-recirculation areas may retain water.",
+            "scope": "Island-scale oceanographic context only. No beach-specific current speed, direction, rip-current occurrence, tide phase or bathing hazard is measured in this report. Do not infer that a particular beach is safe or has weak currents.",
+            "source_ids": [
+              "SRC-111"
+            ],
+            "evidence_status": "island_scale_research_context"
+          },
+          {
+            "season": "Amihan wind observations · late October–April",
+            "observation": "Islakite reports a Kwind weather station directly in front of its Bulabog school and publishes live readings, forecast links and a historical October–April wind-distribution chart. The operator describes the main kite season as late October–late April (occasionally mid-May), predominantly northeast side-onshore, usually around 18–20 knots; December–March are generally windiest.",
+            "scope": "Operator-local station and spot-specific operating history. The public chart has no readable numeric monthly percentage scale; no monthly values are digitized. This is wind evidence only, not a measured wave/current or bathing-safety series.",
+            "source_ids": [
+              "SRC-112"
+            ],
+            "evidence_status": "specialist_operator_local_station"
           }
         ],
         "surface_current_context": {
@@ -2237,6 +2320,21 @@
               ],
               "status": "provisional",
               "scope": "Seasonal directional evidence and operator listings; not a monthly wind-speed assessment or guarantee of safe kite/windsurfing conditions."
+            },
+            {
+              "status": "supported",
+              "claim": "Bulabog is Boracay's established kiteboarding and windsurfing beach. Islakite's school-front Kwind station and operator history identify Amihan (late October–late April, sometimes mid-May) as the main period, with predominantly northeast side-onshore wind usually around 18–20 knots; December–March are generally windiest. Live readings and the operator's daily forecast must be checked before a session.",
+              "source_ids": [
+                "SRC-112",
+                "SRC-002",
+                "SRC-085"
+              ],
+              "season": "Amihan (late October–late April; sometimes mid-May)",
+              "limitations": [
+                "Specialist operator station and experience, not an official PAGASA climatological normal.",
+                "The public historical chart does not publish numeric monthly percentages.",
+                "Wind does not establish safe launch/landing, wave, current or swimming conditions."
+              ]
             }
           ],
           "assessment_status": "not_scored"
@@ -2940,7 +3038,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 5
+          "revision": 6
         }
       },
       "record_type": "beach",
@@ -3439,7 +3537,18 @@
           "confidence": "none",
           "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
           "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
-        }
+        },
+        "contextual_observations": [
+          {
+            "season": "Island-scale tidal circulation · all seasons",
+            "observation": "The DENR-BMB / UP Marine Science Institute report describes Boracay circulation as tide-dominated. The northern and southern tips experience the strongest tidal currents; east and west sides generally have weaker flow when on the leeward side. Weak-flow and wake-recirculation areas may retain water.",
+            "scope": "Island-scale oceanographic context only. No beach-specific current speed, direction, rip-current occurrence, tide phase or bathing hazard is measured in this report. Do not infer that a particular beach is safe or has weak currents.",
+            "source_ids": [
+              "SRC-111"
+            ],
+            "evidence_status": "island_scale_research_context"
+          }
+        ]
       },
       "activities": {
         "swimming": {
@@ -3827,6 +3936,35 @@
             ],
             "implementing_instrument_follow_up": "PTA Circular No. 3-82, dated 3 September 1982; full text and any boundary maps not independently recovered."
           }
+        ],
+        "historical_studies": [
+          {
+            "study_id": "WQ-NUTRIENT-LOADING-BORACAY-2021",
+            "study_year": 2021,
+            "study_type": "coastal_water_quality_and_nutrient_loading",
+            "source_ids": [
+              "SRC-114"
+            ],
+            "sampling_sites": [
+              {
+                "site_id": "Puka Beach",
+                "locality": "Near Mangrove Swamp 1",
+                "linkage": "Explicitly named in article abstract",
+                "finding": "Reported as the cleanest water-quality site among the seven sites studied; adjacent mangrove cover was described as relatively good."
+              }
+            ],
+            "findings": [
+              "The study abstract reports Puka Beach as the cleanest of seven study sites.",
+              "The study attributes coastal water quality generally to nutrient inputs from untreated/partially treated wastewater and natural cleansing processes associated with autotrophs and mangrove swamps.",
+              "February–June, when tourist arrivals were highest, was identified as a critical period."
+            ],
+            "interpretation": "Historical comparative study context only. It does not provide numeric site results in the accessible abstract and is not a current bathing-water assessment.",
+            "limitations": [
+              "The repository exposes the abstract but not the full numerical tables.",
+              "Sampling dates and site-level numeric values are not available in the retrieved abstract.",
+              "The findings predate current monitoring rounds and must not be used as present-day bathing-water safety or a numeric beach score."
+            ]
+          }
         ]
       },
       "evidence": [
@@ -3950,7 +4088,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 5
+          "revision": 6
         }
       },
       "record_type": "beach",
@@ -4125,7 +4263,25 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "nearby_dive_sites": [
+          {
+            "name": "Diniwid Sloping Reef",
+            "activity_type": "scuba_diving",
+            "depth_range_m": [
+              8,
+              18
+            ],
+            "source_ids": [
+              "SRC-113",
+              "SRC-001"
+            ],
+            "relation_status": "nearby_named_dive_site_not_surveyed_beach_boundary",
+            "coordinates": null,
+            "snorkelling_suitability": "not_established",
+            "note": "Operator-listed sloping reef dive site. TPB map separately lists Diniwid Reef; no surveyed beach-to-reef boundary or snorkelling suitability is established."
+          }
+        ]
       },
       "hydrodynamics": {
         "amihan_exposure": {
@@ -4440,7 +4596,18 @@
           "confidence": "none",
           "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
           "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
-        }
+        },
+        "contextual_observations": [
+          {
+            "season": "Island-scale tidal circulation · all seasons",
+            "observation": "The DENR-BMB / UP Marine Science Institute report describes Boracay circulation as tide-dominated. The northern and southern tips experience the strongest tidal currents; east and west sides generally have weaker flow when on the leeward side. Weak-flow and wake-recirculation areas may retain water.",
+            "scope": "Island-scale oceanographic context only. No beach-specific current speed, direction, rip-current occurrence, tide phase or bathing hazard is measured in this report. Do not infer that a particular beach is safe or has weak currents.",
+            "source_ids": [
+              "SRC-111"
+            ],
+            "evidence_status": "island_scale_research_context"
+          }
+        ]
       },
       "activities": {
         "swimming": {
@@ -4921,8 +5088,8 @@
         "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
         "change_tracking": {
           "created_at": "2026-11-14",
-          "updated_at": "2026-11-14",
-          "revision": 5
+          "updated_at": "2026-11-15",
+          "revision": 6
         }
       },
       "record_type": "beach",
@@ -5077,7 +5244,25 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "nearby_dive_sites": [
+          {
+            "name": "Punta Bunga Deep reef",
+            "activity_type": "scuba_diving",
+            "depth_range_m": [
+              32,
+              40
+            ],
+            "source_ids": [
+              "SRC-113",
+              "SRC-001"
+            ],
+            "relation_status": "nearby_named_dive_site_not_surveyed_beach_boundary",
+            "coordinates": null,
+            "snorkelling_suitability": "not_established",
+            "note": "Deep dive site; this depth range is not suitable evidence for shallow-water snorkelling or beach bathing."
+          }
+        ]
       },
       "hydrodynamics": {
         "amihan_exposure": {
@@ -5392,7 +5577,18 @@
           "confidence": "none",
           "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
           "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
-        }
+        },
+        "contextual_observations": [
+          {
+            "season": "Island-scale tidal circulation · all seasons",
+            "observation": "The DENR-BMB / UP Marine Science Institute report describes Boracay circulation as tide-dominated. The northern and southern tips experience the strongest tidal currents; east and west sides generally have weaker flow when on the leeward side. Weak-flow and wake-recirculation areas may retain water.",
+            "scope": "Island-scale oceanographic context only. No beach-specific current speed, direction, rip-current occurrence, tide phase or bathing hazard is measured in this report. Do not infer that a particular beach is safe or has weak currents.",
+            "source_ids": [
+              "SRC-111"
+            ],
+            "evidence_status": "island_scale_research_context"
+          }
+        ]
       },
       "activities": {
         "swimming": {
@@ -5688,8 +5884,8 @@
         "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
         "change_tracking": {
           "created_at": "2026-11-14",
-          "updated_at": "2026-11-14",
-          "revision": 4
+          "updated_at": "2026-11-15",
+          "revision": 5
         }
       },
       "record_type": "beach",
@@ -5844,7 +6040,25 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "nearby_dive_sites": [
+          {
+            "name": "Balinghai Wall",
+            "activity_type": "scuba_diving",
+            "depth_range_m": [
+              8,
+              20
+            ],
+            "source_ids": [
+              "SRC-113",
+              "SRC-001"
+            ],
+            "relation_status": "nearby_named_dive_site_not_surveyed_beach_boundary",
+            "coordinates": null,
+            "snorkelling_suitability": "not_established",
+            "note": "Operator-listed wall dive site. Its depth range is not beach-front bathing depth and does not establish snorkelling suitability or a reef polygon."
+          }
+        ]
       },
       "hydrodynamics": {
         "amihan_exposure": {
@@ -6159,7 +6373,18 @@
           "confidence": "none",
           "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
           "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
-        }
+        },
+        "contextual_observations": [
+          {
+            "season": "Island-scale tidal circulation · all seasons",
+            "observation": "The DENR-BMB / UP Marine Science Institute report describes Boracay circulation as tide-dominated. The northern and southern tips experience the strongest tidal currents; east and west sides generally have weaker flow when on the leeward side. Weak-flow and wake-recirculation areas may retain water.",
+            "scope": "Island-scale oceanographic context only. No beach-specific current speed, direction, rip-current occurrence, tide phase or bathing hazard is measured in this report. Do not infer that a particular beach is safe or has weak currents.",
+            "source_ids": [
+              "SRC-111"
+            ],
+            "evidence_status": "island_scale_research_context"
+          }
+        ]
       },
       "activities": {
         "swimming": {
@@ -6465,7 +6690,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 4
+          "revision": 5
         }
       },
       "record_type": "beach",
@@ -6935,7 +7160,18 @@
           "confidence": "none",
           "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
           "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
-        }
+        },
+        "contextual_observations": [
+          {
+            "season": "Island-scale tidal circulation · all seasons",
+            "observation": "The DENR-BMB / UP Marine Science Institute report describes Boracay circulation as tide-dominated. The northern and southern tips experience the strongest tidal currents; east and west sides generally have weaker flow when on the leeward side. Weak-flow and wake-recirculation areas may retain water.",
+            "scope": "Island-scale oceanographic context only. No beach-specific current speed, direction, rip-current occurrence, tide phase or bathing hazard is measured in this report. Do not infer that a particular beach is safe or has weak currents.",
+            "source_ids": [
+              "SRC-111"
+            ],
+            "evidence_status": "island_scale_research_context"
+          }
+        ]
       },
       "activities": {
         "swimming": {
@@ -7225,7 +7461,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 4
+          "revision": 5
         }
       },
       "record_type": "beach",
@@ -7546,7 +7782,22 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "nearby_dive_sites": [
+          {
+            "name": "Ilig-Iligan Reef",
+            "activity_type": "reef_survey",
+            "survey_year": 2010,
+            "depth_range_m": null,
+            "source_ids": [
+              "SRC-111"
+            ],
+            "relation_status": "locality_level_reef_survey_not_beach_front_geometry",
+            "coordinates": null,
+            "snorkelling_suitability": "not_established",
+            "note": "The DENR-BMB / UPMSI report cites 2010 surveys of Ilig-Iligan Reef. The report does not provide a beach-front polygon or prove the reef is accessible for shore-entry snorkelling."
+          }
+        ]
       },
       "hydrodynamics": {
         "amihan_exposure": {
@@ -7861,7 +8112,18 @@
           "confidence": "none",
           "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
           "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
-        }
+        },
+        "contextual_observations": [
+          {
+            "season": "Island-scale tidal circulation · all seasons",
+            "observation": "The DENR-BMB / UP Marine Science Institute report describes Boracay circulation as tide-dominated. The northern and southern tips experience the strongest tidal currents; east and west sides generally have weaker flow when on the leeward side. Weak-flow and wake-recirculation areas may retain water.",
+            "scope": "Island-scale oceanographic context only. No beach-specific current speed, direction, rip-current occurrence, tide phase or bathing hazard is measured in this report. Do not infer that a particular beach is safe or has weak currents.",
+            "source_ids": [
+              "SRC-111"
+            ],
+            "evidence_status": "island_scale_research_context"
+          }
+        ]
       },
       "activities": {
         "swimming": {
@@ -8382,7 +8644,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 7
+          "revision": 8
         }
       },
       "record_type": "beach",
@@ -8919,7 +9181,18 @@
           "confidence": "none",
           "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
           "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
-        }
+        },
+        "contextual_observations": [
+          {
+            "season": "Island-scale tidal circulation · all seasons",
+            "observation": "The DENR-BMB / UP Marine Science Institute report describes Boracay circulation as tide-dominated. The northern and southern tips experience the strongest tidal currents; east and west sides generally have weaker flow when on the leeward side. Weak-flow and wake-recirculation areas may retain water.",
+            "scope": "Island-scale oceanographic context only. No beach-specific current speed, direction, rip-current occurrence, tide phase or bathing hazard is measured in this report. Do not infer that a particular beach is safe or has weak currents.",
+            "source_ids": [
+              "SRC-111"
+            ],
+            "evidence_status": "island_scale_research_context"
+          }
+        ]
       },
       "activities": {
         "swimming": {
@@ -9266,7 +9539,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 6
+          "revision": 7
         }
       },
       "record_type": "beach",
@@ -9432,7 +9705,22 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "nearby_dive_sites": [
+          {
+            "name": "Tulubhan Reef",
+            "activity_type": "reef_survey",
+            "survey_year": 2010,
+            "depth_range_m": null,
+            "source_ids": [
+              "SRC-111"
+            ],
+            "relation_status": "locality_level_reef_survey_not_beach_front_geometry",
+            "coordinates": null,
+            "snorkelling_suitability": "not_established",
+            "note": "The DENR-BMB / UPMSI report cites 2010 surveys of Tulubhan Reef. The report does not provide a beach-front polygon or prove the reef is accessible for shore-entry snorkelling."
+          }
+        ]
       },
       "hydrodynamics": {
         "amihan_exposure": {
@@ -9747,7 +10035,18 @@
           "confidence": "none",
           "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
           "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
-        }
+        },
+        "contextual_observations": [
+          {
+            "season": "Island-scale tidal circulation · all seasons",
+            "observation": "The DENR-BMB / UP Marine Science Institute report describes Boracay circulation as tide-dominated. The northern and southern tips experience the strongest tidal currents; east and west sides generally have weaker flow when on the leeward side. Weak-flow and wake-recirculation areas may retain water.",
+            "scope": "Island-scale oceanographic context only. No beach-specific current speed, direction, rip-current occurrence, tide phase or bathing hazard is measured in this report. Do not infer that a particular beach is safe or has weak currents.",
+            "source_ids": [
+              "SRC-111"
+            ],
+            "evidence_status": "island_scale_research_context"
+          }
+        ]
       },
       "activities": {
         "swimming": {
@@ -10229,8 +10528,8 @@
         "public_display_policy": "Show supported facts and explicit unknowns; do not display internal confidence jargon unless the user opens data details.",
         "change_tracking": {
           "created_at": "2026-11-14",
-          "updated_at": "2026-11-14",
-          "revision": 4
+          "updated_at": "2026-11-15",
+          "revision": 5
         }
       },
       "record_type": "beach",
@@ -10405,7 +10704,25 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
-        }
+        },
+        "nearby_dive_sites": [
+          {
+            "name": "Tambisaan Reef",
+            "activity_type": "scuba_diving",
+            "depth_range_m": [
+              8,
+              17
+            ],
+            "source_ids": [
+              "SRC-113",
+              "SRC-001"
+            ],
+            "relation_status": "nearby_named_dive_site_not_surveyed_beach_boundary",
+            "coordinates": null,
+            "snorkelling_suitability": "not_established",
+            "note": "Named reef/dive site near Tambisaan. The existing Rough Guides report of a reef about 25 m offshore is retained separately as provisional snorkelling context; the operator depth range is not a beach-front depth profile."
+          }
+        ]
       },
       "hydrodynamics": {
         "amihan_exposure": {
@@ -10720,7 +11037,18 @@
           "confidence": "none",
           "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
           "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
-        }
+        },
+        "contextual_observations": [
+          {
+            "season": "Island-scale tidal circulation · all seasons",
+            "observation": "The DENR-BMB / UP Marine Science Institute report describes Boracay circulation as tide-dominated. The northern and southern tips experience the strongest tidal currents; east and west sides generally have weaker flow when on the leeward side. Weak-flow and wake-recirculation areas may retain water.",
+            "scope": "Island-scale oceanographic context only. No beach-specific current speed, direction, rip-current occurrence, tide phase or bathing hazard is measured in this report. Do not infer that a particular beach is safe or has weak currents.",
+            "source_ids": [
+              "SRC-111"
+            ],
+            "evidence_status": "island_scale_research_context"
+          }
+        ]
       },
       "activities": {
         "swimming": {
@@ -11236,7 +11564,7 @@
         "change_tracking": {
           "created_at": "2026-11-14",
           "updated_at": "2026-11-15",
-          "revision": 6
+          "revision": 7
         }
       },
       "record_type": "beach",
@@ -14154,7 +14482,18 @@
           "confidence": "none",
           "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
           "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
-        }
+        },
+        "contextual_observations": [
+          {
+            "season": "Island-scale tidal circulation · all seasons",
+            "observation": "The DENR-BMB / UP Marine Science Institute report describes Boracay circulation as tide-dominated. The northern and southern tips experience the strongest tidal currents; east and west sides generally have weaker flow when on the leeward side. Weak-flow and wake-recirculation areas may retain water.",
+            "scope": "Island-scale oceanographic context only. No beach-specific current speed, direction, rip-current occurrence, tide phase or bathing hazard is measured in this report. Do not infer that a particular beach is safe or has weak currents.",
+            "source_ids": [
+              "SRC-111"
+            ],
+            "evidence_status": "island_scale_research_context"
+          }
+        ]
       },
       "activities": {
         "swimming": {
@@ -14613,7 +14952,7 @@
         "change_tracking": {
           "created_at": "2026-11-15",
           "updated_at": "2026-11-15",
-          "revision": 2
+          "revision": 3
         }
       },
       "selection": {
@@ -15134,7 +15473,18 @@
           "confidence": "none",
           "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
           "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
-        }
+        },
+        "contextual_observations": [
+          {
+            "season": "Island-scale tidal circulation · all seasons",
+            "observation": "The DENR-BMB / UP Marine Science Institute report describes Boracay circulation as tide-dominated. The northern and southern tips experience the strongest tidal currents; east and west sides generally have weaker flow when on the leeward side. Weak-flow and wake-recirculation areas may retain water.",
+            "scope": "Island-scale oceanographic context only. No beach-specific current speed, direction, rip-current occurrence, tide phase or bathing hazard is measured in this report. Do not infer that a particular beach is safe or has weak currents.",
+            "source_ids": [
+              "SRC-111"
+            ],
+            "evidence_status": "island_scale_research_context"
+          }
+        ]
       },
       "activities": {
         "swimming": {
@@ -15448,7 +15798,7 @@
         "change_tracking": {
           "created_at": "2026-11-15",
           "updated_at": "2026-11-15",
-          "revision": 1
+          "revision": 2
         }
       },
       "selection": {
