@@ -742,7 +742,7 @@ body.map-screen-open{overflow:hidden!important;overscroll-behavior:none!importan
  }).catch(()=>{$('beach-query-result').innerHTML='<p class="beach-query-empty">'+(ru()?'Не удалось загрузить базу пляжей.':'Beach database could not be loaded.')+'</p>'});
  root.querySelectorAll('[data-query-mode]').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.queryMode;updateFields()}));
  ['query-month','query-activity','query-beach'].forEach(id=>$(id).addEventListener('change',run));
- document.getElementById('lang-btn')?.addEventListener('click',()=>setTimeout(()=>{if(data){$('query-month').selectedOptions[0].textContent=monthName(Number($('query-month').value));run()}},0));
+ document.getElementById('lang-btn')?.addEventListener('click',()=>setTimeout(()=>{if(data){const mv=Number($('query-month').value),av=$('query-activity').value,bv=$('query-beach').value;$('query-month').querySelectorAll('option').forEach(o=>o.textContent=monthName(Number(o.value)));$('query-activity').querySelectorAll('option').forEach(o=>{const a=activities.find(x=>x.id===o.value);if(a)o.textContent=activityName(a)});$('query-beach').querySelectorAll('option').forEach(o=>{const b=data.beaches.find(x=>x.id===o.value);if(b)o.textContent=beachName(b)});$('query-month').value=mv;$('query-activity').value=av;$('query-beach').value=bv;run()}},0));
 })();
 </script>
 
