@@ -16,7 +16,7 @@
 <div class="places"><a class="place" href="beaches.html"><span aria-hidden="true">🏖</span><span data-ru="Паспорта пляжей" data-en="Beach passports">Паспорта пляжей</span></a><a class="place" href="weather.html"><span aria-hidden="true">☀</span><span data-ru="Погода и море" data-en="Weather & Sea">Погода и море</span></a></div>
 <div class="settings"><button class="setting-btn lang-btn" id="lang-btn" type="button" aria-label="Language"><span class="setting-icon" id="lang-flag">🇷🇺</span></button><button class="setting-btn theme-btn" id="theme-btn" type="button" aria-label="Theme: Auto"><span class="setting-icon" id="theme-icon">◐</span></button></div></header>
 <div class="fx-ticker" aria-label="PHP exchange rates"><div id="fx-ticker-items" class="fx-ticker-items"><span>🇺🇸 USD —</span><span>🇪🇺 EUR —</span><span>🇨🇳 CNY —</span><span>🇯🇵 JPY —</span><span>🇰🇷 KRW —</span><span>🇦🇺 AUD —</span></div><a class="fx-select-link" href="currency.html" data-ru="Выбрать валюту" data-en="Choose currency">Выбрать валюту</a></div>
-<section class="hero"><video class="hero-video" autoplay muted loop playsinline webkit-playsinline="true" muted="muted" preload="auto" aria-hidden="true"><source src="/PH/boracay-hero.mp4" type="video/mp4"></video><div class="eyebrow" data-ru="ОСТРОВ · АКЛАН" data-en="ISLAND · AKLAN">ОСТРОВ · АКЛАН</div><h1 data-ru="Боракай" data-en="Boracay">Боракай</h1><p data-ru="Практический гид по White Beach, станциям, жилью, транспорту и условиям на острове." data-en="A practical guide to White Beach, stations, accommodation, transport and island conditions.">Практический гид по White Beach, станциям, жилью, транспорту и условиям на острове.</p></section>
+<section class="hero"><video class="hero-video" autoplay muted loop playsinline webkit-playsinline="true" muted="muted" preload="auto" aria-hidden="true"><source src="/PH/boracay-hero.mp4" type="video/mp4"></video><div class="eyebrow" data-ru="ОСТРОВ · АКЛАН" data-en="ISLAND · AKLAN">ОСТРОВ · АКЛАН</div><h1 data-ru="Боракай" data-en="Boracay">Боракай</h1><p data-ru="Практический гид по White Beach, станциям, жилью, транспорту и условиям на острове." data-en="A practical guide to White Beach, stations, accommodation, transport and island conditions.">Практический гид по White Beach, станциям, жилью, транспорту и условиям на острове.</p><a class="hero-map-link" href="#boracay-map-section" aria-label="Open Boracay map"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 3v15m6-12v15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="m12 8 2.3 2.3L12 13l-2.3-2.7L12 8Z" fill="#F7C86A" stroke="#F7C86A"/></svg><span>Map</span></a></section>
 <main class="wrap"><div class="grid">
 <a class="card card-link" href="#boracay-map-section" aria-label="White Beach и станции"><h2 data-ru="White Beach и станции" data-en="White Beach and stations">White Beach и станции</h2><p data-ru="White Beach — главный пляж острова. Станции 1, 2 и 3 — условные участки вдоль берега: первая обычно спокойнее и просторнее, вторая наиболее оживлённая, третья более расслабленная." data-en="White Beach is the island’s main shoreline. Stations 1, 2 and 3 are informal beach sections: Station 1 is generally roomier, Station 2 busiest, and Station 3 more laid-back.">White Beach — главный пляж острова. Станции 1, 2 и 3 — условные участки вдоль берега: первая обычно спокойнее и просторнее, вторая наиболее оживлённая, третья более расслабленная.</p></a>
 <a class="card card-link" href="#stay-guide" aria-label="Где жить"><h2 data-ru="Где жить" data-en="Where to stay">Где жить</h2><p data-ru="Выбирайте жильё по доступу к пляжу, уровню шума и маршруту до порта. Внутренние районы могут быть дешевле, но требуют ежедневных поездок к берегу." data-en="Choose accommodation by beach access, noise and route to the port. Inland areas may cost less but require daily trips to the shore.">Выбирайте жильё по доступу к пляжу, уровню шума и маршруту до порта. Внутренние районы могут быть дешевле, но требуют ежедневных поездок к берегу.</p></a>
@@ -246,7 +246,7 @@
    const relevant=valid.filter(o=>claimSeasonMatch(o.claim,season));
    if(['swimming','kitesurfing_windsurfing','boat_excursions'].includes(activity.id)&&!relevant.length)continue;
    const chosen=(relevant.length?relevant:valid).sort((a,b)=>(a.status==='supported'?0:1)-(b.status==='supported'?0:1));
-   rows.push({beach,observation:chosen[0]});
+   rows.push({beach,observation:chosen[0],seasonFallback:!relevant.length&&['swimming','kitesurfing_windsurfing','boat_excursions'].includes(activity.id)});
   }
   rows.sort((a,b)=>(a.observation.status==='supported'?0:1)-(b.observation.status==='supported'?0:1));
   return rows.slice(0,3);
@@ -256,12 +256,12 @@
   if(monthSelect){if(!monthSelect.options.length){for(let m=1;m<=12;m++){const option=document.createElement('option');option.value=String(m);monthSelect.append(option)}}monthSelect.querySelectorAll('option').forEach(option=>{option.textContent=monthName(Number(option.value))});if(!monthSelect.value)monthSelect.value=String(now.month)}
   seasonBox.textContent=(lang==='ru'?'Рекомендации для: ':'Recommendations for: ')+monthName(now.month)+' · '+seasonName;
   box.innerHTML=activities.map(activity=>{
-   const rows=getCandidates(data,activity,now.season),best=rows[0],bestName=best?beachName(best.beach,lang):(lang==='ru'?'Недостаточно данных':'Insufficient data');
+   const rows=getCandidates(data,activity,now.season),best=rows[0],fallbackNote=best?.seasonFallback?(activity.id==='swimming'?(lang==='ru'?'Сезонная рекомендация ограничена Amihan. В Habagat пляж более открыт волнам; купайтесь только при разрешающих флагах и безопасных условиях.':'Seasonal evidence is limited to Amihan. During Habagat this beach is more exposed to waves; swim only when flags and conditions permit.'):(lang==='ru'?'Основной сезон активности отличается от выбранного месяца. Проверьте фактические условия и доступность у оператора.':'The main season differs from the selected month. Check actual conditions and operator availability.')):'';
    const monitoring=best?.beach.id==='white'?'<div class="beach-picker-monitoring">'+(lang==='ru'?'DENR/EMB: мониторинг воды':'DENR/EMB: water monitoring')+'</div>':'';
    const alternatives=rows.slice(1);
    const altHtml=alternatives.length?alternatives.map(x=>'<div class="beach-picker-alt"><strong>'+esc(beachName(x.beach,lang))+'</strong>'+(x.observation.recommendation_note?'<small>'+esc(x.observation.recommendation_note)+'</small>':'')+'</div>').join(''):'<p class="beach-picker-empty">'+(lang==='ru'?'Альтернативы пока не подтверждены.':'No alternatives are confirmed yet.')+'</p>';
    const more=alternatives.length?'<button type="button" class="beach-picker-more" aria-expanded="false">'+(lang==='ru'?'Подробнее':'More')+' ('+alternatives.length+')</button><div class="beach-picker-alternatives" hidden>'+altHtml+'</div>':'';
-   const bestNote=best?.observation?.recommendation_note?'<div class="beach-picker-evidence">'+esc(best.observation.recommendation_note)+'</div>':'';return '<article class="beach-picker-card"><div class="beach-picker-icon" aria-hidden="true">'+activity.icon+'</div><h3>'+esc(lang==='ru'?activity.ru:activity.en)+'</h3><div class="beach-picker-best">'+esc(bestName)+'</div>'+monitoring+bestNote+more+'</article>';
+   const bestNote=best?.observation?.recommendation_note?'<div class="beach-picker-evidence">'+esc(best.observation.recommendation_note)+'</div>':'';const seasonalNote=fallbackNote?'<div class="beach-picker-evidence">'+esc(fallbackNote)+'</div>':'';return '<article class="beach-picker-card"><div class="beach-picker-icon" aria-hidden="true">'+activity.icon+'</div><h3>'+esc(lang==='ru'?activity.ru:activity.en)+'</h3><div class="beach-picker-best">'+esc(best?beachName(best.beach,lang):(lang==='ru'?'Рекомендация уточняется':'Recommendation being updated'))+'</div>'+monitoring+seasonalNote+bestNote+more+'</article>';
   }).join('');
   box.querySelectorAll('.beach-picker-more').forEach(button=>button.addEventListener('click',()=>{
    const panel=button.nextElementSibling,open=button.getAttribute('aria-expanded')!=='true';
@@ -460,6 +460,13 @@ const hohoMarkers=[];const hohoLayer=L.layerGroup().addTo(map);const hohoPoints=
 
 <style>
 .price-emphasis{font-weight:800}
+
+/* Hero map shortcut */
+.hero{position:relative}
+.hero-map-link{position:absolute;z-index:5;top:28px;right:34px;display:inline-flex;align-items:center;gap:10px;padding:12px 17px;border:1px solid rgba(255,255,255,.55);border-radius:16px;background:rgba(7,45,52,.72);color:#fff;text-decoration:none;font-weight:800;letter-spacing:.02em;box-shadow:0 8px 26px rgba(0,0,0,.22);backdrop-filter:blur(10px);transition:transform .2s ease,background .2s ease}
+.hero-map-link:hover{transform:translateY(-2px);background:rgba(5,73,79,.92)}
+.hero-map-link svg{width:24px;height:24px;flex:none}
+@media(max-width:640px){.hero-map-link{top:16px;right:16px;padding:9px 12px;gap:7px;border-radius:13px}.hero-map-link svg{width:21px;height:21px}}
 </style>
 <script>
 (()=>{
