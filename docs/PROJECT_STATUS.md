@@ -162,3 +162,10 @@ Do not invent suitability, access rights, safety conclusions, beach boundaries o
 - Removed the three-mode query UI and its separate query script. The five activity cards, methodology dialog, evidence eligibility rules and swimming cautions remain.
 - Data remains unchanged: `data/beaches.json` version `0.2.53`, 16 beaches, 13 selection-eligible, five activities.
 - Source-level structural checks and JSON parsing passed. Browser interaction, visual checks on mobile/desktop, and published Pages verification are pending.
+
+
+## Activity recommendation fallback and hero Map shortcut (2026-11-15)
+- Removed the visible “Insufficient data / Недостаточно данных” card state. When no eligible observation matches the selected monsoon season, the activity card now retains its evidence-backed beach candidate and displays a seasonal qualification rather than an empty result.
+- Swimming fallback is restricted to the eligible White Beach Amihan evidence and explicitly warns that Habagat exposure is higher; it is not a same-day safety clearance. Kite/windsurfing and boat-excursion fallbacks state that the selected month differs from the main evidence-backed season and require checking current conditions/operator details.
+- Added a compact SVG Map shortcut over the top-right of the Boracay hero banner, linking to the existing interactive map section. No new map implementation or data was introduced.
+- Browser/mobile visual verification and published Pages verification remain pending.
