@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.48",
+  "dataset_version": "0.2.49",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-15",
   "beach_count": 16,
@@ -29,6 +29,7 @@
     }
   },
   "notes": [
+    "Version 0.2.49: added the DENR-EMB New Coast Boracay ambient monitoring station (Brgy. Yapak, Class SB) to the Newcoast passport as parent-area context. The station DMS coordinate is independently identical in the 2022 and 2023 EMB station tables; it is stored only as a monitoring-station point, never as a beach coordinate. Added available CY 2022 and CY 2023 station-specific results. No assignment to Cove 1, Cove 2 or Cove 3 is inferred; Cove-specific monitoring and current bathing safety remain unverified.",
     "Version 0.2.48: corrected Hagdan Beach source attribution. The provisional beach-name claim now cites only the secondary travel guide SRC-008; TPB SRC-001 and the Aklan provincial directory SRC-086 are retained only for Sitio Hagdan locality context. Unrelated SRC-065 (Tropicana nearby-attractions listing for The Ruins / West Cove Ruins) was removed from Hagdan identity attribution. Hagdan remains excluded from the 13-beach selection pool; no beach boundary or coordinate is inferred.",
     "This is an initial evidence-backed data structure, not a completed suitability model.",
     "No activity scores are assigned in this dataset.",
