@@ -86,3 +86,10 @@ This is approved project scope/hierarchy, not a surveyed statement of physical b
 - The selector filters the 13 approved selection-eligible beach records and five activities. It uses only `supported` / `provisional` observations with `recommendation_eligible=true`.
 - This implementation does not calculate numeric suitability scores, weights, or a complete monthly matrix. It must not label evidence ordering as a scored ranking. If a seasonal month range is not explicitly supported, the tool returns insufficient evidence rather than extrapolating.
 - The existing compact current-season summary remains alongside the full selector. This is an additive implementation, not a replacement of the approved page placement or architecture.
+
+
+## Month-only beach selector revision (2026-11-15)
+- Supersedes the three-mode UI implementation description above: the user selected a simpler interaction consisting of one month selector and five fixed activity cards.
+- Each activity card returns evidence-backed beach recommendations for the selected month. The default is the current month in `Asia/Manila`.
+- The previous month + beach and activity + beach query paths are removed from the UI and client logic.
+- Preserve the existing evidence gate, supported-before-provisional ordering, and swimming hazard exclusions. Do not invent scores or infer seasonal suitability without eligible evidence.
