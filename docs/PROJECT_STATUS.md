@@ -23,8 +23,8 @@ Last verified against GitHub `main`: 2026-11-15
 - White Beach recommendation cards carry a short DENR/EMB water-quality monitoring note for Boat Stations 1–3. The separate Monitoring map filter and the three standalone DENR sampling-point tourist markers have been removed. The sampling coordinates remain in the underlying evidence records; they have not been reassigned as beach coordinates.
 - The map now displays 31 tourist points after removing the 3 monitoring-only markers. The existing beach category remains; no separate Monitoring category remains.
 - Added a direct details link to `weather.html`. No changes to `weather.html`, `data/beaches.json`, the Leaflet library, or the existing route/map mechanisms.
-- Main UI commit: `6d2b3ebcc76ecec06ade89ca282129c39138c8c8`; simplified beach-name-only cards commit: `63b375eed5433e407c249080a4123896a62267ce`.
-- Validation before the final simplification: all 9 inline scripts passed syntax compilation; no duplicate HTML IDs; Monitoring filter and standalone markers removed; five activity icons and methodology dialog present. Re-run checks against current HEAD after this commit.
+- Main UI commit: `6d2b3ebcc76ecec06ade89ca282129c39138c8c8`; beach-name-only cards commit: `63b375eed5433e407c249080a4123896a62267ce`; bilingual map-note correction: `29b65be1394a37efb98d77db4341d8c161fb956a`.
+- Validation against current HEAD `29b65be`: all 9 inline scripts pass JavaScript syntax compilation; no duplicate HTML IDs; 31 map place entries remain; Monitoring filter and all three standalone sampling markers are absent; five activity icons, alternatives toggles, methodology dialog, desktop five-column layout, mobile horizontal scroll, and bilingual White Beach monitoring note are present.
 - Visual rendering on the published URL remains `NOT VERIFIED` until the latest deployment is checked in a browser.
 - Scope: this is the default current-season evidence summary only. The three full query modes and a comparative monthly suitability matrix are not implemented; numeric scoring remains blocked pending methodology and evidence approval.
 
