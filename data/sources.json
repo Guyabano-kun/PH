@@ -1763,6 +1763,74 @@
       ],
       "limitations": "Caticlan wind-direction evidence is based on meteorological observations from 2003–2004 and does not provide a current long-term monthly wind-speed climatology for Boracay beaches. Monthly wind-speed and direction values in Table 18 are for Roxas and Romblon stations, not Caticlan; they must not be relabelled as Caticlan or beach-level measurements. Rainfall estimates use regional station proxies. Ocean-current figures show broad Philippine circulation, not Boracay nearshore currents or beach-specific tidal streams. Not suitable alone for activity scores, bathing safety or current conditions.",
       "reliability": "official_environmental_report_with_historical_local_wind_direction_and_regional_climate_proxies"
+    },
+    {
+      "id": "SRC-107",
+      "title": "NAMRIA – Provision of Free Printed or Digital Data / Hydrographic and Bathymetric Products",
+      "publisher": "National Mapping and Resource Information Authority",
+      "url": "https://namria.gov.ph/kiosk/namria02.htm",
+      "type": "official_hydrographic_data_product_catalogue",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Bathymetry Data ASCII XYZ",
+        "Digital bathymetry charts",
+        "Hydrographic Smooth Sheets for inshore ports and harbors",
+        "Digital Nautical Charts and Electronic Navigational Charts",
+        "Initial inquiry via NAMRIA One-stop Shop"
+      ],
+      "limitations": "Confirms listed product types and inquiry channels only. It does not confirm that Boracay coverage exists at the required resolution, that data are current, or that any numeric values are available. A formal, spatially bounded data request and metadata review are required.",
+      "reliability": "official_national_mapping_agency_product_catalogue"
+    },
+    {
+      "id": "SRC-108",
+      "title": "Global Ocean Waves Reanalysis (WAVERYS) – Copernicus Marine",
+      "publisher": "Copernicus Marine Service / Mercator Ocean International",
+      "url": "https://data.marine.copernicus.eu/product/GLOBAL_MULTIYEAR_WAV_001_032/description",
+      "type": "global_wave_reanalysis_product",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Global wave reanalysis from 1980 to August 2026",
+        "Significant wave height, wave period and direction",
+        "Wind-wave and swell partitions",
+        "Nominal 0.2 degree grid and 3-hourly fields"
+      ],
+      "limitations": "The approximately 0.2 degree grid is roughly 20 km and cannot resolve individual Boracay beaches, coves, reefs, surf zones or nearshore wave transformation. Offshore grid values may be used only as regional wave-climate context. They must not be presented as beach-front wave height or local safety conditions without validated downscaling and field verification.",
+      "reliability": "official_copernicus_global_wave_reanalysis_product_documentation"
+    },
+    {
+      "id": "SRC-109",
+      "title": "Global Ocean Physics Reanalysis (GLORYS12V1) – Copernicus Marine",
+      "publisher": "Copernicus Marine Service / Mercator Ocean International",
+      "url": "https://data.marine.copernicus.eu/product/GLOBAL_MULTIYEAR_PHY_001_030/description",
+      "type": "global_ocean_physics_reanalysis_product",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Global ocean physical reanalysis from 1993 onward",
+        "Ocean currents and sea-surface height",
+        "Nominal 1/12 degree horizontal grid",
+        "50 vertical levels"
+      ],
+      "limitations": "The approximately 1/12 degree grid is around 8–9 km and is too coarse for surf-zone, reef-channel, rip-current or individual beach current assessment. Daily/monthly or other product fields must be identified before extraction. Use only for regional background circulation, not as a beach-level current measurement.",
+      "reliability": "official_copernicus_global_ocean_reanalysis_product_documentation"
+    },
+    {
+      "id": "SRC-110",
+      "title": "GEBCO_2026 Grid – Global Bathymetric Compilation",
+      "publisher": "GEBCO Bathymetric Compilation Group / British Oceanographic Data Centre",
+      "url": "https://www.gebco.net/data-products-gridded-bathymetry-data/gebco2026-grid",
+      "type": "global_gridded_bathymetry_product",
+      "published_at": "2026-04",
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Global terrain and bathymetry grid at 15 arc-second intervals",
+        "Type Identifier Grid indicating source-data classes",
+        "User-defined area downloads and NetCDF/GeoTIFF products"
+      ],
+      "limitations": "GEBCO is a heterogeneous global compilation with mixed direct, indirect and interpolated source data. Its nominal 15 arc-second grid does not guarantee 15 arc-second measured bathymetric detail. Review the TID grid and source provenance for Boracay cells. GEBCO explicitly disclaims use for navigation or safety at sea; it is regional context only and cannot replace NAMRIA hydrographic data or calibrated nearshore survey.",
+      "reliability": "official_global_bathymetry_compilation_with_cell_level_source_type_metadata"
     }
   ]
 }
