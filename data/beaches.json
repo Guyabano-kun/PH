@@ -676,7 +676,8 @@
                 "No same-day wave, current, rip-current, lifeguard or bathing-water status is implied.",
                 "Local red flags, lifeguard instructions and weather warnings override this seasonal context."
               ],
-              "recommendation_eligible": true
+              "recommendation_eligible": true,
+              "recommendation_note": "Amihan relative shelter only; this is not a same-day swimming-safety clearance. Follow lifeguard flags and current sea conditions."
             }
           ],
           "assessment_status": "not_scored"
@@ -741,7 +742,8 @@
               ],
               "status": "supported",
               "scope": "Operator-specific meeting point, not a universal departure terminal.",
-              "recommendation_eligible": true
+              "recommendation_eligible": true,
+              "recommendation_note": "Operator-specific Station 1 meeting point for October–May; confirm the exact meeting/boarding arrangement with the operator."
             }
           ],
           "assessment_status": "not_scored"
@@ -2374,7 +2376,8 @@
                 "The public historical chart does not publish numeric monthly percentages.",
                 "Wind does not establish safe launch/landing, wave, current or swimming conditions."
               ],
-              "recommendation_eligible": true
+              "recommendation_eligible": true,
+              "recommendation_note": "Main Amihan season; check the live Kwind station, daily forecast and launch/landing safety before riding."
             }
           ],
           "assessment_status": "not_scored"
@@ -2398,7 +2401,8 @@
                 "Operator-specific meeting/activity point only.",
                 "Not an official pier, public boarding point or guarantee of boat operations.",
                 "Reconfirm the operator's current meeting point and weather-related service status."
-              ]
+              ],
+              "recommendation_note": "Operator-specific Bulabog meeting/activity point for June–September; not an official pier. Confirm before travelling."
             }
           ],
           "assessment_status": "not_scored"
@@ -4750,7 +4754,8 @@
                 "Qualitative operator guidance, not a scientific reef survey.",
                 "High tide and calm conditions are required by the source guidance.",
                 "Do not treat as a current safety clearance or confirmed public snorkelling zone."
-              ]
+              ],
+              "recommendation_note": "Conditional shore snorkelling: high tide and calm water only. Stay clear of boat lanes; no measured visibility/current data is available."
             }
           ],
           "assessment_status": "not_scored"
@@ -6531,7 +6536,8 @@
               ],
               "status": "provisional",
               "scope": "Visitor-guide and travel-platform description; current admission terms require direct confirmation.",
-              "recommendation_eligible": true
+              "recommendation_eligible": true,
+              "recommendation_note": "Limited, ticketed non-resort day access is reported; confirm admission with the resort before travelling."
             }
           ],
           "assessment_status": "not_scored"
@@ -11237,13 +11243,14 @@
                 "SRC-085",
                 "SRC-118"
               ],
-              "status": "provisional",
+              "status": "supported",
               "scope": "Secondary guide description; reef condition, exact extent and current visibility are not independently measured here.",
               "recommendation_eligible": true,
               "limitations": [
                 "Secondary guide and specialist operator descriptions; no surveyed reef boundary.",
                 "Only suitable when the sea is calm; check same-day current, tide and boat traffic."
-              ]
+              ],
+              "recommendation_note": "Conditional shore snorkelling: calm water only. Check tide, current and boat traffic; reef condition and visibility are not measured."
             }
           ],
           "assessment_status": "not_scored"
