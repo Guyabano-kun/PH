@@ -1464,6 +1464,223 @@
       ],
       "limitations": "Official resort page describes Punta Bunga and Banyugan as secluded beaches for guests and lists beach facility hours of 6am–6pm. It does not state public day-visitor admission terms, public right-of-way, booking requirements, or current beach access restrictions. Published hours are resort facility hours, not public beach opening hours.",
       "reliability": "high_for_resort_facility_description_not_public_access"
+    },
+    {
+      "id": "SRC-088",
+      "title": "Our Coves – Boracay Newcoast",
+      "publisher": "Global-Estate Resorts, Inc. / Boracay Newcoast",
+      "url": "https://boracaynewcoastph.com/coves/",
+      "type": "official_developer_beachfront_page",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Boracay Newcoast Cove 1",
+        "Boracay Newcoast Cove 2",
+        "Boracay Newcoast Cove 3",
+        "Developer descriptions of the three separate beach coves"
+      ],
+      "limitations": "The developer identifies three distinct coves and describes their intended character, but does not publish surveyed shoreline boundaries, centroid coordinates, public approach routes, visitor admission terms, or current beach operating rules.",
+      "reliability": "high_for_developer_naming_and_site_description_not_access_rights"
+    },
+    {
+      "id": "SRC-089",
+      "title": "Boracay Newcoast – Megaworld Properties",
+      "publisher": "Global-Estate Resorts, Inc. / Megaworld",
+      "url": "https://www.boracaynewcoast.com.ph/",
+      "type": "official_developer_destination_page",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Boracay Newcoast parent beachfront area",
+        "Published approximately 1 km white beach",
+        "Newcoast Station located at the center of the published white beach"
+      ],
+      "limitations": "Developer marketing page. The approximate 1 km figure applies to the wider Newcoast beachfront area, not to either Savoy Beach or Cove 2 individually. It is not a surveyed shoreline measurement or boundary polygon and does not establish public access.",
+      "reliability": "high_for_parent_area_and_developer_description"
+    },
+    {
+      "id": "SRC-090",
+      "title": "Savoy Hotel Boracay: The Newest Beach Destination",
+      "publisher": "Megaworld Fort (article cites BusinessMirror)",
+      "url": "https://megaworldfort.com.ph/news/savoy-hotel-boracay-newest-beach-destination/",
+      "type": "developer_hosted_media_article",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Savoy Hotel relationship to Newcoast Beach Cove 2",
+        "Published approximate 295 m length for Cove 2",
+        "Historical description of walking and shuttle access from Savoy Hotel to Cove 2"
+      ],
+      "limitations": "The article refers to Newcoast Beach Cove 2, not to the separate Savoy Beach POI. Its 295 m figure must not be assigned to Savoy Beach or treated as a surveyed boundary. The page could not be freshly opened during this pass; its indexed text identifies BusinessMirror as the original source.",
+      "reliability": "medium_secondary_media_reference_for_historical_cove_description"
+    },
+    {
+      "id": "SRC-091",
+      "title": "Newcoast Beach – Mapcarta / OpenStreetMap feature",
+      "publisher": "Mapcarta (OpenStreetMap data)",
+      "url": "https://mapcarta.com/N11150631205",
+      "type": "osm_tourism_attraction_point_reference",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Newcoast Beach name",
+        "OSM node 11150631205",
+        "Reference coordinate 11.98328, 121.92583"
+      ],
+      "limitations": "The OSM feature is tagged tourism=attraction and is a point node, not a natural=beach polygon, surveyed shoreline, centroid, or entrance. The coordinate is retained only as an OSM attraction reference point.",
+      "reliability": "medium_for_named_map_feature_point_only"
+    },
+    {
+      "id": "SRC-092",
+      "title": "Savoy Hotel Boracay Newcoast Map – nearby landmarks",
+      "publisher": "Trip.com",
+      "url": "https://www.trip.com/hot/hotel-map/savoy-hotel-boracay-newcoast-map.html",
+      "type": "travel_platform_landmark_listing",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Savoy Beach listed as a separate landmark",
+        "Boracay Newcoast Cove 2 Beach listed as a separate landmark",
+        "Published approximate distances from Savoy Hotel to both landmarks"
+      ],
+      "limitations": "Third-party travel-platform landmark distances are approximate and do not provide surveyed coordinates, beach boundaries, or proof that the two named features are separate continuous sand polygons. The listing places Savoy Beach and Cove 2 about 0.54 km and 0.55 km from the hotel respectively.",
+      "reliability": "medium_for_separate_landmark_naming_not_geometry"
+    },
+    {
+      "id": "SRC-093",
+      "title": "Savoy Beach and Boracay Newcoast Cove 2 Beach – Mapbox POI references",
+      "publisher": "Mapbox Search data",
+      "url": null,
+      "type": "commercial_map_poi_reference",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Savoy Beach POI reference at 11.98573567, 121.92513664",
+        "Boracay Newcoast Cove 2 Beach POI reference at 11.98335055, 121.92560262"
+      ],
+      "limitations": "Mapbox search returned POI marker coordinates, not beach centroids, entrances, shoreline points, or polygons. The two POI markers are approximately 270 m apart. These references are not substituted into the beach coordinate fields. Mapbox record IDs: Savoy Beach dXJuOm1ieHBvaTpkZDE0MTc0OC0xMWE5LTQzMGMtOWU4YS1hNzYyMjg2MWIyODU; Cove 2 dXJuOm1ieHBvaTozNjA3YzM5ZS0xMGNhLTQyZjEtODMyYi1mMWJiMGZlZjE3YWM.",
+      "reliability": "medium_commercial_poi_reference_only"
+    },
+    {
+      "id": "SRC-094",
+      "title": "EIS Summary for Public Hearing – Boracay Newcoast Integrated Tourism Estate / Newcoast Island Resort",
+      "publisher": "Global-Estate Resorts, Inc.; hosted by DENR-EMB Region VI",
+      "url": "https://r6.emb.gov.ph/wp-content/uploads/2026/02/EIS-Summary-for-the-Public-Boracay-Newcoast.pdf",
+      "type": "officially_hosted_proponent_eis_summary",
+      "published_at": "2026-02-04",
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Boracay Newcoast project location and internal road context",
+        "Newcoast Drive described as the development's main road",
+        "Public-scoping comments concerning public access to the NIR area for fishing and swimming",
+        "Proponent response that the road/area discussed was private property and would be referred to management",
+        "25+5 m beach easement certificate listed among project attachments"
+      ],
+      "limitations": "The EIS is a proponent-prepared project document hosted by EMB. The public-access discussion records historical public-scoping comments, not a current access rule or final legal determination. It does not establish a present public beach approach route, gate status, or visitor admission policy. The listed easement certificate does not by itself prove an accessible public route.",
+      "reliability": "high_for_documented_project_and_historical_scoping_context_not_current_access"
+    },
+    {
+      "id": "SRC-095",
+      "title": "Boracay Hop On Hop Off Shuttle – route and stop map",
+      "publisher": "HOHO Boracay / Philippine Explorer",
+      "url": "https://resa.philippineexplorer.com/uploads/tariffs/1728291819.pdf",
+      "type": "transport_provider_route_map_pdf",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "H17 Newcoast / Keyhole stop",
+        "Published stop description references Savoy and Belmont hotels"
+      ],
+      "limitations": "The route map establishes a transport stop in the Newcoast district, not a public right-of-way to any individual beach, a beach entrance, or unrestricted beach admission. Route operation and timetable must be rechecked before time-sensitive publication.",
+      "reliability": "medium_for_published_transport_stop_not_beach_access"
+    },
+    {
+      "id": "SRC-096",
+      "title": "Location – Boracay Newcoast",
+      "publisher": "Global-Estate Resorts, Inc. / Boracay Newcoast",
+      "url": "https://boracaynewcoastph.com/location/",
+      "type": "official_developer_access_and_location_page",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Boracay Newcoast location in Barangay Yapak",
+        "Published access to the development by e-tricycle or shuttle from Cagban Port"
+      ],
+      "limitations": "The page describes transport to the Newcoast development. It does not identify a public beach entrance, confirm public admission to the coves, or guarantee shuttle service to non-hotel visitors.",
+      "reliability": "high_for_developer_published_district_access_not_beach_entry"
+    },
+    {
+      "id": "SRC-097",
+      "title": "New Island Experiences – 5 reasons why Boracay Newcoast is a must-visit this Summer",
+      "publisher": "BusinessMirror",
+      "url": "https://businessmirror.com.ph/2024/03/09/new-island-experiences-5-reasons-why-boracay-newcoast-is-a-must-visit-this-summer/",
+      "type": "media_article_reporting_developer_guest_access_claim",
+      "published_at": "2024-03-09",
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Published claim that Newcoast Beach is nearly 1 km long",
+        "Published claim that hotel guests enjoy exclusive access to Newcoast Beach"
+      ],
+      "limitations": "Media article describing the developer's guest experience and marketing position. It is not a legal opinion or a current public-access notice; it does not prove that all shoreline access is legally restricted or establish a public approach route.",
+      "reliability": "medium_reputable_media_report_of_developer_claim"
+    },
+    {
+      "id": "SRC-098",
+      "title": "2024 Boracay Tourist Spots + 15 Things To Do in Boracay",
+      "publisher": "Detourista",
+      "url": "https://www.detourista.com/guide/boracay-attractions/",
+      "type": "secondary_travel_guide",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "Newcoast Beaches and Keyhole as visitor attractions",
+        "Guide claim that non-hotel visitors can visit the Newcoast district",
+        "Published route suggestions using HOHO stop H17 or e-tricycle"
+      ],
+      "limitations": "Secondary visitor guide. Its statement that Newcoast is open to everyone conflicts with developer/BusinessMirror guest-exclusive wording and does not establish legal beach access, current gate practice, or permission to enter each cove. District access is not proof of unrestricted beach access.",
+      "reliability": "medium_secondary_visitor_guide_conflicting_access_claim"
+    },
+    {
+      "id": "SRC-099",
+      "title": "Savoy Beach – user-supplied Google Maps place link",
+      "publisher": "User-supplied Google Maps reference",
+      "url": "https://maps.app.goo.gl/m3x9KLM6YRPPW5Cv7",
+      "type": "user_supplied_google_maps_short_link",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "User-designated Savoy Beach place reference"
+      ],
+      "limitations": "The short link could not be expanded by the available browser retrieval in this pass. It is preserved as the user's intended place reference only; no coordinates, geometry, or access details are inferred from it.",
+      "reliability": "user_supplied_reference_not_independently_resolved"
+    },
+    {
+      "id": "SRC-100",
+      "title": "Boracay Newcoast Beach – user-supplied Google Maps place link",
+      "publisher": "User-supplied Google Maps reference",
+      "url": "https://maps.app.goo.gl/jAKByJmYWKKL42237",
+      "type": "user_supplied_google_maps_short_link",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "User-designated Boracay Newcoast Beach place reference"
+      ],
+      "limitations": "The short link could not be expanded by the available browser retrieval in this pass. It is preserved as the user's intended place reference only; no coordinates, geometry, or access details are inferred from it.",
+      "reliability": "user_supplied_reference_not_independently_resolved"
+    },
+    {
+      "id": "SRC-101",
+      "title": "Boracay Newcoast Beaches – user-supplied Google Maps area link",
+      "publisher": "User-supplied Google Maps reference",
+      "url": "https://maps.app.goo.gl/3HWVqy4MGWxq4bKX8",
+      "type": "user_supplied_google_maps_short_link",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "coverage": [
+        "User-designated Boracay Newcoast parent area reference"
+      ],
+      "limitations": "The short link could not be expanded by the available browser retrieval in this pass. It is preserved as the user's intended parent-area reference only; no coordinates, geometry, or access details are inferred from it.",
+      "reliability": "user_supplied_reference_not_independently_resolved"
     }
   ]
 }
