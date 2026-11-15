@@ -1,76 +1,192 @@
 <!doctype html>
-<html lang="ru" data-theme="auto"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Курсы валют к филиппинскому песо PHP"><title>Курсы валют к PHP — Boracay Guide</title>
+<html lang="ru" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Обмен валюты, наличные, ATM, банковские карты, Maya, GCash и QR Ph на Боракае и Филиппинах.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://guyabano-kun.github.io/PH/currency.html">
+<title>Обмен валюты и оплата на Боракае — Philippines Guide</title>
 <style>
 :root{color-scheme:light dark;--bg:#f7f3e9;--surface:#fffdf7;--ink:#182e30;--muted:#667b79;--line:#d9e1d8;--accent:#087f82;--hero:#063f47;--sun:#f1b84b}
 [data-theme=dark]{--bg:#101b1d;--surface:#1a292b;--ink:#eef5ef;--muted:#a8bbb6;--line:#34484a;--accent:#68d3c8;--hero:#092f36;--sun:#f1c66b}
 @media(prefers-color-scheme:dark){:root[data-theme=auto]{--bg:#101b1d;--surface:#1a292b;--ink:#eef5ef;--muted:#a8bbb6;--line:#34484a;--accent:#68d3c8;--hero:#092f36;--sun:#f1c66b}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,sans-serif}
-.top{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px clamp(14px,4vw,56px);background:var(--surface);border-bottom:1px solid var(--line)}
-a{color:var(--accent)}.back{font-weight:750;text-decoration:none}.settings{display:flex;gap:8px}.settings select,.picker select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:8px 11px}
-main{width:min(100% - 28px,900px);margin:36px auto 64px}
-h1{font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.2;letter-spacing:-.04em;margin:0 0 10px}
-.lead{color:var(--muted);margin:0 0 24px}
-.panel{padding:clamp(18px,4vw,30px);background:var(--surface);border:1px solid var(--line);border-radius:5px 22px 5px 22px;margin:18px 0}
-.picker{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.picker label{font-weight:750}.picker select{min-width:min(100%,320px);max-width:100%}
-.selected{margin-top:22px;padding:18px;background:var(--bg);border-radius:14px}
-.selected .pair{font-size:.9rem;font-weight:800;color:var(--muted)}.selected .value{font-size:clamp(1.8rem,5vw,2.6rem);font-weight:850;line-height:1.2;font-variant-numeric:tabular-nums;margin-top:5px}
-.rates{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-.rate{padding:13px;background:var(--bg);border:1px solid var(--line);border-radius:12px;min-width:0}
-.rate strong{display:block;font-size:.9rem}.rate span{font-weight:800;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
-.small{font-size:.875rem;color:var(--muted);margin-top:12px}
-button{font:inherit;border:0;border-radius:999px;background:var(--hero);color:#fff;padding:9px 16px;font-weight:750;cursor:pointer}
-@media(max-width:600px){.rates{grid-template-columns:repeat(2,minmax(0,1fr))}.top{align-items:flex-start}.settings{flex-wrap:wrap}}
-
-/* Compact language and appearance controls */
-.settings{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
-.setting-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:40px;padding:8px 13px;border:1px solid var(--line);border-radius:999px;background:var(--bg);color:var(--ink);font:700 .9rem/1 system-ui,-apple-system,sans-serif;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,.05);transition:background .18s,border-color .18s,transform .18s}
-.setting-btn:hover{border-color:var(--accent);background:var(--surface);transform:translateY(-1px)}
-.setting-btn:active{transform:translateY(0)}
+*{box-sizing:border-box}html{font-size:16px;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.62 Inter,ui-sans-serif,system-ui,-apple-system,sans-serif}
+a{color:var(--accent)}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px clamp(14px,4vw,56px);background:var(--surface);border-bottom:1px solid var(--line)}
+.back{font-weight:750;text-decoration:none}.settings{display:flex;align-items:center;gap:7px}
+.setting-btn{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;background:var(--bg);color:var(--ink);font:700 1rem system-ui;cursor:pointer}
 .setting-btn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
-.setting-icon{font-size:1.12rem;line-height:1}
-@media(max-width:480px){.setting-btn{min-height:38px;padding:7px 11px;font-size:.88rem}}
+main{width:min(100% - 32px,1120px);margin:30px auto 64px}
+h1{font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.12;letter-spacing:-.05em;margin:0 0 10px}
+h2{font-size:clamp(1.35rem,2.6vw,1.8rem);line-height:1.25;letter-spacing:-.035em;margin:0 0 13px}
+h3{font-size:1.08rem;line-height:1.3;margin:0 0 8px}
+p{margin:8px 0}.lead{color:var(--muted);margin:0 0 22px;max-width:850px}
+.panel{padding:clamp(17px,3vw,26px);background:var(--surface);border:1px solid var(--line);border-radius:5px 20px 5px 20px;margin:18px 0;min-width:0}
+.rate-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.picker{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.picker label{font-weight:750}
+select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:9px 11px;max-width:100%}
+.selected{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:16px;padding:15px 17px;background:var(--bg);border-radius:12px}
+.pair{font-size:.9rem;font-weight:800;color:var(--muted)}.value{font-size:clamp(1.7rem,4vw,2.25rem);font-weight:850;line-height:1.2;font-variant-numeric:tabular-nums}
+.rates{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:14px}
+.rate{padding:11px 12px;background:var(--bg);border:1px solid var(--line);border-radius:11px;min-width:0}
+.rate strong{display:block;font-size:.84rem;color:var(--muted)}.rate span{font-weight:800;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.small{font-size:.84rem;color:var(--muted)}.status{margin-top:9px}
+.content-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.info{padding:17px;background:var(--bg);border:1px solid var(--line);border-radius:13px;min-width:0}
+.info p{font-size:.95rem}.info ul{margin:8px 0 0;padding-left:20px}.info li{margin:5px 0;font-size:.94rem}
+.note{padding:13px 15px;border-left:4px solid var(--accent);background:var(--bg);border-radius:0 10px 10px 0;margin:14px 0}
+.warning{border-left-color:#d39b38}.good{border-left-color:#238b72}
+.price{font-weight:850;color:var(--accent);white-space:nowrap}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}
+.link{display:inline-flex;align-items:center;justify-content:center;padding:8px 12px;border-radius:999px;background:var(--hero);color:#fff;text-decoration:none;font-size:.88rem;font-weight:750}
+.link.secondary{background:var(--bg);color:var(--ink);border:1px solid var(--line)}
+.source-list{display:flex;gap:8px 16px;flex-wrap:wrap;margin-top:12px}.source-list a{font-size:.86rem;font-weight:650}
+ol.steps{padding-left:22px;margin:9px 0}.steps li{margin:7px 0}
+footer{border-top:1px solid var(--line);padding:18px;text-align:center;color:var(--muted);font-size:.82rem}
+@media(max-width:720px){.content-grid{grid-template-columns:1fr}.rates{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:420px){main{width:calc(100% - 24px);margin-top:22px}.top{padding:10px 12px}.setting-btn{width:35px;height:35px}.panel{padding:15px}.selected{align-items:flex-start;flex-direction:column}.rates{gap:7px}.rate{padding:9px}}
+</style>
+</head>
+<body>
+<header class="top">
+<a class="back" href="boracay.html" data-ru="← Назад на Боракай" data-en="← Back to Boracay">← Назад на Боракай</a>
+<div class="settings">
+<button class="setting-btn" id="lang-btn" type="button" aria-label="Language"><span id="lang-flag">🇷🇺</span></button>
+<button class="setting-btn" id="theme-btn" type="button" aria-label="Theme: Auto"><span id="theme-icon">◐</span></button>
+</div>
+</header>
+<main>
+<h1 data-ru="Обмен валюты и оплата" data-en="Currency exchange and payments">Обмен валюты и оплата</h1>
+<p class="lead" data-ru="Как обменять наличные, снять песо в банкомате и расплачиваться иностранной картой или местными электронными кошельками на Боракае." data-en="How to exchange cash, withdraw pesos and pay on Boracay using foreign cards or local e-wallets.">Как обменять наличные, снять песо в банкомате и расплачиваться иностранной картой или местными электронными кошельками на Боракае.</p>
 
-/* Keep language and theme controls pinned neatly to the top-right on every viewport */
-.top{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:8px}
-.top>.settings{width:auto;flex:0 0 auto;margin-left:auto;justify-content:flex-end;flex-wrap:nowrap;gap:6px}
-.top>.places{flex:1 1 auto;min-width:0;flex-wrap:nowrap;gap:4px}
-.top>.places .place{white-space:nowrap;padding:7px 9px}
-.top>.settings .setting-btn{min-height:36px;padding:7px 10px;white-space:nowrap}
-@media(max-width:420px){
- .top{padding-left:10px;padding-right:10px;gap:5px}
- .top>.places{gap:2px}
- .top>.places .place{gap:5px;padding:6px 7px;font-size:.88rem}
- .top>.places .place svg{width:16px;height:16px}
- .top>.settings{gap:4px}
- .top>.settings .setting-btn{gap:4px;min-height:34px;padding:6px 8px;font-size:.82rem}
- .top>.settings .setting-icon{font-size:1rem}
-}
-@media(max-width:350px){
- .top>.places .place{padding:5px 5px;font-size:.82rem}
- .top>.settings .setting-btn{padding:5px 6px;font-size:.78rem}
- .top>.settings .setting-icon{font-size:.92rem}
-}
+<section class="panel" id="fx-rates">
+<div class="rate-head"><div><h2 data-ru="Курс PHP к иностранным валютам" data-en="PHP exchange rates">Курс PHP к иностранным валютам</h2><p class="small" data-ru="Справочный рыночный курс. Реальный курс банка, карты или обменника будет отличаться." data-en="Indicative reference rate. Your bank, card network or money changer may apply a different rate.">Справочный рыночный курс. Реальный курс банка, карты или обменника будет отличаться.</p></div>
+<div class="picker"><label for="currency" data-ru="Выбрать валюту" data-en="Choose currency">Выбрать валюту</label><select id="currency"><option>Загрузка…</option></select></div></div>
+<div class="selected"><div><div class="pair" id="pair">1 USD = — PHP</div><div class="small" id="currency-name">US Dollar</div></div><div class="value" id="value">— PHP</div></div>
+<div class="rates" id="rates"><div class="rate"><strong>USD/PHP</strong><span>—</span></div><div class="rate"><strong>EUR/PHP</strong><span>—</span></div><div class="rate"><strong>CNY/PHP</strong><span>—</span></div><div class="rate"><strong>GBP/PHP</strong><span>—</span></div><div class="rate"><strong>RUB/PHP</strong><span>—</span></div><div class="rate"><strong>AUD/PHP</strong><span>—</span></div><div class="rate"><strong>SGD/PHP</strong><span>—</span></div><div class="rate"><strong>CAD/PHP</strong><span>—</span></div></div>
+<p class="small status" id="updated" aria-live="polite" data-ru="Загрузка курсов…" data-en="Loading rates…">Загрузка курсов…</p>
+</section>
 
-/* Icon-only controls, aligned to the upper-right */
-.top>.settings .setting-btn{width:36px;height:36px;min-width:36px;min-height:36px;padding:0;gap:0;border-radius:50%;font-size:1rem}
-.top>.settings .setting-icon{font-size:1.12rem}
-@media(max-width:420px){.top>.settings .setting-btn{width:34px;height:34px;min-width:34px;min-height:34px;padding:0}.top>.settings .setting-icon{font-size:1.05rem}}
-.site-nav{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:9px clamp(12px,4vw,56px);background:var(--surface,#fff);border-bottom:1px solid var(--line,#dce4df);position:relative;z-index:1000}.site-nav a{display:inline-block;padding:6px 9px;border:1px solid var(--line,#dce4df);border-radius:999px;color:var(--ink,#172d2b);text-decoration:none;font:700 .82rem/1.2 system-ui,sans-serif;white-space:nowrap}.site-nav a:hover{background:var(--hero,#0a4148);color:#fff;border-color:var(--hero,#0a4148)}@media(max-width:520px){.site-nav{gap:4px}.site-nav a{font-size:.76rem;padding:6px 7px}}
-/* Keep the currency tool aligned with the wider site layout */
-main{width:min(100% - 48px,1200px)}
-@media(max-width:600px){main{width:calc(100% - 28px)}}
+<section class="panel" id="cash-exchange">
+<h2 data-ru="Где менять наличную валюту" data-en="Where to exchange cash">Где менять наличную валюту</h2>
+<div class="content-grid">
+<div class="info">
+<h3 data-ru="Специализированные money changers" data-en="Dedicated money changers">Специализированные money changers</h3>
+<p data-ru="На Боракае сначала сравните курс в специализированном обменнике и в Savemore CityMall. Для крупной суммы не меняйте деньги в первой попавшейся точке: спросите, сколько PHP выдадут за всю сумму после всех комиссий." data-en="On Boracay, compare a dedicated money changer with the Savemore CityMall counter. For a larger amount, ask how many pesos you will receive after all fees before handing over your cash.">На Боракае сначала сравните курс в специализированном обменнике и в Savemore CityMall. Для крупной суммы не меняйте деньги в первой попавшейся точке: спросите, сколько PHP выдадут за всю сумму после всех комиссий.</p>
+<p><strong><span data-ru="Twin Boys Forex (ранее Nikko Forex)" data-en="Twin Boys Forex (formerly Nikko Forex)">Twin Boys Forex (ранее Nikko Forex)</span></strong><br><span data-ru="3 Sunset Road, Boracay. Сравните фактический курс на табло перед обменом." data-en="3 Sunset Road, Boracay. Check the posted rate before exchanging.">3 Sunset Road, Boracay. Сравните фактический курс на табло перед обменом.</span></p>
+<a class="link secondary" href="https://www.google.com/maps/search/?api=1&query=Twin+Boys+Forex+3+Sunset+Road+Boracay" target="_blank" rel="noopener" data-ru="Открыть на карте" data-en="Open map">Открыть на карте</a>
+</div>
+<div class="info">
+<h3 data-ru="Практический порядок" data-en="Practical approach">Практический порядок</h3>
+<ul>
+<li data-ru="Проверьте курс минимум в двух точках." data-en="Compare at least two exchange counters.">Проверьте курс минимум в двух точках.</li>
+<li data-ru="Сравнивайте сумму PHP на руки, а не только крупную цифру курса." data-en="Compare the final PHP amount, not just the displayed rate.">Сравнивайте сумму PHP на руки, а не только крупную цифру курса.</li>
+<li data-ru="Уточните, принимают ли конкретную валюту и купюры нужного номинала." data-en="Confirm that your currency and banknote denominations are accepted.">Уточните, принимают ли конкретную валюту и купюры нужного номинала.</li>
+<li data-ru="Пересчитайте деньги у стойки и сохраните квитанцию." data-en="Count the cash at the counter and keep the receipt.">Пересчитайте деньги at the counter и сохраните квитанцию.</li>
+</ul>
+</div>
+</div>
+<div class="note warning"><strong data-ru="Не меняйте крупную сумму в аэропорту или порту без сравнения." data-en="Avoid exchanging a large amount at an airport or port without comparing rates.">Не меняйте крупную сумму в аэропорту или порту без сравнения.</strong> <span data-ru="Удобство не означает выгодный курс. На острове сначала сравните специализированный обменник и Savemore." data-en="Convenience does not guarantee a good rate. Compare a dedicated money changer with Savemore first.">Удобство не означает выгодный курс. На острове сначала сравните специализированный обменник и Savemore.</span></div>
+</section>
 
-</style></head><body><nav class="site-nav" aria-label="Навигация по сайту"><a href="index.html">Главная</a><a href="boracay.html">Боракай</a><a href="mactan.html">Мактан</a><a href="cebu.html">Себу</a><a href="transport.html">Транспорт</a><a href="housing.html">Жильё</a><a href="weather.html">Погода</a><a href="practical.html">Практическая информация</a></nav>
-<header class="top"><a class="back" href="boracay.html" data-ru="← Назад на Боракай" data-en="← Back to Boracay">← Назад на Боракай</a><div class="settings"><button class="setting-btn lang-btn" id="lang-btn" type="button" aria-label="Language"><span class="setting-icon" id="lang-flag">🇷🇺</span></button><button class="setting-btn theme-btn" id="theme-btn" type="button" aria-label="Theme: Auto"><span class="setting-icon" id="theme-icon">◐</span></button></div></header>
-<main><h1 data-ru="Курсы валют к филиппинскому песо" data-en="Exchange rates against Philippine peso">Курсы валют к филиппинскому песо</h1>
-<p class="lead" data-ru="Выберите валюту, чтобы увидеть её справочный курс к PHP. Выбор сохранится в текущей сессии браузера." data-en="Choose a currency to see its indicative rate against PHP. Your choice is kept for the current browser session.">Выберите валюту, чтобы увидеть её справочный курс к PHP. Выбор сохранится в текущей сессии браузера.</p>
-<section class="panel"><div class="picker"><label for="currency" data-ru="Валюта" data-en="Currency">Валюта</label><select id="currency"><option>Загрузка списка…</option></select></div>
-<div class="selected"><div class="pair" id="pair">1 — = — PHP</div><div class="value" id="value">—</div><div class="small" id="currency-name"></div></div>
-<div class="small" id="updated" aria-live="polite">Загрузка курсов…</div></section>
-<section class="panel"><h2 data-ru="Основные валюты" data-en="Key currencies">Основные валюты</h2><div class="rates" id="rates"><div class="rate">USD/PHP —</div><div class="rate">EUR/PHP —</div><div class="rate">CNY/PHP —</div><div class="rate">JPY/PHP —</div><div class="rate">KRW/PHP —</div><div class="rate">AUD/PHP —</div></div></section>
-<p class="small" data-ru="Источник: ExchangeRate-API. Справочные курсы обновляются примерно раз в сутки и могут отличаться от курсов банков, карт и обменников. Время указано по Филиппинам (PHT, UTC+8)." data-en="Source: ExchangeRate-API. Indicative rates are updated approximately once a day and may differ from bank, card and money-changer rates. Time is shown in Philippine Time (PHT, UTC+8).">Источник: ExchangeRate-API. Справочные курсы обновляются примерно раз в сутки и могут отличаться от курсов банков, карт и обменников. Время указано по Филиппинам (PHT, UTC+8).</p><p class="small"><a href="https://www.exchangerate-api.com" target="_blank" rel="noopener">ExchangeRate-API</a></p></main>
+<section class="panel" id="savemore">
+<h2 data-ru="Обмен валюты в Savemore / SM" data-en="Currency exchange at Savemore / SM">Обмен валюты в Savemore / SM</h2>
+<p data-ru="В отдельных магазинах сети SM/Savemore работают пункты BDO Remit / currency exchange. В официальном справочнике BDO от 11 сентября 2024 года указан Savemore Market – CityMall Boracay (код SV1927), Balabag, Malay, Aklan; опубликованный график точки — ежедневно 08:00–20:00." data-en="Selected SM/Savemore stores host BDO Remit / currency exchange counters. BDO's directory dated 11 September 2024 lists Savemore Market – CityMall Boracay (code SV1927), Balabag, Malay, Aklan; the listed hours are daily 08:00–20:00.">В отдельных магазинах сети SM/Savemore работают пункты BDO Remit / currency exchange. В официальном справочнике BDO от 11 сентября 2024 года указан Savemore Market – CityMall Boracay (код SV1927), Balabag, Malay, Aklan; опубликованный график точки — ежедневно 08:00–20:00.</p>
+<div class="note good"><strong data-ru="Что важно по курсу:" data-en="Important about the rate:">Что важно по курсу:</strong> <span data-ru="отдельный онлайн-курс именно для кассы Savemore CityMall Boracay публично не найден. BDO публикует справочные Forex rates, но они не гарантируют курс конкретной кассы SM. Перед обменом уточните текущий USD buying rate и итоговую сумму PHP непосредственно у кассира." data-en="A separate online rate for the Savemore CityMall Boracay counter is not publicly listed. BDO publishes indicative Forex rates, but these do not guarantee the exact rate at an SM counter. Ask the cashier for the current USD buying rate and the final PHP amount before exchanging.">отдельный онлайн-курс именно для кассы Savemore CityMall Boracay публично не найден. BDO публикует справочные Forex rates, но они не гарантируют курс конкретной кассы SM. Перед обменом уточните текущий USD buying rate и итоговую сумму PHP непосредственно у кассира.</span></div>
+<p data-ru="Курс BDO — ориентир для сравнения, а не подтверждённая котировка Savemore. На сайте BDO указано, что ставки ориентировочные, меняются без уведомления и зависят от наличия валюты." data-en="BDO's published rate is a comparison reference, not a confirmed Savemore quote. BDO states that rates are indicative, may change without notice and depend on currency availability.">Курс BDO — ориентир для сравнения, а не подтверждённая котировка Savemore. На сайте BDO указано, что ставки ориентировочные, меняются без уведомления и зависят от наличия валюты.</p>
+<div class="actions"><a class="link" href="https://www.bdo.com.ph/forex" target="_blank" rel="noopener" data-ru="Актуальные Forex rates BDO" data-en="BDO Forex rates">Актуальные Forex rates BDO</a><a class="link secondary" href="https://www.google.com/maps/search/?api=1&query=Savemore+CityMall+Boracay" target="_blank" rel="noopener" data-ru="Savemore CityMall на карте" data-en="Savemore CityMall map">Savemore CityMall на карте</a></div>
+<p class="small" data-ru="Справочник BDO датирован 2024 годом: наличие кассы, часы и возможность обмена конкретной валюты следует подтвердить перед поездкой. Нельзя считать, что пункт обмена есть в каждом магазине SM/Savemore." data-en="The BDO directory is dated 2024: confirm that the counter is operating, check its hours and verify that your currency is accepted. Do not assume every SM/Savemore store has an exchange counter.">Справочник BDO датирован 2024 годом: наличие кассы, часы и возможность обмена конкретной валюты следует подтвердить перед поездкой. Нельзя считать, что пункт обмена есть в каждом магазине SM/Savemore.</p>
+</section>
+
+<section class="panel" id="atm">
+<h2 data-ru="Снятие наличных в ATM" data-en="Withdrawing cash from ATMs">Снятие наличных в ATM</h2>
+<div class="note good"><strong data-ru="Практический ориентир на Боракае: BPI, Station 2." data-en="Practical Boracay option: BPI, Station 2.">Практический ориентир на Боракае: BPI, Station 2.</strong> <span data-ru="По ранее проверенному тобой варианту — снятие около" data-en="Based on the location and withdrawal amount you identified, a withdrawal of around">По ранее проверенному тобой варианту — снятие около</span> <strong class="price">20 000 PHP</strong> <span data-ru="за одну операцию по этой точке:" data-en="per transaction at this location:">за одну операцию по этой точке:</span> <a href="https://maps.app.goo.gl/sWjKWvTXkeE9QCQN7" target="_blank" rel="noopener">BPI ATM — Google Maps</a>.</div>
+<div class="content-grid">
+<div class="info"><h3 data-ru="Комиссия банкомата" data-en="ATM access fee">Комиссия банкомата</h3>
+<p><strong class="price">от 250 PHP</strong></p>
+<p data-ru="Для иностранных карт ориентируйся минимум на ₱250 за снятие. Точная сумма должна отображаться на экране до подтверждения; дополнительно возможна комиссия банка-эмитента и платёжной сети." data-en="For foreign cards, use ₱250 as the minimum local ATM fee to budget for. The exact fee should appear on screen before confirmation; your card issuer and network may charge extra.">Для иностранных карт ориентируйся минимум на ₱250 за снятие. Точная сумма должна отображаться на экране до подтверждения; дополнительно возможна комиссия банка-эмитента и платёжной сети.</p>
+<p data-ru="При снятии 20 000 PHP комиссия 250 PHP составляет 1,25% суммы, поэтому несколько небольших снятий обычно обходятся дороже." data-en="A ₱250 fee on a ₱20,000 withdrawal equals 1.25%; several smaller withdrawals usually increase the effective cost.">При снятии 20 000 PHP комиссия 250 PHP составляет 1,25% суммы, поэтому несколько небольших снятий обычно обходятся дороже.</p></div>
+<div class="info"><h3 data-ru="Откажитесь от конвертации ATM (DCC)" data-en="Decline ATM conversion (DCC)">Откажитесь от конвертации ATM (DCC)</h3>
+<p data-ru="Если банкомат предлагает списать сумму в валюте вашей карты или показывает собственный гарантированный курс, выбирайте списание в PHP и отказ от конвертации банкомата." data-en="If the ATM offers to charge your card in its home currency or displays its own guaranteed exchange rate, choose PHP and decline the ATM's conversion.">Если банкомат предлагает списать сумму в валюте вашей карты или показывает собственный гарантированный курс, выбирайте списание в PHP и отказ от конвертации банкомата.</p>
+<p><strong data-ru="Ищите формулировки:" data-en="Look for wording such as:">Ищите формулировки:</strong> <span data-ru="“Continue without conversion”, “Decline conversion”, “Charge in PHP”." data-en="“Continue without conversion”, “Decline conversion”, “Charge in PHP”.">“Continue without conversion”, “Decline conversion”, “Charge in PHP”.</span></p>
+<p data-ru="Тогда конвертацию выполнит банк-эмитент карты или платёжная система. Это обычно выгоднее курса, навязанного банкоматом, но итог зависит от тарифа вашей карты." data-en="Your card issuer or card network then performs the conversion. This is usually better than the ATM's offered rate, but the final cost depends on your card terms.">Тогда конвертацию выполнит банк-эмитент карты или платёжная система. Это обычно выгоднее курса, навязанного банкоматом, но итог зависит от тарифа вашей карты.</p></div>
+</div>
+<p data-ru="20 000 PHP — практический ориентир для указанного BPI ATM, а не универсально гарантированный лимит для всех иностранных карт. Фактический предел зависит от банкомата, платёжной сети, эмитента и доступных купюр. Не подтверждайте операцию, если комиссия или валюта списания отличаются от ожидаемых." data-en="₱20,000 is a practical reference for the specified BPI ATM, not a guaranteed limit for every foreign card. The actual limit depends on the ATM, card network, issuer and available notes. Do not confirm if the fee or billing currency differs from what you expect.">20 000 PHP — практический ориентир для указанного BPI ATM, а не универсально гарантированный лимит для всех иностранных карт. Фактический предел зависит от банкомата, платёжной сети, эмитента и доступных купюр. Не подтверждайте операцию, если комиссия или валюта списания отличаются от ожидаемых.</p>
+</section>
+
+<section class="panel" id="cards">
+<h2 data-ru="Оплата зарубежными банковскими картами" data-en="Paying with foreign bank cards">Оплата зарубежными банковскими картами</h2>
+<p data-ru="Visa и Mastercard, выпущенные за пределами Филиппин, принимаются во многих отелях, торговых центрах, супермаркетах, крупных ресторанах и туристических заведениях. Но рассчитывать на карту везде нельзя: небольшие кафе, рынки, e-trike, локальные сервисы и отдельные отели могут принимать только наличные или местный QR." data-en="Foreign-issued Visa and Mastercard are accepted at many hotels, malls, supermarkets, larger restaurants and tourist businesses. Card acceptance is not universal: small cafés, markets, e-trikes, local services and some hotels may require cash or a local QR payment.">Visa и Mastercard, выпущенные за пределами Филиппин, принимаются во многих отелях, торговых центрах, супермаркетах, крупных ресторанах и туристических заведениях. Но рассчитывать на карту везде нельзя: небольшие кафе, рынки, e-trike, локальные сервисы и отдельные отели могут принимать только наличные или местный QR.</p>
+<div class="note"><strong data-ru="При оплате картой:" data-en="When paying by card:">При оплате картой:</strong> <span data-ru="выбирайте PHP, а не валюту карты, если терминал предлагает Dynamic Currency Conversion (DCC). Отказ от конвертации терминала обычно позволяет использовать курс вашего банка или платёжной системы." data-en="Choose PHP rather than your card currency if the terminal offers Dynamic Currency Conversion (DCC). Declining terminal conversion usually lets your bank or card network apply its rate.">выбирайте PHP, а не валюту карты, если терминал предлагает Dynamic Currency Conversion (DCC). Отказ от конвертации терминала обычно позволяет использовать курс вашего банка или платёжной системы.</span></div>
+</section>
+
+<section class="panel" id="qr-payments">
+<h2 data-ru="Местные QR-платежи: QR Ph, Maya и GCash" data-en="Local QR payments: QR Ph, Maya and GCash">Местные QR-платежи: QR Ph, Maya и GCash</h2>
+<p data-ru="На Филиппинах распространена оплата через QR. Национальный стандарт QR Ph позволяет совместимым банковским приложениям и электронным кошелькам оплачивать один и тот же QR-код участвующего продавца. Но не каждый QR-код универсален: проверьте логотип QR Ph и приложение, которое принимает продавец." data-en="QR payments are common in the Philippines. The national QR Ph standard lets participating bank apps and e-wallets pay the same participating merchant QR code. Not every QR code is universal: check for the QR Ph logo and which apps the merchant accepts.">На Филиппинах распространена оплата через QR. Национальный стандарт QR Ph позволяет совместимым банковским приложениям и электронным кошелькам оплачивать один и тот же QR-код участвующего продавца. Но не каждый QR-код универсален: проверьте логотип QR Ph и приложение, которое принимает продавец.</p>
+<div class="content-grid">
+<div class="info">
+<h3>Maya</h3>
+<p data-ru="Maya — местный электронный кошелёк и платёжное приложение. Иностранный гражданин может пройти upgrade account с действующим загранпаспортом; после регистрации и проверки личности становятся доступны дополнительные функции, включая оплату по Maya QR и QR Ph." data-en="Maya is a local e-wallet and payment app. Foreign nationals can upgrade an account using a valid passport. After registration and identity verification, additional features become available, including Maya QR and QR Ph payments.">Maya — местный электронный кошелёк и платёжное приложение. Иностранный гражданин может пройти upgrade account с действующим загранпаспортом; после регистрации и проверки личности становятся доступны дополнительные функции, включая оплату по Maya QR и QR Ph.</p>
+<ol class="steps"><li data-ru="Установите Maya и зарегистрируйтесь по филиппинскому номеру телефона." data-en="Install Maya and register with a Philippine mobile number.">Установите Maya и зарегистрируйтесь по филиппинскому номеру телефона.</li><li data-ru="Откройте Profile → Upgrade Account." data-en="Open Profile → Upgrade Account.">Откройте Profile → Upgrade Account.</li><li data-ru="Загрузите фото паспорта и выполните video selfie / дополнительные шаги KYC." data-en="Upload your passport and complete the video selfie and any additional KYC steps.">Загрузите фото паспорта и выполните video selfie / дополнительные шаги KYC.</li><li data-ru="Пополните кошелёк доступным способом. Для оплаты выберите Pay with QR, отсканируйте QR продавца, проверьте имя получателя и сумму, подтвердите платёж." data-en="Add funds using an available method. To pay, select Pay with QR, scan the merchant code, verify the merchant name and amount, then confirm.">Пополните кошелёк доступным способом. Для оплаты выберите Pay with QR, отсканируйте QR продавца, проверьте имя получателя и сумму, подтвердите платёж.</li></ol>
+<a class="link secondary" href="https://www.maya.ph/upgrade" target="_blank" rel="noopener" data-ru="Инструкция Maya Upgrade" data-en="Maya upgrade guide">Инструкция Maya Upgrade</a>
+</div>
+<div class="info">
+<h3>GCash</h3>
+<p data-ru="GCash — один из самых распространённых кошельков страны. Для иностранцев, постоянно проживающих на Филиппинах с местной SIM, при верификации принимаются, в частности, ACR и Philippine Driver’s License. У тебя уже есть филиппинские водительские права, поэтому это подходящий документ для попытки пройти KYC; окончательное решение принимает GCash." data-en="GCash is one of the country's most widely used wallets. For foreign residents using a Philippine SIM, accepted verification IDs include an ACR and a Philippine Driver’s License. Your Philippine driving licence is therefore a relevant ID to try for KYC, subject to GCash approval.">GCash — один из самых распространённых кошельков страны. Для иностранцев, постоянно проживающих на Филиппинах с местной SIM, при верификации принимаются, в частности, ACR и Philippine Driver’s License. У тебя уже есть филиппинские водительские права, поэтому это подходящий документ для попытки пройти KYC; окончательное решение принимает GCash.</p>
+<ol class="steps"><li data-ru="Установите GCash и зарегистрируйтесь с Philippine mobile number." data-en="Install GCash and register with a Philippine mobile number.">Установите GCash и зарегистрируйтесь с Philippine mobile number.</li><li data-ru="Откройте Profile → Verify Now и выберите подходящий тип пользователя." data-en="Open Profile → Verify Now and select the appropriate user type.">Откройте Profile → Verify Now и выберите подходящий тип пользователя.</li><li data-ru="Предоставьте Philippine Driver’s License или ACR, если приложение предлагает этот вариант, и пройдите selfie verification." data-en="Submit your Philippine Driver’s License or ACR if offered in the app, then complete selfie verification.">Предоставьте Philippine Driver’s License или ACR, если приложение предлагает этот вариант, и пройдите selfie verification.</li><li data-ru="Для оплаты нажмите QR / Scan QR, отсканируйте код, проверьте получателя и сумму, затем подтвердите." data-en="To pay, tap QR / Scan QR, scan the code, verify the recipient and amount, then confirm.">Для оплаты нажмите QR / Scan QR, отсканируйте код, проверьте получателя и сумму, затем подтвердите.</li></ol>
+<a class="link secondary" href="https://help.gcash.com/hc/en-us/articles/900000948786-Accepted-IDs-for-GCash-verification" target="_blank" rel="noopener" data-ru="Принимаемые документы GCash" data-en="GCash accepted IDs">Принимаемые документы GCash</a>
+</div>
+</div>
+<div class="note warning"><strong data-ru="GTourist — не основной вариант для длительного проживания." data-en="GTourist is not the main option for long-term stays.">GTourist — не основной вариант для длительного проживания.</strong> <span data-ru="Это временный 30-дневный режим для посетителей с иностранным номером; список поддерживаемых стран ограничен и Россия в опубликованном списке не указана. Для резидента с Philippine SIM логичнее обычная верификация GCash по местному документу." data-en="It is a temporary 30-day visitor option using a foreign number; supported countries are limited and Russia is not on the published list. For a resident with a Philippine SIM, standard GCash verification using a local ID is the more relevant route.">Это временный 30-дневный режим для посетителей с иностранным номером; список поддерживаемых стран ограничен и Россия в опубликованном списке не указана. Для резидента с Philippine SIM логичнее обычная верификация GCash по местному документу.</span></div>
+</section>
+
+<section class="panel" id="quick-guide">
+<h2 data-ru="Какой способ оплаты выбрать" data-en="Which payment method should you use?">Какой способ оплаты выбрать</h2>
+<div class="content-grid">
+<div class="info"><h3 data-ru="Отель, супермаркет, крупный ресторан" data-en="Hotel, supermarket, larger restaurant">Отель, супермаркет, крупный ресторан</h3><p data-ru="Сначала пробуйте зарубежную Visa/Mastercard. На терминале выбирайте PHP." data-en="Try your foreign Visa/Mastercard first. Select PHP on the terminal.">Сначала пробуйте зарубежную Visa/Mastercard. На терминале выбирайте PHP.</p></div>
+<div class="info"><h3 data-ru="Магазин или кафе с QR Ph" data-en="Shop or café displaying QR Ph">Магазин или кафе с QR Ph</h3><p data-ru="Используйте Maya, GCash или поддерживаемое банковское приложение. Проверьте имя получателя перед подтверждением." data-en="Use Maya, GCash or a participating bank app. Verify the merchant name before confirming.">Используйте Maya, GCash или поддерживаемое банковское приложение. Проверьте имя получателя перед подтверждением.</p></div>
+<div class="info"><h3 data-ru="Небольшой локальный бизнес, транспорт, рынок" data-en="Small local business, transport, market">Небольшой локальный бизнес, транспорт, рынок</h3><p data-ru="Держите наличные PHP: терминал или QR могут отсутствовать либо не работать." data-en="Keep PHP cash available: a terminal or QR payment may not be available or working.">Держите наличные PHP: терминал или QR могут отсутствовать либо не работать.</p></div>
+<div class="info"><h3 data-ru="Снятие наличных" data-en="Cash withdrawal">Снятие наличных</h3><p data-ru="Предпочитайте BPI ATM по указанной точке, проверяйте комиссию до подтверждения и отклоняйте DCC." data-en="Prefer the BPI ATM at the listed location, check the fee before confirming and decline DCC.">Предпочитайте BPI ATM по указанной точке, проверяйте комиссию до подтверждения и отклоняйте DCC.</p></div>
+</div>
+</section>
+
+<section class="panel" id="sources">
+<h2 data-ru="Источники и проверка условий" data-en="Sources and terms">Источники и проверка условий</h2>
+<p class="small" data-ru="Тарифы и правила могут меняться. Перед обменом или оплатой проверяйте условия непосредственно у банка, кассы или в приложении." data-en="Rates and rules can change. Confirm terms with the bank, counter or app before exchanging or paying.">Тарифы и правила могут меняться. Перед обменом или оплатой проверяйте условия непосредственно у банка, кассы или в приложении.</p>
+<div class="source-list">
+<a href="https://www.bdo.com.ph/forex" target="_blank" rel="noopener">BDO Forex rates</a>
+<a href="https://www.bdo.com.ph/content/dam/bdounibank/en-ph/remittance/cash-pick-up-directories/sm-markets-branches-as-of-sept-2024.pdf" target="_blank" rel="noopener">BDO / SM Savemore directory (2024)</a>
+<a href="https://www.bpi.com.ph/personal/bank/digital-banking/ATM-and-CAM" target="_blank" rel="noopener">BPI ATM / CAM</a>
+<a href="https://www.maya.ph/upgrade" target="_blank" rel="noopener">Maya account upgrade</a>
+<a href="https://www.maya.ph/pay-with-qr" target="_blank" rel="noopener">Maya QR payments</a>
+<a href="https://help.gcash.com/hc/en-us/articles/900000948786-Accepted-IDs-for-GCash-verification" target="_blank" rel="noopener">GCash accepted IDs</a>
+<a href="https://www.bsp.gov.ph/Regulations/Issuances/2023/M-2023-005.pdf" target="_blank" rel="noopener">BSP QR Ph standard</a>
+<a href="https://www.exchangerate-api.com" target="_blank" rel="noopener">ExchangeRate-API</a>
+</div>
+</section>
+</main>
+<footer>Philippines · Boracay practical guide</footer>
 <script>
-(()=>{const names={USD:'US Dollar',EUR:'Euro',CNY:'Chinese Yuan',JPY:'Japanese Yen',KRW:'South Korean Won',AUD:'Australian Dollar',GBP:'British Pound',RUB:'Russian Ruble',PHP:'Philippine Peso',CAD:'Canadian Dollar',CHF:'Swiss Franc',SGD:'Singapore Dollar',HKD:'Hong Kong Dollar',TWD:'Taiwan Dollar',THB:'Thai Baht',MYR:'Malaysian Ringgit',IDR:'Indonesian Rupiah',VND:'Vietnamese Dong',AED:'UAE Dirham',KZT:'Kazakhstani Tenge',KGS:'Kyrgyzstani Som',INR:'Indian Rupee',NZD:'New Zealand Dollar',SAR:'Saudi Riyal',QAR:'Qatari Riyal',TRY:'Turkish Lira',PLN:'Polish Zloty',SEK:'Swedish Krona',NOK:'Norwegian Krone',DKK:'Danish Krone',BRL:'Brazilian Real',MXN:'Mexican Peso',ZAR:'South African Rand'};const select=document.getElementById('currency'),pair=document.getElementById('pair'),value=document.getElementById('value'),name=document.getElementById('currency-name'),updated=document.getElementById('updated'),ratesEl=document.getElementById('rates');let rates={};const lang=()=>document.documentElement.lang==='en'?'en':'ru';const fmt=(v,c)=>new Intl.NumberFormat(lang()==='ru'?'ru-RU':'en-US',{minimumFractionDigits:['JPY','KRW','IDR','VND'].includes(c)?4:2,maximumFractionDigits:['JPY','KRW','IDR','VND'].includes(c)?4:2}).format(v);function show(){const c=select.value,v=rates[c]?1/rates[c]:NaN;pair.textContent='1 '+c+' = '+(Number.isFinite(v)?fmt(v,c):'—')+' PHP';value.textContent=Number.isFinite(v)?fmt(v,c)+' PHP':'—';name.textContent=names[c]||c;sessionStorage.setItem('boracayFxCurrency',c)}select.addEventListener('change',show);async function load(){try{const r=await fetch('https://open.er-api.com/v6/latest/PHP',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const d=await r.json();if(d.result!=='success'||d.base_code!=='PHP'||!d.rates)throw Error('Invalid rate data');rates=d.rates;const codes=Object.keys(rates).sort();select.innerHTML=codes.map(c=>'<option value="'+c+'">'+c+(names[c]?' · '+names[c]:'')+'</option>').join('');const saved=sessionStorage.getItem('boracayFxCurrency')||'USD';select.value=rates[saved]?saved:'USD';show();const key=['USD','EUR','CNY','JPY','KRW','AUD'];ratesEl.innerHTML=key.map(c=>'<div class="rate"><strong>'+c+'/PHP</strong><span>'+(rates[c]?fmt(1/rates[c],c):'—')+' PHP</span></div>').join('');const t=new Date(d.time_last_update_utc);updated.textContent=(lang()==='ru'?'Обновлено: ':'Updated: ')+t.toLocaleString(lang()==='ru'?'ru-RU':'en-US',{timeZone:'Asia/Manila',dateStyle:'medium',timeStyle:'short'})+' · PHT'}catch(e){updated.textContent=lang()==='ru'?'Курсы временно недоступны. Попробуйте обновить страницу.':'Rates temporarily unavailable. Please reload the page.'}}load();})();
-</script><script>
-(()=>{const langBtn=document.getElementById('lang-btn'),themeBtn=document.getElementById('theme-btn');if(!langBtn||!themeBtn)return;const flag=document.getElementById('lang-flag'),themeIcon=document.getElementById('theme-icon');let language=document.documentElement.lang==='en'?'en':'ru';const themes=['auto','light','dark'],themeNames={auto:{ru:'Авто',en:'Auto',icon:'◐'},light:{ru:'Светлая',en:'Light',icon:'☀️'},dark:{ru:'Тёмная',en:'Dark',icon:'🌙'}};let theme=themes.includes(document.documentElement.dataset.theme)?document.documentElement.dataset.theme:'auto';function applyLanguage(){document.documentElement.lang=language;document.querySelectorAll('[data-ru]').forEach(e=>{e.textContent=e.dataset[language]});flag.textContent=language==='ru'?'🇷🇺':'🇬🇧';langBtn.setAttribute('aria-label',language==='ru'?'Язык: русский':'Language: English');if(typeof rates!=='undefined'&&rates[select.value])show()}function applyTheme(){document.documentElement.dataset.theme=theme;themeIcon.textContent=themeNames[theme].icon;themeBtn.setAttribute('aria-label',(language==='ru'?'Тема: ':'Theme: ')+themeNames[theme][language])}langBtn.addEventListener('click',()=>{language=language==='ru'?'en':'ru';applyLanguage();applyTheme()});themeBtn.addEventListener('click',()=>{theme=themes[(themes.indexOf(theme)+1)%themes.length];applyTheme()});applyLanguage();applyTheme()})();
-</script></body></html>
+(()=> {
+ const names={USD:'US Dollar',EUR:'Euro',CNY:'Chinese Yuan',JPY:'Japanese Yen',KRW:'South Korean Won',AUD:'Australian Dollar',GBP:'British Pound',RUB:'Russian Ruble',PHP:'Philippine Peso',CAD:'Canadian Dollar',CHF:'Swiss Franc',SGD:'Singapore Dollar',HKD:'Hong Kong Dollar',TWD:'Taiwan Dollar',THB:'Thai Baht',MYR:'Malaysian Ringgit',IDR:'Indonesian Rupiah',VND:'Vietnamese Dong',AED:'UAE Dirham',KZT:'Kazakhstani Tenge',KGS:'Kyrgyzstani Som',INR:'Indian Rupee',NZD:'New Zealand Dollar',SAR:'Saudi Riyal',QAR:'Qatari Riyal',TRY:'Turkish Lira',PLN:'Polish Zloty',SEK:'Swedish Krona',NOK:'Norwegian Krone',DKK:'Danish Krone',BRL:'Brazilian Real',MXN:'Mexican Peso',ZAR:'South African Rand'};
+ const select=document.getElementById('currency'),pair=document.getElementById('pair'),value=document.getElementById('value'),name=document.getElementById('currency-name'),updated=document.getElementById('updated'),ratesEl=document.getElementById('rates');
+ let rates={},language='ru';
+ const decimals=c=>['JPY','KRW','IDR','VND'].includes(c)?4:2;
+ const fmt=(v,c)=>new Intl.NumberFormat(language==='ru'?'ru-RU':'en-US',{minimumFractionDigits:decimals(c),maximumFractionDigits:decimals(c)}).format(v);
+ function show(){const c=select.value,v=rates[c]?1/rates[c]:NaN;pair.textContent='1 '+c+' = '+(Number.isFinite(v)?fmt(v,c):'—')+' PHP';value.textContent=Number.isFinite(v)?fmt(v,c)+' PHP':'—';name.textContent=names[c]||c;try{sessionStorage.setItem('boracayFxCurrency',c)}catch(e){}}
+ select.addEventListener('change',show);
+ async function load(){try{const r=await fetch('https://open.er-api.com/v6/latest/PHP',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const d=await r.json();if(d.result!=='success'||d.base_code!=='PHP'||!d.rates)throw Error('Invalid rate data');rates=d.rates;const codes=Object.keys(rates).sort();select.innerHTML=codes.map(c=>'<option value="'+c+'">'+c+(names[c]?' · '+names[c]:'')+'</option>').join('');let saved='USD';try{saved=sessionStorage.getItem('boracayFxCurrency')||'USD'}catch(e){}select.value=rates[saved]?saved:'USD';show();const key=['USD','EUR','CNY','GBP','RUB','AUD','SGD','CAD'];ratesEl.innerHTML=key.map(c=>'<div class="rate"><strong>'+c+'/PHP</strong><span>'+(rates[c]?fmt(1/rates[c],c):'—')+' PHP</span></div>').join('');const t=new Date(d.time_last_update_utc);updated.textContent=(language==='ru'?'Обновлено: ':'Updated: ')+t.toLocaleString(language==='ru'?'ru-RU':'en-US',{timeZone:'Asia/Manila',dateStyle:'medium',timeStyle:'short'})+' · PHT'}catch(e){updated.textContent=language==='ru'?'Курсы временно недоступны. Попробуйте обновить страницу.':'Rates temporarily unavailable. Please reload the page.'}}
+ window.phCurrencyRefreshLanguage=()=>{if(rates[select.value])show();if(updated.textContent&&updated.textContent!=='—')updated.textContent=updated.textContent.replace(/^Обновлено:/,'Updated:').replace(/^Updated:/,'Обновлено:')};
+ load();
+ const langBtn=document.getElementById('lang-btn'),themeBtn=document.getElementById('theme-btn'),flag=document.getElementById('lang-flag'),themeIcon=document.getElementById('theme-icon');
+ const themes=['auto','light','dark'],themeNames={auto:{ru:'Авто',en:'Auto',icon:'◐'},light:{ru:'Светлая',en:'Light',icon:'☀️'},dark:{ru:'Тёмная',en:'Dark',icon:'🌙'}};
+ let theme=['auto','light','dark'].includes(document.documentElement.dataset.theme)?document.documentElement.dataset.theme:'auto';
+ function applyLanguage(){document.documentElement.lang=language;document.querySelectorAll('[data-ru][data-en]').forEach(el=>{el.textContent=el.dataset[language]});flag.textContent=language==='ru'?'🇷🇺':'🇬🇧';langBtn.setAttribute('aria-label',language==='ru'?'Язык: русский':'Language: English');if(window.phCurrencyRefreshLanguage)window.phCurrencyRefreshLanguage();applyTheme()}
+ function applyTheme(){document.documentElement.dataset.theme=theme;themeIcon.textContent=themeNames[theme].icon;themeBtn.setAttribute('aria-label',(language==='ru'?'Тема: ':'Theme: ')+themeNames[theme][language])}
+ langBtn.addEventListener('click',()=>{language=language==='ru'?'en':'ru';applyLanguage()});
+ themeBtn.addEventListener('click',()=>{theme=themes[(themes.indexOf(theme)+1)%themes.length];applyTheme()});
+ applyLanguage();
+})();
+</script>
+</body></html>
