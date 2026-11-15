@@ -284,7 +284,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
           "candidate_source_ids": [
-            "SRC-107"
+            "SRC-039"
           ],
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
@@ -386,7 +386,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "regional_background_only_until_local_validation",
@@ -403,7 +403,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -464,7 +464,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "beach_specific",
@@ -481,7 +481,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -544,7 +544,7 @@
           "candidate_source_ids": [
             "SRC-039",
             "SRC-041",
-            "SRC-107",
+            "SRC-039",
             "SRC-110"
           ],
           "spatial_scope": "nearshore_bathymetry_required",
@@ -561,7 +561,7 @@
           "source_ids": [],
           "candidate_source_ids": [
             "SRC-039",
-            "SRC-107"
+            "SRC-039"
           ],
           "spatial_scope": "station_specific_not_assumed_transferable",
           "temporal_scope": null,
@@ -578,7 +578,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
             },
@@ -589,7 +589,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No beach-specific phase/level series is ingested."
             }
@@ -1860,7 +1860,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
           "candidate_source_ids": [
-            "SRC-107"
+            "SRC-039"
           ],
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
@@ -1957,7 +1957,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "regional_background_only_until_local_validation",
@@ -1974,7 +1974,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -2038,7 +2038,7 @@
           ],
           "candidate_source_ids": [
             "SRC-109",
-            "SRC-107"
+            "SRC-039"
           ],
           "spatial_scope": "eastern side of Boracay; not a measured Bulabog beach transect",
           "temporal_scope": "historical qualitative description; no timestamped series",
@@ -2054,7 +2054,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -2117,7 +2117,7 @@
           "candidate_source_ids": [
             "SRC-039",
             "SRC-041",
-            "SRC-107",
+            "SRC-039",
             "SRC-110"
           ],
           "spatial_scope": "nearshore_bathymetry_required",
@@ -2134,7 +2134,7 @@
           "source_ids": [],
           "candidate_source_ids": [
             "SRC-039",
-            "SRC-107"
+            "SRC-039"
           ],
           "spatial_scope": "station_specific_not_assumed_transferable",
           "temporal_scope": null,
@@ -2151,7 +2151,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
             },
@@ -2162,7 +2162,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No beach-specific phase/level series is ingested."
             }
@@ -3152,7 +3152,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
           "candidate_source_ids": [
-            "SRC-107"
+            "SRC-039"
           ],
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
@@ -3219,7 +3219,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "regional_background_only_until_local_validation",
@@ -3236,7 +3236,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -3297,7 +3297,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "beach_specific",
@@ -3314,7 +3314,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -3377,7 +3377,7 @@
           "candidate_source_ids": [
             "SRC-039",
             "SRC-041",
-            "SRC-107",
+            "SRC-039",
             "SRC-110"
           ],
           "spatial_scope": "nearshore_bathymetry_required",
@@ -3394,7 +3394,7 @@
           "source_ids": [],
           "candidate_source_ids": [
             "SRC-039",
-            "SRC-107"
+            "SRC-039"
           ],
           "spatial_scope": "station_specific_not_assumed_transferable",
           "temporal_scope": null,
@@ -3411,7 +3411,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
             },
@@ -3422,7 +3422,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No beach-specific phase/level series is ingested."
             }
@@ -4153,7 +4153,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
           "candidate_source_ids": [
-            "SRC-107"
+            "SRC-039"
           ],
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
@@ -4220,7 +4220,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "regional_background_only_until_local_validation",
@@ -4237,7 +4237,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -4298,7 +4298,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "beach_specific",
@@ -4315,7 +4315,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -4378,7 +4378,7 @@
           "candidate_source_ids": [
             "SRC-039",
             "SRC-041",
-            "SRC-107",
+            "SRC-039",
             "SRC-110"
           ],
           "spatial_scope": "nearshore_bathymetry_required",
@@ -4395,7 +4395,7 @@
           "source_ids": [],
           "candidate_source_ids": [
             "SRC-039",
-            "SRC-107"
+            "SRC-039"
           ],
           "spatial_scope": "station_specific_not_assumed_transferable",
           "temporal_scope": null,
@@ -4412,7 +4412,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
             },
@@ -4423,7 +4423,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No beach-specific phase/level series is ingested."
             }
@@ -5105,7 +5105,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
           "candidate_source_ids": [
-            "SRC-107"
+            "SRC-039"
           ],
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
@@ -5172,7 +5172,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "regional_background_only_until_local_validation",
@@ -5189,7 +5189,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -5250,7 +5250,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "beach_specific",
@@ -5267,7 +5267,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -5330,7 +5330,7 @@
           "candidate_source_ids": [
             "SRC-039",
             "SRC-041",
-            "SRC-107",
+            "SRC-039",
             "SRC-110"
           ],
           "spatial_scope": "nearshore_bathymetry_required",
@@ -5347,7 +5347,7 @@
           "source_ids": [],
           "candidate_source_ids": [
             "SRC-039",
-            "SRC-107"
+            "SRC-039"
           ],
           "spatial_scope": "station_specific_not_assumed_transferable",
           "temporal_scope": null,
@@ -5364,7 +5364,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
             },
@@ -5375,7 +5375,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No beach-specific phase/level series is ingested."
             }
@@ -5872,7 +5872,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
           "candidate_source_ids": [
-            "SRC-107"
+            "SRC-039"
           ],
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
@@ -5939,7 +5939,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "regional_background_only_until_local_validation",
@@ -5956,7 +5956,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -6017,7 +6017,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "beach_specific",
@@ -6034,7 +6034,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -6097,7 +6097,7 @@
           "candidate_source_ids": [
             "SRC-039",
             "SRC-041",
-            "SRC-107",
+            "SRC-039",
             "SRC-110"
           ],
           "spatial_scope": "nearshore_bathymetry_required",
@@ -6114,7 +6114,7 @@
           "source_ids": [],
           "candidate_source_ids": [
             "SRC-039",
-            "SRC-107"
+            "SRC-039"
           ],
           "spatial_scope": "station_specific_not_assumed_transferable",
           "temporal_scope": null,
@@ -6131,7 +6131,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
             },
@@ -6142,7 +6142,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No beach-specific phase/level series is ingested."
             }
@@ -6648,7 +6648,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
           "candidate_source_ids": [
-            "SRC-107"
+            "SRC-039"
           ],
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
@@ -6715,7 +6715,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "regional_background_only_until_local_validation",
@@ -6732,7 +6732,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -6793,7 +6793,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "beach_specific",
@@ -6810,7 +6810,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -6873,7 +6873,7 @@
           "candidate_source_ids": [
             "SRC-039",
             "SRC-041",
-            "SRC-107",
+            "SRC-039",
             "SRC-110"
           ],
           "spatial_scope": "nearshore_bathymetry_required",
@@ -6890,7 +6890,7 @@
           "source_ids": [],
           "candidate_source_ids": [
             "SRC-039",
-            "SRC-107"
+            "SRC-039"
           ],
           "spatial_scope": "station_specific_not_assumed_transferable",
           "temporal_scope": null,
@@ -6907,7 +6907,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
             },
@@ -6918,7 +6918,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No beach-specific phase/level series is ingested."
             }
@@ -7574,7 +7574,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
           "candidate_source_ids": [
-            "SRC-107"
+            "SRC-039"
           ],
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
@@ -7641,7 +7641,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "regional_background_only_until_local_validation",
@@ -7658,7 +7658,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -7719,7 +7719,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "beach_specific",
@@ -7736,7 +7736,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -7799,7 +7799,7 @@
           "candidate_source_ids": [
             "SRC-039",
             "SRC-041",
-            "SRC-107",
+            "SRC-039",
             "SRC-110"
           ],
           "spatial_scope": "nearshore_bathymetry_required",
@@ -7816,7 +7816,7 @@
           "source_ids": [],
           "candidate_source_ids": [
             "SRC-039",
-            "SRC-107"
+            "SRC-039"
           ],
           "spatial_scope": "station_specific_not_assumed_transferable",
           "temporal_scope": null,
@@ -7833,7 +7833,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
             },
@@ -7844,7 +7844,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No beach-specific phase/level series is ingested."
             }
@@ -8632,7 +8632,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
           "candidate_source_ids": [
-            "SRC-107"
+            "SRC-039"
           ],
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
@@ -8699,7 +8699,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "regional_background_only_until_local_validation",
@@ -8716,7 +8716,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -8777,7 +8777,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "beach_specific",
@@ -8794,7 +8794,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -8857,7 +8857,7 @@
           "candidate_source_ids": [
             "SRC-039",
             "SRC-041",
-            "SRC-107",
+            "SRC-039",
             "SRC-110"
           ],
           "spatial_scope": "nearshore_bathymetry_required",
@@ -8874,7 +8874,7 @@
           "source_ids": [],
           "candidate_source_ids": [
             "SRC-039",
-            "SRC-107"
+            "SRC-039"
           ],
           "spatial_scope": "station_specific_not_assumed_transferable",
           "temporal_scope": null,
@@ -8891,7 +8891,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
             },
@@ -8902,7 +8902,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No beach-specific phase/level series is ingested."
             }
@@ -9460,7 +9460,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
           "candidate_source_ids": [
-            "SRC-107"
+            "SRC-039"
           ],
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
@@ -9527,7 +9527,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "regional_background_only_until_local_validation",
@@ -9544,7 +9544,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -9605,7 +9605,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "beach_specific",
@@ -9622,7 +9622,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -9685,7 +9685,7 @@
           "candidate_source_ids": [
             "SRC-039",
             "SRC-041",
-            "SRC-107",
+            "SRC-039",
             "SRC-110"
           ],
           "spatial_scope": "nearshore_bathymetry_required",
@@ -9702,7 +9702,7 @@
           "source_ids": [],
           "candidate_source_ids": [
             "SRC-039",
-            "SRC-107"
+            "SRC-039"
           ],
           "spatial_scope": "station_specific_not_assumed_transferable",
           "temporal_scope": null,
@@ -9719,7 +9719,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
             },
@@ -9730,7 +9730,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No beach-specific phase/level series is ingested."
             }
@@ -10433,7 +10433,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
           "candidate_source_ids": [
-            "SRC-107"
+            "SRC-039"
           ],
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
@@ -10500,7 +10500,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "regional_background_only_until_local_validation",
@@ -10517,7 +10517,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -10578,7 +10578,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "beach_specific",
@@ -10595,7 +10595,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -10658,7 +10658,7 @@
           "candidate_source_ids": [
             "SRC-039",
             "SRC-041",
-            "SRC-107",
+            "SRC-039",
             "SRC-110"
           ],
           "spatial_scope": "nearshore_bathymetry_required",
@@ -10675,7 +10675,7 @@
           "source_ids": [],
           "candidate_source_ids": [
             "SRC-039",
-            "SRC-107"
+            "SRC-039"
           ],
           "spatial_scope": "station_specific_not_assumed_transferable",
           "temporal_scope": null,
@@ -10692,7 +10692,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
             },
@@ -10703,7 +10703,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No beach-specific phase/level series is ingested."
             }
@@ -11431,7 +11431,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
           "candidate_source_ids": [
-            "SRC-107"
+            "SRC-039"
           ],
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
@@ -11498,7 +11498,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "regional_background_only_until_local_validation",
@@ -11515,7 +11515,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -11576,7 +11576,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "beach_specific",
@@ -11593,7 +11593,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -11656,7 +11656,7 @@
           "candidate_source_ids": [
             "SRC-039",
             "SRC-041",
-            "SRC-107",
+            "SRC-039",
             "SRC-110"
           ],
           "spatial_scope": "nearshore_bathymetry_required",
@@ -11673,7 +11673,7 @@
           "source_ids": [],
           "candidate_source_ids": [
             "SRC-039",
-            "SRC-107"
+            "SRC-039"
           ],
           "spatial_scope": "station_specific_not_assumed_transferable",
           "temporal_scope": null,
@@ -11690,7 +11690,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
             },
@@ -11701,7 +11701,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No beach-specific phase/level series is ingested."
             }
@@ -12330,7 +12330,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
           "candidate_source_ids": [
-            "SRC-107"
+            "SRC-039"
           ],
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
@@ -12397,7 +12397,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "regional_background_only_until_local_validation",
@@ -12414,7 +12414,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -12475,7 +12475,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "beach_specific",
@@ -12492,7 +12492,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -12555,7 +12555,7 @@
           "candidate_source_ids": [
             "SRC-039",
             "SRC-041",
-            "SRC-107",
+            "SRC-039",
             "SRC-110"
           ],
           "spatial_scope": "nearshore_bathymetry_required",
@@ -12572,7 +12572,7 @@
           "source_ids": [],
           "candidate_source_ids": [
             "SRC-039",
-            "SRC-107"
+            "SRC-039"
           ],
           "spatial_scope": "station_specific_not_assumed_transferable",
           "temporal_scope": null,
@@ -12589,7 +12589,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
             },
@@ -12600,7 +12600,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No beach-specific phase/level series is ingested."
             }
@@ -13058,7 +13058,7 @@
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
           "candidate_source_ids": [
-            "SRC-107"
+            "SRC-039"
           ],
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
@@ -13125,7 +13125,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "regional_background_only_until_local_validation",
@@ -13142,7 +13142,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -13203,7 +13203,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "beach_specific",
@@ -13220,7 +13220,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -13283,7 +13283,7 @@
           "candidate_source_ids": [
             "SRC-039",
             "SRC-041",
-            "SRC-107",
+            "SRC-039",
             "SRC-110"
           ],
           "spatial_scope": "nearshore_bathymetry_required",
@@ -13300,7 +13300,7 @@
           "source_ids": [],
           "candidate_source_ids": [
             "SRC-039",
-            "SRC-107"
+            "SRC-039"
           ],
           "spatial_scope": "station_specific_not_assumed_transferable",
           "temporal_scope": null,
@@ -13317,7 +13317,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
             },
@@ -13328,7 +13328,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No beach-specific phase/level series is ingested."
             }
@@ -13870,7 +13870,7 @@
           "status": "unknown",
           "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer.  Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
           "candidate_source_ids": [
-            "SRC-107"
+            "SRC-039"
           ],
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
@@ -13937,7 +13937,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "regional_background_only_until_local_validation",
@@ -13954,7 +13954,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -14015,7 +14015,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "beach_specific",
@@ -14032,7 +14032,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -14095,7 +14095,7 @@
           "candidate_source_ids": [
             "SRC-039",
             "SRC-041",
-            "SRC-107",
+            "SRC-039",
             "SRC-110"
           ],
           "spatial_scope": "nearshore_bathymetry_required",
@@ -14112,7 +14112,7 @@
           "source_ids": [],
           "candidate_source_ids": [
             "SRC-039",
-            "SRC-107"
+            "SRC-039"
           ],
           "spatial_scope": "station_specific_not_assumed_transferable",
           "temporal_scope": null,
@@ -14129,7 +14129,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
             },
@@ -14140,7 +14140,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No beach-specific phase/level series is ingested."
             }
@@ -14705,7 +14705,7 @@
           "status": "unknown",
           "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer.  Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
           "candidate_source_ids": [
-            "SRC-107"
+            "SRC-039"
           ],
           "evidence_type": "not_assessed",
           "spatial_scope": "beach_specific",
@@ -14772,7 +14772,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "regional_background_only_until_local_validation",
@@ -14789,7 +14789,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -14850,7 +14850,7 @@
           "evidence_type": "not_assessed",
           "source_ids": [],
           "candidate_source_ids": [
-            "SRC-107",
+            "SRC-039",
             "SRC-109"
           ],
           "spatial_scope": "beach_specific",
@@ -14867,7 +14867,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107",
+                "SRC-039",
                 "SRC-109"
               ],
               "confidence": "none",
@@ -14930,7 +14930,7 @@
           "candidate_source_ids": [
             "SRC-039",
             "SRC-041",
-            "SRC-107",
+            "SRC-039",
             "SRC-110"
           ],
           "spatial_scope": "nearshore_bathymetry_required",
@@ -14947,7 +14947,7 @@
           "source_ids": [],
           "candidate_source_ids": [
             "SRC-039",
-            "SRC-107"
+            "SRC-039"
           ],
           "spatial_scope": "station_specific_not_assumed_transferable",
           "temporal_scope": null,
@@ -14964,7 +14964,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No station-applicable tide-level series or harmonic constituents have been validated for this beach. Verify station, datum and transferability."
             },
@@ -14975,7 +14975,7 @@
               "source_ids": [],
               "candidate_source_ids": [
                 "SRC-039",
-                "SRC-107"
+                "SRC-039"
               ],
               "note": "No beach-specific phase/level series is ingested."
             }
