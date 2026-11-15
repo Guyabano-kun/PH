@@ -509,13 +509,14 @@
       "url": "https://r6.emb.gov.ph/wp-content/uploads/2025/08/2024-RSoBER-compressed.pdf",
       "type": "official_regional_environment_report",
       "published_at": "2025-08",
-      "checked_at": "2026-11-14",
+      "checked_at": "2026-11-15",
       "coverage": [
         "Boracay coastline and inland wetland water-quality programme",
         "January–July 2024 data presented to BIWQMACA",
-        "2024 water-quality management actions"
+        "2024 water-quality management actions",
+        "2024 report records pilot deployment of in-situ real-time water-quality monitoring equipment at Lugutan Bridge, connecting Wetland 6 and Lugutan Bay, on 5–6 December 2024."
       ],
-      "limitations": "The official PDF is indexed and confirms January–July 2024 Boracay water-quality data were presented to BIWQMACA, but the PDF could not be retrieved for full table validation during this research pass. The EMB Region 6 WQMA page currently links the Boracay Annual Assessment Report 2022. No station-level numeric values for 2024 are transcribed from this source.",
+      "limitations": "The official PDF is indexed and confirms January–July 2024 Boracay water-quality data were presented to BIWQMACA, but the PDF could not be retrieved for full table validation during this research pass. The EMB Region 6 WQMA page currently links the Boracay Annual Assessment Report 2022. No station-level numeric values for 2024 are transcribed from this source. The report states that pilot sensor results were confidential and used solely for testing; no numerical Lugutan Bridge results are available for beach-level water-quality assessment.",
       "reliability": "official_government_annual_report"
     },
     {
@@ -804,16 +805,17 @@
       "url": "https://tribune.net.ph/2026/03/04/boracay-outfalls-pass-initial-water-quality-tests",
       "type": "secondary_news_report_of_current_Denr_outfall_monitoring",
       "published_at": "2026-03-05",
-      "checked_at": "2026-11-14",
+      "checked_at": "2026-11-15",
       "coverage": [
         "EMB-6 and BIWQMACA two-day outfall sampling on 2–3 March 2026",
         "Bulabog Outfall 1",
         "Malabunot Outfall 2",
         "Bulabog Drainage Outfall",
         "Lugutan Outfall",
-        "On-site DO, temperature and pH compliance; laboratory TSS, color and fecal-coliform samples pending"
+        "On-site DO, temperature and pH compliance; laboratory TSS, color and fecal-coliform samples pending",
+        "EMB Region VI sampling on 2–3 March 2026 at Bulabog Outfall 1, Malabunot Outfall 2, Bulabog Drainage Outfall and Lugutan Outfall."
       ],
-      "limitations": "Reports outfall samples, not ambient recreational-water stations or beach bathing points. No numerical values or coordinates are published. It reports DO, temperature and pH compliant at all sites, but Panay News (SRC-046) reports elevated temperature readings at some locations; temperature status is therefore conflicting. Laboratory results for TSS, color and fecal coliform were pending at publication.",
+      "limitations": "Reports outfall samples, not ambient recreational-water stations or beach bathing points. No numerical values or coordinates are published. It reports DO, temperature and pH compliant at all sites, but Panay News (SRC-046) reports elevated temperature readings at some locations; temperature status is therefore conflicting. Laboratory results for TSS, color and fecal coliform were pending at publication. At publication, laboratory results for TSS, color and fecal coliform were pending; these are outfall samples, not ambient beach bathing-water results. Temperature compliance differs between the two secondary reports and remains unresolved.",
       "reliability": "secondary_report_attributing_EMB_region_VI"
     },
     {
@@ -854,16 +856,17 @@
       "url": "https://www.panaynews.net/boracay-waters-pass-key-quality-tests-emb-coastal-conditions-healthy-but-lab-tests-pending-for-other-indicators/",
       "type": "secondary_news_report_of_current_Denr_outfall_monitoring",
       "published_at": "2026-03-07",
-      "checked_at": "2026-11-14",
+      "checked_at": "2026-11-15",
       "coverage": [
         "EMB-6 and BIWQMACA outfall sampling on 2–3 March 2026",
         "Bulabog Outfall 1",
         "Malabunot Outfall 2",
         "Bulabog Drainage Outfall",
         "Lugutan Outfall",
-        "DO and pH reported compliant; elevated temperature readings reported at some locations; laboratory TSS, color and fecal-coliform results pending"
+        "DO and pH reported compliant; elevated temperature readings reported at some locations; laboratory TSS, color and fecal-coliform results pending",
+        "EMB Region VI sampling on 2–3 March 2026 at Bulabog Outfall 1, Malabunot Outfall 2, Bulabog Drainage Outfall and Lugutan Outfall."
       ],
-      "limitations": "Secondary report conflicts with Daily Tribune on temperature compliance: Panay News reports elevated temperature at some locations, but gives no values or station names. No numerical DO/pH results or coordinates are provided. Outfall samples are not ambient beach bathing-water samples.",
+      "limitations": "Secondary report conflicts with Daily Tribune on temperature compliance: Panay News reports elevated temperature at some locations, but gives no values or station names. No numerical DO/pH results or coordinates are provided. Outfall samples are not ambient beach bathing-water samples. At publication, laboratory results for TSS, color and fecal coliform were pending; these are outfall samples, not ambient beach bathing-water results. Temperature compliance differs between the two secondary reports and remains unresolved.",
       "reliability": "secondary_report_attributing_EMB_region_VI"
     },
     {
@@ -1823,6 +1826,128 @@
       ],
       "limitations": "GEBCO is a heterogeneous global compilation with mixed direct, indirect and interpolated source data. Its nominal 15 arc-second grid does not guarantee 15 arc-second measured bathymetric detail. Review the TID grid and source provenance for Boracay cells. GEBCO explicitly disclaims use for navigation or safety at sea; it is regional context only and cannot replace NAMRIA hydrographic data or calibrated nearshore survey.",
       "reliability": "official_global_bathymetry_compilation_with_cell_level_source_type_metadata"
+    },
+    {
+      "id": "SRC-111",
+      "title": "Boracay Island: Ecological Information with Social Profiling and MPA Governance",
+      "publisher": "DENR Biodiversity Management Bureau through the University of the Philippines Marine Science Institute",
+      "type": "government_commissioned_marine_ecological_and_oceanographic_study",
+      "published_at": "2013-2014",
+      "checked_at": "2026-11-15",
+      "url": "https://philchm.ph/wp-content/uploads/Boracay_Coastal-and-Marine-Information.pdf",
+      "coverage": [
+        "Island-scale oceanographic circulation: tidal dominance; strongest tidal currents at northern and southern tips; generally weaker flow on east and west coasts when leeward",
+        "Coral habitat survey and marine-park sites on Boracay west coast including Balinghai",
+        "2010 reef surveys at Laguna de Boracay, Tulubhan and Ilig-Iligan",
+        "Barangay-scale GIS habitat mapping for coral reef, seagrass and mangrove extents"
+      ],
+      "limitations": "The report combines habitat mapping and surveys from different years (2010, 2013 and 2013–2014). Circulation findings are island-scale, not measured beach-front current speeds or rip-current observations. Reef and habitat statistics must not be assigned to individual beach polygons without spatial overlays. Not a current ecological-condition or swimming-safety assessment.",
+      "reliability": "government_commissioned_research_via_DENR_BMB_UPMSI"
+    },
+    {
+      "id": "SRC-112",
+      "title": "Live Wind & Forecast for Boracay – Kwind station and historical Bulabog wind distribution",
+      "publisher": "Islakite Boracay Kitesurf & Wingfoil School",
+      "type": "specialist_operator_local_weather_station_and_wind_history",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "url": "https://islakitesurfing.com/livewind/",
+      "coverage": [
+        "Kwind weather station located directly in front of the Islakite school on Bulabog Beach; live readings, history and forecast links",
+        "Operator-reported Amihan season from late October to late April, occasionally mid-May",
+        "Operator-reported predominant northeast side-onshore wind at Bulabog, usually around 18–20 knots; 15–30 knots cited for suitable sessions",
+        "December through March reported as generally windiest",
+        "Habagat July–October: wind may blow on White Beach but is less consistent and rain is more common",
+        "Published historical monthly wind-distribution chart for Bulabog from October through April; exact numerical monthly percentages are not printed in the chart"
+      ],
+      "limitations": "Specialist operator source and school-front station, not a PAGASA reference station or independent calibration certificate. The public chart is qualitative without a readable numeric monthly scale; no monthly percentages are digitized. Spot-specific wind observations do not establish wave height, current, safe launch corridors or bathing safety. Forecast and live readings change continuously.",
+      "reliability": "specialist_operator_primary_local_station"
+    },
+    {
+      "id": "SRC-113",
+      "title": "The Dive Sites of Boracay – reef, wall and wreck inventory",
+      "publisher": "New Wave Divers Boracay",
+      "type": "commercial_dive_operator_site_inventory",
+      "published_at": null,
+      "checked_at": "2026-11-15",
+      "url": "https://www.newwavediversboracay.com/dive-site/",
+      "coverage": [
+        "Balinghai Wall: operator-listed dive site, 8–20 m",
+        "Diniwid Sloping Reef: operator-listed dive site, 8–18 m",
+        "Punta Bunga Deep reef: operator-listed dive site, 32–40 m",
+        "Tambisaan Reef: operator-listed dive site, 8–17 m",
+        "Operator lists additional Boracay dive sites including Friday's Reef, Coral Garden and Crocodile Island"
+      ],
+      "limitations": "Commercial dive-operator site inventory, not a hydrographic survey. Depth ranges refer to dive sites, not beach-front bathing depths. No surveyed site coordinates, reef polygons, shoreline distances, snorkelling suitability, visibility climatology or current-strength series are supplied. Do not convert dive-site records into beach centroids or assume shallow-water snorkelling access.",
+      "reliability": "specialist_dive_operator_site_inventory"
+    },
+    {
+      "id": "SRC-114",
+      "title": "Water Quality and Nutrient Loading in the Coastal Waters of Boracay Island, Malay Aklan, Central Philippines",
+      "publisher": "Vilma G. Limates, Virginia C. Cuevas and Edwin Benigno; Journal of Environmental Science and Management",
+      "type": "peer_reviewed_research_article_abstract",
+      "published_at": "2021",
+      "checked_at": "2026-11-15",
+      "url": "https://www.ukdr.uplb.edu.ph/journal-articles/3887",
+      "coverage": [
+        "Seven coastal sites assessed for spatial and temporal nutrient inputs",
+        "Puka Beach near Mangrove Swamp 1 with relatively good mangrove cover was reported as the cleanest water-quality site among those studied",
+        "Long Beach was reported next after Puka Beach",
+        "Lugotan Cove near Mangrove Swamp 6 was identified as a critical area",
+        "February–June, the period with the highest tourist arrivals, was identified as a critical period"
+      ],
+      "limitations": "The repository exposes the abstract but not the full article or numeric tables. Sampling dates and site-level numerical values cannot be reconstructed from the abstract. Findings are historical and cannot be used as current bathing-water status, a 2026 safety assessment or a numeric beach ranking.",
+      "reliability": "peer_reviewed_article_abstract_only"
+    },
+    {
+      "id": "SRC-115",
+      "title": "Spatiotemporal Assessment of Fecal Coliform Contaminations in the Coastal and Inland Wetlands of Boracay Island: Implications to Fisheries Resources and Management",
+      "publisher": "Yves Christian L. Cabillon; The International Journal of Science, Technology and Engineering / Pangasinan State University",
+      "type": "peer_reviewed_research_article_abstract",
+      "published_at": "2025-12-26",
+      "checked_at": "2026-11-15",
+      "url": "https://ijste.psu.edu.ph/index.php/about/article/view/46",
+      "coverage": [
+        "Island-wide coastal and inland wetland fecal-coliform trends for 2018–2023",
+        "Study abstract reports reductions after Boracay closure, cleanup, improved sewage systems and DENR monitoring, with continuing fluctuations",
+        "Abstract identifies inland wetland contamination as a potential risk to coastal waters and fisheries"
+      ],
+      "limitations": "Only the abstract was available in this research pass. It provides no station-by-station values, monthly time series, beach coordinates or beach-specific compliance. Do not use it to score an individual beach or infer current bathing safety.",
+      "reliability": "peer_reviewed_article_abstract_only"
+    },
+    {
+      "id": "SRC-116",
+      "title": "NAMRIA Standards for Hydrographic Surveys, Third Edition, January 2025",
+      "publisher": "National Mapping and Resource Information Authority, Hydrography Branch",
+      "type": "official_hydrographic_survey_standard",
+      "published_at": "2025-01",
+      "checked_at": "2026-11-15",
+      "url": "https://www.namria.gov.ph/jdownloads/Others/NAMRIA_Standards_for_Hydrographic_Surveys_NSHS_3rd_Ed_20250.pdf",
+      "coverage": [
+        "Hydrographic standards for tidal observations and water levels",
+        "Depth sounding, vertical and horizontal control, uncertainty and quality control",
+        "Seabed-characteristic sampling and observation",
+        "Coastline and high/low water-line delineation",
+        "Current observation and digital bathymetry deliverables"
+      ],
+      "limitations": "This is a survey standard, not a Boracay data product. It establishes methods and quality requirements but supplies no local bathymetry, current measurements, tide predictions or beach boundaries.",
+      "reliability": "official_national_hydrographic_survey_standard"
+    },
+    {
+      "id": "SRC-117",
+      "title": "Boracay opens designated swimming areas",
+      "publisher": "Philippine News Agency",
+      "type": "historical_local_government_swimming_zone_report",
+      "published_at": "2020",
+      "checked_at": "2026-11-15",
+      "url": "https://www.pna.gov.ph/articles/1104538",
+      "coverage": [
+        "Historical report of designated swimming areas at White Beach Stations 1, 2 and 3",
+        "Report also mentions one designated area in Yapak village",
+        "Report describes lifeguard stations and temporary operating hours of 06:00–18:00 during the 2020 reopening period"
+      ],
+      "limitations": "The report concerns temporary 2020 reopening/COVID-era protocols. It does not establish current swimming-zone boundaries, present lifeguard staffing, current hours or the Yapak area's identity as Puka Beach. Retained only as historical evidence; not used as current access or safety status.",
+      "reliability": "national_news_agency_historical_local_government_report"
     }
   ]
 }
