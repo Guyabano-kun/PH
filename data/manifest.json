@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.50",
+  "dataset_version": "0.2.51",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-15",
   "beach_count": 16,
@@ -29,6 +29,8 @@
     }
   },
   "notes": [
+    "Version 0.2.51: practical access descriptions for Bulabog, Diniwid, Ilig-Iligan, Tulubhan and Tambisaan are upgraded from unknown to provisional based on visitor/operator reports. Formal public-right-of-way, current gates and current path conditions remain unverified.",
+    "Version 0.2.51: added field-level seabed/reef evidence from the 10 October 2026 New Wave Divers shore-snorkelling guide and the DENR-BMB/UPMSI marine study. White Beach central Stations 1–3 are recorded as sandy/no shore reef-snorkelling habitat; Diniwid has provisional nearshore rock/coral patches; Tambisaan has supported nearshore reef presence; Balinghai, Ilig-Iligan and Tulubhan retain locality-level provisional reef evidence only. No reef boundaries or coral-condition scores are inferred.",
     "Version 0.2.50 snorkelling evidence update: New Wave Divers' 10 October 2026 local guide identifies shore-snorkelling context at Diniwid and Tambisaan (high tide/calm water), and explicitly says central White Beach Stations 1–3 are sandy and busy with boat traffic, not a reef-snorkelling site. Diniwid is added as a provisional eligible candidate; Tambisaan remains provisional; White Beach's negative snorkelling observation is retained but excluded from recommendations. Angol Point is not merged into White Beach.",
     "Version 0.2.50 picker data refinement: White Beach's mixed Amihan/Habagat swimming-context observations are retained as evidence but marked recommendation_eligible=false; only the Amihan relative-shelter observation is eligible. Bulabog's 'not a quiet cove' observation is excluded from beach-relaxation candidates. Swimming claims without beach-specific safety or seasonal evidence and relaxation claims with unresolved public entry are excluded. Added Bulabog's operator-specific Habagat boat-excursion meeting point from June–September.",
     "Picker eligibility control: activity evidence confidence and activity fit are separate. Each evidence observation may set recommendation_eligible=false when it is caution-only, non-specific, adverse to the activity or dependent on unconfirmed public access. The picker defaults missing values to eligible for backward compatibility, but new records must explicitly flag non-candidate evidence. This is a binary inclusion gate, not a numeric suitability score.",
