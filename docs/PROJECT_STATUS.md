@@ -11,7 +11,8 @@ Last verified against GitHub `main`: 2026-11-15
 - `data/sources.json`: 105 sources
 - Manifest counts: `beach_count=16`, `selection_beach_count=13`, `research_only_record_count=3`
 - The manifest, beach dataset, source dataset, `weather.html`, and `beaches.html` were freshly fetched from GitHub `main` before creating the project-control files.
-- The commit containing this status file will become the newer `main` HEAD.
+- Repository operating instructions and continuity records are now present on `main`: `AGENTS.md`, `docs/PROJECT_DECISIONS.md`, `docs/PROJECT_STATUS.md`, and `docs/CHAT_START.md`.
+- These context files were re-fetched from GitHub `main` after creation and their contents were verified.
 
 ## Completed work
 
