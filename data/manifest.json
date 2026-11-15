@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.47",
+  "dataset_version": "0.2.48",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-15",
   "beach_count": 16,
@@ -29,6 +29,7 @@
     }
   },
   "notes": [
+    "Version 0.2.48: corrected Hagdan Beach source attribution. The provisional beach-name claim now cites only the secondary travel guide SRC-008; TPB SRC-001 and the Aklan provincial directory SRC-086 are retained only for Sitio Hagdan locality context. Unrelated SRC-065 (Tropicana nearby-attractions listing for The Ruins / West Cove Ruins) was removed from Hagdan identity attribution. Hagdan remains excluded from the 13-beach selection pool; no beach boundary or coordinate is inferred.",
     "This is an initial evidence-backed data structure, not a completed suitability model.",
     "No activity scores are assigned in this dataset.",
     "Historical water-quality results are not current safety advice.",
