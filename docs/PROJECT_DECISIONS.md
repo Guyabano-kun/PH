@@ -64,12 +64,13 @@ Approved project hierarchy:
 This is approved project scope/hierarchy, not a surveyed statement of physical boundaries. Do not create duplicate Cove 1 records or infer beach coordinates from resort/hotel/transport POIs. Newcoast and Savoy beach-specific coordinates remain unverified/null until independently established.
 
 ## Beach suitability recommender
-- Integrate into existing `weather.html` and existing weather/map experience; do not create a separate application.
+- User-approved placement update (2026-11-15): put the compact, evidence-led beach picker on the main Boracay guide `boracay.html`; link detailed sea, weather, tide, and seasonal information to `weather.html`. This supersedes the earlier plan to place the entry point only in `weather.html`.
 - Five activities: `swimming`, `beach_relaxation`, `snorkeling`, `kitesurfing_windsurfing`, `boat_excursions`.
-- Three query modes: month + activity → best beach; month + beach → suitable activities; activity + beach → best months.
-- Default: top 5 beaches for current month. “More details” exposes all 13 rankings, then methodology, criteria, weights, sources, and confidence.
-- Planned model: 12 months × 5 activities × 13 selected beaches.
-- Factors include waves, wind, tide, rain, currents, geography, underwater conditions, access, and safety; weights depend on activity.
+- The guide-page first stage defaults to the current season calculated in `Asia/Manila` and shows up to 3 evidence-backed beach options per activity. Do not pad results when evidence is insufficient.
+- Display evidence status (`supported` / `provisional`) and material limitations. Seasonal recommendations require an explicit seasonal observation; general activity evidence must be labelled as not seasonally assessed.
+- The current guide-page picker is an evidence summary, not a comparative suitability ranking, safety assessment, or day-specific sea forecast. It must not imply that a beach is safe to swim or that a listed meeting point is a universal boat departure terminal.
+- Three full query modes remain the target: month + activity → best beach; month + beach → suitable activities; activity + beach → best months. These modes must not be presented as fully implemented until their evidence basis is available.
+- Planned assessment scope: 12 months × 5 activities × 13 selected beaches. Factors include waves, wind, tide, rain, currents, geography, underwater conditions, access, and safety; weights depend on activity.
 - Missing evidence must reduce confidence or prevent scoring, not improve a score by default.
 - Do not assign scores or publish a monthly matrix until methodology, evidence sufficiency, unknown-data treatment, weights, and confidence rules have been reviewed and approved.
 - Do not confuse long-term seasonal suitability with date-specific sea/bathing conditions.
