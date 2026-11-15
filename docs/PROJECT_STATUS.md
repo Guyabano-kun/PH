@@ -76,35 +76,40 @@ These are historical checks. Re-run relevant checks against current `main` after
 
 ## Current work package and exact next step
 
-**Accepted scope (2026-11-15): evidence-enrich all 13 beach passports for the five beach-picker activities and seasonal sea context.**
+**Current baseline (2026-11-15): evidence-enriched 13-beach picker, dataset 0.2.52.**
 
-Current implementation:
-- Dataset version: 0.2.48; 16 records total, 13 eligible selection records, 3 research-only records.
-- Selection order is continuous from 1 to 13. Angol Point, Hagdan Beach and Lugutan Beach remain excluded from the selection pool.
-- Newcoast hierarchy is represented in the three child passports: Cove 1 / Lapus-Lapus Beach, Cove 2 / Boracay Newcoast Beach, Cove 3 / Savoy Beach. This is a project-approved naming relationship, not a surveyed shoreline boundary.
-- Hagdan source attribution corrected: SRC-065 was unrelated to Hagdan and has been removed from its identity evidence. Hagdan remains provisional and has no beach coordinate.
-- Added the DENR-EMB `New Coast Boracay` monitoring station to the Newcoast passport as parent-area context only. The 2022 and 2023 reports carry the same station coordinate and publish station-specific historical results; no assignment to Cove 1/2/3 is inferred. The station point is not a beach coordinate.
-- `beaches.html` now displays selection membership and the Newcoast parent/cove mapping using the current `parent_area` and `developer_cove` fields; legacy `developer_coves` rendering is retained.
-- The monitoring filter now distinguishes beach-specific DENR stations from parent-area-only monitoring; Newcoast's station does not appear as beach-specific monitoring.
-- Dataset 0.2.50 adds island-scale tidal-circulation context to all 13 selection passports, six nearby named dive-site references (without beach-boundary or snorkelling inference), Islakite's local Bulabog wind-station evidence, a provisional White Beach Amihan shelter observation, historical Puka/White Beach water-quality study context, and a historical 2020 White Beach swimming-zone record. All 65 scores remain null.
-- Critical picker correction: evidence confidence is no longer treated as activity suitability. Added the backward-compatible `recommendation_eligible` gate; caution-only, adverse, non-specific or access-unconfirmed observations remain in the evidence record but are excluded from candidate selection. White Beach is eligible for the Amihan swimming context only; Bulabog is excluded from quiet beach-relaxation recommendations; Bulabog's operator-specific Habagat boat meeting point is now represented separately.
-- Added a current specialist-operator shore-snorkelling source (SRC-118): Diniwid and Tambisaan have conditional shore-snorkelling evidence (high tide/calm water); central White Beach Stations 1–3 are explicitly not a reef-snorkelling location. Angol Point remains a separate excluded research record.
-- Dataset 0.2.51 promotes only supported/provisional field-level findings: central White Beach Stations 1–3 are sandy/no reef-snorkel habitat; Diniwid nearshore rock/coral is provisional; Tambisaan nearshore reef presence is supported; Balinghai, Ilig-Iligan and Tulubhan reef references remain locality-level provisional. Practical access descriptions for Bulabog, Diniwid, Ilig-Iligan, Tulubhan and Tambisaan are provisional only; no public right-of-way is asserted.
-- The picker now displays optional condition/access notes for leading recommendations and alternatives. Tambisaan is the primary shore-snorkelling candidate based on two operator/visitor sources; Diniwid is the secondary provisional candidate. Notes require calm water/high tide and prohibit treating seasonal context as a same-day safety clearance.
-- Dataset 0.2.52 adds Diniwid as a provisional Amihan swimming and beach-relaxation candidate; Ilig-Iligan as a provisional dry-season snorkelling candidate; Balinghai as a paid-entry, low-tide snorkelling candidate. Puka's rocky-edge snorkelling evidence is excluded because of current/drop-off warnings. Lapus-Lapus and Punta Bunga swimming evidence is retained but excluded while public access remains uncertain.
-- All 65 activity values (13 beaches × 5 activities) remain null and unscored pending evidence validation and approved methodology.
-- Source-reference audit: 109 sources, no dangling source IDs. JSON parsing and JavaScript syntax checks pass.
-- Newcoast Cove 2 field review: `ecology.water_quality_history` changed from unknown to provisional; the station is explicitly area-level. One unknown field was converted to provisional, not supported.
-- Newcoast Cove 2 and Cove 3 beach-specific coordinates and boundaries remain NOT VERIFIED. No POI, hotel, or transport-stop coordinate is substituted.
-- The current evidence additions are data-only; GitHub Pages live and visual verification remain NOT VERIFIED until the published pages are retrieved.
+- 16 records total: 13 eligible beaches and 3 research-only records; selection order is continuous 1–13.
+- 117 registered sources; source-reference audit has no dangling IDs or duplicate source IDs.
+- 13 passports now contain island-scale tidal-circulation context, scoped reef/dive-site references, available historical water-quality data, seasonal activity observations and access caveats. Island-scale context is not represented as beach-level measurements.
+- Field audit across the 13 selected passports: 85 supported, 50 provisional and 435 unknown field values. Per passport, 30–37 tracked fields remain unknown.
+- All 65 activity suitability values (13 beaches × 5 activities) remain null and unscored. No 12-month × 5-activity suitability matrix has been calculated.
+- Picker evidence confidence and recommendation eligibility are separate. The optional `recommendation_eligible` gate excludes caution-only, adverse, non-specific or access-unconfirmed claims; condition/access notes are shown under recommendations.
+- Current evidence-backed candidate output:
+  - **Amihan:** swimming — White Beach, Diniwid; beach relaxation — White Beach, Puka, Diniwid; shore snorkelling — Tambisaan, Diniwid, Balinghai; kite/windsurfing — Bulabog; boat-excursion meeting point — White Beach Station 1.
+  - **Habagat:** no swimming or kite/windsurfing candidate is currently supported; beach relaxation — White Beach, Puka, Diniwid; shore snorkelling — Tambisaan, Diniwid, Balinghai; operator-specific boat-excursion meeting point — Bulabog.
+- Candidate output is evidence-based and conditional, not a safety ranking or same-day sea-state forecast. Snorkelling notes require calm water/high tide as applicable; Balinghai requires resort admission and tide planning.
+- **Water quality:** latest publicly ingested station-specific annual dataset is CY 2023. The 2024 RSoBER documents a real-time pilot at Lugutan Bridge, but the results are confidential and not numerically published. March 2026 outfall samples are not ambient beach-water samples; laboratory TSS, color and fecal-coliform results were pending in the reports reviewed.
+- **Wind:** Bulabog now has an operator-front Kwind station and qualitative historical distribution chart. No machine-readable monthly percentages were available. White Beach's Amihan shelter evidence remains provisional.
+- **Reefs:** Tambisaan nearshore reef presence is supported; Diniwid is provisional; Balinghai, Ilig-Iligan and Tulubhan references remain locality/nearby-site evidence. Reef polygons, live-coral condition, visibility and beach-specific bathymetry remain unverified.
+- **Access:** practical routes are recorded where reported, but formal public right-of-way and current gate/entry status remain unverified for several beaches. Resort-managed access is not treated as unrestricted public access.
+- **Newcoast:** Cove 1 / Lapus-Lapus, Cove 2 / Boracay Newcoast Beach, Cove 3 / Savoy Beach mappings remain project-approved naming relationships, not surveyed boundaries. The DENR New Coast station is parent-area monitoring only, not assigned to any individual cove.
+- **Hagdan:** remains a provisional name candidate outside the 13-beach pool; no separate beach boundary or beach coordinate is established.
 
-Required sequence:
-1. Continue field-by-field evidence review for all 13 passports; enrich only claims supported by traceable sources.
-2. Resolve the Hagdan identity question only if independent beach-feature/boundary evidence is found; otherwise keep it research-only.
-3. Reconcile Newcoast Cove 1/2/3 names with developer material and map layers without inferring geometry or coordinates.
-4. Keep unsupported shoreline, bathymetry, currents, tide, access, lifeguard and safety fields unknown.
-5. Keep all 65 activity values unscored until the evidence and scoring methodology are validated and approved.
-6. Re-run source, schema, coordinate, UI, mobile/desktop and published-page checks after each implementation batch.
+### Remaining data required for a fully validated suitability model
+
+1. **Hydrography:** obtain NAMRIA bathymetry, tidal predictions and station/time-specific tidal-current data for Boracay; validate chart coverage and source type before using any gridded values.
+2. **Nearshore conditions:** collect beach-specific wave exposure, current speed/direction, rip-current observations, entry/exit and tide-dependent access observations. Copernicus global grids are too coarse for individual beaches.
+3. **Wind climatology:** obtain a machine-readable multi-year monthly wind series for Bulabog and west/north/east/south Boracay sectors. The operator chart is qualitative and does not support monthly numerical scoring.
+4. **Water quality:** obtain station-level 2024–2026 EMB results, sampling dates, compliance/event counts and laboratory parameters; keep outfall results separate from ambient beach stations.
+5. **Safety and access:** obtain current LGU/MDRRMO/Coast Guard swimming-zone maps, lifeguard deployment, red-flag rules, public approach routes and resort day-entry terms.
+6. **Marine ecology:** obtain georeferenced reef/seagrass polygons, recent coral-condition surveys, nearshore depth profiles and visibility/current observations for each beach.
+7. **Suitability methodology:** define activity-specific criteria, seasonal weighting, evidence confidence, access gates, adverse-condition exclusions and unknown-data treatment before calculating any of the 65 values or the 12 × 5 monthly matrix.
+
+### Validation status
+- GitHub JSON and JavaScript syntax checks: PASS.
+- Source-reference integrity and field-review path counts: PASS.
+- 65 numeric activity scores remain null by design.
+- GitHub Pages live retrieval and rendered mobile/desktop verification: NOT VERIFIED. The published pages could not be retrieved in the current verification environment; do not report deployment PASS.
 
 Do not invent suitability, access rights, safety conclusions, beach boundaries or coordinates.
 
