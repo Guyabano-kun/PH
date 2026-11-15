@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.46",
+  "dataset_version": "0.2.47",
   "dataset_status": "research_enriched_draft",
   "last_updated": "2026-11-15",
   "beach_count": 16,
@@ -129,7 +129,8 @@
     "All seven hydrodynamic parameter groups now distinguish evidence type, source IDs, candidate source IDs, spatial scope, temporal scope, confidence, limitations and next action where applicable. Candidate source IDs indicate a potential acquisition source, not extracted evidence.",
     "Copernicus WAVERYS nominal 0.2-degree (~20 km) wave grid and GLORYS12V1 nominal 1/12-degree (~8–9 km) current grid are too coarse to resolve individual Boracay beaches, reef channels, surf zones or rip currents. Use only for regional context pending local validation.",
     "GEBCO_2026 is a heterogeneous global bathymetry compilation. Its Type Identifier Grid must be reviewed cell-by-cell; it is not a substitute for NAMRIA hydrographic data and must not be used for navigation or marine-safety decisions.",
-    "Hydrodynamic data acquisition remains incomplete: NAMRIA bathymetry/tidal data have not been received, no local current-meter/drifter observations or repeatable rip-current observations have been ingested, and no standardized entry/exit field survey has been completed. Activity scores remain unassigned."
+    "Hydrodynamic data acquisition remains incomplete: NAMRIA bathymetry/tidal data have not been received, no local current-meter/drifter observations or repeatable rip-current observations have been ingested, and no standardized entry/exit field survey has been completed. Activity scores remain unassigned.",
+    "Dataset 0.2.47 refines the hydrodynamics schema without changing the seven top-level parameter groups: current speed and direction are separated into tidal, wind-driven, wave-induced, longshore and rip-current components; rip-current evidence separates morphological indicators, direct active-rip observations, incident history and hazard assessment; tides distinguish tide level and tidal phase. All newly introduced subcomponents remain unknown until supported by observations or validated model outputs."
   ],
   "record_count": 16,
   "selection_beach_count": 13,
