@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.2.45",
+  "dataset_version": "0.2.46",
   "last_updated": "2026-11-15",
   "beaches": [
     {
@@ -282,7 +282,14 @@
         "rip_currents": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
+          "candidate_source_ids": [
+            "SRC-107"
+          ],
+          "evidence_type": "not_assessed",
+          "spatial_scope": "beach_specific",
+          "confidence": "none",
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
         },
         "visibility": {
           "value": null,
@@ -322,6 +329,102 @@
             "SRC-042"
           ],
           "note": "Island-side contextual description, not a measured current at a specific White Beach station; no current speed, direction series or seasonal statistics are supplied."
+        },
+        "wave_exposure": {
+          "value": null,
+          "status": "provisional",
+          "evidence_type": "qualitative_and_inferred",
+          "source_ids": [
+            "SRC-001",
+            "SRC-038",
+            "SRC-042",
+            "SRC-081",
+            "SRC-106"
+          ],
+          "candidate_source_ids": [
+            "SRC-108"
+          ],
+          "spatial_scope": "White Beach / western Boracay coast; not individual shoreline segments",
+          "temporal_scope": "Historical seasonal descriptions and modelled case studies; not a current sea-state forecast",
+          "confidence": "low",
+          "note": "Existing sources support a provisional seasonal exposure description: White Beach is described as leeward/calm during summer and may experience somewhat stronger waves during Habagat; a separate modelled thesis describes direct exposure to southwest winds. These sources are qualitative or model-based and do not provide a validated beach-level wave-height time series. WAVERYS is only a regional offshore candidate dataset at approximately 20 km grid spacing.",
+          "next_action": "Use WAVERYS/ERA5 only to establish regional offshore seasonal wave climate; do not assign beach-front Hs until local exposure, bathymetry and nearshore transformation are validated."
+        },
+        "current_speed": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "regional_background_only_until_local_validation",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+        },
+        "current_direction": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+        },
+        "bathymetry": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-041",
+            "SRC-107",
+            "SRC-110"
+          ],
+          "spatial_scope": "nearshore_bathymetry_required",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "next_action": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "tides": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-107"
+          ],
+          "spatial_scope": "station_specific_not_assumed_transferable",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "entry_exit": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [],
+          "spatial_scope": "specific_access_corridor_or_beach_segment",
+          "temporal_scope": "field_observation_timestamp_required",
+          "confidence": "none",
+          "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
+          "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
         }
       },
       "activities": {
@@ -1574,7 +1677,14 @@
         "rip_currents": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
+          "candidate_source_ids": [
+            "SRC-107"
+          ],
+          "evidence_type": "not_assessed",
+          "spatial_scope": "beach_specific",
+          "confidence": "none",
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
         },
         "visibility": {
           "value": null,
@@ -1609,6 +1719,104 @@
             "SRC-042"
           ],
           "note": "Island-scale contextual description, not a measured current at a specific Bulabog station; no current speed or time series is supplied."
+        },
+        "wave_exposure": {
+          "value": null,
+          "status": "provisional",
+          "evidence_type": "qualitative_and_inferred",
+          "source_ids": [
+            "SRC-001",
+            "SRC-038",
+            "SRC-042",
+            "SRC-081",
+            "SRC-106"
+          ],
+          "candidate_source_ids": [
+            "SRC-108"
+          ],
+          "spatial_scope": "Bulabog Beach / eastern Boracay coast; not individual shoreline segments",
+          "temporal_scope": "Historical seasonal descriptions and modelled case studies; not a current sea-state forecast",
+          "confidence": "low",
+          "note": "Existing sources support a provisional seasonal exposure description: Bulabog is described as windward during summer and northeast-facing in a modelled study. The relative wave response differs by monsoon in that study. No validated beach-level wave-height time series is available. WAVERYS is only a regional offshore candidate dataset at approximately 20 km grid spacing.",
+          "next_action": "Use WAVERYS/ERA5 only to establish regional offshore seasonal wave climate; do not assign beach-front Hs until local exposure, bathymetry and nearshore transformation are validated."
+        },
+        "current_speed": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "regional_background_only_until_local_validation",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+        },
+        "current_direction": {
+          "value": "eastward_contextual",
+          "status": "provisional",
+          "evidence_type": "qualitative_observation",
+          "source_ids": [
+            "SRC-042"
+          ],
+          "candidate_source_ids": [
+            "SRC-109",
+            "SRC-107"
+          ],
+          "spatial_scope": "eastern side of Boracay; not a measured Bulabog beach transect",
+          "temporal_scope": "historical qualitative description; no timestamped series",
+          "confidence": "low",
+          "note": "SRC-042 describes an eastward surface-current direction along the eastern side of Boracay. It provides no speed, depth, tidal phase or beach-specific measurement. This is contextual direction only, not a measured current at Bulabog.",
+          "next_action": "Check regional GLORYS fields for background circulation, then verify local direction with controlled drifters or current-meter observations at defined tidal phases."
+        },
+        "bathymetry": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-041",
+            "SRC-107",
+            "SRC-110"
+          ],
+          "spatial_scope": "nearshore_bathymetry_required",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "next_action": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "tides": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-107"
+          ],
+          "spatial_scope": "station_specific_not_assumed_transferable",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "entry_exit": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [],
+          "spatial_scope": "specific_access_corridor_or_beach_segment",
+          "temporal_scope": "field_observation_timestamp_required",
+          "confidence": "none",
+          "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
+          "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
         }
       },
       "activities": {
@@ -2580,7 +2788,14 @@
         "rip_currents": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
+          "candidate_source_ids": [
+            "SRC-107"
+          ],
+          "evidence_type": "not_assessed",
+          "spatial_scope": "beach_specific",
+          "confidence": "none",
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
         },
         "visibility": {
           "value": null,
@@ -2591,6 +2806,96 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "wave_exposure": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-108"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell.",
+          "next_action": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell."
+        },
+        "current_speed": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "regional_background_only_until_local_validation",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+        },
+        "current_direction": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+        },
+        "bathymetry": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-041",
+            "SRC-107",
+            "SRC-110"
+          ],
+          "spatial_scope": "nearshore_bathymetry_required",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "next_action": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "tides": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-107"
+          ],
+          "spatial_scope": "station_specific_not_assumed_transferable",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "entry_exit": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [],
+          "spatial_scope": "specific_access_corridor_or_beach_segment",
+          "temporal_scope": "field_observation_timestamp_required",
+          "confidence": "none",
+          "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
+          "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
         }
       },
       "activities": {
@@ -3303,7 +3608,14 @@
         "rip_currents": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
+          "candidate_source_ids": [
+            "SRC-107"
+          ],
+          "evidence_type": "not_assessed",
+          "spatial_scope": "beach_specific",
+          "confidence": "none",
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
         },
         "visibility": {
           "value": null,
@@ -3314,6 +3626,96 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "wave_exposure": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-108"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell.",
+          "next_action": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell."
+        },
+        "current_speed": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "regional_background_only_until_local_validation",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+        },
+        "current_direction": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+        },
+        "bathymetry": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-041",
+            "SRC-107",
+            "SRC-110"
+          ],
+          "spatial_scope": "nearshore_bathymetry_required",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "next_action": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "tides": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-107"
+          ],
+          "spatial_scope": "station_specific_not_assumed_transferable",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "entry_exit": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [],
+          "spatial_scope": "specific_access_corridor_or_beach_segment",
+          "temporal_scope": "field_observation_timestamp_required",
+          "confidence": "none",
+          "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
+          "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
         }
       },
       "activities": {
@@ -3977,7 +4379,14 @@
         "rip_currents": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
+          "candidate_source_ids": [
+            "SRC-107"
+          ],
+          "evidence_type": "not_assessed",
+          "spatial_scope": "beach_specific",
+          "confidence": "none",
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
         },
         "visibility": {
           "value": null,
@@ -3988,6 +4397,96 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "wave_exposure": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-108"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell.",
+          "next_action": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell."
+        },
+        "current_speed": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "regional_background_only_until_local_validation",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+        },
+        "current_direction": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+        },
+        "bathymetry": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-041",
+            "SRC-107",
+            "SRC-110"
+          ],
+          "spatial_scope": "nearshore_bathymetry_required",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "next_action": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "tides": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-107"
+          ],
+          "spatial_scope": "station_specific_not_assumed_transferable",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "entry_exit": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [],
+          "spatial_scope": "specific_access_corridor_or_beach_segment",
+          "temporal_scope": "field_observation_timestamp_required",
+          "confidence": "none",
+          "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
+          "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
         }
       },
       "activities": {
@@ -4466,7 +4965,14 @@
         "rip_currents": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
+          "candidate_source_ids": [
+            "SRC-107"
+          ],
+          "evidence_type": "not_assessed",
+          "spatial_scope": "beach_specific",
+          "confidence": "none",
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
         },
         "visibility": {
           "value": null,
@@ -4477,6 +4983,96 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "wave_exposure": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-108"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell.",
+          "next_action": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell."
+        },
+        "current_speed": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "regional_background_only_until_local_validation",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+        },
+        "current_direction": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+        },
+        "bathymetry": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-041",
+            "SRC-107",
+            "SRC-110"
+          ],
+          "spatial_scope": "nearshore_bathymetry_required",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "next_action": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "tides": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-107"
+          ],
+          "spatial_scope": "station_specific_not_assumed_transferable",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "entry_exit": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [],
+          "spatial_scope": "specific_access_corridor_or_beach_segment",
+          "temporal_scope": "field_observation_timestamp_required",
+          "confidence": "none",
+          "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
+          "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
         }
       },
       "activities": {
@@ -4964,7 +5560,14 @@
         "rip_currents": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
+          "candidate_source_ids": [
+            "SRC-107"
+          ],
+          "evidence_type": "not_assessed",
+          "spatial_scope": "beach_specific",
+          "confidence": "none",
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
         },
         "visibility": {
           "value": null,
@@ -4975,6 +5578,96 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "wave_exposure": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-108"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell.",
+          "next_action": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell."
+        },
+        "current_speed": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "regional_background_only_until_local_validation",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+        },
+        "current_direction": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+        },
+        "bathymetry": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-041",
+            "SRC-107",
+            "SRC-110"
+          ],
+          "spatial_scope": "nearshore_bathymetry_required",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "next_action": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "tides": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-107"
+          ],
+          "spatial_scope": "station_specific_not_assumed_transferable",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "entry_exit": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [],
+          "spatial_scope": "specific_access_corridor_or_beach_segment",
+          "temporal_scope": "field_observation_timestamp_required",
+          "confidence": "none",
+          "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
+          "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
         }
       },
       "activities": {
@@ -5612,7 +6305,14 @@
         "rip_currents": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
+          "candidate_source_ids": [
+            "SRC-107"
+          ],
+          "evidence_type": "not_assessed",
+          "spatial_scope": "beach_specific",
+          "confidence": "none",
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
         },
         "visibility": {
           "value": null,
@@ -5623,6 +6323,96 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "wave_exposure": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-108"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell.",
+          "next_action": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell."
+        },
+        "current_speed": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "regional_background_only_until_local_validation",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+        },
+        "current_direction": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+        },
+        "bathymetry": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-041",
+            "SRC-107",
+            "SRC-110"
+          ],
+          "spatial_scope": "nearshore_bathymetry_required",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "next_action": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "tides": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-107"
+          ],
+          "spatial_scope": "station_specific_not_assumed_transferable",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "entry_exit": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [],
+          "spatial_scope": "specific_access_corridor_or_beach_segment",
+          "temporal_scope": "field_observation_timestamp_required",
+          "confidence": "none",
+          "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
+          "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
         }
       },
       "activities": {
@@ -6392,7 +7182,14 @@
         "rip_currents": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
+          "candidate_source_ids": [
+            "SRC-107"
+          ],
+          "evidence_type": "not_assessed",
+          "spatial_scope": "beach_specific",
+          "confidence": "none",
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
         },
         "visibility": {
           "value": null,
@@ -6403,6 +7200,96 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "wave_exposure": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-108"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell.",
+          "next_action": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell."
+        },
+        "current_speed": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "regional_background_only_until_local_validation",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+        },
+        "current_direction": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+        },
+        "bathymetry": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-041",
+            "SRC-107",
+            "SRC-110"
+          ],
+          "spatial_scope": "nearshore_bathymetry_required",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "next_action": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "tides": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-107"
+          ],
+          "spatial_scope": "station_specific_not_assumed_transferable",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "entry_exit": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [],
+          "spatial_scope": "specific_access_corridor_or_beach_segment",
+          "temporal_scope": "field_observation_timestamp_required",
+          "confidence": "none",
+          "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
+          "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
         }
       },
       "activities": {
@@ -6942,7 +7829,14 @@
         "rip_currents": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
+          "candidate_source_ids": [
+            "SRC-107"
+          ],
+          "evidence_type": "not_assessed",
+          "spatial_scope": "beach_specific",
+          "confidence": "none",
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
         },
         "visibility": {
           "value": null,
@@ -6953,6 +7847,96 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "wave_exposure": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-108"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell.",
+          "next_action": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell."
+        },
+        "current_speed": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "regional_background_only_until_local_validation",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+        },
+        "current_direction": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+        },
+        "bathymetry": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-041",
+            "SRC-107",
+            "SRC-110"
+          ],
+          "spatial_scope": "nearshore_bathymetry_required",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "next_action": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "tides": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-107"
+          ],
+          "spatial_scope": "station_specific_not_assumed_transferable",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "entry_exit": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [],
+          "spatial_scope": "specific_access_corridor_or_beach_segment",
+          "temporal_scope": "field_observation_timestamp_required",
+          "confidence": "none",
+          "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
+          "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
         }
       },
       "activities": {
@@ -7637,7 +8621,14 @@
         "rip_currents": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
+          "candidate_source_ids": [
+            "SRC-107"
+          ],
+          "evidence_type": "not_assessed",
+          "spatial_scope": "beach_specific",
+          "confidence": "none",
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
         },
         "visibility": {
           "value": null,
@@ -7648,6 +8639,96 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "wave_exposure": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-108"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell.",
+          "next_action": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell."
+        },
+        "current_speed": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "regional_background_only_until_local_validation",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+        },
+        "current_direction": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+        },
+        "bathymetry": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-041",
+            "SRC-107",
+            "SRC-110"
+          ],
+          "spatial_scope": "nearshore_bathymetry_required",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "next_action": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "tides": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-107"
+          ],
+          "spatial_scope": "station_specific_not_assumed_transferable",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "entry_exit": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [],
+          "spatial_scope": "specific_access_corridor_or_beach_segment",
+          "temporal_scope": "field_observation_timestamp_required",
+          "confidence": "none",
+          "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
+          "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
         }
       },
       "activities": {
@@ -8357,7 +9438,14 @@
         "rip_currents": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
+          "candidate_source_ids": [
+            "SRC-107"
+          ],
+          "evidence_type": "not_assessed",
+          "spatial_scope": "beach_specific",
+          "confidence": "none",
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
         },
         "visibility": {
           "value": null,
@@ -8368,6 +9456,96 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "wave_exposure": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-108"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell.",
+          "next_action": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell."
+        },
+        "current_speed": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "regional_background_only_until_local_validation",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+        },
+        "current_direction": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+        },
+        "bathymetry": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-041",
+            "SRC-107",
+            "SRC-110"
+          ],
+          "spatial_scope": "nearshore_bathymetry_required",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "next_action": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "tides": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-107"
+          ],
+          "spatial_scope": "station_specific_not_assumed_transferable",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "entry_exit": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [],
+          "spatial_scope": "specific_access_corridor_or_beach_segment",
+          "temporal_scope": "field_observation_timestamp_required",
+          "confidence": "none",
+          "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
+          "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
         }
       },
       "activities": {
@@ -8978,7 +10156,14 @@
         "rip_currents": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
+          "candidate_source_ids": [
+            "SRC-107"
+          ],
+          "evidence_type": "not_assessed",
+          "spatial_scope": "beach_specific",
+          "confidence": "none",
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
         },
         "visibility": {
           "value": null,
@@ -8989,6 +10174,96 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "wave_exposure": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-108"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell.",
+          "next_action": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell."
+        },
+        "current_speed": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "regional_background_only_until_local_validation",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+        },
+        "current_direction": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+        },
+        "bathymetry": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-041",
+            "SRC-107",
+            "SRC-110"
+          ],
+          "spatial_scope": "nearshore_bathymetry_required",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "next_action": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "tides": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-107"
+          ],
+          "spatial_scope": "station_specific_not_assumed_transferable",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "entry_exit": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [],
+          "spatial_scope": "specific_access_corridor_or_beach_segment",
+          "temporal_scope": "field_observation_timestamp_required",
+          "confidence": "none",
+          "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
+          "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
         }
       },
       "activities": {
@@ -9428,7 +10703,14 @@
         "rip_currents": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified source captured in this initial data pass."
+          "note": "No sufficiently verified source captured in this initial data pass. Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
+          "candidate_source_ids": [
+            "SRC-107"
+          ],
+          "evidence_type": "not_assessed",
+          "spatial_scope": "beach_specific",
+          "confidence": "none",
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
         },
         "visibility": {
           "value": null,
@@ -9439,6 +10721,96 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified source captured in this initial data pass."
+        },
+        "wave_exposure": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-108"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell.",
+          "next_action": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell."
+        },
+        "current_speed": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "regional_background_only_until_local_validation",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+        },
+        "current_direction": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+        },
+        "bathymetry": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-041",
+            "SRC-107",
+            "SRC-110"
+          ],
+          "spatial_scope": "nearshore_bathymetry_required",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "next_action": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "tides": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-107"
+          ],
+          "spatial_scope": "station_specific_not_assumed_transferable",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "entry_exit": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [],
+          "spatial_scope": "specific_access_corridor_or_beach_segment",
+          "temporal_scope": "field_observation_timestamp_required",
+          "confidence": "none",
+          "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
+          "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
         }
       },
       "activities": {
@@ -9962,7 +11334,14 @@
         "rip_currents": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer.  Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
+          "candidate_source_ids": [
+            "SRC-107"
+          ],
+          "evidence_type": "not_assessed",
+          "spatial_scope": "beach_specific",
+          "confidence": "none",
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
         },
         "visibility": {
           "value": null,
@@ -9973,6 +11352,96 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "wave_exposure": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-108"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell.",
+          "next_action": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell."
+        },
+        "current_speed": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "regional_background_only_until_local_validation",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+        },
+        "current_direction": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+        },
+        "bathymetry": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-041",
+            "SRC-107",
+            "SRC-110"
+          ],
+          "spatial_scope": "nearshore_bathymetry_required",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "next_action": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "tides": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-107"
+          ],
+          "spatial_scope": "station_specific_not_assumed_transferable",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "entry_exit": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [],
+          "spatial_scope": "specific_access_corridor_or_beach_segment",
+          "temporal_scope": "field_observation_timestamp_required",
+          "confidence": "none",
+          "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
+          "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
         }
       },
       "activities": {
@@ -10519,7 +11988,14 @@
         "rip_currents": {
           "value": null,
           "status": "unknown",
-          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+          "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer.  Morphological indicators, incident records and observed active rip currents must be stored separately; absence of incident records is not evidence of absence.",
+          "candidate_source_ids": [
+            "SRC-107"
+          ],
+          "evidence_type": "not_assessed",
+          "spatial_scope": "beach_specific",
+          "confidence": "none",
+          "next_action": "Seek LGU/MDRRMO/PCG beach-guard and rescue records; conduct repeatable shoreline observations. Do not infer active rip currents from satellite morphology alone."
         },
         "visibility": {
           "value": null,
@@ -10530,6 +12006,96 @@
           "value": null,
           "status": "unknown",
           "note": "No sufficiently verified beach-specific evidence captured; retain as unknown and do not infer. "
+        },
+        "wave_exposure": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-108"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell.",
+          "next_action": "No beach-specific wave exposure assessment is currently supported. Do not infer from a nearby beach, island-side label or regional grid cell."
+        },
+        "current_speed": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "regional_background_only_until_local_validation",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents.",
+          "next_action": "No beach-specific current-speed observations or validated nearshore model series are currently available. GLORYS12V1 is a regional background-current candidate only; its approximately 8–9 km grid cannot resolve reef channels, surf zones or rip currents."
+        },
+        "current_direction": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-107",
+            "SRC-109"
+          ],
+          "spatial_scope": "beach_specific",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone.",
+          "next_action": "No beach-specific current-direction series or validated local observations are currently available. Do not infer direction from coastline orientation alone."
+        },
+        "bathymetry": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-041",
+            "SRC-107",
+            "SRC-110"
+          ],
+          "spatial_scope": "nearshore_bathymetry_required",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "next_action": "No verified beach-level bathymetric surface has been ingested. NAMRIA hydrographic data are the primary acquisition target; GEBCO_2026 is regional context only and must be screened using its Type Identifier Grid.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "tides": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [
+            "SRC-039",
+            "SRC-107"
+          ],
+          "spatial_scope": "station_specific_not_assumed_transferable",
+          "temporal_scope": null,
+          "confidence": "none",
+          "note": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "next_action": "No Boracay-applicable harmonic constituents or verified local tide-level series have been ingested. Confirm station applicability and vertical datum before deriving beach-level tide effects.",
+          "vertical_datum": "unknown_until_product_metadata_review"
+        },
+        "entry_exit": {
+          "value": null,
+          "status": "unknown",
+          "evidence_type": "not_assessed",
+          "source_ids": [],
+          "candidate_source_ids": [],
+          "spatial_scope": "specific_access_corridor_or_beach_segment",
+          "temporal_scope": "field_observation_timestamp_required",
+          "confidence": "none",
+          "note": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation.",
+          "next_action": "No standardized beach-entry/exit field audit has been completed. Record substrate, slope, reef steps, boat traffic, access corridor, tide and sea state at the time of observation."
         }
       },
       "activities": {
