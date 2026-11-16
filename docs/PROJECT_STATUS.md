@@ -177,3 +177,13 @@ Do not invent suitability, access rights, safety conclusions, beach boundaries o
 - Swimming fallback is restricted to the eligible White Beach Amihan evidence and explicitly warns that Habagat exposure is higher; it is not a same-day safety clearance. Kite/windsurfing and boat-excursion fallbacks state that the selected month differs from the main evidence-backed season and require checking current conditions/operator details.
 - Added a compact SVG Map shortcut over the top-right of the Boracay hero banner, linking to the existing interactive map section. No new map implementation or data was introduced.
 - Browser/mobile visual verification and published Pages verification remain pending.
+
+### Shared site runtime (2026-11-16)
+- Added root-level `site-core.js`, loaded by all four canonical content pages: `boracay.html`, `beaches.html`, `weather.html`, and `currency.html`.
+- Centralized the duplicated dynamic price-emphasis renderer and MutationObserver in the shared runtime. Currency conversion pairs, rate values, and the live rates block remain excluded through `data-price-exclude=".pair,.value,#rates"` on `currency.html`.
+- Centralized theme rendering (mode icon and accessible label) behind `PHSite.renderTheme()`; the beach catalogue's standalone theme button is now connected to the same three-mode theme cycle. Existing page-specific theme state and translation logic remain in place.
+- Added a shared `PHSite.notifyLanguageChange()` event contract and wired it into the pages that already implement language toggles. Page-specific translation dictionaries and dynamic content refresh hooks were deliberately retained.
+- Removed the four duplicated page-level price-renderer implementations. No build tools, frameworks, directory restructuring, or external dependencies were introduced.
+- Source validation against current `main`: one shared runtime reference per content page; no duplicate HTML IDs; all inline JavaScript blocks pass syntax compilation; all four pages retain one H1 and the price-emphasis CSS; currency exclusions remain configured; no local duplicate price regex remains.
+- GitHub Pages deployment was triggered for the final source commit, but browser-level visual and functional regression checks remain `NOT VERIFIED` pending deployment completion and an accessible published-page check.
+- Shared runtime commit: `8dd3e6146cb9261b9530b005f3b819ae3f18f0cc`; final source head at this status update: `d8d9cb4b95f5f6953b23ec2100f9a58c1c3670ef`.
