@@ -339,6 +339,14 @@ footer{margin-top:12px;padding:10px}
  .layout-editor-hint{flex-basis:100%}
 }
 
+
+/* Persisted custom layout remains active outside edit mode */
+.layout-customized main{display:grid;grid-template-columns:minmax(0,var(--layout-left,1fr)) minmax(0,var(--layout-right,1fr));gap:10px;align-items:start}
+.layout-customized main>h1,.layout-customized main>.lead,.layout-customized main>.section-nav,.layout-customized main>#layout-editor{grid-column:1/-1}
+.layout-customized .exchange-fx-grid,.layout-customized .payment-grid{display:contents}
+.layout-customized main>.panel,.layout-customized main>.payment-snapshot{min-width:0;margin:0}
+@media(max-width:760px){.layout-customized main{grid-template-columns:minmax(0,1fr)}}
+
 </style>
 <link rel="canonical" href="https://guyabano-kun.github.io/PH/currency.html"><link rel="alternate" hreflang="ru" href="https://guyabano-kun.github.io/PH/currency.html"><link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/currency.html"><link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/currency.html">
 <meta name="robots" content="index,follow">
@@ -567,7 +575,6 @@ footer{margin-top:12px;padding:10px}
    el.dataset.layoutColumn=String(item.col);
   });
   main.classList.add('layout-customized');
-  document.body.classList.add('layout-editing');
   widthValue.textContent=left+' / '+(100-left);
  }
  function restoreSaved(){
@@ -616,12 +623,16 @@ footer{margin-top:12px;padding:10px}
     ev.preventDefault();el.classList.remove('layout-drop-target');
     const from=findItem(dragged),to=findItem(id);if(!from||!to)return;
     const rect=el.getBoundingClientRect();
-    from.col=to.col;from.span=1;
     const before=ev.clientY<rect.top+rect.height/2;
-    const targetOrder=to.order;
-    config.forEach(x=>{if(x.id!==from.id&&x.order>targetOrder)x.order++;});
-    from.order=before?targetOrder:targetOrder+1;
-    normalize();apply();
+    const ordered=config.slice().sort((a,b)=>a.order-b.order);
+    const sourceIndex=ordered.findIndex(x=>x.id===dragged);
+    const targetIndex=ordered.findIndex(x=>x.id===id);
+    const moving=ordered.splice(sourceIndex,1)[0];
+    const insertAt=ordered.findIndex(x=>x.id===id)+(before?0:1);
+    moving.col=to.col;moving.span=1;
+    ordered.splice(insertAt,0,moving);
+    ordered.forEach((x,i)=>x.order=i+1);
+    config=ordered;apply();
    });
   });
  }
