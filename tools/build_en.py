@@ -50,7 +50,7 @@ PAGES = {
     },
 }
 # Pages that have no English version yet: links to them go back to the Russian page.
-RU_ONLY = ["beaches"]
+RU_ONLY = []
 
 
 class Finder(HTMLParser):
