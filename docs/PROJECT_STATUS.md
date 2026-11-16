@@ -1,6 +1,6 @@
 # PH Project Status
 
-Last verified against GitHub `main`: 2026-11-15
+Last verified against GitHub `main`: 2026-11-16
 
 ## Repository state
 - Repository: `Guyabano-kun/PH`
@@ -28,6 +28,7 @@ Last verified against GitHub `main`: 2026-11-15
 - Extended the beach catalogue's JSON-LD with an `ItemList` containing all 16 named records. Actual beaches use Schema.org `Beach`; Angol Point uses `TouristAttraction`. Stable fragment IDs were added to rendered cards. No unverified coordinates, public-access claims, ratings, or unsupported descriptions were added.
 - Completed cross-navigation among the four content pages. The sitemap contains all four canonical HTML pages with last-modified dates; the root `index.html` redirect and JSON datasets are intentionally excluded because they are not independent indexable landing pages.
 - Search-engine indexation remains `NOT VERIFIED`: no Search Console coverage data is available, public GitHub Pages URLs could not be retrieved by the available browser check, and an empty `site:` search is not proof of non-indexation.
+- Final SEO source commit: `511fb70836ab0d7c253f3eaa8dea4e12a67b7679`; OG PNG correction: `5758656b458ea09e6fbdc164fbcb4505fa936e59`. GitHub Pages build and deployment workflow for the final source commit completed successfully; direct public-page retrieval remains `NOT VERIFIED` in the available browser environment.
 
 ### Beach passport parameter reduction (2026-11-15)
 - Dataset advanced to `0.2.53`.
