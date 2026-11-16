@@ -202,6 +202,78 @@ footer{margin-top:20px;padding:12px}
  .savemore-feature{padding:12px}
  .fx-panel .value{font-size:1.45rem}
 }
+
+/* Compact page layout: keep Savemore inside the cash-exchange section */
+main{width:calc(100% - 40px);max-width:none;margin:18px auto 36px}
+body{line-height:1.38}
+main>h1{font-size:clamp(1.8rem,3vw,2.65rem);margin:0 0 5px;padding-top:0}
+main>h1:before{margin-bottom:5px;font-size:.64rem}
+.lead{max-width:none;margin:0 0 10px;font-size:.9rem;line-height:1.35}
+.section-nav{margin:9px 0 11px;padding:6px;gap:5px}
+.section-nav a{flex:1 1 110px;min-height:36px;padding:6px 8px;font-size:.75rem}
+.panel{padding:14px 16px;margin:0 0 10px;border-radius:11px;box-shadow:none}
+.panel>h2,.fx-panel h2{font-size:1.2rem;margin:0 0 7px}
+h3{font-size:.96rem;margin:0 0 4px}
+p{margin:3px 0}
+.content-grid{gap:7px}
+.info{padding:9px 11px;border-radius:8px}
+.info p,.info li{font-size:.82rem;line-height:1.35}
+.info ul{margin:4px 0 0;padding-left:17px}
+.info li{margin:2px 0}
+.note{margin:6px 0;padding:7px 9px;font-size:.82rem}
+.exchange-fx-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:10px;margin:0 0 10px;align-items:start}
+.exchange-fx-grid>#cash-exchange{grid-column:1;grid-row:1}
+.exchange-fx-grid>#fx-rates{grid-column:2;grid-row:1}
+.exchange-fx-grid>#atm{grid-column:2;grid-row:2}
+.exchange-fx-grid #cash-exchange{display:block}
+.exchange-fx-grid #cash-exchange>.content-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.exchange-fx-grid .fx-panel .rates{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
+.fx-panel .selected{margin-top:6px;padding:8px 10px}
+.fx-panel .value{font-size:1.45rem}
+.fx-panel .rate{padding:5px 6px}
+.fx-panel .rate strong{font-size:.7rem}
+.fx-panel .rate span{font-size:.8rem}
+.rate .currency-flag{width:19px;height:19px;flex-basis:19px;font-size:.9rem}
+#savemore.savemore-box{display:grid;grid-template-columns:minmax(180px,.55fr) minmax(0,1.45fr);gap:5px 12px;margin:0 0 9px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg)}
+#savemore .sm-heading{grid-column:1;gap:8px;margin:0}
+#savemore .sm-official-logo{width:82px;height:28px}
+#savemore>p,#savemore>.note,#savemore>.actions{grid-column:2;margin:2px 0}
+#savemore>.note{padding:5px 8px}
+#savemore .link,#savemore .sm-rate-link{padding:5px 8px;font-size:.74rem}
+.payment-snapshot{padding:11px 13px}
+.snapshot-row{padding:5px 0}
+.snapshot-row p{font-size:.76rem}
+.payment-grid{gap:10px;margin:10px 0}
+#qr-payments .qr-identity{min-height:0;padding:7px}
+#cards .card-acceptance{gap:6px;margin:7px 0}
+#cards .card-acceptance>div{padding:8px}
+#quick-guide .quick-grid{gap:7px}
+#sources .source-list{gap:5px}
+#sources .source-list a{padding:4px 7px;font-size:.74rem}
+footer{margin-top:12px;padding:10px}
+@media(max-width:1050px){
+ main{width:calc(100% - 32px)}
+ .exchange-fx-grid{grid-template-columns:minmax(0,1fr) minmax(0,.9fr)}
+ .exchange-fx-grid #cash-exchange>.content-grid{grid-template-columns:1fr}
+ .exchange-fx-grid .fx-panel .rates{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:760px){
+ main{width:calc(100% - 20px);margin:14px auto 28px}
+ .exchange-fx-grid{grid-template-columns:1fr;gap:8px}
+ .exchange-fx-grid>#cash-exchange,.exchange-fx-grid>#fx-rates,.exchange-fx-grid>#atm{grid-column:1;grid-row:auto}
+ .exchange-fx-grid #cash-exchange>.content-grid{grid-template-columns:1fr}
+ #savemore.savemore-box{grid-template-columns:1fr;gap:5px}
+ #savemore .sm-heading,#savemore>p,#savemore>.note,#savemore>.actions{grid-column:1}
+ .exchange-fx-grid .fx-panel .rates{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .section-nav{margin:7px 0 9px}
+ .payment-grid{grid-template-columns:1fr;gap:8px}
+}
+@media(max-width:420px){
+ main{width:calc(100% - 16px)}
+ .panel{padding:11px}
+ #savemore.savemore-box{padding:8px}
+ .fx-panel .value{font-size:1.3rem}
+}
 </style>
 <link rel="canonical" href="https://guyabano-kun.github.io/PH/en/currency.html"><link rel="alternate" hreflang="ru" href="https://guyabano-kun.github.io/PH/currency.html"><link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/currency.html"><link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/currency.html">
 <meta name="robots" content="index,follow">
@@ -237,18 +309,18 @@ footer{margin-top:20px;padding:12px}
 <h1 data-ru="Обмен валюты и оплата" data-en="Currency exchange and payments">Currency exchange and payments</h1>
 <p class="lead" data-ru="Обмен наличных, ATM, зарубежные карты и местные электронные кошельки на Боракае." data-en="Cash exchange, ATMs, foreign cards and local e-wallets on Boracay.">Cash exchange, ATMs, foreign cards and local e-wallets on Boracay.</p>
 <nav class="section-nav" aria-label="Page sections"><a href="#fx-rates"><span class="nav-symbol">💱</span><span data-ru="Курс валют" data-en="Exchange rates">Exchange rates</span></a><a href="#cash-exchange"><span class="nav-symbol">💵</span><span data-ru="Обмен наличных" data-en="Cash exchange">Cash exchange</span></a><a href="#savemore"><span class="nav-symbol"><img class="sm-nav-logo" src="https://cdn.brandfetch.io/idjT-Kz7Zg/w/360/h/120/theme/dark/logo.png" alt="SM Store"></span><span data-ru="Savemore / SM" data-en="Savemore / SM">Savemore / SM</span></a><a href="#atm"><span class="nav-symbol">🏧</span><span data-ru="Банкоматы" data-en="ATMs">ATMs</span></a><a href="#cards"><span class="nav-brands"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Visa_Inc._logo_%282021%E2%80%93present%29.svg" alt="Visa"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="Mastercard"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/UnionPay_logo.svg" alt="UnionPay"></span><span data-ru="Банковские карты" data-en="Bank cards">Bank cards</span></a><a href="#qr-payments"><span class="nav-symbol">▦</span><span data-ru="QR-оплата" data-en="QR payments">QR payments</span></a><a href="#e-money"><span class="nav-brands"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Maya_logo.svg" alt="Maya"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/GCash_logo.svg" alt="GCash"></span><span data-ru="Maya и GCash" data-en="Maya & GCash">Maya &amp; GCash</span></a></nav>
-<section class="panel savemore-feature" id="savemore"><div class="info savemore-box">
+
+
+<div class="exchange-fx-grid">
+<section class="panel" id="cash-exchange">
+<h2 data-ru="Где менять наличную валюту" data-en="Where to exchange cash">Where to exchange cash</h2>
+<div class="info savemore-box" id="savemore">
 <div class="sm-heading"><img class="sm-official-logo" src="https://cdn.brandfetch.io/idjT-Kz7Zg/w/360/h/120/theme/dark/logo.png" alt="SM Store" loading="lazy"><h3 data-ru="Обмен валюты в Savemore / SM" data-en="Currency exchange at Savemore / SM">Currency exchange at Savemore / SM</h3></div>
 <p data-ru="В справочнике BDO от 11.09.2024 указан Savemore Market – CityMall Boracay (SV1927), Balabag. Опубликованные часы: ежедневно 08:00–20:00." data-en="BDO's 11 Sep 2024 directory lists Savemore Market – CityMall Boracay (SV1927), Balabag. Listed hours: daily 08:00–20:00.">BDO's 11 Sep 2024 directory lists Savemore Market – CityMall Boracay (SV1927), Balabag. Listed hours: daily 08:00–20:00.</p>
 <div class="note warning"><strong data-ru="Курс Savemore / SM:" data-en="Savemore / SM exchange rates:">Savemore / SM exchange rates:</strong> <span data-ru="SM rates — ориентир. Перед обменом уточните курс и сумму PHP у кассира." data-en="SM rates are indicative. Confirm the quote and PHP amount at the counter.">SM rates are indicative. Confirm the quote and PHP amount at the counter.</span></div>
 <div class="actions"><a class="sm-rate-link" href="https://smstore.com/services/forex/" target="_blank" rel="noopener" data-ru="Курсы валют SM Store" data-en="SM Store Forex rates">SM Store Forex rates</a><a class="link secondary" href="https://www.bdo.com.ph/forex" target="_blank" rel="noopener" data-ru="Справочные курсы BDO" data-en="BDO indicative rates">BDO indicative rates</a><a class="link secondary" href="https://www.google.com/maps/search/?api=1&query=Savemore+CityMall+Boracay" target="_blank" rel="noopener" data-ru="Savemore CityMall на карте" data-en="Savemore CityMall map">Savemore CityMall map</a></div>
 <p class="small" data-ru="Нельзя считать, что пункт обмена есть в каждом магазине SM/Savemore. Перед посещением уточните работу кассы и наличие нужной валюты." data-en="Not every SM/Savemore store has an exchange counter. Confirm that the counter is operating and your currency is available before visiting.">Not every SM/Savemore store has an exchange counter. Confirm that the counter is operating and your currency is available before visiting.</p>
 </div>
-</div</section>
-
-<div class="exchange-fx-grid">
-<section class="panel" id="cash-exchange">
-<h2 data-ru="Где менять наличную валюту" data-en="Where to exchange cash">Where to exchange cash</h2>
 <div class="content-grid">
 <div class="info">
 <h3 data-ru="Специализированные money changers" data-en="Dedicated money changers">Dedicated money changers</h3>
@@ -267,8 +339,6 @@ footer{margin-top:20px;padding:12px}
 <div class="info exchange-advice"><h3 data-ru="Как выгоднее обменять" data-en="How to get a better exchange rate">How to get a better exchange rate</h3><ul><li data-ru="Сравните итоговую сумму PHP минимум в двух обменниках." data-en="Compare the final PHP amount at two or more counters.">Compare the final PHP amount at two or more counters.</li><li data-ru="Не ориентируйтесь только на справочный курс." data-en="Do not rely on the reference rate alone.">Do not rely on the reference rate alone.</li><li data-ru="Уточните наличие нужной валюты и купюр до оформления." data-en="Confirm your currency and banknote denominations before exchanging.">Confirm your currency and banknote denominations before exchanging.</li></ul></div>
 </div>
 <div class="info bank-exchange"><h3 data-ru="Обмен наличной валюты в банках" data-en="Foreign cash exchange at banks">Foreign cash exchange at banks</h3><p data-ru="Банковское отделение не обязательно работает с наличной иностранной валютой. Наиболее конкретный вариант — PNB: в справочнике банка отдельно указаны FX counters на Боракае. В остальных отделениях сначала уточните, покупают ли они наличные USD/EUR и другие валюты у walk-in клиентов." data-en="A bank branch does not necessarily exchange foreign banknotes. PNB is the best-documented option: its directory specifically lists FX counters on Boracay. At other branches, first ask whether they buy cash USD/EUR or other currencies from walk-in customers.">A bank branch does not necessarily exchange foreign banknotes. PNB is the best-documented option: its directory specifically lists FX counters on Boracay. At other branches, first ask whether they buy cash USD/EUR or other currencies from walk-in customers.</p><ul><li><strong>PNB FX Counter I</strong> <span data-ru="— Oro Beach Resort, Station III." data-en="— Oro Beach Resort, Station III.">— Oro Beach Resort, Station III.</span> <a href="https://www.google.com/maps/search/?api=1&query=PNB+FX+Counter+Oro+Beach+Resort+Boracay" target="_blank" rel="noopener" data-ru="Карта" data-en="Map">Map</a><span data-ru=", тел. (036) 288-3607." data-en=", tel. (036) 288-3607.">, tel. (036) 288-3607.</span></li><li><strong>PNB FX Counter II</strong> <span data-ru="— Plazoleta, Station II." data-en="— Plazoleta, Station II.">— Plazoleta, Station II.</span> <a href="https://www.google.com/maps/search/?api=1&query=PNB+FX+Counter+Plazoleta+Boracay" target="_blank" rel="noopener" data-ru="Карта" data-en="Map">Map</a><span data-ru=", тел. (036) 288-3669." data-en=", tel. (036) 288-3669.">, tel. (036) 288-3669.</span></li><li><strong>PNB Boracay Branch</strong> <span data-ru="— Brgy. Balabag. Тел." data-en="— Brgy. Balabag. Tel.">— Brgy. Balabag. Tel.</span></li><li><strong>BPI Boracay Branch</strong> <span data-ru="— Brgy. Balabag, район Station 2." data-en="— Brgy. Balabag, Station 2 area.">— Brgy. Balabag, Station 2 area.</span> <a href="https://www.google.com/maps/search/?api=1&query=BPI+Boracay+Branch+Balabag" target="_blank" rel="noopener" data-ru="Карта" data-en="Map">Map</a>.</li><li><strong>Metrobank Boracay</strong> <span data-ru="— напротив Astoria Boracay; второе отделение Station II находится рядом с Crown Regency." data-en="— opposite Astoria Boracay; a second Station II branch is beside Crown Regency.">— opposite Astoria Boracay; a second Station II branch is beside Crown Regency.</span> <a href="https://www.google.com/maps/search/?api=1&query=Metrobank+Boracay+Astoria" target="_blank" rel="noopener" data-ru="Карта" data-en="Map">Map</a>.</li><li><strong>RCBC Boracay</strong> <span data-ru="— Station 1, Brgy. Balabag." data-en="— Station 1, Brgy. Balabag.">— Station 1, Brgy. Balabag.</span> <a href="https://www.google.com/maps/search/?api=1&query=RCBC+Boracay+Station+1" target="_blank" rel="noopener" data-ru="Карта" data-en="Map">Map</a>.</li><li><strong>BDO</strong> <span data-ru="— Station 2 и CityMall;" data-en="— Station 2 and CityMall;">— Station 2 and CityMall;</span> <a href="https://www.google.com/maps/search/?api=1&query=BDO+Boracay+Station+2" target="_blank" rel="noopener" data-ru="карта Station 2" data-en="Station 2 map">Station 2 map</a> / <a href="https://www.google.com/maps/search/?api=1&query=BDO+CityMall+Boracay" target="_blank" rel="noopener" data-ru="CityMall" data-en="CityMall">CityMall</a>; <strong>EastWest</strong> <span data-ru="— Alexandrea Building, Main Road, Balabag." data-en="— Alexandrea Building, Main Road, Balabag.">— Alexandrea Building, Main Road, Balabag.</span> <a href="https://www.google.com/maps/search/?api=1&query=EastWest+Bank+Alexandrea+Building+Boracay" target="_blank" rel="noopener" data-ru="карта" data-en="map">map</a>. <span data-ru="Обмен наличных для walk-in клиентов в этих отделениях не подтверждён." data-en="Cash exchange for walk-in customers is not confirmed at these branches.">Cash exchange for walk-in customers is not confirmed at these branches.</span></li></ul></div>
-
->
 
 <div class="note critical"><strong data-ru="Не меняйте крупную сумму в аэропорту или порту без сравнения." data-en="Avoid exchanging a large amount at an airport or port without comparing rates.">Avoid exchanging a large amount at an airport or port without comparing rates.</strong> <span data-ru="Удобство не означает выгодный курс. На острове сначала сравните специализированный обменник и Savemore." data-en="Convenience does not guarantee a good rate. Compare a dedicated money changer with Savemore first.">Convenience does not guarantee a good rate. Compare a dedicated money changer with Savemore first.</span></div>
 </section>
