@@ -311,7 +311,7 @@ footer{margin-top:12px;padding:10px}
 /* Browser-side visual layout editor */
 .layout-editor{margin:0 0 12px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
 .layout-editor-bar,.layout-editor-controls{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
-.layout-edit-toggle,.layout-editor-controls button{border:1px solid var(--line);border-radius:8px;padding:8px 11px;background:var(--bg);color:var(--ink);font:700 .88rem inherit;cursor:pointer}
+.layout-edit-toggle,.layout-editor-controls button{border:1px solid var(--line);border-radius:8px;padding:8px 11px;background:var(--bg);color:var(--ink);font:700 .88rem system-ui,sans-serif;cursor:pointer}
 .layout-edit-toggle[aria-pressed="true"]{background:var(--hero);color:#fff;border-color:var(--hero)}
 .layout-editor-hint,.layout-editor-status{font-size:.82rem;color:var(--muted);margin:0}
 .layout-editor-controls{padding-top:10px}
@@ -338,6 +338,14 @@ footer{margin-top:12px;padding:10px}
  .layout-dropzones{grid-template-columns:1fr}
  .layout-editor-hint{flex-basis:100%}
 }
+
+
+/* Persisted custom layout remains active outside edit mode */
+.layout-customized main{display:grid;grid-template-columns:minmax(0,var(--layout-left,1fr)) minmax(0,var(--layout-right,1fr));gap:10px;align-items:start}
+.layout-customized main>h1,.layout-customized main>.lead,.layout-customized main>.section-nav,.layout-customized main>#layout-editor{grid-column:1/-1}
+.layout-customized .exchange-fx-grid,.layout-customized .payment-grid{display:contents}
+.layout-customized main>.panel,.layout-customized main>.payment-snapshot{min-width:0;margin:0}
+@media(max-width:760px){.layout-customized main{grid-template-columns:minmax(0,1fr)}}
 
 </style>
 <link rel="canonical" href="https://guyabano-kun.github.io/PH/en/currency.html"><link rel="alternate" hreflang="ru" href="https://guyabano-kun.github.io/PH/currency.html"><link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/currency.html"><link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/currency.html">
@@ -567,7 +575,6 @@ footer{margin-top:12px;padding:10px}
    el.dataset.layoutColumn=String(item.col);
   });
   main.classList.add('layout-customized');
-  document.body.classList.add('layout-editing');
   widthValue.textContent=left+' / '+(100-left);
  }
  function restoreSaved(){
@@ -578,12 +585,12 @@ footer{margin-top:12px;padding:10px}
     width.value=String(Math.max(30,Math.min(70,Number(saved.left)||50)));
     apply();
    }
-  }catch(e){localStorage.removeItem(storageKey)}
+  }catch(e){status.textContent=document.documentElement.lang==='en'?'Local storage is unavailable in this browser.':'Локальное хранилище недоступно в этом браузере.'}
  }
  function save(){
   normalize();
   const data={version:1,left:Number(width.value),items:config};
-  localStorage.setItem(storageKey,JSON.stringify(data));
+  try{localStorage.setItem(storageKey,JSON.stringify(data));}catch(e){status.textContent=document.documentElement.lang==='en'?'Could not save layout in this browser.':'Не удалось сохранить компоновку в этом браузере.';return}
   status.textContent=document.documentElement.lang==='en'?'Layout saved in this browser.':'Компоновка сохранена в этом браузере.';
  }
  function makeHandles(){
@@ -616,12 +623,16 @@ footer{margin-top:12px;padding:10px}
     ev.preventDefault();el.classList.remove('layout-drop-target');
     const from=findItem(dragged),to=findItem(id);if(!from||!to)return;
     const rect=el.getBoundingClientRect();
-    from.col=to.col;from.span=1;
     const before=ev.clientY<rect.top+rect.height/2;
-    const targetOrder=to.order;
-    config.forEach(x=>{if(x.id!==from.id&&x.order>targetOrder)x.order++;});
-    from.order=before?targetOrder:targetOrder+1;
-    normalize();apply();
+    const ordered=config.slice().sort((a,b)=>a.order-b.order);
+    const sourceIndex=ordered.findIndex(x=>x.id===dragged);
+    const targetIndex=ordered.findIndex(x=>x.id===id);
+    const moving=ordered.splice(sourceIndex,1)[0];
+    const insertAt=ordered.findIndex(x=>x.id===id)+(before?0:1);
+    moving.col=to.col;moving.span=1;
+    ordered.splice(insertAt,0,moving);
+    ordered.forEach((x,i)=>x.order=i+1);
+    config=ordered;apply();
    });
   });
  }
@@ -645,7 +656,7 @@ footer{margin-top:12px;padding:10px}
  width.addEventListener('input',apply);
  document.getElementById('layout-save').addEventListener('click',save);
  document.getElementById('layout-reset').addEventListener('click',()=>{
-  config=defaults.map(x=>({...x}));width.value='50';localStorage.removeItem(storageKey);
+  config=defaults.map(x=>({...x}));width.value='50';try{localStorage.removeItem(storageKey)}catch(e){}
   apply();exportArea.hidden=true;
   status.textContent=document.documentElement.lang==='en'?'Default layout restored.':'Исходная компоновка восстановлена.';
  });
@@ -655,7 +666,6 @@ footer{margin-top:12px;padding:10px}
   status.textContent=document.documentElement.lang==='en'?'JSON selected. Copy it with Ctrl+C.':'JSON выделен. Скопируйте его сочетанием Ctrl+C.';
  });
  restoreSaved();
- if(localStorage.getItem(storageKey))apply();
 })();
 </script>
 
