@@ -323,7 +323,7 @@ footer{margin-top:12px;padding:10px}
 .layout-dropzones>div{padding:9px;border:1px dashed var(--accent);border-radius:8px;text-align:center;color:var(--muted);font-size:.78rem}
 .layout-editor-status:empty{display:none}
 .layout-drag-handle{display:none}
-.layout-editing main{display:grid;grid-template-columns:minmax(0,var(--layout-left,1fr)) minmax(0,var(--layout-right,1fr));gap:10px;align-items:start}
+.layout-editing main{display:grid;grid-template-columns:minmax(0,var(--layout-left,1fr)) minmax(0,var(--layout-right,1fr));grid-auto-flow:row dense;gap:10px;align-items:start}
 .layout-editing main>h1,.layout-editing main>.lead,.layout-editing main>.section-nav,.layout-editing main>#layout-editor{grid-column:1/-1}
 .layout-editing .exchange-fx-grid,.layout-editing .payment-grid{display:contents}
 .layout-editing main>.exchange-fx-grid,.layout-editing main>.payment-grid{display:contents}
@@ -571,7 +571,7 @@ footer{margin-top:12px;padding:10px}
   getItems().forEach(el=>{
    const item=findItem(el.id);
    el.style.order=item.order;
-   el.style.gridColumn=item.span===2?'1 / -1':'span 1';
+   el.style.gridColumn=item.span===2?'1 / -1':String(item.col);
    el.dataset.layoutColumn=String(item.col);
   });
   main.classList.add('layout-customized');
@@ -647,7 +647,7 @@ footer{margin-top:12px;padding:10px}
   });
  });
  toggle.addEventListener('click',()=>{
-  editing=!editing;document.body.classList.toggle('layout-editing',editing);
+  editing=!editing;if(editing)apply();document.body.classList.toggle('layout-editing',editing);
   toggle.setAttribute('aria-pressed',String(editing));
   toggle.textContent=editing?(document.documentElement.lang==='en'?'Finish arranging':'Завершить настройку'):(document.documentElement.lang==='en'?'Arrange page sections':'Настроить расположение блоков');
   controls.hidden=!editing;zones.hidden=!editing;
