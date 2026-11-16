@@ -19,6 +19,7 @@
 <meta property="og:image:alt" content="Philippines Guide — Boracay island and tropical coastline">
 <meta name="twitter:image" content="https://guyabano-kun.github.io/PH/assets/og-philippines.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://guyabano-kun.github.io/PH/#website","url":"https://guyabano-kun.github.io/PH/","name":"Philippines Guide","inLanguage":"ru"},{"@type":"WebPage","@id":"https://guyabano-kun.github.io/PH/boracay.html#webpage","url":"https://guyabano-kun.github.io/PH/boracay.html","name":"Боракай — практический гид","description":"Практический гид по Боракаю: районы, пляжи, транспорт, жильё, погода, связь, оплата и повседневная жизнь на острове.","inLanguage":"ru","isPartOf":{"@id":"https://guyabano-kun.github.io/PH/#website"},"about":{"@type":"TouristDestination","name":"Boracay","description":"Остров Боракай, Филиппины","containedInPlace":{"@type":"Country","name":"Philippines"}},"primaryImageOfPage":{"@type":"ImageObject","url":"https://guyabano-kun.github.io/PH/assets/og-philippines.png","width":1200,"height":630}}]}</script>
+<script src="site-core.js" defer></script>
 </head><body><header class="top">
 <div class="places"><a class="place" href="beaches.html"><span aria-hidden="true">🏖</span><span data-ru="Паспорта пляжей" data-en="Beach passports">Паспорта пляжей</span></a><a class="place" href="weather.html"><span aria-hidden="true">☀</span><span data-ru="Погода и море" data-en="Weather & Sea">Погода и море</span></a></div>
 <div class="settings"><button class="setting-btn lang-btn" id="lang-btn" type="button" aria-label="Language"><span class="setting-icon" id="lang-flag">🇷🇺</span></button><button class="setting-btn theme-btn" id="theme-btn" type="button" aria-label="Theme: Auto"><span class="setting-icon" id="theme-icon">◐</span></button></div></header>
@@ -295,7 +296,7 @@
 (()=>{const video=document.querySelector('.hero-video');if(!video)return;video.muted=true;video.defaultMuted=true;video.playsInline=true;video.setAttribute('muted','');video.setAttribute('playsinline','');video.setAttribute('webkit-playsinline','');const attempt=()=>{if(document.visibilityState!=='visible')return;const p=video.play();if(p&&typeof p.catch==='function')p.catch(()=>{});};video.addEventListener('loadedmetadata',attempt,{once:true});video.addEventListener('canplay',attempt,{once:true});window.addEventListener('pageshow',attempt);document.addEventListener('visibilitychange',attempt);const hero=video.closest('.hero');if(hero){hero.addEventListener('touchstart',attempt,{passive:true,once:true});hero.addEventListener('click',attempt,{once:true});}attempt()})();
 </script>
 <script>
-(()=>{const langBtn=document.getElementById('lang-btn'),themeBtn=document.getElementById('theme-btn');if(!langBtn||!themeBtn)return;const flag=document.getElementById('lang-flag'),themeIcon=document.getElementById('theme-icon');let language=document.documentElement.lang==='en'?'en':'ru';const themes=['auto','light','dark'],themeNames={auto:{ru:'Авто',en:'Auto',icon:'◐'},light:{ru:'Светлая',en:'Light',icon:'☀️'},dark:{ru:'Тёмная',en:'Dark',icon:'🌙'}};let theme=themes.includes(document.documentElement.dataset.theme)?document.documentElement.dataset.theme:'auto';function applyLanguage(){document.documentElement.lang=language;document.querySelectorAll('[data-ru]').forEach(e=>{if(Boolean(e.dataset.htmlRu)){e.innerHTML=e.dataset[language==='ru'?'htmlRu':'htmlEn']}else{e.textContent=e.dataset[language]}});flag.textContent=language==='ru'?'🇷🇺':'🇬🇧';langBtn.setAttribute('aria-label',language==='ru'?'Язык: русский':'Language: English');if(typeof rates!=='undefined'&&rates[select.value])show()}function applyTheme(){document.documentElement.dataset.theme=theme;themeIcon.textContent=themeNames[theme].icon;themeBtn.setAttribute('aria-label',(language==='ru'?'Тема: ':'Theme: ')+themeNames[theme][language])}langBtn.addEventListener('click',()=>{language=language==='ru'?'en':'ru';applyLanguage();applyTheme()});themeBtn.addEventListener('click',()=>{theme=themes[(themes.indexOf(theme)+1)%themes.length];applyTheme()});applyLanguage();applyTheme()})();
+(()=>{const langBtn=document.getElementById('lang-btn'),themeBtn=document.getElementById('theme-btn');if(!langBtn||!themeBtn)return;const flag=document.getElementById('lang-flag'),themeIcon=document.getElementById('theme-icon');let language=document.documentElement.lang==='en'?'en':'ru';const themes=['auto','light','dark'],themeNames={auto:{ru:'Авто',en:'Auto',icon:'◐'},light:{ru:'Светлая',en:'Light',icon:'☀️'},dark:{ru:'Тёмная',en:'Dark',icon:'🌙'}};let theme=themes.includes(document.documentElement.dataset.theme)?document.documentElement.dataset.theme:'auto';function applyLanguage(){document.documentElement.lang=language;window.PHSite?.notifyLanguageChange(language);document.querySelectorAll('[data-ru]').forEach(e=>{if(Boolean(e.dataset.htmlRu)){e.innerHTML=e.dataset[language==='ru'?'htmlRu':'htmlEn']}else{e.textContent=e.dataset[language]}});flag.textContent=language==='ru'?'🇷🇺':'🇬🇧';langBtn.setAttribute('aria-label',language==='ru'?'Язык: русский':'Language: English');if(typeof rates!=='undefined'&&rates[select.value])show()}function applyTheme(){window.PHSite?.renderTheme({theme,language,button:themeBtn,icon:themeIcon})}langBtn.addEventListener('click',()=>{language=language==='ru'?'en':'ru';applyLanguage();applyTheme()});themeBtn.addEventListener('click',()=>{theme=themes[(themes.indexOf(theme)+1)%themes.length];applyTheme()});applyLanguage();applyTheme()})();
 </script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/leaflet-polylinedecorator@1.6.0/dist/leaflet.polylineDecorator.js"></script><script>
 (()=>{let openHohoTarget=null;const findHohoLink=e=>{const target=e.target;return target instanceof Element?target.closest("a[data-hoho-target]"):null};document.addEventListener("click",e=>{const a=findHohoLink(e);if(!a)return;e.preventDefault();if(typeof openHohoTarget==="function"){openHohoTarget(a.dataset.hohoTarget)}else{document.getElementById("boracay-map-section")?.scrollIntoView({behavior:"smooth",block:"start"})}});const el=document.getElementById('boracay-map');if(!el||!window.L)return;const map=L.map(el,{scrollWheelZoom:false}).setView([11.9674,121.9248],14);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors'}).addTo(map);const places=[
@@ -433,45 +434,6 @@ const hohoMarkers=[];const hohoLayer=L.layerGroup().addTo(map);const hohoPoints=
 .hero-map-link svg{width:24px;height:24px;flex:none}
 @media(max-width:640px){.hero-map-link{top:16px;right:16px;padding:9px 12px;gap:7px;border-radius:13px}.hero-map-link svg{width:21px;height:21px}}
 </style>
-<script>
-(()=>{
- const pricePattern=/(?:₱|PHP\s*|US\$\s*|USD\s*|\$\s*)\d[\d,]*(?:\.\d{1,2})?(?:\s*[–—-]\s*(?:₱|PHP\s*|US\$\s*|USD\s*|\$\s*)?\d[\d,]*(?:\.\d{1,2})?)?/g;
- const skipTags=new Set(['SCRIPT','STYLE','NOSCRIPT','TEXTAREA','INPUT','OPTION','STRONG','B','EM','PRICE-EMPHASIS']);
- function emphasizeTextNode(node){
-  const parent=node.parentElement;
-  if(!parent||skipTags.has(parent.tagName)||parent.closest('strong,b,.price-emphasis'))return;
-  const value=node.nodeValue;
-  pricePattern.lastIndex=0;
-  if(!pricePattern.test(value))return;
-  pricePattern.lastIndex=0;
-  const fragment=document.createDocumentFragment();
-  let last=0,match;
-  while((match=pricePattern.exec(value))){
-   if(match.index>last)fragment.append(document.createTextNode(value.slice(last,match.index)));
-   const strong=document.createElement('strong');
-   strong.className='price-emphasis';
-   strong.textContent=match[0];
-   fragment.append(strong);
-   last=match.index+match[0].length;
-  }
-  if(last<value.length)fragment.append(document.createTextNode(value.slice(last)));
-  node.replaceWith(fragment);
- }
- function scan(node){
-  if(node.nodeType===Node.TEXT_NODE){emphasizeTextNode(node);return;}
-  if(node.nodeType!==Node.ELEMENT_NODE&&node.nodeType!==Node.DOCUMENT_FRAGMENT_NODE)return;
-  if(node.nodeType===Node.ELEMENT_NODE&&skipTags.has(node.tagName))return;
-  const walker=document.createTreeWalker(node,NodeFilter.SHOW_TEXT);
-  const texts=[];
-  while(walker.nextNode())texts.push(walker.currentNode);
-  texts.forEach(emphasizeTextNode);
- }
- scan(document.body);
- const observer=new MutationObserver(records=>{
-  records.forEach(record=>record.addedNodes.forEach(scan));
- });
- observer.observe(document.body,{childList:true,subtree:true});
-})();
-</script>
+
 
 </body></html>
