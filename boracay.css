@@ -349,7 +349,7 @@ body.map-screen-open #back-to-top{display:none!important}
 .transport-detail-card[hidden]{display:none!important}
 .transport-detail-card:not([hidden]){display:block;max-width:none;padding:22px 26px;margin:0 0 14px;animation:transportReveal .2s ease-out}
 .transport-detail-card h3{font-size:1.3rem}
-.transport-detail-card p{max-width:95ch}
+.transport-detail-card p{max-width:none;width:100%}
 @keyframes transportReveal{from{opacity:.5;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:760px){.transport-mode-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.transport-mode{min-height:118px;padding:12px 8px}.transport-mode-name{font-size:.95rem}.transport-detail-card:not([hidden]){padding:18px}}
 @media(prefers-reduced-motion:reduce){.transport-mode,.transport-detail-card{transition:none;animation:none}}
@@ -358,7 +358,7 @@ body.map-screen-open #back-to-top{display:none!important}
 .airport-return-guide{margin-top:20px;padding:18px;border:1px solid var(--line);border-radius:12px;background:var(--bg)}.airport-return-guide h3{margin:0 0 14px}.airport-return-guide>p{margin:14px 0 0;color:var(--muted);line-height:1.55;font-size:.92rem}
 
 .airport-transfer-guide{margin:26px 0 34px;padding:24px;border:1px solid var(--line);border-radius:18px 6px 18px 6px;background:var(--surface)}
-.airport-transfer-heading{max-width:850px;margin-bottom:20px}.airport-transfer-heading h2{margin:7px 0 10px}.airport-transfer-heading p{line-height:1.65;color:var(--muted)}
+.airport-transfer-heading{width:100%;max-width:none;margin-bottom:20px}.airport-transfer-heading h2{margin:7px 0 10px}.airport-transfer-heading p{line-height:1.65;color:var(--muted)}
 .airport-transfer-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .airport-transfer-card{min-width:0;padding:20px;border:1px solid var(--line);border-radius:14px 5px 14px 5px;background:var(--bg)}
 .airport-transfer-top{display:flex;align-items:center;gap:10px;margin-bottom:10px}.airport-transfer-icon{font-size:1.7rem}.airport-transfer-card h3{margin:5px 0;font-size:1.18rem}.airport-transfer-subtitle{margin:0 0 16px;color:var(--muted);font-size:.9rem}
