@@ -454,6 +454,7 @@ main{width:100%;max-width:1760px;margin-inline:auto;padding-left:clamp(22px,3.2v
 <meta property="og:image:alt" content="Philippines Guide — Boracay island and tropical coastline">
 <meta name="twitter:image" content="https://guyabano-kun.github.io/PH/assets/og-philippines.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://guyabano-kun.github.io/PH/#website","url":"https://guyabano-kun.github.io/PH/","name":"Philippines Guide","inLanguage":"ru"},{"@type":"WebPage","@id":"https://guyabano-kun.github.io/PH/weather.html#webpage","url":"https://guyabano-kun.github.io/PH/weather.html","name":"Погода и состояние моря на Боракае","description":"Погода на Боракае, сезоны Amihan и Habagat, ветер, состояние моря, экспозиция побережий и приливы.","inLanguage":"ru","isPartOf":{"@id":"https://guyabano-kun.github.io/PH/#website"},"about":{"@type":"Place","name":"Boracay","containedInPlace":{"@type":"Country","name":"Philippines"}},"breadcrumb":{"@id":"https://guyabano-kun.github.io/PH/weather.html#breadcrumb"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://guyabano-kun.github.io/PH/assets/og-philippines.png","width":1200,"height":630}},{"@type":"BreadcrumbList","@id":"https://guyabano-kun.github.io/PH/weather.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Боракай","item":"https://guyabano-kun.github.io/PH/boracay.html"},{"@type":"ListItem","position":2,"name":"Погода и состояние моря на Боракае","item":"https://guyabano-kun.github.io/PH/weather.html"}]}]}</script>
+<script src="site-core.js" defer></script>
 </head><body>
 <header class="top weather-site-header">
 <div class="places"><a class="place" href="boracay.html"><span aria-hidden="true">←</span><span data-ru="Путеводитель" data-en="Island guide">Путеводитель</span></a><a class="place active" href="weather.html" aria-current="page"><span aria-hidden="true">☀</span><span data-ru="Погода и море" data-en="Weather & Sea">Погода и море</span></a></div>
@@ -550,7 +551,7 @@ main{width:100%;max-width:1760px;margin-inline:auto;padding-left:clamp(22px,3.2v
 </section>
 </main><footer><span data-ru="Погодный и морской справочник Боракая · Проверяйте местные предупреждения PAGASA" data-en="Boracay weather and sea guide · Check local PAGASA advisories">Погодный и морской справочник Боракая · Проверяйте местные предупреждения PAGASA</span><span aria-hidden="true"> · </span><a href="boracay.html" data-ru="Вернуться к путеводителю" data-en="Back to the island guide">Вернуться к путеводителю</a></footer>
 <script>
-(()=>{const root=document.documentElement,langBtn=document.getElementById('lang-btn'),themeBtn=document.getElementById('theme-btn'),langIcon=document.getElementById('lang-flag'),themeIcon=document.getElementById('theme-icon');let lang=root.lang==='en'?'en':'ru';const paintTheme=()=>{const t=root.dataset.theme||'auto';themeIcon.textContent=t==='dark'?'☾':t==='light'?'☀':'◐';themeBtn.setAttribute('aria-label',t==='dark'?'Theme: dark':t==='light'?'Theme: light':'Theme: auto')};langBtn.addEventListener('click',()=>{lang=lang==='ru'?'en':'ru';root.lang=lang;document.querySelectorAll('[data-ru][data-en]').forEach(e=>{e.textContent=e.dataset[lang]});langIcon.textContent=lang==='ru'?'🇷🇺':'🇬🇧';root.dispatchEvent(new Event('langchange'));});themeBtn.addEventListener('click',()=>{const t=root.dataset.theme||'auto';root.dataset.theme=t==='dark'?'light':t==='light'?'auto':'dark';paintTheme()});langIcon.textContent=lang==='ru'?'🇷🇺':'🇬🇧';paintTheme();})();
+(()=>{const root=document.documentElement,langBtn=document.getElementById('lang-btn'),themeBtn=document.getElementById('theme-btn'),langIcon=document.getElementById('lang-flag'),themeIcon=document.getElementById('theme-icon');let lang=root.lang==='en'?'en':'ru';const paintTheme=()=>window.PHSite?.renderTheme({theme:root.dataset.theme||'auto',language:lang,button:themeBtn,icon:themeIcon});langBtn.addEventListener('click',()=>{lang=lang==='ru'?'en':'ru';root.lang=lang;document.querySelectorAll('[data-ru][data-en]').forEach(e=>{e.textContent=e.dataset[lang]});langIcon.textContent=lang==='ru'?'🇷🇺':'🇬🇧';root.dispatchEvent(new Event('langchange'));window.PHSite?.notifyLanguageChange(lang);});themeBtn.addEventListener('click',()=>{const t=root.dataset.theme||'auto';root.dataset.theme=t==='dark'?'light':t==='light'?'auto':'dark';paintTheme()});langIcon.textContent=lang==='ru'?'🇷🇺':'🇬🇧';paintTheme();})();
 (()=>{const root=document.documentElement;const mapEl=document.getElementById('boracay-weather-map');if(!mapEl||!window.L)return;let season='amihan',selected='bulabog',windOn=true;const map=L.map(mapEl,{zoomControl:true,scrollWheelZoom:true}).setView([11.9638,121.9278],14);L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors',crossOrigin:true}).addTo(map);const data={
 white:{name:'White Beach · Station 2',lat:11.9581389,lon:121.9260278,coast:'West coast',coastRu:'Западное побережье',amihan:'sheltered',habagat:'exposed',ru:'Центральный участок White Beach. При Amihan западное побережье обычно защищённее.',en:'Central White Beach section. The west coast is generally more sheltered during Amihan.'},
 bulabog:{name:'Bulabog Beach',lat:11.965631,lon:121.928888,coast:'East coast',coastRu:'Восточное побережье',amihan:'exposed',habagat:'sheltered',ru:'Восточное побережье, зона кайт- и виндсёрфинга.',en:'East coast, kiteboarding and windsurfing area.'},
@@ -584,45 +585,5 @@ month.addEventListener('change',load);reload.addEventListener('click',load);load
 <style>
 .price-emphasis{font-weight:800}
 </style>
-<script>
-(()=>{
- const pricePattern=/(?:₱|PHP\s*|US\$\s*|USD\s*|\$\s*)\d[\d,]*(?:\.\d{1,2})?(?:\s*[–—-]\s*(?:₱|PHP\s*|US\$\s*|USD\s*|\$\s*)?\d[\d,]*(?:\.\d{1,2})?)?/g;
- const skipTags=new Set(['SCRIPT','STYLE','NOSCRIPT','TEXTAREA','INPUT','OPTION','STRONG','B']);
- function emphasizeTextNode(node){
-  const parent=node.parentElement;
-  if(!parent||skipTags.has(parent.tagName)||parent.closest('strong,b,.price-emphasis'))return;
-  
-  const value=node.nodeValue;
-  pricePattern.lastIndex=0;
-  if(!pricePattern.test(value))return;
-  pricePattern.lastIndex=0;
-  const fragment=document.createDocumentFragment();
-  let last=0,match;
-  while((match=pricePattern.exec(value))){
-   if(match.index>last)fragment.append(document.createTextNode(value.slice(last,match.index)));
-   const strong=document.createElement('strong');
-   strong.className='price-emphasis';
-   strong.textContent=match[0];
-   fragment.append(strong);
-   last=match.index+match[0].length;
-  }
-  if(last<value.length)fragment.append(document.createTextNode(value.slice(last)));
-  node.replaceWith(fragment);
- }
- function scan(node){
-  if(node.nodeType===Node.TEXT_NODE){emphasizeTextNode(node);return;}
-  if(node.nodeType!==Node.ELEMENT_NODE&&node.nodeType!==Node.DOCUMENT_FRAGMENT_NODE)return;
-  if(node.nodeType===Node.ELEMENT_NODE&&skipTags.has(node.tagName))return;
-  const walker=document.createTreeWalker(node,NodeFilter.SHOW_TEXT);
-  const texts=[];
-  while(walker.nextNode())texts.push(walker.currentNode);
-  texts.forEach(emphasizeTextNode);
- }
- scan(document.body);
- const observer=new MutationObserver(records=>{
-  records.forEach(record=>record.addedNodes.forEach(scan));
- });
- observer.observe(document.body,{childList:true,subtree:true});
-})();
-</script>
+
 </body></html>
