@@ -22,6 +22,14 @@ Last verified against GitHub `main`: 2026-11-16
 - No price values, rates, labels, data, links, page structure, or site architecture were changed.
 - Structural checks: one renderer per content page, no duplicate HTML IDs, `index.html` redirect unchanged. GitHub Pages visual/deployment verification remains NOT VERIFIED because the published URLs could not be retrieved and the commit has no reported CI statuses.
 ## Completed work
+### English pages on separate URLs (2026-11-16)
+- Added `tools/build_en.py`, generated `en/boracay.html`, `en/weather.html`, `en/currency.html`, and `.github/workflows/build-en.yml` to regenerate them on push.
+- Added `hreflang` alternates to the three source pages and to `sitemap.xml`; English pages have their own canonical URL, title, description, Open Graph, Twitter and JSON-LD metadata.
+- Language button now navigates between the Russian and English URL, keeping the fragment. `currency.html` now reads its starting language from `<html lang>` like the other pages.
+- Translated the strings that were still Russian in English mode (utility figures, source-link labels, season table headers, loading placeholders, phone labels).
+- Local headless-browser check (390 px viewport, external APIs blocked): all seven pages load with no script errors; no Cyrillic text on the three English pages; RU↔EN navigation works; no local 404s. Live GitHub Pages deployment and the Actions rebuild are NOT VERIFIED.
+- Open: `beaches.html` has no English version.
+
 ### SEO and indexation foundation (2026-11-16)
 - Added a shared 1200×630 PNG Open Graph image at `assets/og-philippines.png`; all four canonical content pages now expose Open Graph image metadata, Twitter large-image cards, and matching `primaryImageOfPage` JSON-LD. Existing canonical URLs and page-level descriptions were preserved.
 - Fixed the missing page-level H1 on `weather.html` using the existing bilingual heading strings and matching heading styles. The four canonical content pages now each have one H1.

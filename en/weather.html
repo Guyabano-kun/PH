@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en" data-theme="auto"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Boracay weather by season: Amihan and Habagat monsoons, wind, sea state, which coast is sheltered, and tide tables.">
+<title>Boracay weather: monsoons, wind, sea state and tides | Philippines</title>
+<style>
+:root{color-scheme:light dark;--bg:#f7f3e9;--surface:#fffdf7;--ink:#182e30;--muted:#667b79;--line:#d9e1d8;--accent:#087f82;--hero:#063f47;--sun:#f1b84b}
+[data-theme=dark]{--bg:#101b1d;--surface:#1a292b;--ink:#eef5ef;--muted:#a8bbb6;--line:#34484a;--accent:#68d3c8;--hero:#092f36;--sun:#f1c66b}
+@media(prefers-color-scheme:dark){:root[data-theme=auto]{--bg:#101b1d;--surface:#1a292b;--ink:#eef5ef;--muted:#a8bbb6;--line:#34484a;--accent:#68d3c8;--hero:#092f36;--sun:#f1c66b}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif}a{color:var(--accent)}
+header{display:flex;justify-content:space-between;align-items:center;padding:13px clamp(16px,4vw,56px);background:var(--surface);border-bottom:1px solid var(--line)}.brand{font-weight:800;text-decoration:none;color:var(--ink)}.controls{display:flex;gap:8px}.controls button{border:1px solid var(--line);border-radius:99px;background:var(--bg);color:var(--ink);padding:8px 12px;font:inherit;cursor:pointer}
+.hero{padding:48px clamp(18px,7vw,100px);background:linear-gradient(115deg,var(--hero),#0c5960);color:white}.hero .eyebrow{font-size:.8rem;letter-spacing:.16em;font-weight:800;color:#b7e7d9}.hero h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1;margin:14px 0}.hero p{max-width:760px;color:#d8ece5;font-size:1.1rem}
+main{max-width:1240px;margin:auto;padding:30px clamp(14px,3.5vw,48px) 70px}section{margin:34px 0}.season-section,.tide-section{margin-top:38px}.season-lead,.tide-intro{color:var(--muted);max-width:900px}.season-banner{background:var(--hero);color:#fff;border-radius:14px;padding:20px 22px;margin:16px 0}.season-banner p{margin:0;color:#d8ece5}.season-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:16px 0}.season-card,.weather-panel{background:var(--surface);border:1px solid var(--line);border-radius:8px 20px;padding:20px}.season-card p{color:var(--muted)}.season-tag{display:inline-block;font-size:.75rem;font-weight:800;padding:3px 8px;border-radius:99px;background:var(--bg);color:var(--accent)}.season-table-wrap,.tide-table-wrap{overflow:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px}.season-table{width:100%;border-collapse:collapse;min-width:620px}.season-table th,.season-table td{padding:11px;text-align:left;border-bottom:1px solid var(--line)}.season-note,.tide-caveat{font-size:.88rem;color:var(--muted)}.season-sources,.tide-sources{display:flex;flex-wrap:wrap;gap:8px 16px}
+.monsoon-map{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px;margin:22px 0}.map-controls{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 14px}.map-controls button{border:1px solid var(--line);border-radius:99px;padding:10px 16px;background:var(--bg);color:var(--ink);font:700 1rem system-ui;cursor:pointer}.map-controls button[aria-pressed=true]{background:var(--hero);color:#fff}.map-svg{width:100%;height:auto;display:block}.map-svg .island{fill:#65a36b;stroke:#f6edcf;stroke-width:15}.map-svg .coast{fill:none;stroke:#fff;stroke-width:8}.map-svg .wind{fill:none;stroke-width:10;stroke-linecap:round;transition:opacity .2s}.map-svg .ne{stroke:#087fba}.map-svg .sw{stroke:#d47737}.map-svg .label{font:700 22px system-ui;fill:#153e4b}.map-svg .shore{cursor:pointer}.map-svg .shore:focus{outline:none;filter:drop-shadow(0 0 5px #fff)}.map-svg .shore circle{fill:#fff;stroke:#087f82;stroke-width:5}.map-svg .shore text{font:700 18px system-ui;fill:#173b45}.map-caption{font-size:.88rem;color:var(--muted);margin:8px 2px}.map-detail{padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--bg);margin-top:10px}.map-detail strong{display:block;margin-bottom:4px}
+.tide-toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:14px 0}.tide-toolbar input,.tide-toolbar button{font:inherit;padding:8px 11px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--ink)}.tide-toolbar button{background:var(--hero);color:white;cursor:pointer}.tide-status,.tide-caveat{color:var(--muted);font-size:.88rem}.tide-heatmap{width:100%;min-width:650px;border-collapse:collapse;table-layout:fixed}.tide-heatmap th,.tide-heatmap td{border:1px solid #89979c;text-align:center;padding:7px 3px;font-size:.88rem}.tide-heatmap thead th{background:#e8eef0;color:#20333b;position:sticky;top:0}.tide-heatmap tbody th{background:#edf1f2;color:#20333b}.tide-heatmap td{cursor:pointer}.tide-heatmap td.tide-low{background:#f2a0a3;color:#292323}.tide-heatmap td.tide-mid{background:#ffe16b;color:#29251a}.tide-heatmap td.tide-high{background:#a9d9ec;color:#172c35}.tide-heatmap td.tide-empty{background:#edf0ef;color:#7b8585;cursor:default}.tide-legend{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}.tide-legend span{padding:9px 12px;border:1px solid #aab4b7;border-radius:7px;font-size:.88rem}.tide-legend-low{background:#f2a0a3;color:#292323}.tide-legend-mid{background:#ffe16b;color:#29251a}.tide-legend-high{background:#a9d9ec;color:#172c35}.tide-detail{padding:12px 15px;border:1px solid var(--line);border-radius:9px;background:var(--surface);margin-top:12px;font-weight:650}.note{padding:20px;border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:8px;background:var(--surface)}
+footer{text-align:center;padding:22px;border-top:1px solid var(--line);color:var(--muted)}@media(max-width:680px){.season-grid{grid-template-columns:1fr}.tide-legend{grid-template-columns:1fr}.hero{padding:40px 20px}.map-svg .label{font-size:17px}.map-svg .shore text{font-size:15px}}
+
+.drawing-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:16px}.drawing-eyebrow{font-size:.75rem;letter-spacing:.16em;font-weight:900;color:#0787ad}.drawing-heading h2{margin:5px 0;font-size:clamp(1.6rem,3vw,2.5rem)}.drawing-heading p{margin:0;color:var(--muted)}.weather-art{overflow:hidden;border-radius:24px;background:#0877ad;box-shadow:0 18px 50px rgba(4,53,78,.22);border:1px solid #8bd9eb}.weather-art .map-controls{margin:0}.weather-art .map-controls button{background:#0b4776;color:#fff;border-color:#9ce6fa}.weather-art .map-controls button[aria-pressed=true]{background:#fff;color:#07518a;box-shadow:0 0 0 3px #61d7ff}.weather-drawing{width:100%;height:auto;display:block}.beach-hotspot{cursor:pointer}.beach-hotspot circle{fill:#fff;stroke:#0786ad;stroke-width:6;transition:r .15s,fill .15s}.beach-hotspot text{font-size:22px;font-weight:900;fill:#fff;stroke:#164e62;stroke-width:5;paint-order:stroke;pointer-events:none}.beach-hotspot:hover circle,.beach-hotspot.selected circle{fill:#ffe58a;stroke:#fff;stroke-width:8}.beach-hotspot:focus{outline:none}.animated-wind{fill:none;stroke-width:13;stroke-linecap:round;stroke-dasharray:18 15;animation:draw-wind 1.3s linear infinite;filter:drop-shadow(0 2px 4px rgba(0,45,80,.45))}.blue-wind{stroke:#7de7ff}.orange-wind{stroke:#ffd08a}@keyframes draw-wind{to{stroke-dashoffset:-66}}.drawing-bottom{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px;background:linear-gradient(110deg,#dff8ff,#f5fcff)}.drawing-bottom>div{padding:14px 18px;border-radius:15px;background:#fff;color:#123c5a}.drawing-bottom strong{font-size:1.05rem}.drawing-bottom p{margin:5px 0 0;font-size:.92rem;line-height:1.4}.drawing-effect{border-left:5px solid #0a9fbd}.drawing-takeaway{border-left:5px solid #e9b84b}.map-caption{margin-top:12px}@media(max-width:700px){.drawing-heading{align-items:flex-start}.weather-drawing{min-width:760px}.weather-art{overflow-x:auto}.drawing-bottom{grid-template-columns:1fr}.drawing-bottom>div{padding:12px}.weather-art .map-controls{margin-top:8px}}
+
+/* Approved Boracay weather dashboard layout */
+.dashboard-heading{display:flex;justify-content:space-between;align-items:end;gap:18px;flex-wrap:wrap;margin-bottom:18px}.dashboard-heading h1{margin:5px 0;font-size:clamp(1.7rem,3vw,2.35rem)}.dashboard-heading p{margin:0}.lang-season-controls{display:flex;gap:8px;flex-wrap:wrap}.season-toggle{display:flex;flex-direction:column;gap:2px;min-width:140px;border:1px solid #9acfe8;border-radius:13px;padding:10px 15px;background:#e8f6ff;color:#123b60;font:800 1rem system-ui;cursor:pointer}.season-toggle small{font-size:.75rem;font-weight:600}.season-toggle.active{background:linear-gradient(120deg,#087acb,#064a9a);color:white;border-color:#7de7ff;box-shadow:0 0 0 2px #67dfff,0 0 18px #42bfff}.dashboard-grid{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(390px,.98fr);gap:14px;align-items:start}.map-column{min-width:0}.map-frame{position:relative;overflow:hidden;border-radius:20px;border:2px solid #8bd7f4;background:#073d62;box-shadow:0 14px 35px rgba(0,57,92,.22)}.leaflet-map{height:min(1120px,calc(100vh - 170px));min-height:700px;width:100%;background:#075b84}.map-overlay-top,.map-overlay-bottom{position:absolute;z-index:500;left:12px;right:12px;display:flex;justify-content:space-between;align-items:center;pointer-events:none;color:white;text-shadow:0 1px 4px #002b49;font-weight:850}.map-overlay-top{top:12px}.map-overlay-bottom{bottom:12px}.map-overlay-bottom button{pointer-events:auto;border:1px solid #b7eaff;border-radius:99px;background:#063b68e8;color:#fff;padding:9px 14px;font-weight:800;cursor:pointer}.north-indicator{font-size:1.3rem}.map-overlay-top>span:last-child,.map-scale-label{background:#063b68d9;border:1px solid #a5e4ff;border-radius:99px;padding:6px 12px;font-size:.76rem;letter-spacing:.04em}.weather-info-column{display:flex;flex-direction:column;gap:12px;min-width:0}.info-card{background:linear-gradient(145deg,#f8fdff,#e3f5ff);border:1px solid #9dd8f2;border-radius:17px;padding:15px 17px;box-shadow:0 5px 16px rgba(11,93,140,.09);color:#102f59}.info-card h3{margin:0 0 12px;font-size:1.12rem;color:#0b2e62}.info-title{display:flex;gap:12px;align-items:center;border-bottom:1px solid #c5e4f2;padding-bottom:10px;margin-bottom:8px}.info-title>span{font-size:2rem;color:#087cc4}.info-title h3{margin:0}.info-title div>span{font-size:.83rem;color:#426782}.weather-facts{display:grid;grid-template-columns:1fr 1fr;gap:9px 14px}.weather-facts p{margin:0;display:flex;flex-direction:column;font-size:.88rem;line-height:1.35}.weather-facts b{color:#07518c}.weather-facts span{color:#294b66}.beach-row{width:100%;display:grid;grid-template-columns:74px minmax(0,1fr) auto;gap:10px;align-items:center;text-align:left;border:0;border-top:1px solid #c9e5f3;background:transparent;padding:9px 0;color:#12375e;cursor:pointer;font:inherit}.beach-row:first-of-type{border-top:0}.beach-row>span:nth-child(2){display:flex;flex-direction:column;min-width:0}.beach-row b{font-size:.88rem}.beach-row small{font-size:.77rem;line-height:1.3;color:#48657a}.beach-row em{font-style:normal;font-size:.68rem;font-weight:850;border-radius:99px;padding:5px 8px;background:#c8f1d1;color:#145d38;white-space:nowrap}.beach-row.selected{background:#d7f1ff;border-radius:10px;padding-left:6px;padding-right:6px}.beach-thumb{height:53px;border-radius:9px;background:linear-gradient(135deg,#0a9ed0,#f3d99b 45%,#178b68)}.white-thumb{background:linear-gradient(170deg,#74d3f4 0 42%,#f7e6bd 43% 61%,#1e9a70 62%)}.bulabog-thumb{background:linear-gradient(160deg,#8bd9f5 0 40%,#0089b9 41% 65%,#e6d19c 66%)}.puka-thumb{background:linear-gradient(150deg,#0a91b9,#54d5d3 45%,#f4e1b4 46%,#34865e 70%)}.diniwid-thumb{background:linear-gradient(160deg,#0b9bc1,#f2dfb7 50%,#277b59 51%)}.tambisaan-thumb{background:linear-gradient(150deg,#0787b6,#42c7bd 45%,#e9d29b 46%,#27734f 75%)}.month-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px}.month-grid button{border:1px solid #b7dfef;border-radius:8px;padding:7px 2px;background:#edfaff;color:#123d66;font:750 .75rem system-ui;cursor:pointer}.month-grid button span{display:block;font-size:1.15rem}.month-grid button.active{background:#0879bd;color:#fff;border-color:#0879bd}.season-summary{margin-top:9px;padding:10px 12px;border-radius:10px;background:#ccefff;color:#124a72;font-size:.82rem;font-weight:700}.takeaway-card{background:linear-gradient(135deg,#fffdf0,#fff0bd);border-color:#e8d58d}.takeaway-card h3{color:#70530a}.takeaway-card ul{margin:0;padding-left:20px;color:#29465d;font-size:.84rem;line-height:1.5}.map-legend{display:flex;gap:13px;flex-wrap:wrap;padding:10px 4px;font-size:.77rem;color:var(--muted)}.map-legend span{display:flex;align-items:center;gap:6px}.dot{width:10px;height:10px;border-radius:50%;display:inline-block}.dot.exposed{background:#e75b43}.dot.sheltered{background:#16a36c}.dot.variable{background:#e1a72b}.selected-beach-card{padding:13px 15px;border:1px solid #9dd8f2;border-radius:13px;background:#f0faff;color:#183e5d;font-size:.85rem}.selected-beach-card p{margin:4px 0 0}.leaflet-container{font:13px system-ui,sans-serif}.leaflet-tooltip{border:1px solid rgba(255,255,255,.8);border-radius:7px;background:#073e68;color:#fff;font-weight:800;box-shadow:0 2px 9px #002b49;padding:3px 7px}.leaflet-tooltip:before{border-top-color:#073e68}.wind-path{stroke-dasharray:14 12;animation:wind-flow-dash 1.2s linear infinite;filter:drop-shadow(0 1px 3px #00344d)}.wind-paused .wind-path{animation-play-state:paused}@keyframes wind-flow-dash{to{stroke-dashoffset:-52}}.wind-arrow-label{background:#073b6b;color:white;border:1px solid #9ee7ff;border-radius:20px;padding:4px 9px;font-size:11px;font-weight:900;white-space:nowrap}@media(max-width:900px){.dashboard-grid{grid-template-columns:1fr}.leaflet-map{height:72vh;min-height:560px;max-height:850px}.weather-info-column{display:grid;grid-template-columns:1fr 1fr}.weather-info-column .takeaway-card{grid-column:1/-1}}@media(max-width:580px){.dashboard-heading{align-items:flex-start}.lang-season-controls{width:100%}.season-toggle{flex:1;min-width:0}.leaflet-map{height:72vh;min-height:520px}.weather-info-column{display:flex}.weather-facts{grid-template-columns:1fr 1fr}.beach-row{grid-template-columns:62px minmax(0,1fr) auto;gap:7px}.beach-row em{font-size:.6rem;padding:4px 6px}.info-card{padding:13px}.month-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.weather-header{position:sticky;top:0;z-index:900;gap:14px;padding:10px clamp(12px,2vw,28px);background:linear-gradient(110deg,#063c70,#087eb4);color:white}.weather-header .brand{color:white;white-space:nowrap}.weather-nav{display:flex;gap:5px;align-items:center}.weather-nav a{color:#fff;text-decoration:none;padding:8px 10px;border:1px solid #8bcff0;border-radius:99px;font-size:.8rem;font-weight:750;white-space:nowrap}.weather-nav a:hover{background:#fff;color:#07518c}.weather-header .controls button{background:#0b5590;color:#fff;border-color:#8bd8f5}.weather-dashboard{margin-top:8px!important}.weather-dashboard .dashboard-heading{display:flex}@media(max-width:900px){.weather-header{position:relative;flex-wrap:wrap}.weather-nav{order:3;width:100%;overflow-x:auto}.weather-nav a{font-size:.74rem}.weather-header .brand{white-space:normal}}
+/* Shared Boracay site shell: same typography, palette and controls as the main guide */
+.weather-site-header{position:sticky;top:0;z-index:1200;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:10px;padding:12px clamp(14px,3.5vw,56px);background:var(--surface);color:var(--ink);border-bottom:1px solid var(--line)}
+.weather-site-header>.places{display:flex;align-items:center;gap:6px;flex:0 0 auto;min-width:0;flex-wrap:nowrap}
+.weather-site-header>.places .place{display:flex;align-items:center;gap:7px;padding:8px 12px;border:1px solid transparent;border-radius:999px;color:var(--muted);font-size:.94rem;font-weight:750;text-decoration:none;white-space:nowrap}
+.weather-site-header>.places .place:hover{background:var(--bg);color:var(--ink)}
+.weather-site-header>.places .place.active{background:var(--hero);color:#fff}
+.weather-site-header .weather-nav{display:flex;align-items:center;justify-content:center;gap:5px;flex:1 1 auto;min-width:0;overflow-x:auto;scrollbar-width:none}
+.weather-site-header .weather-nav::-webkit-scrollbar{display:none}
+.weather-site-header .weather-nav a{padding:7px 9px;border:1px solid transparent;border-radius:999px;color:var(--muted);font-size:.84rem;font-weight:700;text-decoration:none;white-space:nowrap}
+.weather-site-header .weather-nav a:hover{background:var(--bg);color:var(--ink);border-color:var(--line)}
+.weather-site-header>.settings{display:flex;align-items:center;gap:6px;flex:0 0 auto;margin-left:auto}
+.weather-site-header .setting-btn{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;min-width:36px;min-height:36px;padding:0;border:1px solid var(--line);border-radius:50%;background:var(--bg);color:var(--ink);font:700 1rem/1 system-ui,sans-serif;cursor:pointer}
+.weather-site-header .setting-btn:hover{border-color:var(--accent);background:var(--surface)}
+.weather-site-header .setting-icon{font-size:1.08rem;line-height:1}
+.weather-dashboard{max-width:1320px;margin:0 auto!important;padding:28px clamp(14px,3.5vw,48px) 0}
+.weather-dashboard .dashboard-heading h2{color:var(--ink)}
+.weather-dashboard .season-lead{color:var(--muted)}
+.weather-site-header+.weather-dashboard{margin-top:0!important}
+footer a{font-weight:700;text-decoration:none}
+footer a:hover{text-decoration:underline}
+@media(max-width:900px){.weather-site-header{position:relative;flex-wrap:wrap;gap:8px}.weather-site-header>.places{order:1;flex:1 1 auto}.weather-site-header>.settings{order:2}.weather-site-header .weather-nav{order:3;flex:1 0 100%;justify-content:flex-start;padding:2px 0 4px}}
+@media(max-width:520px){.weather-site-header{padding:9px 10px;gap:5px}.weather-site-header>.places{gap:2px}.weather-site-header>.places .place{gap:5px;padding:6px 7px;font-size:.84rem}.weather-site-header>.places .place span[aria-hidden=true]{font-size:.95rem}.weather-site-header>.settings{gap:4px}.weather-site-header .setting-btn{width:34px;height:34px;min-width:34px;min-height:34px}.weather-site-header .weather-nav a{font-size:.78rem;padding:6px 8px}.weather-dashboard{padding-top:20px}}
+
+/* Reworked seasonal coastline section */
+.season-section{margin-top:52px!important}
+.season-heading{max-width:920px;margin-bottom:20px}
+.season-kicker{display:block;margin-bottom:8px;color:var(--accent);font-size:.76rem;font-weight:850;letter-spacing:.13em}
+.season-heading h2{margin:0 0 10px!important}
+.season-heading .season-lead{margin:0;max-width:850px}
+.monsoon-figure{margin:22px 0 24px;background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.monsoon-figure img{display:block;width:100%;height:auto;border:0!important;border-radius:0!important}
+.monsoon-figure figcaption{padding:10px 15px 12px;color:var(--muted);font-size:.86rem;line-height:1.5}
+.season-rule-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:20px 0 34px}
+.season-rule{min-width:0;padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+.season-rule-top{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.season-season-tag{display:inline-flex;align-items:center;padding:5px 10px;border-radius:7px;background:#d9effa;color:#075b8d;font-size:.78rem;font-weight:900;letter-spacing:.08em}
+.habagat-rule .season-season-tag{background:#fbe7d9;color:#98501f}
+.season-months{font-size:.82rem;color:var(--muted);font-weight:650}
+.season-rule h3{margin:12px 0 16px;font-size:1.25rem}
+.season-rule-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.season-rule-pair>div{padding:13px;border-radius:11px;background:var(--bg);min-width:0}
+.season-rule-pair strong{display:block;margin:8px 0 5px;font-size:1.03rem}
+.season-rule-pair p{margin:0;color:var(--muted);font-size:.91rem;line-height:1.55}
+.exposure-state{display:inline-block;padding:4px 8px;border-radius:6px;font-size:.7rem;font-weight:850;letter-spacing:.02em}
+.sheltered-state{background:#dff2e7;color:#176443}.exposed-state{background:#fae5df;color:#9b422f}
+.season-local-heading,.season-matrix-heading{margin:34px 0 14px}
+.season-local-heading h3,.season-matrix-heading h3{margin:0 0 5px;font-size:1.35rem}
+.season-local-heading p,.season-matrix-heading p{margin:0;color:var(--muted);max-width:850px}
+.season-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:16px 0 28px}
+.season-card{border-radius:14px;padding:20px}
+.season-card h3{margin:8px 0 10px;font-size:1.08rem}
+.season-card p{margin:9px 0;color:var(--muted);font-size:.93rem;line-height:1.6}
+.season-tag{font-size:.72rem;letter-spacing:.04em}
+.season-table-wrap{border-radius:13px}
+.season-table{min-width:680px;font-size:.91rem;line-height:1.5}
+.season-table th,.season-table td{padding:13px 14px;vertical-align:top}
+.season-table thead th{background:var(--bg);color:var(--ink);font-weight:800}
+.season-note{margin:14px 0;line-height:1.55}
+.season-sources{margin-top:14px;gap:9px 18px}
+@media(max-width:760px){.season-rule-grid{grid-template-columns:1fr}.season-rule{padding:18px}.season-grid{grid-template-columns:1fr}.season-rule-pair{gap:10px}}
+@media(max-width:480px){.season-rule-pair{grid-template-columns:1fr}.season-rule-pair>div{padding:12px}.season-rule-top{align-items:flex-start;flex-direction:column}.season-card{padding:17px}.monsoon-figure figcaption{font-size:.8rem}}
+
+/* Weather dashboard: map-first editorial layout */
+.weather-dashboard{max-width:1500px!important;padding-top:22px!important}
+.weather-dashboard .dashboard-heading{align-items:center;margin-bottom:14px}
+.weather-dashboard .dashboard-heading h2{font-size:clamp(1.9rem,3.4vw,2.8rem);letter-spacing:-.035em}
+.weather-dashboard .dashboard-heading .season-lead{max-width:720px;font-size:.96rem}
+.dashboard-grid{grid-template-columns:minmax(0,1.08fr) minmax(420px,.92fr);gap:16px;align-items:stretch}
+.map-frame{border-radius:18px;box-shadow:0 12px 34px rgba(0,55,88,.18)}
+.leaflet-map{height:clamp(700px,calc(100vh - 175px),1120px);min-height:700px}
+.weather-info-column{gap:12px}
+.info-card{border-radius:15px;padding:16px 18px;box-shadow:0 4px 14px rgba(11,93,140,.07)}
+.info-card h3{font-size:1.08rem;margin-bottom:10px}
+.info-title{gap:12px;padding-bottom:9px;margin-bottom:9px}
+.info-title>span{display:none}
+.weather-facts{gap:10px 18px}
+.weather-facts p{font-size:.86rem;line-height:1.38}
+#beach-effects{padding-bottom:10px}
+#beach-effects>h3{padding-bottom:8px;border-bottom:1px solid #c9e5f3}
+.beach-row{grid-template-columns:minmax(0,1fr) auto;gap:12px;padding:11px 4px}
+.beach-row>span:first-child{grid-column:1;grid-row:1}
+.beach-row b{font-size:.91rem;line-height:1.3}
+.beach-row small{font-size:.78rem;line-height:1.38;margin-top:3px}
+.beach-row em{grid-column:2;grid-row:1;align-self:center;font-size:.68rem;padding:6px 10px}
+.beach-row.selected{padding-left:9px;padding-right:9px}
+.beach-thumb{display:none!important}
+.month-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
+.month-grid button{padding:7px 3px;font-size:.74rem}
+.month-grid button span{font-size:1.2rem;line-height:1.4}
+.season-summary{line-height:1.4}
+.takeaway-card{background:linear-gradient(135deg,#fffdf4,#fff6d8);border-color:#e8dba8}
+.map-caption{margin:10px 3px 0;font-size:.82rem;line-height:1.5}
+.season-reference{margin-top:42px!important}
+.season-reference .season-heading{max-width:100%;margin-bottom:16px}
+.season-reference-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0 24px}
+.season-reference-item{display:flex;flex-direction:column;gap:5px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.season-reference-item strong{color:var(--ink);font-size:.94rem}
+.season-reference-item span{color:var(--muted);font-size:.88rem;line-height:1.5}
+.season-reference-item.habagat{border-left:4px solid #d47737}
+.season-reference .season-matrix-heading{margin-top:28px}
+.season-reference .season-table{min-width:650px}
+@media(max-width:900px){.dashboard-grid{grid-template-columns:1fr}.leaflet-map{height:72vh;min-height:570px;max-height:900px}.weather-info-column{display:grid;grid-template-columns:1fr 1fr}.weather-info-column .takeaway-card{grid-column:1/-1}}
+@media(max-width:580px){.weather-dashboard{padding-top:18px!important}.dashboard-grid{gap:12px}.leaflet-map{height:68vh;min-height:500px}.weather-info-column{display:flex}.weather-facts{grid-template-columns:1fr 1fr}.beach-row{grid-template-columns:minmax(0,1fr) auto}.month-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.season-reference-grid{grid-template-columns:1fr}}
+
+/* Wind visualization: continuous, soft particle advection on a clean street map */
+#boracay-weather-map{position:relative;background:#dce9e8}
+.wind-particle-canvas{position:absolute;inset:0;z-index:450;pointer-events:none;display:block}
+.leaflet-tile{filter:none}
+.leaflet-tooltip{background:rgba(18,48,61,.92);border:1px solid rgba(255,255,255,.9);border-radius:6px;color:#fff;font-weight:750;box-shadow:0 1px 5px rgba(12,42,54,.22);padding:3px 7px}
+.leaflet-tooltip:before{border-top-color:rgba(18,48,61,.92)}
+
+/* Reuse the same beach marker language as the main Boracay map */
+.map-emoji-marker{background:transparent;border:0}
+.map-emoji-marker span{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50% 50% 50% 8px;transform:rotate(-45deg);background:#fff;border:2px solid #087f82;box-shadow:0 2px 7px #0005;font-size:19px;line-height:1}
+.map-emoji-marker.selected span{background:#d8f5ff;border-color:#087acb;box-shadow:0 0 0 3px #7de7ff,0 2px 8px #0005}
+
+/* Wide-screen layout: expand the dashboard and seasonal content to the viewport */
+main{width:100%;max-width:1760px;margin-inline:auto;padding-left:clamp(22px,3.2vw,58px);padding-right:clamp(22px,3.2vw,58px)}
+.weather-dashboard{width:100%;max-width:none!important;padding-left:0!important;padding-right:0!important}
+.dashboard-grid{grid-template-columns:minmax(0,1.12fr) minmax(500px,.88fr);gap:20px}
+.weather-info-column{min-width:0}
+.season-heading,.season-heading .season-lead,.season-local-heading p,.season-matrix-heading p{max-width:100%}
+.season-rule-grid,.season-grid,.season-reference-grid{gap:18px}
+.leaflet-map{height:clamp(700px,calc(100vh - 165px),1180px)}
+@media(min-width:1500px){
+ .info-card{padding:19px 22px}
+ .weather-facts p{font-size:.94rem;line-height:1.48}
+ .beach-row{padding:13px 7px}
+ .month-grid{gap:8px}
+ .month-grid button{padding:9px 5px;font-size:.8rem}
+ .season-rule,.season-card{padding:25px}
+ .season-table th,.season-table td{padding:15px 17px}
+}
+@media(max-width:1100px){
+ main{padding-left:24px;padding-right:24px}
+ .dashboard-grid{grid-template-columns:minmax(0,1.05fr) minmax(390px,.95fr);gap:14px}
+}
+@media(max-width:900px){
+ main{padding-left:18px;padding-right:18px}
+ .dashboard-grid{grid-template-columns:1fr}
+ .leaflet-map{height:72vh;min-height:570px;max-height:900px}
+}
+@media(max-width:580px){
+ main{padding-left:14px;padding-right:14px}
+ .leaflet-map{height:68vh;min-height:500px}
+}
+
+
+/* Three-column seasonal content where there are enough cards */
+@media(min-width:1101px){
+ .season-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(min-width:761px) and (max-width:1100px){
+ .season-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+ .season-grid{grid-template-columns:minmax(0,1fr)}
+}
+
+
+/* Beach list: independent text and status blocks; no overlapping columns */
+.beach-list-intro{margin:-4px 0 12px;color:#426782;font-size:.84rem;line-height:1.45}
+.beach-list-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.beach-row{display:flex;flex-direction:column;align-items:stretch;justify-content:space-between;gap:8px;min-width:0;min-height:112px;padding:11px 12px;border:1px solid #c9e5f3;border-radius:11px;background:#f7fcff;text-align:left;white-space:normal}
+.beach-row:first-of-type{border-top:1px solid #c9e5f3}
+.beach-row .beach-copy{display:flex;flex-direction:column;gap:4px;min-width:0;width:100%}
+.beach-row b{display:block;font-size:.85rem;line-height:1.25;overflow-wrap:anywhere}
+.beach-row small{display:block;font-size:.76rem;line-height:1.38;overflow-wrap:anywhere}
+.beach-row .beach-status{align-self:flex-start;max-width:100%;white-space:normal;font-size:.68rem;line-height:1.2}
+.beach-row .beach-status.exposed{background:#ffe0d8;color:#8a2d1d}
+.beach-row .beach-status.sheltered{background:#c8f1d1;color:#145d38}
+.beach-row .beach-status.variable{background:#ffedc2;color:#77520b}
+.beach-row.selected{padding:11px 12px;border:2px solid #0879bd;background:#e5f6ff}
+.beach-list-note{margin:12px 0 0;color:#567084;font-size:.76rem;line-height:1.45}
+.beach-choice-card ol{margin:0;padding-left:22px;color:#29465d;font-size:.86rem;line-height:1.5}
+.beach-choice-card li{margin:0 0 8px}
+.beach-choice-card>p{margin:10px 0 0;padding:10px 12px;border-radius:10px;background:#fff4d5;color:#70530a;font-size:.8rem;line-height:1.45}
+@media(max-width:580px){.beach-list-grid{grid-template-columns:1fr}.beach-row{min-height:0}.beach-choice-card ol{font-size:.84rem}}
+
+
+/* Compact editorial dashboard: balance the map with the information below it */
+.dashboard-grid{grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);gap:16px;align-items:stretch}
+.map-column{display:flex;flex-direction:column;min-width:0}
+.leaflet-map{height:clamp(470px,58vh,620px)!important;min-height:470px!important;max-height:620px!important}
+.map-lower-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:10px;align-content:start}
+.map-lower-grid .info-card{margin:0;padding:13px 15px}
+.map-lower-grid .info-card h3{margin-bottom:9px}
+.map-lower-grid #season-overview .month-grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+.map-lower-grid .takeaway-card ul{display:grid;grid-template-columns:1fr 1fr;gap:4px 18px}
+.beach-choice-card>p{margin:0;padding:0;background:transparent;color:#29465d;font-size:.84rem;line-height:1.45}
+.beach-choice-card>p b{color:#07518c}
+.weather-info-column{min-width:0}
+#beach-effects .beach-list-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+#beach-effects .beach-row{min-height:94px;padding:9px 10px;gap:6px}
+#beach-effects .beach-row b{font-size:.82rem}
+#beach-effects .beach-row small{font-size:.72rem;line-height:1.3}
+#beach-effects .beach-list-intro{margin-bottom:8px;font-size:.78rem}
+#beach-effects .beach-list-note{font-size:.7rem;line-height:1.35;margin-top:8px}
+@media(max-width:900px){
+ .dashboard-grid{grid-template-columns:1fr;align-items:start}
+ .leaflet-map{height:clamp(420px,58vh,600px)!important;min-height:420px!important}
+ .map-lower-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .map-lower-grid .beach-choice-card{grid-column:1/-1}
+ .weather-info-column{display:grid;grid-template-columns:1fr 1fr;align-items:start}
+ .weather-info-column #beach-effects{grid-column:1/-1}
+}
+@media(max-width:580px){
+ .leaflet-map{height:58vh!important;min-height:380px!important}
+ .map-lower-grid{grid-template-columns:1fr}
+ .map-lower-grid .beach-choice-card{grid-column:auto}
+ .map-lower-grid .takeaway-card ul{grid-template-columns:1fr}
+ .weather-info-column{display:flex}
+ #beach-effects .beach-list-grid{grid-template-columns:1fr}
+}
+
+
+/* Full-width map, right-side monsoon and selected beach, compact 3-up beach cards */
+.weather-top-grid{display:grid;grid-template-columns:minmax(260px,.78fr) minmax(420px,1.22fr);gap:14px;align-items:stretch;margin:18px 0 14px}
+.weather-top-left{display:grid;grid-template-columns:1fr;gap:10px;align-content:start}
+.weather-top-left .info-card,.weather-info-column .info-card{margin:0;height:100%}
+.weather-info-column{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:stretch}
+.weather-info-column .monsoon-info{grid-column:1}
+.weather-info-column .selected-beach-card{grid-column:2;display:flex;flex-direction:column;justify-content:center}
+.weather-info-column .selected-beach-card strong{display:block;font-size:1.05rem;margin-bottom:8px}
+.weather-info-column .selected-beach-card p{margin:0;line-height:1.5;color:var(--muted)}
+.weather-info-column .weather-facts{grid-template-columns:1fr}
+.weather-top-grid .month-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.map-full-width{width:100%;margin:14px 0 18px}
+.map-full-width .map-frame{width:100%}
+.map-full-width .leaflet-map{height:clamp(650px,78vh,900px)!important;min-height:650px!important;max-height:900px!important}
+.beach-directory{margin:16px 0;padding:16px}
+.beach-directory-heading{margin-bottom:10px}
+.beach-directory-heading h3{margin:0 0 4px}
+.beach-directory .beach-list-intro{margin:0;color:var(--muted);font-size:.82rem}
+.beach-directory .beach-list-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.beach-directory .beach-row{min-width:0;min-height:98px;padding:10px 12px;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;gap:7px;border:1px solid var(--line);border-radius:10px;background:var(--surface);white-space:normal;text-align:left}
+.beach-directory .beach-row .beach-copy{display:flex;flex-direction:column;gap:4px;width:100%;min-width:0}
+.beach-directory .beach-row b{font-size:.82rem;line-height:1.25;overflow-wrap:anywhere}
+.beach-directory .beach-row small{font-size:.74rem;line-height:1.35;overflow-wrap:anywhere}
+.beach-directory .beach-row em{align-self:flex-start;white-space:normal;font-size:.67rem}
+.beach-directory .beach-row.selected{border:2px solid var(--accent);background:color-mix(in srgb,var(--accent) 9%,var(--surface));padding:9px 11px}
+.beach-directory .beach-list-note{margin:10px 0 0;font-size:.72rem;color:var(--muted)}
+.season-table{min-width:900px}
+.season-table th,.season-table td{padding:9px 10px;vertical-align:top;font-size:.84rem;line-height:1.4}
+.season-matrix-heading p{margin:0;color:var(--muted);font-size:.82rem}
+.tide-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(290px,.85fr);gap:14px;align-items:start}
+.tide-main-column{min-width:0}
+.tide-main-column .tide-toolbar{margin-top:0}
+.tide-main-column .tide-table-wrap{max-height:620px}
+.tide-side-column{display:grid;gap:10px;align-content:start}
+.tide-side-column .tide-legend{display:grid;grid-template-columns:1fr;gap:7px;padding:12px;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.tide-side-column .tide-explainer{margin:0;padding:15px}
+.tide-side-column .tide-explainer strong{display:block;margin-bottom:8px}
+.tide-side-column .tide-explainer p{margin:0 0 10px;font-size:.84rem;line-height:1.5}
+.tide-side-column .tide-explainer p:last-child{margin-bottom:0}
+@media(max-width:1050px){
+ .weather-top-grid{grid-template-columns:1fr}
+ .weather-top-left{grid-template-columns:1fr 1fr}
+ .weather-info-column{grid-template-columns:1fr 1fr}
+ .map-full-width .leaflet-map{height:clamp(560px,72vh,760px)!important;min-height:560px!important}
+ .tide-layout{grid-template-columns:1fr}
+ .tide-side-column{grid-template-columns:1fr 1fr}
+ .tide-side-column .tide-explainer{grid-column:1/-1}
+}
+@media(max-width:680px){
+ .weather-top-left,.weather-info-column{grid-template-columns:1fr}
+ .weather-info-column .monsoon-info,.weather-info-column .selected-beach-card{grid-column:auto}
+ .map-full-width .leaflet-map{height:65vh!important;min-height:480px!important;max-height:680px!important}
+ .beach-directory .beach-list-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .tide-side-column{grid-template-columns:1fr}
+ .tide-side-column .tide-explainer{grid-column:auto}
+}
+@media(max-width:430px){.beach-directory .beach-list-grid{grid-template-columns:1fr}}
+
+
+/* Editorial two-column weather dashboard: map left, monsoon and selected beach right */
+.weather-dashboard-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(360px,.88fr);gap:16px;align-items:stretch;margin:18px 0}
+.weather-map-column{min-width:0;display:flex;flex-direction:column}
+.weather-map-column .map-full-width{margin:0;display:flex;flex:1;flex-direction:column}
+.weather-map-column .map-frame{display:flex;flex:1;flex-direction:column;min-height:760px}
+.weather-map-column .leaflet-map{height:760px!important;min-height:760px!important;max-height:none!important;flex:1}
+.weather-map-column .map-legend{margin-top:9px}
+.weather-dashboard-grid .weather-info-column{display:flex;flex-direction:column;gap:10px;min-width:0}
+.weather-dashboard-grid .weather-info-column .info-card{margin:0}
+.weather-dashboard-grid #season-overview .month-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.weather-dashboard-grid #season-overview .month-grid button{padding:7px 4px}
+.weather-dashboard-grid .takeaway-card{padding:12px 14px}
+.weather-dashboard-grid .takeaway-card p{margin:0;font-size:.82rem;line-height:1.45}
+.weather-dashboard-grid .monsoon-info{flex:1}
+.weather-dashboard-grid .selected-beach-card{min-height:112px}
+.beach-directory .beach-list-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.beach-directory .beach-row{min-height:92px}
+@media(max-width:1000px){
+ .weather-dashboard-grid{grid-template-columns:minmax(0,1fr) minmax(300px,.85fr)}
+ .weather-map-column .map-frame,.weather-map-column .leaflet-map{min-height:650px!important;height:650px!important}
+}
+@media(max-width:760px){
+ .weather-dashboard-grid{grid-template-columns:1fr}
+ .weather-map-column .map-frame,.weather-map-column .leaflet-map{min-height:560px!important;height:65vh!important;max-height:720px!important}
+ .weather-dashboard-grid .weather-info-column{display:grid;grid-template-columns:1fr 1fr}
+ .weather-dashboard-grid #season-overview,.weather-dashboard-grid .takeaway-card{grid-column:1/-1}
+ .beach-directory .beach-list-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:520px){
+ .weather-dashboard-grid .weather-info-column{display:flex}
+ .beach-directory .beach-list-grid{grid-template-columns:1fr}
+ .weather-map-column .map-frame,.weather-map-column .leaflet-map{min-height:500px!important;height:62vh!important}
+}
+/* Compact tide forecast at left, reading guide at right */
+.tide-layout{grid-template-columns:minmax(0,1.65fr) minmax(300px,.85fr);gap:12px;align-items:start}
+.tide-main-column{min-width:0}
+.tide-main-column .tide-toolbar{margin:0 0 8px;gap:7px}
+.tide-main-column .tide-status{margin:4px 0 7px;font-size:.78rem}
+.tide-main-column .tide-table-wrap{max-height:540px;border-radius:8px}
+.tide-main-column .tide-heatmap{min-width:560px}
+.tide-main-column .tide-heatmap th,.tide-main-column .tide-heatmap td{padding:4px 2px;font-size:.76rem;line-height:1.2}
+.tide-main-column .tide-detail{padding:8px 10px;font-size:.8rem}
+.tide-side-column{gap:8px;align-content:start}
+.tide-side-column .tide-legend{grid-template-columns:1fr;gap:5px;margin:0;padding:9px}
+.tide-side-column .tide-legend span{padding:6px 9px;font-size:.78rem}
+.tide-side-column .tide-caveat{margin:0;padding:8px 10px;font-size:.72rem;line-height:1.4}
+.tide-side-column .tide-sources{font-size:.76rem;gap:5px 10px}
+.tide-side-column .tide-explainer{padding:12px}
+.tide-side-column .tide-explainer p{font-size:.79rem;line-height:1.42;margin-bottom:8px}
+@media(max-width:900px){.tide-layout{grid-template-columns:1fr}.tide-side-column{grid-template-columns:1fr 1fr}.tide-side-column .tide-explainer{grid-column:1/-1}}
+@media(max-width:600px){.tide-side-column{grid-template-columns:1fr}.tide-side-column .tide-explainer{grid-column:auto}.tide-main-column .tide-heatmap{min-width:560px}}
+
+
+/* Keep the coastal beach directory in three columns at every viewport width */
+#beach-effects .beach-list-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px}
+#beach-effects .beach-row{min-width:0;min-height:88px;padding:9px 10px}
+#beach-effects .beach-row b,#beach-effects .beach-row small{overflow-wrap:anywhere}
+
+/* Requested compact composition: month selector above map, beaches beside it */
+#season-overview{margin:0 0 10px;padding:10px 14px;display:grid;grid-template-columns:auto minmax(0,1fr) minmax(250px,.8fr);align-items:center;gap:14px}
+#season-overview h3{margin:0;white-space:nowrap}
+#season-overview .month-grid{grid-template-columns:repeat(12,minmax(0,1fr));gap:5px}
+#season-overview .month-grid button{padding:6px 2px;font-size:.72rem}
+#season-overview .month-grid button span{display:none}
+#season-overview .season-summary{margin:0;padding:8px 10px;font-size:.76rem}
+.weather-dashboard-grid{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:14px;align-items:start}
+.weather-map-column .map-frame,.weather-map-column .leaflet-map{height:760px!important;min-height:760px!important;max-height:760px!important}
+.weather-dashboard-grid .weather-info-column{display:flex;flex-direction:column;gap:9px;min-width:0}
+.weather-dashboard-grid .weather-info-column>.info-card{margin:0}
+.weather-dashboard-grid #season-overview{display:none}
+#beach-effects{margin:0;padding:12px}
+#beach-effects .beach-directory-heading{margin-bottom:8px}
+#beach-effects .beach-list-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px}
+#beach-effects .beach-row{min-height:82px;padding:8px 9px;gap:5px}
+#beach-effects .beach-row b{font-size:.78rem}
+#beach-effects .beach-row small{font-size:.7rem;line-height:1.28}
+#beach-effects .beach-list-note{font-size:.68rem;line-height:1.35}
+@media(max-width:1050px){
+ #season-overview{grid-template-columns:1fr;gap:7px}
+ #season-overview h3{white-space:normal}
+ #season-overview .season-summary{margin:0}
+ .weather-dashboard-grid{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
+ .weather-map-column .map-frame,.weather-map-column .leaflet-map{height:680px!important;min-height:680px!important;max-height:680px!important}
+}
+@media(max-width:760px){
+ .weather-dashboard-grid{grid-template-columns:1fr}
+ .weather-map-column .map-frame,.weather-map-column .leaflet-map{height:65vh!important;min-height:560px!important;max-height:720px!important}
+ #beach-effects .beach-list-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:520px){
+ #season-overview{padding:9px}
+ #season-overview .month-grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+ #beach-effects .beach-list-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ #beach-effects .beach-row{min-height:78px}
+}
+
+
+/* Theme-consistent weather dashboard surfaces and grouped beach directory */
+:root{--weather-card:#f5fbff;--weather-card-2:#e8f5fc;--weather-card-ink:#173954;--weather-card-muted:#4e6b80;--weather-card-line:#bfdbea;--weather-selected:#dceffc;--weather-takeaway:#fff7dc;--weather-takeaway-ink:#604d1b}
+[data-theme=dark]{--weather-card:#1b3038;--weather-card-2:#223b44;--weather-card-ink:#e7f1f4;--weather-card-muted:#b8cbd1;--weather-card-line:#45616b;--weather-selected:#294957;--weather-takeaway:#3b3523;--weather-takeaway-ink:#f0dfad}
+@media(prefers-color-scheme:dark){:root[data-theme=auto]{--weather-card:#1b3038;--weather-card-2:#223b44;--weather-card-ink:#e7f1f4;--weather-card-muted:#b8cbd1;--weather-card-line:#45616b;--weather-selected:#294957;--weather-takeaway:#3b3523;--weather-takeaway-ink:#f0dfad}}
+.weather-dashboard .info-card,.weather-dashboard .selected-beach-card,.weather-dashboard .beach-row{background:var(--weather-card);color:var(--weather-card-ink);border-color:var(--weather-card-line)}
+.weather-dashboard .info-card h3,.weather-dashboard .weather-facts b,.weather-dashboard .beach-row b,.weather-dashboard .selected-beach-card strong{color:var(--weather-card-ink)}
+.weather-dashboard .weather-facts span,.weather-dashboard .weather-facts p,.weather-dashboard .beach-row small,.weather-dashboard .selected-beach-card p,.weather-dashboard .beach-list-intro,.weather-dashboard .beach-list-note{color:var(--weather-card-muted)}
+.weather-dashboard .info-title{border-color:var(--weather-card-line)}
+.weather-dashboard .beach-row{border:1px solid var(--weather-card-line);border-radius:11px}
+.weather-dashboard .beach-row.selected{background:var(--weather-selected);border:2px solid var(--accent)}
+.weather-dashboard .month-grid button{background:var(--weather-card);border-color:var(--weather-card-line);color:var(--weather-card-ink)}
+.weather-dashboard .month-grid button.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.weather-dashboard .season-summary{background:var(--weather-selected);color:var(--weather-card-ink)}
+.weather-dashboard .takeaway-card{background:var(--weather-takeaway);border-color:var(--weather-card-line);color:var(--weather-takeaway-ink)}
+.weather-dashboard .takeaway-card h3,.weather-dashboard .takeaway-card ul{color:var(--weather-takeaway-ink)}
+.weather-dashboard .beach-row .beach-status.exposed{background:#ffe0d8;color:#762b1d}
+.weather-dashboard .beach-row .beach-status.sheltered{background:#c8f1d1;color:#145d38}
+.weather-dashboard .beach-row .beach-status.variable{background:#ffedc2;color:#67480a}
+[data-theme=dark] .weather-dashboard .beach-row .beach-status.exposed{background:#63372f;color:#ffd5ca}
+[data-theme=dark] .weather-dashboard .beach-row .beach-status.sheltered{background:#244d3d;color:#c7f2d5}
+[data-theme=dark] .weather-dashboard .beach-row .beach-status.variable{background:#5b4a25;color:#ffe8ad}
+@media(prefers-color-scheme:dark){:root[data-theme=auto] .weather-dashboard .beach-row .beach-status.exposed{background:#63372f;color:#ffd5ca}:root[data-theme=auto] .weather-dashboard .beach-row .beach-status.sheltered{background:#244d3d;color:#c7f2d5}:root[data-theme=auto] .weather-dashboard .beach-row .beach-status.variable{background:#5b4a25;color:#ffe8ad}}
+.weather-dashboard .beach-groups{display:grid;gap:13px}
+.weather-dashboard .beach-group{min-width:0}
+.weather-dashboard .beach-group h4{margin:0 0 7px;padding:0 0 6px;border-bottom:1px solid var(--weather-card-line);color:var(--weather-card-ink);font-size:.82rem;line-height:1.35}
+.weather-dashboard .beach-group .beach-list-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.weather-dashboard .beach-group .beach-row{min-height:94px;padding:9px 10px;gap:6px}
+.weather-dashboard .beach-group .beach-row b{font-size:.82rem}
+.weather-dashboard .beach-group .beach-row small{font-size:.72rem;line-height:1.35}
+@media(max-width:580px){.weather-dashboard .beach-group .beach-list-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+
+/* Keep the selected beach explanation directly under the map on every screen */
+.weather-dashboard .selected-beach-card{margin:10px 0 0;scroll-margin-top:16px;background:var(--weather-card);color:var(--weather-card-ink);border:1px solid var(--weather-card-line);border-radius:13px;padding:13px 15px;font-size:.86rem;line-height:1.5}
+.weather-dashboard .selected-beach-card strong{display:block;color:var(--weather-card-ink);font-size:.98rem}
+.weather-dashboard .selected-beach-card p{margin:5px 0 0;color:var(--weather-card-muted)}
+@media(max-width:900px){.weather-dashboard .selected-beach-card{margin-top:9px}}
+
+
+/* Dark-mode map tiles follow the page theme; controls and overlays remain unchanged */
+[data-theme=dark] .weather-map-column .leaflet-tile-pane{filter:brightness(.68) saturate(.78) contrast(1.04)}
+@media(prefers-color-scheme:dark){:root[data-theme=auto] .weather-map-column .leaflet-tile-pane{filter:brightness(.68) saturate(.78) contrast(1.04)}}
+.weather-map-column .selected-beach-card{display:block!important;width:100%;position:relative;z-index:2}
+
+</style><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script><link rel="canonical" href="https://guyabano-kun.github.io/PH/en/weather.html"><link rel="alternate" hreflang="ru" href="https://guyabano-kun.github.io/PH/weather.html"><link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/weather.html"><link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/weather.html">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Philippines Guide">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Boracay weather: monsoons, wind, sea state and tides | Philippines">
+<meta property="og:description" content="Boracay weather by season: Amihan and Habagat monsoons, wind, sea state, which coast is sheltered, and tide tables.">
+<meta property="og:url" content="https://guyabano-kun.github.io/PH/en/weather.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Boracay weather: monsoons, wind, sea state and tides | Philippines">
+<meta name="twitter:description" content="Boracay weather by season: Amihan and Habagat monsoons, wind, sea state, which coast is sheltered, and tide tables.">
+<meta property="og:image" content="https://guyabano-kun.github.io/PH/assets/og-philippines.png">
+<meta property="og:image:secure_url" content="https://guyabano-kun.github.io/PH/assets/og-philippines.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Philippines Guide — Boracay island and tropical coastline">
+<meta name="twitter:image" content="https://guyabano-kun.github.io/PH/assets/og-philippines.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://guyabano-kun.github.io/PH/#website","url":"https://guyabano-kun.github.io/PH/","name":"Philippines Guide","inLanguage":["ru","en"]},{"@type":"WebPage","@id":"https://guyabano-kun.github.io/PH/en/weather.html#webpage","url":"https://guyabano-kun.github.io/PH/en/weather.html","name":"Boracay weather and sea conditions","description":"Boracay weather by season: Amihan and Habagat monsoons, wind, sea state, which coast is sheltered, and tide tables.","inLanguage":"en","isPartOf":{"@id":"https://guyabano-kun.github.io/PH/#website"},"about":{"@type":"Place","name":"Boracay","containedInPlace":{"@type":"Country","name":"Philippines"}},"breadcrumb":{"@id":"https://guyabano-kun.github.io/PH/en/weather.html#breadcrumb"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://guyabano-kun.github.io/PH/assets/og-philippines.png","width":1200,"height":630}},{"@type":"BreadcrumbList","@id":"https://guyabano-kun.github.io/PH/en/weather.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Boracay","item":"https://guyabano-kun.github.io/PH/en/boracay.html"},{"@type":"ListItem","position":2,"name":"Boracay weather and sea conditions","item":"https://guyabano-kun.github.io/PH/en/weather.html"}]}]}</script>
+<script src="../site-core.js"></script>
+</head><body>
+<header class="top weather-site-header">
+<div class="places"><a class="place" href="boracay.html"><span aria-hidden="true">←</span><span data-ru="Путеводитель" data-en="Island guide">Island guide</span></a><a class="place active" href="weather.html" aria-current="page"><span aria-hidden="true">☀</span><span data-ru="Погода и море" data-en="Weather & Sea">Weather &amp; Sea</span></a></div>
+<nav class="weather-nav" aria-label="Weather sections"><a href="../beaches.html" data-ru="Паспорта пляжей" data-en="Beach passports">Beach passports</a><a href="currency.html" data-ru="Обмен валюты и оплата" data-en="Currency & payments">Currency &amp; payments</a><a href="#overview" data-ru="Обзор" data-en="Overview">Overview</a><a href="#monsoon-details" data-ru="Муссоны" data-en="Monsoons">Monsoons</a><a href="#season-overview" data-ru="Сезоны" data-en="Seasons">Seasons</a><a href="#beach-effects" data-ru="Пляжи" data-en="Beaches">Beaches</a><a href="#tides" data-ru="Приливы" data-en="Tides">Tides</a></nav>
+<div class="settings"><button class="setting-btn lang-btn" id="lang-btn" type="button" aria-label="Language"><span class="setting-icon" id="lang-flag">🇷🇺</span></button><button class="setting-btn theme-btn" id="theme-btn" type="button" aria-label="Theme: Auto"><span class="setting-icon" id="theme-icon">◐</span></button></div></header>
+<main>
+<section class="weather-dashboard" id="overview">
+<div class="dashboard-heading"><div><span class="drawing-eyebrow" data-ru="БОРАКАЙ · ФИЛИППИНЫ" data-en="BORACAY · PHILIPPINES">BORACAY · PHILIPPINES</span><h1 data-ru="Погода и состояние моря" data-en="Weather & Sea Conditions">Weather &amp; Sea Conditions</h1></div></div>
+<div class="info-card" id="season-overview"><h3 data-ru="Выберите месяц поездки" data-en="Choose your travel month">Choose your travel month</h3><div class="month-grid" id="month-grid"></div><div class="season-summary" id="season-summary">Amihan · November–May · Generally more stable, calmer sea conditions.</div></div><div class="weather-dashboard-grid">
+<div class="weather-map-column"><div class="map-full-width">
+<div class="map-frame"><div class="map-overlay-top"><span class="north-indicator">N ↑</span><span id="map-season-label">AMIHAN · NORTHEAST MONSOON</span></div><div id="boracay-weather-map" class="leaflet-map" role="application" aria-label="Interactive north-up map of Boracay"></div><div class="map-overlay-bottom"><span class="map-scale-label" data-ru="Остров Боракай · север сверху" data-en="Boracay Island · North up">Boracay Island · North up</span><button id="wind-toggle" type="button" aria-pressed="true">Ⅱ <span data-ru="Анимация ветра" data-en="Wind animation">Wind animation</span></button></div></div>
+<div class="map-legend"><span><i class="dot exposed"></i><span data-ru="Открыто ветру" data-en="Wind-exposed">Wind-exposed</span></span><span><i class="dot sheltered"></i><span data-ru="Обычно защищено" data-en="Generally sheltered">Generally sheltered</span></span><span><i class="dot variable"></i><span data-ru="Зависит от локальных условий" data-en="Locally variable">Locally variable</span></span></div>
+<div class="info-card selected-beach-card" id="selected-beach-card" aria-live="polite"><strong>Bulabog Beach · East coast</strong><p>Amihan: exposed to northeast winds and waves. Typical conditions for kite- and windsurfing; not necessarily calm for swimming.</p></div>
+</div>
+</div>
+<aside class="weather-info-column">
+
+<div class="info-card takeaway-card"><h3 data-ru="Ориентир по сезону" data-en="Season guide">Season guide</h3><p data-ru="Amihan (ноябрь–май): обычно суше. Habagat (июнь–октябрь): обычно ветренее и влажнее. Переходные месяцы могут вести себя по-разному." data-en="Amihan (November–May): generally drier. Habagat (June–October): generally windier and wetter. Transition months can vary.">Amihan (November–May): generally drier. Habagat (June–October): generally windier and wetter. Transition months can vary.</p></div>
+
+<div class="info-card monsoon-info" id="monsoon-details"><div class="info-title"><span id="monsoon-icon">☀</span><div><h3 id="monsoon-title">Amihan – Northeast Monsoon</h3><span id="monsoon-period">November – May</span></div></div><div class="weather-facts"><p><b data-ru="Типичная погода" data-en="Typical weather">Typical weather</b><span id="weather-summary">Mostly sunny, lower humidity, more stable conditions.</span></p><p><b data-ru="Ветер" data-en="Wind">Wind</b><span id="wind-summary">Northeast, typically 10–30 km/h; stronger at Bulabog.</span></p><p><b data-ru="Море" data-en="Sea">Sea</b><span id="sea-summary">Generally calmer, especially on White Beach.</span></p><p><b data-ru="Подходит для" data-en="Best for">Best for</b><span id="best-summary">Beach activities, swimming, relaxation and island hopping.</span></p></div></div>
+<div class="info-card beach-directory" id="beach-effects">
+<div class="beach-directory-heading"><div><h3 data-ru="Пляжи и участки побережья" data-en="Beaches and coastal areas">Beaches and coastal areas</h3><p class="beach-list-intro" data-ru="Выберите пляж на карте или в списке. Его описание и сезонная экспозиция появятся под картой." data-en="Select a beach on the map or in the list. Its description and seasonal exposure will appear below the map.">Select a beach on the map or in the list. Its description and seasonal exposure will appear below the map.</p></div></div>
+<div class="beach-groups">
+<div class="beach-group"><h4 data-ru="Западное побережье · обычно спокойнее при Amihan" data-en="West coast · generally calmer during Amihan">West coast · generally calmer during Amihan</h4><div class="beach-list-grid">
+<button class="beach-row" data-beach-select="white"><span class="beach-copy"><b>White Beach · Stations 1–3</b><small id="white-impact"></small></span><em id="white-status"></em></button>
+</div></div>
+<div class="beach-group"><h4 data-ru="Восточное побережье · открыто при Amihan" data-en="East coast · exposed during Amihan">East coast · exposed during Amihan</h4><div class="beach-list-grid">
+<button class="beach-row" data-beach-select="bulabog"><span class="beach-copy"><b>Bulabog Beach</b><small id="bulabog-impact"></small></span><em id="bulabog-status"></em></button>
+</div></div>
+<div class="beach-group"><h4 data-ru="Север и северо-запад · локальная экспозиция меняется" data-en="North and northwest · locally variable exposure">North and northwest · locally variable exposure</h4><div class="beach-list-grid">
+<button class="beach-row" data-beach-select="puka"><span class="beach-copy"><b>Puka Shell Beach</b><small id="puka-impact"></small></span><em id="puka-status"></em></button>
+<button class="beach-row" data-beach-select="diniwid"><span class="beach-copy"><b>Diniwid Beach</b><small id="diniwid-impact"></small></span><em id="diniwid-status"></em></button>
+<button class="beach-row" data-beach-select="punta"><span class="beach-copy"><b>Punta Bunga Beach</b><small id="punta-impact"></small></span><em id="punta-status"></em></button>
+<button class="beach-row" data-beach-select="balinghai"><span class="beach-copy"><b>Balinghai Beach</b><small id="balinghai-impact"></small></span><em id="balinghai-status"></em></button>
+<button class="beach-row" data-beach-select="banyugan"><span class="beach-copy"><b>Banyugan Beach</b><small id="banyugan-impact"></small></span><em id="banyugan-status"></em></button>
+<button class="beach-row" data-beach-select="ilig"><span class="beach-copy"><b>Ilig-Iligan Beach</b><small id="ilig-impact"></small></span><em id="ilig-status"></em></button>
+<button class="beach-row" data-beach-select="lapus"><span class="beach-copy"><b>Lapus-Lapus Beach</b><small id="lapus-impact"></small></span><em id="lapus-status"></em></button>
+<button class="beach-row" data-beach-select="hagdan"><span class="beach-copy"><b>Hagdan Beach</b><small id="hagdan-impact"></small></span><em id="hagdan-status"></em></button>
+</div></div>
+<div class="beach-group"><h4 data-ru="Юг и юго-восток · бухты с лодочным движением" data-en="South and southeast · coves with boat traffic">South and southeast · coves with boat traffic</h4><div class="beach-list-grid">
+<button class="beach-row" data-beach-select="tulubhan"><span class="beach-copy"><b>Tulubhan Beach</b><small id="tulubhan-impact"></small></span><em id="tulubhan-status"></em></button>
+<button class="beach-row" data-beach-select="tambisaan"><span class="beach-copy"><b>Tambisaan Beach</b><small id="tambisaan-impact"></small></span><em id="tambisaan-status"></em></button>
+<button class="beach-row" data-beach-select="angol"><span class="beach-copy"><b>Angol Point</b><small id="angol-impact"></small></span><em id="angol-status"></em></button>
+</div></div></div>
+<p class="beach-list-note" data-ru="Cagban, Lugutan и Manoc-Manoc — портовые или локальные прибрежные участки, а не обычные пляжи для купания. <a href='https://www.tpb.gov.ph/wp-content/uploads/2023/10/Boracay-Map.pdf' target='_blank' rel='noopener'>Официальная туристическая карта Boracay</a>." data-en="Cagban, Lugutan and Manoc-Manoc are port or local shoreline areas, not ordinary swimming beaches. <a href='https://www.tpb.gov.ph/wp-content/uploads/2023/10/Boracay-Map.pdf' target='_blank' rel='noopener'>Official Boracay tourism map</a>.">Cagban, Lugutan and Manoc-Manoc are port or local shoreline areas, not ordinary swimming beaches. &lt;a href='https://www.tpb.gov.ph/wp-content/uploads/2023/10/Boracay-Map.pdf' target='_blank' rel='noopener'&gt;Official Boracay tourism map&lt;/a&gt;.</p>
+</div></div>
+
+</section>
+<section class="season-section season-reference" id="seasonal-beaches">
+<div class="season-heading">
+<div><span class="season-kicker" data-ru="СЕЗОННЫЕ ЗАКОНОМЕРНОСТИ" data-en="SEASONAL PATTERNS">SEASONAL PATTERNS</span>
+<h2 data-ru="Как муссоны меняют условия на побережьях" data-en="How monsoons change coastal conditions">How monsoons change coastal conditions</h2>
+<p class="season-lead" data-ru="Основное сравнение пляжей уже показано на интерактивной карте выше. Ниже — сезонный календарь и ограничения интерпретации: северные бухты и южная оконечность требуют отдельной локальной оценки." data-en="The main beach comparison is shown on the interactive map above. Below are the seasonal calendar and interpretation limits: northern coves and the southern tip require separate local assessment.">The main beach comparison is shown on the interactive map above. Below are the seasonal calendar and interpretation limits: northern coves and the southern tip require separate local assessment.</p></div>
+</div>
+<div class="season-reference-grid">
+<div class="season-reference-item"><strong>Amihan · NE</strong><span data-ru="Ноябрь–май · Обычно суше и стабильнее. Восточная сторона, включая Bulabog, более открыта северо-восточному ветру; White Beach обычно защищённее." data-en="November–May · Generally drier and more stable. The east side, including Bulabog, is more exposed to northeast winds; White Beach is generally more sheltered.">November–May · Generally drier and more stable. The east side, including Bulabog, is more exposed to northeast winds; White Beach is generally more sheltered.</span></div>
+<div class="season-reference-item habagat"><strong>Habagat · SW</strong><span data-ru="Июнь–октябрь · Обычно влажнее и ветренее. White Beach получает больше прямого воздействия юго-западного ветра и волн; Bulabog обычно более защищён." data-en="June–October · Generally wetter and windier. White Beach receives more direct southwest wind and wave exposure; Bulabog is generally more sheltered.">June–October · Generally wetter and windier. White Beach receives more direct southwest wind and wave exposure; Bulabog is generally more sheltered.</span></div>
+<div class="season-reference-item"><strong data-ru="Северные бухты" data-en="Northern coves">Northern coves</strong><span data-ru="Puka и Ilig-Iligan нельзя автоматически считать защищёнными. Важны угол зыби, рифы и форма бухты." data-en="Puka and Ilig-Iligan should not automatically be considered sheltered. Swell angle, reefs and cove geometry matter.">Puka and Ilig-Iligan should not automatically be considered sheltered. Swell angle, reefs and cove geometry matter.</span></div>
+<div class="season-reference-item"><strong data-ru="Южные участки" data-en="Southern shore">Southern shore</strong><span data-ru="Cagban и Tambisaan требуют отдельной оценки из-за проливов, течений, направления волн и портовых операций." data-en="Cagban and Tambisaan require separate assessment because of channels, currents, wave direction and port operations.">Cagban and Tambisaan require separate assessment because of channels, currents, wave direction and port operations.</span></div>
+</div>
+<div class="season-matrix-heading"><h3 data-ru="Сезонная матрица" data-en="Seasonal matrix">Seasonal matrix</h3><p data-ru="Календарь задаёт общий фон. Для выбора пляжа важнее фактическая погода последних 24–72 часов." data-en="The calendar provides context. Recent conditions over the previous 24–72 hours matter more when choosing a beach.">The calendar provides context. Recent conditions over the previous 24–72 hours matter more when choosing a beach.</p></div>
+<div class="season-table-wrap"><table class="season-table"><thead><tr><th data-ru="Период" data-en="Period">Period</th><th data-ru="Типичный фон" data-en="Typical pattern">Typical pattern</th><th data-ru="Пляж, который проверить первым" data-en="Beach to check first">Beach to check first</th><th data-ru="Лучше подходит для" data-en="Often better for">Often better for</th><th data-ru="Главный риск" data-en="Main watch-out">Main watch-out</th></tr></thead><tbody>
+<tr><th><span data-ru="Ноябрь–февраль" data-en="November–February">November–February</span><br><span class="weather-small">Amihan</span></th><td data-ru="Чаще сухо; устойчивый северо-восточный ветер." data-en="Often drier; persistent northeast flow.">Often drier; persistent northeast flow.</td><td data-ru="White Beach — первый вариант для спокойного пляжного дня; Bulabog — для ветровых видов спорта. Puka и северные бухты проверять отдельно." data-en="White Beach is the first check for a calmer beach day; Bulabog for wind sports. Check Puka and northern coves separately.">White Beach is the first check for a calmer beach day; Bulabog for wind sports. Check Puka and northern coves separately.</td><td data-ru="Пляжный отдых на западном берегу; водные виды спорта на Bulabog при подходящем прогнозе." data-en="West-coast beach time; wind sports at Bulabog when forecast conditions suit.">West-coast beach time; wind sports at Bulabog when forecast conditions suit.</td><td data-ru="Порывы и волна на востоке; локальные изменения ветра." data-en="Gusts and chop on the east; local wind shifts.">Gusts and chop on the east; local wind shifts.</td></tr>
+<tr><th><span data-ru="Март–май" data-en="March–May">March–May</span><br><span class="weather-small" data-ru="Переход / жаркий сезон" data-en="Transition / hot season">Transition / hot season</span></th><td data-ru="Жарче; муссонный поток может ослабевать, возможны локальные грозы." data-en="Hotter; monsoon flow may weaken, with local thunderstorms possible.">Hotter; monsoon flow may weaken, with local thunderstorms possible.</td><td data-ru="Сравнить White Beach и Bulabog в один и тот же час; выбирать берег по фактическому направлению ветра и волне." data-en="Compare White Beach and Bulabog at the same hour; choose by actual wind direction and wave conditions.">Compare White Beach and Bulabog at the same hour; choose by actual wind direction and wave conditions.</td><td data-ru="Гибкий пляжный отдых и поездки при выборе спокойного погодного окна." data-en="Flexible beach days and excursions when a calmer weather window appears.">Flexible beach days and excursions when a calmer weather window appears.</td><td data-ru="Жара, УФ, внезапные грозы и переменный ветер." data-en="Heat, UV exposure, sudden storms and variable wind.">Heat, UV exposure, sudden storms and variable wind.</td></tr>
+<tr><th><span data-ru="Июнь–сентябрь" data-en="June–September">June–September</span><br><span class="weather-small">Habagat</span></th><td data-ru="Чаще влажно; юго-западный ветер и дождевые эпизоды." data-en="Often wetter; southwest winds and rain episodes.">Often wetter; southwest winds and rain episodes.</td><td data-ru="Сначала проверить Bulabog и восточный берег; White Beach — после проверки прибоя и предупреждений. Северные бухты не считать автоматически защищёнными." data-en="Check Bulabog and the east shore first; use White Beach only after checking surf and warnings. Do not assume northern coves are sheltered.">Check Bulabog and the east shore first; use White Beach only after checking surf and warnings. Do not assume northern coves are sheltered.</td><td data-ru="Гибкие планы, короткие окна между дождями; водные активности только по местным условиям." data-en="Flexible plans and short breaks between showers; water activities only when local conditions allow.">Flexible plans and short breaks between showers; water activities only when local conditions allow.</td><td data-ru="Прибой на White Beach, порывы, ливни и ограничения лодочных поездок." data-en="Surf at White Beach, gusts, heavy showers and boat-trip disruptions.">Surf at White Beach, gusts, heavy showers and boat-trip disruptions.</td></tr>
+<tr><th><span data-ru="Октябрь" data-en="October">October</span><br><span class="weather-small" data-ru="Переход" data-en="Transition">Transition</span></th><td data-ru="Направление ветра меняется; возможны остаточные эпизоды Habagat и тропические системы." data-en="Wind direction shifts; residual Habagat episodes and tropical systems are possible.">Wind direction shifts; residual Habagat episodes and tropical systems are possible.</td><td data-ru="Не выбирать берег по календарю: сравнить White Beach и Bulabog по свежему почасовому прогнозу." data-en="Do not choose by calendar: compare White Beach and Bulabog using the latest hourly forecast.">Do not choose by calendar: compare White Beach and Bulabog using the latest hourly forecast.</td><td data-ru="Поездки с запасным планом и возможностью переноса." data-en="Trips with a backup plan and flexibility to reschedule.">Trips with a backup plan and flexibility to reschedule.</td><td data-ru="Непредсказуемая смена ветра и тропические возмущения." data-en="Unsettled wind shifts and tropical disturbances.">Unsettled wind shifts and tropical disturbances.</td></tr>
+</tbody></table></div>
+<p class="season-note" data-ru="Это сезонная схема Screening, а не прогноз безопасности. Месяцы ориентировочные: PAGASA объявляет начало и окончание муссонов по фактической синоптической обстановке. Для конкретного пляжа важны направление и период волн, ветер, прилив, течения и локальная геометрия берега. Северные и южные участки пока не имеют подтверждённого рейтинга." data-en="This is a Screening-level seasonal guide, not a safety forecast. Months are approximate: PAGASA declares monsoon onset and termination based on observed synoptic conditions. For an individual beach, wind and swell direction and period, tide, currents and shoreline geometry matter. Northern and southern sites do not yet have validated ratings.">This is a Screening-level seasonal guide, not a safety forecast. Months are approximate: PAGASA declares monsoon onset and termination based on observed synoptic conditions. For an individual beach, wind and swell direction and period, tide, currents and shoreline geometry matter. Northern and southern sites do not yet have validated ratings.</p>
+
+<div class="season-sources"><a href="https://iesm.science.upd.edu.ph/wp-content/uploads/2024/11/2024-11-15-Abstract_Quillope.pdf" target="_blank" rel="noopener">UP study — White Beach / Bulabog wave response</a><a href="https://www.pagasa.dost.gov.ph/index.php/climate/climate-advisories" target="_blank" rel="noopener">PAGASA — Seasonal Climate Outlook</a><a href="https://www.pagasa.dost.gov.ph/press-release/214" target="_blank" rel="noopener">PAGASA — 2026 rainy season onset</a><a href="https://www.pagasa.dost.gov.ph/press-release/20?page=2" target="_blank" rel="noopener">PAGASA — 2026 Habagat termination</a></div>
+
+</section>
+<section class="tide-section" id="tides">
+<h2 data-ru="Приливы и отливы" data-en="Tides">Tides</h2>
+<p class="tide-intro" data-ru="Почасовой астрономический прогноз TPXO10 для Боракая. Можно выбрать любой будущий месяц; нажмите на ячейку, чтобы увидеть расчётный уровень. Показаны часы 06:00–18:00." data-en="Hourly TPXO10 astronomical tide forecast for Boracay. Select any future month and tap a cell to inspect the modelled level. Daylight hours 06:00–18:00.">Hourly TPXO10 astronomical tide forecast for Boracay. Select any future month and tap a cell to inspect the modelled level. Daylight hours 06:00–18:00.</p>
+<div class="tide-layout"><div class="tide-main-column"><div class="tide-toolbar"><label for="tide-month" data-ru="Месяц" data-en="Month">Month</label><input id="tide-month" type="month"><button type="button" id="tide-reload" data-ru="Обновить" data-en="Refresh">Refresh</button></div><div id="tide-status" class="tide-status" aria-live="polite" data-ru="Загрузка прогноза приливов…" data-en="Loading tide forecast…">Loading tide forecast…</div>
+<div class="tide-table-wrap"><table id="tide-heatmap" class="tide-heatmap"><thead><tr id="tide-head"><th data-ru="Дата" data-en="Date">Date</th></tr></thead><tbody id="tide-body"><tr><td>…</td></tr></tbody></table></div><div id="tide-detail" class="tide-detail" aria-live="polite" data-ru="Нажмите на ячейку, чтобы посмотреть уровень воды." data-en="Tap a cell to inspect the sea level.">Tap a cell to inspect the sea level.</div>
+</div><aside class="tide-side-column"><div class="tide-legend"><span class="tide-legend-low" data-ru="Низкий: ниже −0,5 м" data-en="Low: below −0.5 m">Low: below −0.5 m</span><span class="tide-legend-mid" data-ru="Средний: −0,5…0 м" data-en="Mid-range: −0.5…0 m">Mid-range: −0.5…0 m</span><span class="tide-legend-high" data-ru="Высокий: от 0 м" data-en="High: 0 m and above">High: 0 m and above</span></div>
+
+<p class="tide-caveat" data-ru="Источник: TPXO10-atlas-v2, глобальная гармоническая модель астрономических приливов. Точка расчёта: White Beach, Boracay (11.9584° N, 121.9249° E). Значения указаны в метрах относительно среднего уровня моря (MSL); время в таблице местное, Asia/Manila (UTC+8). Это модельный прогноз, а не измерения мареографа; точность непосредственно у берега ограничена. Не использовать для навигации или оценки безопасности." data-en="Source: TPXO10-atlas-v2 global harmonic astronomical tide model. Calculation point: White Beach, Boracay (11.9584° N, 121.9249° E). Values are in metres relative to mean sea level (MSL); table times are local, Asia/Manila (UTC+8). This is a model forecast, not tide-gauge observations; accuracy directly at the shoreline is limited. Do not use for navigation or safety assessment.">Source: TPXO10-atlas-v2 global harmonic astronomical tide model. Calculation point: White Beach, Boracay (11.9584° N, 121.9249° E). Values are in metres relative to mean sea level (MSL); table times are local, Asia/Manila (UTC+8). This is a model forecast, not tide-gauge observations; accuracy directly at the shoreline is limited. Do not use for navigation or safety assessment.</p>
+<div class="tide-sources"><a href="https://www.tpxo.net/global" target="_blank" rel="noopener" data-ru="TPXO · описание модели" data-en="TPXO · model description">TPXO · model description</a><a href="https://tidechecker.com/philippines/western-visayas/boracay/" target="_blank" rel="noopener">Tide Checker</a><a href="https://selene.blue/ph/boracay" target="_blank" rel="noopener">Selene Blue</a></div>
+<div class="tide-explainer info-card">
+<strong data-ru="Как прилив влияет на отдых и выбор даты" data-en="How tides affect your stay and travel dates">How tides affect your stay and travel dates</strong>
+<p data-ru="Высокая вода (синие ячейки, от 0 м): сухая полоса White Beach обычно становится уже, вода подходит ближе к берегу, а для купания часто не нужно далеко идти по мелководью. Но места для полотенец меньше, и при сильном прибое волны могут доходить до самой кромки пляжа." data-en="Higher water (blue cells, 0 m and above): the dry-sand strip on White Beach is usually narrower and water reaches closer to shore, so you may not need to walk far through shallows to swim. There is less space for towels, and with strong surf waves may reach the upper beach.">Higher water (blue cells, 0 m and above): the dry-sand strip on White Beach is usually narrower and water reaches closer to shore, so you may not need to walk far through shallows to swim. There is less space for towels, and with strong surf waves may reach the upper beach.</p>
+<p data-ru="Низкая вода (красные ячейки, ниже −0,5 м): пляж обычно шире, больше места для прогулок и отдыха на песке. Вход в воду может быть очень мелким, поэтому до глубины придётся идти дальше. На отдельных участках обнажаются камни, коралловые площадки и рифы: это не означает, что по ним безопасно ходить или что там можно купаться." data-en="Lower water (red cells, below −0.5 m): the beach is usually wider, with more room for walking and sitting on the sand. The water at the shoreline may be very shallow, so you may need to walk farther to reach swimming depth. Rocks, coral flats and reef areas can become exposed; that does not mean they are safe to walk on or swim over.">Lower water (red cells, below −0.5 m): the beach is usually wider, with more room for walking and sitting on the sand. The water at the shoreline may be very shallow, so you may need to walk farther to reach swimming depth. Rocks, coral flats and reef areas can become exposed; that does not mean they are safe to walk on or swim over.</p>
+<p data-ru="Промежуточный уровень (жёлтые ячейки, −0,5…0 м): часто это компромисс между шириной песчаной полосы и глубиной у берега. Но цвет не является оценкой комфорта или безопасности: фактические условия зависят от конкретного участка пляжа, волн и рельефа дна." data-en="Mid-range water (yellow cells, −0.5 to 0 m): this can be a compromise between available dry sand and water depth near shore. The colour is not a comfort or safety rating; actual conditions depend on the beach section, waves and seabed shape.">Mid-range water (yellow cells, −0.5 to 0 m): this can be a compromise between available dry sand and water depth near shore. The colour is not a comfort or safety rating; actual conditions depend on the beach section, waves and seabed shape.</p>
+<p data-ru="Как выбирать дату: если важны широкая полоса песка, прогулки и отдых на пляже, ищите часы более низкой воды в дневное время. Если хотите заходить в воду без долгого прохода по мелководью, удобнее может оказаться более высокий уровень. Смотрите не только на один час, а на весь промежуток, когда планируете быть на пляже." data-en="Choosing dates: if you value a wide sandy beach, walks and time on the sand, look for lower-water hours during the day. If you prefer to reach swimming depth without a long walk through shallows, a higher level may be more convenient. Check the full period you plan to spend at the beach, not just one hour.">Choosing dates: if you value a wide sandy beach, walks and time on the sand, look for lower-water hours during the day. If you prefer to reach swimming depth without a long walk through shallows, a higher level may be more convenient. Check the full period you plan to spend at the beach, not just one hour.</p>
+<p data-ru="Как выбирать место: расчёт сделан для точки у White Beach. На Bulabog, Puka и других участках глубина, уклон дна, рифы и воздействие волн отличаются, поэтому одинаковый уровень моря не даст одинаковых условий. Для выбора между White Beach и Bulabog дополнительно учитывайте муссон: при Amihan обычно защищённее White Beach, при Habagat — Bulabog." data-en="Choosing a beach: this calculation is for a point off White Beach. Bulabog, Puka and other shores have different depths, seabed slopes, reefs and wave exposure, so the same sea level will not produce identical conditions. When choosing between White Beach and Bulabog, also consider the monsoon: White Beach is generally more sheltered during Amihan, while Bulabog is generally more sheltered during Habagat.">Choosing a beach: this calculation is for a point off White Beach. Bulabog, Puka and other shores have different depths, seabed slopes, reefs and wave exposure, so the same sea level will not produce identical conditions. When choosing between White Beach and Bulabog, also consider the monsoon: White Beach is generally more sheltered during Amihan, while Bulabog is generally more sheltered during Habagat.</p>
+<p data-ru="Главное: прилив помогает выбрать время и понять ширину пляжа, но не определяет качество отдыха в одиночку. Перед поездкой сопоставляйте таблицу с направлением и силой ветра, прогнозом волн, дождём и местными предупреждениями. Не используйте эту модель для навигации или оценки безопасности купания." data-en="Bottom line: tides help you choose the time and anticipate beach width, but they do not determine beach conditions on their own. Before travelling, compare the table with wind direction and strength, wave forecasts, rainfall and local advisories. Do not use this model for navigation or swimming-safety decisions.">Bottom line: tides help you choose the time and anticipate beach width, but they do not determine beach conditions on their own. Before travelling, compare the table with wind direction and strength, wave forecasts, rainfall and local advisories. Do not use this model for navigation or swimming-safety decisions.</p>
+</div></aside></div>
+</aside>
+</div>
+
+</section>
+</main><footer><span data-ru="Погодный и морской справочник Боракая · Проверяйте местные предупреждения PAGASA" data-en="Boracay weather and sea guide · Check local PAGASA advisories">Boracay weather and sea guide · Check local PAGASA advisories</span><span aria-hidden="true"> · </span><a href="boracay.html" data-ru="Вернуться к путеводителю" data-en="Back to the island guide">Back to the island guide</a></footer>
+<script>
+(()=>{const root=document.documentElement,langBtn=document.getElementById('lang-btn'),themeBtn=document.getElementById('theme-btn'),langIcon=document.getElementById('lang-flag'),themeIcon=document.getElementById('theme-icon');let lang=root.lang==='en'?'en':'ru';const paintTheme=()=>window.PHSite?.renderTheme({theme:root.dataset.theme||'auto',language:lang,button:themeBtn,icon:themeIcon});langBtn.addEventListener('click',()=>{lang=lang==='ru'?'en':'ru';root.lang=lang;document.querySelectorAll('[data-ru][data-en]').forEach(e=>{e.textContent=e.dataset[lang]});langIcon.textContent=lang==='ru'?'🇷🇺':'🇬🇧';root.dispatchEvent(new Event('langchange'));window.PHSite?.notifyLanguageChange(lang);});themeBtn.addEventListener('click',()=>{const t=root.dataset.theme||'auto';root.dataset.theme=t==='dark'?'light':t==='light'?'auto':'dark';paintTheme()});langIcon.textContent=lang==='ru'?'🇷🇺':'🇬🇧';paintTheme();})();
+(()=>{const root=document.documentElement;const mapEl=document.getElementById('boracay-weather-map');if(!mapEl||!window.L)return;let season='amihan',selected='bulabog',windOn=true;const map=L.map(mapEl,{zoomControl:true,scrollWheelZoom:true}).setView([11.9638,121.9278],14);L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors',crossOrigin:true}).addTo(map);const data={
+white:{name:'White Beach · Station 2',lat:11.9581389,lon:121.9260278,coast:'West coast',coastRu:'Западное побережье',amihan:'sheltered',habagat:'exposed',ru:'Центральный участок White Beach. При Amihan западное побережье обычно защищённее.',en:'Central White Beach section. The west coast is generally more sheltered during Amihan.'},
+bulabog:{name:'Bulabog Beach',lat:11.965631,lon:121.928888,coast:'East coast',coastRu:'Восточное побережье',amihan:'exposed',habagat:'sheltered',ru:'Восточное побережье, зона кайт- и виндсёрфинга.',en:'East coast, kiteboarding and windsurfing area.'},
+puka:{name:'Puka Shell Beach',lat:11.996611,lon:121.915254,coast:'North coast',coastRu:'Северное побережье',amihan:'variable',habagat:'variable',ru:'Северная оконечность острова. Экспозиция зависит от угла зыби, рифов и конфигурации бухты.',en:'Northern end of the island. Exposure depends on swell angle, reefs and cove geometry.'},
+diniwid:{name:'Diniwid Beach',lat:11.97630,lon:121.91167,coast:'Northwest coast',coastRu:'Северо-западное побережье',amihan:'variable',habagat:'variable',ru:'Небольшая бухта севернее Station 1.',en:'Small cove north of Station 1.'},
+tambisaan:{name:'Tambisaan Beach',lat:11.94952,lon:121.9474,coast:'Southeast coast',coastRu:'Юго-восточное побережье',amihan:'variable',habagat:'variable',ru:'Пляж и порт на юго-восточном побережье.',en:'Beach and port on the southeast coast.'},
+ilig:{name:'Ilig-Iligan Beach',lat:11.986036,lon:121.925014,coast:'Northeast coast',coastRu:'Северо-восточное побережье',amihan:'variable',habagat:'variable',ru:'Пляж на северо-востоке острова; оценивайте волну и доступ локально.',en:'Beach on the northeast coast; assess surf and access locally.'},
+punta:{name:'Punta Bunga Beach',lat:11.98417,lon:121.90751,coast:'Northwest coast',coastRu:'Северо-западное побережье',amihan:'variable',habagat:'variable',ru:'Северо-западный берег. Не считайте бухту автоматически защищённой: важны направление зыби и локальная волна.',en:'Northwest shore. Do not assume the cove is sheltered; swell direction and local surf matter.'},
+balinghai:{name:'Balinghai Beach',lat:11.98124,lon:121.90849,coast:'Northwest coast',coastRu:'Северо-западное побережье',amihan:'variable',habagat:'variable',ru:'Небольшая бухта у северо-западного берега. Доступ может быть ограничен; уточняйте условия входа.',en:'Small cove on the northwest shore. Access may be restricted; confirm entry conditions.'},
+banyugan:{name:'Banyugan Beach',lat:11.98725,lon:121.90611,coast:'Northwest coast',coastRu:'Северо-западное побережье',amihan:'variable',habagat:'variable',ru:'Небольшой пляж северо-западного побережья; проверяйте доступ и местную волну.',en:'Small beach on the northwest coast; check access and local surf.'},
+tulubhan:{name:'Tulubhan Beach',lat:11.95457,lon:121.93784,coast:'Southeast coast',coastRu:'Юго-восточное побережье',amihan:'variable',habagat:'variable',ru:'Юго-восточная бухта рядом с Manoc-Manoc; условия зависят от ветра, прилива и лодочного движения.',en:'Southeast cove near Manoc-Manoc; conditions depend on wind, tide and boat traffic.'},
+angol:{name:'Angol Point',lat:11.94835,lon:121.93035,coast:'Southwest coast',coastRu:'Юго-западное побережье',amihan:'variable',habagat:'variable',ru:'Южная оконечность White Beach и рифовая зона. Для снорклинга учитывайте течение, лодки и состояние рифа.',en:'Southern end of White Beach and a reef area. For snorkelling, account for currents, boats and reef conditions.'},
+lapus:{name:'Lapus-Lapus Beach',lat:null,lon:null,coast:'Northern east coast',coastRu:'Северо-восточное побережье',amihan:'variable',habagat:'variable',ru:'Пляж на северо-восточном побережье острова.',en:'Beach on the northeastern coast of the island.'},
+hagdan:{name:'Hagdan Beach',lat:null,lon:null,coast:'Northwest coast',coastRu:'Северо-западное побережье',amihan:'variable',habagat:'variable',ru:'Небольшая бухта на северо-западном побережье острова.',en:'Small cove on the northwestern coast of the island.'}
+};const beachIds=['white','bulabog','puka','diniwid','punta','balinghai','banyugan','ilig','lapus','tulubhan','tambisaan','angol','hagdan'];const markers={},$=id=>document.getElementById(id);
+const beachIcon=(active=false)=>L.divIcon({className:'map-emoji-marker'+(active?' selected':''),html:'<span>🏖️</span>',iconSize:[34,38],iconAnchor:[17,34],popupAnchor:[0,-30]});
+const windCanvas=document.createElement('canvas');windCanvas.className='wind-particle-canvas';windCanvas.setAttribute('aria-hidden','true');mapEl.appendChild(windCanvas);
+const windCtx=windCanvas.getContext('2d',{alpha:true});let windParticles=[],windFrame=0,windWidth=0,windHeight=0,windDpr=1;
+const windRandom=(min,max)=>min+Math.random()*(max-min);
+function resizeWindCanvas(){const rect=mapEl.getBoundingClientRect();windDpr=Math.min(window.devicePixelRatio||1,2);windWidth=Math.max(1,Math.round(rect.width));windHeight=Math.max(1,Math.round(rect.height));windCanvas.width=Math.round(windWidth*windDpr);windCanvas.height=Math.round(windHeight*windDpr);windCanvas.style.width=windWidth+'px';windCanvas.style.height=windHeight+'px';windCtx.setTransform(windDpr,0,0,windDpr,0,0);windCtx.clearRect(0,0,windWidth,windHeight);const count=Math.max(260,Math.min(850,Math.round(windWidth*windHeight/1250)));windParticles=Array.from({length:count},()=>newWindParticle(true));}
+function newWindParticle(randomY=false){return{x:windRandom(0,windWidth),y:randomY?windRandom(0,windHeight):windRandom(-30,-4),age:windRandom(0,150),life:windRandom(150,340),speed:windRandom(.7,1.8),length:windRandom(4,8)}}
+function windVector(x,y){const base=season==='amihan'?Math.PI*.75:-Math.PI*.25;const bend=Math.sin((x/windWidth)*Math.PI*2+(y/windHeight)*2.1)*.10+Math.cos((y/windHeight)*Math.PI*2)*.045;const a=base+bend;return{x:Math.cos(a),y:Math.sin(a)}}
+function animateWind(){windFrame=requestAnimationFrame(animateWind);if(!windOn||!windWidth||!windHeight)return;windCtx.globalCompositeOperation='destination-out';windCtx.fillStyle='rgba(0,0,0,.16)';windCtx.fillRect(0,0,windWidth,windHeight);windCtx.globalCompositeOperation='source-over';for(let i=0;i<windParticles.length;i++){const p=windParticles[i],v=windVector(p.x,p.y),dx=v.x*p.speed,dy=v.y*p.speed;p.x+=dx;p.y+=dy;p.age++;const alpha=Math.min(1,p.age/22,(p.life-p.age)/28);if(alpha>0){windCtx.beginPath();windCtx.moveTo(p.x-dx*p.length,p.y-dy*p.length);windCtx.lineTo(p.x,p.y);windCtx.strokeStyle='rgba(0,139,190,'+(alpha*.34)+')';windCtx.lineWidth=1.15;windCtx.stroke();windCtx.beginPath();windCtx.arc(p.x,p.y,1.15,0,Math.PI*2);windCtx.fillStyle='rgba(255,255,255,'+(alpha*.62)+')';windCtx.fill();}if(p.age>=p.life||p.x<-30||p.x>windWidth+30||p.y<-30||p.y>windHeight+30)windParticles[i]=newWindParticle();}}
+resizeWindCanvas();animateWind();function status(v,en){return v==='exposed'?(en?'More exposed':'Открыто ветру'):v==='sheltered'?(en?'More protected':'Обычно защищено'):(en?'Variable':'Переменные условия')}function selectBeach(id){selected=id;const d=data[id],en=root.lang==='en';$('selected-beach-card').innerHTML='<strong>'+d.name+' · '+(en?d.coast:d.coastRu)+'</strong><p>'+d[en?'en':'ru']+'</p>';document.querySelectorAll('.beach-row').forEach(x=>x.classList.toggle('selected',x.dataset.beachSelect===id));Object.keys(markers).forEach(k=>markers[k].setIcon(beachIcon(k===id)));}Object.entries(data).forEach(([id,d])=>{if(!Number.isFinite(d.lat)||!Number.isFinite(d.lon))return;const m=L.marker([d.lat,d.lon],{icon:beachIcon(id===selected)}).addTo(map);m.bindPopup('<strong>'+d.name+'</strong><br>'+(root.lang==='en'?d.coast:d.coastRu),{autoPan:false});m.on('click',()=>selectBeach(id));markers[id]=m;});
+function windLines(){windCtx.clearRect(0,0,windWidth,windHeight);windParticles=Array.from({length:windParticles.length},()=>newWindParticle(true));}function render(){const en=root.lang==='en';const tr=(ru,enText)=>en?enText:ru;$('map-season-label').textContent=season==='amihan'?tr('AMIHAN · СЕВЕРО-ВОСТОЧНЫЙ МУССОН','AMIHAN · NORTHEAST MONSOON'):tr('HABAGAT · ЮГО-ЗАПАДНЫЙ МУССОН','HABAGAT · SOUTHWEST MONSOON');$('monsoon-title').textContent=season==='amihan'?tr('Amihan — северо-восточный муссон','Amihan – Northeast Monsoon'):tr('Habagat — юго-западный муссон','Habagat – Southwest Monsoon');$('monsoon-period').textContent=season==='amihan'?tr('Ноябрь — май','November – May'):tr('Июнь — октябрь','June – October');$('weather-summary').textContent=season==='amihan'?tr('Преимущественно солнечно, ниже влажность, погода обычно стабильнее.','Mostly sunny, lower humidity and generally more stable conditions.'):tr('Больше облачности и осадков, выше влажность, чаще усиливается юго-западный ветер.','More cloud and rainfall, higher humidity and more frequent stronger southwest winds.');$('wind-summary').textContent=season==='amihan'?tr('Северо-восточный, обычно 10–30 км/ч; сильнее на Bulabog.','Northeast, typically 10–30 km/h; stronger at Bulabog.'):tr('Юго-западный; сила меняется, западное побережье более открыто ветру.','Southwest; strength varies, with the west coast more exposed.');$('sea-summary').textContent=season==='amihan'?tr('Обычно спокойнее, особенно у White Beach.','Generally calmer, especially around White Beach.'):tr('У White Beach море часто более неспокойное; проверяйте местные условия.','Sea conditions are often rougher around White Beach; check local conditions.');$('best-summary').textContent=season==='amihan'?tr('Пляжный отдых, купание, прогулки и поездки по островам.','Beach activities, swimming, relaxation and island hopping.'):tr('Кайт- и виндсёрфинг на открытых участках, если позволяют условия.','Kitesurfing and wind sports at exposed locations, when conditions permit.');beachIds.forEach(id=>{const d=data[id],v=d[season],impact=$(id+'-impact'),badge=$(id+'-status');if(impact)impact.textContent=d[en?'en':'ru'];if(badge){badge.textContent=status(v,en);badge.className='beach-status '+v;}});$('season-summary').textContent=season==='amihan'?tr('Amihan · ноябрь–май · Обычно стабильнее, море спокойнее.','Amihan · November–May · Generally more stable, calmer sea conditions.'):tr('Habagat · июнь–октябрь · Больше облачности, дождей и ветра; условия на побережьях различаются.','Habagat · June–October · More clouds, rainfall and stronger winds; sea conditions vary by coast.');windLines();selectBeach(selected)}document.querySelectorAll('[data-beach-select]').forEach(el=>el.addEventListener('click',()=>{selectBeach(el.dataset.beachSelect);const d=data[selected];if(Number.isFinite(d.lat)&&Number.isFinite(d.lon))map.flyTo([d.lat,d.lon],15)}));$('wind-toggle').addEventListener('click',()=>{windOn=!windOn;$('wind-toggle').setAttribute('aria-pressed',String(windOn));$('wind-toggle').firstChild.textContent=windOn?'Ⅱ ':'▶ ';windLines()});const monthNames={en:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],ru:['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек']};const grid=$('month-grid');const manilaNow=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Manila'}));let selectedMonth=manilaNow.getMonth();season=selectedMonth>=5&&selectedMonth<=9?'habagat':'amihan';const paintMonths=()=>{grid.innerHTML='';monthNames[root.lang==='en'?'en':'ru'].forEach((m,i)=>{const btn=document.createElement('button');btn.type='button';btn.innerHTML=m+'<span>'+(i>=5&&i<=9?'🌧️':i===4||i===10?'🌤️':'☀️')+'</span>';btn.classList.toggle('active',i===selectedMonth);btn.setAttribute('aria-pressed',String(i===selectedMonth));btn.addEventListener('click',()=>{selectedMonth=i;season=i>=5&&i<=9?'habagat':'amihan';paintMonths();render()});grid.appendChild(btn)});};paintMonths();root.addEventListener('langchange',()=>{paintMonths();selectBeach(selected);render()});render();setTimeout(()=>map.invalidateSize(),250);window.addEventListener('resize',()=>{map.invalidateSize();resizeWindCanvas()});map.on('moveend zoomend resize',resizeWindCanvas);})();</script>
+<script>
+(()=>{const month=document.getElementById('tide-month'),head=document.getElementById('tide-head'),body=document.getElementById('tide-body'),status=document.getElementById('tide-status'),detail=document.getElementById('tide-detail'),reload=document.getElementById('tide-reload');if(!month)return;const pad=n=>String(n).padStart(2,'0'),hours=Array.from({length:13},(_,i)=>i+6);const now=new Date(),manila=new Date(now.toLocaleString('en-US',{timeZone:'Asia/Manila'}));month.value=manila.getFullYear()+'-'+pad(manila.getMonth()+1);let series={};let loadedMonth='';let lang=()=>document.documentElement.lang==='en'?'en':'ru';const tr=(ru,en)=>lang()==='en'?en:ru;function render(){const [yy,mm]=month.value.split('-').map(Number);if(!yy||!mm)return;head.innerHTML='<th>'+tr('Дата','Date')+'</th>'+hours.map(h=>'<th class="'+(h===6?'daylight-start':h===18?'daylight-end':'')+'">'+pad(h)+'</th>').join('');const count=new Date(yy,mm,0).getDate();let html='';for(let d=1;d<=count;d++){const date=yy+'-'+pad(mm)+'-'+pad(d);html+='<tr><th>'+pad(d)+'</th>';hours.forEach(h=>{const key=date+'T'+pad(h)+':00',v=series[key],cls=v==null?'tide-empty':v<-.5?'tide-low':v<0?'tide-mid':'tide-high',edge=h===6?' daylight-start':h===18?' daylight-end':'';html+='<td class="'+cls+edge+'" '+(v==null?'':'tabindex="0" role="button" data-date="'+date+'" data-hour="'+h+'" data-value="'+v.toFixed(3)+'"')+'>'+(v==null?'—':v.toFixed(1))+'</td>'});html+='</tr>'}body.innerHTML=html;body.querySelectorAll('td[data-value]').forEach(td=>{const show=()=>{const v=Number(td.dataset.value),label=v<-.5?tr('Низкий уровень','Low level'):v<0?tr('Комфортный уровень','Moderate level'):tr('Высокий уровень','High level');detail.textContent=td.dataset.date+' · '+td.dataset.hour+':00 · '+v.toFixed(2)+' m · '+label};td.addEventListener('click',show);td.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();show()}})});}
+async function load(){const selected=month.value;if(!/^\d{4}-\d{2}$/.test(selected))return;status.textContent=tr('Расчёт астрономического прогноза TPXO…','Calculating TPXO astronomical tide forecast…');body.innerHTML='<tr><td colspan="14">…</td></tr>';series={};loadedMonth='';try{const res=await fetch('https://boracay-tides.enmaradin.workers.dev/?month='+encodeURIComponent(selected));if(!res.ok)throw new Error('HTTP '+res.status);const data=await res.json();if(!Array.isArray(data.values))throw new Error(data.error||'Unexpected response');data.values.forEach(p=>{const d=new Date(p.time.endsWith('Z')?p.time:p.time+'Z');if(Number.isNaN(d.getTime()))return;const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Manila',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hourCycle:'h23'}).formatToParts(d);const get=t=>parts.find(x=>x.type===t)?.value;const key=get('year')+'-'+get('month')+'-'+get('day')+'T'+get('hour')+':00';series[key]=Number(p.level_m)});loadedMonth=selected;render();const count=Object.keys(series).length;status.textContent=count?tr('TPXO10-atlas-v2 · загружено значений: ','TPXO10-atlas-v2 · values loaded: ')+count+tr('. Время: Филиппины (UTC+8).',' · Time zone: Philippines (UTC+8).'):tr('Модель не вернула валидные значения для этой точки.','The model returned no valid values for this location.');detail.textContent=tr('Нажмите на ячейку, чтобы увидеть дату, время и расчётный уровень моря.','Tap a cell to inspect date, time and modelled sea level.')}catch(e){status.textContent=tr('Ошибка загрузки долгосрочного прогноза: ','Long-range forecast error: ')+e.message;body.innerHTML='<tr><td colspan="14">—</td></tr>'}}
+month.addEventListener('change',load);reload.addEventListener('click',load);load()})();
+</script>
+<style>
+.price-emphasis{font-weight:800}
+</style>
+
+</body></html>

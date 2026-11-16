@@ -50,6 +50,19 @@
   window.PHSite.notifyLanguageChange=function(language){
     document.dispatchEvent(new CustomEvent('ph:languagechange',{detail:{language}}));
   };
+  /* Each language has its own URL (see tools/build_en.py). When the page declares a
+     counterpart via <link rel="alternate" hreflang>, the language button navigates there
+     instead of switching text in place; pages without a counterpart keep the in-place switch. */
+  document.addEventListener('click',function(event){
+    const button=event.target&&event.target.closest?event.target.closest('#lang-btn'):null;
+    if(!button)return;
+    const other=root.lang==='en'?'ru':'en';
+    const link=document.querySelector('link[rel="alternate"][hreflang="'+other+'"]');
+    if(!link||!link.href)return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    window.location.href=link.href.split('#')[0]+window.location.hash;
+  },true);
   function start(){
     scan(document.body);
     const observer=new MutationObserver(records=>records.forEach(record=>record.addedNodes.forEach(scan)));
