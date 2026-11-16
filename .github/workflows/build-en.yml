@@ -9,6 +9,9 @@ on:
       - boracay.html
       - weather.html
       - currency.html
+      - beaches.html
+      - en/beaches.html
+      - sitemap.xml
       - tools/build_en.py
   workflow_dispatch:
 
