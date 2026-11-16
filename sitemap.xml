@@ -17,6 +17,16 @@
   <url>
     <loc>https://guyabano-kun.github.io/PH/beaches.html</loc>
     <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://guyabano-kun.github.io/PH/beaches.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/beaches.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/beaches.html"/>
+  </url>
+  <url>
+    <loc>https://guyabano-kun.github.io/PH/en/beaches.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://guyabano-kun.github.io/PH/beaches.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/beaches.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/beaches.html"/>
   </url>
   <url>
     <loc>https://guyabano-kun.github.io/PH/weather.html</loc>
