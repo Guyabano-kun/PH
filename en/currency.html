@@ -341,11 +341,11 @@ footer{margin-top:12px;padding:10px}
 
 
 /* Persisted custom layout remains active outside edit mode */
-.layout-customized main{display:grid;grid-template-columns:minmax(0,var(--layout-left,1fr)) minmax(0,var(--layout-right,1fr));gap:10px;align-items:start}
-.layout-customized main>h1,.layout-customized main>.lead,.layout-customized main>.section-nav,.layout-customized main>#layout-editor{grid-column:1/-1}
+main.layout-customized{display:grid;grid-template-columns:minmax(0,var(--layout-left,1fr)) minmax(0,var(--layout-right,1fr));gap:10px;align-items:start}
+main.layout-customized>h1,main.layout-customized>.lead,main.layout-customized>.section-nav,main.layout-customized>#layout-editor{grid-column:1/-1}
 .layout-customized .exchange-fx-grid,.layout-customized .payment-grid{display:contents}
-.layout-customized main>.panel,.layout-customized main>.payment-snapshot{min-width:0;margin:0}
-@media(max-width:760px){.layout-customized main{grid-template-columns:minmax(0,1fr)}}
+main.layout-customized>.panel,main.layout-customized>.payment-snapshot{min-width:0;margin:0}
+@media(max-width:760px){main.layout-customized{grid-template-columns:minmax(0,1fr)}}
 
 </style>
 <link rel="canonical" href="https://guyabano-kun.github.io/PH/en/currency.html"><link rel="alternate" hreflang="ru" href="https://guyabano-kun.github.io/PH/currency.html"><link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/currency.html"><link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/currency.html">
