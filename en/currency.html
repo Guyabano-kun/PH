@@ -308,45 +308,6 @@ footer{margin-top:12px;padding:10px}
 .more-details:focus-within>summary{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
 
 
-/* Browser-side visual layout editor */
-.layout-editor{margin:0 0 12px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.layout-editor-bar,.layout-editor-controls{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
-.layout-edit-toggle,.layout-editor-controls button{border:1px solid var(--line);border-radius:8px;padding:8px 11px;background:var(--bg);color:var(--ink);font:700 .88rem system-ui,sans-serif;cursor:pointer}
-.layout-edit-toggle[aria-pressed="true"]{background:var(--hero);color:#fff;border-color:var(--hero)}
-.layout-editor-hint,.layout-editor-status{font-size:.82rem;color:var(--muted);margin:0}
-.layout-editor-controls{padding-top:10px}
-.layout-editor-controls label{font-size:.82rem;font-weight:700}
-.layout-editor-controls input{width:min(220px,35vw)}
-.layout-editor-controls output{font-size:.82rem;font-weight:800;min-width:58px}
-.layout-editor-controls textarea{flex:1 1 100%;width:100%;font:12px/1.4 ui-monospace,monospace}
-.layout-dropzones{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px}
-.layout-dropzones>div{padding:9px;border:1px dashed var(--accent);border-radius:8px;text-align:center;color:var(--muted);font-size:.78rem}
-.layout-editor-status:empty{display:none}
-.layout-drag-handle{display:none}
-.layout-editing main{display:grid;grid-template-columns:minmax(0,var(--layout-left,1fr)) minmax(0,var(--layout-right,1fr));grid-auto-flow:row dense;gap:10px;align-items:start}
-.layout-editing main>h1,.layout-editing main>.lead,.layout-editing main>.section-nav,.layout-editing main>#layout-editor{grid-column:1/-1}
-.layout-editing .exchange-fx-grid,.layout-editing .payment-grid{display:contents}
-.layout-editing main>.exchange-fx-grid,.layout-editing main>.payment-grid{display:contents}
-.layout-editing main>.panel,.layout-editing main>.payment-snapshot{min-width:0;margin:0}
-.layout-editing .layout-drag-handle{display:flex;align-items:center;gap:6px;width:100%;margin:0 0 8px;padding:6px 8px;border:1px dashed var(--accent);border-radius:7px;background:var(--bg);color:var(--accent);font-size:.76rem;font-weight:800;cursor:grab;user-select:none}
-.layout-editing .layout-drag-handle:active{cursor:grabbing}
-.layout-editing .layout-item-dragging{opacity:.38;outline:2px dashed var(--accent);outline-offset:2px}
-.layout-editing .layout-drop-target{outline:2px solid var(--accent);outline-offset:2px}
-.layout-editing .layout-editor{grid-column:1/-1}
-@media(max-width:760px){
- .layout-editing main{grid-template-columns:minmax(0,1fr)}
- .layout-dropzones{grid-template-columns:1fr}
- .layout-editor-hint{flex-basis:100%}
-}
-
-
-/* Persisted custom layout remains active outside edit mode */
-main.layout-customized{display:grid;grid-template-columns:minmax(0,var(--layout-left,1fr)) minmax(0,var(--layout-right,1fr));gap:10px;align-items:start}
-main.layout-customized>h1,main.layout-customized>.lead,main.layout-customized>.section-nav,main.layout-customized>#layout-editor{grid-column:1/-1}
-.layout-customized .exchange-fx-grid,.layout-customized .payment-grid{display:contents}
-main.layout-customized>.panel,main.layout-customized>.payment-snapshot{min-width:0;margin:0}
-@media(max-width:760px){main.layout-customized{grid-template-columns:minmax(0,1fr)}}
-
 </style>
 <link rel="canonical" href="https://guyabano-kun.github.io/PH/en/currency.html"><link rel="alternate" hreflang="ru" href="https://guyabano-kun.github.io/PH/currency.html"><link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/currency.html"><link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/currency.html">
 <meta name="robots" content="index,follow">
@@ -382,27 +343,6 @@ main.layout-customized>.panel,main.layout-customized>.payment-snapshot{min-width
 <h1 data-ru="Обмен валюты и оплата" data-en="Currency exchange and payments">Currency exchange and payments</h1>
 <p class="lead" data-ru="Обмен наличных, ATM, зарубежные карты и местные электронные кошельки на Боракае." data-en="Cash exchange, ATMs, foreign cards and local e-wallets on Boracay.">Cash exchange, ATMs, foreign cards and local e-wallets on Boracay.</p>
 <nav class="section-nav" aria-label="Page sections"><a href="#fx-rates"><span class="nav-symbol">💱</span><span data-ru="Курс валют" data-en="Exchange rates">Exchange rates</span></a><a href="#cash-exchange"><span class="nav-symbol">💵</span><span data-ru="Обмен наличных" data-en="Cash exchange">Cash exchange</span></a><a href="#savemore"><span class="nav-symbol"><img class="sm-nav-logo" src="https://cdn.brandfetch.io/idjT-Kz7Zg/w/360/h/120/theme/dark/logo.png" alt="SM Store"></span><span data-ru="Savemore / SM" data-en="Savemore / SM">Savemore / SM</span></a><a href="#atm"><span class="nav-symbol">🏧</span><span data-ru="Банкоматы" data-en="ATMs">ATMs</span></a><a href="#cards"><span class="nav-brands"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Visa_Inc._logo_%282021%E2%80%93present%29.svg" alt="Visa"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="Mastercard"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/UnionPay_logo.svg" alt="UnionPay"></span><span data-ru="Банковские карты" data-en="Bank cards">Bank cards</span></a><a href="#qr-payments"><span class="nav-symbol">▦</span><span data-ru="QR-оплата" data-en="QR payments">QR payments</span></a><a href="#e-money"><span class="nav-brands"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Maya_logo.svg" alt="Maya"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/GCash_logo.svg" alt="GCash"></span><span data-ru="Maya и GCash" data-en="Maya & GCash">Maya &amp; GCash</span></a></nav>
-
-<div class="layout-editor" id="layout-editor">
- <div class="layout-editor-bar">
-  <button type="button" class="layout-edit-toggle" id="layout-edit-toggle" aria-pressed="false" data-ru="Настроить расположение блоков" data-en="Arrange page sections">Arrange page sections</button>
-  <span class="layout-editor-hint" data-ru="Перетащите блок за ручку. Сохранение действует в этом браузере." data-en="Drag sections by their handle. Layout is saved in this browser.">Drag sections by their handle. Layout is saved in this browser.</span>
- </div>
- <div class="layout-editor-controls" id="layout-editor-controls" hidden>
-  <label for="layout-width" data-ru="Ширина левой колонки" data-en="Left column width">Left column width</label>
-  <input id="layout-width" type="range" min="30" max="70" step="1" value="50">
-  <output id="layout-width-value" for="layout-width">50 / 50</output>
-  <button type="button" id="layout-save" data-ru="Сохранить" data-en="Save">Save</button>
-  <button type="button" id="layout-reset" data-ru="Сбросить" data-en="Reset">Reset</button>
-  <button type="button" id="layout-export" data-ru="Экспорт JSON" data-en="Export JSON">Export JSON</button>
-  <textarea id="layout-export-data" rows="5" readonly hidden aria-label="Layout configuration JSON"></textarea>
- </div>
- <div class="layout-dropzones" id="layout-dropzones" hidden>
-  <div data-layout-column="1" data-ru="Левая колонка · бросьте сюда блок" data-en="Left column · drop a section here">Left column · drop a section here</div>
-  <div data-layout-column="2" data-ru="Правая колонка · бросьте сюда блок" data-en="Right column · drop a section here">Right column · drop a section here</div>
- </div>
- <p class="layout-editor-status" id="layout-editor-status" aria-live="polite"></p>
-</div>
 
 <div class="exchange-fx-grid">
 <section class="panel" id="cash-exchange">
@@ -456,7 +396,7 @@ main.layout-customized>.panel,main.layout-customized>.payment-snapshot{min-width
 <p><strong data-ru="Ищите формулировки:" data-en="Look for wording such as:">Look for wording such as:</strong> <span data-ru="“Continue without conversion”, “Decline conversion”, “Charge in PHP”." data-en="“Continue without conversion”, “Decline conversion”, “Charge in PHP”.">“Continue without conversion”, “Decline conversion”, “Charge in PHP”.</span></p><details class="more-details"><summary data-ru="Подробнее о конвертации DCC" data-en="More about DCC conversion">More about DCC conversion</summary><div class="details-body">
 <p data-ru="Тогда конвертацию выполнит банк-эмитент карты или платёжная система. Это обычно выгоднее курса, навязанного банкоматом, но итог зависит от тарифа вашей карты." data-en="Your card issuer or card network then performs the conversion. This is usually better than the ATM's offered rate, but the final cost depends on your card terms.">Your card issuer or card network then performs the conversion. This is usually better than the ATM's offered rate, but the final cost depends on your card terms.</p></div>
 </div><p data-ru="20 000 PHP — практический ориентир для указанного BPI ATM, а не универсально гарантированный лимит для всех иностранных карт. Фактический предел зависит от банкомата, платёжной сети, эмитента и доступных купюр. Не подтверждайте операцию, если комиссия или валюта списания отличаются от ожидаемых." data-en="₱20,000 is a practical reference for the specified BPI ATM, not a guaranteed limit for every foreign card. The actual limit depends on the ATM, card network, issuer and available notes. Do not confirm if the fee or billing currency differs from what you expect.">₱20,000 is a practical reference for the specified BPI ATM, not a guaranteed limit for every foreign card. The actual limit depends on the ATM, card network, issuer and available notes. Do not confirm if the fee or billing currency differs from what you expect.</p></section>
-<aside class="payment-snapshot" id="payment-snapshot" aria-label="Payment quick reference">
+<aside class="payment-snapshot"  aria-label="Payment quick reference">
 <div class="snapshot-kicker" data-ru="БЫСТРЫЙ ВЫБОР" data-en="QUICK REFERENCE">QUICK REFERENCE</div>
 <h3 data-ru="Чем платить на Боракае" data-en="How to pay on Boracay">How to pay on Boracay</h3>
 <div class="snapshot-row"><span class="snapshot-icon">💳</span><div><strong data-ru="Карта" data-en="Card">Card</strong><p data-ru="Отели, супермаркеты, крупные магазины и рестораны. Выбирайте списание в PHP." data-en="Hotels, supermarkets, larger shops and restaurants. Choose to be charged in PHP.">Hotels, supermarkets, larger shops and restaurants. Choose to be charged in PHP.</p></div></details></div></div>
@@ -533,141 +473,7 @@ main.layout-customized>.panel,main.layout-customized>.payment-snapshot{min-width
 <button class="back-top" id="back-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
 <footer>Philippines · Boracay practical guide</footer>
 
-<script>
-(()=> {
- const main=document.querySelector('main');
- const editor=document.getElementById('layout-editor');
- if(!main||!editor)return;
- const ids=['cash-exchange','fx-rates','atm','payment-snapshot','qr-payments','e-money','cards','quick-guide','sources'];
- const storageKey='phCurrencyLayoutV1';
- const defaults=[
-  {id:'cash-exchange',order:1,col:1,span:1},
-  {id:'fx-rates',order:2,col:2,span:1},
-  {id:'atm',order:3,col:2,span:1},
-  {id:'payment-snapshot',order:4,col:2,span:1},
-  {id:'qr-payments',order:5,col:1,span:1},
-  {id:'e-money',order:6,col:2,span:1},
-  {id:'cards',order:7,col:1,span:2},
-  {id:'quick-guide',order:8,col:1,span:2},
-  {id:'sources',order:9,col:1,span:2}
- ];
- const toggle=document.getElementById('layout-edit-toggle');
- const controls=document.getElementById('layout-editor-controls');
- const zones=document.getElementById('layout-dropzones');
- const width=document.getElementById('layout-width');
- const widthValue=document.getElementById('layout-width-value');
- const status=document.getElementById('layout-editor-status');
- const exportArea=document.getElementById('layout-export-data');
- let config=defaults.map(x=>({...x}));
- let editing=false,dragged=null;
- const getItems=()=>config.map(x=>document.getElementById(x.id)).filter(Boolean);
- const findItem=id=>config.find(x=>x.id===id);
- const normalize=()=>config.sort((a,b)=>a.order-b.order).forEach((x,i)=>x.order=i+1);
- function apply(){
-  normalize();
-  const left=Math.max(30,Math.min(70,Number(width.value)||50));
-  main.style.setProperty('--layout-left',left+'fr');
-  main.style.setProperty('--layout-right',(100-left)+'fr');
-  getItems().forEach(el=>{
-   const item=findItem(el.id);
-   el.style.order=item.order;
-   el.style.gridColumn=item.span===2?'1 / -1':String(item.col);
-   el.dataset.layoutColumn=String(item.col);
-  });
-  main.classList.add('layout-customized');
-  widthValue.textContent=left+' / '+(100-left);
- }
- function restoreSaved(){
-  try{
-   const saved=JSON.parse(localStorage.getItem(storageKey)||'null');
-   if(saved&&Array.isArray(saved.items)){
-    config=defaults.map(d=>({...d,...(saved.items.find(x=>x.id===d.id)||{})}));
-    width.value=String(Math.max(30,Math.min(70,Number(saved.left)||50)));
-    apply();
-   }
-  }catch(e){status.textContent=document.documentElement.lang==='en'?'Local storage is unavailable in this browser.':'Локальное хранилище недоступно в этом браузере.'}
- }
- function save(){
-  normalize();
-  const data={version:1,left:Number(width.value),items:config};
-  try{localStorage.setItem(storageKey,JSON.stringify(data));}catch(e){status.textContent=document.documentElement.lang==='en'?'Could not save layout in this browser.':'Не удалось сохранить компоновку в этом браузере.';return}
-  status.textContent=document.documentElement.lang==='en'?'Layout saved in this browser.':'Компоновка сохранена в этом браузере.';
- }
- function makeHandles(){
-  ids.forEach(id=>{
-   const el=document.getElementById(id);if(!el||el.querySelector('.layout-drag-handle'))return;
-   const handle=document.createElement('button');
-   handle.type='button';handle.className='layout-drag-handle';handle.draggable=true;
-   handle.textContent='⠿ '+(document.documentElement.lang==='en'?'Drag to move':'Перетащить блок');
-   handle.setAttribute('aria-label',document.documentElement.lang==='en'?'Drag section to rearrange':'Перетащить секцию для изменения порядка');
-   handle.addEventListener('dragstart',ev=>{
-    dragged=id;el.classList.add('layout-item-dragging');
-    ev.dataTransfer.effectAllowed='move';ev.dataTransfer.setData('text/plain',id);
-   });
-   handle.addEventListener('dragend',()=>{
-    dragged=null;el.classList.remove('layout-item-dragging');
-    document.querySelectorAll('.layout-drop-target').forEach(x=>x.classList.remove('layout-drop-target'));
-   });
-   el.prepend(handle);
-   el.addEventListener('dragover',ev=>{
-    if(!editing||!dragged||dragged===id)return;
-    ev.preventDefault();ev.dataTransfer.dropEffect='move';
-    document.querySelectorAll('.layout-drop-target').forEach(x=>x.classList.remove('layout-drop-target'));
-    el.classList.add('layout-drop-target');
-   });
-   el.addEventListener('dragleave',ev=>{
-    if(!el.contains(ev.relatedTarget))el.classList.remove('layout-drop-target');
-   });
-   el.addEventListener('drop',ev=>{
-    if(!editing||!dragged||dragged===id)return;
-    ev.preventDefault();el.classList.remove('layout-drop-target');
-    const from=findItem(dragged),to=findItem(id);if(!from||!to)return;
-    const rect=el.getBoundingClientRect();
-    const before=ev.clientY<rect.top+rect.height/2;
-    const ordered=config.slice().sort((a,b)=>a.order-b.order);
-    const sourceIndex=ordered.findIndex(x=>x.id===dragged);
-    const targetIndex=ordered.findIndex(x=>x.id===id);
-    const moving=ordered.splice(sourceIndex,1)[0];
-    const insertAt=ordered.findIndex(x=>x.id===id)+(before?0:1);
-    moving.col=to.col;moving.span=1;
-    ordered.splice(insertAt,0,moving);
-    ordered.forEach((x,i)=>x.order=i+1);
-    config=ordered;apply();
-   });
-  });
- }
- document.querySelectorAll('#layout-dropzones [data-layout-column]').forEach(zone=>{
-  zone.addEventListener('dragover',ev=>{if(editing&&dragged){ev.preventDefault();zone.classList.add('layout-drop-target')}});
-  zone.addEventListener('dragleave',()=>zone.classList.remove('layout-drop-target'));
-  zone.addEventListener('drop',ev=>{
-   ev.preventDefault();zone.classList.remove('layout-drop-target');
-   const item=findItem(dragged);if(!item)return;
-   item.col=Number(zone.dataset.layoutColumn);item.span=1;
-   item.order=Math.max(...config.map(x=>x.order))+1;apply();
-  });
- });
- toggle.addEventListener('click',()=>{
-  editing=!editing;if(editing)apply();document.body.classList.toggle('layout-editing',editing);
-  toggle.setAttribute('aria-pressed',String(editing));
-  toggle.textContent=editing?(document.documentElement.lang==='en'?'Finish arranging':'Завершить настройку'):(document.documentElement.lang==='en'?'Arrange page sections':'Настроить расположение блоков');
-  controls.hidden=!editing;zones.hidden=!editing;
-  makeHandles();
- });
- width.addEventListener('input',apply);
- document.getElementById('layout-save').addEventListener('click',save);
- document.getElementById('layout-reset').addEventListener('click',()=>{
-  config=defaults.map(x=>({...x}));width.value='50';try{localStorage.removeItem(storageKey)}catch(e){}
-  apply();exportArea.hidden=true;
-  status.textContent=document.documentElement.lang==='en'?'Default layout restored.':'Исходная компоновка восстановлена.';
- });
- document.getElementById('layout-export').addEventListener('click',()=>{
-  normalize();exportArea.value=JSON.stringify({version:1,left:Number(width.value),items:config},null,2);
-  exportArea.hidden=false;exportArea.focus();exportArea.select();
-  status.textContent=document.documentElement.lang==='en'?'JSON selected. Copy it with Ctrl+C.':'JSON выделен. Скопируйте его сочетанием Ctrl+C.';
- });
- restoreSaved();
-})();
-</script>
+
 
 <script>(()=>{const b=document.getElementById("back-top");if(!b)return;const update=()=>b.classList.toggle("is-visible",window.scrollY>320);window.addEventListener("scroll",update,{passive:true});window.addEventListener("resize",update);b.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));update()})();</script>
 <script>
