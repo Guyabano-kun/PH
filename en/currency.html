@@ -292,6 +292,13 @@ footer{margin-top:12px;padding:10px}
 }
 
 
+/* Payment cards: two-column desktop layout */
+.payment-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
+.payment-grid>.panel{min-width:0}
+@media(max-width:760px){
+ .payment-grid{grid-template-columns:minmax(0,1fr)}
+}
+
 /* Desktop readability and progressive disclosure */
 @media(min-width:1101px){
  body{font-size:17px}
