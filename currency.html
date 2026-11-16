@@ -311,7 +311,7 @@ footer{margin-top:12px;padding:10px}
 /* Browser-side visual layout editor */
 .layout-editor{margin:0 0 12px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
 .layout-editor-bar,.layout-editor-controls{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
-.layout-edit-toggle,.layout-editor-controls button{border:1px solid var(--line);border-radius:8px;padding:8px 11px;background:var(--bg);color:var(--ink);font:700 .88rem inherit;cursor:pointer}
+.layout-edit-toggle,.layout-editor-controls button{border:1px solid var(--line);border-radius:8px;padding:8px 11px;background:var(--bg);color:var(--ink);font:700 .88rem system-ui,sans-serif;cursor:pointer}
 .layout-edit-toggle[aria-pressed="true"]{background:var(--hero);color:#fff;border-color:var(--hero)}
 .layout-editor-hint,.layout-editor-status{font-size:.82rem;color:var(--muted);margin:0}
 .layout-editor-controls{padding-top:10px}
@@ -585,12 +585,12 @@ footer{margin-top:12px;padding:10px}
     width.value=String(Math.max(30,Math.min(70,Number(saved.left)||50)));
     apply();
    }
-  }catch(e){localStorage.removeItem(storageKey)}
+  }catch(e){status.textContent=document.documentElement.lang==='en'?'Local storage is unavailable in this browser.':'Локальное хранилище недоступно в этом браузере.'}
  }
  function save(){
   normalize();
   const data={version:1,left:Number(width.value),items:config};
-  localStorage.setItem(storageKey,JSON.stringify(data));
+  try{localStorage.setItem(storageKey,JSON.stringify(data));}catch(e){status.textContent=document.documentElement.lang==='en'?'Could not save layout in this browser.':'Не удалось сохранить компоновку в этом браузере.';return}
   status.textContent=document.documentElement.lang==='en'?'Layout saved in this browser.':'Компоновка сохранена в этом браузере.';
  }
  function makeHandles(){
@@ -656,7 +656,7 @@ footer{margin-top:12px;padding:10px}
  width.addEventListener('input',apply);
  document.getElementById('layout-save').addEventListener('click',save);
  document.getElementById('layout-reset').addEventListener('click',()=>{
-  config=defaults.map(x=>({...x}));width.value='50';localStorage.removeItem(storageKey);
+  config=defaults.map(x=>({...x}));width.value='50';try{localStorage.removeItem(storageKey)}catch(e){}
   apply();exportArea.hidden=true;
   status.textContent=document.documentElement.lang==='en'?'Default layout restored.':'Исходная компоновка восстановлена.';
  });
@@ -666,7 +666,6 @@ footer{margin-top:12px;padding:10px}
   status.textContent=document.documentElement.lang==='en'?'JSON selected. Copy it with Ctrl+C.':'JSON выделен. Скопируйте его сочетанием Ctrl+C.';
  });
  restoreSaved();
- if(localStorage.getItem(storageKey))apply();
 })();
 </script>
 
