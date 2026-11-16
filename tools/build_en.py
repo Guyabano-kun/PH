@@ -22,6 +22,7 @@ import re
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
+from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE = "https://guyabano-kun.github.io/PH/"
@@ -233,6 +234,46 @@ def build(page):
         print("   untranslated:", s[:90])
 
 
+def validate_sitemap():
+    """Check that every bilingual page has reciprocal sitemap alternates."""
+    path = ROOT / "sitemap.xml"
+    if not path.exists():
+        raise SystemExit("sitemap.xml: file is missing")
+    try:
+        root = ElementTree.parse(path).getroot()
+    except ElementTree.ParseError as exc:
+        raise SystemExit(f"sitemap.xml: invalid XML: {exc}")
+    ns = {
+        "sm": "http://www.sitemaps.org/schemas/sitemap/0.9",
+        "xhtml": "http://www.w3.org/1999/xhtml",
+    }
+    entries = {}
+    for node in root.findall("sm:url", ns):
+        loc = node.findtext("sm:loc", namespaces=ns)
+        alternates = {
+            link.attrib.get("hreflang"): link.attrib.get("href")
+            for link in node.findall("xhtml:link", ns)
+        }
+        if loc:
+            entries[loc] = alternates
+    pages = [*PAGES, "beaches"]
+    for page in pages:
+        ru = f"{BASE}{page}.html"
+        en = f"{BASE}en/{page}.html"
+        for loc, expected in (
+            (ru, {"ru": ru, "en": en, "x-default": en}),
+            (en, {"ru": ru, "en": en, "x-default": en}),
+        ):
+            if loc not in entries:
+                raise SystemExit(f"sitemap.xml: missing URL {loc}")
+            for lang, href in expected.items():
+                if entries[loc].get(lang) != href:
+                    raise SystemExit(
+                        f"sitemap.xml: {loc} has incorrect {lang} alternate"
+                    )
+    print("sitemap.xml: bilingual URL and hreflang checks passed")
+
+
 def validate_manual_page():
     """Validate the separately maintained English beaches catalogue."""
     path = ROOT / "en" / "beaches.html"
@@ -262,4 +303,5 @@ if __name__ == "__main__":
     for name in PAGES:
         build(name)
     validate_manual_page()
+    validate_sitemap()
     sys.exit(0)
