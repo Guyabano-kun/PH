@@ -11,8 +11,9 @@ English copy of each page to en/<page>.html with:
   - canonical / og:url pointing at the en/ URL;
   - relative paths rewritten to the shared files one level up.
 
-en/ is generated output: never edit it by hand, edit the source page and
-re-run `python3 tools/build_en.py` (CI does this on every push to main).
+Boracay, weather and currency pages are generated from bilingual source pages.
+The English beaches catalogue is maintained separately because its data-driven
+passport interface has its own translated renderer.
 Standard library only. Exits non-zero if a page cannot be built correctly.
 """
 import html
@@ -232,7 +233,33 @@ def build(page):
         print("   untranslated:", s[:90])
 
 
+def validate_manual_page():
+    """Validate the separately maintained English beaches catalogue."""
+    path = ROOT / "en" / "beaches.html"
+    if not path.exists():
+        raise SystemExit("en/beaches.html: English beach catalogue is missing")
+    text = path.read_text(encoding="utf-8")
+    required = [
+        '<html lang="en"',
+        f'<link rel="canonical" href="{BASE}en/beaches.html">',
+        'hreflang="ru"',
+        'hreflang="en"',
+        'hreflang="x-default"',
+        'fetch("../data/beaches.json")',
+        'fetch("../data/sources.json")',
+        'id="beaches"',
+    ]
+    for item in required:
+        if item not in text:
+            raise SystemExit(f"en/beaches.html: required marker missing: {item}")
+    head = text[:text.index("</head>")]
+    if CYRILLIC.search(head):
+        raise SystemExit("en/beaches.html: Russian text left in <head>")
+    print("en/beaches.html: structural checks passed")
+
+
 if __name__ == "__main__":
     for name in PAGES:
         build(name)
+    validate_manual_page()
     sys.exit(0)
