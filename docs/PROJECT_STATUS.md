@@ -22,6 +22,13 @@ Last verified against GitHub `main`: 2026-11-15
 - No price values, rates, labels, data, links, page structure, or site architecture were changed.
 - Structural checks: one renderer per content page, no duplicate HTML IDs, `index.html` redirect unchanged. GitHub Pages visual/deployment verification remains NOT VERIFIED because the published URLs could not be retrieved and the commit has no reported CI statuses.
 ## Completed work
+### SEO and indexation foundation (2026-11-16)
+- Added a shared 1200×630 PNG Open Graph image at `assets/og-philippines.png`; all four canonical content pages now expose Open Graph image metadata, Twitter large-image cards, and matching `primaryImageOfPage` JSON-LD. Existing canonical URLs and page-level descriptions were preserved.
+- Fixed the missing page-level H1 on `weather.html` using the existing bilingual heading strings and matching heading styles. The four canonical content pages now each have one H1.
+- Extended the beach catalogue's JSON-LD with an `ItemList` containing all 16 named records. Actual beaches use Schema.org `Beach`; Angol Point uses `TouristAttraction`. Stable fragment IDs were added to rendered cards. No unverified coordinates, public-access claims, ratings, or unsupported descriptions were added.
+- Completed cross-navigation among the four content pages. The sitemap contains all four canonical HTML pages with last-modified dates; the root `index.html` redirect and JSON datasets are intentionally excluded because they are not independent indexable landing pages.
+- Search-engine indexation remains `NOT VERIFIED`: no Search Console coverage data is available, public GitHub Pages URLs could not be retrieved by the available browser check, and an empty `site:` search is not proof of non-indexation.
+
 ### Beach passport parameter reduction (2026-11-15)
 - Dataset advanced to `0.2.53`.
 - Removed the approved low-priority / hard-to-source parameters across all 16 beach records: `coastline_orientation_degrees`, `shoreline_geometry`, `shore_slope`, `seasonal_erosion`, `sediment_study`, `reef_crest`, `nearshore_depth`, `bathymetry_source`, `wave_climate`, `visibility`, and `emergency_access`.

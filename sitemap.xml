@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://guyabano-kun.github.io/PH/boracay.html</loc></url>
-  <url><loc>https://guyabano-kun.github.io/PH/beaches.html</loc></url>
-  <url><loc>https://guyabano-kun.github.io/PH/weather.html</loc></url>
-  <url><loc>https://guyabano-kun.github.io/PH/currency.html</loc></url>
+  <url>
+    <loc>https://guyabano-kun.github.io/PH/boracay.html</loc>
+    <lastmod>2026-11-16</lastmod>
+  </url>
+  <url>
+    <loc>https://guyabano-kun.github.io/PH/beaches.html</loc>
+    <lastmod>2026-11-16</lastmod>
+  </url>
+  <url>
+    <loc>https://guyabano-kun.github.io/PH/weather.html</loc>
+    <lastmod>2026-11-16</lastmod>
+  </url>
+  <url>
+    <loc>https://guyabano-kun.github.io/PH/currency.html</loc>
+    <lastmod>2026-11-16</lastmod>
+  </url>
 </urlset>
