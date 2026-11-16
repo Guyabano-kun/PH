@@ -54,6 +54,20 @@
     scan(document.body);
     const observer=new MutationObserver(records=>records.forEach(record=>record.addedNodes.forEach(scan)));
     observer.observe(document.body,{childList:true,subtree:true});
+    const simpleThemeButton=document.getElementById('theme');
+    if(simpleThemeButton){
+      const themes=['auto','light','dark'];
+      let theme=root.dataset.theme||'auto';
+      const apply=()=>{
+        renderTheme({theme,language:root.lang==='ru'?'ru':'en',button:simpleThemeButton});
+        simpleThemeButton.textContent=theme==='dark'?'☾':theme==='light'?'☀':'◐';
+      };
+      simpleThemeButton.addEventListener('click',()=>{
+        theme=themes[(themes.indexOf(theme)+1)%themes.length];
+        apply();
+      });
+      apply();
+    }
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});
   else start();
