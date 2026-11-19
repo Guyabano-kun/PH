@@ -564,6 +564,30 @@ footer{margin-top:12px;padding:10px}
 </script>
 <style>
 .price-emphasis{font-weight:800}
+
+/* Temporary layout-order markers: visual only, no effect on document flow */
+main{counter-reset:ph-layout-order}
+main :is(section.panel,aside.payment-snapshot,.info){
+ position:relative;
+ counter-increment:ph-layout-order;
+}
+main :is(section.panel,aside.payment-snapshot,.info)::before{
+ content:counter(ph-layout-order);
+ position:absolute;
+ top:6px;
+ left:6px;
+ z-index:5;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ width:14px;
+ height:14px;
+ border-radius:50%;
+ background:var(--accent);
+ color:#fff;
+ font:700 9px/1 system-ui,sans-serif;
+ pointer-events:none;
+}
 </style>
 
 </body></html>
