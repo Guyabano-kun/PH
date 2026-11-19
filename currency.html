@@ -366,6 +366,49 @@ footer{margin-top:12px;padding:10px}
 .more-details:focus-within>summary{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
 
 
+
+
+/* Final content-height correction: prevent empty grid tracks and stretched cards */
+#cash-exchange>.content-grid{
+ align-items:start;
+ grid-auto-rows:max-content;
+}
+#cash-exchange>.content-grid>.info{
+ height:auto;
+ align-self:start;
+}
+#cash-exchange>.content-grid>.bank-exchange{
+ grid-column:1 / -1;
+}
+#cash-exchange #savemore.savemore-box{
+ align-self:start;
+}
+#atm>.content-grid,
+#e-money>.content-grid,
+#quick-guide>.quick-grid{
+ align-items:start;
+ grid-auto-rows:max-content;
+}
+#atm>.content-grid>.info,
+#e-money>.content-grid>.info,
+#quick-guide>.quick-grid>.info{
+ height:auto;
+ align-self:start;
+}
+.payment-grid{
+ grid-auto-rows:max-content;
+ align-items:start;
+ align-content:start;
+}
+.payment-grid>.panel{
+ height:auto;
+ min-height:0;
+ align-self:start;
+}
+#qr-payments .qr-identity{
+ min-height:0;
+}
+
 </style>
 <link rel="canonical" href="https://guyabano-kun.github.io/PH/currency.html"><link rel="alternate" hreflang="ru" href="https://guyabano-kun.github.io/PH/currency.html"><link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/currency.html"><link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/currency.html">
 <meta name="robots" content="index,follow">
