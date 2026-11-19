@@ -302,6 +302,54 @@ footer{margin-top:12px;padding:10px}
  .payment-grid{grid-template-columns:minmax(0,1fr)}
 }
 
+/* Desktop layout repair: content-driven rows, no artificial empty columns */
+.exchange-fx-grid{
+ display:grid;
+ grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);
+ grid-template-areas:
+  "cash rates"
+  "atm atm"
+  "snapshot snapshot";
+ align-items:start;
+ gap:12px;
+}
+.exchange-fx-grid>#cash-exchange{grid-area:cash;grid-column:auto;grid-row:auto;min-width:0}
+.exchange-fx-grid>#fx-rates{grid-area:rates;grid-column:auto;grid-row:auto;min-width:0}
+.exchange-fx-grid>#atm{grid-area:atm;grid-column:auto;grid-row:auto;width:100%;min-width:0}
+.exchange-fx-grid>.payment-snapshot{grid-area:snapshot;grid-column:auto;grid-row:auto;min-width:0}
+.exchange-fx-grid>#atm .content-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.payment-grid{
+ display:grid;
+ grid-template-columns:repeat(2,minmax(0,1fr));
+ grid-auto-rows:auto;
+ align-items:start;
+ gap:12px;
+}
+.payment-grid>.panel{
+ display:block;
+ height:auto;
+ min-width:0;
+ align-self:start;
+}
+#qr-payments,#e-money{min-height:0}
+#e-money .content-grid{align-items:start}
+#e-money .info{height:auto}
+#cards{width:100%;max-width:none}
+#quick-guide .quick-grid{align-items:start}
+#quick-guide .info{height:auto}
+@media(max-width:1050px){
+ .exchange-fx-grid{grid-template-columns:minmax(0,1fr) minmax(0,.9fr)}
+}
+@media(max-width:760px){
+ .exchange-fx-grid{
+  grid-template-columns:minmax(0,1fr);
+  grid-template-areas:"cash" "rates" "atm" "snapshot";
+  gap:8px;
+ }
+ .exchange-fx-grid>#atm .content-grid{grid-template-columns:minmax(0,1fr)}
+ .payment-grid{grid-template-columns:minmax(0,1fr);grid-auto-rows:auto}
+}
+
 /* Desktop readability and progressive disclosure */
 @media(min-width:1101px){
  body{font-size:17px}
