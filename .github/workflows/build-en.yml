@@ -15,6 +15,7 @@ on:
       - connectivity.html
       - travel-guide.html
       - health-safety.html
+      - local-services.html
       - commercial.css
       - weather.html
       - currency.html
