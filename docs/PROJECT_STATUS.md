@@ -226,4 +226,18 @@ Do not invent suitability, access rights, safety conclusions, beach boundaries o
 - GitHub Actions English build passed. All 11 generated English pages reported zero remaining static Russian strings; the manually maintained English beach catalogue passed structural checks; sitemap bilingual URL/hreflang validation passed.
 - Structural checks on new RU/EN pages: one H1 each, valid JSON-LD, no duplicate HTML IDs, correct canonical URLs. English pages contain no visible Cyrillic text. Restaurant map query parameters are HTML-escaped.
 - GitHub Pages deployment and browser-level desktop/mobile rendering remain NOT VERIFIED. Public Pages URL retrieval failed in the available browser check; earlier Pages build jobs were cancelled during runner image setup. Do not claim the live site is updated until verified.
-- P3 not implemented: separate long-term living/cost-of-living guide, local services and shopping directory. These require more verified content and should not duplicate current accommodation/utilities sections.
+- P3 remaining: separate long-term Living on Boracay guide. Local Services and Shopping & Essentials are implemented together as a bilingual practical directory; do not duplicate existing accommodation, utilities, restaurants, connectivity, health/safety or currency sections.
+
+
+## Boracay Local Services directory — implementation package 3 (2026-11-20)
+- Added `local-services.html` as a bilingual directory covering laundry, pharmacies, groceries, island delivery/errands and household/hardware supplies.
+- Added the page to the main Boracay guide under Practical guides, the English-page generator metadata, the build workflow path filter and the bilingual sitemap. The existing static architecture and shared `commercial.css` are retained.
+- Laundry: A-KON Laundry's two outlets are listed from its operator website; Waszann Wear Laundry is shown with a location reference and a map name-search link.
+- Pharmacies: Watsons Boracay Beach Front and Watsons City Mall Boracay use official Watsons branch pages.
+- Groceries: Savemore CityMall, Budget Mart D'Mall and Robinsons Supermarket Station B Mall are shown as area references with map name-search links.
+- Delivery: Boracay Delivery is linked to its official website and terms; the page describes only services explicitly stated by the operator.
+- Household supplies: ACE Hardware CityMall is shown as a business listing with a map name-search link.
+- No ratings, prices, dynamic hours, stock or service availability claims were published. No new business coordinates or Leaflet markers were added. Existing Restaurants, Connectivity, Health & Safety, Currency/ATM and Accommodation content was not duplicated.
+- Research sources checked 2026-11-20: A-KON operator website; Watsons official store listings; Aklan Provincial Government grocery listing; Boracay Delivery website and terms; public business listings for area references.
+- Structural validation and English generation are pending completion of the build workflow. GitHub Pages live deployment and desktop/mobile rendering remain NOT VERIFIED until independently checked.
+- Source implementation commit before project-control updates: `c4c86371d3185e4afefbdc5e77dd7599dd7aa61f`.
