@@ -168,4 +168,18 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/health-safety.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/health-safety.html"/>
   </url>
+  <url>
+    <loc>https://guyabano-kun.github.io/PH/local-services.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://guyabano-kun.github.io/PH/local-services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/local-services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/local-services.html"/>
+  </url>
+  <url>
+    <loc>https://guyabano-kun.github.io/PH/en/local-services.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://guyabano-kun.github.io/PH/local-services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/local-services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/local-services.html"/>
+  </url>
 </urlset>
