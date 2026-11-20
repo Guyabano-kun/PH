@@ -244,3 +244,23 @@ Do not invent suitability, access rights, safety conclusions, beach boundaries o
 - Diff review confirms only the intended page, generator metadata, workflow path, main-guide card, sitemap, generated English page and project-control records changed. No map data or Leaflet code changed.
 - GitHub Pages live deployment and desktop/mobile rendering remain NOT VERIFIED; no browser-level published-page verification was completed.
 - Source implementation commit: `c4c86371d3185e4afefbdc5e77dd7599dd7aa61f`; English generation commit: `a9b2c0b3631dbf643acb29ea85041103d6614f01`.
+
+
+## Boracay Living on Boracay guide — implementation package 4 (2026-11-20)
+- Added `living-on-boracay.html` and generated `en/living-on-boracay.html`.
+- The page covers long-stay area selection, full monthly budget categories, move-in costs, rental due diligence, utility/internet verification, everyday infrastructure and a scoped rent-control note.
+- Avoids inventing an island-wide monthly budget or rent range. The existing `boracay.html#utilities` calculator remains the source for detailed utility estimates; the new page links to it instead of duplicating calculations.
+- AKELCO's official rate page is linked directly; DOE monthly distribution-utility rate data is also linked. TIEZA's Boracay drainage/water-system guidance is linked for island-specific water/wastewater context.
+- Rent-control text is limited to NHSB Resolution No. 2024-01, which expressly covers the period through 31 December 2026 and residential units up to PHP 10,000/month subject to its conditions. The page warns not to assume application to all rentals or continuation in 2027. The official DHSUD resolution and Lawphil RA 9653 text are linked.
+- Added the page to the main Boracay practical-guides section, English generator metadata, workflow path filter and bilingual sitemap. Sitemap now contains 28 URLs (14 RU/EN pairs).
+- English generation completed in commits `dbe7a0b9c78e5cefec2d332479a1d4eda67805e3` and `3d66747cfb542535f7f384f65c9b5cad2542c87b`. The final regeneration updated the English page after the AKELCO link correction.
+- Structural checks: one H1 per language page; no duplicate IDs; balanced HTML tag nesting; no visible Cyrillic text in generated English page; English canonical URL and reciprocal sitemap pair present. JSON-LD parses successfully.
+- Live GitHub Pages deployment and desktop/mobile visual rendering remain NOT VERIFIED.
+
+## Approved site language default (2026-11-20)
+- English is approved as the default public experience once the site is ready.
+- The language-default change is deliberately deferred until the final site-readiness package. At that stage, the root entry URL should open `en/boracay.html`; Russian remains available at existing Russian URLs with explicit language switching and reciprocal hreflang. Do not force language by browser locale or geo-IP.
+- This decision is recorded in `docs/PROJECT_DECISIONS.md`; current `index.html` still redirects to the Russian `boracay.html` and has not yet been changed.
+
+## Next work package
+- Technical Foundation: verify OG image asset and dimensions, reconcile sitemap lastmod dates and coverage, audit cross-language internal links, and check live GitHub Pages deployment/rendering. Keep English-default root redirect deferred until the final readiness pass.
