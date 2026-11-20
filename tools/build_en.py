@@ -90,6 +90,11 @@ PAGES = {
         "description": "Practical Boracay health and safety information: Philippine emergency hotline 911, Ciriaco S. Tirol Hospital and official Aklan sources.",
         "short": "Health and safety in Boracay",
     },
+    "local-services": {
+        "title": "Boracay local services and shopping: laundry, pharmacies and groceries | Philippines",
+        "description": "A practical Boracay directory of laundry services, pharmacies, supermarkets, delivery and household supplies. Check current details with providers.",
+        "short": "Local services and shopping on Boracay",
+    },
 }
 # Pages that have no English version yet: links to them go back to the Russian page.
 RU_ONLY = []
