@@ -7,6 +7,10 @@ on:
     branches: [main]
     paths:
       - boracay.html
+      - flights.html
+      - accommodation.html
+      - tours.html
+      - commercial.css
       - weather.html
       - currency.html
       - beaches.html

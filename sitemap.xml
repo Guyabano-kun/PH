@@ -56,4 +56,46 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/currency.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/currency.html"/>
   </url>
+  <url>
+    <loc>https://guyabano-kun.github.io/PH/flights.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://guyabano-kun.github.io/PH/flights.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/flights.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/flights.html"/>
+  </url>
+  <url>
+    <loc>https://guyabano-kun.github.io/PH/en/flights.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://guyabano-kun.github.io/PH/flights.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/flights.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/flights.html"/>
+  </url>
+  <url>
+    <loc>https://guyabano-kun.github.io/PH/accommodation.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://guyabano-kun.github.io/PH/accommodation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/accommodation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/accommodation.html"/>
+  </url>
+  <url>
+    <loc>https://guyabano-kun.github.io/PH/en/accommodation.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://guyabano-kun.github.io/PH/accommodation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/accommodation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/accommodation.html"/>
+  </url>
+  <url>
+    <loc>https://guyabano-kun.github.io/PH/tours.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://guyabano-kun.github.io/PH/tours.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/tours.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/tours.html"/>
+  </url>
+  <url>
+    <loc>https://guyabano-kun.github.io/PH/en/tours.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://guyabano-kun.github.io/PH/tours.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guyabano-kun.github.io/PH/en/tours.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guyabano-kun.github.io/PH/en/tours.html"/>
+  </url>
 </urlset>

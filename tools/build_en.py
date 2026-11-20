@@ -34,8 +34,8 @@ CYRILLIC = re.compile(r"[А-Яа-яЁё]")
 PAGES = {
     "boracay": {
         "title": "Boracay: a practical guide for visitors and residents | Philippines",
-        "description": "A practical guide to Boracay: beaches, transport, airport transfers, "
-                       "housing and utilities, weather, mobile data, payments and everyday life on the island.",
+        "description": "A practical guide to Boracay: beaches, flights, accommodation, tours, "
+                       "transport, airport transfers, weather, mobile data, payments and everyday life on the island.",
         "short": "Boracay — a practical guide",
     },
     "weather": {
@@ -49,6 +49,21 @@ PAGES = {
         "description": "How to pay on Boracay: cash exchange, ATM fees and limits, bank cards, "
                        "Maya, GCash and QR Ph for foreign visitors.",
         "short": "Currency exchange and payments on Boracay",
+    },
+    "flights": {
+        "title": "Flights to Boracay: Caticlan (MPH) or Kalibo (KLO) | Philippines",
+        "description": "How to choose flights to Boracay: compare MPH and KLO airports, routes, connections and the full cost of reaching your hotel.",
+        "short": "Flights to Boracay",
+    },
+    "accommodation": {
+        "title": "Boracay hotels and accommodation: areas and booking guide | Philippines",
+        "description": "A practical Boracay accommodation guide: Station 1, Station 2, Station 3, Bulabog, Yapak and Newcoast, booking criteria and hotel search.",
+        "short": "Boracay accommodation",
+    },
+    "tours": {
+        "title": "Boracay tours and activities: island hopping, water sports and cruises | Philippines",
+        "description": "Explore Boracay tours and activities: island hopping, snorkeling, diving, sunset cruises, water sports and practical booking checks.",
+        "short": "Boracay tours and activities",
     },
 }
 # Pages that have no English version yet: links to them go back to the Russian page.
@@ -216,7 +231,7 @@ def build(page):
     text = fix_jsonld(text, page)
 
     # Shared files live one level up; links between translated pages stay inside en/.
-    text = re.sub(r'((?:href|src)=["\'])(boracay\.css|site-core\.js)', r"\1../\2", text)
+    text = re.sub(r'((?:href|src)=["\'])(boracay\.css|commercial\.css|site-core\.js)', r"\1../\2", text)
     text = re.sub(r'''(["'(])((?:data|assets)/)''', r"\1../\2", text)
     for p in RU_ONLY:
         text = re.sub(rf"(?<![\w/.-]){p}\.html", f"../{p}.html", text)
