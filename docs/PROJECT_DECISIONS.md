@@ -1,6 +1,6 @@
 # PH Project Decisions
 
-Last reviewed: 2026-11-15
+Last reviewed: 2026-11-20
 
 This file records approved durable decisions, not a chat transcript or duplicate source dataset.
 
@@ -74,6 +74,13 @@ This is approved project scope/hierarchy, not a surveyed statement of physical b
 - Missing evidence must reduce confidence or prevent scoring, not improve a score by default.
 - Do not assign scores or publish a monthly matrix until methodology, evidence sufficiency, unknown-data treatment, weights, and confidence rules have been reviewed and approved.
 - Do not confuse long-term seasonal suitability with date-specific sea/bathing conditions.
+
+## Boracay long-term living guide (2026-11-20)
+- Added a separate Living on Boracay guide for long-term residents. It covers area trade-offs, budget categories, rental due diligence, utility verification, daily services and a limited, dated rent-control reference.
+- Do not publish one island-wide cost-of-living total or infer market rent from an individual property listing. Prices and tariffs must be tied to a named source, date, scope and explicit limitations.
+- The existing Boracay guide remains the source for the detailed utility calculator and current long-term rental utility assumptions. The new page links to that section instead of duplicating the calculator.
+- AKELCO and DOE official rate pages are the preferred sources for electricity; TIEZA is the source for island water/wastewater infrastructure context. Recheck changing rates before displaying numerical tariffs.
+- The NHSB Resolution No. 2024-01 rent-control period ends 31 December 2026. Do not assume its thresholds or caps apply to every property or remain in force during 2027; verify subsequent official resolutions before updating.
 
 ## Primary language strategy (user-approved 2026-11-20)
 - English is the primary/default public language for the completed site. The root entry URL must open the English Boracay landing page (en/boracay.html), including the root / entry point.
