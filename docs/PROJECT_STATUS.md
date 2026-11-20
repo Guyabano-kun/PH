@@ -239,5 +239,8 @@ Do not invent suitability, access rights, safety conclusions, beach boundaries o
 - Household supplies: ACE Hardware CityMall is shown as a business listing with a map name-search link.
 - No ratings, prices, dynamic hours, stock or service availability claims were published. No new business coordinates or Leaflet markers were added. Existing Restaurants, Connectivity, Health & Safety, Currency/ATM and Accommodation content was not duplicated.
 - Research sources checked 2026-11-20: A-KON operator website; Watsons official store listings; Aklan Provincial Government grocery listing; Boracay Delivery website and terms; public business listings for area references.
-- Structural validation and English generation are pending completion of the build workflow. GitHub Pages live deployment and desktop/mobile rendering remain NOT VERIFIED until independently checked.
-- Source implementation commit before project-control updates: `c4c86371d3185e4afefbdc5e77dd7599dd7aa61f`.
+- English generation completed in commit `a9b2c0b3631dbf643acb29ea85041103d6614f01`; the generated `en/local-services.html` is present. The existing generator's sitemap validation passed as part of that run.
+- Structural checks: one H1 on each language page; valid RU JSON-LD; correct RU/EN canonical URLs; no duplicate HTML IDs; no visible Cyrillic text in the generated English page; sitemap contains 26 URLs and the reciprocal RU/EN pair; main guide and workflow path include the new page.
+- Diff review confirms only the intended page, generator metadata, workflow path, main-guide card, sitemap, generated English page and project-control records changed. No map data or Leaflet code changed.
+- GitHub Pages live deployment and desktop/mobile rendering remain NOT VERIFIED; no browser-level published-page verification was completed.
+- Source implementation commit: `c4c86371d3185e4afefbdc5e77dd7599dd7aa61f`; English generation commit: `a9b2c0b3631dbf643acb29ea85041103d6614f01`.
