@@ -10,6 +10,11 @@ on:
       - flights.html
       - accommodation.html
       - tours.html
+      - places.html
+      - restaurants.html
+      - connectivity.html
+      - travel-guide.html
+      - health-safety.html
       - commercial.css
       - weather.html
       - currency.html

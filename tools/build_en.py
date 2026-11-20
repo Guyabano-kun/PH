@@ -65,6 +65,31 @@ PAGES = {
         "description": "Explore Boracay tours and activities: island hopping, snorkeling, diving, sunset cruises, water sports and practical booking checks.",
         "short": "Boracay tours and activities",
     },
+    "places": {
+        "title": "Boracay places and attractions: beaches, landmarks and visitor areas | Philippines",
+        "description": "A practical guide to Boracay places: beaches, natural features, visitor areas and geographic references linked to evidence-based island guides.",
+        "short": "Boracay places and attractions",
+    },
+    "restaurants": {
+        "title": "Boracay restaurants and cafés: places to eat by area | Philippines",
+        "description": "A Boracay restaurant and café directory with location references for Station 1, Station 2, Station 3 and D'Mall. Verify current details before visiting.",
+        "short": "Boracay restaurants and cafés",
+    },
+    "connectivity": {
+        "title": "SIM and eSIM on Boracay: Globe, Smart and mobile internet | Philippines",
+        "description": "How to choose a SIM or eSIM on Boracay: Globe Traveler eSIM, Smart Prepaid eSIM, SIM registration, device compatibility and coverage.",
+        "short": "SIM, eSIM and connectivity on Boracay",
+    },
+    "travel-guide": {
+        "title": "How to plan a trip to Boracay: step-by-step travel guide | Philippines",
+        "description": "A step-by-step Boracay trip plan covering flights, airport choice, accommodation, transfers, tours, connectivity, payments and weather.",
+        "short": "How to plan a Boracay trip",
+    },
+    "health-safety": {
+        "title": "Health and safety in Boracay: hospital and emergency contacts | Philippines",
+        "description": "Practical Boracay health and safety information: Philippine emergency hotline 911, Ciriaco S. Tirol Hospital and official Aklan sources.",
+        "short": "Health and safety in Boracay",
+    },
 }
 # Pages that have no English version yet: links to them go back to the Russian page.
 RU_ONLY = []
