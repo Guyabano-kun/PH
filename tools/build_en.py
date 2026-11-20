@@ -95,6 +95,11 @@ PAGES = {
         "description": "A practical Boracay directory of laundry services, pharmacies, supermarkets, delivery and household supplies. Check current details with providers.",
         "short": "Local services and shopping on Boracay",
     },
+    "living-on-boracay": {
+        "title": "Living on Boracay: long-term rentals, costs and everyday life | Philippines",
+        "description": "A practical guide to long-term life on Boracay: choosing an area, rental due diligence, monthly budget categories, utilities and everyday infrastructure.",
+        "short": "Living on Boracay",
+    },
 }
 # Pages that have no English version yet: links to them go back to the Russian page.
 RU_ONLY = []
