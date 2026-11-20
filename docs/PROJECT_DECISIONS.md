@@ -114,3 +114,14 @@ This is approved project scope/hierarchy, not a surveyed statement of physical b
 - No custom booking/payment engine is to be developed. External platforms own inventory, prices, availability, booking terms and customer service.
 - External links added in this package are standard non-affiliate links. Do not claim affiliate revenue or add tracking parameters until the relevant affiliate program is approved and real partner identifiers/terms are available.
 - P2 and P3 remain roadmap scope, not implemented scope: Places & Attractions, Restaurants, Connectivity expansion/eSIM, Travel Guide, Health & Safety, Living on Boracay expansion and Local Services. Geographic/business listings require verified identities, coordinates and sources before publication.
+
+
+## Boracay practical-guide expansion (2026-11-20)
+- The second implementation package adds five bilingual pages: `places.html`, `restaurants.html`, `connectivity.html`, `travel-guide.html`, and `health-safety.html`, with generated English counterparts.
+- `places.html` uses official DOT visitor guidance and links to the existing beach passports and Leaflet map. It does not introduce new POI coordinates or imply that every described landmark has a verified map marker.
+- `restaurants.html` is a non-ranked directory of 12 venues grouped by area. It uses area/address references and map-search links only; it does not publish ratings, opening hours, prices, precise coordinates, or verified entrance points. Listing presence is not a quality or availability endorsement.
+- `connectivity.html` covers Globe and Smart SIM/eSIM options and links to the providers' official pages. Plan availability, price, device compatibility and SIM-registration requirements must be rechecked with the provider; avoid hardcoding promotional prices.
+- `travel-guide.html` connects the existing Flights, Accommodation, Transfers, Tours, Weather, Payments and Connectivity guides into a practical trip-planning sequence.
+- `health-safety.html` publishes only the Philippine national emergency number 911 and Ciriaco S. Tirol Hospital's official Aklan contact details. It is not a medical directory or medical advice. Recheck phone numbers and service availability before relying on them.
+- The Boracay landing page groups the commercial entry points under "Plan your trip" and the five practical guides under "Practical guides", keeping the original eight quick links intact.
+- P3 remains future scope: a separate long-term Living on Boracay guide, Local Services and Shopping & Essentials. Do not create thin or duplicated pages where the existing island guide already contains the relevant information.

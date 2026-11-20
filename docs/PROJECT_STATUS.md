@@ -211,3 +211,19 @@ Do not invent suitability, access rights, safety conclusions, beach boundaries o
 - Source checks: one H1 per new page; no duplicate IDs; expected local navigation paths; RU and EN canonical URLs present. The flight arrival paragraph was corrected and English pages regenerated.
 - GitHub Pages visual/runtime deployment and desktop/mobile rendering: NOT VERIFIED in this pass. A Pages build check for the first source commit was cancelled during runner image setup; do not treat this as a successful deployment.
 - Next package: P2 content, beginning with a source-backed Places & Attractions scope and Connectivity/eSIM expansion. Restaurants and Health & Safety require current source/business verification before publication. Do not add unverified POIs or medical/emergency claims.
+
+
+## Boracay practical-guide expansion — implementation package 2 (2026-11-20)
+- Main implementation commit: `1341fbaedd848a32577493b9a4d485ab6cbd8293`; follow-up corrections: `2b25ac2b25363af591eab6e122a069c0c76c0153` and `308fcf06d4d6bdb56b5378566039f8e8ae0cfdcc`; English regeneration commit: `7dc570377953fecd164528e35c0f962d41bec631`.
+- Added `places.html`, `restaurants.html`, `connectivity.html`, `travel-guide.html`, and `health-safety.html`; generated `en/` counterparts through the existing build workflow.
+- Extended `tools/build_en.py`, `.github/workflows/build-en.yml`, and `sitemap.xml`. Sitemap now contains 24 unique URLs (12 RU/EN page pairs), with reciprocal hreflang and x-default links.
+- Added a separate "Practical guides" section to `boracay.html`; the original eight quick-link cards remain in their own grid. Commercial pages remain grouped under "Plan your trip".
+- Places page links to the official DOT Boracay guide, beach passports and existing Leaflet map. No new coordinates or unverified POI markers were introduced.
+- Restaurants page contains 12 non-ranked venue listings grouped by area. It omits ratings, opening hours and prices; Google Maps links are search links, not exact-coordinate claims. Listing/address references checked 2026-11-20; venue entrances and exact coordinates were not independently surveyed.
+- Connectivity page links to official Globe Traveler SIM/eSIM and Smart eSIM/tourist SIM pages. No static promotional price or availability claim is made.
+- Travel Guide links the six key trip-planning steps to existing pages and official eTravel.
+- Health & Safety page includes national emergency number 911 and Ciriaco S. Tirol Hospital, Balabag, Boracay, phone +63 36 288-3041, with links to official eHotlines and Aklan Province sources. It explicitly warns that details can change and is not medical advice.
+- GitHub Actions English build passed. All 11 generated English pages reported zero remaining static Russian strings; the manually maintained English beach catalogue passed structural checks; sitemap bilingual URL/hreflang validation passed.
+- Structural checks on new RU/EN pages: one H1 each, valid JSON-LD, no duplicate HTML IDs, correct canonical URLs. English pages contain no visible Cyrillic text. Restaurant map query parameters are HTML-escaped.
+- GitHub Pages deployment and browser-level desktop/mobile rendering remain NOT VERIFIED. Public Pages URL retrieval failed in the available browser check; earlier Pages build jobs were cancelled during runner image setup. Do not claim the live site is updated until verified.
+- P3 not implemented: separate long-term living/cost-of-living guide, local services and shopping directory. These require more verified content and should not duplicate current accommodation/utilities sections.
