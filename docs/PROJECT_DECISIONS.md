@@ -124,4 +124,7 @@ This is approved project scope/hierarchy, not a surveyed statement of physical b
 - `travel-guide.html` connects the existing Flights, Accommodation, Transfers, Tours, Weather, Payments and Connectivity guides into a practical trip-planning sequence.
 - `health-safety.html` publishes only the Philippine national emergency number 911 and Ciriaco S. Tirol Hospital's official Aklan contact details. It is not a medical directory or medical advice. Recheck phone numbers and service availability before relying on them.
 - The Boracay landing page groups the commercial entry points under "Plan your trip" and the five practical guides under "Practical guides", keeping the original eight quick links intact.
-- P3 remains future scope: a separate long-term Living on Boracay guide, Local Services and Shopping & Essentials. Do not create thin or duplicated pages where the existing island guide already contains the relevant information.
+- P3 remaining scope: a separate long-term Living on Boracay guide. Local Services and Shopping & Essentials are implemented as one practical directory page to avoid thin, overlapping pages.
+- The Local Services directory is a non-ranked, bilingual reference covering laundry, pharmacies, groceries, delivery and household supplies. Do not publish ratings, dynamic opening hours, prices, stock claims or availability without current primary evidence.
+- For businesses without independently verified entrance coordinates, show an area/address reference and a Google Maps name-search link only. Do not add these businesses as Leaflet markers or imply that the search result is a surveyed entrance.
+- Avoid duplicating the existing Restaurants, Connectivity, Health & Safety, Currency/ATM and Accommodation pages.
