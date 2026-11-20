@@ -102,3 +102,15 @@ This is approved project scope/hierarchy, not a surveyed statement of physical b
 - Each source page keeps three `<link rel="alternate" hreflang>` tags (`ru`, `en`, `x-default` → English) next to its canonical link; the build fails without them. English titles and descriptions live in `PAGES` inside `tools/build_en.py`.
 - The language button navigates to the counterpart URL (handler in `site-core.js`) instead of switching text in place.
 - `beaches.html` is Russian-only: its interface strings are hard-coded in the page script. English pages link to the Russian catalogue until it is made bilingual.
+
+
+## Boracay travel planning and commercial content architecture (2026-11-20)
+- The user approved expanding the Boracay portal around six content directions: Explore Boracay, Plan Your Trip, Tours & Activities, Practical Information, Weather & Sea, and Living on Boracay.
+- The commercial core is implemented first as three independent bilingual pages: `flights.html`, `accommodation.html`, and `tours.html`, with generated English counterparts under `en/`.
+- The main `boracay.html` remains the island landing page and links to the three commercial pages. Existing beaches, weather/sea, currency/payments, transportation, airport transfers, connectivity and utilities content remains in its current pages/sections unless a later approved package requires extraction.
+- Flight guidance compares Caticlan (MPH) and Kalibo (KLO) and emphasizes total door-to-door journey cost, not airfare alone. Airport transfer detail remains on `boracay.html#airport-transfers`.
+- Accommodation guidance is separate from long-term living costs. It provides area-selection and booking checks; it does not publish unverified hotel rankings, prices, coordinates or availability.
+- Tours content groups activities by type and links to external booking listings. A listing is not a safety approval or a guarantee of operator quality.
+- No custom booking/payment engine is to be developed. External platforms own inventory, prices, availability, booking terms and customer service.
+- External links added in this package are standard non-affiliate links. Do not claim affiliate revenue or add tracking parameters until the relevant affiliate program is approved and real partner identifiers/terms are available.
+- P2 and P3 remain roadmap scope, not implemented scope: Places & Attractions, Restaurants, Connectivity expansion/eSIM, Travel Guide, Health & Safety, Living on Boracay expansion and Local Services. Geographic/business listings require verified identities, coordinates and sources before publication.

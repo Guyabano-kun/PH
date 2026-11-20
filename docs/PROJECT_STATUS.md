@@ -1,6 +1,6 @@
 # PH Project Status
 
-Last verified against GitHub `main`: 2026-11-16
+Last verified against GitHub `main`: 2026-11-20
 
 ## Repository state
 - Repository: `Guyabano-kun/PH`
@@ -195,3 +195,19 @@ Do not invent suitability, access rights, safety conclusions, beach boundaries o
 - Source validation against current `main`: one shared runtime reference per content page; no duplicate HTML IDs; all inline JavaScript blocks pass syntax compilation; all four pages retain one H1 and the price-emphasis CSS; currency exclusions remain configured; no local duplicate price regex remains.
 - GitHub Pages deployment was triggered for the final source commit, but browser-level visual and functional regression checks remain `NOT VERIFIED` pending deployment completion and an accessible published-page check.
 - Shared runtime commit: `8dd3e6146cb9261b9530b005f3b819ae3f18f0cc`; final source head at this status update: `d8d9cb4b95f5f6953b23ec2100f9a58c1c3670ef`.
+
+
+## Boracay commercial core — implementation package 1 (2026-11-20)
+- Implementation commits: `1e5d89f6f8ec42a8b4dd4312203726a60093a1b2` (new pages, main-guide links, generator/workflow and sitemap); `b4019eeefcf8b3b1032d92c05031b8032bd36283` and `d4db091dc817de5c3a3fcea5cdb49a1b0937dfa3` (correction of arrival guidance text).
+- Added `commercial.css`, `flights.html`, `accommodation.html`, and `tours.html`.
+- Added three bilingual entry cards to `boracay.html` and updated its description to include flights, accommodation and tours.
+- Extended `tools/build_en.py` and `.github/workflows/build-en.yml` to generate and validate English versions of all three new pages. Generated files: `en/flights.html`, `en/accommodation.html`, `en/tours.html`.
+- Updated `sitemap.xml` from 8 to 14 URLs. Each new RU/EN pair has reciprocal hreflang entries and x-default to English; new-page lastmod is 2026-11-20.
+- New pages include title/description, canonical, reciprocal hreflang, Open Graph/Twitter metadata and WebSite/WebPage JSON-LD. English generation rewrites shared CSS/runtime paths.
+- Content: Flights explains MPH/KLO choice and full route cost; Accommodation explains area selection and booking checks; Tours groups the main activity types and pre-booking checks. All pages link to relevant existing guides.
+- Verified external destinations during implementation: Google Flights Boracay search, Traveloka Caticlan flight search, Skyscanner Caticlan search, Booking.com Boracay accommodation, and Klook Boracay destination/island-hopping listings.
+- No affiliate identifiers were available. External booking/search links are standard links, not affiliate links. No commission or conversion tracking is claimed.
+- GitHub Actions English build passed: all six generated English pages reported zero remaining static Russian strings; `en/beaches.html` structural checks passed; sitemap bilingual URL/hreflang validation passed.
+- Source checks: one H1 per new page; no duplicate IDs; expected local navigation paths; RU and EN canonical URLs present. The flight arrival paragraph was corrected and English pages regenerated.
+- GitHub Pages visual/runtime deployment and desktop/mobile rendering: NOT VERIFIED in this pass. A Pages build check for the first source commit was cancelled during runner image setup; do not treat this as a successful deployment.
+- Next package: P2 content, beginning with a source-backed Places & Attractions scope and Connectivity/eSIM expansion. Restaurants and Health & Safety require current source/business verification before publication. Do not add unverified POIs or medical/emergency claims.
