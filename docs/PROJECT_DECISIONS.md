@@ -75,6 +75,13 @@ This is approved project scope/hierarchy, not a surveyed statement of physical b
 - Do not assign scores or publish a monthly matrix until methodology, evidence sufficiency, unknown-data treatment, weights, and confidence rules have been reviewed and approved.
 - Do not confuse long-term seasonal suitability with date-specific sea/bathing conditions.
 
+## Primary language strategy (user-approved 2026-11-20)
+- English is the primary/default public language for the completed site. The root entry URL must open the English Boracay landing page (en/boracay.html), including the root / entry point.
+- Russian remains a fully supported secondary language on its existing Russian URLs. Preserve reciprocal hreflang ru/en and x-default pointing to English.
+- Do not implement the root redirect or change URL architecture during content expansion. Apply the language-default change in the final site-readiness package after English page coverage and link checks are complete.
+- Preserve an explicit language switch on every page; do not force language based on browser locale or geo-IP. Visitors must be able to choose Russian and remain on the equivalent page.
+- English should be the canonical default experience; Russian URLs remain indexable alternate pages, not hidden or removed.
+
 ## Change control
 - Follow the agreed sequence and architecture for each work package.
 - Do not silently expand scope or change approved decisions.
