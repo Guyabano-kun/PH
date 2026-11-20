@@ -284,3 +284,19 @@ Do not invent suitability, access rights, safety conclusions, beach boundaries o
 3. Configure GA4/GTM only after a real measurement/container ID is supplied and the tracking scope is approved.
 4. Keep English-first root redirect locked until final readiness, after the remaining EN content and links are verified.
 
+
+
+## Site-readiness checkpoint — 2026-11-20
+- Current source HEAD before this checkpoint: `543c2d622ffe77cdb718f784db98fd29c27e84bb`.
+- English-first root entry is now implemented in `index.html`: meta refresh and JavaScript redirect to `en/boracay.html`; canonical points to the English landing page; fallback link is English. Existing Russian page URLs and reciprocal language switching are unchanged.
+- The change follows the approved language decision. The English page set is complete: 14 RU/EN pairs (13 generated English pages plus the separately maintained `en/beaches.html`).
+- Source-level internal reference audit covered all 28 content HTML pages. All local page, CSS, JS and media targets resolve against the current repository tree. Referenced Boracay section fragments were checked against the current guide IDs. No missing local targets or checked Boracay anchors were found.
+- Sitemap audit: 28 unique URLs, 14 language pairs; each URL entry has exactly one `ru`, `en` and `x-default` alternate with reciprocal destinations. Existing lastmod values are retained: 2026-11-16 for the four original guide pairs and 2026-11-20 for pages updated/added on 2026-11-20.
+- HTML source checks on the audited batches found no duplicate IDs, exactly one H1 per content page, valid canonical declarations, and parseable JSON-LD. English build workflow passed on the immediately preceding content commit `f2597dd9e8d2704476ee2f7423a5423731c63781`; no content files changed after that build.
+- GitHub Pages deployment for `a74cdec9970c9faf3a8b017bfc75cbc08bf0968a` completed successfully (run `44762931712`). Deployment for the new root-redirect commit `543c2d622ffe77cdb718f784db98fd29c27e84bb` was triggered (run `44768635986`) and was IN PROGRESS at the time of this checkpoint.
+- Public GitHub Pages retrieval via the available browser verification channel remains unavailable. Therefore live HTTP response, browser execution, desktop/mobile rendering, responsive behavior and full-page section-gap inspection remain NOT VERIFIED. Do not equate a successful Pages workflow with browser-level verification.
+- GA4/GTM remains NOT CONFIGURED; no real Measurement ID / GTM Container ID is present in the audited runtime. Do not add placeholders or fabricated IDs.
+- OG asset source validation remains PASS (PNG, 1200×630); public asset retrieval remains NOT VERIFIED.
+- No affiliate attribution is configured for Agoda or other outbound platforms. Existing links are standard outbound links.
+- Files changed in this finalization step: `index.html`; this status checkpoint.
+- Next verification: confirm Pages run `44768635986` reaches `success`; if it fails, inspect the job logs and correct the actual failure. Re-attempt public browser verification when an accessible route is available. Do not claim visual acceptance until a real desktop/mobile render is inspected.
