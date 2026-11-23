@@ -302,27 +302,29 @@ footer{margin-top:12px;padding:10px}
  .payment-grid{grid-template-columns:minmax(0,1fr)}
 }
 
-/* Desktop layout: block 12 below block 1; block 15 to its right */
+/* Desktop layout: explicit block positions requested by the user */
 .exchange-fx-grid{
  display:grid;
  grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);
  grid-template-areas:
   "cash rates"
-  "emoney cards"
-  "atm snapshot";
+  "cash snapshot"
+  "cards atm"
+  "emoney qr";
  gap:12px;
  align-items:start;
 }
-.exchange-fx-grid>#cash-exchange{grid-area:cash;grid-column:auto;grid-row:auto;min-width:0}
-.exchange-fx-grid>#fx-rates{grid-area:rates;grid-column:auto;grid-row:auto;min-width:0}
-.exchange-fx-grid>#e-money{grid-area:emoney;grid-column:auto;grid-row:auto;min-width:0}
-.exchange-fx-grid>#cards{grid-area:cards;grid-column:auto;grid-row:auto;min-width:0}
-.exchange-fx-grid>#atm{grid-area:atm;grid-column:auto;grid-row:auto;width:100%;min-width:0}
-.exchange-fx-grid>.payment-snapshot{grid-area:snapshot;grid-column:auto;grid-row:auto;min-width:0}
+.exchange-fx-grid>#cash-exchange{grid-area:cash;min-width:0}
+.exchange-fx-grid>#fx-rates{grid-area:rates;min-width:0}
+.exchange-fx-grid>.payment-snapshot{grid-area:snapshot;min-width:0}
+.exchange-fx-grid>#cards{grid-area:cards;min-width:0}
+.exchange-fx-grid>#atm{grid-area:atm;min-width:0}
+.exchange-fx-grid>#e-money{grid-area:emoney;min-width:0}
+.exchange-fx-grid>#qr-payments{grid-area:qr;min-width:0}
 .exchange-fx-grid>#atm .content-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 #e-money .content-grid{align-items:start}
 #e-money .info{height:auto;min-width:0}
-#cards{width:100%;max-width:none}
+#cards,#qr-payments{width:100%;max-width:none}
 #quick-guide .quick-grid{align-items:start}
 #quick-guide .info{height:auto}
 @media(max-width:1050px){
@@ -331,7 +333,7 @@ footer{margin-top:12px;padding:10px}
 @media(max-width:760px){
  .exchange-fx-grid{
   grid-template-columns:minmax(0,1fr);
-  grid-template-areas:"cash" "rates" "emoney" "cards" "atm" "snapshot";
+  grid-template-areas:"cash" "rates" "snapshot" "cards" "atm" "emoney" "qr";
   gap:8px;
  }
  .exchange-fx-grid>#atm .content-grid{grid-template-columns:minmax(0,1fr)}
