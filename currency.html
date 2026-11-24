@@ -615,7 +615,7 @@ main{width:min(96vw,1840px);margin:22px auto 44px}
  let rates={},language=document.documentElement.lang==='en'?'en':'ru',currencyCodes=[];
  const decimals=c=>['JPY','KRW','IDR','VND'].includes(c)?4:2;
  const fmt=(v,c)=>new Intl.NumberFormat(language==='ru'?'ru-RU':'en-US',{minimumFractionDigits:decimals(c),maximumFractionDigits:decimals(c)}).format(v);
- function fillOptions(preferred){const available=currencyCodes.filter(c=>language!=='en'||c!=='RUB');select.innerHTML=available.map(c=>'<option value="'+c+'">'+(flags[c]||'💱')+' '+c+(names[c]?' · '+names[c]:'')+'</option>').join('');select.value=available.includes(preferred)?preferred:'USD'}function show(){const c=select.value,v=rates[c]?1/rates[c]:NaN;pair.textContent=(flags[c]||'💱')+' 1 '+c+' = 🇵🇭 '+(Number.isFinite(v)?fmt(v,c):'—')+' PHP';value.textContent=Number.isFinite(v)?fmt(v,c)+' PHP':'—';name.textContent=names[c]||c;try{sessionStorage.setItem('boracayFxCurrency',c)}catch(e){}}
+ function fillOptions(preferred){const available=currencyCodes.filter(c=>language!=='en'||c!=='RUB');select.innerHTML=available.map(c=>'<option value="'+c+'">'+(flags[c]||'💱')+' '+c+(names[c]?' · '+names[c]:'')+'</option>').join('');select.value=available.includes(preferred)?preferred:'USD'}function show(){const c=select.value,v=rates[c]?1/rates[c]:NaN;pair.textContent=(flags[c]||'💱')+' '+c+' → 🇵🇭 PHP';value.textContent=Number.isFinite(v)?fmt(v,c)+' PHP':'—';name.textContent=names[c]||c;try{sessionStorage.setItem('boracayFxCurrency',c)}catch(e){}}
  select.addEventListener('change',show);
  async function load(){try{const r=await fetch('https://open.er-api.com/v6/latest/PHP',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const d=await r.json();if(d.result!=='success'||d.base_code!=='PHP'||!d.rates)throw Error('Invalid rate data');rates=d.rates;currencyCodes=Object.keys(rates).sort();let saved='USD';try{saved=sessionStorage.getItem('boracayFxCurrency')||'USD'}catch(e){}fillOptions(saved);show();renderQuickRates();const t=new Date(d.time_last_update_utc);updated.textContent=(language==='ru'?'Обновлено: ':'Updated: ')+t.toLocaleString(language==='ru'?'ru-RU':'en-US',{timeZone:'Asia/Manila',dateStyle:'medium',timeStyle:'short'})+' · PHT'}catch(e){updated.textContent=language==='ru'?'Курсы временно недоступны. Попробуйте обновить страницу.':'Rates temporarily unavailable. Please reload the page.'}}
  function renderQuickRates(){
@@ -724,6 +724,38 @@ main :is(section.panel,aside.payment-snapshot,.info)::before{
   min-width:0;
  }
  #fx-rates .rates .rate{min-width:0}
+}
+</style>
+<style>
+/* Selected currency uses the same compact tile format as quick rates */
+#fx-rates .selected{
+ display:flex;
+ flex-direction:column;
+ align-items:flex-start;
+ justify-content:center;
+ gap:5px;
+ min-width:0;
+ padding:7px 6px;
+ border:1px solid var(--line);
+ border-radius:10px;
+ background:var(--bg);
+ box-shadow:none;
+}
+#fx-rates .selected>div:first-child{display:contents}
+#fx-rates .selected .pair{
+ display:block;
+ font-size:.72rem;
+ line-height:1.2;
+ font-weight:700;
+ white-space:nowrap;
+}
+#fx-rates .selected .small{display:none}
+#fx-rates .selected .value{
+ display:block;
+ font-size:.78rem;
+ line-height:1.2;
+ font-weight:800;
+ white-space:nowrap;
 }
 </style>
 </body></html>
