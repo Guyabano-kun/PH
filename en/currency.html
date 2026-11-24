@@ -302,90 +302,93 @@ footer{margin-top:12px;padding:10px}
  .payment-grid{grid-template-columns:minmax(0,1fr)}
 }
 
-/* Desktop layout: explicit block positions requested by the user */
-.exchange-fx-grid{
+
+/* Consolidated responsive layout — desktop and mobile have separate compositions */
+main{width:calc(100% - 48px);max-width:1440px;margin:22px auto 44px}
+.page-group{margin:22px 0 28px;scroll-margin-top:18px}
+.group-kicker{margin-bottom:5px}
+.group-intro{max-width:1100px;margin:0 0 14px;line-height:1.45}
+.panel{min-width:0}
+#getting-php>.exchange-fx-grid{
  display:grid;
- grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);
- grid-template-areas:
-  "cash rates"
-  "cash snapshot"
-  "cards atm"
-  "emoney qr";
- gap:12px;
+ grid-template-columns:minmax(0,1.12fr) minmax(390px,.88fr);
+ gap:16px;
  align-items:start;
 }
-.exchange-fx-grid>#cash-exchange{grid-area:cash;min-width:0}
-.exchange-fx-grid>#fx-rates{grid-area:rates;min-width:0}
-.exchange-fx-grid>.payment-snapshot{grid-area:snapshot;min-width:0}
-.exchange-fx-grid>#cards{grid-area:cards;min-width:0}
-.exchange-fx-grid>#atm{grid-area:atm;min-width:0}
-.exchange-fx-grid>#e-money{grid-area:emoney;min-width:0}
-.exchange-fx-grid>#qr-payments{grid-area:qr;min-width:0}
-.exchange-fx-grid>#atm .content-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-#e-money .content-grid{align-items:start}
-#e-money .info{height:auto;min-width:0}
-#cards,#qr-payments{width:100%;max-width:none}
-#quick-guide .quick-grid{align-items:start}
-#quick-guide .info{height:auto}
-@media(max-width:1050px){
- .exchange-fx-grid{grid-template-columns:minmax(0,1fr) minmax(0,.9fr)}
+#getting-php #cash-exchange{grid-column:1;grid-row:1 / span 2;margin:0}
+#getting-php #fx-rates{grid-column:2;grid-row:1;width:100%;max-width:none;margin:0}
+#getting-php #atm{grid-column:2;grid-row:2;margin:0}
+#cash-exchange>.content-grid{
+ display:block;
+ columns:2;
+ column-gap:12px;
+ column-fill:balance;
 }
-@media(max-width:760px){
- .exchange-fx-grid{
-  grid-template-columns:minmax(0,1fr);
-  grid-template-areas:"cash" "rates" "snapshot" "cards" "atm" "emoney" "qr";
-  gap:8px;
- }
- .exchange-fx-grid>#atm .content-grid{grid-template-columns:minmax(0,1fr)}
+#cash-exchange>.content-grid>.info{
+ display:inline-block;
+ width:100%;
+ margin:0 0 12px;
+ break-inside:avoid;
+ vertical-align:top;
 }
-/* Desktop readability and progressive disclosure */
-@media(min-width:1101px){
- body{font-size:17px}
- .info p,.info li{font-size:1rem}
- .note{font-size:.94rem}
- .section-nav a{font-size:.88rem}
+#cash-exchange #savemore.savemore-box{
+ display:inline-block;
+ width:100%;
+ margin:0 0 12px;
+ padding:13px;
+ border:1px solid var(--line);
+ border-radius:11px;
+ background:var(--bg);
+ break-inside:avoid;
 }
-.more-details{margin-top:8px;border-top:1px solid var(--line);padding-top:7px}
-.more-details>summary{display:flex;align-items:center;gap:8px;cursor:pointer;list-style:none;font-weight:800;color:var(--accent);padding:5px 0}
-.more-details>summary::-webkit-details-marker{display:none}
-.more-details>summary:after{content:"+";margin-left:auto;font-size:1.15rem;font-weight:900}
-.more-details[open]>summary:after{content:"−"}
-.more-details>.details-body{padding:5px 0 2px}
-.more-details:focus-within>summary{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
-
-
-
-
-
-/* Four-section information architecture */
-.page-group{margin:24px 0 30px;scroll-margin-top:18px}
-.group-kicker{color:var(--accent);font-size:.7rem;font-weight:900;letter-spacing:.15em;margin-bottom:5px}
-.page-group>h2,.where-to-pay>h2{margin-bottom:7px}
-.group-intro{color:var(--muted);max-width:1000px;margin:0 0 14px;font-size:.94rem}
-#getting-php>.exchange-fx-grid{grid-template-columns:minmax(0,1.12fr) minmax(360px,.88fr);align-items:start}
-#getting-php>.exchange-fx-grid>#cash-exchange{grid-column:1;grid-row:1 / span 2}
-#getting-php>.exchange-fx-grid>#fx-rates{grid-column:2;grid-row:1}
-#getting-php>.exchange-fx-grid>#atm{grid-column:2;grid-row:2}
-#payment-methods .payment-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
-#payment-methods .payment-grid>.panel{height:auto}
-#payment-methods>.payment-snapshot{margin:12px 0}
-.guide-details{margin:12px 0}.guide-details>summary{cursor:pointer;font-weight:800;color:var(--accent)}.guide-details .funding-body{padding:12px 0 0}
-.where-to-pay{margin:26px 0;scroll-margin-top:18px}
+#cash-exchange #savemore .sm-heading{display:flex;align-items:center;gap:9px;margin:0 0 8px}
+#cash-exchange #savemore .sm-heading h3{margin:0}
+#cash-exchange #savemore .sm-official-logo{width:82px;height:28px;object-fit:contain}
+#cash-exchange #savemore>p,#cash-exchange #savemore>.note,#cash-exchange #savemore>.actions{margin:7px 0}
+#cash-exchange #savemore .actions{display:flex;gap:7px;flex-wrap:wrap}
+#cash-exchange #savemore .link,#cash-exchange #savemore .sm-rate-link{font-size:.78rem;padding:7px 9px}
+#fx-rates .fx-layout{display:block}
+#fx-rates .fx-main{width:100%;min-width:0}
+#fx-rates .rates{grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+#fx-rates .rate{min-width:0;padding:8px}
+#fx-rates .rate strong{font-size:.76rem}
+#fx-rates .rate span{font-size:.88rem}
+#atm>.content-grid{
+ display:grid;
+ grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:10px;
+ align-items:start;
+}
+#payment-methods .payment-grid{
+ display:grid;
+ grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:16px;
+ align-items:start;
+}
+#payment-methods .payment-grid>.panel{height:auto;margin:0;align-self:start}
+#cards,#qr-payments{width:100%;max-width:none;min-width:0}
+#local-e-wallets>#e-money{margin:0}
+#e-money>.content-grid{
+ display:grid;
+ grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:14px;
+ align-items:start;
+}
+#e-money .info{height:auto;min-width:0;margin:0}
+.where-to-pay{margin:22px 0;scroll-margin-top:18px}
 .matrix-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
-.payment-matrix{width:100%;min-width:760px;border-collapse:collapse;background:var(--surface);font-size:.86rem}
-.payment-matrix th,.payment-matrix td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:center;white-space:nowrap}
-.payment-matrix thead th{background:var(--bg);font-size:.78rem;line-height:1.3}.payment-matrix tbody th{text-align:left;font-weight:700}
+.payment-matrix{width:100%;min-width:0;table-layout:fixed;border-collapse:collapse;background:var(--surface);font-size:.88rem}
+.payment-matrix th,.payment-matrix td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:center;white-space:normal}
+.payment-matrix th:first-child{width:27%;text-align:left}
+.payment-matrix thead th{background:var(--bg);font-size:.82rem;line-height:1.3}
+.payment-matrix tbody th{text-align:left;font-weight:700}
 .matrix-mark{display:inline-grid;place-items:center;min-width:30px;min-height:27px;padding:2px 6px;border-radius:7px;font-weight:900;font-size:.9rem}
-.matrix-mark.likely{background:#d9eee6;color:#176b50}.matrix-mark.common{background:#e5f0ed;color:#286c60}.matrix-mark.variable{background:#fff0cf;color:#805d17}.matrix-mark.rare{background:var(--bg);color:var(--muted)}
-.matrix-legend{display:flex;gap:8px 18px;flex-wrap:wrap;margin:12px 0;font-size:.82rem;color:var(--muted)}.matrix-legend span{display:flex;align-items:center;gap:6px}
-#sources{margin-top:26px}
-@media(max-width:900px){#getting-php>.exchange-fx-grid{grid-template-columns:minmax(0,1fr)}#getting-php>.exchange-fx-grid>#cash-exchange,#getting-php>.exchange-fx-grid>#fx-rates,#getting-php>.exchange-fx-grid>#atm{grid-column:1;grid-row:auto}}
-@media(max-width:760px){#payment-methods .payment-grid{grid-template-columns:1fr}.payment-matrix{min-width:720px}.matrix-legend{gap:7px 12px}.page-group{margin:20px 0 24px}}
-
-/* Obsolete duplicate guidance styles */
-.payment-snapshot,.snapshot-kicker,.snapshot-row,.snapshot-icon,.snapshot-foot,#quick-guide,.guide-details{display:none!important}
-
-/* Responsive payment matrix: desktop comparison, mobile stacked cards */
+.matrix-mark.likely{background:#d9eee6;color:#176b50}
+.matrix-mark.common{background:#e5f0ed;color:#286c60}
+.matrix-mark.variable{background:#fff0cf;color:#805d17}
+.matrix-mark.rare{background:var(--bg);color:var(--muted)}
+.matrix-legend{display:flex;gap:8px 18px;flex-wrap:wrap;margin:12px 0;font-size:.82rem;color:var(--muted)}
+.matrix-legend span{display:flex;align-items:center;gap:6px}
 .matrix-cards{display:none}
 .matrix-card{min-width:0;padding:13px 14px;border:1px solid var(--line);border-radius:13px;background:var(--surface)}
 .matrix-card h3{margin:0 0 9px;font-size:1rem}
@@ -393,25 +396,35 @@ footer{margin-top:12px;padding:10px}
 .matrix-card-row{display:flex;align-items:center;justify-content:space-between;gap:7px;min-width:0;padding:7px 8px;border-radius:9px;background:var(--bg)}
 .matrix-card-row dt{font-size:.78rem;line-height:1.2;color:var(--muted)}
 .matrix-card-row dd{margin:0;flex:0 0 auto}
-@media(min-width:761px){
- .where-to-pay{margin:18px 0}
- .matrix-scroll{overflow:visible}
- .payment-matrix{min-width:0;table-layout:fixed}
- .payment-matrix th:first-child{width:27%;text-align:left}
- .payment-matrix th,.payment-matrix td{white-space:normal;padding:12px 14px}
- .payment-matrix thead th{font-size:.84rem}
+#sources{margin-top:24px}
+@media(min-width:761px) and (max-width:1100px){
+ main{width:calc(100% - 36px)}
+ #getting-php>.exchange-fx-grid{grid-template-columns:minmax(0,1fr) minmax(340px,.9fr);gap:12px}
+ #cash-exchange>.content-grid{columns:1}
+ #fx-rates .rates{grid-template-columns:repeat(3,minmax(0,1fr))}
+ #atm>.content-grid{grid-template-columns:1fr}
+ #payment-methods .payment-grid{gap:12px}
+ #e-money>.content-grid{gap:10px}
+ .panel{padding:16px}
 }
 @media(max-width:760px){
- main{margin:14px auto 34px}
- .payment-grid{grid-auto-rows:auto;align-items:start}
- .payment-grid>.panel{height:auto;min-height:0}
+ main{width:calc(100% - 20px);margin:14px auto 28px}
  .page-group{margin:12px 0 16px}
  .page-group>.group-kicker{margin-bottom:3px}
  .page-group>h2{margin-bottom:5px}
  .group-intro{margin:4px 0 10px;line-height:1.35}
  .panel{margin-bottom:10px;padding:14px;border-radius:13px}
- .exchange-fx-grid,.payment-grid{gap:9px}
- .payment-grid>.panel{padding:14px}
+ #getting-php>.exchange-fx-grid{display:flex;flex-direction:column;gap:9px}
+ #getting-php #cash-exchange,#getting-php #fx-rates,#getting-php #atm{width:100%;margin:0}
+ #cash-exchange>.content-grid{columns:1}
+ #cash-exchange>.content-grid>.info,#cash-exchange #savemore.savemore-box{display:block;margin:0 0 8px}
+ #cash-exchange #savemore.savemore-box{padding:10px}
+ #fx-rates .rates{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #atm>.content-grid{grid-template-columns:1fr}
+ #payment-methods .payment-grid{grid-template-columns:1fr;gap:9px}
+ #payment-methods .payment-grid>.panel{margin:0}
+ #e-money>.content-grid{grid-template-columns:1fr;gap:9px}
+ #e-money .info{margin:0}
  .where-to-pay{margin:12px 0 16px}
  .where-to-pay .matrix-scroll{display:none}
  .where-to-pay .matrix-cards{display:grid;grid-template-columns:1fr;gap:8px}
@@ -420,6 +433,7 @@ footer{margin-top:12px;padding:10px}
  .matrix-card dl{gap:6px}
  .matrix-card-row{padding:6px 7px}
  .where-to-pay .note{margin:9px 0 0;padding:10px 12px}
+ .payment-grid{grid-template-columns:1fr;gap:8px}
 }
 @media(max-width:380px){.matrix-card dl{grid-template-columns:1fr}}
 </style>
