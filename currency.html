@@ -862,4 +862,41 @@ main :is(section.panel,aside.payment-snapshot,.info)::before{
  #fx-rates .picker select{width:100%;max-width:100%}
 }
 </style>
+
+<style>
+/* Keep the selected currency and selector area no taller than the rate tiles */
+@media(min-width:761px){
+ #fx-rates .rate-strip{
+  grid-template-columns:max-content max-content minmax(0,1fr);
+  align-items:center;
+ }
+ #fx-rates .rate-head{
+  width:auto;
+  max-width:none;
+  flex-direction:row;
+  align-items:center;
+  gap:10px;
+ }
+ #fx-rates .rate-head>div:first-child{display:flex;align-items:center}
+ #fx-rates .rate-head h2{font-size:.88rem;line-height:1.15;white-space:nowrap}
+ #fx-rates .rate-head .small{display:none}
+ #fx-rates .picker{width:auto;flex-direction:row;align-items:center;gap:5px}
+ #fx-rates .picker select{width:112px;max-width:112px}
+ #fx-rates .selected{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:flex-start;
+  gap:6px;
+  width:max-content;
+  max-width:100%;
+  padding:5px 7px;
+  min-height:0;
+ }
+ #fx-rates .selected>div:first-child{display:contents}
+ #fx-rates .selected .pair{display:flex;align-items:center;white-space:nowrap}
+ #fx-rates .selected .currency-flag-image{width:24px;height:18px;flex:0 0 24px}
+ #fx-rates .selected .value{font-size:.78rem;line-height:1.2;white-space:nowrap}
+}
+</style>
 </body></html>
