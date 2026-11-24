@@ -852,4 +852,14 @@ main :is(section.panel,aside.payment-snapshot,.info)::before{
  #fx-rates .selected{width:max-content}
 }
 </style>
+
+<style>
+/* Match the selector column to the compact currency tiles */
+@media(min-width:761px){
+ #fx-rates .rate-strip{grid-template-columns:minmax(0,100px) max-content minmax(0,1fr)}
+ #fx-rates .rate-head{width:100%;max-width:100%}
+ #fx-rates .picker{width:100%;align-items:flex-start;flex-direction:column;gap:4px}
+ #fx-rates .picker select{width:100%;max-width:100%}
+}
+</style>
 </body></html>
