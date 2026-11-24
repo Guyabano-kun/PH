@@ -625,7 +625,7 @@ main{width:min(96vw,1840px);margin:22px auto 44px}
  let count=key.length;
  if(desktop){
   const available=ratesEl.clientWidth;
-  count=Math.max(1,Math.min(key.length,Math.floor((available+6)/118)));
+  count=Math.max(1,Math.min(key.length,Math.floor((available+6)/100)));
  }
  ratesEl.style.setProperty('--rate-count',String(count));
  ratesEl.innerHTML=key.slice(0,count).map(c=>'<div class="rate"><strong>'+flagImage(c)+'</strong><span>'+(rates[c]?fmt(1/rates[c],c):'—')+'</span></div>').join('');
@@ -777,6 +777,31 @@ main :is(section.panel,aside.payment-snapshot,.info)::before{
  display:flex;
  align-items:center;
  min-height:20px;
+}
+</style>
+
+<style>
+/* Compact FX rate tiles: only flag and exchange value */
+#fx-rates .rates .rate{
+ display:flex;
+ align-items:center;
+ justify-self:start;
+ gap:6px;
+ width:max-content;
+ max-width:100%;
+ padding:5px 7px;
+}
+#fx-rates .rates .rate strong{
+ display:flex;
+ align-items:center;
+ flex:0 0 24px;
+}
+#fx-rates .rates .rate>span{
+ font-size:.78rem;
+ white-space:nowrap;
+}
+@media(min-width:761px){
+ #fx-rates .rates{grid-template-columns:repeat(var(--rate-count,1),max-content)}
 }
 </style>
 </body></html>
