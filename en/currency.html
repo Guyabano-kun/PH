@@ -623,18 +623,15 @@ main{width:min(96vw,1840px);margin:22px auto 44px}
  const desktop=window.matchMedia('(min-width: 761px)').matches;
  let count=key.length;
  if(desktop){
-  const strip=document.querySelector('#fx-rates .rate-strip');
-  const head=strip?.querySelector('.rate-head');
-  const selected=strip?.querySelector('.selected');
-  const available=Math.max(0,strip?.clientWidth-(head?.offsetWidth||0)-(selected?.offsetWidth||0)-28);
-  count=Math.max(1,Math.min(key.length,Math.floor((available+6)/112)));
+  const available=ratesEl.clientWidth;
+  count=Math.max(1,Math.min(key.length,Math.floor((available+6)/118)));
  }
  ratesEl.style.setProperty('--rate-count',String(count));
  ratesEl.innerHTML=key.slice(0,count).map(c=>'<div class="rate"><strong><span class="currency-flag">'+(flags[c]||'💱')+'</span> '+c+' <span class="pair-arrow">→</span> 🇵🇭 PHP</strong><span>'+(rates[c]?fmt(1/rates[c],c):'—')+' PHP</span></div>').join('');
  }window.phCurrencyRefreshLanguage=()=>{const current=select.value;fillOptions(current);show();renderQuickRates();if(updated.textContent&&updated.textContent!=='—')updated.textContent=updated.textContent.replace(/^Обновлено:/,'Updated:').replace(/^Updated:/,'Обновлено:')};
  document.querySelectorAll('.nav-brands img,.sm-nav-logo,.brand-logo,.card-brands img,.sm-official-logo').forEach(img=>{const fallback=()=>{if(img.dataset.fallback)return;img.dataset.fallback='1';img.style.display='none';const label=document.createElement('span');label.className='logo-fallback';label.textContent=img.alt||'Logo';img.insertAdjacentElement('afterend',label)};img.addEventListener('error',fallback,{once:true});if(img.complete&&img.naturalWidth===0)fallback()});
- const fxStrip=document.querySelector('#fx-rates .rate-strip');
- if(window.ResizeObserver&&fxStrip){const fxObserver=new ResizeObserver(()=>renderQuickRates());fxObserver.observe(fxStrip)}
+ const fxRates=document.querySelector('#fx-rates .rates');
+ if(window.ResizeObserver&&fxRates){const fxObserver=new ResizeObserver(()=>renderQuickRates());fxObserver.observe(fxRates)}
  window.addEventListener('resize',renderQuickRates,{passive:true});
  load();
  const langBtn=document.getElementById('lang-btn'),themeBtn=document.getElementById('theme-btn'),flag=document.getElementById('lang-flag'),themeIcon=document.getElementById('theme-icon');
@@ -716,4 +713,17 @@ main :is(section.panel,aside.payment-snapshot,.info)::before{
 }
 </style>
 
+<style>
+/* FX quick rates: one horizontal row, limited to tiles that fit */
+@media(min-width:761px){
+ #fx-rates .rates{
+  display:grid;
+  grid-template-columns:repeat(var(--rate-count,1),minmax(0,1fr));
+  grid-auto-flow:column;
+  gap:6px;
+  min-width:0;
+ }
+ #fx-rates .rates .rate{min-width:0}
+}
+</style>
 </body></html>
