@@ -309,6 +309,24 @@ main{width:min(96vw,1840px);margin:22px auto 44px}
 .group-kicker{margin-bottom:5px}
 .group-intro{max-width:1100px;margin:0 0 14px;line-height:1.45}
 .panel{min-width:0}
+#getting-php>.fx-panel{width:100%;max-width:none;margin:12px 0 16px}
+#fx-rates .fx-layout{display:block}
+#fx-rates .rate-strip{display:grid;grid-template-columns:minmax(230px,270px) minmax(170px,205px) minmax(0,1fr);align-items:center;gap:12px}
+#fx-rates .rate-head{display:flex;flex-direction:column;align-items:stretch;gap:7px;min-width:0}
+#fx-rates .rate-head h2{font-size:1.12rem;margin:0 0 2px;white-space:nowrap}
+#fx-rates .rate-head .small{margin:0;font-size:.76rem}
+#fx-rates .picker{display:flex;align-items:center;gap:7px;flex-wrap:nowrap}
+#fx-rates .picker label{font-size:.8rem}
+#fx-rates .picker select{min-width:0;width:100%;padding:7px 8px;font-size:.84rem}
+#fx-rates .selected{margin:0;padding:9px 10px;min-width:0;gap:6px;flex-wrap:nowrap}
+#fx-rates .selected .pair{font-size:.74rem;white-space:nowrap}
+#fx-rates .selected .small{font-size:.7rem}
+#fx-rates .selected .value{font-size:1.25rem;white-space:nowrap}
+#fx-rates .rates{display:grid;grid-template-columns:repeat(var(--rate-count,4),minmax(0,1fr));gap:6px;margin:0;min-width:0}
+#fx-rates .rate{padding:7px 6px;min-width:0}
+#fx-rates .rate strong{font-size:.72rem;white-space:nowrap}
+#fx-rates .rate>span{font-size:.78rem;white-space:nowrap}
+#fx-rates .status{margin:5px 0 0;font-size:.7rem}
 #getting-php>.exchange-fx-grid{
  display:grid;
  grid-template-columns:minmax(0,1.12fr) minmax(390px,.88fr);
@@ -418,6 +436,15 @@ main{width:min(96vw,1840px);margin:22px auto 44px}
  .panel{padding:16px}
 }
 @media(max-width:760px){
+ #getting-php>.fx-panel{margin:9px 0}
+ #fx-rates .rate-strip{display:flex;flex-direction:column;align-items:stretch;gap:9px}
+ #fx-rates .rate-head{flex-direction:row;align-items:center;justify-content:space-between;flex-wrap:wrap}
+ #fx-rates .rate-head h2{white-space:normal}
+ #fx-rates .selected{margin:0;padding:9px 12px}
+ #fx-rates .rates{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+ #fx-rates .rate strong{font-size:.76rem}
+ #fx-rates .rate>span{font-size:.82rem}
+
  main{width:calc(100% - 20px);margin:14px auto 28px}
  .page-group{margin:12px 0 16px}
  .page-group>.group-kicker{margin-bottom:3px}
@@ -481,7 +508,14 @@ main{width:min(96vw,1840px);margin:22px auto 44px}
 <main>
 <h1 data-ru="Обмен валюты и оплата" data-en="Currency exchange and payments">Обмен валюты и оплата</h1>
 <p class="lead" data-ru="Обмен наличных, ATM, зарубежные карты и местные электронные кошельки на Боракае." data-en="Cash exchange, ATMs, foreign cards and local e-wallets on Boracay.">Обмен наличных, ATM, зарубежные карты и местные электронные кошельки на Боракае.</p>
-<nav class="section-nav" aria-label="Page sections"><a href="#getting-php"><span class="nav-symbol">💵</span><span><span data-ru="01 · Получение PHP" data-en="01 · Getting PHP">01 · Получение PHP</span></span></a><a href="#payment-methods"><span class="nav-symbol">💳</span><span><span data-ru="02 · Способы оплаты" data-en="02 · Payment methods">02 · Способы оплаты</span></span></a><a href="#local-e-wallets"><span class="nav-symbol">📱</span><span><span data-ru="03 · Электронные кошельки" data-en="03 · Local e-wallets">03 · Электронные кошельки</span></span></a><a href="#where-to-pay"><span class="nav-symbol">▦</span><span><span data-ru="04 · Где чем платить" data-en="04 · Where to pay">04 · Где чем платить</span></span></a></nav><section class="page-group" id="getting-php"><div class="group-kicker"><span data-ru="01 / ПОЛУЧЕНИЕ НАЛИЧНЫХ" data-en="01 / CASH ACCESS">01 / ПОЛУЧЕНИЕ НАЛИЧНЫХ</span></div><h2><span data-ru="Получение филиппинских песо" data-en="Getting Philippine pesos">Получение филиппинских песо</span></h2><p class="group-intro"><span data-ru="Два основных способа получить наличные PHP: обмен иностранной валюты и снятие в банкомате." data-en="Two main ways to obtain PHP cash: exchanging foreign currency and withdrawing from an ATM.">Два основных способа получить наличные PHP: обмен иностранной валюты и снятие в банкомате.</span></p><div class="exchange-fx-grid"><section class="panel" id="cash-exchange">
+<nav class="section-nav" aria-label="Page sections"><a href="#getting-php"><span class="nav-symbol">💵</span><span><span data-ru="01 · Получение PHP" data-en="01 · Getting PHP">01 · Получение PHP</span></span></a><a href="#payment-methods"><span class="nav-symbol">💳</span><span><span data-ru="02 · Способы оплаты" data-en="02 · Payment methods">02 · Способы оплаты</span></span></a><a href="#local-e-wallets"><span class="nav-symbol">📱</span><span><span data-ru="03 · Электронные кошельки" data-en="03 · Local e-wallets">03 · Электронные кошельки</span></span></a><a href="#where-to-pay"><span class="nav-symbol">▦</span><span><span data-ru="04 · Где чем платить" data-en="04 · Where to pay">04 · Где чем платить</span></span></a></nav><section class="page-group" id="getting-php"><div class="group-kicker"><span data-ru="01 / ПОЛУЧЕНИЕ НАЛИЧНЫХ" data-en="01 / CASH ACCESS">01 / ПОЛУЧЕНИЕ НАЛИЧНЫХ</span></div><h2><span data-ru="Получение филиппинских песо" data-en="Getting Philippine pesos">Получение филиппинских песо</span></h2><p class="group-intro"><span data-ru="Два основных способа получить наличные PHP: обмен иностранной валюты и снятие в банкомате." data-en="Two main ways to obtain PHP cash: exchanging foreign currency and withdrawing from an ATM.">Два основных способа получить наличные PHP: обмен иностранной валюты и снятие в банкомате.</span></p><section class="panel fx-panel" id="fx-rates">
+<div class="fx-layout"><div class="fx-main"><div class="rate-strip"><div class="rate-head"><div><h2 data-ru="Курс PHP к иностранным валютам" data-en="PHP exchange rates">Курс PHP к иностранным валютам</h2><p class="small" data-ru="Справочный рыночный курс, не курс обменника." data-en="Indicative market rate, not a money-changer quote.">Справочный рыночный курс, не курс обменника.</p></div>
+<div class="picker"><label for="currency" data-ru="Валюта" data-en="Currency">Валюта</label><select id="currency"><option data-ru="Загрузка…" data-en="Loading…">Загрузка…</option></select></div></div>
+<div class="selected"><div><div class="pair" id="pair">1 USD = — PHP</div><div class="small" id="currency-name">US Dollar</div></div><div class="value" id="value">— PHP</div></div>
+<div class="rates" id="rates"><div class="rate"><strong>🇺🇸 USD → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇪🇺 EUR → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇨🇳 CNY → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇬🇧 GBP → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇷🇺 RUB → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇦🇺 AUD → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇸🇬 SGD → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇨🇦 CAD → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇯🇵 JPY → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇰🇷 KRW → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇭🇰 HKD → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇹🇭 THB → 🇵🇭 PHP</strong><span>—</span></div></div></div>
+<p class="small status" id="updated" aria-live="polite" data-ru="Загрузка курсов…" data-en="Loading rates…">Загрузка курсов…</p></div>
+</div>
+</section><div class="exchange-fx-grid"><section class="panel" id="cash-exchange">
 <h2 data-ru="Где менять наличную валюту" data-en="Where to exchange cash">Где менять наличную валюту</h2>
 <div class="note critical"><strong data-ru="Не меняйте крупную сумму в аэропорту или порту без сравнения." data-en="Avoid exchanging a large amount at an airport or port without comparing rates.">Не меняйте крупную сумму в аэропорту или порту без сравнения.</strong> <span data-ru="Удобство не означает выгодный курс. На острове сначала сравните специализированный обменник и Savemore." data-en="Convenience does not guarantee a good rate. Compare a dedicated money changer with Savemore first.">Удобство не означает выгодный курс. На острове сначала сравните специализированный обменник и Savemore.</span></div>
 <div class="content-grid">
@@ -512,14 +546,7 @@ main{width:min(96vw,1840px);margin:22px auto 44px}
 </div>
 
 
-</section><div class="cash-side-stack"><section class="panel fx-panel" id="fx-rates">
-<div class="fx-layout"><div class="fx-main"><div class="rate-head"><div><h2 data-ru="Курс PHP к иностранным валютам" data-en="PHP exchange rates">Курс PHP к иностранным валютам</h2><p class="small" data-ru="Справочный рыночный курс, не курс обменника." data-en="Indicative market rate, not a money-changer quote.">Справочный рыночный курс, не курс обменника.</p></div>
-<div class="picker"><label for="currency" data-ru="Валюта" data-en="Currency">Валюта</label><select id="currency"><option data-ru="Загрузка…" data-en="Loading…">Загрузка…</option></select></div></div>
-<div class="selected"><div><div class="pair" id="pair">1 USD = — PHP</div><div class="small" id="currency-name">US Dollar</div></div><div class="value" id="value">— PHP</div></div>
-<div class="rates" id="rates"><div class="rate"><strong>🇺🇸 USD → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇪🇺 EUR → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇨🇳 CNY → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇬🇧 GBP → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇷🇺 RUB → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇦🇺 AUD → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇸🇬 SGD → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇨🇦 CAD → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇯🇵 JPY → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇰🇷 KRW → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇭🇰 HKD → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇹🇭 THB → 🇵🇭 PHP</strong><span>—</span></div></div>
-<p class="small status" id="updated" aria-live="polite" data-ru="Загрузка курсов…" data-en="Loading rates…">Загрузка курсов…</p></div>
-</div>
-</section><section class="panel" id="atm">
+</section><div class="cash-side-stack"><section class="panel" id="atm">
 <h2 data-ru="Снятие наличных в ATM" data-en="Withdrawing cash from ATMs">Снятие наличных в ATM</h2>
 <div class="note good"><strong data-ru="Практический ориентир на Боракае: BPI, Station 2." data-en="Practical Boracay option: BPI, Station 2.">Практический ориентир на Боракае: BPI, Station 2.</strong> <span data-ru="Для планирования снятия ориентируйтесь на сумму около" data-en="For planning purposes, budget for a withdrawal of around">Для планирования снятия ориентируйтесь на сумму около</span> <strong class="price">20 000 PHP</strong> <span data-ru="за одну операцию по этой точке:" data-en="per transaction at this location:">за одну операцию по этой точке:</span> <a href="https://maps.app.goo.gl/sWjKWvTXkeE9QCQN7" target="_blank" rel="noopener">BPI ATM — Google Maps</a>.</div>
 <div class="content-grid">
@@ -588,8 +615,24 @@ main{width:min(96vw,1840px);margin:22px auto 44px}
  function fillOptions(preferred){const available=currencyCodes.filter(c=>language!=='en'||c!=='RUB');select.innerHTML=available.map(c=>'<option value="'+c+'">'+(flags[c]||'💱')+' '+c+(names[c]?' · '+names[c]:'')+'</option>').join('');select.value=available.includes(preferred)?preferred:'USD'}function show(){const c=select.value,v=rates[c]?1/rates[c]:NaN;pair.textContent=(flags[c]||'💱')+' 1 '+c+' = 🇵🇭 '+(Number.isFinite(v)?fmt(v,c):'—')+' PHP';value.textContent=Number.isFinite(v)?fmt(v,c)+' PHP':'—';name.textContent=names[c]||c;try{sessionStorage.setItem('boracayFxCurrency',c)}catch(e){}}
  select.addEventListener('change',show);
  async function load(){try{const r=await fetch('https://open.er-api.com/v6/latest/PHP',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const d=await r.json();if(d.result!=='success'||d.base_code!=='PHP'||!d.rates)throw Error('Invalid rate data');rates=d.rates;currencyCodes=Object.keys(rates).sort();let saved='USD';try{saved=sessionStorage.getItem('boracayFxCurrency')||'USD'}catch(e){}fillOptions(saved);show();renderQuickRates();const t=new Date(d.time_last_update_utc);updated.textContent=(language==='ru'?'Обновлено: ':'Updated: ')+t.toLocaleString(language==='ru'?'ru-RU':'en-US',{timeZone:'Asia/Manila',dateStyle:'medium',timeStyle:'short'})+' · PHT'}catch(e){updated.textContent=language==='ru'?'Курсы временно недоступны. Попробуйте обновить страницу.':'Rates temporarily unavailable. Please reload the page.'}}
- function renderQuickRates(){const key=language==='ru'?['USD','EUR','CNY','GBP','RUB','AUD','SGD','CAD','JPY','KRW','HKD','THB']:['USD','EUR','CNY','GBP','AUD','SGD','CAD','JPY','KRW','HKD','THB'];ratesEl.innerHTML=key.map(c=>'<div class="rate"><strong><span class="currency-flag">'+(flags[c]||'💱')+'</span> '+c+' <span class="pair-arrow">→</span> 🇵🇭 PHP</strong><span>'+(rates[c]?fmt(1/rates[c],c):'—')+' PHP</span></div>').join('')}window.phCurrencyRefreshLanguage=()=>{const current=select.value;fillOptions(current);show();renderQuickRates();if(updated.textContent&&updated.textContent!=='—')updated.textContent=updated.textContent.replace(/^Обновлено:/,'Updated:').replace(/^Updated:/,'Обновлено:')};
+ function renderQuickRates(){
+ const key=language==='ru'?['USD','EUR','CNY','GBP','RUB','AUD','SGD','CAD','JPY','KRW','HKD','THB']:['USD','EUR','CNY','GBP','AUD','SGD','CAD','JPY','KRW','HKD','THB'];
+ const desktop=window.matchMedia('(min-width: 761px)').matches;
+ let count=key.length;
+ if(desktop){
+  const strip=document.querySelector('#fx-rates .rate-strip');
+  const head=strip?.querySelector('.rate-head');
+  const selected=strip?.querySelector('.selected');
+  const available=Math.max(0,strip?.clientWidth-(head?.offsetWidth||0)-(selected?.offsetWidth||0)-28);
+  count=Math.max(1,Math.min(key.length,Math.floor((available+6)/112)));
+ }
+ ratesEl.style.setProperty('--rate-count',String(count));
+ ratesEl.innerHTML=key.slice(0,count).map(c=>'<div class="rate"><strong><span class="currency-flag">'+(flags[c]||'💱')+'</span> '+c+' <span class="pair-arrow">→</span> 🇵🇭 PHP</strong><span>'+(rates[c]?fmt(1/rates[c],c):'—')+' PHP</span></div>').join('');
+ }window.phCurrencyRefreshLanguage=()=>{const current=select.value;fillOptions(current);show();renderQuickRates();if(updated.textContent&&updated.textContent!=='—')updated.textContent=updated.textContent.replace(/^Обновлено:/,'Updated:').replace(/^Updated:/,'Обновлено:')};
  document.querySelectorAll('.nav-brands img,.sm-nav-logo,.brand-logo,.card-brands img,.sm-official-logo').forEach(img=>{const fallback=()=>{if(img.dataset.fallback)return;img.dataset.fallback='1';img.style.display='none';const label=document.createElement('span');label.className='logo-fallback';label.textContent=img.alt||'Logo';img.insertAdjacentElement('afterend',label)};img.addEventListener('error',fallback,{once:true});if(img.complete&&img.naturalWidth===0)fallback()});
+ const fxStrip=document.querySelector('#fx-rates .rate-strip');
+ if(window.ResizeObserver&&fxStrip){const fxObserver=new ResizeObserver(()=>renderQuickRates());fxObserver.observe(fxStrip)}
+ window.addEventListener('resize',renderQuickRates,{passive:true});
  load();
  const langBtn=document.getElementById('lang-btn'),themeBtn=document.getElementById('theme-btn'),flag=document.getElementById('lang-flag'),themeIcon=document.getElementById('theme-icon');
  const themes=['auto','light','dark'],themeNames={auto:{ru:'Авто',en:'Auto',icon:'◐'},light:{ru:'Светлая',en:'Light',icon:'☀️'},dark:{ru:'Тёмная',en:'Dark',icon:'🌙'}};
