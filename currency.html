@@ -512,11 +512,11 @@ main{width:min(96vw,1840px);margin:22px auto 44px}
 <h1 data-ru="Обмен валюты и оплата" data-en="Currency exchange and payments">Обмен валюты и оплата</h1>
 <p class="lead" data-ru="Обмен наличных, ATM, зарубежные карты и местные электронные кошельки на Боракае." data-en="Cash exchange, ATMs, foreign cards and local e-wallets on Boracay.">Обмен наличных, ATM, зарубежные карты и местные электронные кошельки на Боракае.</p>
 <nav class="section-nav" aria-label="Page sections"><a href="#getting-php"><span class="nav-symbol">💵</span><span><span data-ru="01 · Получение PHP" data-en="01 · Getting PHP">01 · Получение PHP</span></span></a><a href="#payment-methods"><span class="nav-symbol">💳</span><span><span data-ru="02 · Способы оплаты" data-en="02 · Payment methods">02 · Способы оплаты</span></span></a><a href="#local-e-wallets"><span class="nav-symbol">📱</span><span><span data-ru="03 · Электронные кошельки" data-en="03 · Local e-wallets">03 · Электронные кошельки</span></span></a><a href="#where-to-pay"><span class="nav-symbol">▦</span><span><span data-ru="04 · Где чем платить" data-en="04 · Where to pay">04 · Где чем платить</span></span></a></nav><section class="page-group" id="getting-php"><div class="group-kicker"><span data-ru="01 / ПОЛУЧЕНИЕ НАЛИЧНЫХ" data-en="01 / CASH ACCESS">01 / ПОЛУЧЕНИЕ НАЛИЧНЫХ</span></div><h2><span data-ru="Получение филиппинских песо" data-en="Getting Philippine pesos">Получение филиппинских песо</span></h2><p class="group-intro"><span data-ru="Два основных способа получить наличные PHP: обмен иностранной валюты и снятие в банкомате." data-en="Two main ways to obtain PHP cash: exchanging foreign currency and withdrawing from an ATM.">Два основных способа получить наличные PHP: обмен иностранной валюты и снятие в банкомате.</span></p><section class="panel fx-panel" id="fx-rates">
-<div class="fx-layout"><div class="fx-main"><div class="rate-strip"><div class="rate-head"><div><h2 data-ru="Курс PHP к иностранным валютам" data-en="PHP exchange rates">Курс PHP к иностранным валютам</h2><p class="small" data-ru="Справочный рыночный курс, не курс обменника." data-en="Indicative market rate, not a money-changer quote.">Справочный рыночный курс, не курс обменника.</p></div>
+<div class="fx-layout"><div class="fx-main"><div class="rate-strip"><div class="rate-head"><div><h2 data-ru="Курс PHP к иностранным валютам" data-en="PHP exchange rates">Курс PHP к иностранным валютам</h2><p class="small status" id="updated" aria-live="polite" data-ru="Загрузка курсов…" data-en="Loading rates…">Loading rates…</p></div>
 <div class="picker"><label for="currency" data-ru="Валюта" data-en="Currency">Валюта</label><select id="currency"><option data-ru="Загрузка…" data-en="Loading…">Загрузка…</option></select></div></div>
 <div class="selected"><div><div class="pair" id="pair">1 USD = — PHP</div><div class="small" id="currency-name">US Dollar</div></div><div class="value" id="value">— PHP</div></div>
 <div class="rates" id="rates"><div class="rate"><strong>🇺🇸 USD → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇪🇺 EUR → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇨🇳 CNY → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇬🇧 GBP → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇷🇺 RUB → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇦🇺 AUD → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇸🇬 SGD → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇨🇦 CAD → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇯🇵 JPY → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇰🇷 KRW → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇭🇰 HKD → 🇵🇭 PHP</strong><span>—</span></div><div class="rate"><strong>🇹🇭 THB → 🇵🇭 PHP</strong><span>—</span></div></div></div>
-<p class="small status" id="updated" aria-live="polite" data-ru="Загрузка курсов…" data-en="Loading rates…">Загрузка курсов…</p></div>
+</div></div>
 </div>
 </section><div class="exchange-fx-grid"><section class="panel" id="cash-exchange">
 <h2 data-ru="Где менять наличную валюту" data-en="Where to exchange cash">Где менять наличную валюту</h2>
@@ -897,6 +897,32 @@ main :is(section.panel,aside.payment-snapshot,.info)::before{
  #fx-rates .selected .pair{display:flex;align-items:center;white-space:nowrap}
  #fx-rates .selected .currency-flag-image{width:24px;height:18px;flex:0 0 24px}
  #fx-rates .selected .value{font-size:.78rem;line-height:1.2;white-space:nowrap}
+}
+</style>
+
+<style>
+/* Two-line title/update label, constrained to the rate-tile height */
+@media(min-width:761px){
+ #fx-rates .rate-head{align-items:center}
+ #fx-rates .rate-head>div:first-child{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  gap:2px;
+ }
+ #fx-rates .rate-head h2{
+  font-size:.78rem;
+  line-height:1.15;
+  white-space:nowrap;
+ }
+ #fx-rates .rate-head #updated{
+  display:block;
+  margin:0;
+  font-size:.62rem;
+  line-height:1.15;
+  white-space:nowrap;
+ }
 }
 </style>
 </body></html>
